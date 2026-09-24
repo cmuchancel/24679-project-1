@@ -19,22 +19,25 @@
     const agents = document.getElementById('method-agents');
     agents?.setAttribute('aria-pressed', String(agents.classList.contains('primary')));
     const next = visible(modal);
-    if (next === open) return;
-    open = next;
-    if (open) {
+    if (next && !open) {
       previousFocus = document.activeElement;
       previousOverflow = document.body.style.overflow;
       document.body.style.overflow = 'hidden';
-      inerted = [...(modal.parentElement?.children || [])]
+    }
+    if (next) {
+      // Gradio can replace or reveal siblings during the same update.
+      const siblings = [...(modal.parentElement?.children || [])]
         .filter(el => el !== modal && !el.inert);
-      inerted.forEach(el => { el.inert = true; });
-      close?.focus();
-    } else {
+      siblings.forEach(el => { el.inert = true; });
+      inerted.push(...siblings);
+      if (!card?.contains(document.activeElement)) close?.focus();
+    } else if (open) {
       document.body.style.overflow = previousOverflow;
       inerted.forEach(el => { el.inert = false; });
       inerted = [];
       if (previousFocus?.isConnected) previousFocus.focus();
     }
+    open = next;
   };
   const onKey = event => {
     if (!open) return;

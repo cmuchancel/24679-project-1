@@ -219,20 +219,18 @@ body, gradio-app { background: var(--patent-bg) !important; }
 .gradio-container footer { opacity: .65; margin-top: 35px; font-size: 10px; }
 .gradio-container :is(button, a, [tabindex]):focus-visible { outline: 2px solid #315de8 !important; outline-offset: 4px; }
 @keyframes patent-indeterminate { from { transform: translateX(-110%); } to { transform: translateX(400%); } }
-/* Gradio scopes rules inside at-rules to its main container. Keep these
-   selectors relative so they also work when CSS is loaded through launch(). */
 @media (max-width: 640px) {
-    .column { gap: 17px; }
-    .block:has(h1) { padding: 14px 0 19px !important; }
-    .prose h1 { font-size: clamp(32px, 8.5vw, 44px) !important; letter-spacing: -1.4px !important; line-height: 1.16 !important; }
-    .prose h1 + p { font-size: 13px !important; }
-    .upload-container { height: 265px !important; min-height: 265px; }
-    .block:has(> [data-testid="block-label"]) { min-height: 265px; }
-    #method-options { flex-direction: column; }
-    .row > button { width: 100%; min-height: 115px; padding: 22px; }
-    .tabs { padding: 6px 12px 12px; }
-    [role="tablist"] { gap: 9px; }
-    [role="tab"] { font-size: 11px; padding: 13px 3px; }
+    .gradio-container main > .column { gap: 17px; }
+    .gradio-container main > .column > .block:has(h1) { padding: 14px 0 19px !important; }
+    .gradio-container .prose h1 { font-size: clamp(32px, 8.5vw, 44px) !important; letter-spacing: -1.4px !important; line-height: 1.16 !important; }
+    .gradio-container .prose h1 + p { font-size: 13px !important; }
+    .gradio-container .upload-container { height: 265px !important; min-height: 265px; }
+    .gradio-container #patent-upload { min-height: 265px; }
+    .gradio-container #method-options { flex-direction: column; }
+    .gradio-container #method-options > button { width: 100%; min-height: 115px; padding: 22px; }
+    .gradio-container .tabs { padding: 6px 12px 12px; }
+    .gradio-container [role="tablist"] { gap: 9px; }
+    .gradio-container [role="tab"] { font-size: 11px; padding: 13px 3px; }
     #diagram { padding: 13px; }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -262,11 +260,12 @@ body, gradio-app { background: var(--patent-bg) !important; }
     position: fixed !important; inset: 0 !important; z-index: 10000 !important;
     width: 100vw !important; height: 100dvh !important; max-width: none !important;
     min-width: 0 !important; margin: 0 !important; padding: 24px !important;
-    align-items: center; justify-content: center; overflow-y: auto;
+    align-items: center; justify-content: flex-start; overflow-y: auto;
     background: #17203366 !important; backdrop-filter: blur(7px);
 }
 .gradio-container #login-card {
-    position: relative; flex: 0 0 auto; width: min(440px, 100%); min-width: 0 !important;
+    position: relative; flex: 0 0 auto !important; width: min(440px, 100%); min-width: 0 !important;
+    min-height: 0 !important; margin: auto 0 !important;
     gap: 19px; padding: 38px 30px 25px !important; border: 1px solid #dce4ef;
     border-radius: 20px; background: #fff !important; color: #17202d !important;
     box-shadow: 0 24px 100px #16233c30;
@@ -278,11 +277,11 @@ body, gradio-app { background: var(--patent-bg) !important; }
 .gradio-container #login-status .prose { color: #34445e !important; font-size: 13px; line-height: 1.75; }
 .gradio-container #login-status strong { color: #17202d !important; }
 .gradio-container #connect-chatgpt { min-height: 48px; background: #315de8 !important; color: #fff !important; border: 1px solid #315de8 !important; border-radius: 10px; font-size: 14px; }
-.gradio-container #connect-chatgpt:disabled { background: #e7ecf5 !important; color: #526178 !important; border-color: #dbe3ef !important; opacity: 1; }
+.gradio-container #connect-chatgpt:disabled { background: #e7ecf5 !important; color: #526178 !important; border-color: #dbe3ef !important; opacity: 1 !important; }
 .gradio-container #login-note p { color: #6c7a8e !important; font-size: 11px; line-height: 1.6; }
 @media (max-width: 640px) {
-    #login-modal { padding: 16px !important; }
-    #login-card { padding: 36px 22px 23px !important; }
-    #patent-upload:has(.file-preview-holder) { min-height: 0 !important; padding: 17px 13px !important; }
-    #patent-upload td { padding: 15px 10px !important; }
+    .gradio-container #login-modal { padding: 16px !important; }
+    .gradio-container #login-card { padding: 36px 22px 23px !important; }
+    .gradio-container #patent-upload:has(.file-preview-holder) { min-height: 0 !important; padding: 17px 13px !important; }
+    .gradio-container #patent-upload td { padding: 15px 10px !important; }
 }
