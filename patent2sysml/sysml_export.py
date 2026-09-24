@@ -50,7 +50,7 @@ def to_sysml(data: dict) -> str:
 
     package = "Patent_" + re.sub(r"[^a-zA-Z0-9_]", "_", str(data.get("patent_stem", "model")))
     lines = [f"package {package} {{",
-             "    // Generated functional model; review the extraction before engineering use.",
+             "    // Functional model generated from cited patent passages.",
              "    item def FlowItem;", "    action patentSystem {"]
     lines.append("        doc " + note(views.get("black_box", {})))
     lines.extend("        " + item for item in boundary)
@@ -70,6 +70,7 @@ def to_sysml(data: dict) -> str:
     for name in ["inventive_function_claims", "interface_map"]:
         lines.append("    " + note({name: views.get(name, [])}))
     for name in ["assumptions", "warnings"]:
-        lines.append("    " + note({name: data.get(name, [])}))
+        if data.get(name):
+            lines.append("    " + note({name: data[name]}))
     lines.append("}")
     return "\n".join(lines) + "\n"

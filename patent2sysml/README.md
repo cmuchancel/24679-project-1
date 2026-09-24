@@ -1,5 +1,5 @@
 ---
-title: patent2sysml
+title: Translate patents to SysML v2
 emoji: 📄
 colorFrom: blue
 colorTo: gray
@@ -12,37 +12,17 @@ pinned: false
 short_description: Turn patent HTML into diagrams, JSON, and SysML
 ---
 
-# patent2sysml
+# Translate patents to SysML v2
 
-Space: https://huggingface.co/spaces/cmuchancel/patent2sysml
+[Open the app](https://huggingface.co/spaces/cmuchancel/patent2sysml) · [Workflow](ARCHITECTURE.md) · [Research record](RESEARCH_RECORD.md)
 
-A minimal Gradio launcher for the existing OpenCode workflow in [Info-extraction](https://github.com/eandujar09/Info-extraction), pinned at commit 848d0337cce01bebc620da4a2b3d873c16ffb326.
+A simple Gradio interface for your teammate's [Info-extraction](https://github.com/eandujar09/Info-extraction) agents, pinned at `848d0337cce01bebc620da4a2b3d873c16ffb326`. Upload patent HTML, connect ChatGPT, then click **Process**. The three output tabs show a diagram, JSON, and a downloadable SysML file. Fine Tuned NLP remains disabled.
 
-See [ARCHITECTURE.md](ARCHITECTURE.md) for the exact current agent sequence, a flow diagram, tool responsibilities, and the limits of the implemented checks.
-
-Connect your ChatGPT account, upload a patent HTML, then press **Process**. **AI agents** is selected; **Fine Tuned NLP** is disabled until that pipeline is ready. The systems-engineering textbook is already configured in the backend. The orchestrator launches the functional-decomposer, which uses the patent and textbook MCP servers and saves JSON. Three tabs show the diagram, JSON text with a download, and a downloadable SysML v2 file with a text preview. You can also reopen a saved JSON result without another model call. JSON uses the upstream functional-decomposition schema, not the separate GradResearch SJS schema. No report or fine-tuned model is launched.
-
-The SysML exporter maps the function hierarchy to nested actions and extracted flows to directed item flows. It uses generic `FlowItem` payloads: physical units, simulation behavior, and domain-specific type definitions are not inferred. Other extracted views and evidence IDs are preserved as documentation. Review this generated functional model before using it for engineering work.
-
-## The small files you edit
-
-- `agent_app.py`: Gradio layout and Process button.
-- `agent_runner.py`: OpenCode configuration, launch, progress, and output checks.
-- `styles.css`: appearance.
-- `sysml_export.py`: deterministic JSON-to-SysML v2 export; no extra model call.
-- `textbook_index.py`: prepares the textbook once and reuses its saved search index.
-- `assets/textbook.epub` and `assets/textbook-index.json`: local/backend data downloaded separately; omitted from this source folder.
-- `chatgpt_login.py` and `user_session.py`: ChatGPT device login and temporary credentials per visitor session.
-- `workspace_mcp.py`: assembles result files from synthesized views and captured evidence.
-- `capture_mcp.py`: saves retrieval responses so agents can copy evidence into JSON without retyping it.
-- `space_app.py`: downloads backend assets and installs the pinned OpenCode executable at Space startup.
-- `vendor/Info-extraction`: your teammate's existing agents and retrieval code; the Markdown bodies remain unchanged.
-
-The runner adapts the older agent metadata to OpenCode 2.0.16. Each run has its own input, output, vector database, and log under `runs/`. Hosted agents can use only the named retrieval and result-writing tools; shell, general file access, web access, and other agents are denied. Patent tools enforce the run's exact uploaded file and database. A successful manifest and confirmed cleanup are required before returning a download. JSON checks do not establish extraction accuracy. The model is set by `OPENCODE_MODEL`, default `openai/gpt-6-luna`; each visitor's subscription access and limits apply.
+The pipeline keeps the five fixed textbook queries, adds patent-specific questions, drafts a model, independently reviews it, and allows one repair pass followed by re-review. Unsupported unresolved items and dependent connections are omitted from the final model. Full findings, drafts and removal explanations stay in the private research archive. The JSON tab also downloads that complete ZIP.
 
 ## Local run
 
-Use Python 3.12, Graphviz, and OpenCode 2.0.16. From this folder:
+Use Python 3.12, Graphviz, Node.js and OpenCode 2.0.16:
 
 ```sh
 python3.12 -m venv .venv
@@ -50,26 +30,54 @@ source .venv/bin/activate
 python -m pip install -r requirements-agents.txt
 hf auth login
 hf download cmuchancel/patent2sysml-textbook textbook.epub textbook-index.json --repo-type dataset --local-dir assets
+python setup_parser.py
 opencode auth login openai --standalone --method chatgpt-headless
+export RESEARCH_REPO=cmuchancel/patent2sysml-research
 python agent_app.py
 ```
 
-The Hugging Face account used for the download must have access to the backend dataset. Alternatively, place your local textbook at `assets/textbook.epub` and run `python textbook_index.py` to prepare its index. `SE_EPUB_PATH` can select another local book copy. Patent HTML inputs for trying the app are in [`../source-html`](../source-html/).
+Your Hugging Face account needs access to the private backend datasets. Alternatively, provide your book at `assets/textbook.epub` and run `python textbook_index.py`; without `RESEARCH_REPO`, local runs retain their ZIPs on disk. Sample patents are in [`../source-html`](../source-html/).
 
-The textbook tool uses the teammate's BM25 subsection search, with no embedding API call. `python textbook_index.py` builds `assets/textbook-index.json` once. It saves section text, token counts, and ranking statistics, then loads them directly on later runs. The prepared index and book are stored in the private `cmuchancel/patent2sysml-textbook` dataset. Space startup downloads both, so restarts do not reparse or reindex the book. Each patent still searches the same index for relevant evidence. Patent-database cleanup never touches it.
+`SE_EPUB_PATH` / `SE_INDEX_PATH` override book/index paths. The precomputed BM25 textbook index is reused across patents and rebuilt only when its fingerprint changes. `OPENCODE_MODEL` defaults to `openai/gpt-6-luna`. `AGENT_TIMEOUT` defaults to 1800 seconds. `SYSML_PARSER_DIR` overrides the downloaded parser folder.
 
-To change the book, replace `assets/textbook.epub`, run `python textbook_index.py`, and upload both assets to the private backend dataset. Book-content and extraction-code fingerprints trigger rebuilding only when necessary. Restart the app after changing backend assets. `SE_INDEX_PATH` can override the index location.
+The parser is pinned to open-source SysIDE Legacy 0.9.1 and its 2024-12 library. Passing this parser is not certification against the final SysML 2.0 standard. The exporter uses generic item flows and nested actions, not physical simulation models. Uploads accept patent HTML files (.html or .htm) only. JSON is a generated output, not an input format.
 
-`AGENT_TIMEOUT` changes the run timeout in seconds (default 1200). A timeout or interrupted process is not reported as a successful cleanup; its database remains isolated from future runs. Run folders are retained locally for inspection and can be removed after downloading results.
+## Files to edit
 
-## Hugging Face Space
+| File | Purpose |
+| --- | --- |
+| `agent_app.py`, `styles.css` | Simple Gradio layout and styling. |
+| `workflow.py` | Fixed questions, new agent instructions, retrieval budgets. |
+| `agent_runner.py` | Configure/launch agents, enforce completion, cleanup and exports. |
+| `workspace_mcp.py`, `quality.py` | Draft/review/repair gates and final omission rules. |
+| `capture_mcp.py`, `textbook_index.py` | Recorded retrieval and reusable textbook index. |
+| `research.py`, `research-plugin/` | Timings, inputs/outputs, usage, transcript export and private ZIP persistence. |
+| `rendering.py`, `sysml_export.py`, `sysml_check.py` | Diagram, deterministic SysML export and parser checks. |
+| `setup_parser.py`, `space_app.py` | Pinned dependency setup and Space startup. |
+| `chatgpt_login.py`, `user_session.py` | Separate temporary ChatGPT credentials per browser session. |
+| `vendor/Info-extraction/` | Unchanged upstream agents and retrieval code. |
 
-Upload the contents of this `patent2sysml` folder to the Space root, including its `README.md`, `requirements.txt`, `packages.txt`, Python files, stylesheet, and vendor files. These configuration filenames are already ready for a Gradio Space. Configure `TEXTBOOK_REPO=cmuchancel/patent2sysml-textbook` as a Space variable and `TEXTBOOK_TOKEN` as a backend secret with read access to that dataset. The token is never passed to agent processes. Runtime folders, credentials, and textbook assets are excluded from this GitHub source folder.
+## Hugging Face deployment
 
-Select ZeroGPU hardware if your account is eligible. The workflow itself runs on CPU and calls OpenAI remotely; it does not request a GPU allocation. A hidden, unused GPU handler follows Hugging Face's documented pattern for provider-backed Spaces.
+Upload the source folder including `research-plugin/` and `vendor/`; omit `runs/`, `.env`, local assets, auth data and caches. Keep the README metadata, requirements and packages files at the Space root. Use these backend settings:
 
-For a Docker deployment, `Dockerfile.agents` is an optional starting point. It launches `agent_app.py` directly, so provide the backend assets in the container before launch. The running Space uses the Gradio startup above.
+| Name | Type | Purpose |
+| --- | --- | --- |
+| `TEXTBOOK_REPO` | Variable | `cmuchancel/patent2sysml-textbook` |
+| `TEXTBOOK_TOKEN` | Secret | Read access to the textbook dataset. |
+| `RESEARCH_REPO` | Variable | `cmuchancel/patent2sysml-research` (must be private). |
+| `RESEARCH_TOKEN` | Secret | Write access to the research dataset. |
 
-Click **Connect ChatGPT** and complete OpenAI's device login in your own browser. The account must allow device-code authorization in its ChatGPT Security settings. Each browser session gets separate OpenCode data, configuration, cache, state, and temporary directories; a fresh session starts without credentials. Gradio removes credentials when it cleans up a closed/refreshed session or after the one-hour session lifetime. Session folders and backend assets are blocked from Gradio file downloads. Space restarts also require signing in again. Download results before stopping the Space.
+The current public Space uses ZeroGPU eligibility, but the workflow itself runs on CPU and calls the connected model remotely. It never requests a GPU allocation. Startup downloads backend assets and parser dependencies, then installs pinned OpenCode if needed.
 
-Patent evidence and retrieved textbook passages are sent to the connected model during processing. ChatGPT access does not pay for Hugging Face hosting upgrades or ordinary OpenAI API usage. API credentials are recommended for a future shared service.
+Visitors log into ChatGPT separately each session. General shell/file/web access is denied to agents, and backend service tokens never enter agent environments. Gradio blocks session/asset downloads. Research records deliberately retain uploaded content and model conversations; the app displays this before processing. Login credentials are excluded and are removed when the browser session is cleaned up. Research archives survive Space restarts.
+
+A ChatGPT subscription supplies the visitor's supported model access; it does not pay for Hugging Face upgrades or ordinary API billing. No report or fine-tuned model is launched, and this JSON is the upstream functional-decomposition schema, not the separate GradResearch SJS schema.
+
+## Checks
+
+```sh
+python -m unittest discover -s tests -v
+```
+
+Tests cover workflow gates, query budgets, omission/dependency cleanup, citations, error timing, token aggregation and credential redaction. Full live patent runs also exercise the configured agents, actual retrieval, parser and private archive uploads.

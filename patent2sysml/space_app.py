@@ -17,6 +17,9 @@ def unused_gpu_slot():
     pass
 
 
+from setup_parser import install
+install()
+
 os.environ["PATENT_SPACE_WRAPPER"] = "1"
 assets = Path(__file__).parent / "assets"
 for filename in ["textbook.epub", "textbook-index.json"]:

@@ -1,28 +1,242 @@
-/* Keep visual changes here. These IDs are set in app.py. */
+/* A CSS-only visual layer over the existing Gradio controls. */
+:root {
+    color-scheme: light;
+    --patent-bg: #f8fafc;
+    --patent-surface: #ffffff;
+    --patent-text: #17202d;
+    --patent-muted: #657084;
+    --patent-line: #e0e6ed;
+    --patent-accent: #315de8;
+    /* Reserved for future method/patent-specific progress updates. */
+    --patent-progress-height: 5px;
+    --patent-progress-accent: var(--patent-accent);
+    --patent-progress-duration: 2.4s;
+}
+body, gradio-app { background: var(--patent-bg) !important; }
 .gradio-container {
-    max-width: 1100px !important;
-    margin: auto;
+    --body-background-fill: #f8fafc;
+    --background-fill-primary: #ffffff;
+    --background-fill-secondary: #f1f5f9;
+    --body-text-color: #17202d;
+    --body-text-color-subdued: #657084;
+    --block-background-fill: #ffffff;
+    --block-border-color: #e0e6ed;
+    --block-label-background-fill: #ffffff;
+    --block-label-text-color: #657084;
+    --block-title-text-color: #17202d;
+    --border-color-primary: #e0e6ed;
+    --border-color-accent: #315de8;
+    --input-background-fill: #ffffff;
+    --input-border-color: #d7dee8;
+    --input-text-color: #17202d;
+    --button-primary-background-fill: #315de8;
+    --button-primary-background-fill-hover: #244bcc;
+    --button-primary-text-color: #ffffff;
+    --button-primary-border-color: #315de8;
+    --button-secondary-background-fill: #f6f8fb;
+    --button-secondary-background-fill-hover: #edf1f7;
+    --button-secondary-text-color: #293449;
+    --button-secondary-border-color: #dce3ec;
+    --link-text-color: #315de8;
+    --block-radius: 16px;
+    --button-large-radius: 11px;
+    --button-small-radius: 8px;
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif !important;
+    width: 100% !important;
+    max-width: 980px !important;
+    margin: 0 auto !important;
+    padding: clamp(35px, 7vw, 74px) clamp(20px, 4vw, 44px) 50px !important;
+    background: transparent !important;
+    color: var(--patent-text) !important;
 }
-
-#diagram {
-    overflow: auto;
-    padding: 24px;
+.gradio-container .main { width: 100% !important; padding: 0 !important; background: transparent; }
+.gradio-container main > .column { gap: 19px; }
+.gradio-container .prose, .gradio-container button { font-family: inherit; }
+/* The actual heading is plain Gradio Markdown, with no decorative brand copy. */
+.gradio-container main > .column > .block:has(h1) {
+    padding: 22px 0 31px !important;
+    overflow: visible !important;
+    border: 0 !important;
+    background: transparent !important;
+    text-align: center;
 }
-
-#diagram svg {
-    max-width: 100%;
-    height: auto;
+.gradio-container .prose h1 {
+    max-width: 710px;
+    margin: 0 auto 18px !important;
+    color: var(--patent-text) !important;
+    font-size: clamp(36px, 4.7vw, 58px) !important;
+    font-weight: 550 !important;
+    line-height: 1.13 !important;
+    letter-spacing: -2.7px !important;
+    text-wrap: balance;
 }
-
-#diagram text,
-#diagram .edge polygon {
-    fill: var(--body-text-color);
+.gradio-container .prose h1 + p {
+    margin: 0 !important;
+    color: var(--patent-muted) !important;
+    font-size: 16px !important;
+    line-height: 1.7 !important;
 }
-
-#diagram .node path,
-#diagram .edge path,
-#diagram .edge polygon {
-    stroke: var(--body-text-color);
+/* Preserve the native file input, upload state, and clear/download controls. */
+.gradio-container main > .column > .block:has(> [data-testid="block-label"]) {
+    min-height: 298px;
+    border: 1.5px dashed #c4cede !important;
+    border-radius: 20px !important;
+    background: #ffffff !important;
+    box-shadow: 0 8px 40px #20345404;
+    transition: border-color .2s ease, box-shadow .2s ease;
 }
-
-/* Future styling hooks: #controls, #process-button, #status */
+.gradio-container main > .column > .block:has(> [data-testid="block-label"]):hover,
+.gradio-container main > .column > .block:has(> [data-testid="block-label"]):focus-within {
+    border-color: #6483e6 !important;
+    box-shadow: 0 0 0 5px #315de808;
+}
+.gradio-container main > .column > .block > [data-testid="block-label"] {
+    top: 19px !important;
+    left: 22px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    color: #718096 !important;
+    font-size: 11px !important;
+    font-weight: 450;
+}
+.gradio-container .upload-container { height: 298px !important; min-height: 298px; padding: 47px 20px 24px !important; }
+.gradio-container [data-testid="upload-text"] {
+    height: auto !important;
+    min-height: 0 !important;
+    gap: 8px;
+    color: #263346;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.gradio-container [data-testid="upload-icon"] {
+    width: 54px !important;
+    height: 54px !important;
+    margin-bottom: 14px;
+    padding: 14px;
+    border: 1px solid #e0e7fb;
+    border-radius: 16px;
+    background: #f0f4ff;
+    color: #315de8;
+}
+.gradio-container [data-testid="upload-icon"] svg { width: 100%; height: 100%; }
+.gradio-container [data-testid="upload-text"] .or { color: #7d8797; font-size: 11px; font-weight: 400; }
+.gradio-container main > .column > .block:has(> [data-testid="block-label"]):not(:has([data-testid="upload-text"])) {
+    min-height: 103px;
+    border-style: solid !important;
+    border-color: #ced9f3 !important;
+}
+/* Initially show just the heading and native upload area. */
+.gradio-container main > .column:has([data-testid="upload-text"]) > :not(.block:has(h1), .block:has([data-testid="upload-text"])) { display: none !important; }
+.gradio-container main > .column > .row:has(> button.primary) { gap: 15px; margin-top: 5px; }
+.gradio-container main > .column > .row > button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    min-height: 128px;
+    padding: 22px 25px;
+    border-radius: 14px;
+    text-align: left;
+    color: #17202d;
+    font-size: 19px;
+    font-weight: 550;
+    letter-spacing: -.4px;
+    box-shadow: none;
+    transition: background .2s, border-color .2s;
+}
+.gradio-container main > .column > .row > button.primary {
+    background: #f2f5ff !important;
+    border: 1px solid #a4b8f2 !important;
+    color: #233b78 !important;
+}
+.gradio-container main > .column > .row > button.primary::after {
+    content: 'Use your connected ChatGPT account';
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #5c6f99;
+}
+.gradio-container main > .column > .row > button.primary:hover { background: #eaf0ff !important; border-color: #6483e6 !important; }
+.gradio-container main > .column > .row > button:disabled {
+    opacity: 1 !important;
+    background: #f5f7fa !important;
+    border: 1px solid #e1e6ed !important;
+    color: #6d788b !important;
+    cursor: not-allowed;
+}
+.gradio-container main > .column > .row > button:disabled::after {
+    content: 'Coming soon';
+    color: #737f90;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+.gradio-container main > .column > button.primary {
+    min-height: 52px;
+    border-radius: 11px;
+    border: 1px solid #315de8 !important;
+    background: #315de8 !important;
+    color: #ffffff !important;
+    font-size: 14px;
+    font-weight: 550;
+    box-shadow: 0 4px 10px #315de81a;
+    transition: background .2s;
+}
+.gradio-container main > .column > button.primary::after { content: '  →'; padding-left: 7px; }
+.gradio-container main > .column > button.primary:hover { background: #244bcc !important; }
+.gradio-container main > .column > .row + .block .prose p { color: #718096; font-size: 11px; line-height: 1.75; }
+.gradio-container main > .column > button.primary + .block { padding: 6px 0 6px 12px !important; border-left: 2px solid #c9d6f8 !important; min-height: 34px; }
+.gradio-container main > .column > button.primary + .block .prose p { color: #5b6980; font-size: 12px; line-height: 1.7; }
+.gradio-container .block:has(> .label) { border-radius: 14px !important; border-color: #dce3ed !important; background: #fff !important; }
+.gradio-container .block:has(> .label) .prose p { color: #66748b; font-size: 13px; line-height: 1.7; }
+.gradio-container .prose a { color: #315de8 !important; text-underline-offset: 4px; }
+.gradio-container .tabs { margin-top: 16px; padding: 9px 18px 18px; border: 1px solid #e0e6ed; border-radius: 16px; background: #fff; }
+.gradio-container .tab-wrapper { border-bottom: 1px solid #e5eaf1; }
+.gradio-container [role="tablist"] { gap: 18px; border: 0; }
+.gradio-container [role="tab"] { padding: 14px 5px; background: transparent !important; border-radius: 0; border: 0 !important; border-bottom: 2px solid transparent !important; color: #6e7b8f; font-size: 12px; }
+.gradio-container [role="tab"][aria-selected="true"] { color: #315de8 !important; border-bottom-color: #315de8 !important; }
+.gradio-container [role="tabpanel"] { padding: 20px 0 0; border: 0 !important; }
+.gradio-container .tabs ~ .block .prose p { color: #78869b; font-size: 10px; line-height: 1.65; }
+#diagram { overflow: auto !important; padding: 24px; }
+#diagram svg { max-width: 100%; height: auto; }
+#diagram text { fill: #24354d; }
+#diagram .node path, #diagram .node polygon { fill: #f4f7ff; stroke: #869ecc; }
+#diagram .edge path, #diagram .edge polygon { stroke: #607cae; }
+#diagram .edge polygon { fill: #607cae; }
+.gradio-container .cm-editor { border-radius: 10px; background: #f9fbfe !important; }
+.gradio-container .cm-gutters { background: #f0f4f9 !important; color: #8391a5 !important; }
+.gradio-container .cm-content { color: #27374f !important; }
+.gradio-container .download { border-radius: 9px; font-size: 12px; }
+.gradio-container [data-testid="status-tracker"] { border-radius: 12px; color: #315de8; }
+/* Future progress slot: method colors and real progress values can be supplied later. */
+#patent-progress, .patent-progress { min-height: 100px; padding: 24px; border: 1px solid var(--patent-line); border-radius: 16px; background: #fff; }
+.patent-progress[data-method="nlp"] { --patent-progress-accent: #7959c4; }
+.patent-progress__track { height: var(--patent-progress-height); overflow: hidden; border-radius: 99px; background: #e7edf9; }
+.patent-progress__fill { height: 100%; background: var(--patent-progress-accent); border-radius: inherit; transition: width .35s ease; }
+.patent-progress[aria-busy="true"] .patent-progress__fill { width: 34%; animation: patent-indeterminate var(--patent-progress-duration) ease-in-out infinite; }
+.gradio-container footer { opacity: .65; margin-top: 35px; font-size: 10px; }
+.gradio-container :is(button, a, [tabindex]):focus-visible { outline: 2px solid #315de8 !important; outline-offset: 4px; }
+@keyframes patent-indeterminate { from { transform: translateX(-110%); } to { transform: translateX(400%); } }
+/* Gradio scopes rules inside at-rules to its main container. Keep these
+   selectors relative so they also work when CSS is loaded through launch(). */
+@media (max-width: 640px) {
+    .column { gap: 17px; }
+    .block:has(h1) { padding: 14px 0 19px !important; }
+    .prose h1 { font-size: clamp(32px, 8.5vw, 44px) !important; letter-spacing: -1.4px !important; line-height: 1.16 !important; }
+    .prose h1 + p { font-size: 13px !important; }
+    .upload-container { height: 265px !important; min-height: 265px; }
+    .block:has(> [data-testid="block-label"]) { min-height: 265px; }
+    .row:has(> button.primary) { flex-direction: column; }
+    .row > button { width: 100%; min-height: 115px; padding: 22px; }
+    .tabs { padding: 6px 12px 12px; }
+    [role="tablist"] { gap: 9px; }
+    [role="tab"] { font-size: 11px; padding: 13px 3px; }
+    #diagram { padding: 13px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .patent-progress[aria-busy="true"] .patent-progress__fill { width: 100%; opacity: .6; }
+}
