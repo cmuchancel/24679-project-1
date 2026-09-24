@@ -4,14 +4,13 @@ import os
 import tempfile
 from pathlib import Path
 
-import gradio as gr
 from rendering import diagram
 
 from agent_runner import run_agents
-from chatgpt_login import connect_chatgpt
 from sysml_export import to_sysml
 from textbook_index import load_index
-from user_session import SESSIONS, new_session, delete_session
+from user_session import SESSIONS
+from ui_workflow import build_app
 
 load_index()
 
@@ -50,43 +49,10 @@ def process(file: str | None, session=None):
         yield str(error), "", None, "", "", None, None
 
 
-with gr.Blocks(title="Translate patents to SysML v2") as app:
-    session = gr.State(new_session if os.getenv("SPACE_ID") else None,
-                       time_to_live=3600, delete_callback=delete_session)
-    if os.getenv("PATENT_SPACE_WRAPPER"):
-        gr.Button(visible=False).click(unused_gpu_slot, api_name=False)
-    gr.Markdown("# Translate patents to SysML v2\nUpload a patent. Generate a system model.")
-    if os.getenv("SPACE_ID"):
-        with gr.Accordion("Connect ChatGPT", open=True):
-            gr.Markdown("Sign in with your own ChatGPT account for this session. "
-                        "Your login is separate from other visitors and expires when the session is cleaned up.")
-            connect = gr.Button("Connect ChatGPT")
-            login_status = gr.Markdown()
-            connect.click(connect_chatgpt, inputs=session, outputs=login_status,
-                          api_name=False, concurrency_limit=4)
-    patent = gr.File(label="Patent HTML · .html or .htm · up to 10 MB", file_types=[".html", ".htm"], type="filepath")
-    with gr.Row():
-        agents = gr.Button("AI agents", variant="primary")
-        gr.Button("Fine Tuned NLP", interactive=False)
-    gr.Markdown("Research mode: uploaded patents, agent conversations, retrieved evidence, and outputs "
-                "are retained in the project owner’s private research archive. Login credentials are excluded.")
-    start = gr.Button("Process", variant="primary")
-    status = gr.Markdown("Ready. Each run uses your connected OpenCode model.")
-    agents.click(lambda: "AI agents selected.", outputs=status, api_name=False)
-    with gr.Tab("Diagram"):
-        preview = gr.HTML(elem_id="diagram")
-    with gr.Tab("JSON text"):
-        result = gr.Code(label="Functional-decomposition JSON", language="json", interactive=False)
-        download = gr.DownloadButton("Download JSON")
-        research_download = gr.DownloadButton("Download complete research record (.zip)")
-    with gr.Tab("SysML download"):
-        sysml_download = gr.DownloadButton("Download .sysml")
-        sysml_text = gr.Code(label="SysML v2", language=None, interactive=False)
-    gr.Markdown("Uses the Info-extraction agents. SJS conversion is a separate teammate integration.")
-    start.click(process, [patent, session], [status, result, download, preview, sysml_text, sysml_download, research_download],
-                api_name="process_patent", concurrency_limit=1)
+app = build_app(process, globals().get("unused_gpu_slot"))
 
 if __name__ == "__main__":
     app.queue(max_size=5).launch(server_name=os.getenv("GRADIO_SERVER_NAME", "0.0.0.0" if os.getenv("SPACE_ID") else "127.0.0.1"),
-                              css_paths=Path(__file__).with_name("styles.css"), max_file_size="10mb",
+                              css_paths=Path(__file__).with_name("styles.css"),
+                              js=Path(__file__).with_name("ui_dialog.js").read_text(), max_file_size="10mb",
                               blocked_paths=[str(SESSIONS), str(Path(__file__).parent / "assets")])

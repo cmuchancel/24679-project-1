@@ -1,4 +1,4 @@
-/* A CSS-only visual layer over the existing Gradio controls. */
+/* Light styling for the native Gradio upload, method, sign-in and result controls. */
 :root {
     color-scheme: light;
     --patent-bg: #f8fafc;
@@ -127,10 +127,9 @@ body, gradio-app { background: var(--patent-bg) !important; }
     border-style: solid !important;
     border-color: #ced9f3 !important;
 }
-/* Initially show just the heading and native upload area. */
-.gradio-container main > .column:has([data-testid="upload-text"]) > :not(.block:has(h1), .block:has([data-testid="upload-text"])) { display: none !important; }
-.gradio-container main > .column > .row:has(> button.primary) { gap: 15px; margin-top: 5px; }
-.gradio-container main > .column > .row > button {
+/* Visibility is controlled by Gradio events, not CSS guesses about upload state. */
+.gradio-container #method-options { gap: 15px; margin-top: 5px; }
+.gradio-container #method-options > button {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -147,34 +146,34 @@ body, gradio-app { background: var(--patent-bg) !important; }
     box-shadow: none;
     transition: background .2s, border-color .2s;
 }
-.gradio-container main > .column > .row > button.primary {
+.gradio-container #method-agents.primary {
     background: #f2f5ff !important;
     border: 1px solid #a4b8f2 !important;
     color: #233b78 !important;
 }
-.gradio-container main > .column > .row > button.primary::after {
+.gradio-container #method-agents::after {
     content: 'Use your connected ChatGPT account';
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0;
     color: #5c6f99;
 }
-.gradio-container main > .column > .row > button.primary:hover { background: #eaf0ff !important; border-color: #6483e6 !important; }
-.gradio-container main > .column > .row > button:disabled {
+.gradio-container #method-agents.primary:hover { background: #eaf0ff !important; border-color: #6483e6 !important; }
+.gradio-container #method-nlp {
     opacity: 1 !important;
     background: #f5f7fa !important;
     border: 1px solid #e1e6ed !important;
     color: #6d788b !important;
     cursor: not-allowed;
 }
-.gradio-container main > .column > .row > button:disabled::after {
+.gradio-container #method-nlp::after {
     content: 'Coming soon';
     color: #737f90;
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0;
 }
-.gradio-container main > .column > button.primary {
+.gradio-container #process-button {
     min-height: 52px;
     border-radius: 11px;
     border: 1px solid #315de8 !important;
@@ -185,11 +184,11 @@ body, gradio-app { background: var(--patent-bg) !important; }
     box-shadow: 0 4px 10px #315de81a;
     transition: background .2s;
 }
-.gradio-container main > .column > button.primary::after { content: '  →'; padding-left: 7px; }
-.gradio-container main > .column > button.primary:hover { background: #244bcc !important; }
-.gradio-container main > .column > .row + .block .prose p { color: #718096; font-size: 11px; line-height: 1.75; }
-.gradio-container main > .column > button.primary + .block { padding: 6px 0 6px 12px !important; border-left: 2px solid #c9d6f8 !important; min-height: 34px; }
-.gradio-container main > .column > button.primary + .block .prose p { color: #5b6980; font-size: 12px; line-height: 1.7; }
+.gradio-container #process-button::after { content: '  →'; padding-left: 7px; }
+.gradio-container #process-button:hover { background: #244bcc !important; }
+.gradio-container #research-disclosure .prose p { color: #718096; font-size: 11px; line-height: 1.75; }
+.gradio-container #process-status { padding: 6px 0 6px 12px !important; border-left: 2px solid #c9d6f8 !important; min-height: 34px; }
+.gradio-container #process-status .prose p { color: #5b6980; font-size: 12px; line-height: 1.7; }
 .gradio-container .block:has(> .label) { border-radius: 14px !important; border-color: #dce3ed !important; background: #fff !important; }
 .gradio-container .block:has(> .label) .prose p { color: #66748b; font-size: 13px; line-height: 1.7; }
 .gradio-container .prose a { color: #315de8 !important; text-underline-offset: 4px; }
@@ -229,7 +228,7 @@ body, gradio-app { background: var(--patent-bg) !important; }
     .prose h1 + p { font-size: 13px !important; }
     .upload-container { height: 265px !important; min-height: 265px; }
     .block:has(> [data-testid="block-label"]) { min-height: 265px; }
-    .row:has(> button.primary) { flex-direction: column; }
+    #method-options { flex-direction: column; }
     .row > button { width: 100%; min-height: 115px; padding: 22px; }
     .tabs { padding: 6px 12px 12px; }
     [role="tablist"] { gap: 9px; }
@@ -239,4 +238,51 @@ body, gradio-app { background: var(--patent-bg) !important; }
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation: none !important; transition: none !important; }
     .patent-progress[aria-busy="true"] .patent-progress__fill { width: 100%; opacity: .6; }
+}
+
+/* Explicit neutral method state; only the selected card uses the blue treatment. */
+.gradio-container #method-agents.secondary {
+    background: #fff !important; border: 1px solid #d9e1ec !important; color: #263346 !important;
+}
+.gradio-container #method-agents.secondary:hover { border-color: #7896e9 !important; background: #f8faff !important; }
+.gradio-container #process-button:disabled { opacity: 1; background: #e7ecf5 !important; border-color: #e0e6ef !important; color: #6e7c92 !important; box-shadow: none; }
+.gradio-container #reconnect-chatgpt { width: auto; align-self: flex-start; min-height: 40px; padding: 9px 16px; font-size: 13px; color: #315de8 !important; background: #f0f4ff !important; border: 1px solid #d5dff8 !important; }
+/* Override table colors explicitly, including when the visitor prefers dark mode. */
+.gradio-container #patent-upload:has(.file-preview-holder) { padding: 19px 20px 17px !important; }
+.gradio-container #patent-upload:has(.file-preview-holder) > [data-testid="block-label"] { position: static !important; margin: 0 30px 13px 0 !important; }
+.gradio-container #patent-upload .file-preview-holder { background: transparent !important; padding: 0 !important; border: 0 !important; }
+.gradio-container #patent-upload :is(table, tbody, tr, td) { background: #f2f5fb !important; color: #263346 !important; border: 0 !important; }
+.gradio-container #patent-upload table { border-collapse: separate; border-spacing: 0; border-radius: 11px; overflow: hidden; }
+.gradio-container #patent-upload td { padding: 17px 15px !important; font-size: 13px; }
+.gradio-container #patent-upload :is(.filename, .stem, .ext) { color: #263346 !important; }
+.gradio-container #patent-upload .download-link { color: #315de8 !important; font-size: 12px; white-space: nowrap; }
+.gradio-container #patent-upload button[aria-label="Clear"] { background: #fff !important; color: #64748b !important; border-radius: 9px; }
+/* Gradio Column overlay; it is absent until the user chooses AI agents. */
+.gradio-container #login-modal {
+    position: fixed !important; inset: 0 !important; z-index: 10000 !important;
+    width: 100vw !important; height: 100dvh !important; max-width: none !important;
+    min-width: 0 !important; margin: 0 !important; padding: 24px !important;
+    align-items: center; justify-content: center; overflow-y: auto;
+    background: #17203366 !important; backdrop-filter: blur(7px);
+}
+.gradio-container #login-card {
+    position: relative; flex: 0 0 auto; width: min(440px, 100%); min-width: 0 !important;
+    gap: 19px; padding: 38px 30px 25px !important; border: 1px solid #dce4ef;
+    border-radius: 20px; background: #fff !important; color: #17202d !important;
+    box-shadow: 0 24px 100px #16233c30;
+}
+.gradio-container #login-card h2 { color: #17202d !important; font-size: 27px !important; font-weight: 600 !important; line-height: 1.2; letter-spacing: -.8px; margin: 9px 0 15px !important; }
+.gradio-container #login-description { color: #5c6a80 !important; font-size: 14px; line-height: 1.7; }
+.gradio-container #close-login { position: absolute; top: 12px; right: 12px; z-index: 1; width: 34px; min-width: 34px; min-height: 34px; padding: 0; border: 0; background: #f3f6fa !important; color: #526178 !important; }
+.gradio-container #login-status { padding: 16px !important; border: 1px solid #dce5f6 !important; border-radius: 11px; background: #f4f7fd !important; }
+.gradio-container #login-status .prose { color: #34445e !important; font-size: 13px; line-height: 1.75; }
+.gradio-container #login-status strong { color: #17202d !important; }
+.gradio-container #connect-chatgpt { min-height: 48px; background: #315de8 !important; color: #fff !important; border: 1px solid #315de8 !important; border-radius: 10px; font-size: 14px; }
+.gradio-container #connect-chatgpt:disabled { background: #e7ecf5 !important; color: #526178 !important; border-color: #dbe3ef !important; opacity: 1; }
+.gradio-container #login-note p { color: #6c7a8e !important; font-size: 11px; line-height: 1.6; }
+@media (max-width: 640px) {
+    #login-modal { padding: 16px !important; }
+    #login-card { padding: 36px 22px 23px !important; }
+    #patent-upload:has(.file-preview-holder) { min-height: 0 !important; padding: 17px 13px !important; }
+    #patent-upload td { padding: 15px 10px !important; }
 }

@@ -62,7 +62,7 @@ The host clears this run's patent collection on success, failure or cancellation
 
 SysML export is deterministic: nested actions for the function hierarchy and directed item flows with generic `FlowItem` payloads. Claims/interfaces remain documentation, not formal requirements or complete physical simulation semantics. The pinned SysIDE Legacy 0.9.1 language server checks the generated file against its 2024-12 grammar/library. This is a useful parser and semantic check, not certification against the final SysML 2.0 standard. Parser errors or unavailable validation prevent a successful generated export.
 
-The three Gradio tabs remain Diagram, JSON text, and SysML download. A research ZIP download is inside the JSON tab. The uploader accepts patent HTML (.html or .htm) only. JSON is available as an output download and cannot be uploaded as input.
+The Gradio interface reveals methods after upload and requires an explicit selection before exposing Process. AI agents opens a session-specific sign-in popup, which closes after connection. Results are revealed after processing; the three tabs remain Diagram, JSON text, and SysML download. A research ZIP download is inside the JSON tab. The uploader accepts patent HTML (.html or .htm) only. JSON is available as an output download and cannot be uploaded as input.
 
 ## Research record and persistence
 

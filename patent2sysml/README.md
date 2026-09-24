@@ -16,7 +16,7 @@ short_description: Turn patent HTML into diagrams, JSON, and SysML
 
 [Open the app](https://huggingface.co/spaces/cmuchancel/patent2sysml) · [Workflow](ARCHITECTURE.md) · [Research record](RESEARCH_RECORD.md)
 
-A simple Gradio interface for your teammate's [Info-extraction](https://github.com/eandujar09/Info-extraction) agents, pinned at `848d0337cce01bebc620da4a2b3d873c16ffb326`. Upload patent HTML, connect ChatGPT, then click **Process**. The three output tabs show a diagram, JSON, and a downloadable SysML file. Fine Tuned NLP remains disabled.
+A simple Gradio interface for your teammate's [Info-extraction](https://github.com/eandujar09/Info-extraction) agents, pinned at `848d0337cce01bebc620da4a2b3d873c16ffb326`. Upload patent HTML, choose **AI agents**, connect ChatGPT in the sign-in popup, then click **Process**. No method is selected automatically. The popup closes on successful sign-in, and output tabs appear after processing. The three output tabs show a diagram, JSON, and a downloadable SysML file. Fine Tuned NLP remains disabled.
 
 The pipeline keeps the five fixed textbook queries, adds patent-specific questions, drafts a model, independently reviews it, and allows one repair pass followed by re-review. Unsupported unresolved items and dependent connections are omitted from the final model. Full findings, drafts and removal explanations stay in the private research archive. The JSON tab also downloads that complete ZIP.
 
@@ -46,7 +46,7 @@ The parser is pinned to open-source SysIDE Legacy 0.9.1 and its 2024-12 library.
 
 | File | Purpose |
 | --- | --- |
-| `agent_app.py`, `styles.css` | Simple Gradio layout and styling. |
+| `agent_app.py`, `ui_workflow.py`, `ui_dialog.js`, `styles.css` | Gradio processing, progressive controls, accessible sign-in popup, and styling. |
 | `workflow.py` | Fixed questions, new agent instructions, retrieval budgets. |
 | `agent_runner.py` | Configure/launch agents, enforce completion, cleanup and exports. |
 | `workspace_mcp.py`, `quality.py` | Draft/review/repair gates and final omission rules. |
