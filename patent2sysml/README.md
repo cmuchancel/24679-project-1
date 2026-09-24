@@ -14,7 +14,7 @@ short_description: Turn patent HTML into diagrams, JSON, and SysML
 
 # Translate patents to SysML v2
 
-[Open the app](https://huggingface.co/spaces/cmuchancel/patent2sysml) · [Workflow](ARCHITECTURE.md) · [Research record](RESEARCH_RECORD.md)
+[Open the app](https://huggingface.co/spaces/cmuchancel/patent2sysml) · [Live agent flow diagram](AGENT_FLOW.md) · [Repository workflow](ARCHITECTURE.md) · [Research record](RESEARCH_RECORD.md)
 
 A simple Gradio interface for your teammate's [Info-extraction](https://github.com/eandujar09/Info-extraction) agents, pinned at `848d0337cce01bebc620da4a2b3d873c16ffb326`. Upload patent HTML, choose **AI agents**, connect ChatGPT in the sign-in popup, then click **Process**. No method is selected automatically. The popup closes on successful sign-in, and output tabs appear after processing. The three output tabs show a diagram, JSON, and a downloadable SysML file. Fine Tuned NLP remains disabled.
 
