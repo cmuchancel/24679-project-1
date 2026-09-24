@@ -187,6 +187,11 @@ body, gradio-app { background: var(--patent-bg) !important; }
 .gradio-container #process-button::after { content: '  →'; padding-left: 7px; }
 .gradio-container #process-button:hover { background: #244bcc !important; }
 .gradio-container #research-disclosure .prose p { color: #718096; font-size: 11px; line-height: 1.75; }
+/* Unframed Markdown must not inherit Gradio's rounded overflow clipping. */
+.gradio-container :is(#research-disclosure, #login-note, #process-status) {
+    border-radius: 0 !important; overflow: visible !important;
+}
+.gradio-container #research-disclosure { padding: 3px 4px !important; }
 .gradio-container #process-status { padding: 6px 0 6px 12px !important; border-left: 2px solid #c9d6f8 !important; min-height: 34px; }
 .gradio-container #process-status .prose p { color: #5b6980; font-size: 12px; line-height: 1.7; }
 .gradio-container .block:has(> .label) { border-radius: 14px !important; border-color: #dce3ed !important; background: #fff !important; }
@@ -254,7 +259,17 @@ body, gradio-app { background: var(--patent-bg) !important; }
 .gradio-container #patent-upload td { padding: 17px 15px !important; font-size: 13px; }
 .gradio-container #patent-upload :is(.filename, .stem, .ext) { color: #263346 !important; }
 .gradio-container #patent-upload .download-link { color: #315de8 !important; font-size: 12px; white-space: nowrap; }
-.gradio-container #patent-upload button[aria-label="Clear"] { background: #fff !important; color: #64748b !important; border-radius: 9px; }
+.gradio-container #patent-upload .icon-button-wrapper {
+    top: 10px !important; right: 10px !important; padding: 0 !important;
+    border: 0 !important; border-radius: 9px !important;
+    background: transparent !important; box-shadow: none !important;
+}
+.gradio-container #patent-upload button[aria-label="Clear"] {
+    display: grid; place-items: center; width: 28px; height: 28px;
+    margin: 0 !important; padding: 6px !important;
+    background: #f3f6fa !important; color: #64748b !important; border-radius: 9px;
+}
+.gradio-container #patent-upload button[aria-label="Clear"] > div { width: 16px; height: 16px; }
 /* Gradio Column overlay; it is absent until the user chooses AI agents. */
 .gradio-container #login-modal {
     position: fixed !important; inset: 0 !important; z-index: 10000 !important;
