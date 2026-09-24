@@ -1,0 +1,19 @@
+FROM python:3.12-slim
+
+RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certificates git graphviz unzip \
+    && rm -rf /var/lib/apt/lists/*
+RUN useradd -m -u 1000 app
+WORKDIR /app
+COPY requirements-agents.txt .
+RUN pip install --no-cache-dir -r requirements-agents.txt
+RUN mkdir -p /app && chown app:app /app
+USER app
+ENV PATH="/home/app/.opencode/bin:${PATH}" \
+    GRADIO_SERVER_NAME="0.0.0.0" \
+    GRADIO_SERVER_PORT="7860" \
+    GRADIO_ANALYTICS_ENABLED="False"
+RUN curl -fsSL https://opencode.ai/v2/install -o /tmp/install-opencode.sh \
+    && bash /tmp/install-opencode.sh --version 2.0.16 --no-modify-path
+COPY --chown=app:app . .
+EXPOSE 7860
+CMD ["python", "agent_app.py"]

@@ -1,0 +1,28 @@
+/* Keep visual changes here. These IDs are set in app.py. */
+.gradio-container {
+    max-width: 1100px !important;
+    margin: auto;
+}
+
+#diagram {
+    overflow: auto;
+    padding: 24px;
+}
+
+#diagram svg {
+    max-width: 100%;
+    height: auto;
+}
+
+#diagram text,
+#diagram .edge polygon {
+    fill: var(--body-text-color);
+}
+
+#diagram .node path,
+#diagram .edge path,
+#diagram .edge polygon {
+    stroke: var(--body-text-color);
+}
+
+/* Future styling hooks: #controls, #process-button, #status */
