@@ -1,9 +1,12 @@
 from __future__ import annotations
 
+from contextlib import contextmanager
 import importlib.metadata
 import json
 import logging
 import math
+import os
+import shutil
 import signal
 import time
 from datetime import datetime, timezone
@@ -44,6 +47,61 @@ def validate_rows(rows, name):
                 raise ValueError(f"Invalid entity span or label in {name} row {index}")
 
 
+
+def relex_entity_rows(rows):
+    """Adapt entity annotations without inventing relationship supervision."""
+    if any(row.get("relations") for row in rows):
+        raise ValueError("This entity-only run cannot discard supplied relationship annotations")
+    return [{**row, "ner_labels": list(row["label"]), "relations": [], "rel_labels": []} for row in rows]
+
+
+def export_best_checkpoint(checkpoint, destination):
+    """Expose an inference checkpoint without duplicating multi-GB weights."""
+    destination.mkdir(parents=True, exist_ok=True)
+    for source in checkpoint.iterdir():
+        if not source.is_file() or source.name in {"optimizer.pt", "scheduler.pt", "training_args.bin", "trainer_state.json", "rng_state.pth"}:
+            continue
+        target = destination / source.name
+        if target.exists():
+            target.unlink()
+        try:
+            os.link(source, target)
+        except OSError:
+            shutil.copyfile(source, target)
+
+
+@contextmanager
+def stable_validation(model, seed, device):
+    """Keep held-out labels intact and evaluate the same examples every time."""
+    import random
+    import numpy as np
+    import torch
+    python_rng, numpy_rng, cpu_rng = random.getstate(), np.random.get_state(), torch.get_rng_state()
+    mps_rng = torch.mps.get_rng_state() if device == "mps" else None
+    cuda_rng = torch.cuda.get_rng_state_all() if device == "cuda" else None
+    configs = {id(c): c for c in (model.config, model.data_processor.config)}.values()
+    prior = [(config, getattr(config, "augment_data_prob", None)) for config in configs]
+    try:
+        for config, _ in prior:
+            config.augment_data_prob = 0.0
+        random.seed(seed)
+        np.random.seed(seed)
+        torch.manual_seed(seed)
+        yield
+    finally:
+        for config, value in prior:
+            if value is None:
+                delattr(config, "augment_data_prob")
+            else:
+                config.augment_data_prob = value
+        random.setstate(python_rng)
+        np.random.set_state(numpy_rng)
+        torch.set_rng_state(cpu_rng)
+        if mps_rng is not None:
+            torch.mps.set_rng_state(mps_rng)
+        if cuda_rng is not None:
+            torch.cuda.set_rng_state_all(cuda_rng)
+
 def train_gliner(
     train_path: Path,
     validation_path: Path,
@@ -64,6 +122,9 @@ def train_gliner(
     patience: int = 5,
     seed: int = 42,
     resume_from_checkpoint: str | None = None,
+    optimizer: str = "adamw_torch",
+    gradient_checkpointing: bool = False,
+    mps_memory_fraction: float | None = None,
 ):
     """Eladio's GLiNER objective with GPU selection, checkpointing and early stopping.
 
@@ -86,6 +147,10 @@ def train_gliner(
         raise ValueError("Output directory is not empty. Use a new directory or explicitly resume a checkpoint.")
     output_dir.mkdir(parents=True, exist_ok=True)
     selected_device = choose_device(torch, device)
+    if mps_memory_fraction is not None:
+        if selected_device != "mps" or not 0 < mps_memory_fraction <= 1:
+            raise ValueError("MPS memory fraction requires MPS and a value in (0, 1]")
+        torch.mps.set_per_process_memory_fraction(mps_memory_fraction)
     train_data, validation_data = load_json(train_path), load_json(validation_path)
     validate_rows(train_data, "train")
     validate_rows(validation_data, "validation")
@@ -102,6 +167,8 @@ def train_gliner(
         "data_sha256": {name: hashlib.sha256(Path(path).read_bytes()).hexdigest()
                         for name, path in [("train", train_path), ("validation", validation_path)]},
         "packages": {name: importlib.metadata.version(name) for name in ["gliner", "torch", "transformers", "accelerate"]},
+        "optimizer": optimizer, "gradient_checkpointing": gradient_checkpointing,
+        "mps_memory_fraction": mps_memory_fraction,
         "task": "SysML entity tagging; patent knowledge-graph extraction is a separate downstream stage",
     }
     started = time.monotonic()
@@ -115,8 +182,9 @@ def train_gliner(
 
         def on_step_end(self, args, trainer_state, control, **kwargs):
             elapsed = time.monotonic() - started
-            if state["stop_requested"] or elapsed >= max_hours * 3600:
-                state["stop_reason"] = "requested_stop" if state["stop_requested"] else "time_budget"
+            disk_low = shutil.disk_usage(output_dir).free < metadata.get("checkpoint_reserve_bytes", 0)
+            if state["stop_requested"] or elapsed >= max_hours * 3600 or disk_low:
+                state["stop_reason"] = "requested_stop" if state["stop_requested"] else "disk_space" if disk_low else "time_budget"
                 control.should_training_stop = True
                 control.should_save = True
                 control.should_evaluate = True
@@ -155,6 +223,28 @@ def train_gliner(
         set_seed(seed)
         load_kwargs = {"revision": base_revision} if base_revision else {}
         model = GLiNER.from_pretrained(base_model, **load_kwargs)
+        relation_modules = {}
+        if hasattr(model.config, "rel_token_index"):
+            # RelEx uses explicit ner_labels rather than the small model's label key.
+            # With no relation annotations, supply NO relation prompts or targets;
+            # do not train missing annotations as negative relation examples.
+            train_data = relex_entity_rows(train_data)
+            validation_data = relex_entity_rows(validation_data)
+            for name in ("pair_rep_layer", "triples_score_layer", "relations_rep_layer"):
+                component = getattr(model.model, name, None)
+                if component is not None:
+                    component.requires_grad_(False)
+                    relation_modules[name] = component
+            metadata["relation_supervision"] = "none; relation-specific layers frozen, shared encoder adapted"
+            metadata["frozen_relation_layers"] = list(relation_modules)
+        if gradient_checkpointing:
+            encoder = model.model.token_rep_layer.bert_layer.model
+            encoder.gradient_checkpointing_enable(gradient_checkpointing_kwargs={"use_reentrant": False})
+        metadata["parameters"] = sum(p.numel() for p in model.parameters())
+        metadata["trainable_parameters"] = sum(p.numel() for p in model.parameters() if p.requires_grad)
+        # Reserve room for one full new checkpoint plus an emergency margin.
+        # Best-model export reuses its checkpoint's weights without a second copy.
+        metadata["checkpoint_reserve_bytes"] = metadata["parameters"] * 4 + 1_500_000_000
         has_cuda = selected_device == "cuda"
         args = model.create_training_args(
             output_dir=str(output_dir), max_steps=max_steps,
@@ -168,11 +258,17 @@ def train_gliner(
             load_best_model_at_end=True, metric_for_best_model="eval_loss", greater_is_better=False,
             logging_steps=1, report_to="none", seed=seed, data_seed=seed,
             remove_unused_columns=False, prediction_loss_only=True,
-            disable_tqdm=True,
+            disable_tqdm=True, optim=optimizer,
         )
         if args.device.type != selected_device:
             raise RuntimeError(f"Trainer selected {args.device}, expected {selected_device}")
-        trainer = Trainer(
+        class ValidationTrainer(Trainer):
+            def evaluate(self, *args, **kwargs):
+                with stable_validation(self.model, seed, selected_device):
+                    return super().evaluate(*args, **kwargs)
+
+        metadata["validation_augmentation"] = False
+        trainer = ValidationTrainer(
             model=model, args=args, train_dataset=train_data, eval_dataset=validation_data,
             data_collator=model._create_data_collator(),
             processing_class=model.data_processor.transformer_tokenizer,
@@ -183,7 +279,10 @@ def train_gliner(
         write_json(output_dir / "baseline-validation.json", baseline)
         result = trainer.train(resume_from_checkpoint=resume_from_checkpoint)
         # load_best_model_at_end restores the best validation checkpoint before this save.
-        trainer.save_model(str(output_dir / "best"))
+        if trainer.state.best_model_checkpoint:
+            export_best_checkpoint(Path(trainer.state.best_model_checkpoint), output_dir / "best")
+        else:
+            trainer.save_model(str(output_dir / "best"))
         trainer.save_state()
         metadata.update(status="completed", finished_at=datetime.now(timezone.utc).isoformat(),
                         elapsed_seconds=time.monotonic() - started, steps=trainer.state.global_step,

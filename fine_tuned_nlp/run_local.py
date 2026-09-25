@@ -25,9 +25,20 @@ def main():
     parser.add_argument('--run-dir', type=Path, required=True)
     parser.add_argument('--hours', type=float, default=8)
     parser.add_argument('--device', choices=['mps', 'cuda'], default='mps')
+    parser.add_argument('--deadline', help='Absolute UTC/offset timestamp; caps the requested hours')
+    parser.add_argument('--base-model', default='gliner-community/gliner_small-v2.5')
+    parser.add_argument('--base-revision')
+    parser.add_argument('--optimizer', choices=['adamw_torch', 'adafactor'], default='adamw_torch')
+    parser.add_argument('--gradient-checkpointing', action='store_true')
+    parser.add_argument('--mps-memory-fraction', type=float)
     args = parser.parse_args()
+    if args.deadline:
+        deadline = datetime.fromisoformat(args.deadline.replace('Z', '+00:00'))
+        if deadline.tzinfo is None:
+            raise ValueError('deadline must include a timezone')
+        args.hours = min(args.hours, (deadline - datetime.now(timezone.utc)).total_seconds() / 3600)
     if args.hours <= 0:
-        raise ValueError('hours must be positive')
+        raise ValueError('No time remains before the training deadline')
     root = args.run_dir.resolve()
     root.mkdir(parents=True, exist_ok=False)
     started = time.monotonic()
@@ -43,12 +54,18 @@ def main():
     # Reserve five minutes for final saves and any deadline grace.
     train_hours = max(args.hours - 5 / 60, args.hours * 0.9)
     command = [sys.executable, '-u', '-m', 'sysml_gliner.cli', 'train', str(root / 'source/data'), str(root / 'model'),
-               '--base-revision', 'f227d3cd637bd4e6757ae143935316d062393341', '--device', args.device,
+               '--base-model', args.base_model, '--device', args.device, '--optimizer', args.optimizer,
                '--max-steps', '3000', '--train-batch-size', '1', '--eval-batch-size', '1',
                '--gradient-accumulation-steps', '8', '--eval-steps', '25', '--patience', '5',
                '--max-hours', str(train_hours), '--no-bf16']
+    if args.base_revision:
+        command += ['--base-revision', args.base_revision]
+    if args.gradient_checkpointing:
+        command.append('--gradient-checkpointing')
+    if args.mps_memory_fraction is not None:
+        command += ['--mps-memory-fraction', str(args.mps_memory_fraction)]
     status = {'status': 'starting', 'supervisor_pid': os.getpid(), 'started_at': datetime.now(timezone.utc).isoformat(),
-              'hard_limit_seconds': args.hours * 3600, 'device': args.device, 'command': command}
+              'hard_limit_seconds': args.hours * 3600, 'deadline': args.deadline, 'device': args.device, 'command': command}
     write(root / 'supervisor.json', status)
     wake = None
     if sys.platform == 'darwin':

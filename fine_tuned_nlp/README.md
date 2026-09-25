@@ -117,6 +117,8 @@ sysml-gliner train ./data ./models/gliner-sysml-v1 \
 
 On a GPU without BF16 support, add `--no-bf16`. On an Apple Silicon Mac, use `--device mps --no-bf16 --train-batch-size 1 --eval-batch-size 1 --gradient-accumulation-steps 8`. The trainer stops early after a validation plateau and exports the best checkpoint under the output directory's `best/` folder. See [TRAINING_NOTES.md](TRAINING_NOTES.md) for the supervised eight-hour ceiling and the downstream patent/knowledge-graph scope.
 
+The trainer also supports `knowledgator/gliner-relex-large-v1.0` with the same entity annotations. Use `--optimizer adafactor --gradient-checkpointing --mps-memory-fraction 0.6` for the tested 16 GB M1 Pro configuration, alongside the Apple Silicon options above. RelEx keeps its joint inference API, but this dataset does not supervise relationships. Validation label augmentation is disabled so early stopping compares consistent held-out data. The supervised command and pinned model revision are in [TRAINING_NOTES.md](TRAINING_NOTES.md).
+
 ## Evaluate
 
 ```bash

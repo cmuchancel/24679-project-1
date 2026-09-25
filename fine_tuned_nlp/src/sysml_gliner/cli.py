@@ -39,6 +39,9 @@ def main() -> int:
     p_train.add_argument("--eval-steps", type=int, default=25)
     p_train.add_argument("--patience", type=int, default=5)
     p_train.add_argument("--resume-from-checkpoint")
+    p_train.add_argument("--optimizer", choices=["adamw_torch", "adafactor"], default="adamw_torch")
+    p_train.add_argument("--gradient-checkpointing", action="store_true")
+    p_train.add_argument("--mps-memory-fraction", type=float)
 
     p_eval = sub.add_parser("evaluate", help="Evaluate a GLiNER checkpoint on the tokenized test split")
     p_eval.add_argument("model")
@@ -72,7 +75,8 @@ def main() -> int:
             bf16=not args.no_bf16, base_revision=args.base_revision, device=args.device,
             gradient_accumulation_steps=args.gradient_accumulation_steps,
             max_hours=args.max_hours, eval_steps=args.eval_steps, patience=args.patience,
-            resume_from_checkpoint=args.resume_from_checkpoint,
+            resume_from_checkpoint=args.resume_from_checkpoint, optimizer=args.optimizer,
+            gradient_checkpointing=args.gradient_checkpointing, mps_memory_fraction=args.mps_memory_fraction,
         )
     elif args.command == "evaluate":
         print(json.dumps(evaluate_model(args.model, args.test, args.labels, args.threshold), indent=2))
