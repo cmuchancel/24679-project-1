@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: sysml-gliner
+Version: 0.1.0
+Summary: Weakly supervised SysML-to-GLiNER fine-tuning pipeline
+Requires-Python: >=3.10
+Provides-Extra: train
+Requires-Dist: gliner[training]<0.3,>=0.2.29; extra == "train"
+Requires-Dist: torch>=2.0.0; extra == "train"
+Requires-Dist: transformers<5.17.0,>=4.51.3; extra == "train"
+Provides-Extra: dev
+Requires-Dist: pytest<9,>=8; extra == "dev"

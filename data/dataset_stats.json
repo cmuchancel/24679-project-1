@@ -1,0 +1,73 @@
+{
+  "documents": 25,
+  "errors": 0,
+  "seed": 42,
+  "max_tokens_per_example": 384,
+  "splits": {
+    "train": {
+      "documents": 21,
+      "examples": 54,
+      "labels": {
+        "port definition": 37,
+        "attribute": 361,
+        "part definition": 312,
+        "port": 102,
+        "port definition reference": 102,
+        "item flow": 31,
+        "part usage": 334,
+        "part definition reference": 334,
+        "interface definition": 10,
+        "requirement": 8,
+        "package": 23,
+        "state": 7,
+        "action": 55,
+        "constraint": 5
+      }
+    },
+    "validation": {
+      "documents": 2,
+      "examples": 5,
+      "labels": {
+        "package": 2,
+        "constraint": 1,
+        "part definition": 6,
+        "attribute": 9,
+        "port definition": 6,
+        "interface definition": 1,
+        "item flow": 3,
+        "port": 6,
+        "port definition reference": 6,
+        "action": 6,
+        "state": 3,
+        "part usage": 45,
+        "part definition reference": 45
+      }
+    },
+    "test": {
+      "documents": 2,
+      "examples": 3,
+      "labels": {
+        "package": 2,
+        "item flow": 17,
+        "action": 15,
+        "state": 4
+      }
+    }
+  },
+  "labels": [
+    "package",
+    "part definition",
+    "port definition",
+    "interface definition",
+    "requirement",
+    "constraint",
+    "attribute",
+    "action",
+    "state",
+    "item flow",
+    "port",
+    "part usage",
+    "port definition reference",
+    "part definition reference"
+  ]
+}

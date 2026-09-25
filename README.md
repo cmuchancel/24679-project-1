@@ -1,11 +1,146 @@
-# Project 1: Patent to SysML
+# SysML → GLiNER fine-tuning pipeline
 
-This repository contains the patent inputs and the `patent2sysml` agent application.
+This project wraps the provided SysML/SJS translator with a weak-supervision layer that:
 
-- [Patent HTML inputs](source-html/): 100 original mechanical utility patent pages.
-- [Application code and setup](patent2sysml/): the minimal Gradio app, OpenCode launcher, retrieval tools, and JSON-to-SysML exporter.
-- [Live agent flow diagram](patent2sysml/AGENT_FLOW.md): the three-agent SJS workflow, evidence retrieval, review/repair loop, and downstream SysML translation.
-- [Repository implementation details](patent2sysml/ARCHITECTURE.md): tool responsibilities, output checks, and limitations for the checked-in application.
-- [Running Hugging Face app](https://huggingface.co/spaces/cmuchancel/patent2sysml).
+1. recursively ingests `.sysml`/`.sysml2` files;
+2. runs the translator so invalid models are quarantined;
+3. extracts exact source spans for a configurable SysML entity ontology;
+4. removes embedded `@sjs {...}` payloads from weak labeling by default to reduce label leakage while preserving offsets;
+5. converts character spans to GLiNER `tokenized_text` + `ner` examples;
+6. splits by top-level project directory when possible;
+7. fine-tunes GLiNER with its current `train_model()` API.
 
-The live app uses an orchestrator, a functional decomposer, and a quality reviewer. Its primary result is SJS; ordinary code then produces SysML and a diagram. The [live agent flow](patent2sysml/AGENT_FLOW.md) identifies the verified deployment revision; repository and deployed versions can differ. The textbook and its reusable search index are configured separately in backend storage; runtime outputs and credentials are not source files.
+## Install
+
+Use `Project1/.venv` so this package shares the tested Project 1 PyTorch and
+Transformers environment. The `train` extra pins GLiNER to the API used here
+and installs its required Accelerate integration; `dev` adds the test runner.
+
+Dataset construction only:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -e .
+```
+
+Training:
+
+```bash
+pip install -e '.[train,dev]'
+```
+
+The supported dependency window is GLiNER 0.2.29.x, PyTorch 2.x or newer, and
+Transformers 4.51.3 through 5.16.x. GLiNER's training extra supplies
+`accelerate`. After installation, verify the environment inline:
+
+```python
+import importlib.metadata
+from gliner.model import BaseEncoderGLiNER, BaseGLiNER
+
+print("gliner", importlib.metadata.version("gliner"))
+print("accelerate", importlib.metadata.version("accelerate"))
+assert hasattr(BaseGLiNER, "train_model")
+assert hasattr(BaseEncoderGLiNER, "predict_entities")
+```
+
+All project functions can be called directly from notebook or editor cells;
+the commands below are equivalent convenience entry points.
+
+For this workspace, open `fine_tune_inline.py` in an editor that supports
+`# %%` cells. It verifies the environment, builds the dataset from
+`../SysML-files`, and leaves the expensive training cell disabled by default.
+Enable `START_TRAINING` only after reviewing the split statistics and selecting
+appropriate GPU hardware.
+
+Development/tests:
+
+```bash
+pip install -e '.[dev]'
+pytest
+```
+
+## Build a dataset
+
+Assume your database is:
+
+```text
+/sysml-db/
+  project-a/*.sysml
+  project-b/*.sysml
+  project-c/*.sysml
+```
+
+Run:
+
+```bash
+sysml-gliner build-dataset /sysml-db ./data
+```
+
+Outputs:
+
+```text
+data/
+  canonical/documents.json
+  errors.json
+  dataset_stats.json
+  splits/
+    train.json
+    validation.json
+    test.json
+    *_metadata.json
+```
+
+Each GLiNER row looks like:
+
+```json
+{
+  "tokenized_text": ["part", "def", "MotorController", "{", "..."],
+  "ner": [[2, 2, "part definition"]]
+}
+```
+
+Documents are assigned to train/validation/test before being divided into
+examples of at most 384 tokens. This keeps every source document in exactly one
+split, preserves all entity spans with chunk-relative offsets, and avoids
+silent model-side truncation of the larger SysML files. Entity-free chunks keep
+the complete `label` vocabulary and serve as negative examples.
+
+## Fine-tune
+
+```bash
+sysml-gliner train ./data ./models/gliner-sysml-v1 \
+  --base-model gliner-community/gliner_small-v2.5 \
+  --max-steps 3000 \
+  --train-batch-size 8 \
+  --learning-rate 1e-5
+```
+
+On a GPU without BF16 support, add `--no-bf16`.
+
+## Evaluate
+
+```bash
+sysml-gliner evaluate ./models/gliner-sysml-v1 ./data/splits/test.json --threshold 0.5
+```
+
+## Default labels
+
+- package
+- part definition
+- part usage
+- part definition reference
+- port definition
+- port
+- port definition reference
+- interface definition
+- attribute
+- action
+- state
+- requirement
+- constraint
+- item flow
+
+## Important limitation
+
+The weak labels describe what the deterministic rules can recognize. They are not automatically a gold-standard test set. For credible model-quality claims, manually review or annotate an independent held-out test set; otherwise evaluation largely measures how closely GLiNER reproduces the teacher rules.
