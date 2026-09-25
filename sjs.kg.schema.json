@@ -1,0 +1,112 @@
+{
+  "$schema": "sjs/1.0",
+  "title": "Human-readable SJS extraction ontology",
+  "description": "The small semantic vocabulary used to turn patent text into an SJS model. Property names match the custom SJS profile rather than the OMG interchange schema.",
+  "$defs": {
+    "Subsystem": {
+      "type": "object",
+      "sjs_path": "subsystems[]",
+      "anchor_prompt": "system subsystem assembly or major component",
+      "properties": {
+        "parts": {"$comment": "sjs/Part", "entity_prompt": "physical part or component", "relation_prompt": "contains part"},
+        "ports": {"$comment": "sjs/Port", "entity_prompt": "port connector terminal or interface point", "relation_prompt": "has port"},
+        "interfaces": {"$comment": "sjs/Interface", "entity_prompt": "interface or connection", "relation_prompt": "has interface"},
+        "satisfies_requirements": {"$comment": "sjs/Requirement", "entity_prompt": "requirement or required capability", "relation_prompt": "satisfies requirement"},
+        "allocated_functions": {"$comment": "sjs/Action", "entity_prompt": "function action or operation", "relation_prompt": "performs function"}
+      }
+    },
+    "Part": {
+      "type": "object",
+      "sjs_path": "subsystems[].parts[]",
+      "anchor_prompt": "physical part component or material item",
+      "properties": {
+        "attributes": {"$comment": "sjs/Value", "entity_prompt": "measurable property characteristic or value", "relation_prompt": "has attribute"},
+        "ports": {"$comment": "sjs/Port", "entity_prompt": "port connector terminal or interface point", "relation_prompt": "has port"}
+      }
+    },
+    "Port": {
+      "type": "object",
+      "sjs_path": "subsystems[].ports[]",
+      "anchor_prompt": "port connector terminal or interface point",
+      "properties": {
+        "flow_ref": {"$comment": "sjs/ItemFlow", "entity_prompt": "flowing item energy signal or information", "relation_prompt": "carries flow"},
+        "connector_type": {"$comment": "sjs/Value", "entity_prompt": "connector interface or coupling type", "relation_prompt": "uses connector type"}
+      }
+    },
+    "Interface": {
+      "type": "object",
+      "sjs_path": "subsystems[].interfaces[]",
+      "anchor_prompt": "interface connection or coupling",
+      "properties": {
+        "port_this": {"$comment": "sjs/Port", "entity_prompt": "source port or connection endpoint", "relation_prompt": "connects from port"},
+        "port_mate": {"$comment": "sjs/Port", "entity_prompt": "destination port or connection endpoint", "relation_prompt": "connects to port"},
+        "flow_ref": {"$comment": "sjs/ItemFlow", "entity_prompt": "flowing item energy signal or information", "relation_prompt": "transfers flow"}
+      }
+    },
+    "ItemFlow": {
+      "type": "object",
+      "sjs_path": "item_flows[]",
+      "anchor_prompt": "flow of material energy signal or information",
+      "properties": {
+        "source": {"$comment": "sjs/Subsystem", "entity_prompt": "flow source component", "relation_prompt": "flows from"},
+        "target": {"$comment": "sjs/Subsystem", "entity_prompt": "flow destination component", "relation_prompt": "flows to"}
+      }
+    },
+    "Requirement": {
+      "type": "object",
+      "sjs_path": "requirements[]",
+      "anchor_prompt": "requirement required capability or mandatory condition",
+      "properties": {
+        "satisfied_by": {"$comment": "sjs/Subsystem", "entity_prompt": "component or function satisfying a requirement", "relation_prompt": "is satisfied by"},
+        "verified_by": {"$comment": "sjs/VerificationCase", "entity_prompt": "test analysis or verification method", "relation_prompt": "is verified by"}
+      }
+    },
+    "Action": {
+      "type": "object",
+      "sjs_path": "behaviour.actions[]",
+      "anchor_prompt": "function action operation or process step",
+      "properties": {
+        "owner": {"$comment": "sjs/Subsystem", "entity_prompt": "component performing an action", "relation_prompt": "is performed by"},
+        "parameters": {"$comment": "sjs/Value", "entity_prompt": "action input output or parameter", "relation_prompt": "has parameter"},
+        "preconditions": {"$comment": "sjs/Constraint", "entity_prompt": "condition required before an action", "relation_prompt": "requires precondition"},
+        "postconditions": {"$comment": "sjs/Constraint", "entity_prompt": "condition or result after an action", "relation_prompt": "produces postcondition"}
+      }
+    },
+    "StateMachine": {
+      "type": "object",
+      "sjs_path": "behaviour.state_machines[]",
+      "anchor_prompt": "operating mode state or lifecycle state",
+      "properties": {
+        "owner": {"$comment": "sjs/Subsystem", "entity_prompt": "component having an operating state", "relation_prompt": "is state of"},
+        "states": {"$comment": "sjs/State", "entity_prompt": "named operating state or mode", "relation_prompt": "contains state"},
+        "transitions": {"$comment": "sjs/Action", "entity_prompt": "state transition event or change", "relation_prompt": "has transition"}
+      }
+    },
+    "Constraint": {
+      "type": "object",
+      "sjs_path": "constraints[]",
+      "anchor_prompt": "constraint limit equation or operating condition",
+      "properties": {
+        "variables": {"$comment": "sjs/Value", "entity_prompt": "quantity parameter or variable in a constraint", "relation_prompt": "uses variable"}
+      }
+    },
+    "VerificationCase": {
+      "type": "object",
+      "sjs_path": "verification.verification_cases[]",
+      "anchor_prompt": "test inspection analysis or verification procedure",
+      "properties": {
+        "subject": {"$comment": "sjs/Subsystem", "entity_prompt": "component or behavior being verified", "relation_prompt": "verifies subject"},
+        "requirements": {"$comment": "sjs/Requirement", "entity_prompt": "requirement being verified", "relation_prompt": "verifies requirement"}
+      }
+    },
+    "Value": {
+      "type": "object",
+      "sjs_path": "values[]",
+      "anchor_prompt": "engineering quantity measurement value or parameter",
+      "properties": {
+        "source": {"$comment": "sjs/Subsystem", "entity_prompt": "component described by a value", "relation_prompt": "is value of"},
+        "unit": {"$comment": "sjs/Unit", "entity_prompt": "measurement unit", "relation_prompt": "has unit"}
+      }
+    }
+  }
+}
