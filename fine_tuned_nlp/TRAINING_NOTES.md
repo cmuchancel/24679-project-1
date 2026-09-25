@@ -13,7 +13,7 @@ Source: Eladio's commit `e708b60dea0148615e7b7b3fc0583e4f5b8f394e`.
 
 ## Confirmed experiment and Mac GPU run
 
-The user confirmed the intended sequence: fine-tune GLiNER on SysML-like entity tags, apply it to patent text to form a knowledge graph, then translate the graph to SysML. This run covers the first stage. The committed code does not yet implement patent relation extraction, graph assembly, or graph-to-SJS/SysML mapping; those downstream choices remain open.
+The user confirmed the intended sequence: fine-tune GLiNER on SysML-like entity tags, apply it to patent text to form a knowledge graph, then translate the graph to SysML. This run covers the first stage. A subsequent commit (`8b272a4`) adds a graph/SJS prototype, now under `knowledge_graph/`. It expects GLiNER RelEx large, while this fine-tuning run trains the small entity-tagging model. The missing dependencies, relation-model handoff, and SJS profile alignment are documented in [knowledge_graph/INTEGRATION.md](knowledge_graph/INTEGRATION.md).
 
 The user selected this Mac's 14-core M1 Pro GPU (16 GB shared memory). PyTorch detects it as `mps`; a two-step training/validation/checkpoint smoke test passed.
 

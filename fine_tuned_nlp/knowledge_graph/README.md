@@ -1,5 +1,8 @@
 # SJS-based patent knowledge graphs
 
+Moved from Eladio’s commit `8b272a4ee15b08e86a99e8d49187186f0388e310`.
+Run imports below from the repository root. See [integration status](INTEGRATION.md) for missing uploaded dependencies and the distinct training/graph model contracts.
+
 The active semantic contract is the compact custom SJS profile, not the large
 OMG interchange schema.  `sjs.kg.schema.json` is the human-readable extraction
 ontology: eleven passes cover systems, parts, ports, interfaces, flows,
@@ -9,8 +12,8 @@ but new patent graphs should use `SJSKnowledgeGraph`.
 
 ```python
 from patent_html import parse_patent_html
-from schema_knowledge_graph import load_model
-from sjs_knowledge_graph import SJSKnowledgeGraph, graph_from_patent
+from fine_tuned_nlp.knowledge_graph.schema_knowledge_graph import load_model
+from fine_tuned_nlp.knowledge_graph.sjs_knowledge_graph import SJSKnowledgeGraph, graph_from_patent
 
 document = parse_patent_html("GT-Patents/12648518.html")
 kg = graph_from_patent(document)
@@ -46,7 +49,7 @@ kg.export_sysml(
 For the complete patent collection, one SJS definition is still run at a time:
 
 ```python
-from sjs_knowledge_graph import run_patent_directory
+from fine_tuned_nlp.knowledge_graph.sjs_knowledge_graph import run_patent_directory
 
 for summary in run_patent_directory(model, definition="Subsystem", progress=print):
     print(summary)
@@ -60,7 +63,7 @@ discarding earlier passes.
 Run the SJS integrity checks inline with:
 
 ```python
-from sjs_knowledge_graph_checks import run_checks
+from fine_tuned_nlp.knowledge_graph.sjs_knowledge_graph_checks import run_checks
 run_checks()
 ```
 
@@ -78,7 +81,7 @@ For the saved HTML collection, open **`patent_knowledge_graph.ipynb`**. `patent_
 
 ```python
 from patent_html import parse_patent_html, graph_from_patent, run_patent_directory
-from schema_knowledge_graph import load_model
+from fine_tuned_nlp.knowledge_graph.schema_knowledge_graph import load_model
 
 document = parse_patent_html("GT-Patents/12648518.html")
 kg = graph_from_patent(document)  # feeds document["text"] into SchemaKnowledgeGraph
@@ -98,7 +101,7 @@ for summary in run_patent_directory(model, definition="AcceptActionUsage", progr
 Parser and integration checks are available as `from patent_html_checks import run_checks; run_checks()` in a notebook cell. These check all 25 source files as well as text normalization, exact section offsets, metadata retention, batch output/resume, subsequent passes, and changed-source detection.
 
 ```python
-from schema_knowledge_graph import SchemaKnowledgeGraph, load_model
+from fine_tuned_nlp.knowledge_graph.schema_knowledge_graph import SchemaKnowledgeGraph, load_model
 
 kg = SchemaKnowledgeGraph(cleaned_text)
 model = load_model()  # existing local GLiNER RelEx checkpoint, offline, CPU

@@ -13,7 +13,7 @@ from pathlib import Path
 import re
 from typing import Callable
 
-from schema_knowledge_graph import ROOT, SchemaKnowledgeGraph
+from .schema_knowledge_graph import ROOT, SchemaKnowledgeGraph
 
 
 SJS_SCHEMA = ROOT / "sjs.kg.schema.json"

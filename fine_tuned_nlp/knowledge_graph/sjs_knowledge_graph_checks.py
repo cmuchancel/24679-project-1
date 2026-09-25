@@ -5,7 +5,7 @@ import re
 import tempfile
 from types import SimpleNamespace
 
-from sjs_knowledge_graph import SJSKnowledgeGraph
+from .sjs_knowledge_graph import SJSKnowledgeGraph
 
 
 class Tokenizer:

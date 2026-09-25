@@ -34,7 +34,7 @@ docs/             Agent flow, architecture and research recording
 
 The app calls `backend.service.process`. Processing methods plug in through `backend.methods.Method` and their `adapter.py`. The agent method produces approved SJS with evidence; ordinary code then translates, checks and renders it. The orchestrator, decomposer and independent reviewer are unchanged from the three-agent pipeline used for the 100-patent study. Prompts, retrieval budgets, targeted repairs and review gates are preserved.
 
-**NLP status:** Eladio's committed pipeline trains GLiNER to label entities in existing SysML text. Its trainer, data and evaluation are in `fine_tuned_nlp/`. It is not yet a patent-to-SJS extractor, so the NLP option stays unavailable in the patent UI until that adapter can return a complete SJS model.
+**NLP status:** Eladio's committed pipeline trains GLiNER to label entities in existing SysML text. Its trainer, data and evaluation are in `fine_tuned_nlp/`; the new graph/SJS prototype lives in `fine_tuned_nlp/knowledge_graph/`. The graph prototype uses a different RelEx model and still has missing uploaded dependencies, so the NLP option stays unavailable in the patent UI. See [integration status](fine_tuned_nlp/knowledge_graph/INTEGRATION.md).
 
 ## Run the app
 
