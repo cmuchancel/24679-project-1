@@ -31,6 +31,7 @@ def main():
     parser.add_argument('--optimizer', choices=['adamw_torch', 'adafactor'], default='adamw_torch')
     parser.add_argument('--gradient-checkpointing', action='store_true')
     parser.add_argument('--mps-memory-fraction', type=float)
+    parser.add_argument('--resume-from-checkpoint', type=Path)
     args = parser.parse_args()
     if args.deadline:
         deadline = datetime.fromisoformat(args.deadline.replace('Z', '+00:00'))
@@ -64,6 +65,8 @@ def main():
         command.append('--gradient-checkpointing')
     if args.mps_memory_fraction is not None:
         command += ['--mps-memory-fraction', str(args.mps_memory_fraction)]
+    if args.resume_from_checkpoint:
+        command += ['--resume-from-checkpoint', str(args.resume_from_checkpoint.resolve())]
     status = {'status': 'starting', 'supervisor_pid': os.getpid(), 'started_at': datetime.now(timezone.utc).isoformat(),
               'hard_limit_seconds': args.hours * 3600, 'deadline': args.deadline, 'device': args.device, 'command': command}
     write(root / 'supervisor.json', status)

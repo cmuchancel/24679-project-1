@@ -279,6 +279,7 @@ def train_gliner(
             dataloader_pin_memory=has_cuda, eval_strategy="steps", eval_steps=eval_steps,
             save_strategy="steps", save_steps=eval_steps, save_total_limit=2,
             load_best_model_at_end=True, metric_for_best_model="eval_loss", greater_is_better=False,
+            restore_callback_states_from_checkpoint=True,
             logging_steps=1, report_to="none", seed=seed, data_seed=seed,
             remove_unused_columns=False, prediction_loss_only=True,
             disable_tqdm=True, optim=optimizer,

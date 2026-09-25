@@ -48,6 +48,18 @@ When switching within an existing budget, also pass `--deadline` with the origin
 
 `model/best/` contains the selected model at completion. `model/progress.json`, `model/metrics.jsonl`, `model/run.json`, `supervisor.json`, and `training.log` record progress and the stop reason. Checkpoints include optimizer state for an explicitly resumed run. To request a clean stop, send TERM to the training PID recorded in `supervisor.json`; the trainer saves at the next completed step.
 
+## Automatic memory-error recovery
+
+The user requested automatic recovery for GPU out-of-memory errors. `watch_local.py` can watch an active-run JSON file containing `run_dir` and an absolute `deadline`:
+
+```sh
+python fine_tuned_nlp/watch_local.py --active-run-file /absolute/path/active-nlp-run.json --max-restarts 3
+```
+
+The watchdog checks every five seconds and permits only one watcher per pointer file. It restarts failed out-of-memory runs from the newest complete checkpoint, preserving the model revision, optimizer, GPU settings and original deadline. A checkpoint must include weights, optimizer, scheduler, RNG and matching trainer state; partially written checkpoints are skipped. If none exists, recovery starts from the pinned base and records that explicitly. Each attempt gets its own output directory, and the pointer follows the new run. Checkpoints resume the original step count and restore saved early-stopping state.
+
+Recovery events and watchdog status are written to `nlp-recovery.json` next to the pointer. The app's training monitor reports new restart events and terminal errors. A clean stop, validation plateau, disk-space stop, non-memory error, exhausted retry allowance, or final five minutes of the budget does not trigger a restart. Recovery never disables the memory cap or extends the deadline.
+
 ## Evaluation limits
 
 All documents share the same project group (`default`), so the split falls back to document-level separation among related variants. This is a pilot evaluation of rule-derived labels, not independent patent extraction accuracy. The test split covers only package, item flow, action and state labels; ten of the 14 labels have no test support. Preserve the splits for reproduction and disclose those limitations. Compare each model with its own fixed validation baseline; the small and large model losses are not interchangeable. Entity-only improvement does not establish relationship or patent knowledge-graph improvement. The remaining integration requirements are documented in [knowledge_graph/INTEGRATION.md](knowledge_graph/INTEGRATION.md).
