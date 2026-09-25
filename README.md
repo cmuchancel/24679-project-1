@@ -1,146 +1,83 @@
-# SysML → GLiNER fine-tuning pipeline
+---
+title: Translate patents to SysML v2
+emoji: 📄
+colorFrom: blue
+colorTo: gray
+sdk: gradio
+sdk_version: 6.28.0
+python_version: "3.12"
+app_file: space_app.py
+app_port: 7860
+pinned: false
+short_description: Patent to reviewed SJS and SysML v2
+---
 
-This project wraps the provided SysML/SJS translator with a weak-supervision layer that:
+# Translate patents to SysML v2
 
-1. recursively ingests `.sysml`/`.sysml2` files;
-2. runs the translator so invalid models are quarantined;
-3. extracts exact source spans for a configurable SysML entity ontology;
-4. removes embedded `@sjs {...}` payloads from weak labeling by default to reduce label leakage while preserving offsets;
-5. converts character spans to GLiNER `tokenized_text` + `ner` examples;
-6. splits by top-level project directory when possible;
-7. fine-tunes GLiNER with its current `train_model()` API.
+Upload a patent, extract a reviewed **SJS model**, and translate it to SysML v2. The interface stays in Gradio.
 
-## Install
+[Live app](https://cmuchancel-patent2sysml.hf.space/) · [Agent flow diagram](docs/AGENT_FLOW.md) · [100 completed results](outputs/README.md)
 
-Use `Project1/.venv` so this package shares the tested Project 1 PyTorch and
-Transformers environment. The `train` extra pins GLiNER to the API used here
-and installs its required Accelerate integration; `dev` adds the test runner.
+## Repository layout
 
-Dataset construction only:
+```text
+app/              Gradio interface, CSS, dialog behavior and Space startup
+agentic/          Three agents, prompts, retrieval, review and targeted repair
+fine_tuned_nlp/    Eladio's GLiNER data preparation, fine-tuning and evaluation
+backend/          Method interface, processing, SJS/SysML translation and storage
+outputs/          Results index; local runs and training checkpoints go here
+source-html/      The 100 source patents
+assets/           Private textbook, translator and parser (not committed)
+tests/            App, workflow, export and integration checks
+docs/             Agent flow, architecture and research recording
+```
 
-```bash
-python -m venv .venv
+The app calls `backend.service.process`. Processing methods plug in through `backend.methods.Method` and their `adapter.py`. The agent method produces approved SJS with evidence; ordinary code then translates, checks and renders it. The orchestrator, decomposer and independent reviewer are unchanged from the three-agent pipeline used for the 100-patent study. Prompts, retrieval budgets, targeted repairs and review gates are preserved.
+
+**NLP status:** Eladio's committed pipeline trains GLiNER to label entities in existing SysML text. Its trainer, data and evaluation are in `fine_tuned_nlp/`. It is not yet a patent-to-SJS extractor, so the NLP option stays unavailable in the patent UI until that adapter can return a complete SJS model.
+
+## Run the app
+
+From the repository root, using Python 3.12, Graphviz, Node.js and OpenCode 2.0.16:
+
+```sh
+python3.12 -m venv .venv
 source .venv/bin/activate
-pip install -e .
+python -m pip install -r requirements-agents.txt
+hf auth login
+hf download cmuchancel/patent2sysml-textbook textbook.epub textbook-index.json gradresearch/sysml_sjs_translator.py --repo-type dataset --local-dir assets
+python -m backend.setup_parser
+opencode auth login openai --standalone --method chatgpt-headless
+python -m app.main
 ```
 
-Training:
+The private assets require repository access. `PATENT_ASSETS_DIR` changes their location. `SE_EPUB_PATH`, `SE_INDEX_PATH` and `SYSML_PARSER_DIR` override individual asset paths. The translator's pinned hash is checked before model calls.
 
-```bash
-pip install -e '.[train,dev]'
+Local runs and research ZIPs are saved under `outputs/runs/`. Set `PATENT_OUTPUTS_DIR` to place them elsewhere. Set `RESEARCH_REPO` to a private Hugging Face dataset to enable durable hosted research archives; hosted deployments also require its write token in `RESEARCH_TOKEN`. Tokens never belong in source control.
+
+`OPENCODE_MODEL` defaults to `openai/gpt-6-luna`; `AGENT_TIMEOUT` defaults to 1800 seconds. All three agents use the configured model. Hosted visitors sign into their own ChatGPT session.
+
+For a Docker deployment, build the repository root with `docker build -t patent2sysml .`; mount the private assets at `/app/assets` and an output volume at `/app/outputs`. Gradio Spaces use the root `space_app.py` entrypoint, which delegates to `app/space.py`.
+
+## Fine-tuned NLP
+
+Use a separate training environment to keep PyTorch/Transformers dependencies separate from the app:
+
+```sh
+python3.12 -m venv .venv-nlp
+source .venv-nlp/bin/activate
+python -m pip install -e './fine_tuned_nlp[train,dev]'
+sysml-gliner train fine_tuned_nlp/data outputs/training/gliner-sysml-v1
 ```
 
-The supported dependency window is GLiNER 0.2.29.x, PyTorch 2.x or newer, and
-Transformers 4.51.3 through 5.16.x. GLiNER's training extra supplies
-`accelerate`. After installation, verify the environment inline:
+See [Eladio's pipeline instructions](fine_tuned_nlp/README.md) and [the training readiness notes](fine_tuned_nlp/TRAINING_NOTES.md) before a long GPU run. The supplied splits are already built; rebuilding requires the original SysML files. The 100 patent study results are separate from this training dataset.
 
-```python
-import importlib.metadata
-from gliner.model import BaseEncoderGLiNER, BaseGLiNER
+## Validation and reproducibility
 
-print("gliner", importlib.metadata.version("gliner"))
-print("accelerate", importlib.metadata.version("accelerate"))
-assert hasattr(BaseGLiNER, "train_model")
-assert hasattr(BaseEncoderGLiNER, "predict_entities")
+```sh
+GRADIO_ANALYTICS_ENABLED=False python -m unittest discover -s tests -v
 ```
 
-All project functions can be called directly from notebook or editor cells;
-the commands below are equivalent convenience entry points.
+Translation uses the pinned GradResearch translator. Native-profile roundtrip checks preserve the canonical SJS. The portable output is checked by SysIDE Legacy 0.9.1 with the 2024-12 library; this does not certify final SysML 2.0 conformance or extraction accuracy.
 
-For this workspace, open `fine_tune_inline.py` in an editor that supports
-`# %%` cells. It verifies the environment, builds the dataset from
-`../SysML-files`, and leaves the expensive training cell disabled by default.
-Enable `START_TRAINING` only after reviewing the split statistics and selecting
-appropriate GPU hardware.
-
-Development/tests:
-
-```bash
-pip install -e '.[dev]'
-pytest
-```
-
-## Build a dataset
-
-Assume your database is:
-
-```text
-/sysml-db/
-  project-a/*.sysml
-  project-b/*.sysml
-  project-c/*.sysml
-```
-
-Run:
-
-```bash
-sysml-gliner build-dataset /sysml-db ./data
-```
-
-Outputs:
-
-```text
-data/
-  canonical/documents.json
-  errors.json
-  dataset_stats.json
-  splits/
-    train.json
-    validation.json
-    test.json
-    *_metadata.json
-```
-
-Each GLiNER row looks like:
-
-```json
-{
-  "tokenized_text": ["part", "def", "MotorController", "{", "..."],
-  "ner": [[2, 2, "part definition"]]
-}
-```
-
-Documents are assigned to train/validation/test before being divided into
-examples of at most 384 tokens. This keeps every source document in exactly one
-split, preserves all entity spans with chunk-relative offsets, and avoids
-silent model-side truncation of the larger SysML files. Entity-free chunks keep
-the complete `label` vocabulary and serve as negative examples.
-
-## Fine-tune
-
-```bash
-sysml-gliner train ./data ./models/gliner-sysml-v1 \
-  --base-model gliner-community/gliner_small-v2.5 \
-  --max-steps 3000 \
-  --train-batch-size 8 \
-  --learning-rate 1e-5
-```
-
-On a GPU without BF16 support, add `--no-bf16`.
-
-## Evaluate
-
-```bash
-sysml-gliner evaluate ./models/gliner-sysml-v1 ./data/splits/test.json --threshold 0.5
-```
-
-## Default labels
-
-- package
-- part definition
-- part usage
-- part definition reference
-- port definition
-- port
-- port definition reference
-- interface definition
-- attribute
-- action
-- state
-- requirement
-- constraint
-- item flow
-
-## Important limitation
-
-The weak labels describe what the deterministic rules can recognize. They are not automatically a gold-standard test set. For credible model-quality claims, manually review or annotate an independent held-out test set; otherwise evaluation largely measures how closely GLiNER reproduces the teacher rules.
+The [baseline manifest](docs/study-pipeline-baseline.json) records the original study source revision and module moves. The frozen study runtime and completed outputs remain unchanged. Source reorganization does not itself redeploy the running Space.
