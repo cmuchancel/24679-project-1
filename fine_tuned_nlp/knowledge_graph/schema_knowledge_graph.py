@@ -96,8 +96,27 @@ def _targets(schema):
     return list(dict.fromkeys(result))
 
 
-def load_model(*, offline=True, device="cpu"):
-    """Load the existing checkpoint/cache. No package installation or download by default."""
+def load_model(*, model_path=None, offline=True, device="cpu"):
+    """Load a local export/pickle, or the original base model from cache.
+
+    Pickles execute Python when loaded: only use a trusted release file.
+    """
+    if model_path is not None:
+        path = Path(model_path).expanduser().resolve()
+        if not path.exists():
+            raise FileNotFoundError(f"Model does not exist: {path}")
+        if path.suffix == ".pkl":
+            import pickle
+            with path.open("rb") as stream:
+                model = pickle.load(stream)
+            model.to(device).eval()
+        else:
+            from gliner import GLiNER
+            model = GLiNER.from_pretrained(
+                str(path), local_files_only=True, map_location=device,
+            ).eval()
+        model.knowledge_graph_checkpoint = str(path)
+        return model
     os.environ["HF_HOME"] = str(ROOT / ".cache" / "huggingface")
     if offline:
         os.environ["HF_HUB_OFFLINE"] = "1"

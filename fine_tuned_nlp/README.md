@@ -1,5 +1,7 @@
 # SysML → GLiNER fine-tuning pipeline
 
+**Trained model ready to download:** [best RelEx checkpoint, pickle loading code and graph integration](MODEL_CARD.md). The weights are attached to the [GitHub Release](https://github.com/cmuchancel/24679-project-1/releases/tag/gliner-sysml-relex-v1), outside git history.
+
 This project wraps the provided SysML/SJS translator with a weak-supervision layer that:
 
 1. recursively ingests `.sysml`/`.sysml2` files;

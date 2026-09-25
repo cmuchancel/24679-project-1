@@ -11,7 +11,7 @@ The intended sequence is **patent text → SysML-like entity tags and relationsh
 3. **Missing uploads.** `patent_html.py` is referenced by patent-directory processing but is absent. `knowledge_graph_view.html` is referenced by HTML export but is absent. The legacy OMG path also references the absent `sysml.schema.json`; the SJS path already has its `sjs.kg.schema.json`. Notebook/check scripts mentioned in the upstream README are not all present either.
 4. **SJS contract.** The graph exports `sjs/1.0` candidates with explicit unresolved fields and `relationships`. The agent method validates a stricter `sjs/1.2` contract and evidence. Compatibility with the application's translator/validation must be established before claiming that this prototype's candidates are finished app results.
 
-The Mac run continues the requested entity-tagging experiment on RelEx large using the supplied training data, within the original eight-hour deadline and with early stopping. The small checkpoint is preserved. These unresolved graph integration details do not change the agent workflow, training data, or the active run's frozen source snapshot.
+The RelEx large experiment finished with early stopping. Its best checkpoint (step 450) is available as a complete model pickle in the [GitHub Release](https://github.com/cmuchancel/24679-project-1/releases/tag/gliner-sysml-relex-v1). Use `load_model(model_path="path/to/gliner-sysml-relex-v1.pkl")` to select it explicitly; omitting `model_path` preserves the original base-model behavior. See the [model card and runnable example](../MODEL_CARD.md). These unresolved graph integration details do not change the agent workflow.
 
 ## Run supplied checks
 
