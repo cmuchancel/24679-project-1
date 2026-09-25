@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from contextlib import contextmanager
+import gc
 import importlib.metadata
 import json
 import logging
@@ -176,11 +177,32 @@ def train_gliner(
     state = {"stop_requested": False, "stop_reason": None}
 
     class RunControl(TrainerCallback):
+        def on_pre_optimizer_step(self, args, trainer_state, control, **kwargs):
+            if selected_device == "mps":
+                # Variable-length examples leave cached Metal allocations. Finish
+                # their work and release caches before Adafactor's large update.
+                gc.collect()
+                torch.mps.synchronize()
+                if hasattr(torch.mps, "clear_graph_cache"):
+                    torch.mps.clear_graph_cache()
+                torch.mps.empty_cache()
+                with (output_dir / "memory.jsonl").open("a") as output:
+                    output.write(json.dumps({
+                        "step": trainer_state.global_step + 1, "phase": "before_optimizer",
+                        "allocated_bytes": torch.mps.current_allocated_memory(),
+                        "driver_bytes": torch.mps.driver_allocated_memory(),
+                    }) + "\n")
+
         def on_train_begin(self, args, trainer_state, control, **kwargs):
             metadata.update(status="training", device=str(args.device))
             write_json(output_dir / "run.json", metadata)
 
         def on_step_end(self, args, trainer_state, control, **kwargs):
+            memory = {}
+            if selected_device == "mps":
+                torch.mps.synchronize()
+                memory = {"mps_allocated_bytes": torch.mps.current_allocated_memory(),
+                          "mps_driver_bytes": torch.mps.driver_allocated_memory()}
             elapsed = time.monotonic() - started
             disk_low = shutil.disk_usage(output_dir).free < metadata.get("checkpoint_reserve_bytes", 0)
             if state["stop_requested"] or elapsed >= max_hours * 3600 or disk_low:
@@ -194,6 +216,7 @@ def train_gliner(
                 "updated_at": datetime.now(timezone.utc).isoformat(),
                 "device": selected_device, "best_validation_loss": trainer_state.best_metric,
                 "best_checkpoint": trainer_state.best_model_checkpoint,
+                **memory,
             })
             return control
 
@@ -296,6 +319,7 @@ def train_gliner(
     except BaseException as exc:
         metadata.update(status="failed", error=f"{type(exc).__name__}: {exc}", elapsed_seconds=time.monotonic() - started)
         write_json(output_dir / "run.json", metadata)
+        write_json(output_dir / "progress.json", metadata)
         raise
     finally:
         training_logger.removeHandler(handler)

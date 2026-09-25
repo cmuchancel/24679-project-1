@@ -22,7 +22,8 @@ The training wrapper preserves GLiNER's objective and collator, using the same G
 - Float32 on MPS; unsupported individual operations may fall back through PyTorch's MPS fallback.
 - Microbatch 1 with eight gradient-accumulation steps (effective batch size 8).
 - RelEx large revision `4aedc9226a5ac9e2f6b5ea3e91c1ee577c88a290` (466,576,896 parameters).
-- Adafactor, encoder gradient checkpointing, and an MPS memory fraction of 0.6 to fit the larger model. These are execution choices for this Mac, not Eladio's original defaults.
+- Adafactor, encoder gradient checkpointing, and an MPS memory fraction of 0.8 to fit the larger model. These are execution choices for this Mac, not Eladio's original defaults.
+- Finish pending Metal operations and release unused caches before optimizer updates; record device memory in `model/memory.jsonl` and progress.
 - Entity-only supervision: retain all 14 labels through RelEx's `ner_labels` field. Supply no relation labels or targets and freeze the relation-specific layers. The shared encoder still changes, so downstream relation quality needs evaluation.
 - Disable label augmentation during validation and restore random-generator state afterward. Repeated validation uses the same examples and labels; training augmentation remains the model's default.
 - Validation and checkpoints every 25 optimizer steps; retain two checkpoints and export the best model using hard-linked weights when possible. A low-disk guard requests a clean save and stop while space remains for a checkpoint.
@@ -40,7 +41,7 @@ python fine_tuned_nlp/run_local.py \
   --run-dir outputs/training/gliner-relex-experiment --hours 8 --device mps \
   --base-model knowledgator/gliner-relex-large-v1.0 \
   --base-revision 4aedc9226a5ac9e2f6b5ea3e91c1ee577c88a290 \
-  --optimizer adafactor --gradient-checkpointing --mps-memory-fraction 0.6
+  --optimizer adafactor --gradient-checkpointing --mps-memory-fraction 0.8
 ```
 
 When switching within an existing budget, also pass `--deadline` with the original absolute timestamp, including its timezone. The supervisor uses whichever is shorter: that remaining time or `--hours`. The September 25 run retains its original `2026-09-25T11:42:38.690516+00:00` cutoff.
