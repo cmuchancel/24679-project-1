@@ -1,0 +1,34 @@
+{
+  "revision": 6,
+  "candidate_sha256": "62333432d081a79d153153d8d4c31ba6c27308ab8266c5d37e2b5a27c31b5545",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "The added frame–shaft mount is now explicitly represented using a distinct support/contact flow, consistent with the patent's express statement that shaft 28 is rotatably mounted in press frame 10. Component descriptions, linkage, spring coupling, stopper contact, and working-stroke behavior are supported by the cited passages; no numeric or implementation facts are invented."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The model includes the press frame, drive, shaft/eccentric cam, spring/arm coupling, both levers, pressing tool, counter-tool, stopper relationship, and the supported approach/working-stroke sequence. The previously missing frame–shaft support relationship is now represented. No unsupported reset or state behavior is added."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Interfaces use compatible flow types and distinguish rotational drive, cam contact, coupling, pivot/linkage motion, tool linear motion, stopper contact, and shaft mounting support. The new frame mounting flow is not conflated with drive rotation. Cam conversion is described within the shaft/cam subsystem rather than represented as an incompatible interface."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Claim-related spring, eccentric cam, stopper/counter-stopper, and releasable coupling details remain traceable to patent passages. The model does not promote optional roller form into a mandatory requirement or invent requirements from the claims."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "The frame–shaft support interface resolves the prior omitted mounting relation. Existing interfaces reference modeled subsystems, ports, and flows and are recorded once; no incompatible interface pairing or dangling reference is evident."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The retrieved textbook material is a system-spec example and does not establish patent facts or provide specific sequence guidance. The candidate appropriately avoids unsupported state-machine/reset behavior and uses patent passages for invention assertions."
+    }
+  },
+  "findings": [],
+  "summary": "Independently reviewed saved revision 6 against the cited patent passages and relevant textbook guidance. The revision resolves the prior missing frame–shaft mounting topology with a distinct compatible mechanical support/contact interface. The modeled components, flows, interfaces, and approach/working-stroke behavior are adequately grounded; no unresolved issues identified.",
+  "saved_at": "2026-09-27T09:20:56.217378+00:00"
+}

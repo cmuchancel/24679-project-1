@@ -1,0 +1,1752 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": false,
+  "native_element_counts": {
+    "ActionDefinition": 7,
+    "ActionUsage": 14,
+    "AttributeUsage": 19,
+    "Documentation": 93,
+    "FeatureMembership": 696,
+    "FeatureTyping": 160,
+    "FeatureValue": 615,
+    "ItemDefinition": 2,
+    "ItemUsage": 3,
+    "LiteralInteger": 34,
+    "LiteralString": 615,
+    "MetadataDefinition": 1,
+    "MetadataUsage": 123,
+    "MultiplicityRange": 34,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 333,
+    "Package": 1,
+    "PartDefinition": 22,
+    "PartUsage": 57,
+    "PortUsage": 3,
+    "Redefinition": 615,
+    "ReferenceUsage": 615,
+    "RequirementDefinition": 1,
+    "Subclassification": 1
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump"
+    },
+    {
+      "path": "/subsystems/0/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_001_first_gear"
+    },
+    {
+      "path": "/subsystems/0/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_002_first_plurality_of_gear_teeth"
+    },
+    {
+      "path": "/subsystems/0/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_003_gear_teeth"
+    },
+    {
+      "path": "/subsystems/0/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_005_second_plurality_of_teeth"
+    },
+    {
+      "path": "/subsystems/0/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_008_drive_gear_teeth"
+    },
+    {
+      "path": "/subsystems/0/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_009_housing"
+    },
+    {
+      "path": "/subsystems/0/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_007_drive_gear"
+    },
+    {
+      "path": "/subsystems/0/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_025_component"
+    },
+    {
+      "path": "/subsystems/0/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_004_second_gear"
+    },
+    {
+      "path": "/subsystems/0/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_006_driven_gear"
+    },
+    {
+      "path": "/subsystems/0/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_011_driven_gear_28"
+    },
+    {
+      "path": "/subsystems/0/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_012_drive_gear_26"
+    },
+    {
+      "path": "/subsystems/0/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_016_contact_side"
+    },
+    {
+      "path": "/subsystems/0/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_017_non_contact_tooth_face"
+    },
+    {
+      "path": "/subsystems/0/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_018_driven_gear_tooth"
+    },
+    {
+      "path": "/subsystems/0/parts/15",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_019_non_contact_gear_face"
+    },
+    {
+      "path": "/subsystems/0/parts/16",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_020_first_involute"
+    },
+    {
+      "path": "/subsystems/0/parts/17",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_021_involute"
+    },
+    {
+      "path": "/subsystems/0/parts/18",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_023_apex"
+    },
+    {
+      "path": "/subsystems/0/parts/19",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_024_driven_gear_teeth"
+    },
+    {
+      "path": "/subsystems/0/parts/20",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_026_second_plurality_of_gear_teeth"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump.port_PT_001_inlet"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump.port_PT_002_outlet"
+    },
+    {
+      "path": "/subsystems/0/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SS_001_gear_pump.port_PT_003_source_of_drive"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_002_first_gear"
+    },
+    {
+      "path": "/subsystems/1/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_002_first_gear.part_P_010_teeth"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_003_second_gear"
+    },
+    {
+      "path": "/subsystems/2/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_second_gear.part_P_010_teeth_c88b7384"
+    },
+    {
+      "path": "/subsystems/2/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_second_gear.part_P_014_tooth"
+    },
+    {
+      "path": "/subsystems/2/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_second_gear.part_P_015_contact_face"
+    },
+    {
+      "path": "/subsystems/2/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_second_gear.part_P_022_non_contact_face"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_004_driven_gear"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_005_Gear_pumps"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_006_gears"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_007_drive_gear"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_008_Pump_chambers"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_009_gear_pumps"
+    },
+    {
+      "path": "/subsystems/9",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_010_gear_pump_20"
+    },
+    {
+      "path": "/subsystems/9/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_gear_pump_20.part_P_009_housing_046b9475"
+    },
+    {
+      "path": "/subsystems/9/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_gear_pump_20.part_P_007_drive_gear_c24d8549"
+    },
+    {
+      "path": "/subsystems/10",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_011_housing"
+    },
+    {
+      "path": "/subsystems/11",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_012_driven_gear_28"
+    },
+    {
+      "path": "/subsystems/12",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_013_drive_gear_26"
+    },
+    {
+      "path": "/subsystems/13",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_014_drive_means"
+    },
+    {
+      "path": "/subsystems/14",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_015_component"
+    },
+    {
+      "path": "/subsystems/15",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_016_generator"
+    },
+    {
+      "path": "/subsystems/16",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_017_centrifugal_pump"
+    },
+    {
+      "path": "/subsystems/17",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_018_pump"
+    },
+    {
+      "path": "/subsystems/17/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_pump.part_P_010_teeth_a9946de7"
+    },
+    {
+      "path": "/subsystems/17/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_pump.part_P_003_gear_teeth_a9cfab35"
+    },
+    {
+      "path": "/subsystems/17/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_pump.part_P_013_gear_tooth"
+    },
+    {
+      "path": "/subsystems/18",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_019_high_speed_generator"
+    },
+    {
+      "path": "/subsystems/19",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_020_Centrifugal_pumps"
+    },
+    {
+      "path": "/subsystems/19/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_020_Centrifugal_pumps.part_P_003_gear_teeth_7bd36cd9"
+    },
+    {
+      "path": "/subsystems/19/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_020_Centrifugal_pumps.part_P_013_gear_tooth_b9e5fa55"
+    },
+    {
+      "path": "/subsystems/20",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_021_generators"
+    },
+    {
+      "path": "/subsystems/20/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_021_generators.part_P_003_gear_teeth_9241777d"
+    },
+    {
+      "path": "/subsystems/21",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_022_second_gears"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_FL_001_fluid"
+    },
+    {
+      "path": "/values/0",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_001_13"
+    },
+    {
+      "path": "/values/1",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_002_flow_rate"
+    },
+    {
+      "path": "/values/2",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_003_smaller_diameter"
+    },
+    {
+      "path": "/values/3",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_004_diameter"
+    },
+    {
+      "path": "/values/4",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_005_tooth_contact_stress"
+    },
+    {
+      "path": "/values/5",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_006_radius_of_curvature"
+    },
+    {
+      "path": "/values/6",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_007_30__operating_pressure_angle"
+    },
+    {
+      "path": "/values/7",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_008_operating_pressure_angle"
+    },
+    {
+      "path": "/values/8",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_009_tooth_apex_width"
+    },
+    {
+      "path": "/values/9",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_010_profile_contact_ratio"
+    },
+    {
+      "path": "/values/10",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_011_contact_face_pressure_angle"
+    },
+    {
+      "path": "/values/11",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_012_pressure_angle"
+    },
+    {
+      "path": "/values/12",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_013_25"
+    },
+    {
+      "path": "/values/13",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_014_greater_radius_of_curvature"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_001"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_001_rotate"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_002_rotation"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_003_move_fluid"
+    },
+    {
+      "path": "/behaviour/actions/3",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_004_generate_electricity"
+    },
+    {
+      "path": "/behaviour/actions/4",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_005_generate_electricity_or_pump_fluid"
+    },
+    {
+      "path": "/behaviour/actions/5",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_006_causing_said_second_gear_to_rotate"
+    },
+    {
+      "path": "/behaviour/actions/6",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_007_create_power"
+    },
+    {
+      "path": "/relationships/0",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[0]"
+    },
+    {
+      "path": "/relationships/0",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_001_first_gear"
+    },
+    {
+      "path": "/relationships/1",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[1]"
+    },
+    {
+      "path": "/relationships/1",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_002_first_plurality_of_gear_teeth"
+    },
+    {
+      "path": "/relationships/2",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[2]"
+    },
+    {
+      "path": "/relationships/2",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_003_gear_teeth"
+    },
+    {
+      "path": "/relationships/3",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[3]"
+    },
+    {
+      "path": "/relationships/3",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_005_second_plurality_of_teeth"
+    },
+    {
+      "path": "/relationships/4",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[4]"
+    },
+    {
+      "path": "/relationships/4",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_008_drive_gear_teeth"
+    },
+    {
+      "path": "/relationships/5",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[5]"
+    },
+    {
+      "path": "/relationships/5",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_009_housing"
+    },
+    {
+      "path": "/relationships/6",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[6]"
+    },
+    {
+      "path": "/relationships/6",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_007_drive_gear"
+    },
+    {
+      "path": "/relationships/7",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[7]"
+    },
+    {
+      "path": "/relationships/7",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_gear_pump_20.part_P_009_housing_046b9475"
+    },
+    {
+      "path": "/relationships/8",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[8]"
+    },
+    {
+      "path": "/relationships/8",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_gear_pump_20.part_P_007_drive_gear_c24d8549"
+    },
+    {
+      "path": "/relationships/9",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[9]"
+    },
+    {
+      "path": "/relationships/9",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_pump.part_P_010_teeth_a9946de7"
+    },
+    {
+      "path": "/relationships/10",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[10]"
+    },
+    {
+      "path": "/relationships/10",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_pump.part_P_003_gear_teeth_a9cfab35"
+    },
+    {
+      "path": "/relationships/11",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[11]"
+    },
+    {
+      "path": "/relationships/11",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_pump.part_P_013_gear_tooth"
+    },
+    {
+      "path": "/relationships/12",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[12]"
+    },
+    {
+      "path": "/relationships/12",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_020_Centrifugal_pumps.part_P_003_gear_teeth_7bd36cd9"
+    },
+    {
+      "path": "/relationships/13",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[13]"
+    },
+    {
+      "path": "/relationships/13",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_020_Centrifugal_pumps.part_P_013_gear_tooth_b9e5fa55"
+    },
+    {
+      "path": "/relationships/14",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[14]"
+    },
+    {
+      "path": "/relationships/14",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_021_generators.part_P_003_gear_teeth_9241777d"
+    },
+    {
+      "path": "/relationships/15",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[15]"
+    },
+    {
+      "path": "/relationships/15",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_gear_pump.part_P_025_component"
+    },
+    {
+      "path": "/relationships/16",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[16]"
+    },
+    {
+      "path": "/relationships/16",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_002_first_gear.part_P_010_teeth"
+    },
+    {
+      "path": "/relationships/17",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[17]"
+    },
+    {
+      "path": "/relationships/17",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_second_gear.part_P_010_teeth_c88b7384"
+    },
+    {
+      "path": "/relationships/18",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[18]"
+    },
+    {
+      "path": "/relationships/18",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_second_gear.part_P_014_tooth"
+    },
+    {
+      "path": "/relationships/19",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[19]"
+    },
+    {
+      "path": "/relationships/19",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_second_gear.part_P_015_contact_face"
+    },
+    {
+      "path": "/relationships/20",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[20]"
+    },
+    {
+      "path": "/relationships/20",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_second_gear.part_P_022_non_contact_face"
+    },
+    {
+      "path": "/relationships/21",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[21]"
+    },
+    {
+      "path": "/relationships/22",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[22]"
+    },
+    {
+      "path": "/relationships/23",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[23]"
+    },
+    {
+      "path": "/relationships/24",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[24]"
+    },
+    {
+      "path": "/relationships/25",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[25]"
+    },
+    {
+      "path": "/relationships/26",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[26]"
+    },
+    {
+      "path": "/relationships/27",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[27]"
+    },
+    {
+      "path": "/relationships/28",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[28]"
+    },
+    {
+      "path": "/relationships/29",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[29]"
+    },
+    {
+      "path": "/relationships/30",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[30]"
+    },
+    {
+      "path": "/relationships/31",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[31]"
+    },
+    {
+      "path": "/relationships/32",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[32]"
+    },
+    {
+      "path": "/relationships/33",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[33]"
+    },
+    {
+      "path": "/relationships/34",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[34]"
+    },
+    {
+      "path": "/relationships/35",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[35]"
+    },
+    {
+      "path": "/relationships/36",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[36]"
+    },
+    {
+      "path": "/relationships/37",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[37]"
+    },
+    {
+      "path": "/relationships/38",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[38]"
+    },
+    {
+      "path": "/relationships/39",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[39]"
+    },
+    {
+      "path": "/relationships/40",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[40]"
+    },
+    {
+      "path": "/relationships/41",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[41]"
+    },
+    {
+      "path": "/relationships/42",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[42]"
+    },
+    {
+      "path": "/relationships/43",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[43]"
+    },
+    {
+      "path": "/relationships/44",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[44]"
+    },
+    {
+      "path": "/relationships/45",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[45]"
+    },
+    {
+      "path": "/relationships/46",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[46]"
+    },
+    {
+      "path": "/relationships/47",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[47]"
+    },
+    {
+      "path": "/relationships/48",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[48]"
+    },
+    {
+      "path": "/relationships/49",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[49]"
+    },
+    {
+      "path": "/relationships/50",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[50]"
+    },
+    {
+      "path": "/relationships/51",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[51]"
+    },
+    {
+      "path": "/relationships/52",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[52]"
+    },
+    {
+      "path": "/relationships/53",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[53]"
+    },
+    {
+      "path": "/relationships/54",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[54]"
+    },
+    {
+      "path": "/relationships/55",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[55]"
+    },
+    {
+      "path": "/relationships/56",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[56]"
+    },
+    {
+      "path": "/relationships/57",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[57]"
+    },
+    {
+      "path": "/relationships/58",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[58]"
+    },
+    {
+      "path": "/relationships/59",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[59]"
+    },
+    {
+      "path": "/relationships/60",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[60]"
+    },
+    {
+      "path": "/relationships/61",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[61]"
+    },
+    {
+      "path": "/relationships/62",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[62]"
+    },
+    {
+      "path": "/relationships/63",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[63]"
+    },
+    {
+      "path": "/relationships/64",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[64]"
+    },
+    {
+      "path": "/relationships/65",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[65]"
+    },
+    {
+      "path": "/relationships/66",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[66]"
+    },
+    {
+      "path": "/relationships/67",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[67]"
+    },
+    {
+      "path": "/relationships/68",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[68]"
+    },
+    {
+      "path": "/relationships/69",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[69]"
+    },
+    {
+      "path": "/relationships/70",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[70]"
+    },
+    {
+      "path": "/relationships/71",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[71]"
+    },
+    {
+      "path": "/relationships/72",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[72]"
+    },
+    {
+      "path": "/relationships/73",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[73]"
+    },
+    {
+      "path": "/relationships/74",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[74]"
+    },
+    {
+      "path": "/relationships/75",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[75]"
+    },
+    {
+      "path": "/relationships/76",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[76]"
+    },
+    {
+      "path": "/relationships/77",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[77]"
+    },
+    {
+      "path": "/relationships/78",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[78]"
+    },
+    {
+      "path": "/relationships/79",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[79]"
+    },
+    {
+      "path": "/relationships/80",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[80]"
+    },
+    {
+      "path": "/relationships/81",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[81]"
+    },
+    {
+      "path": "/relationships/82",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[82]"
+    },
+    {
+      "path": "/relationships/83",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[83]"
+    },
+    {
+      "path": "/relationships/84",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[84]"
+    },
+    {
+      "path": "/relationships/85",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[85]"
+    },
+    {
+      "path": "/relationships/86",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[86]"
+    },
+    {
+      "path": "/relationships/87",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[87]"
+    },
+    {
+      "path": "/relationships/88",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[88]"
+    },
+    {
+      "path": "/relationships/89",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[89]"
+    },
+    {
+      "path": "/relationships/90",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[90]"
+    },
+    {
+      "path": "/relationships/91",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[91]"
+    },
+    {
+      "path": "/relationships/92",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[92]"
+    },
+    {
+      "path": "/relationships/93",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[93]"
+    },
+    {
+      "path": "/relationships/94",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[94]"
+    },
+    {
+      "path": "/relationships/95",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[95]"
+    },
+    {
+      "path": "/relationships/96",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[96]"
+    },
+    {
+      "path": "/relationships/97",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[97]"
+    },
+    {
+      "path": "/relationships/98",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[98]"
+    },
+    {
+      "path": "/relationships/99",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[99]"
+    },
+    {
+      "path": "/relationships/100",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[100]"
+    },
+    {
+      "path": "/relationships/101",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[101]"
+    },
+    {
+      "path": "/relationships/102",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[102]"
+    },
+    {
+      "path": "/relationships/103",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[103]"
+    },
+    {
+      "path": "/relationships/104",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[104]"
+    },
+    {
+      "path": "/relationships/105",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[105]"
+    },
+    {
+      "path": "/relationships/106",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[106]"
+    },
+    {
+      "path": "/relationships/107",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[107]"
+    },
+    {
+      "path": "/relationships/108",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[108]"
+    },
+    {
+      "path": "/relationships/109",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[109]"
+    },
+    {
+      "path": "/relationships/110",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[110]"
+    },
+    {
+      "path": "/relationships/111",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[111]"
+    },
+    {
+      "path": "/relationships/112",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[112]"
+    },
+    {
+      "path": "/relationships/113",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[113]"
+    },
+    {
+      "path": "/relationships/114",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[114]"
+    },
+    {
+      "path": "/relationships/115",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[115]"
+    },
+    {
+      "path": "/relationships/116",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[116]"
+    },
+    {
+      "path": "/relationships/117",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[117]"
+    },
+    {
+      "path": "/relationships/118",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[118]"
+    },
+    {
+      "path": "/relationships/119",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[119]"
+    },
+    {
+      "path": "/relationships/120",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[120]"
+    },
+    {
+      "path": "/relationships/121",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[121]"
+    },
+    {
+      "path": "/relationships/122",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[122]"
+    }
+  ],
+  "unresolved": [
+    {
+      "path": "/values/0",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/1",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/2",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/3",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/4",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/5",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/6",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/7",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/8",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/9",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/10",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/11",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/12",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/13",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/21",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/22",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/23",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/24",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/25",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/26",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/27",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/28",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/29",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/30",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/31",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/32",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/33",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/34",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/35",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/36",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/37",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/38",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/39",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/40",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/41",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/42",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/43",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/44",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/45",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/46",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/47",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/48",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/49",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/50",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/51",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/52",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/53",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/54",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/55",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/56",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/57",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/58",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/59",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/60",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/61",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/62",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/63",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/64",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/65",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/66",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/67",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/68",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/69",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/70",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/71",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/72",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/73",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/74",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/75",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/76",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/77",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/78",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/79",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/80",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/81",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/82",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/83",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/84",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/85",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/86",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/87",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/88",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/89",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/90",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/91",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/92",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/93",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/94",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/95",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/96",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/97",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/98",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/99",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/100",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/101",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/102",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/103",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/104",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/105",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/106",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/107",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/108",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/109",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/110",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/111",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/112",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/113",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/114",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/115",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/116",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/117",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/118",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/119",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/120",
+      "reason": "Relationship type 'source' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/121",
+      "reason": "Relationship type 'target' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/122",
+      "reason": "Relationship type 'source' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    }
+  ],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

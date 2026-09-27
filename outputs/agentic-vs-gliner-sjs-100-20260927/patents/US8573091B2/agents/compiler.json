@@ -1,0 +1,199 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 5,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 4,
+    "Documentation": 37,
+    "EndFeatureMembership": 14,
+    "Feature": 26,
+    "FeatureChaining": 38,
+    "FeatureMembership": 39,
+    "FeatureTyping": 17,
+    "FlowEnd": 2,
+    "FlowUsage": 1,
+    "ItemDefinition": 4,
+    "ItemUsage": 10,
+    "LiteralInteger": 6,
+    "MultiplicityRange": 6,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 69,
+    "Package": 1,
+    "PartDefinition": 5,
+    "PartUsage": 12,
+    "PortUsage": 10,
+    "Redefinition": 2,
+    "ReferenceSubsetting": 14,
+    "ReferenceUsage": 2,
+    "Subclassification": 3,
+    "SuccessionAsUsage": 1
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_UNIT1_First_Unit"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_UNIT1_First_Unit.port_P_SHAFT1_MOUNT_Elastic_member_first_shaft_mount"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_UNIT1_First_Unit.port_P_BEARING_Bearing_inner_collar_rotary_support"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_UNIT2_Second_Unit"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_UNIT2_Second_Unit.port_P_SHAFT2_MOUNT_Elastic_member_second_shaft_mount"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_UNIT2_Second_Unit.port_P_BEARING_Bearing_outer_collar_rotary_support"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ELASTIC_Elastic_Member"
+    },
+    {
+      "path": "/subsystems/2/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_ELASTIC_Elastic_Member.part_PLATE_Elastic_plate_joining_the_two_coaxial_shafts"
+    },
+    {
+      "path": "/subsystems/2/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_ELASTIC_Elastic_Member.part_SHAFT1_First_shaft_connected_to_the_plate_and_rotata"
+    },
+    {
+      "path": "/subsystems/2/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_ELASTIC_Elastic_Member.part_SHAFT2_Second_coaxial_shaft_connected_to_the_plate_a"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ELASTIC_Elastic_Member.port_P_ADJUST_IN_First_shaft_adjustment_rotation_input"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ELASTIC_Elastic_Member.port_P_UNIT1_MOUNT_First_shaft_rotatable_mount"
+    },
+    {
+      "path": "/subsystems/2/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ELASTIC_Elastic_Member.port_P_UNIT2_MOUNT_Second_shaft_rotatable_mount"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DRIVER_Driver_and_Transmission"
+    },
+    {
+      "path": "/subsystems/3/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_DRIVER_Driver_and_Transmission.part_MOTOR_Motor_driver_in_the_disclosed_embodiment"
+    },
+    {
+      "path": "/subsystems/3/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_DRIVER_Driver_and_Transmission.part_WORM_Worm_connected_to_the_motor_driver"
+    },
+    {
+      "path": "/subsystems/3/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_DRIVER_Driver_and_Transmission.part_WORM_GEAR_Worm_gear_engaged_with_the_worm_and_connected"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DRIVER_Driver_and_Transmission.port_P_DRIVE_OUT_Transmission_rotary_output"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BEARING_Bearing_Subassembly"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BEARING_Bearing_Subassembly.port_P_INNER_Inner_collar_connection_to_first_unit"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BEARING_Bearing_Subassembly.port_P_OUTER_Outer_collar_connection_to_second_unit"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_ADJUST_Elastic_member_adjustment_rotation"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_RELROT_Relative_unit_rotation"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_SHAFT2_MOUNT_Elastic_member_second_shaft_mounting_rotation"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_ADJUST_Adjust_elastic_resistance"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_COMPLY_Provide_compliant_resistance"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_BEARING_INNER"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_SHAFT1_MOUNT"
+    },
+    {
+      "path": "/subsystems/2/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_SHAFT2_MOUNT"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_I_ADJUST"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_SECOND_UNIT"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

@@ -1,0 +1,48 @@
+{
+  "scope": "Aggregate usage within the selected completed workflow; not total study cost.",
+  "agents": {
+    "patent-quality-reviewer": {
+      "model_calls": 12,
+      "tokens": {
+        "input": 56412,
+        "output": 3783,
+        "reasoning": 749,
+        "cache.read": 76288,
+        "cache.write": 0
+      },
+      "incomplete_usage_calls": 0,
+      "message_elapsed_seconds": 99.87899999999999,
+      "observed_context_calls": 12
+    },
+    "patent-functional-decomposer": {
+      "model_calls": 31,
+      "tokens": {
+        "input": 105542,
+        "output": 10360,
+        "reasoning": 999,
+        "cache.read": 276992,
+        "cache.write": 0
+      },
+      "incomplete_usage_calls": 0,
+      "message_elapsed_seconds": 276.435,
+      "observed_context_calls": 31
+    },
+    "patent-decomposition-orchestrator": {
+      "model_calls": 17,
+      "tokens": {
+        "input": 15070,
+        "output": 1175,
+        "reasoning": 0,
+        "cache.read": 40448,
+        "cache.write": 0
+      },
+      "incomplete_usage_calls": 0,
+      "message_elapsed_seconds": 422.91799999999995,
+      "observed_context_calls": 17
+    }
+  },
+  "billed_cost": null,
+  "notes": [
+    "Cache reads and reasoning tokens are reported separately as recorded. No session transcripts or call history are included."
+  ]
+}

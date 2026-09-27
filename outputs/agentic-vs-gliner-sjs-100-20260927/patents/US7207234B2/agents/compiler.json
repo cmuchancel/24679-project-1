@@ -1,0 +1,90 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 7,
+    "AllocationUsage": 2,
+    "Documentation": 21,
+    "EndFeatureMembership": 4,
+    "Feature": 8,
+    "FeatureChaining": 8,
+    "FeatureMembership": 16,
+    "FeatureTyping": 8,
+    "ItemDefinition": 6,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 39,
+    "Package": 1,
+    "PartDefinition": 6,
+    "PartUsage": 7,
+    "ReferenceSubsetting": 4,
+    "Subclassification": 3,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_shaft_Screw_shaft"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_nut_Rotating_nut_and_internal_groove"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_rolling_path_Groove_defined_ball_rolling_path"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_return_tubes_Metal_tubular_return_paths"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_load_balls_Load_balls"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_retainers_Interposed_retaining_pieces"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_ball_circulation_Load_ball_circulation"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_nut_rotation_Nut_rotation_relative_to_shaft"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_ball_retention_contact_Retaining_piece_contact_with_adjacent_load_ba"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_circulate_balls_Circulate_load_balls_and_transmit_load"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_separate_adjacent_balls_Separate_adjacent_load_balls"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

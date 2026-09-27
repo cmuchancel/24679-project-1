@@ -1,0 +1,2267 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": false,
+  "native_element_counts": {
+    "ActionDefinition": 21,
+    "ActionUsage": 42,
+    "AttributeUsage": 8,
+    "Documentation": 193,
+    "FeatureMembership": 877,
+    "FeatureTyping": 203,
+    "FeatureValue": 685,
+    "LiteralInteger": 105,
+    "LiteralString": 685,
+    "MetadataDefinition": 1,
+    "MetadataUsage": 137,
+    "MultiplicityRange": 105,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 607,
+    "Package": 1,
+    "PartDefinition": 40,
+    "PartUsage": 146,
+    "Redefinition": 685,
+    "ReferenceUsage": 685
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press"
+    },
+    {
+      "path": "/subsystems/0/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_001_levers"
+    },
+    {
+      "path": "/subsystems/0/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_002_joint"
+    },
+    {
+      "path": "/subsystems/0/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_004_second_lever"
+    },
+    {
+      "path": "/subsystems/0/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_005_lever"
+    },
+    {
+      "path": "/subsystems/0/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_003_shaft"
+    },
+    {
+      "path": "/subsystems/0/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_006_toggle_lever"
+    },
+    {
+      "path": "/subsystems/0/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_007_eccentric_cam"
+    },
+    {
+      "path": "/subsystems/0/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_008_toggle_joint"
+    },
+    {
+      "path": "/subsystems/0/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_027_arm"
+    },
+    {
+      "path": "/subsystems/0/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_028_arm_36"
+    },
+    {
+      "path": "/subsystems/0/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_046_arm_elements"
+    },
+    {
+      "path": "/subsystems/0/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_018_first_lever"
+    },
+    {
+      "path": "/subsystems/0/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_019_first_lever_14"
+    },
+    {
+      "path": "/subsystems/0/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_047_lever_parts"
+    },
+    {
+      "path": "/subsystems/0/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_020_second_lever_16"
+    },
+    {
+      "path": "/subsystems/0/parts/15",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_022_pressure_spring"
+    },
+    {
+      "path": "/subsystems/0/parts/16",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_013_stopper_element"
+    },
+    {
+      "path": "/subsystems/0/parts/17",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_035_counter_stopper_element"
+    },
+    {
+      "path": "/subsystems/0/parts/18",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_009_two_levers"
+    },
+    {
+      "path": "/subsystems/0/parts/19",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_011_spring"
+    },
+    {
+      "path": "/subsystems/0/parts/20",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_012_magnetic_block"
+    },
+    {
+      "path": "/subsystems/0/parts/21",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_014_mechanical_block"
+    },
+    {
+      "path": "/subsystems/0/parts/22",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_016_compression_spring"
+    },
+    {
+      "path": "/subsystems/0/parts/23",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_021_pressing_tool_22"
+    },
+    {
+      "path": "/subsystems/0/parts/24",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_024_first_bearing_32"
+    },
+    {
+      "path": "/subsystems/0/parts/25",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_025_second_bearing"
+    },
+    {
+      "path": "/subsystems/0/parts/26",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_026_second_bearing_34"
+    },
+    {
+      "path": "/subsystems/0/parts/27",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_029_bearing"
+    },
+    {
+      "path": "/subsystems/0/parts/28",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_030_stopper_element_38"
+    },
+    {
+      "path": "/subsystems/0/parts/29",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_031_bearing_34"
+    },
+    {
+      "path": "/subsystems/0/parts/30",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_037_pressure_spring_30"
+    },
+    {
+      "path": "/subsystems/0/parts/31",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_039_shaft_28"
+    },
+    {
+      "path": "/subsystems/0/parts/32",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_048_bearing_on_the_shoulder"
+    },
+    {
+      "path": "/subsystems/0/parts/33",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_049_bearing_on_the_arm"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_002_toggle_lever_mechanism"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_003_machine_frame"
+    },
+    {
+      "path": "/subsystems/2/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_machine_frame.part_P_013_stopper_element_c88b7384"
+    },
+    {
+      "path": "/subsystems/2/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_machine_frame.part_P_006_toggle_lever_b3f45e31"
+    },
+    {
+      "path": "/subsystems/2/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_machine_frame.part_P_003_shaft_fae2d1b8"
+    },
+    {
+      "path": "/subsystems/2/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_machine_frame.part_P_004_second_lever_87a50c1c"
+    },
+    {
+      "path": "/subsystems/2/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_machine_frame.part_P_015_radial_arm"
+    },
+    {
+      "path": "/subsystems/2/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_machine_frame.part_P_017_pressing_tool"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_004_toggle_joint"
+    },
+    {
+      "path": "/subsystems/3/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_004_toggle_joint.part_P_010_axle"
+    },
+    {
+      "path": "/subsystems/3/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_004_toggle_joint.part_P_003_shaft_97ffd0e3"
+    },
+    {
+      "path": "/subsystems/3/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_004_toggle_joint.part_P_007_eccentric_cam_6ab4451b"
+    },
+    {
+      "path": "/subsystems/3/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_004_toggle_joint.part_P_004_second_lever_dd59c3df"
+    },
+    {
+      "path": "/subsystems/3/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_004_toggle_joint.part_P_006_toggle_lever_4521f271"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_005_drive_systems"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_006_hydraulic_pneumatic_press"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_007_hydraulic_drive_systems"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_008_purely_mechanical_drive_system"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_009_mechanical_drive_system"
+    },
+    {
+      "path": "/subsystems/8/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_009_mechanical_drive_system.part_P_004_second_lever_adb09426"
+    },
+    {
+      "path": "/subsystems/8/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_009_mechanical_drive_system.part_P_003_shaft_c1b855b5"
+    },
+    {
+      "path": "/subsystems/8/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_009_mechanical_drive_system.part_P_006_toggle_lever_c46af89c"
+    },
+    {
+      "path": "/subsystems/9",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_010_drive_system"
+    },
+    {
+      "path": "/subsystems/9/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_drive_system.part_P_004_second_lever_046b9475"
+    },
+    {
+      "path": "/subsystems/9/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_drive_system.part_P_003_shaft_c24d8549"
+    },
+    {
+      "path": "/subsystems/9/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_drive_system.part_P_007_eccentric_cam_34f20547"
+    },
+    {
+      "path": "/subsystems/9/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_drive_system.part_P_006_toggle_lever_ac236df6"
+    },
+    {
+      "path": "/subsystems/9/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_drive_system.part_P_028_arm_36_50a6390b"
+    },
+    {
+      "path": "/subsystems/10",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_011_second_lever"
+    },
+    {
+      "path": "/subsystems/11",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_012_eccentric_cam"
+    },
+    {
+      "path": "/subsystems/12",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_013_toggle_lever"
+    },
+    {
+      "path": "/subsystems/12/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_toggle_lever.part_P_018_first_lever_59724d4e"
+    },
+    {
+      "path": "/subsystems/12/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_toggle_lever.part_P_019_first_lever_14_fca32d87"
+    },
+    {
+      "path": "/subsystems/12/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_toggle_lever.part_P_004_second_lever_9681523b"
+    },
+    {
+      "path": "/subsystems/12/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_toggle_lever.part_P_020_second_lever_16_00489ff6"
+    },
+    {
+      "path": "/subsystems/12/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_toggle_lever.part_P_022_pressure_spring_8d4cd808"
+    },
+    {
+      "path": "/subsystems/12/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_toggle_lever.part_P_023_first_bearing"
+    },
+    {
+      "path": "/subsystems/12/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_toggle_lever.part_P_027_arm_12644bd3"
+    },
+    {
+      "path": "/subsystems/13",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_014_eccentric_press"
+    },
+    {
+      "path": "/subsystems/14",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_015_toggle_presses"
+    },
+    {
+      "path": "/subsystems/15",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_016_shaft"
+    },
+    {
+      "path": "/subsystems/16",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_017_spring"
+    },
+    {
+      "path": "/subsystems/17",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_018_magnetic_block"
+    },
+    {
+      "path": "/subsystems/18",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_019_stopper_element"
+    },
+    {
+      "path": "/subsystems/19",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_020_electrically_controlled_block"
+    },
+    {
+      "path": "/subsystems/20",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_021_mechanical_block"
+    },
+    {
+      "path": "/subsystems/21",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_022_radial_arm"
+    },
+    {
+      "path": "/subsystems/22",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_023_compression_spring"
+    },
+    {
+      "path": "/subsystems/23",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_024_press"
+    },
+    {
+      "path": "/subsystems/24",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_025_press_frame"
+    },
+    {
+      "path": "/subsystems/24/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_press_frame.part_P_018_first_lever_82e6f28b"
+    },
+    {
+      "path": "/subsystems/24/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_press_frame.part_P_019_first_lever_14_718c9d86"
+    },
+    {
+      "path": "/subsystems/24/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_press_frame.part_P_004_second_lever_7bda652e"
+    },
+    {
+      "path": "/subsystems/24/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_press_frame.part_P_020_second_lever_16_4bfcca27"
+    },
+    {
+      "path": "/subsystems/25",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_026_press_frame_10"
+    },
+    {
+      "path": "/subsystems/25/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_press_frame_10.part_P_018_first_lever_770071d2"
+    },
+    {
+      "path": "/subsystems/25/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_press_frame_10.part_P_004_second_lever_7f0a9db5"
+    },
+    {
+      "path": "/subsystems/25/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_press_frame_10.part_P_020_second_lever_16_e73d16a7"
+    },
+    {
+      "path": "/subsystems/26",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_027_drive_unit"
+    },
+    {
+      "path": "/subsystems/27",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_028_shaft_28"
+    },
+    {
+      "path": "/subsystems/27/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_028_shaft_28.part_P_004_second_lever_f6ccd605"
+    },
+    {
+      "path": "/subsystems/27/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_028_shaft_28.part_P_020_second_lever_16_f564eaf0"
+    },
+    {
+      "path": "/subsystems/27/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_028_shaft_28.part_P_007_eccentric_cam_4c9e2d4e"
+    },
+    {
+      "path": "/subsystems/27/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_028_shaft_28.part_P_040_eccentric_cam_44"
+    },
+    {
+      "path": "/subsystems/27/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_028_shaft_28.part_P_041_bore_46"
+    },
+    {
+      "path": "/subsystems/27/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_028_shaft_28.part_P_013_stopper_element_09988721"
+    },
+    {
+      "path": "/subsystems/27/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_028_shaft_28.part_P_035_counter_stopper_element_1474daee"
+    },
+    {
+      "path": "/subsystems/28",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_029_rigid_unit"
+    },
+    {
+      "path": "/subsystems/29",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_030_rigidly_connected_unit"
+    },
+    {
+      "path": "/subsystems/29/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_rigidly_connected_unit.part_P_006_toggle_lever_66e5b84e"
+    },
+    {
+      "path": "/subsystems/29/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_rigidly_connected_unit.part_P_032_toggle_lever_12"
+    },
+    {
+      "path": "/subsystems/29/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_rigidly_connected_unit.part_P_004_second_lever_7913a9f9"
+    },
+    {
+      "path": "/subsystems/29/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_rigidly_connected_unit.part_P_020_second_lever_16_e1d0b7d7"
+    },
+    {
+      "path": "/subsystems/29/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_rigidly_connected_unit.part_P_033_tool_22"
+    },
+    {
+      "path": "/subsystems/29/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_rigidly_connected_unit.part_P_013_stopper_element_629f35ff"
+    },
+    {
+      "path": "/subsystems/29/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_rigidly_connected_unit.part_P_034_stopper_element_40"
+    },
+    {
+      "path": "/subsystems/29/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_rigidly_connected_unit.part_P_035_counter_stopper_element_8bfeb635"
+    },
+    {
+      "path": "/subsystems/29/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_rigidly_connected_unit.part_P_036_counter_stopper_element_42"
+    },
+    {
+      "path": "/subsystems/29/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_rigidly_connected_unit.part_P_028_arm_36_9ce55443"
+    },
+    {
+      "path": "/subsystems/29/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_rigidly_connected_unit.part_P_038_second_arm_16"
+    },
+    {
+      "path": "/subsystems/30",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_031_unit"
+    },
+    {
+      "path": "/subsystems/30/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_unit.part_P_006_toggle_lever_88290e38"
+    },
+    {
+      "path": "/subsystems/30/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_unit.part_P_032_toggle_lever_12_f5058fc3"
+    },
+    {
+      "path": "/subsystems/30/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_unit.part_P_004_second_lever_ffb8b2b6"
+    },
+    {
+      "path": "/subsystems/30/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_unit.part_P_020_second_lever_16_5088d0cd"
+    },
+    {
+      "path": "/subsystems/30/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_unit.part_P_033_tool_22_80e05e98"
+    },
+    {
+      "path": "/subsystems/30/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_unit.part_P_013_stopper_element_bc114fe5"
+    },
+    {
+      "path": "/subsystems/30/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_unit.part_P_034_stopper_element_40_ee2a69f6"
+    },
+    {
+      "path": "/subsystems/30/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_unit.part_P_035_counter_stopper_element_2ea97749"
+    },
+    {
+      "path": "/subsystems/30/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_unit.part_P_036_counter_stopper_element_42_d13f2e69"
+    },
+    {
+      "path": "/subsystems/30/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_unit.part_P_028_arm_36_7b3c716c"
+    },
+    {
+      "path": "/subsystems/30/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_unit.part_P_038_second_arm_16_c5e99bb1"
+    },
+    {
+      "path": "/subsystems/31",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_032_arm_36"
+    },
+    {
+      "path": "/subsystems/32",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_033_second_arm_16"
+    },
+    {
+      "path": "/subsystems/33",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_034_lever_16"
+    },
+    {
+      "path": "/subsystems/34",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_035_arrangement"
+    },
+    {
+      "path": "/subsystems/34/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_arrangement.part_P_007_eccentric_cam_4a6b8cdc"
+    },
+    {
+      "path": "/subsystems/34/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_arrangement.part_P_040_eccentric_cam_44_a3373a84"
+    },
+    {
+      "path": "/subsystems/34/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_arrangement.part_P_004_second_lever_252cf417"
+    },
+    {
+      "path": "/subsystems/34/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_arrangement.part_P_042_stopper_roller"
+    },
+    {
+      "path": "/subsystems/34/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_arrangement.part_P_043_bearings"
+    },
+    {
+      "path": "/subsystems/34/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_arrangement.part_P_044_shoulder"
+    },
+    {
+      "path": "/subsystems/34/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_arrangement.part_P_045_shoulder_48"
+    },
+    {
+      "path": "/subsystems/34/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_arrangement.part_P_027_arm_b782f79f"
+    },
+    {
+      "path": "/subsystems/34/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_arrangement.part_P_028_arm_36_52eeb986"
+    },
+    {
+      "path": "/subsystems/35",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_036_motor"
+    },
+    {
+      "path": "/subsystems/36",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_037_pressure_spring"
+    },
+    {
+      "path": "/subsystems/37",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_038_arm"
+    },
+    {
+      "path": "/subsystems/38",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_039_pressing_tool"
+    },
+    {
+      "path": "/subsystems/39",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_040_pressing_tool_22"
+    },
+    {
+      "path": "/values/0",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_001_stroke"
+    },
+    {
+      "path": "/values/1",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_002_100_51_042"
+    },
+    {
+      "path": "/values/2",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_003_force"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_001_pivotably_connected"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_002_pivoting"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_003_adjustment"
+    },
+    {
+      "path": "/behaviour/actions/3",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_004_fine_adjustment"
+    },
+    {
+      "path": "/behaviour/actions/4",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_005_final_phase"
+    },
+    {
+      "path": "/behaviour/actions/5",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_006_toggle_press"
+    },
+    {
+      "path": "/behaviour/actions/6",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_007_approach_stroke"
+    },
+    {
+      "path": "/behaviour/actions/7",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_008_extension"
+    },
+    {
+      "path": "/behaviour/actions/8",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_009_adjustment_fine_adjustment"
+    },
+    {
+      "path": "/behaviour/actions/9",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_010_signal"
+    },
+    {
+      "path": "/behaviour/actions/10",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_011_triggers"
+    },
+    {
+      "path": "/behaviour/actions/11",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_012_disengages"
+    },
+    {
+      "path": "/behaviour/actions/12",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_013_downward_movement"
+    },
+    {
+      "path": "/behaviour/actions/13",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_014_working_stroke"
+    },
+    {
+      "path": "/behaviour/actions/14",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_015_pivoted"
+    },
+    {
+      "path": "/behaviour/actions/15",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_016_stopper_roller"
+    },
+    {
+      "path": "/behaviour/actions/16",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_017_sliding_contact"
+    },
+    {
+      "path": "/behaviour/actions/17",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_018_short_working_stroke"
+    },
+    {
+      "path": "/behaviour/actions/18",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_019_pivoting_movement"
+    },
+    {
+      "path": "/behaviour/actions/19",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_020_moved_from_top_to_bottom"
+    },
+    {
+      "path": "/behaviour/actions/20",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_021_stroke_movement"
+    },
+    {
+      "path": "/relationships/0",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[0]"
+    },
+    {
+      "path": "/relationships/0",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_001_levers"
+    },
+    {
+      "path": "/relationships/1",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[1]"
+    },
+    {
+      "path": "/relationships/1",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_002_joint"
+    },
+    {
+      "path": "/relationships/2",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[2]"
+    },
+    {
+      "path": "/relationships/2",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_004_second_lever"
+    },
+    {
+      "path": "/relationships/3",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[3]"
+    },
+    {
+      "path": "/relationships/3",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_005_lever"
+    },
+    {
+      "path": "/relationships/4",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[4]"
+    },
+    {
+      "path": "/relationships/4",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_003_shaft"
+    },
+    {
+      "path": "/relationships/5",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[5]"
+    },
+    {
+      "path": "/relationships/5",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_006_toggle_lever"
+    },
+    {
+      "path": "/relationships/6",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[6]"
+    },
+    {
+      "path": "/relationships/6",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_007_eccentric_cam"
+    },
+    {
+      "path": "/relationships/7",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[7]"
+    },
+    {
+      "path": "/relationships/7",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_008_toggle_joint"
+    },
+    {
+      "path": "/relationships/8",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[8]"
+    },
+    {
+      "path": "/relationships/8",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_009_mechanical_drive_system.part_P_004_second_lever_adb09426"
+    },
+    {
+      "path": "/relationships/9",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[9]"
+    },
+    {
+      "path": "/relationships/9",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_009_mechanical_drive_system.part_P_003_shaft_c1b855b5"
+    },
+    {
+      "path": "/relationships/10",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[10]"
+    },
+    {
+      "path": "/relationships/10",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_009_mechanical_drive_system.part_P_006_toggle_lever_c46af89c"
+    },
+    {
+      "path": "/relationships/11",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[11]"
+    },
+    {
+      "path": "/relationships/11",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_drive_system.part_P_004_second_lever_046b9475"
+    },
+    {
+      "path": "/relationships/12",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[12]"
+    },
+    {
+      "path": "/relationships/12",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_drive_system.part_P_003_shaft_c24d8549"
+    },
+    {
+      "path": "/relationships/13",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[13]"
+    },
+    {
+      "path": "/relationships/13",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_drive_system.part_P_007_eccentric_cam_34f20547"
+    },
+    {
+      "path": "/relationships/14",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[14]"
+    },
+    {
+      "path": "/relationships/14",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_drive_system.part_P_006_toggle_lever_ac236df6"
+    },
+    {
+      "path": "/relationships/15",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[15]"
+    },
+    {
+      "path": "/relationships/15",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_004_toggle_joint.part_P_010_axle"
+    },
+    {
+      "path": "/relationships/16",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[16]"
+    },
+    {
+      "path": "/relationships/16",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_004_toggle_joint.part_P_003_shaft_97ffd0e3"
+    },
+    {
+      "path": "/relationships/17",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[17]"
+    },
+    {
+      "path": "/relationships/17",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_004_toggle_joint.part_P_007_eccentric_cam_6ab4451b"
+    },
+    {
+      "path": "/relationships/18",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[18]"
+    },
+    {
+      "path": "/relationships/18",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_004_toggle_joint.part_P_004_second_lever_dd59c3df"
+    },
+    {
+      "path": "/relationships/19",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[19]"
+    },
+    {
+      "path": "/relationships/19",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_004_toggle_joint.part_P_006_toggle_lever_4521f271"
+    },
+    {
+      "path": "/relationships/20",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[20]"
+    },
+    {
+      "path": "/relationships/20",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_machine_frame.part_P_013_stopper_element_c88b7384"
+    },
+    {
+      "path": "/relationships/21",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[21]"
+    },
+    {
+      "path": "/relationships/21",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_machine_frame.part_P_006_toggle_lever_b3f45e31"
+    },
+    {
+      "path": "/relationships/22",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[22]"
+    },
+    {
+      "path": "/relationships/22",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_machine_frame.part_P_003_shaft_fae2d1b8"
+    },
+    {
+      "path": "/relationships/23",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[23]"
+    },
+    {
+      "path": "/relationships/23",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_machine_frame.part_P_004_second_lever_87a50c1c"
+    },
+    {
+      "path": "/relationships/24",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[24]"
+    },
+    {
+      "path": "/relationships/24",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_machine_frame.part_P_015_radial_arm"
+    },
+    {
+      "path": "/relationships/25",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[25]"
+    },
+    {
+      "path": "/relationships/25",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_machine_frame.part_P_017_pressing_tool"
+    },
+    {
+      "path": "/relationships/26",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[26]"
+    },
+    {
+      "path": "/relationships/26",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_press_frame.part_P_018_first_lever_82e6f28b"
+    },
+    {
+      "path": "/relationships/27",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[27]"
+    },
+    {
+      "path": "/relationships/27",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_press_frame.part_P_019_first_lever_14_718c9d86"
+    },
+    {
+      "path": "/relationships/28",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[28]"
+    },
+    {
+      "path": "/relationships/28",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_press_frame.part_P_004_second_lever_7bda652e"
+    },
+    {
+      "path": "/relationships/29",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[29]"
+    },
+    {
+      "path": "/relationships/29",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_press_frame.part_P_020_second_lever_16_4bfcca27"
+    },
+    {
+      "path": "/relationships/30",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[30]"
+    },
+    {
+      "path": "/relationships/30",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_press_frame_10.part_P_018_first_lever_770071d2"
+    },
+    {
+      "path": "/relationships/31",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[31]"
+    },
+    {
+      "path": "/relationships/31",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_press_frame_10.part_P_004_second_lever_7f0a9db5"
+    },
+    {
+      "path": "/relationships/32",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[32]"
+    },
+    {
+      "path": "/relationships/32",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_press_frame_10.part_P_020_second_lever_16_e73d16a7"
+    },
+    {
+      "path": "/relationships/33",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[33]"
+    },
+    {
+      "path": "/relationships/33",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_toggle_lever.part_P_018_first_lever_59724d4e"
+    },
+    {
+      "path": "/relationships/34",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[34]"
+    },
+    {
+      "path": "/relationships/34",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_toggle_lever.part_P_019_first_lever_14_fca32d87"
+    },
+    {
+      "path": "/relationships/35",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[35]"
+    },
+    {
+      "path": "/relationships/35",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_toggle_lever.part_P_004_second_lever_9681523b"
+    },
+    {
+      "path": "/relationships/36",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[36]"
+    },
+    {
+      "path": "/relationships/36",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_toggle_lever.part_P_020_second_lever_16_00489ff6"
+    },
+    {
+      "path": "/relationships/37",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[37]"
+    },
+    {
+      "path": "/relationships/37",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_toggle_lever.part_P_022_pressure_spring_8d4cd808"
+    },
+    {
+      "path": "/relationships/38",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[38]"
+    },
+    {
+      "path": "/relationships/38",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_toggle_lever.part_P_023_first_bearing"
+    },
+    {
+      "path": "/relationships/39",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[39]"
+    },
+    {
+      "path": "/relationships/39",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_toggle_lever.part_P_027_arm_12644bd3"
+    },
+    {
+      "path": "/relationships/40",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[40]"
+    },
+    {
+      "path": "/relationships/40",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_rigidly_connected_unit.part_P_006_toggle_lever_66e5b84e"
+    },
+    {
+      "path": "/relationships/41",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[41]"
+    },
+    {
+      "path": "/relationships/41",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_rigidly_connected_unit.part_P_032_toggle_lever_12"
+    },
+    {
+      "path": "/relationships/42",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[42]"
+    },
+    {
+      "path": "/relationships/42",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_rigidly_connected_unit.part_P_004_second_lever_7913a9f9"
+    },
+    {
+      "path": "/relationships/43",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[43]"
+    },
+    {
+      "path": "/relationships/43",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_rigidly_connected_unit.part_P_020_second_lever_16_e1d0b7d7"
+    },
+    {
+      "path": "/relationships/44",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[44]"
+    },
+    {
+      "path": "/relationships/44",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_rigidly_connected_unit.part_P_033_tool_22"
+    },
+    {
+      "path": "/relationships/45",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[45]"
+    },
+    {
+      "path": "/relationships/45",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_rigidly_connected_unit.part_P_013_stopper_element_629f35ff"
+    },
+    {
+      "path": "/relationships/46",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[46]"
+    },
+    {
+      "path": "/relationships/46",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_rigidly_connected_unit.part_P_034_stopper_element_40"
+    },
+    {
+      "path": "/relationships/47",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[47]"
+    },
+    {
+      "path": "/relationships/47",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_rigidly_connected_unit.part_P_035_counter_stopper_element_8bfeb635"
+    },
+    {
+      "path": "/relationships/48",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[48]"
+    },
+    {
+      "path": "/relationships/48",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_rigidly_connected_unit.part_P_036_counter_stopper_element_42"
+    },
+    {
+      "path": "/relationships/49",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[49]"
+    },
+    {
+      "path": "/relationships/49",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_rigidly_connected_unit.part_P_028_arm_36_9ce55443"
+    },
+    {
+      "path": "/relationships/50",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[50]"
+    },
+    {
+      "path": "/relationships/50",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_rigidly_connected_unit.part_P_038_second_arm_16"
+    },
+    {
+      "path": "/relationships/51",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[51]"
+    },
+    {
+      "path": "/relationships/51",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_unit.part_P_006_toggle_lever_88290e38"
+    },
+    {
+      "path": "/relationships/52",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[52]"
+    },
+    {
+      "path": "/relationships/52",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_unit.part_P_032_toggle_lever_12_f5058fc3"
+    },
+    {
+      "path": "/relationships/53",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[53]"
+    },
+    {
+      "path": "/relationships/53",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_unit.part_P_004_second_lever_ffb8b2b6"
+    },
+    {
+      "path": "/relationships/54",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[54]"
+    },
+    {
+      "path": "/relationships/54",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_unit.part_P_020_second_lever_16_5088d0cd"
+    },
+    {
+      "path": "/relationships/55",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[55]"
+    },
+    {
+      "path": "/relationships/55",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_unit.part_P_033_tool_22_80e05e98"
+    },
+    {
+      "path": "/relationships/56",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[56]"
+    },
+    {
+      "path": "/relationships/56",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_unit.part_P_013_stopper_element_bc114fe5"
+    },
+    {
+      "path": "/relationships/57",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[57]"
+    },
+    {
+      "path": "/relationships/57",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_unit.part_P_034_stopper_element_40_ee2a69f6"
+    },
+    {
+      "path": "/relationships/58",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[58]"
+    },
+    {
+      "path": "/relationships/58",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_unit.part_P_035_counter_stopper_element_2ea97749"
+    },
+    {
+      "path": "/relationships/59",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[59]"
+    },
+    {
+      "path": "/relationships/59",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_unit.part_P_036_counter_stopper_element_42_d13f2e69"
+    },
+    {
+      "path": "/relationships/60",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[60]"
+    },
+    {
+      "path": "/relationships/60",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_unit.part_P_028_arm_36_7b3c716c"
+    },
+    {
+      "path": "/relationships/61",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[61]"
+    },
+    {
+      "path": "/relationships/61",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_unit.part_P_038_second_arm_16_c5e99bb1"
+    },
+    {
+      "path": "/relationships/62",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[62]"
+    },
+    {
+      "path": "/relationships/62",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_028_shaft_28.part_P_004_second_lever_f6ccd605"
+    },
+    {
+      "path": "/relationships/63",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[63]"
+    },
+    {
+      "path": "/relationships/63",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_028_shaft_28.part_P_020_second_lever_16_f564eaf0"
+    },
+    {
+      "path": "/relationships/64",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[64]"
+    },
+    {
+      "path": "/relationships/64",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_028_shaft_28.part_P_007_eccentric_cam_4c9e2d4e"
+    },
+    {
+      "path": "/relationships/65",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[65]"
+    },
+    {
+      "path": "/relationships/65",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_028_shaft_28.part_P_040_eccentric_cam_44"
+    },
+    {
+      "path": "/relationships/66",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[66]"
+    },
+    {
+      "path": "/relationships/66",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_028_shaft_28.part_P_041_bore_46"
+    },
+    {
+      "path": "/relationships/67",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[67]"
+    },
+    {
+      "path": "/relationships/67",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_028_shaft_28.part_P_013_stopper_element_09988721"
+    },
+    {
+      "path": "/relationships/68",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[68]"
+    },
+    {
+      "path": "/relationships/68",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_028_shaft_28.part_P_035_counter_stopper_element_1474daee"
+    },
+    {
+      "path": "/relationships/69",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[69]"
+    },
+    {
+      "path": "/relationships/69",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_arrangement.part_P_007_eccentric_cam_4a6b8cdc"
+    },
+    {
+      "path": "/relationships/70",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[70]"
+    },
+    {
+      "path": "/relationships/70",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_arrangement.part_P_040_eccentric_cam_44_a3373a84"
+    },
+    {
+      "path": "/relationships/71",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[71]"
+    },
+    {
+      "path": "/relationships/71",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_arrangement.part_P_004_second_lever_252cf417"
+    },
+    {
+      "path": "/relationships/72",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[72]"
+    },
+    {
+      "path": "/relationships/72",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_arrangement.part_P_042_stopper_roller"
+    },
+    {
+      "path": "/relationships/73",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[73]"
+    },
+    {
+      "path": "/relationships/73",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_arrangement.part_P_043_bearings"
+    },
+    {
+      "path": "/relationships/74",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[74]"
+    },
+    {
+      "path": "/relationships/74",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_arrangement.part_P_044_shoulder"
+    },
+    {
+      "path": "/relationships/75",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[75]"
+    },
+    {
+      "path": "/relationships/75",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_arrangement.part_P_045_shoulder_48"
+    },
+    {
+      "path": "/relationships/76",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[76]"
+    },
+    {
+      "path": "/relationships/76",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_arrangement.part_P_027_arm_b782f79f"
+    },
+    {
+      "path": "/relationships/77",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[77]"
+    },
+    {
+      "path": "/relationships/77",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_arrangement.part_P_028_arm_36_52eeb986"
+    },
+    {
+      "path": "/relationships/78",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[78]"
+    },
+    {
+      "path": "/relationships/78",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_drive_system.part_P_028_arm_36_50a6390b"
+    },
+    {
+      "path": "/relationships/79",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[79]"
+    },
+    {
+      "path": "/relationships/79",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_027_arm"
+    },
+    {
+      "path": "/relationships/80",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[80]"
+    },
+    {
+      "path": "/relationships/80",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_028_arm_36"
+    },
+    {
+      "path": "/relationships/81",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[81]"
+    },
+    {
+      "path": "/relationships/81",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_046_arm_elements"
+    },
+    {
+      "path": "/relationships/82",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[82]"
+    },
+    {
+      "path": "/relationships/82",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_018_first_lever"
+    },
+    {
+      "path": "/relationships/83",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[83]"
+    },
+    {
+      "path": "/relationships/83",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_019_first_lever_14"
+    },
+    {
+      "path": "/relationships/84",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[84]"
+    },
+    {
+      "path": "/relationships/84",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_047_lever_parts"
+    },
+    {
+      "path": "/relationships/85",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[85]"
+    },
+    {
+      "path": "/relationships/85",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_020_second_lever_16"
+    },
+    {
+      "path": "/relationships/86",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[86]"
+    },
+    {
+      "path": "/relationships/86",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_022_pressure_spring"
+    },
+    {
+      "path": "/relationships/87",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[87]"
+    },
+    {
+      "path": "/relationships/87",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_013_stopper_element"
+    },
+    {
+      "path": "/relationships/88",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[88]"
+    },
+    {
+      "path": "/relationships/88",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toggle_press.part_P_035_counter_stopper_element"
+    },
+    {
+      "path": "/relationships/89",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[89]"
+    },
+    {
+      "path": "/relationships/90",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[90]"
+    },
+    {
+      "path": "/relationships/91",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[91]"
+    },
+    {
+      "path": "/relationships/92",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[92]"
+    },
+    {
+      "path": "/relationships/93",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[93]"
+    },
+    {
+      "path": "/relationships/94",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[94]"
+    },
+    {
+      "path": "/relationships/95",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[95]"
+    },
+    {
+      "path": "/relationships/96",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[96]"
+    },
+    {
+      "path": "/relationships/97",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[97]"
+    },
+    {
+      "path": "/relationships/98",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[98]"
+    },
+    {
+      "path": "/relationships/99",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[99]"
+    },
+    {
+      "path": "/relationships/100",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[100]"
+    },
+    {
+      "path": "/relationships/101",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[101]"
+    },
+    {
+      "path": "/relationships/102",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[102]"
+    },
+    {
+      "path": "/relationships/103",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[103]"
+    },
+    {
+      "path": "/relationships/104",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[104]"
+    },
+    {
+      "path": "/relationships/105",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[105]"
+    },
+    {
+      "path": "/relationships/106",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[106]"
+    },
+    {
+      "path": "/relationships/107",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[107]"
+    },
+    {
+      "path": "/relationships/108",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[108]"
+    },
+    {
+      "path": "/relationships/109",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[109]"
+    },
+    {
+      "path": "/relationships/110",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[110]"
+    },
+    {
+      "path": "/relationships/111",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[111]"
+    },
+    {
+      "path": "/relationships/112",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[112]"
+    },
+    {
+      "path": "/relationships/113",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[113]"
+    },
+    {
+      "path": "/relationships/114",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[114]"
+    },
+    {
+      "path": "/relationships/115",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[115]"
+    },
+    {
+      "path": "/relationships/116",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[116]"
+    },
+    {
+      "path": "/relationships/117",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[117]"
+    },
+    {
+      "path": "/relationships/118",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[118]"
+    },
+    {
+      "path": "/relationships/119",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[119]"
+    },
+    {
+      "path": "/relationships/120",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[120]"
+    },
+    {
+      "path": "/relationships/121",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[121]"
+    },
+    {
+      "path": "/relationships/122",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[122]"
+    },
+    {
+      "path": "/relationships/123",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[123]"
+    },
+    {
+      "path": "/relationships/124",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[124]"
+    },
+    {
+      "path": "/relationships/125",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[125]"
+    },
+    {
+      "path": "/relationships/126",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[126]"
+    },
+    {
+      "path": "/relationships/127",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[127]"
+    },
+    {
+      "path": "/relationships/128",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[128]"
+    },
+    {
+      "path": "/relationships/129",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[129]"
+    },
+    {
+      "path": "/relationships/130",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[130]"
+    },
+    {
+      "path": "/relationships/131",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[131]"
+    },
+    {
+      "path": "/relationships/132",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[132]"
+    },
+    {
+      "path": "/relationships/133",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[133]"
+    },
+    {
+      "path": "/relationships/134",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[134]"
+    },
+    {
+      "path": "/relationships/135",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[135]"
+    },
+    {
+      "path": "/relationships/136",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[136]"
+    }
+  ],
+  "unresolved": [
+    {
+      "path": "/values/0",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/1",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/2",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/89",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/90",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/91",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/92",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/93",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/94",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/95",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/96",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/97",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/98",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/99",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/100",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/101",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/102",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/103",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/104",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/105",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/106",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/107",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/108",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/109",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/110",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/111",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/112",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/113",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/114",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/115",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/116",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/117",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/118",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/119",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/120",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/121",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/122",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/123",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/124",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/125",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/126",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/127",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/128",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/129",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/130",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/131",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/132",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/133",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/134",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/135",
+      "reason": "Relationship type 'preconditions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/136",
+      "reason": "Relationship type 'preconditions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    }
+  ],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

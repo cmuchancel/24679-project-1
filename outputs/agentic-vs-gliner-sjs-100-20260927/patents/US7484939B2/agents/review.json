@@ -1,0 +1,34 @@
+{
+  "revision": 4,
+  "candidate_sha256": "43c450ae8dbf3956d216a77e29bfd89a866d769d9fc3ab08e1cf4c3a5a43b1c1",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 4's added cylinder-port fluid communication, actuator-to-ring engagement, and piston-to-cam contact are directly supported by claim 1/12 and description passages 2403a1bc131ee0884f9ee4673181cc29, 34ee655a46e0443218e40c9adb96e276, and 3bd8b2f06eee56f64e37805ca1329bab. The external drive/fluid context and qualitative flow relationship are supported by 87756d058f28a0eaacd80ea8e0b00796 and c083517993734376ac21da8f80e8beca."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The three previously identified missing internal relationships have been added with corresponding typed ports, interfaces, and flows. The modeled system captures core pumping, variable displacement, and actuator operation. The optional bearing-ring implementation is not modeled as a separate component, but rings include cam surfaces and this is a defensible abstraction rather than an unsupported omission."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "The added interfaces reference declared ports and flows: hydraulic_fluid between housing and rotor; mechanical_linear from actuator to ring; and mechanical_contact between ring and pistons. These flow types are compatible and bidirectional/inout where the patent describes communication/contact; external connections maintain complementary input/output directions."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Descriptions and item-flow notes represent the principal claim relationships: paired pumping sections, cylinder ports communicating with inlet/outlet passages during rotation, pistons engaging cam surfaces, ring movement altering piston travel, control pressure actuation, and external shaft drive. No quantitative limits are invented. Claim context is adequately supported by cited patent passages."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "The prior findings R3-IF-01, R3-IF-02, and R3-FC-01 are resolved in revision 4: each added internal connection has existing compatible ports and a declared flow_ref, and each connection is recorded once. No malformed top-level connections remain."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "External drive and fluid circuit are separate contextual components, consistent with textbook boundary/context guidance. The textbook supports modeling method only; patent passages independently support invention-specific assertions."
+    }
+  },
+  "findings": [],
+  "summary": "Revision 4 resolves all three prior review findings by adding patent-grounded internal interfaces for cylinder-port fluid communication, actuator-to-ring motion, and piston-to-cam engagement. The cited evidence supports the relationships, and the SJS connections use declared compatible ports and flows. External source/sink context remains appropriately separated, and I found no unresolved material model or evidence issue. Independent review: pass.",
+  "saved_at": "2026-09-27T07:36:00.256510+00:00"
+}

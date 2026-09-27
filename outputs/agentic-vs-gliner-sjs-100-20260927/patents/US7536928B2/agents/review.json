@@ -1,0 +1,34 @@
+{
+  "revision": 3,
+  "candidate_sha256": "7ef832d4354a967a8fe51bc0b5ab78c7d03a1eb6b6606e0e7989a72adc94e178",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "The revision 3 components and principal descriptions are directly grounded in the cited detailed description and claims. It correctly separates bridge mounting on the nut barrel from the connecting-groove passage, and preserves dependent-claim qualification for ball diameter and groove depth. The background rotation-to-translation action is separately cited as general ball-screw operation, not presented as a claim limitation."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The model covers the disclosed shaft, mating nut, rolling balls, bridge members, opposed-groove passage, bridge connecting grooves, ball circulation, and claim 1–3 geometry. Excluding an actuator architecture and other surrounding equipment is appropriately cautious."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Revision 3 adds a nut-to-bridge circulation interface using compatible mechanical_motion ports and the ball_circulation flow, while retaining the separate fitted_contact mounting interface. Alongside the balls-to-bridge rolling-passage interface and the shaft/nut-to-ball groove contact interfaces, this represents the disclosed relationship: balls roll in the opposed shaft/nut grooves and circulate through bridge grooves that connect nut grooves. The patent does not specify a directional sequence, so inout ports and no asserted direction are reasonable."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "The contact-angle and dependent dimensional parameters are represented with claim-linked citations and the dependent status is explicit in the latter two requirement statements. The circulation action is cited to the detailed description; the rotation/translation action is cited to background text."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Interfaces reference existing subsystems, ports, and flows with compatible mechanical_contact or mechanical_motion types. The nut-bridge fitted mounting connection remains distinct from the nut-groove/bridge-connecting-groove circulation-passage connection. Recording the mating interfaces once on the nut subsystem is consistent with the supplied SJS convention."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The physical decomposition uses actual components, and surrounding actuator/drive details are not fabricated where the patent leaves them unspecified. Textbook guidance is used only to support cautious modeling choices, not as evidence for invention facts."
+    }
+  },
+  "findings": [],
+  "summary": "Independent review of saved revision 3: the previously missing bridge connecting-groove to nut screw-groove connection is now represented as a distinct circulation-passage interface, separate from bridge mounting contact. Together with the ball-to-bridge circulation connection and the ball contacts with opposed shaft/nut grooves, the SJS expresses the supported route without inventing a direction. The modeled components, actions, claims, and interfaces are adequately patent-grounded; no unresolved findings identified.",
+  "saved_at": "2026-09-27T09:37:06.560660+00:00"
+}

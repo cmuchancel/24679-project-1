@@ -1,0 +1,172 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 8,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 3,
+    "Documentation": 33,
+    "EndFeatureMembership": 10,
+    "Feature": 22,
+    "FeatureChaining": 30,
+    "FeatureMembership": 32,
+    "FeatureReferenceExpression": 2,
+    "FeatureTyping": 14,
+    "FeatureValue": 2,
+    "ItemDefinition": 4,
+    "ItemUsage": 6,
+    "LiteralInteger": 4,
+    "MultiplicityRange": 4,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 66,
+    "Package": 1,
+    "PartDefinition": 4,
+    "PartUsage": 9,
+    "PortUsage": 6,
+    "ReferenceSubsetting": 12,
+    "ReferenceUsage": 2,
+    "RequirementDefinition": 2,
+    "RequirementUsage": 2,
+    "SatisfyRequirementUsage": 2,
+    "Subclassification": 2,
+    "SubjectMembership": 2,
+    "SuccessionAsUsage": 4
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_VANE_Inlet_guide_vane_and_pivot_axis"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_VANE_Inlet_guide_vane_and_pivot_axis.port_vane_lever_pivot_Guide_vane_pivot_lever_coupling"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_LEVER_Guide_vane_lever"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LEVER_Guide_vane_lever.port_lever_link_end_Link_pivot_coupling"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LEVER_Guide_vane_lever.port_lever_vane_pivot_Vane_pivot_axis_coupling"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_LINK_Bending_failure_link"
+    },
+    {
+      "path": "/subsystems/2/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_LINK_Bending_failure_link.part_FIRST_ARM_First_link_arm_configured_to_withstand_the_th"
+    },
+    {
+      "path": "/subsystems/2/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_LINK_Bending_failure_link.part_BEND_ARM_Bending_element_arm_with_rupture_region_confi"
+    },
+    {
+      "path": "/subsystems/2/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_LINK_Bending_failure_link.part_TENSION_BOLT_Prestressed_tension_bolt_with_a_defined_ruptu"
+    },
+    {
+      "path": "/subsystems/2/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_LINK_Bending_failure_link.part_BEND_ELEMENT_Bending_element_that_retains_the_guide_vane_a"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LINK_Bending_failure_link.port_link_lever_end_Lever_pivot_coupling"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LINK_Bending_failure_link.port_link_adjuster_end_Adjusting_element_pivot_coupling"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ADJUSTER_Common_adjusting_element"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ADJUSTER_Common_adjusting_element.port_adjuster_link_end_Link_coupling"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_link_motion_Link_mechanical_motion_and_positioning_load"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_vane_rotation_Guide_vane_rotation_and_turning_moment"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_THRESHOLD_RUPTURE"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_THRESHOLD_RUPTURE"
+    },
+    {
+      "path": "/requirements/1",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_POST_RUPTURE_HOLD"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_POST_RUPTURE_HOLD"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_TURN_VANE_Turn_guide_vane_through_adjustment_linkage"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_RELIEVE_OVERLOAD_Rupture_bending_element_arm_under_overload"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_vane_lever_pivot_connection"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_lever_link_connection"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_link_adjuster_connection"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

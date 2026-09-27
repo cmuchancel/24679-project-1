@@ -1,0 +1,122 @@
+package Model__Ball_engagement_clamp_device {
+    private import ScalarValues::*;
+    doc SJS_Source
+    /* SJS_JSON_V1
+     * {"$schema": "sjs/1.0", "model_meta": {"system_name": "Ball-engagement clamp device", "system_id": "US7021615B2", "description": "Conceptual model of a clamp fixing a work pallet or die to a base through steel balls engaging bush recesses, actuated by an axial output member.", "version": "1.0", "lifecycle_stage": "concept", "domain": "Mechanical workholding", "maturity": "draft", "date_modified": "2026-09-27"}, "subsystems": [{"subsystem_id": "BUSH", "subsystem_name": "Engaging bush", "description": "Ring-shaped bush fixed to the clamped object, with circumferential partial-sphere recesses for steel-ball engagement.", "domain": "Mechanical"}, {"subsystem_id": "HOLDER", "subsystem_name": "Holding body", "description": "Base-mounted body with tubular section inserted through the bush, radial ball support locations, and an axle hole for the output member.", "domain": "Mechanical"}, {"subsystem_id": "BALLS", "subsystem_name": "Steel-ball set", "description": "Plurality of radially movable steel balls engaging corresponding bush recesses; detailed embodiment specifies six.", "domain": "Mechanical"}, {"subsystem_id": "OUTPUT", "subsystem_name": "Axial clamp output member", "description": "Movable piston/output member whose axial motion and profile drive outward engagement or inward retreat of the balls.", "domain": "Mechanical"}, {"subsystem_id": "SPRINGS", "subsystem_name": "Disc spring set", "description": "Plural disc springs urge the output member axially toward clamping (claim 6).", "domain": "Mechanical"}, {"subsystem_id": "CYLINDER", "subsystem_name": "Hydraulic release cylinder", "description": "Drives the output member axially against disc-spring force to release ball engagement (claim 7).", "domain": "Hydraulic/mechanical", "ports": [{"port_id": "CYL_HYD_IN", "name": "Oil-chamber hydraulic supply", "direction": "in", "flow_type": "hydraulic_fluid"}], "interfaces": [{"interface_id": "HYD_SUPPLY_CONNECTION", "mating_subsystem": "HYD_SUPPLY", "port_this": "CYL_HYD_IN", "port_mate": "SUPPLY_OUT", "flow_ref": "F_HYD", "interface_type": "hydraulic"}]}, {"subsystem_id": "OBJECT", "subsystem_name": "Clamped work object", "description": "External work pallet or die carrying the bush.", "domain": "Workholding context"}, {"subsystem_id": "BASE", "subsystem_name": "Base body", "description": "External base body to which the clamped object is fixed.", "domain": "Machine-tool structure"}, {"subsystem_id": "HYD_SUPPLY", "subsystem_name": "External hydraulic pressure supply device", "description": "External device connected through the base-member oil passage to supply and discharge hydraulic pressure to the cylinder oil chamber.", "domain": "Hydraulic supply", "ports": [{"port_id": "SUPPLY_OUT", "name": "Hydraulic pressure supply/discharge", "direction": "out", "flow_type": "hydraulic_fluid"}]}], "item_flows": [{"flow_id": "F_HYD", "name": "Hydraulic pressure", "flow_type": "hydraulic_fluid", "notes": "Supplied to cylinder to drive release against spring force."}], "behaviour": {"actions": [{"action_id": "A_CLAMP", "name": "Engage clamp", "owner": "OUTPUT", "steps": [{"step_no": 1, "description": "Disc springs urge the output member axially toward the clamped position."}, {"step_no": 2, "description": "The output-member profile moves the balls radially outward."}, {"step_no": 3, "description": "The balls engage the bush recesses, fixing the object to the base."}]}, {"action_id": "A_RELEASE", "name": "Release clamp", "owner": "CYLINDER", "steps": [{"step_no": 1, "description": "Hydraulic force drives the output member axially against disc-spring force."}, {"step_no": 2, "description": "The output-member recess profile permits the balls to retreat radially inward."}, {"step_no": 3, "description": "Ball engagement is removed and the object is released from the base."}]}]}}
+     */
+    doc
+    /* {"system_name": "Ball-engagement clamp device", "system_id": "US7021615B2", "description": "Conceptual model of a clamp fixing a work pallet or die to a base through steel balls engaging bush recesses, actuated by an axial output member.", "version": "1.0", "lifecycle_stage": "concept", "domain": "Mechanical workholding", "maturity": "draft", "date_modified": "2026-09-27"} */
+    item def FlowType__hydraulic_fluid {
+        doc
+        /* {"flow_type": "hydraulic_fluid"} */
+    }
+    part def Component_BUSH_Engaging_bush {
+        doc
+        /* {"subsystem_id": "BUSH", "subsystem_name": "Engaging bush", "description": "Ring-shaped bush fixed to the clamped object, with circumferential partial-sphere recesses for steel-ball engagement.", "domain": "Mechanical"} */
+    }
+    part def Component_HOLDER_Holding_body {
+        doc
+        /* {"subsystem_id": "HOLDER", "subsystem_name": "Holding body", "description": "Base-mounted body with tubular section inserted through the bush, radial ball support locations, and an axle hole for the output member.", "domain": "Mechanical"} */
+    }
+    part def Component_BALLS_Steel_ball_set {
+        doc
+        /* {"subsystem_id": "BALLS", "subsystem_name": "Steel-ball set", "description": "Plurality of radially movable steel balls engaging corresponding bush recesses; detailed embodiment specifies six.", "domain": "Mechanical"} */
+    }
+    part def Component_OUTPUT_Axial_clamp_output_member {
+        doc
+        /* {"subsystem_id": "OUTPUT", "subsystem_name": "Axial clamp output member", "description": "Movable piston/output member whose axial motion and profile drive outward engagement or inward retreat of the balls.", "domain": "Mechanical"} */
+    }
+    part def Component_SPRINGS_Disc_spring_set {
+        doc
+        /* {"subsystem_id": "SPRINGS", "subsystem_name": "Disc spring set", "description": "Plural disc springs urge the output member axially toward clamping (claim 6).", "domain": "Mechanical"} */
+    }
+    part def Component_CYLINDER_Hydraulic_release_cylinder {
+        doc
+        /* {"subsystem_id": "CYLINDER", "subsystem_name": "Hydraulic release cylinder", "description": "Drives the output member axially against disc-spring force to release ball engagement (claim 7).", "domain": "Hydraulic/mechanical", "ports": [{"port_id": "CYL_HYD_IN", "name": "Oil-chamber hydraulic supply", "direction": "in", "flow_type": "hydraulic_fluid"}], "interfaces": [{"interface_id": "HYD_SUPPLY_CONNECTION", "mating_subsystem": "HYD_SUPPLY", "port_this": "CYL_HYD_IN", "port_mate": "SUPPLY_OUT", "flow_ref": "F_HYD", "interface_type": "hydraulic"}]} */
+        port port_CYL_HYD_IN_Oil_chamber_hydraulic_supply {
+            doc
+            /* {"port_id": "CYL_HYD_IN", "name": "Oil-chamber hydraulic supply", "direction": "in", "flow_type": "hydraulic_fluid"} */
+            in item payload : FlowType__hydraulic_fluid;
+        }
+    }
+    part def Component_OBJECT_Clamped_work_object {
+        doc
+        /* {"subsystem_id": "OBJECT", "subsystem_name": "Clamped work object", "description": "External work pallet or die carrying the bush.", "domain": "Workholding context"} */
+    }
+    part def Component_BASE_Base_body {
+        doc
+        /* {"subsystem_id": "BASE", "subsystem_name": "Base body", "description": "External base body to which the clamped object is fixed.", "domain": "Machine-tool structure"} */
+    }
+    part def Component_HYD_SUPPLY_External_hydraulic_pressure_supply_device {
+        doc
+        /* {"subsystem_id": "HYD_SUPPLY", "subsystem_name": "External hydraulic pressure supply device", "description": "External device connected through the base-member oil passage to supply and discharge hydraulic pressure to the cylinder oil chamber.", "domain": "Hydraulic supply", "ports": [{"port_id": "SUPPLY_OUT", "name": "Hydraulic pressure supply/discharge", "direction": "out", "flow_type": "hydraulic_fluid"}]} */
+        port port_SUPPLY_OUT_Hydraulic_pressure_supply_discharge {
+            doc
+            /* {"port_id": "SUPPLY_OUT", "name": "Hydraulic pressure supply/discharge", "direction": "out", "flow_type": "hydraulic_fluid"} */
+            out item payload : FlowType__hydraulic_fluid;
+        }
+    }
+    item def Flow_F_HYD_Hydraulic_pressure :> FlowType__hydraulic_fluid {
+        doc
+        /* {"flow_id": "F_HYD", "name": "Hydraulic pressure", "flow_type": "hydraulic_fluid", "notes": "Supplied to cylinder to drive release against spring force."} */
+    }
+    action def Action_A_CLAMP_Engage_clamp {
+        doc
+        /* {"action_id": "A_CLAMP", "name": "Engage clamp", "owner": "OUTPUT", "steps": [{"step_no": 1, "description": "Disc springs urge the output member axially toward the clamped position."}, {"step_no": 2, "description": "The output-member profile moves the balls radially outward."}, {"step_no": 3, "description": "The balls engage the bush recesses, fixing the object to the base."}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "Disc springs urge the output member axially toward the clamped position."} */
+        }
+        then action step_2 {
+            doc
+            /* {"step_no": 2, "description": "The output-member profile moves the balls radially outward."} */
+        }
+        then action step_3 {
+            doc
+            /* {"step_no": 3, "description": "The balls engage the bush recesses, fixing the object to the base."} */
+        }
+    }
+    action def Action_A_RELEASE_Release_clamp {
+        doc
+        /* {"action_id": "A_RELEASE", "name": "Release clamp", "owner": "CYLINDER", "steps": [{"step_no": 1, "description": "Hydraulic force drives the output member axially against disc-spring force."}, {"step_no": 2, "description": "The output-member recess profile permits the balls to retreat radially inward."}, {"step_no": 3, "description": "Ball engagement is removed and the object is released from the base."}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "Hydraulic force drives the output member axially against disc-spring force."} */
+        }
+        then action step_2 {
+            doc
+            /* {"step_no": 2, "description": "The output-member recess profile permits the balls to retreat radially inward."} */
+        }
+        then action step_3 {
+            doc
+            /* {"step_no": 3, "description": "Ball engagement is removed and the object is released from the base."} */
+        }
+    }
+    part systemModel {
+        part component_BUSH_Engaging_bush : Component_BUSH_Engaging_bush;
+        part component_HOLDER_Holding_body : Component_HOLDER_Holding_body;
+        part component_BALLS_Steel_ball_set : Component_BALLS_Steel_ball_set;
+        part component_OUTPUT_Axial_clamp_output_member
+            : Component_OUTPUT_Axial_clamp_output_member;
+        part component_SPRINGS_Disc_spring_set : Component_SPRINGS_Disc_spring_set;
+        part component_CYLINDER_Hydraulic_release_cylinder
+            : Component_CYLINDER_Hydraulic_release_cylinder;
+        part component_OBJECT_Clamped_work_object : Component_OBJECT_Clamped_work_object;
+        part component_BASE_Base_body : Component_BASE_Base_body;
+        part component_HYD_SUPPLY_External_hydraulic_pressure_supply_device
+            : Component_HYD_SUPPLY_External_hydraulic_pressure_supply_device;
+        action action_A_CLAMP_Engage_clamp : Action_A_CLAMP_Engage_clamp;
+        action action_A_RELEASE_Release_clamp : Action_A_RELEASE_Release_clamp;
+    }
+    allocate systemModel.action_A_CLAMP_Engage_clamp
+        to systemModel.component_OUTPUT_Axial_clamp_output_member;
+    allocate systemModel.action_A_RELEASE_Release_clamp
+        to systemModel.component_CYLINDER_Hydraulic_release_cylinder;
+    doc
+    /* {"interface_id": "HYD_SUPPLY_CONNECTION", "mating_subsystem": "HYD_SUPPLY", "port_this": "CYL_HYD_IN", "port_mate": "SUPPLY_OUT", "flow_ref": "F_HYD", "interface_type": "hydraulic"} */
+    flow connection_HYD_SUPPLY_CONNECTION
+        from systemModel.component_HYD_SUPPLY_External_hydraulic_pressure_supply_device
+            .port_SUPPLY_OUT_Hydraulic_pressure_supply_discharge.payload
+        to systemModel.component_CYLINDER_Hydraulic_release_cylinder
+            .port_CYL_HYD_IN_Oil_chamber_hydraulic_supply.payload;
+} // package Model__Ball_engagement_clamp_device

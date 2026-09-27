@@ -1,0 +1,278 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 6,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 10,
+    "Documentation": 57,
+    "EndFeatureMembership": 24,
+    "Feature": 48,
+    "FeatureChaining": 68,
+    "FeatureMembership": 60,
+    "FeatureTyping": 34,
+    "ItemDefinition": 7,
+    "ItemUsage": 20,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 92,
+    "Package": 1,
+    "PartDefinition": 12,
+    "PartUsage": 13,
+    "PortUsage": 20,
+    "ReferenceSubsetting": 24,
+    "Subclassification": 4,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_OUTER_Outer_cylinder_member"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_OUTER_Outer_cylinder_member.port_P_OUTER_VIB_Vibration_mount_interface"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_OUTER_Outer_cylinder_member.port_P_OUTER_ELASTIC_Rubber_elastic_coupling"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_MOUNT_Mounting_member"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_MOUNT_Mounting_member.port_P_MOUNT_VIB_Vibration_mount_interface"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_MOUNT_Mounting_member.port_P_MOUNT_ELASTIC_Rubber_elastic_coupling"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_RUBBER_Rubber_elastic_body"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_RUBBER_Rubber_elastic_body.port_P_RUBBER_OUTER_Outer_cylinder_elastic_connection"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_RUBBER_Rubber_elastic_body.port_P_RUBBER_MOUNT_Mounting_member_elastic_connection"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PAIR_Pair_of_first_pressure_receiving_chambers"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PAIR_Pair_of_first_pressure_receiving_chambers.port_P_PAIR_FLUID_A_First_chamber_A_fluid_connection"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PAIR_Pair_of_first_pressure_receiving_chambers.port_P_PAIR_FLUID_B_First_chamber_B_fluid_connection"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_AUX_Auxiliary_fluid_chamber"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_AUX_Auxiliary_fluid_chamber.port_P_AUX_FIRST_A_First_passage_A_connection"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_AUX_Auxiliary_fluid_chamber.port_P_AUX_FIRST_B_First_passage_B_connection"
+    },
+    {
+      "path": "/subsystems/4/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_AUX_Auxiliary_fluid_chamber.port_P_AUX_SECOND_Second_passage_connection"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DIAPH_Diaphragm"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PASS1_Pair_of_first_restrict_passages"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PASS1_Pair_of_first_restrict_passages.port_P_PASS1_A_Chamber_A_end"
+    },
+    {
+      "path": "/subsystems/6/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PASS1_Pair_of_first_restrict_passages.port_P_PASS1_B_Chamber_B_end"
+    },
+    {
+      "path": "/subsystems/6/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PASS1_Pair_of_first_restrict_passages.port_P_PASS1_AUX_A_Auxiliary_A_end"
+    },
+    {
+      "path": "/subsystems/6/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PASS1_Pair_of_first_restrict_passages.port_P_PASS1_AUX_B_Auxiliary_B_end"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DIV_Dividing_member"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CH2_Second_pressure_receiving_fluid_chamber"
+    },
+    {
+      "path": "/subsystems/8/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CH2_Second_pressure_receiving_fluid_chamber.port_P_CH2_Second_chamber_fluid_connection"
+    },
+    {
+      "path": "/subsystems/9",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PASS2_Second_restrict_passage"
+    },
+    {
+      "path": "/subsystems/9/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PASS2_Second_restrict_passage.port_P_PASS2_CH2_Second_chamber_end"
+    },
+    {
+      "path": "/subsystems/9/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PASS2_Second_restrict_passage.port_P_PASS2_AUX_Auxiliary_chamber_end"
+    },
+    {
+      "path": "/subsystems/10",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_VIBSRC_Vibration_generating_portion"
+    },
+    {
+      "path": "/subsystems/10/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_VIBSRC_Vibration_generating_portion.port_P_SRC_Vibration_boundary"
+    },
+    {
+      "path": "/subsystems/11",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_VIBSINK_Vibration_receiving_portion"
+    },
+    {
+      "path": "/subsystems/11/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_VIBSINK_Vibration_receiving_portion.port_P_SINK_Vibration_boundary"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_VIB_Input_vibration___relative_mechanical_motion"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_FLUID1_Fluid_exchange_through_first_restrict_passage"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_FLUID2_Fluid_exchange_through_second_restrict_passag"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_ELASTIC_Elastic_mechanical_coupling_between_members"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_DEFORM_Convert_vibration_deformation_to_opposed_cham"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_FLOW_Exchange_fluid_through_restricted_paths"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_OUTER_SRC"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_MOUNT_SINK"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_RUBBER_OUTER"
+    },
+    {
+      "path": "/subsystems/2/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_RUBBER_MOUNT"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_PAIR_PASS1_A"
+    },
+    {
+      "path": "/subsystems/3/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_PAIR_PASS1_B"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_AUX_PASS1_A"
+    },
+    {
+      "path": "/subsystems/4/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_AUX_PASS1_B"
+    },
+    {
+      "path": "/subsystems/4/interfaces/2",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_AUX_PASS2"
+    },
+    {
+      "path": "/subsystems/8/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_CH2_PASS2"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

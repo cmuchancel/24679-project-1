@@ -1,0 +1,319 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Automated-coupling chuck system",
+    "system_id": "US9925597B2",
+    "description": "Replaceable chuck system transferring motor torque through an automatically engaging interface and internal mechanical transmission to move jaws and clamp a workpiece or tool.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "Machine-tool workholding",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "CHUCK",
+      "subsystem_name": "Chuck body",
+      "description": "Chuck body/housing supporting the clamping space and separately modeled translating jaws; excludes the jaws and guides.",
+      "domain": "Mechanical workholding",
+      "functional_basis": [
+        "clamp workpiece",
+        "define clamping space"
+      ],
+      "ports": [
+        {
+          "port_id": "receiver_mount",
+          "name": "Receiver mounting interface",
+          "direction": "inout",
+          "flow_type": "mechanical_structural"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "JAWS",
+      "subsystem_name": "Chuck jaws and guides",
+      "description": "At least two jaws guided in translation along the clamping plane toward or away from the clamping-space center.",
+      "domain": "Mechanical workholding",
+      "ports": [
+        {
+          "port_id": "jaw_drive",
+          "name": "Rotary jaw-drive input",
+          "direction": "in",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "clamp_contact",
+          "name": "Jaw contact and clamping output",
+          "direction": "out",
+          "flow_type": "mechanical_force"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_TRAIN_JAWS",
+          "mating_subsystem": "TRANSMISSION",
+          "port_this": "jaw_drive",
+          "port_mate": "jaw_motion_out",
+          "flow_ref": "F_JAW",
+          "interface_type": "Mechanical drive engagement"
+        },
+        {
+          "interface_id": "IF_JAWS_WORKPIECE",
+          "mating_subsystem": "WORKPIECE",
+          "port_this": "clamp_contact",
+          "port_mate": "workpiece_clamp_in",
+          "flow_ref": "F_CLAMP",
+          "interface_type": "Jaw clamping contact"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "TRANSMISSION",
+      "subsystem_name": "Chuck torque transfer train",
+      "description": "Internal mechanical transmission including drive shafts and gearing; the described embodiment uses a splined output shaft engaging a spiral ring that drives jaws.",
+      "domain": "Mechanical transmission",
+      "ports": [
+        {
+          "port_id": "torque_in",
+          "name": "Coupled torque input",
+          "direction": "in",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "jaw_motion_out",
+          "name": "Jaw drive output",
+          "direction": "out",
+          "flow_type": "mechanical_rotary"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_MOTOR_TRAIN",
+          "mating_subsystem": "MOTOR",
+          "port_this": "torque_in",
+          "port_mate": "motor_torque_out",
+          "flow_ref": "F_TORQUE",
+          "interface_type": "Direct drive-member to chuck torque-transfer coupling"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "DRIVE",
+      "subsystem_name": "Chuck receiver",
+      "description": "Chuck receiver on which the chuck is mounted; includes the drive member represented by MOTOR, which has the coupling element that engages the chuck torque-transfer member. The receiver mounting relationship remains distinct from the torque-transfer coupling.",
+      "domain": "Machine-tool drive",
+      "ports": [
+        {
+          "port_id": "chuck_mount",
+          "name": "Chuck mounting interface",
+          "direction": "inout",
+          "flow_type": "mechanical_structural"
+        },
+        {
+          "port_id": "motor_structural_mount",
+          "name": "Drive motor structural association",
+          "direction": "inout",
+          "flow_type": "mechanical_structural"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_RECEIVER_CHUCK_MOUNT",
+          "mating_subsystem": "CHUCK",
+          "port_this": "chuck_mount",
+          "port_mate": "receiver_mount",
+          "flow_ref": "F_MOUNT",
+          "interface_type": "Chuck mounting"
+        }
+      ],
+      "parts": []
+    },
+    {
+      "subsystem_id": "HANDLER",
+      "subsystem_name": "Automation device",
+      "description": "External handling device, optionally a robot arm, that mounts and dismounts the chuck for replacement.",
+      "domain": "Automation",
+      "ports": [
+        {
+          "port_id": "chuck_handling",
+          "name": "Chuck handling and replacement contact",
+          "direction": "inout",
+          "flow_type": "mechanical_structural"
+        },
+        {
+          "port_id": "receiver_handling",
+          "name": "Receiver handling and mounting contact",
+          "direction": "inout",
+          "flow_type": "mechanical_structural"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_HANDLER_CHUCK",
+          "mating_subsystem": "CHUCK",
+          "port_this": "chuck_handling",
+          "port_mate": "receiver_mount",
+          "flow_ref": "F_HANDLER_CHUCK",
+          "interface_type": "Handling contact for chuck dismounting and mounting"
+        },
+        {
+          "interface_id": "IF_HANDLER_RECEIVER",
+          "mating_subsystem": "DRIVE",
+          "port_this": "receiver_handling",
+          "port_mate": "chuck_mount",
+          "flow_ref": "F_HANDLER_RECEIVER",
+          "interface_type": "Handling interaction at chuck receiver during replacement"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "WORKPIECE",
+      "subsystem_name": "Workpiece or tool",
+      "description": "External clamped item presented at the chuck clamping space.",
+      "domain": "Machine-tool workpiece",
+      "ports": [
+        {
+          "port_id": "workpiece_clamp_in",
+          "name": "Clamping force/contact input",
+          "direction": "in",
+          "flow_type": "mechanical_force"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "MOTOR",
+      "subsystem_name": "Drive motor",
+      "description": "Drive motor serving as the chuck receiver's drive member, optionally a servomotor. Its motor-shaft coupling element engages the chuck-side torque-transfer coupling directly; this is the drive member identified in claim 14, not a separate in-series stage.",
+      "domain": "Machine-tool drive",
+      "ports": [
+        {
+          "port_id": "motor_torque_out",
+          "name": "Motor torque output",
+          "direction": "out",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "receiver_structural_mount",
+          "name": "Receiver structural association",
+          "direction": "inout",
+          "flow_type": "mechanical_structural"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_MOTOR_RECEIVER",
+          "mating_subsystem": "DRIVE",
+          "port_this": "receiver_structural_mount",
+          "port_mate": "motor_structural_mount",
+          "flow_ref": "F_MOTOR_MOUNT",
+          "interface_type": "Drive motor structural association with chuck receiver"
+        }
+      ]
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "F_TORQUE",
+      "name": "Drive torque",
+      "flow_type": "mechanical_rotary",
+      "notes": "Drive-member torque crosses the direct coupling to the chuck torque-transfer member; the receiver is mounting context, not an intermediate torque stage."
+    },
+    {
+      "flow_id": "F_JAW",
+      "name": "Jaw-drive rotation",
+      "flow_type": "mechanical_rotary",
+      "notes": "Transmission output rotates jaw-drive mechanism to produce jaw translation."
+    },
+    {
+      "flow_id": "F_CLAMP",
+      "name": "Clamping contact force",
+      "flow_type": "mechanical_force",
+      "notes": "Jaw faces apply clamping force to workpiece/tool."
+    },
+    {
+      "flow_id": "F_MOUNT",
+      "name": "Chuck mounting support",
+      "flow_type": "mechanical_structural",
+      "notes": "Mounting relation between chuck body and receiver; distinct from the direct drive-member-to-transmission torque coupling."
+    },
+    {
+      "flow_id": "F_MOTOR_MOUNT",
+      "name": "Motor-receiver structural association",
+      "flow_type": "mechanical_structural",
+      "notes": "Structural association of the receiver's drive member with the chuck receiver; distinct from motor torque transfer to the chuck transmission."
+    },
+    {
+      "flow_id": "F_HANDLER_CHUCK",
+      "name": "Handler-chuck replacement interaction",
+      "flow_type": "mechanical_structural",
+      "notes": "Automation device dismounts the chuck and mounts a replacement chuck."
+    },
+    {
+      "flow_id": "F_HANDLER_RECEIVER",
+      "name": "Handler-receiver replacement interaction",
+      "flow_type": "mechanical_structural",
+      "notes": "Replacement operation mounts/dismounts the chuck at the chuck receiver."
+    }
+  ],
+  "interfaces": [],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "ACT_DRIVE_TORQUE",
+        "name": "Transfer drive torque to jaw mechanism",
+        "owner": "TRANSMISSION",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "The motor-shaft coupling element supplies torque directly through the coupling to the chuck torque-transfer member; the receiver provides chuck mounting context."
+          },
+          {
+            "step_no": 2,
+            "description": "The transmission conveys drive torque to the jaw mechanism."
+          },
+          {
+            "step_no": 3,
+            "description": "The transmission output drives the jaw mechanism."
+          }
+        ]
+      },
+      {
+        "action_id": "ACT_REPLACE",
+        "name": "Replace chuck",
+        "owner": "HANDLER",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "The automation device dismounts the chuck from the receiver, disengaging the coupling."
+          },
+          {
+            "step_no": 2,
+            "description": "The automation device mounts a replacement chuck on the receiver; the chuck coupling aligns and engages the corresponding drive-member coupling element."
+          }
+        ]
+      },
+      {
+        "action_id": "ACT_MOVE_JAWS",
+        "name": "Move jaws and adjust clamping space",
+        "owner": "JAWS",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "The jaw mechanism moves the jaws in translation along the clamping plane, changing the clamping-space size."
+          }
+        ]
+      },
+      {
+        "action_id": "ACT_CLAMP_ITEM",
+        "name": "Apply clamping force",
+        "owner": "JAWS",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Jaw faces apply clamping force to the workpiece or tool."
+          }
+        ]
+      }
+    ]
+  }
+}

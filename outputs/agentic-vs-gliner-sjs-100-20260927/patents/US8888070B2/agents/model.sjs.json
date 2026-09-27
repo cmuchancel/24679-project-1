@@ -1,0 +1,266 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Scissor Lift with Lever Gearing",
+    "system_id": "US8888070B2",
+    "description": "Concept model of a scissor lift in which a linear actuator acts through a lever gearing connected to the scissor mechanism to move the top and bottom frames relative to one another.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "mechanical lifting equipment",
+    "maturity": "draft",
+    "date_modified": "2026-09-26"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "bottom_frame",
+      "subsystem_name": "Bottom Frame",
+      "description": "Base frame structure supporting joints for the scissor mechanism and linkage.",
+      "domain": "mechanical structure",
+      "functional_basis": [
+        "support lift mechanism",
+        "provide linkage pivot"
+      ],
+      "ports": [
+        {
+          "port_id": "lift_input",
+          "name": "Scissor-driven displacement",
+          "direction": "in",
+          "flow_type": "mechanical_motion"
+        },
+        {
+          "port_id": "tilt_arm_input",
+          "name": "Tilt-arm rotatable-joint connection",
+          "direction": "inout",
+          "flow_type": "mechanical_motion"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "top_frame",
+      "subsystem_name": "Top Frame",
+      "description": "Upper frame or platform moved relative to the bottom frame by the scissor mechanism.",
+      "domain": "mechanical structure",
+      "functional_basis": [
+        "support elevated platform"
+      ],
+      "ports": [
+        {
+          "port_id": "lift_input",
+          "name": "Scissor-driven displacement",
+          "direction": "in",
+          "flow_type": "mechanical_motion"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "scissor_mechanism",
+      "subsystem_name": "Scissor Mechanism",
+      "description": "Crossed linked legs pivoting at a scissor joint and coupled to the frames; the disclosed arrangement uses fixed and guided displaceable joints.",
+      "domain": "mechanical linkage",
+      "functional_basis": [
+        "convert linkage movement to frame displacement"
+      ],
+      "ports": [
+        {
+          "port_id": "lever_input",
+          "name": "Lever-driven motion input",
+          "direction": "in",
+          "flow_type": "mechanical_motion"
+        },
+        {
+          "port_id": "frame_output",
+          "name": "Frame displacement output",
+          "direction": "out",
+          "flow_type": "mechanical_motion"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "scissor_to_top_frame",
+          "mating_subsystem": "top_frame",
+          "port_this": "frame_output",
+          "port_mate": "lift_input",
+          "flow_ref": "frame_displacement",
+          "interface_type": "mechanical"
+        },
+        {
+          "interface_id": "scissor_to_bottom_frame",
+          "mating_subsystem": "bottom_frame",
+          "port_this": "frame_output",
+          "port_mate": "lift_input",
+          "flow_ref": "frame_displacement",
+          "interface_type": "mechanical"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "linear_actuator",
+      "subsystem_name": "Linear Actuator",
+      "description": "Linear actuator supplying force to the gearing; one disclosed embodiment uses an electric motor and spindle drive.",
+      "domain": "electromechanical actuation",
+      "functional_basis": [
+        "provide linear force"
+      ],
+      "parts": [
+        {
+          "part_id": "electric_motor",
+          "description": "Electrical motor driving the actuator spindle in the disclosed electrical actuator embodiment.",
+          "quantity": 1
+        },
+        {
+          "part_id": "spindle_drive",
+          "description": "Spindle driven by the electrical motor in the disclosed electrical actuator embodiment.",
+          "quantity": 1
+        }
+      ],
+      "ports": [
+        {
+          "port_id": "actuator_output",
+          "name": "Actuator linear output",
+          "direction": "out",
+          "flow_type": "mechanical_linear"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "actuator_to_lever",
+          "mating_subsystem": "lever_gearing",
+          "port_this": "actuator_output",
+          "port_mate": "lever_input",
+          "flow_ref": "actuator_force",
+          "interface_type": "mechanical"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "lever_gearing",
+      "subsystem_name": "Lever Gearing",
+      "description": "Lever arm connected to the actuator at one attack point, to the bottom frame directly or indirectly at another, and pivotally to the scissor mechanism between those points.",
+      "domain": "mechanical transmission",
+      "functional_basis": [
+        "transmit actuator force",
+        "transmit actuator force through lever arm"
+      ],
+      "ports": [
+        {
+          "port_id": "lever_input",
+          "name": "Actuator force input",
+          "direction": "in",
+          "flow_type": "mechanical_linear"
+        },
+        {
+          "port_id": "lever_scissor_output",
+          "name": "Lever-driven scissor motion",
+          "direction": "out",
+          "flow_type": "mechanical_motion"
+        },
+        {
+          "port_id": "tilt_linkage",
+          "name": "Tilt-arm linkage connection",
+          "direction": "inout",
+          "flow_type": "mechanical_motion"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "lever_to_scissor",
+          "mating_subsystem": "scissor_mechanism",
+          "port_this": "lever_scissor_output",
+          "port_mate": "lever_input",
+          "flow_ref": "scissor_motion",
+          "interface_type": "mechanical"
+        },
+        {
+          "interface_id": "lever_to_tilt_arm",
+          "mating_subsystem": "tilt_arm",
+          "port_this": "tilt_linkage",
+          "port_mate": "lever_connection",
+          "flow_ref": "tilt_linkage_motion",
+          "interface_type": "mechanical"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "tilt_arm",
+      "subsystem_name": "Tilt Arm",
+      "description": "Optional intermediate arm connecting the lever arm bottom-frame attack point to a rotatable joint on the bottom frame.",
+      "domain": "mechanical linkage",
+      "functional_basis": [
+        "connect lever gearing to bottom frame"
+      ],
+      "ports": [
+        {
+          "port_id": "lever_connection",
+          "name": "Lever-arm endpoint connection",
+          "direction": "inout",
+          "flow_type": "mechanical_motion"
+        },
+        {
+          "port_id": "frame_connection",
+          "name": "Bottom-frame rotatable-joint connection",
+          "direction": "inout",
+          "flow_type": "mechanical_motion"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "tilt_arm_to_bottom_frame",
+          "mating_subsystem": "bottom_frame",
+          "port_this": "frame_connection",
+          "port_mate": "tilt_arm_input",
+          "flow_ref": "tilt_linkage_motion",
+          "interface_type": "mechanical"
+        }
+      ]
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "actuator_force",
+      "name": "Actuator force and linear motion",
+      "flow_type": "mechanical_linear",
+      "notes": "Actuator output drives the lever gearing."
+    },
+    {
+      "flow_id": "scissor_motion",
+      "name": "Lever-driven scissor motion",
+      "flow_type": "mechanical_motion",
+      "notes": "Lever gearing drives the scissor mechanism."
+    },
+    {
+      "flow_id": "frame_displacement",
+      "name": "Relative frame displacement",
+      "flow_type": "mechanical_motion",
+      "notes": "Scissor mechanism moves top and bottom frames relative to each other."
+    },
+    {
+      "flow_id": "tilt_linkage_motion",
+      "name": "Tilt-arm linkage motion",
+      "flow_type": "mechanical_motion",
+      "notes": "Mechanical linkage at the lever-arm bottom-frame attack point and the bottom-frame rotatable joint."
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "lift_frames",
+        "name": "Lift frames through lever-driven scissor motion",
+        "owner": "scissor_mechanism",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Linear actuator applies force to the lever arm gearing."
+          },
+          {
+            "step_no": 2,
+            "description": "Lever arm pivots about its joint with the scissor mechanism and transmits force to the scissor mechanism."
+          },
+          {
+            "step_no": 3,
+            "description": "Scissor legs move at their joints, displacing the top and bottom frames relative to one another."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Spherical bistable mechanism",
+    "system_id": "US7763818B2",
+    "description": "Model of the prepared-workspace evidence for US7763818B2 only. The requested US10036408B2 is not represented because no evidence for that patent is present. A planar bistable compliant input drives a spherical linkage for selective second-plane positioning.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "microelectromechanical and compliant mechanisms",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "PLANAR",
+      "subsystem_name": "Planar bistable compliant member",
+      "description": "Four-bar planar compliant mechanism with input and output; exemplary Young mechanism uses rigid members and flexural compliant members to provide two stable configurations.",
+      "domain": "compliant mechanism",
+      "functional_basis": [
+        "receive actuation",
+        "retain bistable configuration",
+        "transmit in-plane motion"
+      ],
+      "ports": [
+        {
+          "port_id": "PLANAR_IN",
+          "name": "Actuation input",
+          "direction": "in"
+        },
+        {
+          "port_id": "PLANAR_OUT",
+          "name": "Motion-transmitting output",
+          "direction": "out",
+          "flow_type": "mechanical_motion"
+        }
+      ],
+      "parts": [
+        {
+          "part_id": "RIGID_MEMBERS",
+          "description": "First and second rigid members of the four-bar structure, including the respective first and second pin locations on those members (claims 2-3 and 14-15).",
+          "quantity": 2
+        },
+        {
+          "part_id": "COMPLIANT_MEMBERS",
+          "description": "First and second compliant members of the four-bar structure (claims 2 and 14).",
+          "quantity": 2
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "PLANAR_TO_SPHERICAL",
+          "mating_subsystem": "SPHERICAL",
+          "port_this": "PLANAR_OUT",
+          "port_mate": "SPH_IN",
+          "flow_ref": "ROT_FLOW",
+          "interface_type": "mechanical coupling"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "SPHERICAL",
+      "subsystem_name": "Spherical slider-crank mechanism",
+      "description": "Coupler and output links with a collapsible union convert planar input rotation into out-of-plane positioning/rotation; output link is hinged to a base substrate.",
+      "domain": "mechanical linkage",
+      "functional_basis": [
+        "transform in-plane rotation",
+        "position output out of plane"
+      ],
+      "ports": [
+        {
+          "port_id": "SPH_IN",
+          "name": "Coupler input",
+          "direction": "in",
+          "flow_type": "mechanical_motion"
+        },
+        {
+          "port_id": "SPH_OUT",
+          "name": "Output-link motion",
+          "direction": "out",
+          "flow_type": "mechanical_motion"
+        },
+        {
+          "port_id": "SPH_BASE_HINGE",
+          "name": "Output-link base hinge",
+          "direction": "inout",
+          "flow_type": "mechanical_motion"
+        }
+      ],
+      "parts": [
+        {
+          "part_id": "COUPLER",
+          "description": "Coupler link",
+          "quantity": 1
+        },
+        {
+          "part_id": "OUTLINK",
+          "description": "Output link",
+          "quantity": 1
+        },
+        {
+          "part_id": "UNION",
+          "description": "Collapsible union, optionally a compliant torsional hinge",
+          "quantity": 1
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "OUTPUT_TO_BASE_HINGE",
+          "mating_subsystem": "BASE",
+          "port_this": "SPH_BASE_HINGE",
+          "port_mate": "BASE_HINGE",
+          "flow_ref": "HINGE_FLOW",
+          "interface_type": "hinged coupling"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "BASE",
+      "subsystem_name": "Base substrate",
+      "description": "Substrate providing the hinged, constrained coupling for the second end of the output link.",
+      "domain": "mechanical support",
+      "ports": [
+        {
+          "port_id": "BASE_HINGE",
+          "name": "Output-link hinge support",
+          "direction": "inout",
+          "flow_type": "mechanical_motion"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "REFLECTOR",
+      "subsystem_name": "Reflective surface",
+      "description": "Optional reflective surface coupled to the spherical mechanism member for optical-switch application.",
+      "domain": "optical"
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "ROT_FLOW",
+      "name": "Planar output motion to spherical mechanism",
+      "flow_type": "mechanical_motion",
+      "notes": "Planar member output drives the spherical mechanism coupler."
+    },
+    {
+      "flow_id": "HINGE_FLOW",
+      "name": "Output-link hinge constraint",
+      "flow_type": "mechanical_motion",
+      "notes": "Hinged coupling to base substrate."
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "A_POSITION",
+        "name": "Convert planar input to out-of-plane position",
+        "owner": "SPHERICAL",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Planar bistable member moves between stable configurations and supplies arcuate in-plane output motion."
+          },
+          {
+            "step_no": 2,
+            "description": "Motion is transmitted to the coupler link; the collapsible union collapses as the links move normal to the formation plane."
+          },
+          {
+            "step_no": 3,
+            "description": "The output link, constrained at its hinged substrate end, produces out-of-plane rotation/positioning."
+          }
+        ]
+      }
+    ]
+  }
+}

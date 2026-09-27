@@ -1,0 +1,198 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 3,
+    "ActionUsage": 7,
+    "AllocationUsage": 3,
+    "ConnectionUsage": 1,
+    "Documentation": 35,
+    "EndFeatureMembership": 14,
+    "Feature": 25,
+    "FeatureChaining": 42,
+    "FeatureMembership": 36,
+    "FeatureReferenceExpression": 3,
+    "FeatureTyping": 19,
+    "FeatureValue": 3,
+    "FlowEnd": 6,
+    "FlowUsage": 3,
+    "ItemDefinition": 6,
+    "ItemUsage": 8,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 69,
+    "Package": 1,
+    "PartDefinition": 6,
+    "PartUsage": 7,
+    "PortUsage": 8,
+    "Redefinition": 6,
+    "ReferenceSubsetting": 17,
+    "ReferenceUsage": 9,
+    "RequirementDefinition": 2,
+    "RequirementUsage": 2,
+    "SatisfyRequirementUsage": 3,
+    "Subclassification": 4,
+    "SubjectMembership": 3,
+    "SuccessionAsUsage": 1
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CASING_Casing_and_pressure_spaces"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CASING_Casing_and_pressure_spaces.port_CASING_DISCHARGE_IN_Discharging_space_entry"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_FIXED_SCROLL_Fixed_scroll"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ORBITING_SCROLL_Orbiting_scroll"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ORBITING_SCROLL_Orbiting_scroll.port_ORBIT_DISCHARGE_Discharge_hole_flow"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ORBITING_SCROLL_Orbiting_scroll.port_ORBIT_BYPASS_Bypass_hole_flow"
+    },
+    {
+      "path": "/subsystems/2/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ORBITING_SCROLL_Orbiting_scroll.port_ORBIT_BYPASS_VALVE_MOUNT_Bypass_hole_valve_coupling"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DRIVE_Shaft_and_driver"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_UPPER_FRAME_Upper_frame_and_discharge_passage"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_UPPER_FRAME_Upper_frame_and_discharge_passage.port_FRAME_DISCHARGE_IN_Discharge_passage_from_discharge_hole"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_UPPER_FRAME_Upper_frame_and_discharge_passage.port_FRAME_BYPASS_IN_Discharge_passage_from_bypass_hole"
+    },
+    {
+      "path": "/subsystems/4/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_UPPER_FRAME_Upper_frame_and_discharge_passage.port_FRAME_DISCHARGE_OUT_Passage_to_discharging_space"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BYPASS_VALVE_Bypass_valve"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BYPASS_VALVE_Bypass_valve.port_BYPASS_VALVE_COUPLING_Coupling_to_bypass_hole"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_REFRIGERANT_COMPRESSED_Refrigerant_in_compression_chambers"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_REFRIGERANT_DISCHARGE_Discharged_refrigerant"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_REFRIGERANT_BYPASS_Bypass_refrigerant"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_SHAFT_ROTATION_Shaft_rotation"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_FRAME_ROUTING"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_FRAME_ROUTING"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_FRAME_ROUTING"
+    },
+    {
+      "path": "/requirements/1",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_BYPASS_TRIGGER"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_BYPASS_TRIGGER"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_COMPRESS_Compress_refrigerant_by_scroll_orbiting"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_ROUTE_DISCHARGE_Route_discharge_and_bypass_flows"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_OPEN_BYPASS_Open_bypass_hole_on_pressure_threshold"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_ORBIT_DISCHARGE_FRAME"
+    },
+    {
+      "path": "/subsystems/2/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_ORBIT_BYPASS_FRAME"
+    },
+    {
+      "path": "/subsystems/2/interfaces/2",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_ORBIT_BYPASS_VALVE"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_FRAME_DISCHARGE_SPACE"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

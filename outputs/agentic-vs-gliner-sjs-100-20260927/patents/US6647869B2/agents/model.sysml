@@ -1,0 +1,250 @@
+package Model__Positive_Lock_Adjustable_Stroke_Press_Mechani {
+    private import ScalarValues::*;
+    doc SJS_Source
+    /* SJS_JSON_V1
+     * {"$schema": "sjs/1.0", "model_meta": {"system_name": "Positive-Lock Adjustable-Stroke Press Mechanism", "system_id": "US6647869B2", "description": "Inferred conceptual model of a mechanical press stroke-adjustment mechanism with eccentric elements, pressure-mediated temporary coupling, and a positive-lock alignment mechanism.", "version": "1.0", "lifecycle_stage": "concept", "domain": "Mechanical press stroke adjustment", "maturity": "draft", "date_modified": "2026-09-27"}, "subsystems": [{"subsystem_id": "press_connection", "subsystem_name": "Press Connection Member", "description": "Connection member or link surrounding the eccentric bushing; relative movement between the bushing and member during normal operation causes press-slide reciprocation.", "domain": "mechanical press", "ports": [{"port_id": "member_bushing", "name": "Bushing/member mechanical interface", "direction": "inout", "flow_type": "mechanical_rotary"}, {"port_id": "member_bar", "name": "Alignment bar guide/engagement", "direction": "inout", "flow_type": "mechanical_linear"}, {"port_id": "slide_link", "name": "Press-slide reciprocation connection", "direction": "out", "flow_type": "mechanical_linear"}], "interfaces": [{"interface_id": "member_bushing_connection", "mating_subsystem": "eccentric_bushing", "port_this": "member_bushing", "port_mate": "bushing_member", "flow_ref": null, "interface_type": "relative mechanical interface"}, {"interface_id": "member_slide_reciprocation", "mating_subsystem": "press_slide", "port_this": "slide_link", "port_mate": "connection_member", "flow_ref": "slide_motion", "interface_type": "reciprocating mechanical connection"}, {"interface_id": "member_alignment_bar_guide", "mating_subsystem": "alignment_bar", "port_this": "member_bar", "port_mate": "bar_member_guide", "flow_ref": null, "interface_type": "mounted/guided alignment-bar relationship"}]}, {"subsystem_id": "eccentric_bushing", "subsystem_name": "Eccentric Bushing", "description": "Bushing within the press connection member, surrounding the second eccentric; claim 5 states it forms a press fit with the second eccentric before the temporary press-fit connection is created. It includes an internal cavity in communication with the second eccentric and a keyway for alignment engagement.", "domain": "mechanical press", "ports": [{"port_id": "bushing_member", "name": "Member interface", "direction": "inout", "flow_type": "mechanical_rotary"}, {"port_id": "bushing_eccentric", "name": "Second-eccentric interface and communicating cavity", "direction": "inout", "flow_type": "mechanical_rotary"}, {"port_id": "bushing_keyway", "name": "Alignment keyway", "direction": "inout", "flow_type": "mechanical_linear"}], "interfaces": [{"interface_id": "bushing_eccentric_connection", "mating_subsystem": "second_eccentric", "port_this": "bushing_eccentric", "port_mate": "eccentric_bushing", "flow_ref": null, "interface_type": "eccentric/bushing interface"}]}, {"subsystem_id": "second_eccentric", "subsystem_name": "Second Eccentric Member", "description": "Second eccentric member disposed within and releasably connected to the eccentric bushing; it is connected to the separately modeled rotatable crankshaft.", "domain": "mechanical press", "ports": [{"port_id": "eccentric_bushing", "name": "Bushing interface", "direction": "inout", "flow_type": "mechanical_rotary"}, {"port_id": "shaft", "name": "Crankshaft", "direction": "inout", "flow_type": "mechanical_rotary"}]}, {"subsystem_id": "alignment_bar", "subsystem_name": "Alignment Bar", "description": "Bar selectively engages the eccentric-bushing keyway to establish positive alignment during stroke adjustment; the positive-lock position defines the first limit of alignment-bar movement.", "domain": "mechanical press", "ports": [{"port_id": "bar_keyway", "name": "Keyway engagement", "direction": "inout", "flow_type": "mechanical_linear"}, {"port_id": "bar_cylinder", "name": "Cylinder actuation interface", "direction": "inout", "flow_type": "mechanical_linear"}, {"port_id": "bar_member_guide", "name": "Press connection member guide/mount interface", "direction": "inout", "flow_type": "mechanical_linear"}], "interfaces": [{"interface_id": "bar_keyway_lock", "mating_subsystem": "eccentric_bushing", "port_this": "bar_keyway", "port_mate": "bushing_keyway", "flow_ref": null, "interface_type": "selective positive-lock engagement"}]}, {"subsystem_id": "alignment_cylinder", "subsystem_name": "Double-Acting Alignment Cylinder", "description": "Double-acting cylinder actuates the alignment bar into and out of the bushing keyway.", "domain": "mechanical press", "ports": [{"port_id": "cylinder_bar", "name": "Cylinder actuation of bar", "direction": "inout", "flow_type": "mechanical_linear"}], "interfaces": [{"interface_id": "cylinder_bar_drive", "mating_subsystem": "alignment_bar", "port_this": "cylinder_bar", "port_mate": "bar_cylinder", "flow_ref": "bar_motion", "interface_type": "actuation"}]}, {"subsystem_id": "alignment_spring", "subsystem_name": "Alignment Return Spring", "description": "In a disclosed embodiment, the spring holds the alignment bar in the raised position during press operation.", "domain": "mechanical press"}, {"subsystem_id": "alignment_sensor", "subsystem_name": "Alignment Position Sensors", "description": "Sensors and upper/lower limit switches detect raised and engaged positions of the alignment bar.", "domain": "mechanical press", "ports": [{"port_id": "bar_position_detection", "name": "Alignment-bar position detection", "direction": "out", "flow_type": "signal"}]}, {"subsystem_id": "press_slide", "subsystem_name": "Press Slide", "description": "External press component reciprocated through the press connection member during press operation.", "domain": "mechanical press", "ports": [{"port_id": "connection_member", "name": "Connection-member input to press slide", "direction": "in", "flow_type": "mechanical_linear"}]}, {"subsystem_id": "crankshaft", "subsystem_name": "Rotatable Crankshaft", "description": "Rotatable crankshaft connected to the second eccentric member.", "domain": "mechanical press", "ports": [{"port_id": "shaft_eccentric", "name": "Connection to second eccentric", "direction": "inout", "flow_type": "mechanical_rotary"}], "interfaces": [{"interface_id": "shaft_eccentric_connection", "mating_subsystem": "second_eccentric", "port_this": "shaft_eccentric", "port_mate": "shaft", "flow_ref": "shaft_rotation", "interface_type": "connected rotary shaft"}]}], "item_flows": [{"flow_id": "shaft_rotation", "name": "Crankshaft rotation", "flow_type": "mechanical_rotary", "notes": "Crankshaft/second-eccentric rotation at the bushing interface during adjustment changes eccentric position and stroke length."}, {"flow_id": "slide_motion", "name": "Press-slide reciprocation", "flow_type": "mechanical_linear", "notes": "Press connection member drives the press slide in reciprocating press operation."}, {"flow_id": "bar_motion", "name": "Alignment-bar movement", "flow_type": "mechanical_linear", "notes": "Cylinder moves the bar into or out of the bushing keyway; when engaged, bar and keyway form a selective positive-lock relationship, not continuous motion-through."}], "requirements": [{"req_id": "stroke_adjustment", "category": "functional", "priority": "claim-supported", "statement": "When the connecting mechanism is activated, crankshaft rotation shall cause a press stroke adjustment.", "rationale": "Supported functional obligation from claim 1.", "satisfied_by": ["second_eccentric", "eccentric_bushing"]}, {"req_id": "positive_alignment", "category": "functional", "priority": "claim-supported", "statement": "Claim-derived modeled obligation: the alignment means is selectively actuatable into a positive-lock position with the eccentric bushing during stroke adjustment; that position defines its first movement limit.", "rationale": "Claim 1 defines positive-lock position as the first limit of alignment-means movement; claims 8\u20139 identify the receiving keyway and bar.", "satisfied_by": ["alignment_bar", "eccentric_bushing", "press_connection"]}], "behaviour": {"actions": [{"action_id": "adjust_stroke", "name": "Adjust Press Stroke", "owner": "eccentric_bushing", "steps": [{"step_no": 1, "description": "In the disclosed adjustment embodiment, with the press stopped, the bushing keyway is aligned with the bar and the cylinder pushes the bar into the keyway; the lower-limit sensor detects the bar position."}, {"step_no": 2, "description": "Apply pressure oil at the eccentric-bushing interface to release the fit to the crankshaft eccentric and create a temporary press fit to the press connection member."}, {"step_no": 3, "description": "Rotate the crankshaft and second eccentric to change their position within the bushing and thereby change the stroke length."}, {"step_no": 4, "description": "After crankshaft rotation, high-pressure oil is halted, creating clearance between the connection member and eccentric bushing; the cylinder may raise the bar, and the spring holds it up during press operation."}]}]}, "citations": [{"path": "/model_meta", "source_passages": ["dff4739080711eab96fafa27a1b8e971"]}, {"path": "/subsystems/0", "source_passages": ["dff4739080711eab96fafa27a1b8e971"]}, {"path": "/subsystems/1", "source_passages": ["dff4739080711eab96fafa27a1b8e971", "225f1b77a6008d0f63c373b9c08afe31"]}, {"path": "/subsystems/2", "source_passages": ["225f1b77a6008d0f63c373b9c08afe31"]}, {"path": "/subsystems/3", "source_passages": ["009c21b8d1fb6c1b52f96fb0699b0536", "e1c371ba8025abe1830c35142b12be00"]}, {"path": "/subsystems/4", "source_passages": ["009c21b8d1fb6c1b52f96fb0699b0536"]}, {"path": "/subsystems/5", "source_passages": ["d3aac330edf218ad089f65a4067e29f2"]}, {"path": "/subsystems/6", "source_passages": ["e1c371ba8025abe1830c35142b12be00"]}, {"path": "/subsystems/7", "source_passages": ["dff4739080711eab96fafa27a1b8e971"]}, {"path": "/subsystems/8", "source_passages": ["dff4739080711eab96fafa27a1b8e971"]}, {"path": "/subsystems/9", "source_passages": ["009c21b8d1fb6c1b52f96fb0699b0536"]}, {"path": "/item_flows/0", "source_passages": ["225f1b77a6008d0f63c373b9c08afe31"]}, {"path": "/item_flows/1", "source_passages": ["dff4739080711eab96fafa27a1b8e971"]}, {"path": "/item_flows/2", "source_passages": ["dff4739080711eab96fafa27a1b8e971"]}, {"path": "/item_flows/3", "source_passages": ["009c21b8d1fb6c1b52f96fb0699b0536"]}, {"path": "/item_flows/4", "source_passages": ["e1c371ba8025abe1830c35142b12be00"]}, {"path": "/requirements/0", "source_passages": ["35513d712eb143bd1a9782477749ebef"]}, {"path": "/requirements/1", "source_passages": ["35513d712eb143bd1a9782477749ebef", "e1c371ba8025abe1830c35142b12be00"]}, {"path": "/behaviour/actions/0", "source_passages": ["009c21b8d1fb6c1b52f96fb0699b0536", "dff4739080711eab96fafa27a1b8e971", "99d7df633a73d339d10ae07c3c7170d2"]}, {"path": "/behaviour/actions/0/steps/0", "source_passages": ["009c21b8d1fb6c1b52f96fb0699b0536"]}, {"path": "/behaviour/actions/0/steps/1", "source_passages": ["009c21b8d1fb6c1b52f96fb0699b0536"]}, {"path": "/behaviour/actions/0/steps/2", "source_passages": ["dff4739080711eab96fafa27a1b8e971"]}, {"path": "/behaviour/actions/0/steps/3", "source_passages": ["99d7df633a73d339d10ae07c3c7170d2"]}], "assumptions": ["The system boundary is limited to the stroke-adjustment mechanism; hydraulic pressure source and press slide are represented as external source/sink components based on described interactions.", "The generic claimed connection means is modeled as the disclosed pressure-oil/bushing-interface effect; detailed supply hardware and fluid routing are not specified.", "Position detection is represented as sensors/limit switches based on the embodiment; signal destination and control logic are not specified."], "warnings": ["No numeric performance, pressure, stroke-range, timing, or dimensional constraints are supplied by the cited passages.", "The patent describes alternative embodiment details; spring retention and double-acting-cylinder actuation are modeled as disclosed implementation elements, not as universal requirements.", "No subsystem port/interface network is asserted because explicit port data and full hydraulic/control connection topology are not consistently specified."]}
+     */
+    doc
+    /* {"system_name": "Positive-Lock Adjustable-Stroke Press Mechanism", "system_id": "US6647869B2", "description": "Inferred conceptual model of a mechanical press stroke-adjustment mechanism with eccentric elements, pressure-mediated temporary coupling, and a positive-lock alignment mechanism.", "version": "1.0", "lifecycle_stage": "concept", "domain": "Mechanical press stroke adjustment", "maturity": "draft", "date_modified": "2026-09-27"} */
+    item def FlowType__mechanical_rotary {
+        doc
+        /* {"flow_type": "mechanical_rotary"} */
+    }
+    item def FlowType__mechanical_linear {
+        doc
+        /* {"flow_type": "mechanical_linear"} */
+    }
+    item def FlowType__signal {
+        doc
+        /* {"flow_type": "signal"} */
+    }
+    part def Component_press_connection_Press_Connection_Member {
+        doc
+        /* {"subsystem_id": "press_connection", "subsystem_name": "Press Connection Member", "description": "Connection member or link surrounding the eccentric bushing; relative movement between the bushing and member during normal operation causes press-slide reciprocation.", "domain": "mechanical press", "ports": [{"port_id": "member_bushing", "name": "Bushing/member mechanical interface", "direction": "inout", "flow_type": "mechanical_rotary"}, {"port_id": "member_bar", "name": "Alignment bar guide/engagement", "direction": "inout", "flow_type": "mechanical_linear"}, {"port_id": "slide_link", "name": "Press-slide reciprocation connection", "direction": "out", "flow_type": "mechanical_linear"}], "interfaces": [{"interface_id": "member_bushing_connection", "mating_subsystem": "eccentric_bushing", "port_this": "member_bushing", "port_mate": "bushing_member", "flow_ref": null, "interface_type": "relative mechanical interface"}, {"interface_id": "member_slide_reciprocation", "mating_subsystem": "press_slide", "port_this": "slide_link", "port_mate": "connection_member", "flow_ref": "slide_motion", "interface_type": "reciprocating mechanical connection"}, {"interface_id": "member_alignment_bar_guide", "mating_subsystem": "alignment_bar", "port_this": "member_bar", "port_mate": "bar_member_guide", "flow_ref": null, "interface_type": "mounted/guided alignment-bar relationship"}]} */
+        port port_member_bushing_Bushing_member_mechanical_interface {
+            doc
+            /* {"port_id": "member_bushing", "name": "Bushing/member mechanical interface", "direction": "inout", "flow_type": "mechanical_rotary"} */
+            inout item payload : FlowType__mechanical_rotary;
+        }
+        port port_member_bar_Alignment_bar_guide_engagement {
+            doc
+            /* {"port_id": "member_bar", "name": "Alignment bar guide/engagement", "direction": "inout", "flow_type": "mechanical_linear"} */
+            inout item payload : FlowType__mechanical_linear;
+        }
+        port port_slide_link_Press_slide_reciprocation_connection {
+            doc
+            /* {"port_id": "slide_link", "name": "Press-slide reciprocation connection", "direction": "out", "flow_type": "mechanical_linear"} */
+            out item payload : FlowType__mechanical_linear;
+        }
+    }
+    part def Component_eccentric_bushing_Eccentric_Bushing {
+        doc
+        /* {"subsystem_id": "eccentric_bushing", "subsystem_name": "Eccentric Bushing", "description": "Bushing within the press connection member, surrounding the second eccentric; claim 5 states it forms a press fit with the second eccentric before the temporary press-fit connection is created. It includes an internal cavity in communication with the second eccentric and a keyway for alignment engagement.", "domain": "mechanical press", "ports": [{"port_id": "bushing_member", "name": "Member interface", "direction": "inout", "flow_type": "mechanical_rotary"}, {"port_id": "bushing_eccentric", "name": "Second-eccentric interface and communicating cavity", "direction": "inout", "flow_type": "mechanical_rotary"}, {"port_id": "bushing_keyway", "name": "Alignment keyway", "direction": "inout", "flow_type": "mechanical_linear"}], "interfaces": [{"interface_id": "bushing_eccentric_connection", "mating_subsystem": "second_eccentric", "port_this": "bushing_eccentric", "port_mate": "eccentric_bushing", "flow_ref": null, "interface_type": "eccentric/bushing interface"}]} */
+        port port_bushing_member_Member_interface {
+            doc
+            /* {"port_id": "bushing_member", "name": "Member interface", "direction": "inout", "flow_type": "mechanical_rotary"} */
+            inout item payload : FlowType__mechanical_rotary;
+        }
+        port port_bushing_eccentric_Second_eccentric_interface_and_communicating {
+            doc
+            /* {"port_id": "bushing_eccentric", "name": "Second-eccentric interface and communicating cavity", "direction": "inout", "flow_type": "mechanical_rotary"} */
+            inout item payload : FlowType__mechanical_rotary;
+        }
+        port port_bushing_keyway_Alignment_keyway {
+            doc
+            /* {"port_id": "bushing_keyway", "name": "Alignment keyway", "direction": "inout", "flow_type": "mechanical_linear"} */
+            inout item payload : FlowType__mechanical_linear;
+        }
+    }
+    part def Component_second_eccentric_Second_Eccentric_Member {
+        doc
+        /* {"subsystem_id": "second_eccentric", "subsystem_name": "Second Eccentric Member", "description": "Second eccentric member disposed within and releasably connected to the eccentric bushing; it is connected to the separately modeled rotatable crankshaft.", "domain": "mechanical press", "ports": [{"port_id": "eccentric_bushing", "name": "Bushing interface", "direction": "inout", "flow_type": "mechanical_rotary"}, {"port_id": "shaft", "name": "Crankshaft", "direction": "inout", "flow_type": "mechanical_rotary"}]} */
+        port port_eccentric_bushing_Bushing_interface {
+            doc
+            /* {"port_id": "eccentric_bushing", "name": "Bushing interface", "direction": "inout", "flow_type": "mechanical_rotary"} */
+            inout item payload : FlowType__mechanical_rotary;
+        }
+        port port_shaft_Crankshaft {
+            doc
+            /* {"port_id": "shaft", "name": "Crankshaft", "direction": "inout", "flow_type": "mechanical_rotary"} */
+            inout item payload : FlowType__mechanical_rotary;
+        }
+    }
+    part def Component_alignment_bar_Alignment_Bar {
+        doc
+        /* {"subsystem_id": "alignment_bar", "subsystem_name": "Alignment Bar", "description": "Bar selectively engages the eccentric-bushing keyway to establish positive alignment during stroke adjustment; the positive-lock position defines the first limit of alignment-bar movement.", "domain": "mechanical press", "ports": [{"port_id": "bar_keyway", "name": "Keyway engagement", "direction": "inout", "flow_type": "mechanical_linear"}, {"port_id": "bar_cylinder", "name": "Cylinder actuation interface", "direction": "inout", "flow_type": "mechanical_linear"}, {"port_id": "bar_member_guide", "name": "Press connection member guide/mount interface", "direction": "inout", "flow_type": "mechanical_linear"}], "interfaces": [{"interface_id": "bar_keyway_lock", "mating_subsystem": "eccentric_bushing", "port_this": "bar_keyway", "port_mate": "bushing_keyway", "flow_ref": null, "interface_type": "selective positive-lock engagement"}]} */
+        port port_bar_keyway_Keyway_engagement {
+            doc
+            /* {"port_id": "bar_keyway", "name": "Keyway engagement", "direction": "inout", "flow_type": "mechanical_linear"} */
+            inout item payload : FlowType__mechanical_linear;
+        }
+        port port_bar_cylinder_Cylinder_actuation_interface {
+            doc
+            /* {"port_id": "bar_cylinder", "name": "Cylinder actuation interface", "direction": "inout", "flow_type": "mechanical_linear"} */
+            inout item payload : FlowType__mechanical_linear;
+        }
+        port port_bar_member_guide_Press_connection_member_guide_mount_interface {
+            doc
+            /* {"port_id": "bar_member_guide", "name": "Press connection member guide/mount interface", "direction": "inout", "flow_type": "mechanical_linear"} */
+            inout item payload : FlowType__mechanical_linear;
+        }
+    }
+    part def Component_alignment_cylinder_Double_Acting_Alignment_Cylinder {
+        doc
+        /* {"subsystem_id": "alignment_cylinder", "subsystem_name": "Double-Acting Alignment Cylinder", "description": "Double-acting cylinder actuates the alignment bar into and out of the bushing keyway.", "domain": "mechanical press", "ports": [{"port_id": "cylinder_bar", "name": "Cylinder actuation of bar", "direction": "inout", "flow_type": "mechanical_linear"}], "interfaces": [{"interface_id": "cylinder_bar_drive", "mating_subsystem": "alignment_bar", "port_this": "cylinder_bar", "port_mate": "bar_cylinder", "flow_ref": "bar_motion", "interface_type": "actuation"}]} */
+        port port_cylinder_bar_Cylinder_actuation_of_bar {
+            doc
+            /* {"port_id": "cylinder_bar", "name": "Cylinder actuation of bar", "direction": "inout", "flow_type": "mechanical_linear"} */
+            inout item payload : FlowType__mechanical_linear;
+        }
+    }
+    part def Component_alignment_spring_Alignment_Return_Spring {
+        doc
+        /* {"subsystem_id": "alignment_spring", "subsystem_name": "Alignment Return Spring", "description": "In a disclosed embodiment, the spring holds the alignment bar in the raised position during press operation.", "domain": "mechanical press"} */
+    }
+    part def Component_alignment_sensor_Alignment_Position_Sensors {
+        doc
+        /* {"subsystem_id": "alignment_sensor", "subsystem_name": "Alignment Position Sensors", "description": "Sensors and upper/lower limit switches detect raised and engaged positions of the alignment bar.", "domain": "mechanical press", "ports": [{"port_id": "bar_position_detection", "name": "Alignment-bar position detection", "direction": "out", "flow_type": "signal"}]} */
+        port port_bar_position_detection_Alignment_bar_position_detection {
+            doc
+            /* {"port_id": "bar_position_detection", "name": "Alignment-bar position detection", "direction": "out", "flow_type": "signal"} */
+            out item payload : FlowType__signal;
+        }
+    }
+    part def Component_press_slide_Press_Slide {
+        doc
+        /* {"subsystem_id": "press_slide", "subsystem_name": "Press Slide", "description": "External press component reciprocated through the press connection member during press operation.", "domain": "mechanical press", "ports": [{"port_id": "connection_member", "name": "Connection-member input to press slide", "direction": "in", "flow_type": "mechanical_linear"}]} */
+        port port_connection_member_Connection_member_input_to_press_slide {
+            doc
+            /* {"port_id": "connection_member", "name": "Connection-member input to press slide", "direction": "in", "flow_type": "mechanical_linear"} */
+            in item payload : FlowType__mechanical_linear;
+        }
+    }
+    part def Component_crankshaft_Rotatable_Crankshaft {
+        doc
+        /* {"subsystem_id": "crankshaft", "subsystem_name": "Rotatable Crankshaft", "description": "Rotatable crankshaft connected to the second eccentric member.", "domain": "mechanical press", "ports": [{"port_id": "shaft_eccentric", "name": "Connection to second eccentric", "direction": "inout", "flow_type": "mechanical_rotary"}], "interfaces": [{"interface_id": "shaft_eccentric_connection", "mating_subsystem": "second_eccentric", "port_this": "shaft_eccentric", "port_mate": "shaft", "flow_ref": "shaft_rotation", "interface_type": "connected rotary shaft"}]} */
+        port port_shaft_eccentric_Connection_to_second_eccentric {
+            doc
+            /* {"port_id": "shaft_eccentric", "name": "Connection to second eccentric", "direction": "inout", "flow_type": "mechanical_rotary"} */
+            inout item payload : FlowType__mechanical_rotary;
+        }
+    }
+    item def Flow_shaft_rotation_Crankshaft_rotation :> FlowType__mechanical_rotary {
+        doc
+        /* {"flow_id": "shaft_rotation", "name": "Crankshaft rotation", "flow_type": "mechanical_rotary", "notes": "Crankshaft/second-eccentric rotation at the bushing interface during adjustment changes eccentric position and stroke length."} */
+    }
+    item def Flow_slide_motion_Press_slide_reciprocation :> FlowType__mechanical_linear {
+        doc
+        /* {"flow_id": "slide_motion", "name": "Press-slide reciprocation", "flow_type": "mechanical_linear", "notes": "Press connection member drives the press slide in reciprocating press operation."} */
+    }
+    item def Flow_bar_motion_Alignment_bar_movement :> FlowType__mechanical_linear {
+        doc
+        /* {"flow_id": "bar_motion", "name": "Alignment-bar movement", "flow_type": "mechanical_linear", "notes": "Cylinder moves the bar into or out of the bushing keyway; when engaged, bar and keyway form a selective positive-lock relationship, not continuous motion-through."} */
+    }
+    requirement def Requirement_stroke_adjustment {
+        doc
+        /* {"req_id": "stroke_adjustment", "category": "functional", "priority": "claim-supported", "statement": "When the connecting mechanism is activated, crankshaft rotation shall cause a press stroke adjustment.", "rationale": "Supported functional obligation from claim 1.", "satisfied_by": ["second_eccentric", "eccentric_bushing"]} */
+    }
+    requirement requirement_stroke_adjustment : Requirement_stroke_adjustment;
+    requirement def Requirement_positive_alignment {
+        doc
+        /* {"req_id": "positive_alignment", "category": "functional", "priority": "claim-supported", "statement": "Claim-derived modeled obligation: the alignment means is selectively actuatable into a positive-lock position with the eccentric bushing during stroke adjustment; that position defines its first movement limit.", "rationale": "Claim 1 defines positive-lock position as the first limit of alignment-means movement; claims 8\u20139 identify the receiving keyway and bar.", "satisfied_by": ["alignment_bar", "eccentric_bushing", "press_connection"]} */
+    }
+    requirement requirement_positive_alignment : Requirement_positive_alignment;
+    action def Action_adjust_stroke_Adjust_Press_Stroke {
+        doc
+        /* {"action_id": "adjust_stroke", "name": "Adjust Press Stroke", "owner": "eccentric_bushing", "steps": [{"step_no": 1, "description": "In the disclosed adjustment embodiment, with the press stopped, the bushing keyway is aligned with the bar and the cylinder pushes the bar into the keyway; the lower-limit sensor detects the bar position."}, {"step_no": 2, "description": "Apply pressure oil at the eccentric-bushing interface to release the fit to the crankshaft eccentric and create a temporary press fit to the press connection member."}, {"step_no": 3, "description": "Rotate the crankshaft and second eccentric to change their position within the bushing and thereby change the stroke length."}, {"step_no": 4, "description": "After crankshaft rotation, high-pressure oil is halted, creating clearance between the connection member and eccentric bushing; the cylinder may raise the bar, and the spring holds it up during press operation."}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "In the disclosed adjustment embodiment, with the press stopped, the bushing keyway is aligned with the bar and the cylinder pushes the bar into the keyway; the lower-limit sensor detects the bar position."} */
+        }
+        then action step_2 {
+            doc
+            /* {"step_no": 2, "description": "Apply pressure oil at the eccentric-bushing interface to release the fit to the crankshaft eccentric and create a temporary press fit to the press connection member."} */
+        }
+        then action step_3 {
+            doc
+            /* {"step_no": 3, "description": "Rotate the crankshaft and second eccentric to change their position within the bushing and thereby change the stroke length."} */
+        }
+        then action step_4 {
+            doc
+            /* {"step_no": 4, "description": "After crankshaft rotation, high-pressure oil is halted, creating clearance between the connection member and eccentric bushing; the cylinder may raise the bar, and the spring holds it up during press operation."} */
+        }
+    }
+    part systemModel {
+        part component_press_connection_Press_Connection_Member
+            : Component_press_connection_Press_Connection_Member;
+        part component_eccentric_bushing_Eccentric_Bushing
+            : Component_eccentric_bushing_Eccentric_Bushing;
+        part component_second_eccentric_Second_Eccentric_Member
+            : Component_second_eccentric_Second_Eccentric_Member;
+        part component_alignment_bar_Alignment_Bar : Component_alignment_bar_Alignment_Bar;
+        part component_alignment_cylinder_Double_Acting_Alignment_Cylinder
+            : Component_alignment_cylinder_Double_Acting_Alignment_Cylinder;
+        part component_alignment_spring_Alignment_Return_Spring
+            : Component_alignment_spring_Alignment_Return_Spring;
+        part component_alignment_sensor_Alignment_Position_Sensors
+            : Component_alignment_sensor_Alignment_Position_Sensors;
+        part component_press_slide_Press_Slide : Component_press_slide_Press_Slide;
+        part component_crankshaft_Rotatable_Crankshaft : Component_crankshaft_Rotatable_Crankshaft;
+        action action_adjust_stroke_Adjust_Press_Stroke : Action_adjust_stroke_Adjust_Press_Stroke;
+    }
+    satisfy requirement_stroke_adjustment
+        by systemModel.component_second_eccentric_Second_Eccentric_Member;
+    satisfy requirement_stroke_adjustment
+        by systemModel.component_eccentric_bushing_Eccentric_Bushing;
+    satisfy requirement_positive_alignment by systemModel.component_alignment_bar_Alignment_Bar;
+    satisfy requirement_positive_alignment
+        by systemModel.component_eccentric_bushing_Eccentric_Bushing;
+    satisfy requirement_positive_alignment
+        by systemModel.component_press_connection_Press_Connection_Member;
+    allocate systemModel.action_adjust_stroke_Adjust_Press_Stroke
+        to systemModel.component_eccentric_bushing_Eccentric_Bushing;
+    doc
+    /* {"interface_id": "member_bushing_connection", "mating_subsystem": "eccentric_bushing", "port_this": "member_bushing", "port_mate": "bushing_member", "flow_ref": null, "interface_type": "relative mechanical interface"} */
+    connection connection_member_bushing_connection
+        connect systemModel.component_press_connection_Press_Connection_Member
+                    .port_member_bushing_Bushing_member_mechanical_interface
+        to systemModel.component_eccentric_bushing_Eccentric_Bushing
+                    .port_bushing_member_Member_interface;
+    doc
+    /* {"interface_id": "member_slide_reciprocation", "mating_subsystem": "press_slide", "port_this": "slide_link", "port_mate": "connection_member", "flow_ref": "slide_motion", "interface_type": "reciprocating mechanical connection"} */
+    flow connection_member_slide_reciprocation
+        from systemModel.component_press_connection_Press_Connection_Member
+            .port_slide_link_Press_slide_reciprocation_connection.payload
+        to systemModel.component_press_slide_Press_Slide
+            .port_connection_member_Connection_member_input_to_press_slide.payload;
+    doc
+    /* {"interface_id": "member_alignment_bar_guide", "mating_subsystem": "alignment_bar", "port_this": "member_bar", "port_mate": "bar_member_guide", "flow_ref": null, "interface_type": "mounted/guided alignment-bar relationship"} */
+    connection connection_member_alignment_bar_guide
+        connect systemModel.component_press_connection_Press_Connection_Member
+                    .port_member_bar_Alignment_bar_guide_engagement
+        to systemModel.component_alignment_bar_Alignment_Bar
+                    .port_bar_member_guide_Press_connection_member_guide_mount_interface;
+    doc
+    /* {"interface_id": "bushing_eccentric_connection", "mating_subsystem": "second_eccentric", "port_this": "bushing_eccentric", "port_mate": "eccentric_bushing", "flow_ref": null, "interface_type": "eccentric/bushing interface"} */
+    connection connection_bushing_eccentric_connection
+        connect systemModel.component_eccentric_bushing_Eccentric_Bushing
+                    .port_bushing_eccentric_Second_eccentric_interface_and_communicating
+        to systemModel.component_second_eccentric_Second_Eccentric_Member
+                    .port_eccentric_bushing_Bushing_interface;
+    doc
+    /* {"interface_id": "bar_keyway_lock", "mating_subsystem": "eccentric_bushing", "port_this": "bar_keyway", "port_mate": "bushing_keyway", "flow_ref": null, "interface_type": "selective positive-lock engagement"} */
+    connection connection_bar_keyway_lock
+        connect systemModel.component_alignment_bar_Alignment_Bar.port_bar_keyway_Keyway_engagement
+        to systemModel.component_eccentric_bushing_Eccentric_Bushing
+                    .port_bushing_keyway_Alignment_keyway;
+    doc
+    /* {"interface_id": "cylinder_bar_drive", "mating_subsystem": "alignment_bar", "port_this": "cylinder_bar", "port_mate": "bar_cylinder", "flow_ref": "bar_motion", "interface_type": "actuation"} */
+    connection connection_cylinder_bar_drive
+        connect systemModel.component_alignment_cylinder_Double_Acting_Alignment_Cylinder
+                    .port_cylinder_bar_Cylinder_actuation_of_bar
+        to systemModel.component_alignment_bar_Alignment_Bar
+                    .port_bar_cylinder_Cylinder_actuation_interface;
+    doc
+    /* {"interface_id": "shaft_eccentric_connection", "mating_subsystem": "second_eccentric", "port_this": "shaft_eccentric", "port_mate": "shaft", "flow_ref": "shaft_rotation", "interface_type": "connected rotary shaft"} */
+    connection connection_shaft_eccentric_connection
+        connect systemModel.component_crankshaft_Rotatable_Crankshaft
+                    .port_shaft_eccentric_Connection_to_second_eccentric
+        to systemModel.component_second_eccentric_Second_Eccentric_Member.port_shaft_Crankshaft;
+} // package Model__Positive_Lock_Adjustable_Stroke_Press_Mechani

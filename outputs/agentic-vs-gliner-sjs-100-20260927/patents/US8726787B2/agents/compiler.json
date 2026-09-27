@@ -1,0 +1,207 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 3,
+    "ActionUsage": 7,
+    "AllocationUsage": 3,
+    "ConnectionUsage": 5,
+    "Documentation": 41,
+    "EndFeatureMembership": 22,
+    "Feature": 38,
+    "FeatureChaining": 60,
+    "FeatureMembership": 47,
+    "FeatureTyping": 23,
+    "FlowEnd": 6,
+    "FlowUsage": 3,
+    "ItemDefinition": 4,
+    "ItemUsage": 13,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 68,
+    "Package": 1,
+    "PartDefinition": 7,
+    "PartUsage": 8,
+    "PortUsage": 13,
+    "Redefinition": 6,
+    "ReferenceSubsetting": 22,
+    "ReferenceUsage": 6,
+    "Subclassification": 2,
+    "SuccessionAsUsage": 1
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_housing_Actuator_Housing_and_Chamber"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_housing_Actuator_Housing_and_Chamber.port_chamber_fluid_Internal_chamber_fluid_boundary"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_port_block_Port_Block"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_port_block_Port_Block.port_pb_supply_Rotor_supply_port"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_port_block_Port_Block.port_pb_drain_Rotor_drain_port"
+    },
+    {
+      "path": "/subsystems/1/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_port_block_Port_Block.port_pb_bore_Bore_and_grooves_to_rotor_base_slots"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_rotor_Rotor_and_Hydraulic_Galleries"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_rotor_Rotor_and_Hydraulic_Galleries.port_rotor_base_Base_slots"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_rotor_Rotor_and_Hydraulic_Galleries.port_rotor_arm_Tangential_arm_ports_to_chamber"
+    },
+    {
+      "path": "/subsystems/2/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_rotor_Rotor_and_Hydraulic_Galleries.port_rotor_output_Rotary_mechanical_output"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_stator_supply_Stator_Port_and_Boss_Hole"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_stator_supply_Stator_Port_and_Boss_Hole.port_stator_in_Stator_port"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_stator_supply_Stator_Port_and_Boss_Hole.port_stator_pressure_in_Selected_pressurized_fluid_input"
+    },
+    {
+      "path": "/subsystems/3/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_stator_supply_Stator_Port_and_Boss_Hole.port_stator_return_out_Selected_return_fluid_path"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_hydraulic_supply_Hydraulic_Pump"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_hydraulic_supply_Hydraulic_Pump.port_pump_out_Pressurized_fluid_supply"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_reservoir_Hydraulic_Reservoir"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_reservoir_Hydraulic_Reservoir.port_reservoir_fluid_Reservoir_fluid_connection"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_mechanical_load_Driven_Mechanical_Load"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_mechanical_load_Driven_Mechanical_Load.port_load_input_Rotary_input"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_hydraulic_flow_Pressurized_and_return_hydraulic_fluid"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_rotary_output_Rotor_rotary_motion"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_drive_clockwise_Drive_rotor_clockwise"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_drive_opposite_Drive_rotor_in_opposite_direction"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_bypass_position_limit_Move_beyond_hydraulic_position_limit"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_pump_to_supply"
+    },
+    {
+      "path": "/subsystems/1/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_drain_to_reservoir"
+    },
+    {
+      "path": "/subsystems/1/interfaces/2",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_bore_to_rotor_base"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_rotor_to_load"
+    },
+    {
+      "path": "/subsystems/2/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_rotor_arm_to_chamber"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_stator_hole_to_chamber"
+    },
+    {
+      "path": "/subsystems/3/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_stator_pressure_from_pump"
+    },
+    {
+      "path": "/subsystems/3/interfaces/2",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_stator_return_to_reservoir"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

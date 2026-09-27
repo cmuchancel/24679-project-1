@@ -1,0 +1,193 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 4,
+    "AllocationUsage": 1,
+    "ConnectionUsage": 7,
+    "Documentation": 39,
+    "EndFeatureMembership": 16,
+    "Feature": 32,
+    "FeatureChaining": 46,
+    "FeatureMembership": 40,
+    "FeatureTyping": 21,
+    "ItemDefinition": 6,
+    "ItemUsage": 14,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 62,
+    "Package": 1,
+    "PartDefinition": 6,
+    "PartUsage": 7,
+    "PortUsage": 14,
+    "ReferenceSubsetting": 16,
+    "Subclassification": 3,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_front_frame_Front_triangle___front_frame_portion"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_front_frame_Front_triangle___front_frame_portion.port_front_link1_pivot_First_link_front_pivot"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_front_frame_Front_triangle___front_frame_portion.port_front_link2_pivot_Second_link_front_pivot"
+    },
+    {
+      "path": "/subsystems/0/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_front_frame_Front_triangle___front_frame_portion.port_front_shock_mount_Shock_connection"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_rear_swingarm_Rear_wheel_swingarm___rear_frame_portion"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_rear_swingarm_Rear_wheel_swingarm___rear_frame_portion.port_rear_link1_pivot_First_link_rear_pivot"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_rear_swingarm_Rear_wheel_swingarm___rear_frame_portion.port_rear_link2_pivot_Second_link_rear_pivot"
+    },
+    {
+      "path": "/subsystems/1/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_rear_swingarm_Rear_wheel_swingarm___rear_frame_portion.port_wheel_receipt_Rear_wheel_receipt"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_link1_First_linkage_member"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_link1_First_linkage_member.port_link1_front_Front_pivot"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_link1_First_linkage_member.port_link1_rear_Rear_pivot"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_link2_Second_linkage_member"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_link2_Second_linkage_member.port_link2_front_Front_pivot"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_link2_Second_linkage_member.port_link2_rear_Rear_pivot"
+    },
+    {
+      "path": "/subsystems/3/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_link2_Second_linkage_member.port_link2_shock_connection_Shock_pivotal_connection"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_shock_Shock_absorber"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_shock_Shock_absorber.port_shock_front_Front_frame_operative_connection"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_shock_Shock_absorber.port_shock_rear_Second_link_pivotal_connection"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_rear_wheel_Rear_wheel"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_rear_wheel_Rear_wheel.port_wheel_receipt_Rear_wheel_receipt_3bfedddf"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_compression_Suspension_shock_compression"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_link_rotation_Paired_linkage_rotation"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_rear_path_Rear_wheel_axle_path"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_control_rear_motion_Control_rear_wheel_suspension_motion"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_front_link1_joint"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_front_link2_joint"
+    },
+    {
+      "path": "/subsystems/0/interfaces/2",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_front_shock_joint"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_swingarm_wheel_receipt"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_link1_rear_joint"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_link2_rear_joint"
+    },
+    {
+      "path": "/subsystems/3/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_link2_shock_joint"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

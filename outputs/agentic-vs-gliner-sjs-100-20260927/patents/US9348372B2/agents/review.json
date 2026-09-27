@@ -1,0 +1,46 @@
+{
+  "revision": 2,
+  "candidate_sha256": "5256f96cea436515929e4e471a3321b15ff4ee34c41fb8a1255215bcd242ac2a",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 2's physical subsystems, descriptions, ports, interfaces, item flows, and pivot action are supported by the cited patent passages. The passages describe base/body mounting and shaft support (0801a7e54ceb4f0663d9cdb1a33456bb), lid/shaft engagement and pivoting (da26b2d852dd44f1c74a8f9d9f17ee55; 129932660107bca9240c63d06b709088), spring geometry/attachments and torsion (8493a30b256921697e4ac0355f214247; f51fc27011a40a1b4b5019a06a08a9b5; 4ff3e36dc816c7519b7b76218abfdd24; c1881683b6105796647f99137a1a04db), and friction member couplings/resistance (7043bafc0482c0cd50b0ed864c2d2614; 48956f1f048edc6ecc0429b403694bb6). No quantified constraints or unsupported requirements are asserted. “Store torsional energy” is an interpretive function rather than express patent wording, but is reasonable as a modeling interpretation of a spring subjected to torsion."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The decomposition covers base, lid, body, shaft, torsion spring, fixation member, and friction member. The action captures lid-driven shaft rotation, spring torsional loading, and frictional resistance. Alternatives and unsupported dimensions/material/performance constraints are not imposed. The prior topology gap is repaired."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "ROTATION and TORQUE now appear on actual interfaces with referenced ports. Every modeled port participates in a compatible connection: base/body; lid/shaft; body/shaft; shaft/spring; spring/fixation; fixation/body; friction/body; friction/shaft. Mating ports use the same mechanical_rotational type and inout is conservative where direction is unspecified. Spring loading remains internal to the spring rather than modeled as an incompatible inter-component transformation."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Citations cover model_meta, each subsystem, each port and interface, both flows, the action, and action steps. Actual cited passage text substantiates the modeled content. No requirements or state machines are present; no unsupported or uncited modeled item was identified."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "The revision adds explicit interfaces for patent-described physical couplings/supports, with existing compatible ports and valid flow references. Each connection is recorded once. Base/body attachment, shaft/body support, shaft/lid coupling, spring-end restraints, and friction-member contacts are represented."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Relevant interface guidance distinguishes external from internal interactions and recommends explicit classification of subsystem interfaces. The model separates base/lid entities and represents internal hinge interactions using mechanical flow types and explicit interfaces. Textbook evidence informs modeling practice only, not patent facts; the other retrieved guidance about scoring solutions does not apply to this structural concept."
+    }
+  },
+  "findings": [
+    {
+      "id": "R2",
+      "severity": "info",
+      "path": "/sjs/subsystems/4/functional_basis/0",
+      "description": "“store torsional energy” is a reasonable interpretation of torsional loading, but the patent expressly states the spring is subjected to torsion and movement may be assisted or opposed; it does not expressly identify energy storage as a function.",
+      "evidence_ids": [
+        "4ff3e36dc816c7519b7b76218abfdd24",
+        "c342d1ab0aa448430885d44fe098d4ed"
+      ],
+      "recommendation": "For maximally literal traceability, replace with “undergo torsional loading” or retain only the expressly supported assist/oppose function. This is a non-blocking wording refinement."
+    }
+  ],
+  "summary": "Revision 2 resolves the previous disconnected-flow finding: all modeled ports participate in cited, compatible interfaces, while spring torsional response remains internal. Patent support, traceability, functional decomposition, and SJS interface quality are sound. One non-blocking literalness note remains for “store torsional energy.” No structural errors or unresolved warnings/errors were identified.",
+  "saved_at": "2026-09-27T06:49:53.794937+00:00"
+}

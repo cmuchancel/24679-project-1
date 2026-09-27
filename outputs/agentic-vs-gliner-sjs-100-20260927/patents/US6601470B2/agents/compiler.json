@@ -1,0 +1,256 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 4,
+    "ActionUsage": 12,
+    "AllocationUsage": 4,
+    "Documentation": 57,
+    "EndFeatureMembership": 24,
+    "Feature": 32,
+    "FeatureChaining": 64,
+    "FeatureMembership": 72,
+    "FeatureTyping": 28,
+    "FlowEnd": 16,
+    "FlowUsage": 8,
+    "ItemDefinition": 11,
+    "ItemUsage": 16,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 94,
+    "Package": 1,
+    "PartDefinition": 8,
+    "PartUsage": 9,
+    "PortUsage": 16,
+    "Redefinition": 16,
+    "ReferenceSubsetting": 24,
+    "ReferenceUsage": 16,
+    "Subclassification": 7,
+    "SuccessionAsUsage": 4
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_input_drive_Input_shaft_and_roller_gear_cam"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_input_drive_Input_shaft_and_roller_gear_cam.port_drive_input_Input_shaft_torque_and_rotation"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_input_drive_Input_shaft_and_roller_gear_cam.port_rib_contact_output_Tapered_rib_contact"
+    },
+    {
+      "path": "/subsystems/0/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_input_drive_Input_shaft_and_roller_gear_cam.port_channel_contact_output_Channel_cam_contact"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_turret_Turret_and_cam_followers"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_turret_Turret_and_cam_followers.port_rib_motion_input_Tapered_rib_cam_engagement"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_turret_Turret_and_cam_followers.port_turret_rotation_output_Turret_rotation"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_swing_arm_Reciprocating_swing_arm"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_swing_arm_Reciprocating_swing_arm.port_channel_cam_input_Channel_cam_follower_motion"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_swing_arm_Reciprocating_swing_arm.port_swing_output_Reciprocating_swing_at_slider_connection"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_slider_Axial_slider"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_slider_Axial_slider.port_arm_motion_input_Swing_arm_follower_motion"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_slider_Axial_slider.port_axial_motion_output_Reciprocating_axial_movement"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_output_shaft_Output_shaft_and_flanged_joint"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_output_shaft_Output_shaft_and_flanged_joint.port_spline_rotation_input_Turret_rotation_through_spline"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_output_shaft_Output_shaft_and_flanged_joint.port_slider_axial_input_Slider_axial_drive_at_flange"
+    },
+    {
+      "path": "/subsystems/4/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_output_shaft_Output_shaft_and_flanged_joint.port_rotary_motion_output_Bidirectional_output_shaft_rotation"
+    },
+    {
+      "path": "/subsystems/4/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_output_shaft_Output_shaft_and_flanged_joint.port_axial_motion_output_Reciprocating_output_shaft_axial_movement"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_housing_Mechanism_housing"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_rotary_drive_source_External_rotary_drive_source"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_rotary_drive_source_External_rotary_drive_source.port_drive_output_Rotational_drive"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_driven_mechanism_External_driven_mechanism"
+    },
+    {
+      "path": "/subsystems/7/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_driven_mechanism_External_driven_mechanism.port_rotary_motion_input_Rotational_movement_received"
+    },
+    {
+      "path": "/subsystems/7/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_driven_mechanism_External_driven_mechanism.port_axial_motion_input_Axial_reciprocating_movement_received"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_input_rotation_Input_shaft_torque_and_rotation"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_cam_engagement_Cam_to_turret_rib_follower_motion"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_channel_engagement_Channel_cam_follower_motion"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_arm_swing_Swing_arm_reciprocation"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_slider_motion_Slider_axial_reciprocation"
+    },
+    {
+      "path": "/item_flows/5",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_turret_rotation_Turret_rotation_through_sliding_spline"
+    },
+    {
+      "path": "/item_flows/6",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_output_axial_motion_Reciprocating_output_shaft_axial_movement"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_transmit_input_rotation_Turn_roller_gear_cam_from_input_shaft_rotatio"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_drive_turret_rotation_Drive_turret_rotation_and_transmit_through_sl"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_drive_swing_arm_Drive_reciprocating_swing_arm_movement_from_c"
+    },
+    {
+      "path": "/behaviour/actions/3",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_convert_swing_to_axial_motion_Convert_swing_arm_reciprocation_to_axial_outp"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_cam_turret_engagement"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_cam_arm_engagement"
+    },
+    {
+      "path": "/subsystems/0/interfaces/2",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_input_drive_boundary"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_turret_shaft_spline"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_arm_slider"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_slider_shaft_axial"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_external_rotary_output"
+    },
+    {
+      "path": "/subsystems/4/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_external_axial_output"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

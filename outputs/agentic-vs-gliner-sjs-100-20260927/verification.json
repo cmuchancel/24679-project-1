@@ -1,0 +1,61 @@
+{
+  "verified_at": "2026-09-27T21:39:22.543528+00:00",
+  "status": "passed",
+  "counts": {
+    "patents": 100,
+    "completed_agent_outputs": 100,
+    "completed_gliner_outputs": 100,
+    "agent_compiler_passed": 100,
+    "gliner_compiler_passed": 100,
+    "agent_unresolved_mappings": 0,
+    "gliner_unresolved_mappings": 20372
+  },
+  "checks": [
+    "Identical 100 input SHA-256 digests across methods and original corpus",
+    "Frozen source manifests and selected fine-tuned checkpoint match",
+    "Published model, compiler, evidence and graph bytes match locally verified originals",
+    "Each final agent review approves the evidence-linked candidate",
+    "Each archived final agent SJS equals its published SJS",
+    "All final agent structural validation lists are empty",
+    "All 100 GLiNER graphs contain all eleven completed passes"
+  ],
+  "local_verification_sha256": {
+    "agents": "a196a56911e38a49fd78e44703a189032382ad65bf5489ce1a04b37feaa199f1",
+    "gliner": "ff1c235f3e5f20f2eb552879130d8106ef09a413765ff86e55898f66f6984a55"
+  },
+  "publication_notes": [
+    "Raw research archives, session transcripts, earlier output versions and retry history are not included.",
+    "Aggregate agent usage covers the selected completed workflow only and must not be interpreted as total study cost.",
+    "Compiler acceptance and source retention do not establish patent extraction accuracy."
+  ],
+  "known_scope_notes": {
+    "US9541170B2": "Reviewer approved a high-level transmission model. Ten-speed schedule includes stages 1-4, and the twelve-speed schedule is explicitly partial. Detailed internal gear/shaft relationships remain in descriptions."
+  },
+  "gliner_unresolved_reasons": {
+    "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.": 11911,
+    "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.": 3893,
+    "Value has no literal; prose expression is retained without inventing a numeric value.": 1728,
+    "Relationship type 'source' is preserved as typed metadata; no additional connection semantics were invented.": 571,
+    "Interface has an unresolved subsystem or port endpoint; no connection was invented.": 507,
+    "Relationship type 'target' is preserved as typed metadata; no additional connection semantics were invented.": 429,
+    "Relationship type 'owner' is preserved as typed metadata; no additional connection semantics were invented.": 360,
+    "Relationship type 'variables' is preserved as typed metadata; no additional connection semantics were invented.": 115,
+    "Relationship type 'flow_ref' is preserved as typed metadata; no additional connection semantics were invented.": 111,
+    "Relationship type 'interfaces' is preserved as typed metadata; no additional connection semantics were invented.": 96,
+    "Relationship type 'preconditions' is preserved as typed metadata; no additional connection semantics were invented.": 88,
+    "Relationship type 'satisfies_requirements' is preserved as typed metadata; no additional connection semantics were invented.": 84,
+    "Relationship type 'ports' is preserved as typed metadata; no additional connection semantics were invented.": 84,
+    "Constraint expression retained; it needs an explicit typed variable/expression mapping before becoming an evaluable constraint.": 78,
+    "Relationship type 'postconditions' is preserved as typed metadata; no additional connection semantics were invented.": 74,
+    "Relationship type 'port_mate' is preserved as typed metadata; no additional connection semantics were invented.": 63,
+    "Relationship type 'satisfied_by' is preserved as typed metadata; no additional connection semantics were invented.": 51,
+    "Relationship type 'port_this' is preserved as typed metadata; no additional connection semantics were invented.": 42,
+    "State-machine ownership retained; execution binding is not inferred.": 28,
+    "Relationship type 'parts' is preserved as typed metadata; no additional connection semantics were invented.": 19,
+    "Verification procedure and subject retained; no executable test method is inferred.": 15,
+    "Relationship type 'unit' is preserved as typed metadata; no additional connection semantics were invented.": 11,
+    "Relationship type 'requirements' is preserved as typed metadata; no additional connection semantics were invented.": 8,
+    "Relationship type 'subject' is preserved as typed metadata; no additional connection semantics were invented.": 5,
+    "Relationship type 'parameters' is preserved as typed metadata; no additional connection semantics were invented.": 1
+  }
+}

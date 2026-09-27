@@ -1,0 +1,232 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Position-selective latch assembly",
+    "system_id": "US7219935B2",
+    "description": "Inferred concept model of a latch in which lever position relative to a pawl determines whether lever actuation releases a ratchet.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "Mechanical latch systems",
+    "maturity": "draft",
+    "date_modified": "2026-09-26"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "RATCHET",
+      "subsystem_name": "Ratchet",
+      "description": "Retains a latched position through releasable engagement with the pawl; may move to an unlatched position when disengaged.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "pawl_engagement",
+          "name": "Releasable pawl engagement",
+          "direction": "inout",
+          "flow_type": "mechanical_contact"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_RATCHET_PAWL",
+          "mating_subsystem": "PAWL",
+          "port_this": "pawl_engagement",
+          "port_mate": "ratchet_engagement",
+          "flow_ref": "F_ENGAGEMENT",
+          "interface_type": "releasable mechanical engagement"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "PAWL",
+      "subsystem_name": "Pawl",
+      "description": "Releasably engages the ratchet and is moved by lever action to permit ratchet disengagement.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "post_link",
+          "name": "Pawl post / lever aperture coupling",
+          "direction": "in",
+          "flow_type": "mechanical_contact"
+        },
+        {
+          "port_id": "ratchet_engagement",
+          "name": "Releasable ratchet engagement",
+          "direction": "inout",
+          "flow_type": "mechanical_contact"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_LEVER_PAWL",
+          "mating_subsystem": "LEVER",
+          "port_this": "post_link",
+          "port_mate": "pawl_link",
+          "flow_ref": "F_PAWL",
+          "interface_type": "Pawl post received in lever aperture; lost motion is permitted, with force transfer when the aperture surface contacts the post during release."
+        }
+      ]
+    },
+    {
+      "subsystem_id": "LEVER",
+      "subsystem_name": "Control lever",
+      "description": "Moves between positions relative to the pawl and pivots; in the release-enabled position it transfers force to the pawl, while in the other position actuation cannot release the ratchet.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "pawl_link",
+          "name": "Pawl post/aperture coupling",
+          "direction": "out",
+          "flow_type": "mechanical_contact"
+        },
+        {
+          "port_id": "actuation",
+          "name": "User lever actuation",
+          "direction": "in",
+          "flow_type": "mechanical_actuation"
+        },
+        {
+          "port_id": "positioning",
+          "name": "Positioning motion input",
+          "direction": "in",
+          "flow_type": "mechanical_motion"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "ROTATOR",
+      "subsystem_name": "Rotatable positioning element",
+      "description": "One alternative, embodiment-dependent positioning arrangement: a rotatable element coupled to the lever, whose rotation moves the lever between positions relative to the pawl.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "lever_drive",
+          "name": "Lever positioning output",
+          "direction": "out",
+          "flow_type": "mechanical_motion"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_ROTATOR_LEVER",
+          "mating_subsystem": "LEVER",
+          "port_this": "lever_drive",
+          "port_mate": "positioning",
+          "flow_ref": "F_POSITION",
+          "interface_type": "mechanical coupling"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "OVER_CENTER",
+      "subsystem_name": "Over-center positioning device",
+      "description": "Alternative, embodiment-dependent over-center positioning arrangement (not necessarily combined with the rotatable-element arrangement). It moves the lever between locked and unlocked positions across an unstable center position, with at least two stable positions on either side.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "lever_drive",
+          "name": "Lever positioning output",
+          "direction": "out",
+          "flow_type": "mechanical_motion"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_OVERCENTER_LEVER",
+          "mating_subsystem": "LEVER",
+          "port_this": "lever_drive",
+          "port_mate": "positioning",
+          "flow_ref": "F_POSITION",
+          "interface_type": "mechanical coupling"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "USER_INPUT",
+      "subsystem_name": "User-manipulatable release input",
+      "description": "External user-manipulatable device serving as a source of a latch-release input; the patent does not specify its particular output kinematics or coupling.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "actuation_out",
+          "name": "Release actuation output",
+          "direction": "out",
+          "flow_type": "mechanical_actuation"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_USER_LEVER",
+          "mating_subsystem": "LEVER",
+          "port_this": "actuation_out",
+          "port_mate": "actuation",
+          "flow_ref": "F_HANDLE",
+          "interface_type": "User-manipulatable latch-release input; specific coupling kinematics unspecified"
+        }
+      ]
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "F_HANDLE",
+      "name": "Lever actuation",
+      "flow_type": "mechanical_actuation",
+      "notes": "User-manipulatable input for generating latch release; specific input-device output kinematics are not specified."
+    },
+    {
+      "flow_id": "F_PAWL",
+      "name": "Lever-to-pawl force and motion",
+      "flow_type": "mechanical_contact",
+      "notes": "Transferred through lever/pawl engagement; aperture receives pawl post and permits lost motion."
+    },
+    {
+      "flow_id": "F_POSITION",
+      "name": "Lever positioning motion",
+      "flow_type": "mechanical_motion",
+      "notes": "Movement of the lever relative to the pawl, driven by a rotatable element or, in an alternative embodiment, an over-center device."
+    },
+    {
+      "flow_id": "F_ENGAGEMENT",
+      "name": "Ratchet-pawl engagement",
+      "flow_type": "mechanical_contact",
+      "notes": "Releasable engagement retains the ratchet in its latched position; disengagement permits release."
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "A_POSITION",
+        "name": "Position lever for release",
+        "owner": "ROTATOR",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Rotate the coupled positioning element toward the unlocked position."
+          },
+          {
+            "step_no": 2,
+            "description": "Move the lever relative to the pawl into a position where it can transmit sufficient force for release."
+          }
+        ]
+      },
+      {
+        "action_id": "A_RELEASE",
+        "name": "Release ratchet",
+        "owner": "LEVER",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Pivot the lever in the release-enabled position."
+          },
+          {
+            "step_no": 2,
+            "description": "Lever aperture bears on the pawl post and moves the pawl out of ratchet engagement."
+          },
+          {
+            "step_no": 3,
+            "description": "The ratchet is no longer retained in its latched position."
+          }
+        ]
+      }
+    ],
+    "state_machines": []
+  }
+}

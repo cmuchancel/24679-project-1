@@ -1,0 +1,208 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 4,
+    "AllocationUsage": 1,
+    "ConnectionUsage": 8,
+    "Documentation": 40,
+    "EndFeatureMembership": 18,
+    "Feature": 36,
+    "FeatureChaining": 52,
+    "FeatureMembership": 45,
+    "FeatureTyping": 24,
+    "ItemDefinition": 3,
+    "ItemUsage": 16,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 62,
+    "Package": 1,
+    "PartDefinition": 7,
+    "PartUsage": 8,
+    "PortUsage": 16,
+    "ReferenceSubsetting": 18,
+    "Subclassification": 2,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BASE_Electronic_device_base"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BASE_Electronic_device_base.port_BASE_HINGE_MOUNT_Base_hinge_mounting"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_LID_Electronic_device_lid"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LID_Electronic_device_lid.port_LID_SHAFT_COUPLING_Lid_shaft_rotational_coupling"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BODY_Hinge_body"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BODY_Hinge_body.port_BODY_BASE_MOUNT_Body_base_mounting"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BODY_Hinge_body.port_BODY_SHAFT_SUPPORT_Body_shaft_rotational_support"
+    },
+    {
+      "path": "/subsystems/2/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BODY_Hinge_body.port_BODY_FIX_ANCHOR_Body_fixation_member_anchor"
+    },
+    {
+      "path": "/subsystems/2/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BODY_Hinge_body.port_BODY_FRICTION_CONTACT_Body_friction_member_contact"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SHAFT_Hinge_shaft"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SHAFT_Hinge_shaft.port_SHAFT_LID_COUPLING_Shaft_lid_rotational_coupling"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SHAFT_Hinge_shaft.port_SHAFT_BODY_SUPPORT_Shaft_body_rotational_support"
+    },
+    {
+      "path": "/subsystems/3/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SHAFT_Hinge_shaft.port_SHAFT_SPRING_ATTACHMENT_Shaft_spring_end_attachment"
+    },
+    {
+      "path": "/subsystems/3/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SHAFT_Hinge_shaft.port_SHAFT_FRICTION_CONTACT_Shaft_friction_contact"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SPRING_Embedded_torsion_spring"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SPRING_Embedded_torsion_spring.port_SPRING_SHAFT_END_Spring_first_end_shaft_attachment"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SPRING_Embedded_torsion_spring.port_SPRING_FIX_END_Spring_second_end_fixation_attachment"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_FIX_Spring_fixation_member"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FIX_Spring_fixation_member.port_FIX_BODY_MOUNT_Fixation_member_body_coupling"
+    },
+    {
+      "path": "/subsystems/5/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FIX_Spring_fixation_member.port_FIX_SPRING_END_Fixation_member_spring_end_restraint"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_FRICTION_Friction_member"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FRICTION_Friction_member.port_FRICTION_BODY_MOUNT_Friction_member_body_coupling"
+    },
+    {
+      "path": "/subsystems/6/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FRICTION_Friction_member.port_FRICTION_SHAFT_CONTACT_Friction_member_shaft_engagement"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_ROTATION_Lid_shaft_pivot_rotation"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_TORQUE_Hinge_torque"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_PIVOT_Pivot_lid_relative_to_base"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_BASE_BODY"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_LID_SHAFT"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_BODY_SHAFT"
+    },
+    {
+      "path": "/subsystems/2/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_BODY_FIX"
+    },
+    {
+      "path": "/subsystems/2/interfaces/2",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_BODY_FRICTION"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_SHAFT_SPRING"
+    },
+    {
+      "path": "/subsystems/5/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_FIX_SPRING"
+    },
+    {
+      "path": "/subsystems/6/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_FRICTION_SHAFT"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

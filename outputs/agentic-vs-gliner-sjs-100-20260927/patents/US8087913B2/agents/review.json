@@ -1,0 +1,34 @@
+{
+  "revision": 6,
+  "candidate_sha256": "aec48791b49420e6f4e44dc20e4de0eae766e9846acf320cb1fbcdfad53730c2",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 6's assertions are supported by the retrieved passages. In particular, the detailed description explicitly states that the housing mounts the gears and that spaces between teeth move fluid inlet-to-outlet as rotation occurs (c498b264956492e62e1f1bda239cea2f). Claims support drive source, gear engagement, unequal tooth counts, associated component, and the driven-gear geometry (2311290236f9704408b8796285bcf090; fa7a015d7ecba654faf1cf4e80ab41fe; c1517ff6f5015c15e3c7ac7e5107a579). No unsupported control or operating sequence is asserted."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The modeled gear pair and its rotation transfer, associated component function, housing, and described inlet-to-outlet fluid transport are retained. Unsupported control and state details are properly omitted."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "The prior disconnected item_flows entry for fluid_transport is absent in revision 6. The patent-supported fluid transport is represented as housing description/action prose rather than a standalone unconnected flow; housing inlet/outlet ports have the corresponding hydraulic_fluid type and directions, with no speculative external source/sink or incompatible connection. The rotary item flows have connected, direction-compatible interfaces."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "The driven-gear description preserves the qualitative asymmetric-face, involute-radius, apex, circumferential-gap, and outer-diameter relationships supported by claims 1–7. The action steps trace to the detailed description; no quantitative constraints are fabricated."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Drive-source-to-drive-gear and drive-gear-to-driven-gear interfaces connect existing compatible rotary ports; driven-gear-to-associated-component likewise connects compatible rotary ports. The housing ports are supported inlet/outlet context and are not assigned conjectural external mating subsystems."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The model distinguishes physical subsystems, contextual elements, and interactions while leaving unspecified implementations and fluid boundary connections open. This is consistent with guidance on representing interactions and context; textbook material is not used as invention evidence."
+    }
+  },
+  "findings": [],
+  "summary": "Independently reviewed saved SJS revision 6 against the cited patent passages and relevant modeling guidance. The previous standalone disconnected fluid item flow has been removed; the supported fluid-transport fact remains in the housing description and action, without inventing a source/sink connection. No unresolved structural, grounding, completeness, flow, claim-traceability, or interface issue found.",
+  "saved_at": "2026-09-27T08:53:41.263334+00:00"
+}

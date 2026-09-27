@@ -1,0 +1,34 @@
+{
+  "revision": 3,
+  "candidate_sha256": "55dec6a9ac4ea23d5b3858668df0771263e2302e22f270bd9a124f65917f4e06",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 3's internal body path description is supported by claim 1's outlet-to-opposite-chamber flow communication and specification passages describing communication between chambers 32 and 33 and equal opposing spindle pressure areas. Body, spindle/cap, seal, spring, and operating behavior are supported by cited patent passages; no patent fact is inferred from textbook material."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The model covers the core valve body/seat/chamber, spindle and equal opposing areas, spring set point, guide seal/cap locating relation, relief discharge, and backpressure balance. The revision removes inappropriate external balancing ports while preserving external inlet and relief sink."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "The remaining external hydraulic flows have coherent directions/types: source out to body inlet and body relief out to sink inlet. Outlet-derived balancing communication is now described as internal to the body rather than represented as a conflicting external boundary flow."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Citations at subsystem, flow, action, port, and interface paths trace the modeled elements to relevant claim/specification chunks. In particular, body balancing description and behavioral step cite evidence for outlet-to-opposite-chamber communication and equal opposing areas."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "All modeled interfaces connect existing ports with matching hydraulic-fluid flow types and compatible directions, and each connection is recorded once. Previously dangling balance ports and external sink balance interface are absent."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The boundary distinction and restraint against unsupported performance requirements are appropriate. The retrieved interface text was not directly relevant, while functional-allocation guidance supports avoiding invented performance allocations; patent evidence alone grounds invention claims."
+    }
+  },
+  "findings": [],
+  "summary": "Reviewed saved SJS revision 3 against the cited patent passages, relevant textbook guidance, and the prior revision-2 finding. Revision 3 resolves the specific topology defect: outlet backpressure communication is represented internally in the body description and action, while external relief discharge remains a distinct boundary flow. All six required checks pass; no structural findings or unresolved prior issues are apparent. No changes were made.",
+  "saved_at": "2026-09-27T04:01:03.448211+00:00"
+}

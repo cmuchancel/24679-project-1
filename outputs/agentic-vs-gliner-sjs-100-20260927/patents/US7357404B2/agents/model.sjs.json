@@ -1,0 +1,227 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Progressive Rate ATV Suspension Linkage",
+    "system_id": "US7357404B2",
+    "description": "Two-link ATV rear suspension linkage mounted between the ATV frame and swing arm, with a shock attachment, intended to vary leverage through rear wheel travel and provide a progressive rate.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "ATV rear suspension",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "LINK1",
+      "subsystem_name": "First Link",
+      "description": "Link with an opening for attachment to the ATV frame and an opening for attachment to the second link; may include the shock mount opening in one disclosed arrangement.",
+      "domain": "mechanical linkage",
+      "functional_basis": [
+        "connect frame to linkage",
+        "transmit suspension motion"
+      ],
+      "ports": [
+        {
+          "port_id": "frame_mount",
+          "name": "ATV frame mounting opening",
+          "direction": "inout",
+          "flow_type": "mechanical_joint"
+        },
+        {
+          "port_id": "link2_mount",
+          "name": "Second-link mounting opening",
+          "direction": "inout",
+          "flow_type": "mechanical_joint"
+        },
+        {
+          "port_id": "shock_mount",
+          "name": "Optional shock mounting opening",
+          "direction": "inout",
+          "flow_type": "mechanical_joint"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_FRAME_LINK1",
+          "mating_subsystem": "ATV_FRAME",
+          "port_this": "frame_mount",
+          "port_mate": "frame_link_mount",
+          "flow_ref": "J_FRAME_LINK",
+          "interface_type": "mechanical mounting"
+        },
+        {
+          "interface_id": "IF_LINK1_LINK2",
+          "mating_subsystem": "LINK2",
+          "port_this": "link2_mount",
+          "port_mate": "link1_mount",
+          "flow_ref": "J_LINK_LINK",
+          "interface_type": "mechanical mounting"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "LINK2",
+      "subsystem_name": "Second Link",
+      "description": "Link with an opening for attachment to the ATV swing arm and an opening for attachment to the first link; may include the shock mount opening in an alternative arrangement.",
+      "domain": "mechanical linkage",
+      "functional_basis": [
+        "connect swing arm to linkage",
+        "transmit suspension motion"
+      ],
+      "ports": [
+        {
+          "port_id": "link1_mount",
+          "name": "First-link mounting opening",
+          "direction": "inout",
+          "flow_type": "mechanical_joint"
+        },
+        {
+          "port_id": "swing_arm_mount",
+          "name": "ATV swing-arm mounting opening",
+          "direction": "inout",
+          "flow_type": "mechanical_joint"
+        },
+        {
+          "port_id": "shock_mount",
+          "name": "Optional shock mounting opening",
+          "direction": "inout",
+          "flow_type": "mechanical_joint"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_LINK2_ARM",
+          "mating_subsystem": "SWING_ARM",
+          "port_this": "swing_arm_mount",
+          "port_mate": "arm_link_mount",
+          "flow_ref": "J_LINK_ARM",
+          "interface_type": "mechanical mounting"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "ATV_FRAME",
+      "subsystem_name": "ATV Frame",
+      "description": "External vehicle structure providing a mounting point for the first link and an upper shock mount.",
+      "domain": "vehicle structure",
+      "ports": [
+        {
+          "port_id": "frame_link_mount",
+          "name": "Linkage mount",
+          "direction": "inout",
+          "flow_type": "mechanical_joint"
+        },
+        {
+          "port_id": "frame_shock_mount",
+          "name": "Rear shock upper mounting point",
+          "direction": "inout",
+          "flow_type": "mechanical_joint"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "SWING_ARM",
+      "subsystem_name": "ATV Swing Arm",
+      "description": "External rear suspension arm providing the mounting point for the second link.",
+      "domain": "vehicle structure",
+      "ports": [
+        {
+          "port_id": "arm_link_mount",
+          "name": "Linkage mount",
+          "direction": "inout",
+          "flow_type": "mechanical_joint"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "REAR_SHOCK",
+      "subsystem_name": "ATV Rear Shock Absorber",
+      "description": "External shock absorber attached between the ATV and a shock mount opening on one of the linkage links.",
+      "domain": "suspension component",
+      "ports": [
+        {
+          "port_id": "shock_upper_mount",
+          "name": "Upper mount",
+          "direction": "inout",
+          "flow_type": "mechanical_joint"
+        },
+        {
+          "port_id": "shock_link_mount",
+          "name": "Linkage mount",
+          "direction": "inout",
+          "flow_type": "mechanical_joint"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_SHOCK_FRAME",
+          "mating_subsystem": "ATV_FRAME",
+          "port_this": "shock_upper_mount",
+          "port_mate": "frame_shock_mount",
+          "flow_ref": "J_SHOCK_FRAME",
+          "interface_type": "mechanical mounting"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "LINKAGE",
+      "subsystem_name": "Rear Suspension Linkage Assembly",
+      "description": "Aggregate assembly comprising the first and second links and providing the claimed progression behavior.",
+      "domain": "ATV rear suspension linkage"
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "J_FRAME_LINK",
+      "name": "Frame-to-first-link mechanical mounting",
+      "flow_type": "mechanical_joint"
+    },
+    {
+      "flow_id": "J_LINK_LINK",
+      "name": "First-link to second-link mechanical mounting",
+      "flow_type": "mechanical_joint"
+    },
+    {
+      "flow_id": "J_LINK_ARM",
+      "name": "Second-link to swing-arm mechanical mounting",
+      "flow_type": "mechanical_joint"
+    },
+    {
+      "flow_id": "J_SHOCK_FRAME",
+      "name": "Shock-to-frame mechanical mounting",
+      "flow_type": "mechanical_joint"
+    }
+  ],
+  "requirements": [
+    {
+      "req_id": "REQ_PROGRESSION",
+      "category": "performance",
+      "priority": "claimed",
+      "statement": "Provide a progression ratio of approximately 24% to 69% when ATV frame height above ground is between 1.5 and 12.0 inches.",
+      "rationale": "Claim 1 specifies this range and interval; claims 5 and 20 define the ratio from leverage ratios at the interval endpoints.",
+      "satisfied_by": [
+        "LINK1",
+        "LINK2"
+      ]
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "ACT_PROGRESS",
+        "name": "Vary leverage through wheel travel",
+        "owner": "LINKAGE",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "As the rear suspension moves through travel, the frame and suspension-arm mounting points move closer together or farther apart."
+          },
+          {
+            "step_no": 2,
+            "description": "The connected links move through the resulting linkage motion, changing leverage ratio and producing faster shock shaft travel during up travel."
+          }
+        ]
+      }
+    ]
+  }
+}

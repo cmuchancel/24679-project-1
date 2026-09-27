@@ -1,0 +1,101 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 3,
+    "AllocationUsage": 1,
+    "Documentation": 17,
+    "EndFeatureMembership": 6,
+    "Feature": 8,
+    "FeatureChaining": 16,
+    "FeatureMembership": 19,
+    "FeatureTyping": 8,
+    "FlowEnd": 4,
+    "FlowUsage": 2,
+    "ItemDefinition": 3,
+    "ItemUsage": 4,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 29,
+    "Package": 1,
+    "PartDefinition": 3,
+    "PartUsage": 4,
+    "PortUsage": 4,
+    "Redefinition": 4,
+    "ReferenceSubsetting": 6,
+    "ReferenceUsage": 4,
+    "Subclassification": 2,
+    "SuccessionAsUsage": 1
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DRIVE_SHAFT_Drive_rotation_shaft"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DRIVE_SHAFT_Drive_rotation_shaft.port_DRIVE_TORQUE_OUT_Rotational_force_output"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_HUB_Flexible_tubular_hub"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_HUB_Flexible_tubular_hub.port_HUB_TORQUE_IN_Drive_side_torque_input"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_HUB_Flexible_tubular_hub.port_HUB_TORQUE_OUT_Driven_side_torque_output"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DRIVEN_SHAFT_Driven_rotation_shaft"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DRIVEN_SHAFT_Driven_rotation_shaft.port_DRIVEN_TORQUE_IN_Rotational_force_input"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_DRIVE_TORQUE_Drive_shaft_rotational_force"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_OUTPUT_TORQUE_Transmitted_rotational_force"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_TRANSMIT_ROTATION_Transmit_rotational_force"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_DRIVE_TO_HUB"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_HUB_TO_DRIVEN"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

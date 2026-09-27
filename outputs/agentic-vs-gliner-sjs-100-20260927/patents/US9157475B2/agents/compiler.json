@@ -1,0 +1,225 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 3,
+    "ActionUsage": 9,
+    "AllocationUsage": 3,
+    "ConnectionUsage": 4,
+    "Documentation": 37,
+    "EndFeatureMembership": 14,
+    "Feature": 36,
+    "FeatureChaining": 52,
+    "FeatureMembership": 37,
+    "FeatureReferenceExpression": 8,
+    "FeatureTyping": 23,
+    "FeatureValue": 8,
+    "ItemDefinition": 2,
+    "ItemUsage": 9,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 82,
+    "Package": 1,
+    "PartDefinition": 7,
+    "PartUsage": 8,
+    "PortUsage": 9,
+    "ReferenceSubsetting": 22,
+    "ReferenceUsage": 8,
+    "RequirementDefinition": 4,
+    "RequirementUsage": 4,
+    "SatisfyRequirementUsage": 8,
+    "Subclassification": 1,
+    "SubjectMembership": 8,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_housing_Bearing_housing"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_housing_Bearing_housing.port_seal_groove_contact_Surface_seal_groove_contact"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_outer_ring_Outer_ring"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_outer_ring_Outer_ring.port_rolling_surface_contact_Rolling_element_contact_surface"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_outer_ring_Outer_ring.port_seal_sliding_surface_Seal_sliding_surface"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_inner_ring_Inner_ring"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_inner_ring_Inner_ring.port_inner_rolling_contact_Rolling_element_support_contact"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_inner_ring_Inner_ring.port_seal_sliding_contact_Seal_sliding_contact_surface"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_rolling_elements_Rolling_elements"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_rolling_elements_Rolling_elements.port_rolling_inner_contact_Inner_ring_support_contact"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_inboard_seal_Inboard_seal_structure"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_inboard_seal_Inboard_seal_structure.port_ring_sliding_contact_Seal_sliding_contact_with_the_opposite_ring"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_outboard_seal_Outboard_seal_structure"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_outboard_seal_Outboard_seal_structure.port_ring_sliding_contact_Seal_sliding_contact_with_the_complementary_r"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_surface_seal_Spherical_surface_seal"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_surface_seal_Spherical_surface_seal.port_ring_contact_Contact_with_outer_ring"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_mechanical_contact_Mechanical_contact_relationships"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_ROT"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_ROT"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_ROT"
+    },
+    {
+      "path": "/requirements/1",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_SEAL"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_SEAL"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_SEAL"
+    },
+    {
+      "path": "/requirements/2",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_SEAL_ZONE"
+    },
+    {
+      "path": "/requirements/2/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_SEAL_ZONE"
+    },
+    {
+      "path": "/requirements/2/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_SEAL_ZONE"
+    },
+    {
+      "path": "/requirements/3",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_ALT6"
+    },
+    {
+      "path": "/requirements/3/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_ALT6"
+    },
+    {
+      "path": "/requirements/3/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_ALT6"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_support_rotation_Support_inner_ring_rotation"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_exclude_contaminants_Exclude_contaminants_from_rolling_zone"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_retain_seal_lubricant_Retain_seal_zone_lubricant"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_rolling_elements_inner_ring"
+    },
+    {
+      "path": "/subsystems/3/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_rolling_elements_outer_ring"
+    },
+    {
+      "path": "/subsystems/6/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_surface_seal_housing"
+    },
+    {
+      "path": "/subsystems/6/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_surface_seal_outer_ring"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

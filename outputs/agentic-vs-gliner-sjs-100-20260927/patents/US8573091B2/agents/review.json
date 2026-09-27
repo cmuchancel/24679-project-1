@@ -1,0 +1,34 @@
+{
+  "revision": 3,
+  "candidate_sha256": "8a339f94617559b914ae9c92bbb3e721d2f74aaec457e2326677c653f3f1acf4",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 3 subsystem elements, shaft construction/mounts, driver and worm transmission, and relative-unit rotation/bearing/collars are supported by cited claim and embodiment passages. Behavioral adjustment and compliant resistance are supported by the description/abstract passages."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The model captures the core first/second units, elastic member and two shaft mounts, driver-mediated adjustment, compliant deformation/resistance, and bearing support. Optional embodiment detail is reasonably scoped."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "The prior orphan F_DEFORM is removed. F_ADJUST, F_RELROT, and F_SHAFT2_MOUNT distinguish driver adjustment rotation, relative unit rotation, and second-shaft mount interaction, and each is referenced by an interface."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Adjustment and compliance behavior are traced to claim/description evidence; the model introduces no unsupported requirements or control laws."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "The reciprocal duplicate bearing declaration is gone; UNIT1-to-bearing inner collar and bearing-to-UNIT2 outer collar are each represented once, with existing rotary-compatible ports. The shaft mount and driver interfaces are also explicitly connected."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The model distinguishes mechanical/spatial interactions from the passage as a material conduit and omits unspecified external entities, inputs, and feedback, consistent with guidance on interaction classification."
+    }
+  },
+  "findings": [],
+  "summary": "Revision 3 resolves the identified revision-2 issues: it has a single declaration for each bearing-to-unit interface, separates second-shaft mounting interaction from relative-unit rotation with a distinct flow ID, and removes unconnected F_DEFORM. Interfaces connect existing compatible rotary ports. Patent grounding and functional representation are adequate; no unresolved or newly introduced issues found.",
+  "saved_at": "2026-09-27T09:30:58.518683+00:00"
+}

@@ -1,0 +1,1305 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": false,
+  "native_element_counts": {
+    "ActionDefinition": 6,
+    "ActionUsage": 12,
+    "AttributeUsage": 10,
+    "Documentation": 92,
+    "FeatureMembership": 499,
+    "FeatureTyping": 104,
+    "FeatureValue": 410,
+    "ItemDefinition": 1,
+    "ItemUsage": 1,
+    "LiteralInteger": 60,
+    "LiteralString": 410,
+    "MetadataDefinition": 1,
+    "MetadataUsage": 82,
+    "MultiplicityRange": 60,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 319,
+    "Package": 1,
+    "PartDefinition": 10,
+    "PartUsage": 71,
+    "PortUsage": 1,
+    "Redefinition": 410,
+    "ReferenceUsage": 410
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_001_sleeve"
+    },
+    {
+      "path": "/subsystems/0/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_sleeve.part_P_007_ball_head"
+    },
+    {
+      "path": "/subsystems/0/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_sleeve.part_P_008_ball_head_seat"
+    },
+    {
+      "path": "/subsystems/0/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_sleeve.part_P_009_driving_lever"
+    },
+    {
+      "path": "/subsystems/0/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_sleeve.part_P_015_driving_member_2"
+    },
+    {
+      "path": "/subsystems/0/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_sleeve.part_P_017_second_abutting_surfaces"
+    },
+    {
+      "path": "/subsystems/0/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_sleeve.part_P_022_first_inclined_surfaces"
+    },
+    {
+      "path": "/subsystems/0/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_sleeve.part_P_029_resilient_mechanism_24"
+    },
+    {
+      "path": "/subsystems/0/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_sleeve.part_P_039_corner_portion"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SS_001_sleeve.port_PT_001_axis"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_002_driving_member"
+    },
+    {
+      "path": "/subsystems/1/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_002_driving_member.part_P_006_polygonal_ball_head"
+    },
+    {
+      "path": "/subsystems/1/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_002_driving_member.part_P_014_arcuate_portions"
+    },
+    {
+      "path": "/subsystems/1/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_002_driving_member.part_P_016_inclined_surfaces"
+    },
+    {
+      "path": "/subsystems/1/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_002_driving_member.part_P_018_polygonal_ball_head_21"
+    },
+    {
+      "path": "/subsystems/1/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_002_driving_member.part_P_003_restricting_member"
+    },
+    {
+      "path": "/subsystems/1/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_002_driving_member.part_P_019_restricting_member_3"
+    },
+    {
+      "path": "/subsystems/1/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_002_driving_member.part_P_023_working_portion"
+    },
+    {
+      "path": "/subsystems/1/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_002_driving_member.part_P_024_radial_flange"
+    },
+    {
+      "path": "/subsystems/1/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_002_driving_member.part_P_025_second_concaves"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_003_restricting_member"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_004_assembling_portion"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint"
+    },
+    {
+      "path": "/subsystems/4/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_001_sleeve"
+    },
+    {
+      "path": "/subsystems/4/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_002_driving_member"
+    },
+    {
+      "path": "/subsystems/4/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_003_restricting_member_03f110bf"
+    },
+    {
+      "path": "/subsystems/4/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_004_receiving_groove"
+    },
+    {
+      "path": "/subsystems/4/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_005_assembling_portion"
+    },
+    {
+      "path": "/subsystems/4/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_006_polygonal_ball_head_ca2df9b6"
+    },
+    {
+      "path": "/subsystems/4/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_018_polygonal_ball_head_21_bde2a7e6"
+    },
+    {
+      "path": "/subsystems/4/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_030_engaging_member"
+    },
+    {
+      "path": "/subsystems/4/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_031_engaging_member_241"
+    },
+    {
+      "path": "/subsystems/4/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_032_spring"
+    },
+    {
+      "path": "/subsystems/4/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_034_spring_242"
+    },
+    {
+      "path": "/subsystems/4/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_035_elastic_member"
+    },
+    {
+      "path": "/subsystems/4/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_036_elastic_member_4"
+    },
+    {
+      "path": "/subsystems/4/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_037_axis"
+    },
+    {
+      "path": "/subsystems/4/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_038_inner_wall"
+    },
+    {
+      "path": "/subsystems/4/parts/15",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_010_first_projections"
+    },
+    {
+      "path": "/subsystems/4/parts/16",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_011_second_projections"
+    },
+    {
+      "path": "/subsystems/4/parts/17",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_012_annular_recession"
+    },
+    {
+      "path": "/subsystems/4/parts/18",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_023_working_portion_fcf4ec35"
+    },
+    {
+      "path": "/subsystems/4/parts/19",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_024_radial_flange_a68cd840"
+    },
+    {
+      "path": "/subsystems/4/parts/20",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_025_second_concaves_1c7ab0d2"
+    },
+    {
+      "path": "/subsystems/4/parts/21",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_026_resilient_mechanism"
+    },
+    {
+      "path": "/subsystems/4/parts/22",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_027_recessed_portion"
+    },
+    {
+      "path": "/subsystems/4/parts/23",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_028_through_hole"
+    },
+    {
+      "path": "/subsystems/4/parts/24",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_033_receiving_hole"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_006_driving_member_2"
+    },
+    {
+      "path": "/subsystems/5/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_driving_member_2.part_P_016_inclined_surfaces_ae9a2745"
+    },
+    {
+      "path": "/subsystems/5/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_driving_member_2.part_P_006_polygonal_ball_head_db625620"
+    },
+    {
+      "path": "/subsystems/5/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_driving_member_2.part_P_018_polygonal_ball_head_21_2f5e9f8f"
+    },
+    {
+      "path": "/subsystems/5/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_driving_member_2.part_P_014_arcuate_portions_b7fd7056"
+    },
+    {
+      "path": "/subsystems/5/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_driving_member_2.part_P_003_restricting_member_d7e570ca"
+    },
+    {
+      "path": "/subsystems/5/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_driving_member_2.part_P_019_restricting_member_3_3bf7b473"
+    },
+    {
+      "path": "/subsystems/5/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_driving_member_2.part_P_023_working_portion_34535f5e"
+    },
+    {
+      "path": "/subsystems/5/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_driving_member_2.part_P_024_radial_flange_1e5cd37f"
+    },
+    {
+      "path": "/subsystems/5/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_driving_member_2.part_P_025_second_concaves_9624071f"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_007_restricting_member_3"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_008_C_shaped_retainer"
+    },
+    {
+      "path": "/subsystems/7/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_008_C_shaped_retainer.part_P_003_restricting_member_7b44aaca"
+    },
+    {
+      "path": "/subsystems/7/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_008_C_shaped_retainer.part_P_020_blocking_plate"
+    },
+    {
+      "path": "/subsystems/7/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_008_C_shaped_retainer.part_P_021_first_abutting_surfaces"
+    },
+    {
+      "path": "/subsystems/7/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_008_C_shaped_retainer.part_P_002_driving_member_1d29fcba"
+    },
+    {
+      "path": "/subsystems/7/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_008_C_shaped_retainer.part_P_001_sleeve_eb8c2084"
+    },
+    {
+      "path": "/subsystems/7/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_008_C_shaped_retainer.part_P_004_receiving_groove_16ac0ba5"
+    },
+    {
+      "path": "/subsystems/7/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_008_C_shaped_retainer.part_P_013_arcuate_chamfer"
+    },
+    {
+      "path": "/subsystems/7/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_008_C_shaped_retainer.part_P_010_first_projections_b2a2945f"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_009_receiving_groove"
+    },
+    {
+      "path": "/subsystems/8/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_009_receiving_groove.part_P_025_second_concaves_adb09426"
+    },
+    {
+      "path": "/subsystems/9",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_010_elastic_member"
+    },
+    {
+      "path": "/values/0",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_001_swingable_angle"
+    },
+    {
+      "path": "/values/1",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_002_angle"
+    },
+    {
+      "path": "/values/2",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_003_ratio"
+    },
+    {
+      "path": "/values/3",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_004_0_75"
+    },
+    {
+      "path": "/values/4",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_005_0_9"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_001_slidable"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_002_non_swingable"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_003_swingable"
+    },
+    {
+      "path": "/behaviour/actions/3",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_004_blocks"
+    },
+    {
+      "path": "/behaviour/actions/4",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_005_engaging_balls"
+    },
+    {
+      "path": "/behaviour/actions/5",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_006_blocking_plate"
+    },
+    {
+      "path": "/relationships/0",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[0]"
+    },
+    {
+      "path": "/relationships/0",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_001_sleeve"
+    },
+    {
+      "path": "/relationships/1",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[1]"
+    },
+    {
+      "path": "/relationships/1",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_002_driving_member"
+    },
+    {
+      "path": "/relationships/2",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[2]"
+    },
+    {
+      "path": "/relationships/2",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_003_restricting_member_03f110bf"
+    },
+    {
+      "path": "/relationships/3",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[3]"
+    },
+    {
+      "path": "/relationships/3",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_004_receiving_groove"
+    },
+    {
+      "path": "/relationships/4",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[4]"
+    },
+    {
+      "path": "/relationships/4",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_005_assembling_portion"
+    },
+    {
+      "path": "/relationships/5",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[5]"
+    },
+    {
+      "path": "/relationships/5",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_002_driving_member.part_P_006_polygonal_ball_head"
+    },
+    {
+      "path": "/relationships/6",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[6]"
+    },
+    {
+      "path": "/relationships/6",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_002_driving_member.part_P_014_arcuate_portions"
+    },
+    {
+      "path": "/relationships/7",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[7]"
+    },
+    {
+      "path": "/relationships/7",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_002_driving_member.part_P_016_inclined_surfaces"
+    },
+    {
+      "path": "/relationships/8",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[8]"
+    },
+    {
+      "path": "/relationships/8",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_002_driving_member.part_P_018_polygonal_ball_head_21"
+    },
+    {
+      "path": "/relationships/9",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[9]"
+    },
+    {
+      "path": "/relationships/9",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_002_driving_member.part_P_003_restricting_member"
+    },
+    {
+      "path": "/relationships/10",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[10]"
+    },
+    {
+      "path": "/relationships/10",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_002_driving_member.part_P_019_restricting_member_3"
+    },
+    {
+      "path": "/relationships/11",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[11]"
+    },
+    {
+      "path": "/relationships/11",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_driving_member_2.part_P_016_inclined_surfaces_ae9a2745"
+    },
+    {
+      "path": "/relationships/12",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[12]"
+    },
+    {
+      "path": "/relationships/12",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_driving_member_2.part_P_006_polygonal_ball_head_db625620"
+    },
+    {
+      "path": "/relationships/13",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[13]"
+    },
+    {
+      "path": "/relationships/13",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_driving_member_2.part_P_018_polygonal_ball_head_21_2f5e9f8f"
+    },
+    {
+      "path": "/relationships/14",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[14]"
+    },
+    {
+      "path": "/relationships/14",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_driving_member_2.part_P_014_arcuate_portions_b7fd7056"
+    },
+    {
+      "path": "/relationships/15",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[15]"
+    },
+    {
+      "path": "/relationships/15",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_driving_member_2.part_P_003_restricting_member_d7e570ca"
+    },
+    {
+      "path": "/relationships/16",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[16]"
+    },
+    {
+      "path": "/relationships/16",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_driving_member_2.part_P_019_restricting_member_3_3bf7b473"
+    },
+    {
+      "path": "/relationships/17",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[17]"
+    },
+    {
+      "path": "/relationships/17",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_008_C_shaped_retainer.part_P_003_restricting_member_7b44aaca"
+    },
+    {
+      "path": "/relationships/18",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[18]"
+    },
+    {
+      "path": "/relationships/18",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_008_C_shaped_retainer.part_P_020_blocking_plate"
+    },
+    {
+      "path": "/relationships/19",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[19]"
+    },
+    {
+      "path": "/relationships/19",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_008_C_shaped_retainer.part_P_021_first_abutting_surfaces"
+    },
+    {
+      "path": "/relationships/20",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[20]"
+    },
+    {
+      "path": "/relationships/20",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_008_C_shaped_retainer.part_P_002_driving_member_1d29fcba"
+    },
+    {
+      "path": "/relationships/21",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[21]"
+    },
+    {
+      "path": "/relationships/21",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_008_C_shaped_retainer.part_P_001_sleeve_eb8c2084"
+    },
+    {
+      "path": "/relationships/22",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[22]"
+    },
+    {
+      "path": "/relationships/22",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_008_C_shaped_retainer.part_P_004_receiving_groove_16ac0ba5"
+    },
+    {
+      "path": "/relationships/23",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[23]"
+    },
+    {
+      "path": "/relationships/23",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_008_C_shaped_retainer.part_P_013_arcuate_chamfer"
+    },
+    {
+      "path": "/relationships/24",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[24]"
+    },
+    {
+      "path": "/relationships/24",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_008_C_shaped_retainer.part_P_010_first_projections_b2a2945f"
+    },
+    {
+      "path": "/relationships/25",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[25]"
+    },
+    {
+      "path": "/relationships/25",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_002_driving_member.part_P_023_working_portion"
+    },
+    {
+      "path": "/relationships/26",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[26]"
+    },
+    {
+      "path": "/relationships/26",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_002_driving_member.part_P_024_radial_flange"
+    },
+    {
+      "path": "/relationships/27",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[27]"
+    },
+    {
+      "path": "/relationships/27",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_002_driving_member.part_P_025_second_concaves"
+    },
+    {
+      "path": "/relationships/28",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[28]"
+    },
+    {
+      "path": "/relationships/28",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_driving_member_2.part_P_023_working_portion_34535f5e"
+    },
+    {
+      "path": "/relationships/29",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[29]"
+    },
+    {
+      "path": "/relationships/29",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_driving_member_2.part_P_024_radial_flange_1e5cd37f"
+    },
+    {
+      "path": "/relationships/30",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[30]"
+    },
+    {
+      "path": "/relationships/30",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_driving_member_2.part_P_025_second_concaves_9624071f"
+    },
+    {
+      "path": "/relationships/31",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[31]"
+    },
+    {
+      "path": "/relationships/31",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_009_receiving_groove.part_P_025_second_concaves_adb09426"
+    },
+    {
+      "path": "/relationships/32",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[32]"
+    },
+    {
+      "path": "/relationships/32",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_006_polygonal_ball_head_ca2df9b6"
+    },
+    {
+      "path": "/relationships/33",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[33]"
+    },
+    {
+      "path": "/relationships/33",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_018_polygonal_ball_head_21_bde2a7e6"
+    },
+    {
+      "path": "/relationships/34",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[34]"
+    },
+    {
+      "path": "/relationships/34",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_030_engaging_member"
+    },
+    {
+      "path": "/relationships/35",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[35]"
+    },
+    {
+      "path": "/relationships/35",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_031_engaging_member_241"
+    },
+    {
+      "path": "/relationships/36",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[36]"
+    },
+    {
+      "path": "/relationships/36",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_032_spring"
+    },
+    {
+      "path": "/relationships/37",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[37]"
+    },
+    {
+      "path": "/relationships/37",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_034_spring_242"
+    },
+    {
+      "path": "/relationships/38",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[38]"
+    },
+    {
+      "path": "/relationships/38",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_035_elastic_member"
+    },
+    {
+      "path": "/relationships/39",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[39]"
+    },
+    {
+      "path": "/relationships/39",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_036_elastic_member_4"
+    },
+    {
+      "path": "/relationships/40",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[40]"
+    },
+    {
+      "path": "/relationships/40",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_037_axis"
+    },
+    {
+      "path": "/relationships/41",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[41]"
+    },
+    {
+      "path": "/relationships/41",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_038_inner_wall"
+    },
+    {
+      "path": "/relationships/42",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[42]"
+    },
+    {
+      "path": "/relationships/42",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_010_first_projections"
+    },
+    {
+      "path": "/relationships/43",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[43]"
+    },
+    {
+      "path": "/relationships/43",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_011_second_projections"
+    },
+    {
+      "path": "/relationships/44",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[44]"
+    },
+    {
+      "path": "/relationships/44",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_012_annular_recession"
+    },
+    {
+      "path": "/relationships/45",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[45]"
+    },
+    {
+      "path": "/relationships/45",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_023_working_portion_fcf4ec35"
+    },
+    {
+      "path": "/relationships/46",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[46]"
+    },
+    {
+      "path": "/relationships/46",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_024_radial_flange_a68cd840"
+    },
+    {
+      "path": "/relationships/47",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[47]"
+    },
+    {
+      "path": "/relationships/47",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_025_second_concaves_1c7ab0d2"
+    },
+    {
+      "path": "/relationships/48",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[48]"
+    },
+    {
+      "path": "/relationships/48",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_026_resilient_mechanism"
+    },
+    {
+      "path": "/relationships/49",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[49]"
+    },
+    {
+      "path": "/relationships/49",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_027_recessed_portion"
+    },
+    {
+      "path": "/relationships/50",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[50]"
+    },
+    {
+      "path": "/relationships/50",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_028_through_hole"
+    },
+    {
+      "path": "/relationships/51",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[51]"
+    },
+    {
+      "path": "/relationships/51",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_two_stage_universal_joint.part_P_033_receiving_hole"
+    },
+    {
+      "path": "/relationships/52",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[52]"
+    },
+    {
+      "path": "/relationships/53",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[53]"
+    },
+    {
+      "path": "/relationships/54",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[54]"
+    },
+    {
+      "path": "/relationships/55",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[55]"
+    },
+    {
+      "path": "/relationships/56",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[56]"
+    },
+    {
+      "path": "/relationships/57",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[57]"
+    },
+    {
+      "path": "/relationships/58",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[58]"
+    },
+    {
+      "path": "/relationships/59",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[59]"
+    },
+    {
+      "path": "/relationships/60",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[60]"
+    },
+    {
+      "path": "/relationships/61",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[61]"
+    },
+    {
+      "path": "/relationships/62",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[62]"
+    },
+    {
+      "path": "/relationships/63",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[63]"
+    },
+    {
+      "path": "/relationships/64",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[64]"
+    },
+    {
+      "path": "/relationships/65",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[65]"
+    },
+    {
+      "path": "/relationships/66",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[66]"
+    },
+    {
+      "path": "/relationships/67",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[67]"
+    },
+    {
+      "path": "/relationships/68",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[68]"
+    },
+    {
+      "path": "/relationships/69",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[69]"
+    },
+    {
+      "path": "/relationships/70",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[70]"
+    },
+    {
+      "path": "/relationships/71",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[71]"
+    },
+    {
+      "path": "/relationships/72",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[72]"
+    },
+    {
+      "path": "/relationships/73",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[73]"
+    },
+    {
+      "path": "/relationships/74",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[74]"
+    },
+    {
+      "path": "/relationships/75",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[75]"
+    },
+    {
+      "path": "/relationships/76",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[76]"
+    },
+    {
+      "path": "/relationships/77",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[77]"
+    },
+    {
+      "path": "/relationships/78",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[78]"
+    },
+    {
+      "path": "/relationships/79",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[79]"
+    },
+    {
+      "path": "/relationships/80",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[80]"
+    },
+    {
+      "path": "/relationships/81",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[81]"
+    }
+  ],
+  "unresolved": [
+    {
+      "path": "/values/0",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/1",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/2",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/3",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/4",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/52",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/53",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/54",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/55",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/56",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/57",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/58",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/59",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/60",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/61",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/62",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/63",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/64",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/65",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/66",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/67",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/68",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/69",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/70",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/71",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/72",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/73",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/74",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/75",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/76",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/77",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/78",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/79",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/80",
+      "reason": "Relationship type 'port_mate' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/81",
+      "reason": "Relationship type 'port_mate' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    }
+  ],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

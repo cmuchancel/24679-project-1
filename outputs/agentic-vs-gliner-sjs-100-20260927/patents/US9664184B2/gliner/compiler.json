@@ -1,0 +1,3296 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": false,
+  "native_element_counts": {
+    "ActionDefinition": 28,
+    "ActionUsage": 56,
+    "AttributeUsage": 14,
+    "Documentation": 253,
+    "FeatureMembership": 1292,
+    "FeatureTyping": 292,
+    "FeatureValue": 1050,
+    "ItemDefinition": 5,
+    "ItemUsage": 1,
+    "LiteralInteger": 131,
+    "LiteralString": 1050,
+    "MetadataDefinition": 1,
+    "MetadataUsage": 210,
+    "MultiplicityRange": 131,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 818,
+    "Package": 1,
+    "PartDefinition": 48,
+    "PartUsage": 180,
+    "PortUsage": 1,
+    "Redefinition": 1050,
+    "ReferenceUsage": 1050,
+    "Subclassification": 4
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_001_cylinder_drum"
+    },
+    {
+      "path": "/subsystems/0/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_cylinder_drum.part_P_020_pistons"
+    },
+    {
+      "path": "/subsystems/0/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_cylinder_drum.part_P_002_Pistons"
+    },
+    {
+      "path": "/subsystems/0/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_cylinder_drum.part_P_005_pivot_joint"
+    },
+    {
+      "path": "/subsystems/0/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_cylinder_drum.part_P_011_driven_connection"
+    },
+    {
+      "path": "/subsystems/0/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_cylinder_drum.part_P_012_joint"
+    },
+    {
+      "path": "/subsystems/0/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_cylinder_drum.part_P_013_spring_assembly"
+    },
+    {
+      "path": "/subsystems/0/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_cylinder_drum.part_P_024_drive_shaft"
+    },
+    {
+      "path": "/subsystems/0/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_cylinder_drum.part_P_025_sliding_shoes"
+    },
+    {
+      "path": "/subsystems/0/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_cylinder_drum.part_P_026_swash_plate_bearing"
+    },
+    {
+      "path": "/subsystems/0/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_cylinder_drum.part_P_034_hydraulic_fluid"
+    },
+    {
+      "path": "/subsystems/0/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_cylinder_drum.part_P_037_first_adjustment_cylinder"
+    },
+    {
+      "path": "/subsystems/0/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_cylinder_drum.part_P_040_first_piston_surface"
+    },
+    {
+      "path": "/subsystems/0/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_cylinder_drum.part_P_041_lubrication_hole"
+    },
+    {
+      "path": "/subsystems/0/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_cylinder_drum.part_P_042_lubrication_channel"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SS_001_cylinder_drum.port_PT_001_swash_plate"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_002_pump_housing"
+    },
+    {
+      "path": "/subsystems/1/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_002_pump_housing.part_P_001_cylinder_drum"
+    },
+    {
+      "path": "/subsystems/1/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_002_pump_housing.part_P_035_pump_pistons"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_003_swash_plate"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_004_adjusting_device"
+    },
+    {
+      "path": "/subsystems/3/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_004_adjusting_device.part_P_008_adjustment_piston"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_005_hydraulically_actuated_adjusting_cylinder"
+    },
+    {
+      "path": "/subsystems/4/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_hydraulically_actuated_adjusting_cylinder.part_P_003_adjusting_piston"
+    },
+    {
+      "path": "/subsystems/4/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_hydraulically_actuated_adjusting_cylinder.part_P_004_piston"
+    },
+    {
+      "path": "/subsystems/4/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_hydraulically_actuated_adjusting_cylinder.part_P_007_piston_rod"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_006_adjusting_cylinder"
+    },
+    {
+      "path": "/subsystems/5/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_adjusting_cylinder.part_P_003_adjusting_piston_ae9a2745"
+    },
+    {
+      "path": "/subsystems/5/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_adjusting_cylinder.part_P_004_piston_db625620"
+    },
+    {
+      "path": "/subsystems/5/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_adjusting_cylinder.part_P_006_ball_joint"
+    },
+    {
+      "path": "/subsystems/5/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_adjusting_cylinder.part_P_007_piston_rod_b7fd7056"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder"
+    },
+    {
+      "path": "/subsystems/6/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_010_swash_plate"
+    },
+    {
+      "path": "/subsystems/6/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_008_adjustment_piston_7197fc99"
+    },
+    {
+      "path": "/subsystems/6/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_007_piston_rod_61df95c4"
+    },
+    {
+      "path": "/subsystems/6/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_018_second_ball_joint"
+    },
+    {
+      "path": "/subsystems/6/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_006_ball_joint_fd8ac0ef"
+    },
+    {
+      "path": "/subsystems/6/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_019_cylinder_axis"
+    },
+    {
+      "path": "/subsystems/6/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_017_pivot_lever"
+    },
+    {
+      "path": "/subsystems/6/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_020_pistons_bcfa5038"
+    },
+    {
+      "path": "/subsystems/6/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_004_piston_518b405d"
+    },
+    {
+      "path": "/subsystems/6/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_022_adjustment_device"
+    },
+    {
+      "path": "/subsystems/6/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_009_adjustment_cylinder"
+    },
+    {
+      "path": "/subsystems/6/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_001_cylinder_drum_a908757b"
+    },
+    {
+      "path": "/subsystems/6/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_033_piston_35"
+    },
+    {
+      "path": "/subsystems/6/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_032_piston_49"
+    },
+    {
+      "path": "/subsystems/6/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_014_ball_head"
+    },
+    {
+      "path": "/subsystems/6/parts/15",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_015_ball_socket"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_008_driven_connection"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_009_joint"
+    },
+    {
+      "path": "/subsystems/9",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_010_Axial_piston_pumps"
+    },
+    {
+      "path": "/subsystems/10",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_011_hydraulic_motors"
+    },
+    {
+      "path": "/subsystems/11",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_012_swash_plates"
+    },
+    {
+      "path": "/subsystems/12",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_013_axial_piston_pumps"
+    },
+    {
+      "path": "/subsystems/13",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_014_stationary_swash_plates"
+    },
+    {
+      "path": "/subsystems/14",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_015_Pumps"
+    },
+    {
+      "path": "/subsystems/15",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_016_Pumps_having_stationary_swash_plates"
+    },
+    {
+      "path": "/subsystems/16",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_017_axial_piston_pump"
+    },
+    {
+      "path": "/subsystems/16/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_axial_piston_pump.part_P_004_piston_8ab293f7"
+    },
+    {
+      "path": "/subsystems/16/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_axial_piston_pump.part_P_007_piston_rod_f8d64b14"
+    },
+    {
+      "path": "/subsystems/16/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_axial_piston_pump.part_P_014_ball_head_2ade33ee"
+    },
+    {
+      "path": "/subsystems/16/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_axial_piston_pump.part_P_015_ball_socket_c2fcaad4"
+    },
+    {
+      "path": "/subsystems/16/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_axial_piston_pump.part_P_022_adjustment_device_5a073c2d"
+    },
+    {
+      "path": "/subsystems/16/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_axial_piston_pump.part_P_009_adjustment_cylinder_758e24ef"
+    },
+    {
+      "path": "/subsystems/16/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_axial_piston_pump.part_P_023_pump_housing"
+    },
+    {
+      "path": "/subsystems/16/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_axial_piston_pump.part_P_001_cylinder_drum_398049a1"
+    },
+    {
+      "path": "/subsystems/16/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_axial_piston_pump.part_P_020_pistons_92be841a"
+    },
+    {
+      "path": "/subsystems/16/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_axial_piston_pump.part_P_036_second_adjustment_piston"
+    },
+    {
+      "path": "/subsystems/16/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_axial_piston_pump.part_P_038_continuous_lubrication_hole"
+    },
+    {
+      "path": "/subsystems/17",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_018_adjustment_device"
+    },
+    {
+      "path": "/subsystems/17/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_adjustment_device.part_P_008_adjustment_piston_a9946de7"
+    },
+    {
+      "path": "/subsystems/17/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_adjustment_device.part_P_014_ball_head_a9cfab35"
+    },
+    {
+      "path": "/subsystems/17/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_adjustment_device.part_P_004_piston_1ed33166"
+    },
+    {
+      "path": "/subsystems/17/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_adjustment_device.part_P_016_second_adjustment_cylinder"
+    },
+    {
+      "path": "/subsystems/17/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_adjustment_device.part_P_036_second_adjustment_piston_a92bb957"
+    },
+    {
+      "path": "/subsystems/17/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_adjustment_device.part_P_035_pump_pistons_fedb085f"
+    },
+    {
+      "path": "/subsystems/17/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_adjustment_device.part_P_010_swash_plate_2028aed8"
+    },
+    {
+      "path": "/subsystems/17/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_adjustment_device.part_P_017_pivot_lever_36fecf34"
+    },
+    {
+      "path": "/subsystems/17/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_adjustment_device.part_P_018_second_ball_joint_8624f040"
+    },
+    {
+      "path": "/subsystems/17/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_adjustment_device.part_P_015_ball_socket_f98492cc"
+    },
+    {
+      "path": "/subsystems/17/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_adjustment_device.part_P_021_compression_spring"
+    },
+    {
+      "path": "/subsystems/17/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_adjustment_device.part_P_039_second_piston_rod"
+    },
+    {
+      "path": "/subsystems/18",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_019_ball_joint"
+    },
+    {
+      "path": "/subsystems/19",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_020_second_ball_joint"
+    },
+    {
+      "path": "/subsystems/20",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_021_second_ball_joint__By_the_second_ball_joint"
+    },
+    {
+      "path": "/subsystems/21",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_022_spring_assembly"
+    },
+    {
+      "path": "/subsystems/21/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_spring_assembly.part_P_014_ball_head_2a684247"
+    },
+    {
+      "path": "/subsystems/21/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_spring_assembly.part_P_015_ball_socket_19a1b9a9"
+    },
+    {
+      "path": "/subsystems/21/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_spring_assembly.part_P_021_compression_spring_6a594e18"
+    },
+    {
+      "path": "/subsystems/21/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_spring_assembly.part_P_007_piston_rod_43d3ffc1"
+    },
+    {
+      "path": "/subsystems/21/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_spring_assembly.part_P_008_adjustment_piston_f9f156b4"
+    },
+    {
+      "path": "/subsystems/21/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_spring_assembly.part_P_017_pivot_lever_3cbbeb18"
+    },
+    {
+      "path": "/subsystems/22",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_023_assembly"
+    },
+    {
+      "path": "/subsystems/23",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_024_single_action_adjustment_cylinder"
+    },
+    {
+      "path": "/subsystems/24",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_025_cylinder"
+    },
+    {
+      "path": "/subsystems/25",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder"
+    },
+    {
+      "path": "/subsystems/25/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_004_piston_770071d2"
+    },
+    {
+      "path": "/subsystems/25/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_022_adjustment_device_7f0a9db5"
+    },
+    {
+      "path": "/subsystems/25/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_028_spring_seat"
+    },
+    {
+      "path": "/subsystems/25/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_027_cylinder_liner"
+    },
+    {
+      "path": "/subsystems/25/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_029_ball_heads"
+    },
+    {
+      "path": "/subsystems/25/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_030_ball_sockets"
+    },
+    {
+      "path": "/subsystems/25/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_031_pressure_chamber"
+    },
+    {
+      "path": "/subsystems/25/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_017_pivot_lever_3ede0e4e"
+    },
+    {
+      "path": "/subsystems/25/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_021_compression_spring_998473d9"
+    },
+    {
+      "path": "/subsystems/25/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_032_piston_49_18988ed5"
+    },
+    {
+      "path": "/subsystems/25/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_033_piston_35_45dd41d8"
+    },
+    {
+      "path": "/subsystems/25/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_007_piston_rod_b7ea84dc"
+    },
+    {
+      "path": "/subsystems/25/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_014_ball_head_1f3d31dc"
+    },
+    {
+      "path": "/subsystems/26",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder"
+    },
+    {
+      "path": "/subsystems/26/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_004_piston_bb407521"
+    },
+    {
+      "path": "/subsystems/26/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_022_adjustment_device_7e6bdd0f"
+    },
+    {
+      "path": "/subsystems/26/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_009_adjustment_cylinder_b9e8b407"
+    },
+    {
+      "path": "/subsystems/26/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_027_cylinder_liner_a7eb681a"
+    },
+    {
+      "path": "/subsystems/26/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_028_spring_seat_040c423b"
+    },
+    {
+      "path": "/subsystems/26/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_029_ball_heads_36c6ac62"
+    },
+    {
+      "path": "/subsystems/26/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_030_ball_sockets_b81b0fce"
+    },
+    {
+      "path": "/subsystems/26/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_031_pressure_chamber_702ef798"
+    },
+    {
+      "path": "/subsystems/26/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_021_compression_spring_391a3db6"
+    },
+    {
+      "path": "/subsystems/26/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_032_piston_49_53ae9218"
+    },
+    {
+      "path": "/subsystems/26/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_033_piston_35_12de40fe"
+    },
+    {
+      "path": "/subsystems/26/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_007_piston_rod_cd122dcf"
+    },
+    {
+      "path": "/subsystems/26/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_014_ball_head_2bc9a267"
+    },
+    {
+      "path": "/subsystems/26/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_006_ball_joint_c11a204f"
+    },
+    {
+      "path": "/subsystems/26/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_015_ball_socket_00c5db1b"
+    },
+    {
+      "path": "/subsystems/27",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_028_adjustment_piston"
+    },
+    {
+      "path": "/subsystems/27/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_028_adjustment_piston.part_P_015_ball_socket_f6ccd605"
+    },
+    {
+      "path": "/subsystems/27/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_028_adjustment_piston.part_P_014_ball_head_f564eaf0"
+    },
+    {
+      "path": "/subsystems/28",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_029_piston_rod"
+    },
+    {
+      "path": "/subsystems/29",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_030_pivot_lever"
+    },
+    {
+      "path": "/subsystems/29/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_pivot_lever.part_P_004_piston_66e5b84e"
+    },
+    {
+      "path": "/subsystems/29/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_pivot_lever.part_P_033_piston_35_031ffadd"
+    },
+    {
+      "path": "/subsystems/29/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_pivot_lever.part_P_032_piston_49_7913a9f9"
+    },
+    {
+      "path": "/subsystems/29/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_pivot_lever.part_P_007_piston_rod_e1d0b7d7"
+    },
+    {
+      "path": "/subsystems/29/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_pivot_lever.part_P_014_ball_head_0df1262a"
+    },
+    {
+      "path": "/subsystems/30",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_031_compression_spring"
+    },
+    {
+      "path": "/subsystems/31",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_032_pistons"
+    },
+    {
+      "path": "/subsystems/32",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_033_pump_house"
+    },
+    {
+      "path": "/subsystems/33",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_034_swash_plate_15"
+    },
+    {
+      "path": "/subsystems/34",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_035_adjustment_device_21"
+    },
+    {
+      "path": "/subsystems/35",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_036_first_adjustment_cylinder_31"
+    },
+    {
+      "path": "/subsystems/35/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_first_adjustment_cylinder_31.part_P_028_spring_seat_6426918d"
+    },
+    {
+      "path": "/subsystems/35/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_first_adjustment_cylinder_31.part_P_031_pressure_chamber_f6a4e022"
+    },
+    {
+      "path": "/subsystems/35/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_first_adjustment_cylinder_31.part_P_021_compression_spring_45dc01ca"
+    },
+    {
+      "path": "/subsystems/35/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_first_adjustment_cylinder_31.part_P_004_piston_6a9d162c"
+    },
+    {
+      "path": "/subsystems/35/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_first_adjustment_cylinder_31.part_P_032_piston_49_b30b57d5"
+    },
+    {
+      "path": "/subsystems/35/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_first_adjustment_cylinder_31.part_P_033_piston_35_31688915"
+    },
+    {
+      "path": "/subsystems/35/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_first_adjustment_cylinder_31.part_P_007_piston_rod_f94dfab4"
+    },
+    {
+      "path": "/subsystems/35/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_first_adjustment_cylinder_31.part_P_014_ball_head_756643d0"
+    },
+    {
+      "path": "/subsystems/36",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_037_second_adjustment_cylinder_45"
+    },
+    {
+      "path": "/subsystems/36/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_037_second_adjustment_cylinder_45.part_P_028_spring_seat_18e9fe4f"
+    },
+    {
+      "path": "/subsystems/36/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_037_second_adjustment_cylinder_45.part_P_027_cylinder_liner_3fce408b"
+    },
+    {
+      "path": "/subsystems/36/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_037_second_adjustment_cylinder_45.part_P_029_ball_heads_87a11540"
+    },
+    {
+      "path": "/subsystems/36/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_037_second_adjustment_cylinder_45.part_P_030_ball_sockets_06139d56"
+    },
+    {
+      "path": "/subsystems/36/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_037_second_adjustment_cylinder_45.part_P_004_piston_382e0201"
+    },
+    {
+      "path": "/subsystems/36/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_037_second_adjustment_cylinder_45.part_P_031_pressure_chamber_2ce8b238"
+    },
+    {
+      "path": "/subsystems/36/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_037_second_adjustment_cylinder_45.part_P_021_compression_spring_b52e2e57"
+    },
+    {
+      "path": "/subsystems/36/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_037_second_adjustment_cylinder_45.part_P_032_piston_49_94d7c7d7"
+    },
+    {
+      "path": "/subsystems/37",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_038_second_adjustment_cylinder_35"
+    },
+    {
+      "path": "/subsystems/37/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_second_adjustment_cylinder_35.part_P_031_pressure_chamber_8858e1d9"
+    },
+    {
+      "path": "/subsystems/37/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_second_adjustment_cylinder_35.part_P_021_compression_spring_74152426"
+    },
+    {
+      "path": "/subsystems/37/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_second_adjustment_cylinder_35.part_P_004_piston_594eae68"
+    },
+    {
+      "path": "/subsystems/37/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_second_adjustment_cylinder_35.part_P_032_piston_49_9b055c1a"
+    },
+    {
+      "path": "/subsystems/38",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_039_pump_pistons"
+    },
+    {
+      "path": "/subsystems/39",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_040_second_adjustment_piston"
+    },
+    {
+      "path": "/subsystems/40",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_041_driven_component"
+    },
+    {
+      "path": "/subsystems/40/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_041_driven_component.part_P_016_second_adjustment_cylinder_32d28d0f"
+    },
+    {
+      "path": "/subsystems/40/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_041_driven_component.part_P_036_second_adjustment_piston_d6257b7b"
+    },
+    {
+      "path": "/subsystems/40/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_041_driven_component.part_P_017_pivot_lever_3b72bc02"
+    },
+    {
+      "path": "/subsystems/41",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_042_actuating_element"
+    },
+    {
+      "path": "/subsystems/42",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_043_adjustment_cylinders"
+    },
+    {
+      "path": "/subsystems/43",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_044_component"
+    },
+    {
+      "path": "/subsystems/44",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_045_second_joint"
+    },
+    {
+      "path": "/subsystems/45",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_046_first_ball_joint"
+    },
+    {
+      "path": "/subsystems/46",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_047_first_and_third_ball_joints"
+    },
+    {
+      "path": "/subsystems/46/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_047_first_and_third_ball_joints.part_P_015_ball_socket_fca6a596"
+    },
+    {
+      "path": "/subsystems/46/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_047_first_and_third_ball_joints.part_P_014_ball_head_d7babafe"
+    },
+    {
+      "path": "/subsystems/47",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_048_ball_joints"
+    },
+    {
+      "path": "/subsystems/47/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_048_ball_joints.part_P_015_ball_socket_dd957ebd"
+    },
+    {
+      "path": "/subsystems/47/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_048_ball_joints.part_P_014_ball_head_14c5b500"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_FL_001_fluid"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_FL_002_lubrication_channel"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_FL_003_pressure_fluid"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_FL_004_hydraulic_fluid"
+    },
+    {
+      "path": "/values/0",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_001_angles"
+    },
+    {
+      "path": "/values/1",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_002_drive_rotational_rate"
+    },
+    {
+      "path": "/values/2",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_003_swash_plate_inclination"
+    },
+    {
+      "path": "/values/3",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_004_maximum_pump_delivery_rate"
+    },
+    {
+      "path": "/values/4",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_005_control_pressure"
+    },
+    {
+      "path": "/values/5",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_006_adjustment_force"
+    },
+    {
+      "path": "/values/6",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_007_piston_surface"
+    },
+    {
+      "path": "/values/7",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_008_zero_pump_capacity"
+    },
+    {
+      "path": "/values/8",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_009_active_piston_surface"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_001_pivoted"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_002_adjusting"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_003_actuated_hydraulically"
+    },
+    {
+      "path": "/behaviour/actions/3",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_004_supplying_pressure"
+    },
+    {
+      "path": "/behaviour/actions/4",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_005_fixed_displacement_pump"
+    },
+    {
+      "path": "/behaviour/actions/5",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_006_adjustment"
+    },
+    {
+      "path": "/behaviour/actions/6",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_007_pre_loads"
+    },
+    {
+      "path": "/behaviour/actions/7",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_008_double_function"
+    },
+    {
+      "path": "/behaviour/actions/8",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_009_adjustment_movements"
+    },
+    {
+      "path": "/behaviour/actions/9",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_010_adjustment_movement"
+    },
+    {
+      "path": "/behaviour/actions/10",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_011_movement"
+    },
+    {
+      "path": "/behaviour/actions/11",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_012_retraction"
+    },
+    {
+      "path": "/behaviour/actions/12",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_013_pivoting"
+    },
+    {
+      "path": "/behaviour/actions/13",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_014_actuation"
+    },
+    {
+      "path": "/behaviour/actions/14",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_015_rotate"
+    },
+    {
+      "path": "/behaviour/actions/15",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_016_pivot"
+    },
+    {
+      "path": "/behaviour/actions/16",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_017_stroke"
+    },
+    {
+      "path": "/behaviour/actions/17",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_018_actuating_part"
+    },
+    {
+      "path": "/behaviour/actions/18",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_019_pressurization"
+    },
+    {
+      "path": "/behaviour/actions/19",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_020_functions"
+    },
+    {
+      "path": "/behaviour/actions/20",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_021_functions_without_wear"
+    },
+    {
+      "path": "/behaviour/actions/21",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_022_without_wear"
+    },
+    {
+      "path": "/behaviour/actions/22",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_023_axially_displaceable"
+    },
+    {
+      "path": "/behaviour/actions/23",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_024_pivotable"
+    },
+    {
+      "path": "/behaviour/actions/24",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_025_adjusting_lengths_of_strokes"
+    },
+    {
+      "path": "/behaviour/actions/25",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_026_movable"
+    },
+    {
+      "path": "/behaviour/actions/26",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_027_biases"
+    },
+    {
+      "path": "/behaviour/actions/27",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_028_pre_loading"
+    },
+    {
+      "path": "/relationships/0",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[0]"
+    },
+    {
+      "path": "/relationships/0",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_002_pump_housing.part_P_001_cylinder_drum"
+    },
+    {
+      "path": "/relationships/1",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[1]"
+    },
+    {
+      "path": "/relationships/1",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_hydraulically_actuated_adjusting_cylinder.part_P_003_adjusting_piston"
+    },
+    {
+      "path": "/relationships/2",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[2]"
+    },
+    {
+      "path": "/relationships/2",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_hydraulically_actuated_adjusting_cylinder.part_P_004_piston"
+    },
+    {
+      "path": "/relationships/3",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[3]"
+    },
+    {
+      "path": "/relationships/3",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_hydraulically_actuated_adjusting_cylinder.part_P_007_piston_rod"
+    },
+    {
+      "path": "/relationships/4",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[4]"
+    },
+    {
+      "path": "/relationships/4",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_adjusting_cylinder.part_P_003_adjusting_piston_ae9a2745"
+    },
+    {
+      "path": "/relationships/5",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[5]"
+    },
+    {
+      "path": "/relationships/5",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_adjusting_cylinder.part_P_004_piston_db625620"
+    },
+    {
+      "path": "/relationships/6",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[6]"
+    },
+    {
+      "path": "/relationships/6",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_adjusting_cylinder.part_P_006_ball_joint"
+    },
+    {
+      "path": "/relationships/7",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[7]"
+    },
+    {
+      "path": "/relationships/7",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_adjusting_cylinder.part_P_007_piston_rod_b7fd7056"
+    },
+    {
+      "path": "/relationships/8",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[8]"
+    },
+    {
+      "path": "/relationships/8",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_004_adjusting_device.part_P_008_adjustment_piston"
+    },
+    {
+      "path": "/relationships/9",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[9]"
+    },
+    {
+      "path": "/relationships/9",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_adjustment_device.part_P_008_adjustment_piston_a9946de7"
+    },
+    {
+      "path": "/relationships/10",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[10]"
+    },
+    {
+      "path": "/relationships/10",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_axial_piston_pump.part_P_004_piston_8ab293f7"
+    },
+    {
+      "path": "/relationships/11",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[11]"
+    },
+    {
+      "path": "/relationships/11",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_axial_piston_pump.part_P_007_piston_rod_f8d64b14"
+    },
+    {
+      "path": "/relationships/12",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[12]"
+    },
+    {
+      "path": "/relationships/12",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_axial_piston_pump.part_P_014_ball_head_2ade33ee"
+    },
+    {
+      "path": "/relationships/13",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[13]"
+    },
+    {
+      "path": "/relationships/13",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_axial_piston_pump.part_P_015_ball_socket_c2fcaad4"
+    },
+    {
+      "path": "/relationships/14",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[14]"
+    },
+    {
+      "path": "/relationships/14",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_spring_assembly.part_P_014_ball_head_2a684247"
+    },
+    {
+      "path": "/relationships/15",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[15]"
+    },
+    {
+      "path": "/relationships/15",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_spring_assembly.part_P_015_ball_socket_19a1b9a9"
+    },
+    {
+      "path": "/relationships/16",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[16]"
+    },
+    {
+      "path": "/relationships/16",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_010_swash_plate"
+    },
+    {
+      "path": "/relationships/17",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[17]"
+    },
+    {
+      "path": "/relationships/17",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_008_adjustment_piston_7197fc99"
+    },
+    {
+      "path": "/relationships/18",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[18]"
+    },
+    {
+      "path": "/relationships/18",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_007_piston_rod_61df95c4"
+    },
+    {
+      "path": "/relationships/19",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[19]"
+    },
+    {
+      "path": "/relationships/19",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_018_second_ball_joint"
+    },
+    {
+      "path": "/relationships/20",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[20]"
+    },
+    {
+      "path": "/relationships/20",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_006_ball_joint_fd8ac0ef"
+    },
+    {
+      "path": "/relationships/21",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[21]"
+    },
+    {
+      "path": "/relationships/21",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_019_cylinder_axis"
+    },
+    {
+      "path": "/relationships/22",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[22]"
+    },
+    {
+      "path": "/relationships/22",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_017_pivot_lever"
+    },
+    {
+      "path": "/relationships/23",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[23]"
+    },
+    {
+      "path": "/relationships/23",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_020_pistons_bcfa5038"
+    },
+    {
+      "path": "/relationships/24",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[24]"
+    },
+    {
+      "path": "/relationships/24",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_spring_assembly.part_P_021_compression_spring_6a594e18"
+    },
+    {
+      "path": "/relationships/25",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[25]"
+    },
+    {
+      "path": "/relationships/25",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_spring_assembly.part_P_007_piston_rod_43d3ffc1"
+    },
+    {
+      "path": "/relationships/26",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[26]"
+    },
+    {
+      "path": "/relationships/26",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_spring_assembly.part_P_008_adjustment_piston_f9f156b4"
+    },
+    {
+      "path": "/relationships/27",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[27]"
+    },
+    {
+      "path": "/relationships/27",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_spring_assembly.part_P_017_pivot_lever_3cbbeb18"
+    },
+    {
+      "path": "/relationships/28",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[28]"
+    },
+    {
+      "path": "/relationships/28",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_004_piston_bb407521"
+    },
+    {
+      "path": "/relationships/29",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[29]"
+    },
+    {
+      "path": "/relationships/29",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_022_adjustment_device_7e6bdd0f"
+    },
+    {
+      "path": "/relationships/30",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[30]"
+    },
+    {
+      "path": "/relationships/30",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_009_adjustment_cylinder_b9e8b407"
+    },
+    {
+      "path": "/relationships/31",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[31]"
+    },
+    {
+      "path": "/relationships/31",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_004_piston_518b405d"
+    },
+    {
+      "path": "/relationships/32",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[32]"
+    },
+    {
+      "path": "/relationships/32",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_022_adjustment_device"
+    },
+    {
+      "path": "/relationships/33",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[33]"
+    },
+    {
+      "path": "/relationships/33",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_009_adjustment_cylinder"
+    },
+    {
+      "path": "/relationships/34",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[34]"
+    },
+    {
+      "path": "/relationships/34",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_001_cylinder_drum_a908757b"
+    },
+    {
+      "path": "/relationships/35",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[35]"
+    },
+    {
+      "path": "/relationships/35",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_004_piston_770071d2"
+    },
+    {
+      "path": "/relationships/36",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[36]"
+    },
+    {
+      "path": "/relationships/36",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_022_adjustment_device_7f0a9db5"
+    },
+    {
+      "path": "/relationships/37",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[37]"
+    },
+    {
+      "path": "/relationships/37",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_axial_piston_pump.part_P_022_adjustment_device_5a073c2d"
+    },
+    {
+      "path": "/relationships/38",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[38]"
+    },
+    {
+      "path": "/relationships/38",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_axial_piston_pump.part_P_009_adjustment_cylinder_758e24ef"
+    },
+    {
+      "path": "/relationships/39",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[39]"
+    },
+    {
+      "path": "/relationships/39",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_axial_piston_pump.part_P_023_pump_housing"
+    },
+    {
+      "path": "/relationships/40",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[40]"
+    },
+    {
+      "path": "/relationships/40",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_axial_piston_pump.part_P_001_cylinder_drum_398049a1"
+    },
+    {
+      "path": "/relationships/41",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[41]"
+    },
+    {
+      "path": "/relationships/41",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_axial_piston_pump.part_P_020_pistons_92be841a"
+    },
+    {
+      "path": "/relationships/42",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[42]"
+    },
+    {
+      "path": "/relationships/42",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_cylinder_drum.part_P_020_pistons"
+    },
+    {
+      "path": "/relationships/43",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[43]"
+    },
+    {
+      "path": "/relationships/43",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_adjustment_device.part_P_014_ball_head_a9cfab35"
+    },
+    {
+      "path": "/relationships/44",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[44]"
+    },
+    {
+      "path": "/relationships/44",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_028_spring_seat"
+    },
+    {
+      "path": "/relationships/45",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[45]"
+    },
+    {
+      "path": "/relationships/45",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_037_second_adjustment_cylinder_45.part_P_028_spring_seat_18e9fe4f"
+    },
+    {
+      "path": "/relationships/46",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[46]"
+    },
+    {
+      "path": "/relationships/46",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_027_cylinder_liner"
+    },
+    {
+      "path": "/relationships/47",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[47]"
+    },
+    {
+      "path": "/relationships/47",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_029_ball_heads"
+    },
+    {
+      "path": "/relationships/48",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[48]"
+    },
+    {
+      "path": "/relationships/48",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_030_ball_sockets"
+    },
+    {
+      "path": "/relationships/49",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[49]"
+    },
+    {
+      "path": "/relationships/49",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_031_pressure_chamber"
+    },
+    {
+      "path": "/relationships/50",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[50]"
+    },
+    {
+      "path": "/relationships/50",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_017_pivot_lever_3ede0e4e"
+    },
+    {
+      "path": "/relationships/51",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[51]"
+    },
+    {
+      "path": "/relationships/51",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_037_second_adjustment_cylinder_45.part_P_027_cylinder_liner_3fce408b"
+    },
+    {
+      "path": "/relationships/52",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[52]"
+    },
+    {
+      "path": "/relationships/52",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_037_second_adjustment_cylinder_45.part_P_029_ball_heads_87a11540"
+    },
+    {
+      "path": "/relationships/53",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[53]"
+    },
+    {
+      "path": "/relationships/53",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_037_second_adjustment_cylinder_45.part_P_030_ball_sockets_06139d56"
+    },
+    {
+      "path": "/relationships/54",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[54]"
+    },
+    {
+      "path": "/relationships/54",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_037_second_adjustment_cylinder_45.part_P_004_piston_382e0201"
+    },
+    {
+      "path": "/relationships/55",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[55]"
+    },
+    {
+      "path": "/relationships/55",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_027_cylinder_liner_a7eb681a"
+    },
+    {
+      "path": "/relationships/56",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[56]"
+    },
+    {
+      "path": "/relationships/56",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_028_spring_seat_040c423b"
+    },
+    {
+      "path": "/relationships/57",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[57]"
+    },
+    {
+      "path": "/relationships/57",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_029_ball_heads_36c6ac62"
+    },
+    {
+      "path": "/relationships/58",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[58]"
+    },
+    {
+      "path": "/relationships/58",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_030_ball_sockets_b81b0fce"
+    },
+    {
+      "path": "/relationships/59",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[59]"
+    },
+    {
+      "path": "/relationships/59",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_031_pressure_chamber_702ef798"
+    },
+    {
+      "path": "/relationships/60",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[60]"
+    },
+    {
+      "path": "/relationships/60",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_021_compression_spring_391a3db6"
+    },
+    {
+      "path": "/relationships/61",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[61]"
+    },
+    {
+      "path": "/relationships/61",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_032_piston_49_53ae9218"
+    },
+    {
+      "path": "/relationships/62",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[62]"
+    },
+    {
+      "path": "/relationships/62",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_first_adjustment_cylinder_31.part_P_028_spring_seat_6426918d"
+    },
+    {
+      "path": "/relationships/63",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[63]"
+    },
+    {
+      "path": "/relationships/63",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_first_adjustment_cylinder_31.part_P_031_pressure_chamber_f6a4e022"
+    },
+    {
+      "path": "/relationships/64",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[64]"
+    },
+    {
+      "path": "/relationships/64",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_first_adjustment_cylinder_31.part_P_021_compression_spring_45dc01ca"
+    },
+    {
+      "path": "/relationships/65",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[65]"
+    },
+    {
+      "path": "/relationships/65",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_first_adjustment_cylinder_31.part_P_004_piston_6a9d162c"
+    },
+    {
+      "path": "/relationships/66",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[66]"
+    },
+    {
+      "path": "/relationships/66",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_first_adjustment_cylinder_31.part_P_032_piston_49_b30b57d5"
+    },
+    {
+      "path": "/relationships/67",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[67]"
+    },
+    {
+      "path": "/relationships/67",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_021_compression_spring_998473d9"
+    },
+    {
+      "path": "/relationships/68",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[68]"
+    },
+    {
+      "path": "/relationships/68",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_032_piston_49_18988ed5"
+    },
+    {
+      "path": "/relationships/69",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[69]"
+    },
+    {
+      "path": "/relationships/69",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_037_second_adjustment_cylinder_45.part_P_031_pressure_chamber_2ce8b238"
+    },
+    {
+      "path": "/relationships/70",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[70]"
+    },
+    {
+      "path": "/relationships/70",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_037_second_adjustment_cylinder_45.part_P_021_compression_spring_b52e2e57"
+    },
+    {
+      "path": "/relationships/71",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[71]"
+    },
+    {
+      "path": "/relationships/71",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_037_second_adjustment_cylinder_45.part_P_032_piston_49_94d7c7d7"
+    },
+    {
+      "path": "/relationships/72",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[72]"
+    },
+    {
+      "path": "/relationships/72",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_second_adjustment_cylinder_35.part_P_031_pressure_chamber_8858e1d9"
+    },
+    {
+      "path": "/relationships/73",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[73]"
+    },
+    {
+      "path": "/relationships/73",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_second_adjustment_cylinder_35.part_P_021_compression_spring_74152426"
+    },
+    {
+      "path": "/relationships/74",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[74]"
+    },
+    {
+      "path": "/relationships/74",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_second_adjustment_cylinder_35.part_P_004_piston_594eae68"
+    },
+    {
+      "path": "/relationships/75",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[75]"
+    },
+    {
+      "path": "/relationships/75",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_second_adjustment_cylinder_35.part_P_032_piston_49_9b055c1a"
+    },
+    {
+      "path": "/relationships/76",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[76]"
+    },
+    {
+      "path": "/relationships/76",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_033_piston_35_12de40fe"
+    },
+    {
+      "path": "/relationships/77",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[77]"
+    },
+    {
+      "path": "/relationships/77",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_007_piston_rod_cd122dcf"
+    },
+    {
+      "path": "/relationships/78",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[78]"
+    },
+    {
+      "path": "/relationships/78",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_014_ball_head_2bc9a267"
+    },
+    {
+      "path": "/relationships/79",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[79]"
+    },
+    {
+      "path": "/relationships/79",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_006_ball_joint_c11a204f"
+    },
+    {
+      "path": "/relationships/80",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[80]"
+    },
+    {
+      "path": "/relationships/80",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_first_adjustment_cylinder_31.part_P_033_piston_35_31688915"
+    },
+    {
+      "path": "/relationships/81",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[81]"
+    },
+    {
+      "path": "/relationships/81",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_first_adjustment_cylinder_31.part_P_007_piston_rod_f94dfab4"
+    },
+    {
+      "path": "/relationships/82",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[82]"
+    },
+    {
+      "path": "/relationships/82",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_first_adjustment_cylinder_31.part_P_014_ball_head_756643d0"
+    },
+    {
+      "path": "/relationships/83",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[83]"
+    },
+    {
+      "path": "/relationships/83",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_033_piston_35"
+    },
+    {
+      "path": "/relationships/84",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[84]"
+    },
+    {
+      "path": "/relationships/84",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_032_piston_49"
+    },
+    {
+      "path": "/relationships/85",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[85]"
+    },
+    {
+      "path": "/relationships/85",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_014_ball_head"
+    },
+    {
+      "path": "/relationships/86",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[86]"
+    },
+    {
+      "path": "/relationships/86",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_033_piston_35_45dd41d8"
+    },
+    {
+      "path": "/relationships/87",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[87]"
+    },
+    {
+      "path": "/relationships/87",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_007_piston_rod_b7ea84dc"
+    },
+    {
+      "path": "/relationships/88",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[88]"
+    },
+    {
+      "path": "/relationships/88",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_second_adjustment_cylinder.part_P_014_ball_head_1f3d31dc"
+    },
+    {
+      "path": "/relationships/89",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[89]"
+    },
+    {
+      "path": "/relationships/89",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_pivot_lever.part_P_004_piston_66e5b84e"
+    },
+    {
+      "path": "/relationships/90",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[90]"
+    },
+    {
+      "path": "/relationships/90",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_pivot_lever.part_P_033_piston_35_031ffadd"
+    },
+    {
+      "path": "/relationships/91",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[91]"
+    },
+    {
+      "path": "/relationships/91",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_pivot_lever.part_P_032_piston_49_7913a9f9"
+    },
+    {
+      "path": "/relationships/92",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[92]"
+    },
+    {
+      "path": "/relationships/92",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_pivot_lever.part_P_007_piston_rod_e1d0b7d7"
+    },
+    {
+      "path": "/relationships/93",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[93]"
+    },
+    {
+      "path": "/relationships/93",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_pivot_lever.part_P_014_ball_head_0df1262a"
+    },
+    {
+      "path": "/relationships/94",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[94]"
+    },
+    {
+      "path": "/relationships/94",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_adjustment_device.part_P_004_piston_1ed33166"
+    },
+    {
+      "path": "/relationships/95",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[95]"
+    },
+    {
+      "path": "/relationships/95",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_002_pump_housing.part_P_035_pump_pistons"
+    },
+    {
+      "path": "/relationships/96",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[96]"
+    },
+    {
+      "path": "/relationships/96",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_adjustment_device.part_P_016_second_adjustment_cylinder"
+    },
+    {
+      "path": "/relationships/97",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[97]"
+    },
+    {
+      "path": "/relationships/97",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_adjustment_device.part_P_036_second_adjustment_piston_a92bb957"
+    },
+    {
+      "path": "/relationships/98",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[98]"
+    },
+    {
+      "path": "/relationships/98",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_adjustment_device.part_P_035_pump_pistons_fedb085f"
+    },
+    {
+      "path": "/relationships/99",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[99]"
+    },
+    {
+      "path": "/relationships/99",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_adjustment_device.part_P_010_swash_plate_2028aed8"
+    },
+    {
+      "path": "/relationships/100",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[100]"
+    },
+    {
+      "path": "/relationships/100",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_adjustment_device.part_P_017_pivot_lever_36fecf34"
+    },
+    {
+      "path": "/relationships/101",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[101]"
+    },
+    {
+      "path": "/relationships/101",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_041_driven_component.part_P_016_second_adjustment_cylinder_32d28d0f"
+    },
+    {
+      "path": "/relationships/102",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[102]"
+    },
+    {
+      "path": "/relationships/102",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_041_driven_component.part_P_036_second_adjustment_piston_d6257b7b"
+    },
+    {
+      "path": "/relationships/103",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[103]"
+    },
+    {
+      "path": "/relationships/103",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_041_driven_component.part_P_017_pivot_lever_3b72bc02"
+    },
+    {
+      "path": "/relationships/104",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[104]"
+    },
+    {
+      "path": "/relationships/104",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_adjustment_device.part_P_018_second_ball_joint_8624f040"
+    },
+    {
+      "path": "/relationships/105",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[105]"
+    },
+    {
+      "path": "/relationships/105",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_adjustment_device.part_P_015_ball_socket_f98492cc"
+    },
+    {
+      "path": "/relationships/106",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[106]"
+    },
+    {
+      "path": "/relationships/106",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_adjustment_device.part_P_021_compression_spring"
+    },
+    {
+      "path": "/relationships/107",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[107]"
+    },
+    {
+      "path": "/relationships/107",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_adjustment_device.part_P_039_second_piston_rod"
+    },
+    {
+      "path": "/relationships/108",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[108]"
+    },
+    {
+      "path": "/relationships/108",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_first_adjustment_cylinder.part_P_015_ball_socket_00c5db1b"
+    },
+    {
+      "path": "/relationships/109",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[109]"
+    },
+    {
+      "path": "/relationships/109",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_adjustment_cylinder.part_P_015_ball_socket"
+    },
+    {
+      "path": "/relationships/110",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[110]"
+    },
+    {
+      "path": "/relationships/110",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_047_first_and_third_ball_joints.part_P_015_ball_socket_fca6a596"
+    },
+    {
+      "path": "/relationships/111",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[111]"
+    },
+    {
+      "path": "/relationships/111",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_047_first_and_third_ball_joints.part_P_014_ball_head_d7babafe"
+    },
+    {
+      "path": "/relationships/112",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[112]"
+    },
+    {
+      "path": "/relationships/112",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_048_ball_joints.part_P_015_ball_socket_dd957ebd"
+    },
+    {
+      "path": "/relationships/113",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[113]"
+    },
+    {
+      "path": "/relationships/113",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_048_ball_joints.part_P_014_ball_head_14c5b500"
+    },
+    {
+      "path": "/relationships/114",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[114]"
+    },
+    {
+      "path": "/relationships/114",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_028_adjustment_piston.part_P_015_ball_socket_f6ccd605"
+    },
+    {
+      "path": "/relationships/115",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[115]"
+    },
+    {
+      "path": "/relationships/115",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_028_adjustment_piston.part_P_014_ball_head_f564eaf0"
+    },
+    {
+      "path": "/relationships/116",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[116]"
+    },
+    {
+      "path": "/relationships/116",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_axial_piston_pump.part_P_036_second_adjustment_piston"
+    },
+    {
+      "path": "/relationships/117",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[117]"
+    },
+    {
+      "path": "/relationships/117",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_axial_piston_pump.part_P_038_continuous_lubrication_hole"
+    },
+    {
+      "path": "/relationships/118",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[118]"
+    },
+    {
+      "path": "/relationships/119",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[119]"
+    },
+    {
+      "path": "/relationships/120",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[120]"
+    },
+    {
+      "path": "/relationships/121",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[121]"
+    },
+    {
+      "path": "/relationships/122",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[122]"
+    },
+    {
+      "path": "/relationships/123",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[123]"
+    },
+    {
+      "path": "/relationships/124",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[124]"
+    },
+    {
+      "path": "/relationships/125",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[125]"
+    },
+    {
+      "path": "/relationships/126",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[126]"
+    },
+    {
+      "path": "/relationships/127",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[127]"
+    },
+    {
+      "path": "/relationships/128",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[128]"
+    },
+    {
+      "path": "/relationships/129",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[129]"
+    },
+    {
+      "path": "/relationships/130",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[130]"
+    },
+    {
+      "path": "/relationships/131",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[131]"
+    },
+    {
+      "path": "/relationships/132",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[132]"
+    },
+    {
+      "path": "/relationships/133",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[133]"
+    },
+    {
+      "path": "/relationships/134",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[134]"
+    },
+    {
+      "path": "/relationships/135",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[135]"
+    },
+    {
+      "path": "/relationships/136",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[136]"
+    },
+    {
+      "path": "/relationships/137",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[137]"
+    },
+    {
+      "path": "/relationships/138",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[138]"
+    },
+    {
+      "path": "/relationships/139",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[139]"
+    },
+    {
+      "path": "/relationships/140",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[140]"
+    },
+    {
+      "path": "/relationships/141",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[141]"
+    },
+    {
+      "path": "/relationships/142",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[142]"
+    },
+    {
+      "path": "/relationships/143",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[143]"
+    },
+    {
+      "path": "/relationships/144",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[144]"
+    },
+    {
+      "path": "/relationships/145",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[145]"
+    },
+    {
+      "path": "/relationships/146",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[146]"
+    },
+    {
+      "path": "/relationships/147",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[147]"
+    },
+    {
+      "path": "/relationships/148",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[148]"
+    },
+    {
+      "path": "/relationships/149",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[149]"
+    },
+    {
+      "path": "/relationships/150",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[150]"
+    },
+    {
+      "path": "/relationships/151",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[151]"
+    },
+    {
+      "path": "/relationships/152",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[152]"
+    },
+    {
+      "path": "/relationships/153",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[153]"
+    },
+    {
+      "path": "/relationships/154",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[154]"
+    },
+    {
+      "path": "/relationships/155",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[155]"
+    },
+    {
+      "path": "/relationships/156",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[156]"
+    },
+    {
+      "path": "/relationships/157",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[157]"
+    },
+    {
+      "path": "/relationships/158",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[158]"
+    },
+    {
+      "path": "/relationships/159",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[159]"
+    },
+    {
+      "path": "/relationships/160",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[160]"
+    },
+    {
+      "path": "/relationships/161",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[161]"
+    },
+    {
+      "path": "/relationships/162",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[162]"
+    },
+    {
+      "path": "/relationships/163",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[163]"
+    },
+    {
+      "path": "/relationships/164",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[164]"
+    },
+    {
+      "path": "/relationships/165",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[165]"
+    },
+    {
+      "path": "/relationships/166",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[166]"
+    },
+    {
+      "path": "/relationships/167",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[167]"
+    },
+    {
+      "path": "/relationships/168",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[168]"
+    },
+    {
+      "path": "/relationships/169",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[169]"
+    },
+    {
+      "path": "/relationships/170",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[170]"
+    },
+    {
+      "path": "/relationships/171",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[171]"
+    },
+    {
+      "path": "/relationships/172",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[172]"
+    },
+    {
+      "path": "/relationships/173",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[173]"
+    },
+    {
+      "path": "/relationships/174",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[174]"
+    },
+    {
+      "path": "/relationships/175",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[175]"
+    },
+    {
+      "path": "/relationships/176",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[176]"
+    },
+    {
+      "path": "/relationships/177",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[177]"
+    },
+    {
+      "path": "/relationships/178",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[178]"
+    },
+    {
+      "path": "/relationships/179",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[179]"
+    },
+    {
+      "path": "/relationships/180",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[180]"
+    },
+    {
+      "path": "/relationships/181",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[181]"
+    },
+    {
+      "path": "/relationships/182",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[182]"
+    },
+    {
+      "path": "/relationships/183",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[183]"
+    },
+    {
+      "path": "/relationships/184",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[184]"
+    },
+    {
+      "path": "/relationships/185",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[185]"
+    },
+    {
+      "path": "/relationships/186",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[186]"
+    },
+    {
+      "path": "/relationships/187",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[187]"
+    },
+    {
+      "path": "/relationships/188",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[188]"
+    },
+    {
+      "path": "/relationships/189",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[189]"
+    },
+    {
+      "path": "/relationships/190",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[190]"
+    },
+    {
+      "path": "/relationships/191",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[191]"
+    },
+    {
+      "path": "/relationships/192",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[192]"
+    },
+    {
+      "path": "/relationships/193",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[193]"
+    },
+    {
+      "path": "/relationships/194",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[194]"
+    },
+    {
+      "path": "/relationships/195",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[195]"
+    },
+    {
+      "path": "/relationships/196",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[196]"
+    },
+    {
+      "path": "/relationships/197",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[197]"
+    },
+    {
+      "path": "/relationships/198",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[198]"
+    },
+    {
+      "path": "/relationships/199",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[199]"
+    },
+    {
+      "path": "/relationships/200",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[200]"
+    },
+    {
+      "path": "/relationships/201",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[201]"
+    },
+    {
+      "path": "/relationships/202",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[202]"
+    },
+    {
+      "path": "/relationships/203",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[203]"
+    },
+    {
+      "path": "/relationships/204",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[204]"
+    },
+    {
+      "path": "/relationships/205",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[205]"
+    },
+    {
+      "path": "/relationships/206",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[206]"
+    },
+    {
+      "path": "/relationships/207",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[207]"
+    },
+    {
+      "path": "/relationships/208",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[208]"
+    },
+    {
+      "path": "/relationships/209",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[209]"
+    }
+  ],
+  "unresolved": [
+    {
+      "path": "/values/0",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/1",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/2",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/3",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/4",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/5",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/6",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/7",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/8",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/118",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/119",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/120",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/121",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/122",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/123",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/124",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/125",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/126",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/127",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/128",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/129",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/130",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/131",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/132",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/133",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/134",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/135",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/136",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/137",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/138",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/139",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/140",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/141",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/142",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/143",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/144",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/145",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/146",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/147",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/148",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/149",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/150",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/151",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/152",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/153",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/154",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/155",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/156",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/157",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/158",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/159",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/160",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/161",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/162",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/163",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/164",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/165",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/166",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/167",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/168",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/169",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/170",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/171",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/172",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/173",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/174",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/175",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/176",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/177",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/178",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/179",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/180",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/181",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/182",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/183",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/184",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/185",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/186",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/187",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/188",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/189",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/190",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/191",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/192",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/193",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/194",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/195",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/196",
+      "reason": "Relationship type 'flow_ref' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/197",
+      "reason": "Relationship type 'source' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/198",
+      "reason": "Relationship type 'target' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/199",
+      "reason": "Relationship type 'source' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/200",
+      "reason": "Relationship type 'source' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/201",
+      "reason": "Relationship type 'target' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/202",
+      "reason": "Relationship type 'target' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/203",
+      "reason": "Relationship type 'target' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/204",
+      "reason": "Relationship type 'target' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/205",
+      "reason": "Relationship type 'target' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/206",
+      "reason": "Relationship type 'target' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/207",
+      "reason": "Relationship type 'target' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/208",
+      "reason": "Relationship type 'preconditions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/209",
+      "reason": "Relationship type 'preconditions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    }
+  ],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

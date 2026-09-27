@@ -1,0 +1,187 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 4,
+    "AllocationUsage": 1,
+    "ConnectionUsage": 3,
+    "Documentation": 36,
+    "EndFeatureMembership": 14,
+    "Feature": 22,
+    "FeatureChaining": 40,
+    "FeatureMembership": 43,
+    "FeatureTyping": 19,
+    "FlowEnd": 6,
+    "FlowUsage": 3,
+    "ItemDefinition": 6,
+    "ItemUsage": 13,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 57,
+    "Package": 1,
+    "PartDefinition": 5,
+    "PartUsage": 6,
+    "PortUsage": 13,
+    "Redefinition": 6,
+    "ReferenceSubsetting": 14,
+    "ReferenceUsage": 6,
+    "Subclassification": 4,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CHASSIS_Chassis_and_tracks"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CHASSIS_Chassis_and_tracks.port_CHASSIS_GUIDE_Track_and_edge_guide"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CHASSIS_Chassis_and_tracks.port_CHASSIS_SHAFT_SUPPORT_Shaft_bearing_support"
+    },
+    {
+      "path": "/subsystems/0/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CHASSIS_Chassis_and_tracks.port_CHASSIS_SCISSOR_STOP_Scissor_extension_stop"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DRIVE_Motor_and_jack_screw_drive"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DRIVE_Motor_and_jack_screw_drive.port_DRIVE_ROTARY_OUT_Rotary_shaft_drive"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DRIVE_Motor_and_jack_screw_drive.port_DRIVE_LINEAR_OUT_Threaded_trolley_translation"
+    },
+    {
+      "path": "/subsystems/1/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DRIVE_Motor_and_jack_screw_drive.port_DRIVE_SHAFT_SUPPORT_Threaded_shaft_bearing_support"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_TROLLEY_Guided_trolley"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_TROLLEY_Guided_trolley.port_TROLLEY_DRIVE_IN_Threaded_drive_input"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_TROLLEY_Guided_trolley.port_TROLLEY_GUIDE_Roller_and_C_bracket_guidance"
+    },
+    {
+      "path": "/subsystems/2/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_TROLLEY_Guided_trolley.port_TROLLEY_SCISSOR_OUT_Scissor_articulation_input"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SCISSOR_Scissor_arm_matrix"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SCISSOR_Scissor_arm_matrix.port_SCISSOR_TROLLEY_IN_Trolley_articulation_input"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SCISSOR_Scissor_arm_matrix.port_SCISSOR_PLATFORM_OUT_Platform_lift_motion"
+    },
+    {
+      "path": "/subsystems/3/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SCISSOR_Scissor_arm_matrix.port_SCISSOR_STOP_Extension_stop_contact"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PLATFORM_Load_platform"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PLATFORM_Load_platform.port_PLATFORM_LIFT_IN_Lift_motion_input"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_ROTARY_DRIVE_Rotary_drive_motion"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_TROLLEY_TRAVEL_Trolley_travel"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_LIFT_MOTION_Platform_vertical_motion"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_SHAFT_BEARING_SUPPORT_Shaft_bearing_support_interaction"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACTUATE_LIFT_Translate_trolley_and_actuate_lift"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_CHASSIS_TROLLEY_GUIDE"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_CHASSIS_SCISSOR_STOP"
+    },
+    {
+      "path": "/subsystems/0/interfaces/2",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_CHASSIS_DRIVE_SHAFT_SUPPORT"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_DRIVE_TROLLEY"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_TROLLEY_SCISSOR"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_SCISSOR_PLATFORM"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

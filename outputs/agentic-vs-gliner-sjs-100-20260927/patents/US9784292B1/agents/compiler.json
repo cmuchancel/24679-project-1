@@ -1,0 +1,153 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 3,
+    "AllocationUsage": 1,
+    "ConnectionUsage": 5,
+    "Documentation": 28,
+    "EndFeatureMembership": 12,
+    "Feature": 24,
+    "FeatureChaining": 34,
+    "FeatureMembership": 30,
+    "FeatureTyping": 17,
+    "ItemDefinition": 2,
+    "ItemUsage": 10,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 45,
+    "Package": 1,
+    "PartDefinition": 6,
+    "PartUsage": 7,
+    "PortUsage": 10,
+    "ReferenceSubsetting": 12,
+    "Subclassification": 1,
+    "SuccessionAsUsage": 1
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CYL_HOUSING_Cylinder_housing"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PISTON_ROD_BLOCK_Piston_rod_and_piston_block"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PISTON_ROD_BLOCK_Piston_rod_and_piston_block.port_BLOCK_PIN_MOUNT_Piston_block_pin_receptacle"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PIN_Pin"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PIN_Pin.port_PIN_BLOCK_THREAD_Pin_first_threaded_engagement"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PIN_Pin.port_PIN_SLEEVE_THREAD_Pin_second_threaded_engagement"
+    },
+    {
+      "path": "/subsystems/2/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PIN_Pin.port_PIN_BUSH_SUPPORT_Pin_support_adjacent_to_floating_bush"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_FLOATING_BUSH_Floating_bush"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FLOATING_BUSH_Floating_bush.port_BUSH_SLEEVE_PLAY_Bush_to_sleeve_relative_play"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FLOATING_BUSH_Floating_bush.port_BUSH_CAPPORT_GUIDE_Bush_entry_alignment_at_cap_port"
+    },
+    {
+      "path": "/subsystems/3/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FLOATING_BUSH_Floating_bush.port_BUSH_PIN_SUPPORT_Bush_surrounding_pin_support_portion"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SLEEVE_Sleeve"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SLEEVE_Sleeve.port_SLEEVE_PIN_THREAD_Sleeve_internal_threaded_engagement"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SLEEVE_Sleeve.port_SLEEVE_BUSH_PLAY_Sleeve_adjacent_to_floating_bush"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CAP_PORT_Cylinder_cap_port"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CAP_PORT_Cylinder_cap_port.port_CAPPORT_BUSH_GUIDE_Cap_port_bush_receiving_guide"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_ALIGNMENT_MOTION_Floating_bush_alignment_motion"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ALIGN_BUSH_Align_floating_bush_with_cap_port"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_BLOCK_PIN_INTERFACE"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_PIN_SLEEVE_INTERFACE"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_BUSH_SLEEVE_INTERFACE"
+    },
+    {
+      "path": "/subsystems/3/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_BUSH_CAPPORT_INTERFACE"
+    },
+    {
+      "path": "/subsystems/3/interfaces/2",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_BUSH_PIN_SUPPORT_INTERFACE"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

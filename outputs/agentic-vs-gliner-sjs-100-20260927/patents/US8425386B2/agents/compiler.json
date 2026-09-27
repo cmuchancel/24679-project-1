@@ -1,0 +1,325 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 3,
+    "ActionUsage": 8,
+    "AllocationUsage": 3,
+    "ConnectionUsage": 2,
+    "Documentation": 59,
+    "EndFeatureMembership": 20,
+    "Feature": 37,
+    "FeatureChaining": 68,
+    "FeatureMembership": 64,
+    "FeatureReferenceExpression": 7,
+    "FeatureTyping": 29,
+    "FeatureValue": 7,
+    "FlowEnd": 10,
+    "FlowUsage": 5,
+    "ItemDefinition": 12,
+    "ItemUsage": 15,
+    "LiteralInteger": 4,
+    "MultiplicityRange": 4,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 120,
+    "Package": 1,
+    "PartDefinition": 10,
+    "PartUsage": 15,
+    "PortUsage": 15,
+    "Redefinition": 10,
+    "ReferenceSubsetting": 27,
+    "ReferenceUsage": 17,
+    "RequirementDefinition": 1,
+    "RequirementUsage": 1,
+    "SatisfyRequirementUsage": 7,
+    "Subclassification": 8,
+    "SubjectMembership": 7,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_housing_Tool_changer_housing"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_motor_Drive_motor"
+    },
+    {
+      "path": "/subsystems/1/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_motor_Drive_motor.part_motor_barrel_reduction_pair_Reduction_gear_pair_by_which_the_motor_drives"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_motor_Drive_motor.port_motor_rotary_out_Motor_rotary_output"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_cam_barrel_Cam_barrel"
+    },
+    {
+      "path": "/subsystems/2/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_cam_barrel_Cam_barrel.part_barrel_first_tappet_Eccentrically_fixed_front_tappet_engaging_a_r"
+    },
+    {
+      "path": "/subsystems/2/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_cam_barrel_Cam_barrel.part_barrel_groove_cam_Peripheral_groove_shaped_cam_curve_engaging_t"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_cam_barrel_Cam_barrel.port_barrel_rotary_in_Cam_barrel_rotary_input"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_cam_barrel_Cam_barrel.port_barrel_index_out_Tappet_indexing_interaction"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_maltese_wheel_Maltese_wheel"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_maltese_wheel_Maltese_wheel.port_wheel_index_in_Maltese_wheel_indexing_input"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_maltese_wheel_Maltese_wheel.port_wheel_rotation_out_Maltese_wheel_rotation_output"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_intermediate_gearing_Intermediate_gear_arrangement"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_intermediate_gearing_Intermediate_gear_arrangement.port_gearing_rotation_in_Intermediate_gear_rotation_input"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_intermediate_gearing_Intermediate_gear_arrangement.port_gearing_rotation_out_Intermediate_gear_rotational_output_to_column"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_supporting_column_Supporting_column_and_guide"
+    },
+    {
+      "path": "/subsystems/5/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_supporting_column_Supporting_column_and_guide.part_column_lift_guide_assembly_Guide_rod__transversely_aligned_member_connec"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_supporting_column_Supporting_column_and_guide.port_column_rotation_in_Column_rotational_input"
+    },
+    {
+      "path": "/subsystems/5/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_supporting_column_Supporting_column_and_guide.port_column_lift_out_Guided_column_lift_motion"
+    },
+    {
+      "path": "/subsystems/5/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_supporting_column_Supporting_column_and_guide.port_column_motion_out_Column_rotation_and_translation_to_gripper"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_tool_gripper_Tool_gripper"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_tool_gripper_Tool_gripper.port_tool_to_unit_Tool_exchange_with_working_unit"
+    },
+    {
+      "path": "/subsystems/6/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_tool_gripper_Tool_gripper.port_tool_to_magazine_Tool_exchange_with_embodiment_magazine"
+    },
+    {
+      "path": "/subsystems/6/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_tool_gripper_Tool_gripper.port_gripper_column_motion_in_Supporting_column_motion_input"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_machine_working_unit_Machine_working_unit"
+    },
+    {
+      "path": "/subsystems/7/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_machine_working_unit_Machine_working_unit.port_unit_tool_exchange_Tool_exchange_with_changer"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_tool_supply_Tool_magazine"
+    },
+    {
+      "path": "/subsystems/8/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_tool_supply_Tool_magazine.port_magazine_tool_exchange_Presented_tool_exchange"
+    },
+    {
+      "path": "/subsystems/9",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_foundation_Stationary_foundation"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_motor_rotation_Motor_rotary_drive"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_cam_index_drive_Cam_barrel_tappet_drive"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_wheel_rotation_Indexed_Maltese_wheel_rotation"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_cam_follower_lift_Cam_follower_lift_motion"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_column_motion_Column_gripper_combined_motion"
+    },
+    {
+      "path": "/item_flows/5",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_machining_tool_exchange_Machining_tool_exchange"
+    },
+    {
+      "path": "/item_flows/6",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_column_lift_motion_Guided_column_lift_motion"
+    },
+    {
+      "path": "/item_flows/7",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_column_rotation_Intermediate_gearing_to_supporting_column_rot"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_claim1_tool_changer_architecture"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_claim1_tool_changer_architecture"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_claim1_tool_changer_architecture"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/2",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_claim1_tool_changer_architecture"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/3",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_claim1_tool_changer_architecture"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/4",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_claim1_tool_changer_architecture"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/5",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_claim1_tool_changer_architecture"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/6",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_claim1_tool_changer_architecture"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_drive_barrel_Drive_cam_barrel"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_index_gripper_Index_gripper_rotation"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_raise_lower_gripper_Raise_and_lower_gripper"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_motor_to_barrel"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_barrel_tappet_to_wheel"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_wheel_to_intermediate_gearing"
+    },
+    {
+      "path": "/subsystems/4/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_gearing_to_column"
+    },
+    {
+      "path": "/subsystems/5/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_column_to_gripper_motion"
+    },
+    {
+      "path": "/subsystems/6/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_gripper_working_unit_tool_exchange"
+    },
+    {
+      "path": "/subsystems/6/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_gripper_magazine_tool_exchange"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

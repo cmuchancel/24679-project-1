@@ -1,0 +1,34 @@
+{
+  "revision": 7,
+  "candidate_sha256": "2df5eac755b5316a16be32c3842346a92f1413abf0bcdd6eff658543411c7322",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 7 resolves R6-1. /subsystems/4 is supported across both cited passages: 74c9e6ff states cylindrical parts project from the main-body parts and describes passages inside both; 64bf362ee states the straight second passage extends along each cylindrical part. The outward projection/body relationship clause is no longer unsupported."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The physical elements and supported ballway/return functions are represented. No clearly essential assembly function is omitted by this scoped model."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Ball flow is consistently modeled as rolling balls through engaged grooves and return passages. The separate main-body and axial cylindrical passage sections agree with the cited text. Bidirectional/inout ballway ports suit recirculation."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "No invented requirements are present. Rotary-to-linear conversion is explicitly caveated as explanatory/background material; flow notes and actions are traceable to cited patent passages."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Interfaces point to existing subsystems/ports and shared ball_flow; each connection is represented once. Ball movement between groove and passage sections is grounded. There are no external interfaces requiring guessed components."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The model distinguishes physical components, flows, interfaces, and allocated actions without speculative control/state modeling. Textbook guidance informs representation only and is not used as invention evidence."
+    }
+  },
+  "findings": [],
+  "summary": "Independently reviewed revision 7. Prior R6-1 is resolved: the /subsystems/4 description's projection and passage-content clauses are expressly supported by 74c9e6ff7214b888879da4fdcfd3c7e2, while its axial straight-passage clause is supported by 64bf362ee0fab10481c086099a87f8d3. The remaining represented functions, flows, interfaces, claims, and modeling choices are adequately grounded; no unresolved issues found.",
+  "saved_at": "2026-09-27T03:53:12.777019+00:00"
+}

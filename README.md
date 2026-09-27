@@ -16,7 +16,7 @@ short_description: Patent to reviewed SJS and SysML v2
 
 Upload a patent, extract a reviewed **SJS model**, and translate it to SysML v2. The interface stays in Gradio.
 
-[Live app](https://cmuchancel-patent2sysml.hf.space/) · [Agent flow diagram](docs/AGENT_FLOW.md) · [100 completed results](outputs/README.md)
+[Live app](https://cmuchancel-patent2sysml.hf.space/) · [Agent flow diagram](docs/AGENT_FLOW.md) · [200 completed results](outputs/agentic-vs-gliner-sjs-100-20260927/INDEX.md)
 
 ## Repository layout
 
@@ -25,7 +25,7 @@ app/              Gradio interface, CSS, dialog behavior and Space startup
 agentic/          Three agents, prompts, retrieval, review and targeted repair
 fine_tuned_nlp/    Eladio's GLiNER data preparation, fine-tuning and evaluation
 backend/          Method interface, processing, SJS/SysML translation and storage
-outputs/          Results index; local runs and training checkpoints go here
+outputs/          Completed study artifacts, local runs and training checkpoints
 source-html/      The 100 source patents
 assets/           Private textbook, translator and parser (not committed)
 tests/            App, workflow, export and integration checks

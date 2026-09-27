@@ -1,0 +1,4741 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": false,
+  "native_element_counts": {
+    "ActionDefinition": 26,
+    "ActionUsage": 52,
+    "AttributeUsage": 27,
+    "Documentation": 371,
+    "FeatureMembership": 1781,
+    "FeatureTyping": 397,
+    "FeatureValue": 1425,
+    "ItemDefinition": 3,
+    "ItemUsage": 8,
+    "LiteralInteger": 210,
+    "LiteralString": 1425,
+    "MetadataDefinition": 1,
+    "MetadataUsage": 285,
+    "MultiplicityRange": 210,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 1203,
+    "Package": 1,
+    "PartDefinition": 73,
+    "PartUsage": 284,
+    "PortUsage": 8,
+    "Redefinition": 1425,
+    "ReferenceUsage": 1425,
+    "Subclassification": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission"
+    },
+    {
+      "path": "/subsystems/0/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_001_power_rollers"
+    },
+    {
+      "path": "/subsystems/0/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_006_guide_walls"
+    },
+    {
+      "path": "/subsystems/0/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_003_power_roller_supporting_members"
+    },
+    {
+      "path": "/subsystems/0/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_009_first_and_second_input_discs"
+    },
+    {
+      "path": "/subsystems/0/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_010_input_discs"
+    },
+    {
+      "path": "/subsystems/0/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_011_first_and_second_output_discs"
+    },
+    {
+      "path": "/subsystems/0/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_012_output_discs"
+    },
+    {
+      "path": "/subsystems/0/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_013_pressure_means"
+    },
+    {
+      "path": "/subsystems/0/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_014_first_and_second_power_rollers"
+    },
+    {
+      "path": "/subsystems/0/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_002_first_wire"
+    },
+    {
+      "path": "/subsystems/0/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_004_second_wire"
+    },
+    {
+      "path": "/subsystems/0/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_005_third_wire"
+    },
+    {
+      "path": "/subsystems/0/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_061_first_pair_of_power_rollers"
+    },
+    {
+      "path": "/subsystems/0/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_062_second_pair_of_power_rollers"
+    },
+    {
+      "path": "/subsystems/0/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_063_wire"
+    },
+    {
+      "path": "/subsystems/0/parts/15",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_037_guide_wall"
+    },
+    {
+      "path": "/subsystems/0/parts/16",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_015_second_power_rollers"
+    },
+    {
+      "path": "/subsystems/0/parts/17",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_017_turbine_runner"
+    },
+    {
+      "path": "/subsystems/0/parts/18",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_029_spherical_bearing"
+    },
+    {
+      "path": "/subsystems/0/parts/19",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_032_wire_guide_groove"
+    },
+    {
+      "path": "/subsystems/0/parts/20",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_033_wire_fixing_groove"
+    },
+    {
+      "path": "/subsystems/0/parts/21",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_034_wire_fixing_groove_13"
+    },
+    {
+      "path": "/subsystems/0/parts/22",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_035_fixing_hardwares"
+    },
+    {
+      "path": "/subsystems/0/parts/23",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_036_upper_link"
+    },
+    {
+      "path": "/subsystems/0/parts/24",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_039_servo_piston"
+    },
+    {
+      "path": "/subsystems/0/parts/25",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_046_Intermediate_walls_23"
+    },
+    {
+      "path": "/subsystems/0/parts/26",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_051_lower_link_4"
+    },
+    {
+      "path": "/subsystems/0/parts/27",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_052_shaft_members"
+    },
+    {
+      "path": "/subsystems/0/parts/28",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_056_lubrication_passage"
+    },
+    {
+      "path": "/subsystems/0/parts/29",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_057_splashing_port"
+    },
+    {
+      "path": "/subsystems/0/parts/30",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_058_positioning_means"
+    },
+    {
+      "path": "/subsystems/0/parts/31",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_059_second_wires"
+    },
+    {
+      "path": "/subsystems/0/parts/32",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_064_members"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.port_PT_001_input_shaft"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.port_PT_002_second_input_disc"
+    },
+    {
+      "path": "/subsystems/0/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.port_PT_003_input_disc"
+    },
+    {
+      "path": "/subsystems/0/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.port_PT_004_second_output_disc"
+    },
+    {
+      "path": "/subsystems/0/ports/4",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.port_PT_005_output_disc"
+    },
+    {
+      "path": "/subsystems/0/ports/5",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.port_PT_006_output_discs"
+    },
+    {
+      "path": "/subsystems/0/ports/6",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.port_PT_007_splashing_port"
+    },
+    {
+      "path": "/subsystems/0/ports/7",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.port_PT_008_first_input_disc"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_002_CVT"
+    },
+    {
+      "path": "/subsystems/1/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_002_CVT.part_P_001_power_rollers_c0470ab3"
+    },
+    {
+      "path": "/subsystems/1/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_002_CVT.part_P_028_trunnion"
+    },
+    {
+      "path": "/subsystems/1/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_002_CVT.part_P_030_transmission_case"
+    },
+    {
+      "path": "/subsystems/1/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_002_CVT.part_P_031_swing_shafts"
+    },
+    {
+      "path": "/subsystems/1/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_002_CVT.part_P_005_third_wire_9e2686f3"
+    },
+    {
+      "path": "/subsystems/1/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_002_CVT.part_P_040_third_wire_9"
+    },
+    {
+      "path": "/subsystems/1/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_002_CVT.part_P_037_guide_wall_6dc13b6b"
+    },
+    {
+      "path": "/subsystems/1/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_002_CVT.part_P_045_guide_wall_21"
+    },
+    {
+      "path": "/subsystems/1/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_002_CVT.part_P_014_first_and_second_power_rollers_72a0afad"
+    },
+    {
+      "path": "/subsystems/1/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_002_CVT.part_P_006_guide_walls_47674e5c"
+    },
+    {
+      "path": "/subsystems/1/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_002_CVT.part_P_061_first_pair_of_power_rollers_7001efee"
+    },
+    {
+      "path": "/subsystems/1/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_002_CVT.part_P_003_power_roller_supporting_members_7a1b841d"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_003_power_rollers"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_004_guide_walls"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT"
+    },
+    {
+      "path": "/subsystems/4/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_007_supporting_members"
+    },
+    {
+      "path": "/subsystems/4/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_005_third_wire_6bc95ddd"
+    },
+    {
+      "path": "/subsystems/4/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_008_trunnions"
+    },
+    {
+      "path": "/subsystems/4/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_009_first_and_second_input_discs_47cc6f47"
+    },
+    {
+      "path": "/subsystems/4/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_010_input_discs_95f4a222"
+    },
+    {
+      "path": "/subsystems/4/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_011_first_and_second_output_discs_ca2df9b6"
+    },
+    {
+      "path": "/subsystems/4/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_012_output_discs_bde2a7e6"
+    },
+    {
+      "path": "/subsystems/4/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_013_pressure_means_448f6dc2"
+    },
+    {
+      "path": "/subsystems/4/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_014_first_and_second_power_rollers_5f1e9041"
+    },
+    {
+      "path": "/subsystems/4/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_001_power_rollers_4a02cfea"
+    },
+    {
+      "path": "/subsystems/4/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_028_trunnion_2e84d643"
+    },
+    {
+      "path": "/subsystems/4/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_030_transmission_case_b8450fce"
+    },
+    {
+      "path": "/subsystems/4/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_031_swing_shafts_3c686500"
+    },
+    {
+      "path": "/subsystems/4/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_006_guide_walls_ca22d7c4"
+    },
+    {
+      "path": "/subsystems/4/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_041_fixing_member"
+    },
+    {
+      "path": "/subsystems/4/parts/15",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_042_fixing_member_15"
+    },
+    {
+      "path": "/subsystems/4/parts/16",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_040_third_wire_9_08753e80"
+    },
+    {
+      "path": "/subsystems/4/parts/17",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_037_guide_wall_7cdcdc24"
+    },
+    {
+      "path": "/subsystems/4/parts/18",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_043_intermediate_walls"
+    },
+    {
+      "path": "/subsystems/4/parts/19",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_044_intermediate_walls_23"
+    },
+    {
+      "path": "/subsystems/4/parts/20",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_045_guide_wall_21_1c7ab0d2"
+    },
+    {
+      "path": "/subsystems/4/parts/21",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_002_first_wire_422a4c3a"
+    },
+    {
+      "path": "/subsystems/4/parts/22",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_047_first_wire_7"
+    },
+    {
+      "path": "/subsystems/4/parts/23",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_004_second_wire_a0291c37"
+    },
+    {
+      "path": "/subsystems/4/parts/24",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_048_second_wire_8"
+    },
+    {
+      "path": "/subsystems/4/parts/25",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_049_Third_wire_9"
+    },
+    {
+      "path": "/subsystems/4/parts/26",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_060_lubrication_mechanism"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_006_trunnions"
+    },
+    {
+      "path": "/subsystems/5/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_trunnions.part_P_002_first_wire_ae9a2745"
+    },
+    {
+      "path": "/subsystems/5/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_trunnions.part_P_047_first_wire_7_db625620"
+    },
+    {
+      "path": "/subsystems/5/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_trunnions.part_P_004_second_wire_2f5e9f8f"
+    },
+    {
+      "path": "/subsystems/5/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_trunnions.part_P_048_second_wire_8_b7fd7056"
+    },
+    {
+      "path": "/subsystems/5/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_trunnions.part_P_005_third_wire_d7e570ca"
+    },
+    {
+      "path": "/subsystems/5/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_trunnions.part_P_040_third_wire_9_3bf7b473"
+    },
+    {
+      "path": "/subsystems/5/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_trunnions.part_P_049_Third_wire_9_34535f5e"
+    },
+    {
+      "path": "/subsystems/5/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_trunnions.part_P_006_guide_walls_1e5cd37f"
+    },
+    {
+      "path": "/subsystems/5/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_trunnions.part_P_043_intermediate_walls_9624071f"
+    },
+    {
+      "path": "/subsystems/5/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_trunnions.part_P_012_output_discs_67669ba1"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_007_first_and_second_input_discs"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_008_pressure_means"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_009_first_and_second_power_rollers"
+    },
+    {
+      "path": "/subsystems/9",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_010_output_discs"
+    },
+    {
+      "path": "/subsystems/10",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_011_system"
+    },
+    {
+      "path": "/subsystems/11",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_012_first_embodiment"
+    },
+    {
+      "path": "/subsystems/12",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_013_third_embodiment"
+    },
+    {
+      "path": "/subsystems/12/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_third_embodiment.part_P_006_guide_walls_59724d4e"
+    },
+    {
+      "path": "/subsystems/12/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_third_embodiment.part_P_043_intermediate_walls_fca32d87"
+    },
+    {
+      "path": "/subsystems/12/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_third_embodiment.part_P_012_output_discs_9681523b"
+    },
+    {
+      "path": "/subsystems/12/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_third_embodiment.part_P_044_intermediate_walls_23_00489ff6"
+    },
+    {
+      "path": "/subsystems/12/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_third_embodiment.part_P_002_first_wire_8d4cd808"
+    },
+    {
+      "path": "/subsystems/12/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_third_embodiment.part_P_047_first_wire_7_db263e93"
+    },
+    {
+      "path": "/subsystems/12/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_third_embodiment.part_P_004_second_wire_12644bd3"
+    },
+    {
+      "path": "/subsystems/12/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_third_embodiment.part_P_048_second_wire_8_9bafc976"
+    },
+    {
+      "path": "/subsystems/12/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_third_embodiment.part_P_005_third_wire_8a8bcbe8"
+    },
+    {
+      "path": "/subsystems/12/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_third_embodiment.part_P_040_third_wire_9_474a3b92"
+    },
+    {
+      "path": "/subsystems/12/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_third_embodiment.part_P_049_Third_wire_9_4eec9ad6"
+    },
+    {
+      "path": "/subsystems/13",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_014_Toroidal_CVT"
+    },
+    {
+      "path": "/subsystems/14",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_015_internal_combustion_engine"
+    },
+    {
+      "path": "/subsystems/15",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_016_torque_converter"
+    },
+    {
+      "path": "/subsystems/15/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_016_torque_converter.part_P_016_pump_impeller"
+    },
+    {
+      "path": "/subsystems/16",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_017_torque_converter_12"
+    },
+    {
+      "path": "/subsystems/17",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_018_Torque_converter"
+    },
+    {
+      "path": "/subsystems/18",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_019_turbine_runner"
+    },
+    {
+      "path": "/subsystems/19",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_020_lockup_clutch"
+    },
+    {
+      "path": "/subsystems/20",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_021_input_shaft"
+    },
+    {
+      "path": "/subsystems/21",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_022_forward__reverse_selecting_mechanism"
+    },
+    {
+      "path": "/subsystems/22",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_023_planetary_gear_mechanism"
+    },
+    {
+      "path": "/subsystems/23",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_024_forward_clutch"
+    },
+    {
+      "path": "/subsystems/24",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_025_Planetary_gear_mechanism"
+    },
+    {
+      "path": "/subsystems/25",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_026_pinion_carrier"
+    },
+    {
+      "path": "/subsystems/26",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_027_ring_gear"
+    },
+    {
+      "path": "/subsystems/27",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_028_sun_gear"
+    },
+    {
+      "path": "/subsystems/28",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_029_transmission_case"
+    },
+    {
+      "path": "/subsystems/29",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_030_control_valve_system"
+    },
+    {
+      "path": "/subsystems/30",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_031_second_CVT_mechanism_20"
+    },
+    {
+      "path": "/subsystems/30/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_second_CVT_mechanism_20.part_P_001_power_rollers_88290e38"
+    },
+    {
+      "path": "/subsystems/30/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_second_CVT_mechanism_20.part_P_018_input_disc"
+    },
+    {
+      "path": "/subsystems/30/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_second_CVT_mechanism_20.part_P_019_output_disc"
+    },
+    {
+      "path": "/subsystems/30/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_second_CVT_mechanism_20.part_P_020_ball_spline"
+    },
+    {
+      "path": "/subsystems/30/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_second_CVT_mechanism_20.part_P_021_loading_cam_mechanism"
+    },
+    {
+      "path": "/subsystems/30/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_second_CVT_mechanism_20.part_P_022_loading_cam"
+    },
+    {
+      "path": "/subsystems/30/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_second_CVT_mechanism_20.part_P_023_dish_spring"
+    },
+    {
+      "path": "/subsystems/30/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_second_CVT_mechanism_20.part_P_024_output_gear"
+    },
+    {
+      "path": "/subsystems/30/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_second_CVT_mechanism_20.part_P_025_gear_52"
+    },
+    {
+      "path": "/subsystems/30/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_second_CVT_mechanism_20.part_P_026_gear_56"
+    },
+    {
+      "path": "/subsystems/30/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_second_CVT_mechanism_20.part_P_027_idler_gear"
+    },
+    {
+      "path": "/subsystems/31",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_032_CVT_mechanism"
+    },
+    {
+      "path": "/subsystems/31/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_CVT_mechanism.part_P_001_power_rollers_461a55ca"
+    },
+    {
+      "path": "/subsystems/31/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_CVT_mechanism.part_P_018_input_disc_f2ac2cb0"
+    },
+    {
+      "path": "/subsystems/31/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_CVT_mechanism.part_P_019_output_disc_428aee84"
+    },
+    {
+      "path": "/subsystems/31/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_CVT_mechanism.part_P_021_loading_cam_mechanism_4092ff70"
+    },
+    {
+      "path": "/subsystems/31/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_CVT_mechanism.part_P_022_loading_cam_4d22757d"
+    },
+    {
+      "path": "/subsystems/31/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_CVT_mechanism.part_P_006_guide_walls_5ad0faf7"
+    },
+    {
+      "path": "/subsystems/32",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_033_CVT_mechanism_20"
+    },
+    {
+      "path": "/subsystems/32/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_CVT_mechanism_20.part_P_001_power_rollers_35ad93ea"
+    },
+    {
+      "path": "/subsystems/32/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_CVT_mechanism_20.part_P_018_input_disc_863b9f6f"
+    },
+    {
+      "path": "/subsystems/32/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_CVT_mechanism_20.part_P_019_output_disc_6479d91f"
+    },
+    {
+      "path": "/subsystems/32/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_CVT_mechanism_20.part_P_020_ball_spline_ee04d8d4"
+    },
+    {
+      "path": "/subsystems/32/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_CVT_mechanism_20.part_P_021_loading_cam_mechanism_46291f9d"
+    },
+    {
+      "path": "/subsystems/32/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_CVT_mechanism_20.part_P_022_loading_cam_d00dc5e7"
+    },
+    {
+      "path": "/subsystems/32/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_CVT_mechanism_20.part_P_023_dish_spring_fde6bc1a"
+    },
+    {
+      "path": "/subsystems/33",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_034_first_CVT_mechanism_18"
+    },
+    {
+      "path": "/subsystems/33/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_034_first_CVT_mechanism_18.part_P_018_input_disc_d5f9178b"
+    },
+    {
+      "path": "/subsystems/33/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_034_first_CVT_mechanism_18.part_P_019_output_disc_59a8c203"
+    },
+    {
+      "path": "/subsystems/33/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_034_first_CVT_mechanism_18.part_P_001_power_rollers_ed5bbda7"
+    },
+    {
+      "path": "/subsystems/33/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_034_first_CVT_mechanism_18.part_P_024_output_gear_fc6d97d3"
+    },
+    {
+      "path": "/subsystems/33/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_034_first_CVT_mechanism_18.part_P_026_gear_56_65bcc6c0"
+    },
+    {
+      "path": "/subsystems/33/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_034_first_CVT_mechanism_18.part_P_027_idler_gear_0d5904b7"
+    },
+    {
+      "path": "/subsystems/34",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10"
+    },
+    {
+      "path": "/subsystems/34/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_006_guide_walls_4a6b8cdc"
+    },
+    {
+      "path": "/subsystems/34/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_037_guide_wall_a3373a84"
+    },
+    {
+      "path": "/subsystems/34/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_038_contact_surface"
+    },
+    {
+      "path": "/subsystems/34/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_001_power_rollers_d3cc242d"
+    },
+    {
+      "path": "/subsystems/34/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_041_fixing_member_ef0c7c05"
+    },
+    {
+      "path": "/subsystems/34/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_042_fixing_member_15_c1766e2d"
+    },
+    {
+      "path": "/subsystems/34/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_005_third_wire_62049f64"
+    },
+    {
+      "path": "/subsystems/34/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_040_third_wire_9_b782f79f"
+    },
+    {
+      "path": "/subsystems/34/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_043_intermediate_walls_52eeb986"
+    },
+    {
+      "path": "/subsystems/34/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_044_intermediate_walls_23_ba5285f1"
+    },
+    {
+      "path": "/subsystems/34/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_002_first_wire_2167a84c"
+    },
+    {
+      "path": "/subsystems/34/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_047_first_wire_7_812ac1c9"
+    },
+    {
+      "path": "/subsystems/34/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_049_Third_wire_9_be207bec"
+    },
+    {
+      "path": "/subsystems/34/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_012_output_discs_1fba0cf2"
+    },
+    {
+      "path": "/subsystems/34/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_050_oil_pan"
+    },
+    {
+      "path": "/subsystems/34/parts/15",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_008_trunnions_74552a25"
+    },
+    {
+      "path": "/subsystems/34/parts/16",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_053_guide_rollers"
+    },
+    {
+      "path": "/subsystems/34/parts/17",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_054_radial_bearings"
+    },
+    {
+      "path": "/subsystems/35",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_036_dish_spring"
+    },
+    {
+      "path": "/subsystems/36",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_037_mechanism_20"
+    },
+    {
+      "path": "/subsystems/36/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_037_mechanism_20.part_P_001_power_rollers_18e9fe4f"
+    },
+    {
+      "path": "/subsystems/36/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_037_mechanism_20.part_P_024_output_gear_3fce408b"
+    },
+    {
+      "path": "/subsystems/36/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_037_mechanism_20.part_P_026_gear_56_87a11540"
+    },
+    {
+      "path": "/subsystems/36/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_037_mechanism_20.part_P_027_idler_gear_06139d56"
+    },
+    {
+      "path": "/subsystems/37",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_038_CVT_mechanism_18"
+    },
+    {
+      "path": "/subsystems/37/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_CVT_mechanism_18.part_P_001_power_rollers_8858e1d9"
+    },
+    {
+      "path": "/subsystems/37/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_CVT_mechanism_18.part_P_024_output_gear_74152426"
+    },
+    {
+      "path": "/subsystems/37/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_CVT_mechanism_18.part_P_025_gear_52_594eae68"
+    },
+    {
+      "path": "/subsystems/37/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_CVT_mechanism_18.part_P_026_gear_56_9b055c1a"
+    },
+    {
+      "path": "/subsystems/37/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_CVT_mechanism_18.part_P_027_idler_gear_54fbecde"
+    },
+    {
+      "path": "/subsystems/38",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_039_transfer_mechanism"
+    },
+    {
+      "path": "/subsystems/38/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_039_transfer_mechanism.part_P_001_power_rollers_21adb206"
+    },
+    {
+      "path": "/subsystems/38/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_039_transfer_mechanism.part_P_024_output_gear_317846cb"
+    },
+    {
+      "path": "/subsystems/38/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_039_transfer_mechanism.part_P_025_gear_52_4248576a"
+    },
+    {
+      "path": "/subsystems/38/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_039_transfer_mechanism.part_P_026_gear_56_232edfec"
+    },
+    {
+      "path": "/subsystems/38/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_039_transfer_mechanism.part_P_027_idler_gear_d5d3025b"
+    },
+    {
+      "path": "/subsystems/39",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_040_transfer_mechanism_48"
+    },
+    {
+      "path": "/subsystems/39/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_transfer_mechanism_48.part_P_001_power_rollers_cfd66d79"
+    },
+    {
+      "path": "/subsystems/39/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_transfer_mechanism_48.part_P_024_output_gear_8f5271fb"
+    },
+    {
+      "path": "/subsystems/39/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_transfer_mechanism_48.part_P_025_gear_52_7ed6b5d4"
+    },
+    {
+      "path": "/subsystems/39/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_transfer_mechanism_48.part_P_026_gear_56_b2afe934"
+    },
+    {
+      "path": "/subsystems/39/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_transfer_mechanism_48.part_P_027_idler_gear_878ba110"
+    },
+    {
+      "path": "/subsystems/40",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_041_gear_52"
+    },
+    {
+      "path": "/subsystems/41",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_042_gear_56"
+    },
+    {
+      "path": "/subsystems/42",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_043_idler_gear"
+    },
+    {
+      "path": "/subsystems/43",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_044_Guide_walls"
+    },
+    {
+      "path": "/subsystems/44",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_045_Guide_walls_21"
+    },
+    {
+      "path": "/subsystems/45",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_046_guide_walls_21"
+    },
+    {
+      "path": "/subsystems/46",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_047_Toroidal_CVT_10"
+    },
+    {
+      "path": "/subsystems/47",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_048_servo_piston"
+    },
+    {
+      "path": "/subsystems/48",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_049_cam_mechanism"
+    },
+    {
+      "path": "/subsystems/49",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_050_torodidal_CVT"
+    },
+    {
+      "path": "/subsystems/50",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_051_second_transmission_mechanisms"
+    },
+    {
+      "path": "/subsystems/50/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_051_second_transmission_mechanisms.part_P_001_power_rollers_eafe11bd"
+    },
+    {
+      "path": "/subsystems/51",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_052_transmission_mechanisms"
+    },
+    {
+      "path": "/subsystems/51/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_052_transmission_mechanisms.part_P_001_power_rollers_d2753bdf"
+    },
+    {
+      "path": "/subsystems/51/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_052_transmission_mechanisms.part_P_008_trunnions_3690d9b2"
+    },
+    {
+      "path": "/subsystems/52",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_053_first_transmission_mechanism"
+    },
+    {
+      "path": "/subsystems/52/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_053_first_transmission_mechanism.part_P_001_power_rollers_5f8c31f1"
+    },
+    {
+      "path": "/subsystems/52/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_053_first_transmission_mechanism.part_P_008_trunnions_3d5fb4d0"
+    },
+    {
+      "path": "/subsystems/53",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_054_first_transmission_mechanism_18"
+    },
+    {
+      "path": "/subsystems/53/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_054_first_transmission_mechanism_18.part_P_001_power_rollers_d2afbf97"
+    },
+    {
+      "path": "/subsystems/53/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_054_first_transmission_mechanism_18.part_P_008_trunnions_3835fa88"
+    },
+    {
+      "path": "/subsystems/54",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_055_transmission_mechanism"
+    },
+    {
+      "path": "/subsystems/54/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_055_transmission_mechanism.part_P_001_power_rollers_0843514c"
+    },
+    {
+      "path": "/subsystems/54/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_055_transmission_mechanism.part_P_008_trunnions_363b4250"
+    },
+    {
+      "path": "/subsystems/55",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_056_second_transmission_mechanism"
+    },
+    {
+      "path": "/subsystems/55/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_056_second_transmission_mechanism.part_P_001_power_rollers_ad40a2ca"
+    },
+    {
+      "path": "/subsystems/56",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_057_second_transmission_mechanism_20"
+    },
+    {
+      "path": "/subsystems/56/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_057_second_transmission_mechanism_20.part_P_001_power_rollers_a6b17d00"
+    },
+    {
+      "path": "/subsystems/57",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_058_CVT_10"
+    },
+    {
+      "path": "/subsystems/58",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_059_second_embodiment"
+    },
+    {
+      "path": "/subsystems/58/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_059_second_embodiment.part_P_005_third_wire_da0db604"
+    },
+    {
+      "path": "/subsystems/58/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_059_second_embodiment.part_P_040_third_wire_9_8ebb5cb3"
+    },
+    {
+      "path": "/subsystems/58/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_059_second_embodiment.part_P_043_intermediate_walls_8425b74a"
+    },
+    {
+      "path": "/subsystems/58/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_059_second_embodiment.part_P_044_intermediate_walls_23_b054dbb2"
+    },
+    {
+      "path": "/subsystems/58/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_059_second_embodiment.part_P_037_guide_wall_b29e20c2"
+    },
+    {
+      "path": "/subsystems/58/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_059_second_embodiment.part_P_045_guide_wall_21_fcdb1c48"
+    },
+    {
+      "path": "/subsystems/58/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_059_second_embodiment.part_P_001_power_rollers_a45072aa"
+    },
+    {
+      "path": "/subsystems/59",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_060_positioning_means"
+    },
+    {
+      "path": "/subsystems/60",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_061_main_assembly"
+    },
+    {
+      "path": "/subsystems/60/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_061_main_assembly.part_P_002_first_wire_24a0774a"
+    },
+    {
+      "path": "/subsystems/60/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_061_main_assembly.part_P_005_third_wire_4fc197f5"
+    },
+    {
+      "path": "/subsystems/60/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_061_main_assembly.part_P_040_third_wire_9_b45ee3f3"
+    },
+    {
+      "path": "/subsystems/60/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_061_main_assembly.part_P_049_Third_wire_9_347386c1"
+    },
+    {
+      "path": "/subsystems/60/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_061_main_assembly.part_P_006_guide_walls_2117c166"
+    },
+    {
+      "path": "/subsystems/60/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_061_main_assembly.part_P_043_intermediate_walls_a74537ef"
+    },
+    {
+      "path": "/subsystems/60/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_061_main_assembly.part_P_012_output_discs_2c30a289"
+    },
+    {
+      "path": "/subsystems/61",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_062_fourth_embodiment"
+    },
+    {
+      "path": "/subsystems/61/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_062_fourth_embodiment.part_P_005_third_wire_e6e6f365"
+    },
+    {
+      "path": "/subsystems/61/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_062_fourth_embodiment.part_P_040_third_wire_9_7e7b6595"
+    },
+    {
+      "path": "/subsystems/61/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_062_fourth_embodiment.part_P_006_guide_walls_fd78296f"
+    },
+    {
+      "path": "/subsystems/61/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_062_fourth_embodiment.part_P_050_oil_pan_e4ead28e"
+    },
+    {
+      "path": "/subsystems/62",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_063_shaft_members"
+    },
+    {
+      "path": "/subsystems/63",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_064_fifth_embodiment"
+    },
+    {
+      "path": "/subsystems/63/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_064_fifth_embodiment.part_P_006_guide_walls_07f3b590"
+    },
+    {
+      "path": "/subsystems/63/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_064_fifth_embodiment.part_P_053_guide_rollers_dea9f897"
+    },
+    {
+      "path": "/subsystems/63/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_064_fifth_embodiment.part_P_055_Guide_walls"
+    },
+    {
+      "path": "/subsystems/63/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_064_fifth_embodiment.part_P_043_intermediate_walls_aad356b3"
+    },
+    {
+      "path": "/subsystems/64",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_065_Guide_walls_21_and_21"
+    },
+    {
+      "path": "/subsystems/65",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_066_guide_walls_25_and_25"
+    },
+    {
+      "path": "/subsystems/66",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_067_sixth_embodiment"
+    },
+    {
+      "path": "/subsystems/67",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_068_splashing_port"
+    },
+    {
+      "path": "/subsystems/68",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_069_power_roller_supporting_members"
+    },
+    {
+      "path": "/subsystems/68/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_069_power_roller_supporting_members.part_P_006_guide_walls_d61029d8"
+    },
+    {
+      "path": "/subsystems/69",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission"
+    },
+    {
+      "path": "/subsystems/69/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_009_first_and_second_input_discs_c8a3aeff"
+    },
+    {
+      "path": "/subsystems/69/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_010_input_discs_908d51d9"
+    },
+    {
+      "path": "/subsystems/69/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_013_pressure_means_96f6e5a9"
+    },
+    {
+      "path": "/subsystems/69/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_014_first_and_second_power_rollers_1d0babb0"
+    },
+    {
+      "path": "/subsystems/69/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_001_power_rollers_83ce94ae"
+    },
+    {
+      "path": "/subsystems/69/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_002_first_wire_f8d5de66"
+    },
+    {
+      "path": "/subsystems/69/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_004_second_wire_4e86aa5d"
+    },
+    {
+      "path": "/subsystems/69/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_005_third_wire_c9a9c548"
+    },
+    {
+      "path": "/subsystems/69/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_006_guide_walls_e4b9c3e6"
+    },
+    {
+      "path": "/subsystems/69/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_012_output_discs_4c0dd182"
+    },
+    {
+      "path": "/subsystems/69/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_061_first_pair_of_power_rollers_4d3894ab"
+    },
+    {
+      "path": "/subsystems/69/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_062_second_pair_of_power_rollers_ce8c1fba"
+    },
+    {
+      "path": "/subsystems/69/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_003_power_roller_supporting_members_feb0a2a3"
+    },
+    {
+      "path": "/subsystems/69/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_063_wire_134fbf6d"
+    },
+    {
+      "path": "/subsystems/69/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_037_guide_wall_d06d13c3"
+    },
+    {
+      "path": "/subsystems/70",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_071_second_and_third_power_roller_supporting_memb"
+    },
+    {
+      "path": "/subsystems/71",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_072_power_roller_supporting_members"
+    },
+    {
+      "path": "/subsystems/72",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_073_guide_wall"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_FL_001_rotating_driving_force"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_FL_002_driving_force"
+    },
+    {
+      "path": "/values/0",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_001_length"
+    },
+    {
+      "path": "/values/1",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_002_fixing_strength"
+    },
+    {
+      "path": "/values/2",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_003_wire_winding_angle"
+    },
+    {
+      "path": "/values/3",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_004_gyration_angles"
+    },
+    {
+      "path": "/values/4",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_005_axial_dimension"
+    },
+    {
+      "path": "/values/5",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_006"
+    },
+    {
+      "path": "/values/6",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_007_swinging_angle"
+    },
+    {
+      "path": "/values/7",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_008_fixing_member_angle"
+    },
+    {
+      "path": "/values/8",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_009__1"
+    },
+    {
+      "path": "/values/9",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_010_maximum_bent_position"
+    },
+    {
+      "path": "/values/10",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_011_winding_angle"
+    },
+    {
+      "path": "/values/11",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_012_second_winding_angle"
+    },
+    {
+      "path": "/values/12",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_013_swing_angle"
+    },
+    {
+      "path": "/values/13",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_014_gyration_angle"
+    },
+    {
+      "path": "/values/14",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_015_transmission_ratio"
+    },
+    {
+      "path": "/values/15",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_016_swinging_angle"
+    },
+    {
+      "path": "/values/16",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_017_relative_slip"
+    },
+    {
+      "path": "/values/17",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_018__2"
+    },
+    {
+      "path": "/values/18",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_019_friction"
+    },
+    {
+      "path": "/values/19",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_020_durability"
+    },
+    {
+      "path": "/values/20",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_021_first_winding_angle"
+    },
+    {
+      "path": "/values/21",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_022_angles"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_001_synchronized"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_002_fixing_strength"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_003_pressing_force"
+    },
+    {
+      "path": "/behaviour/actions/3",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_004_power_roller_supporting_members"
+    },
+    {
+      "path": "/behaviour/actions/4",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_005_shifting"
+    },
+    {
+      "path": "/behaviour/actions/5",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_006_manner_of_operation"
+    },
+    {
+      "path": "/behaviour/actions/6",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_007_Transmission_Ratio_Control"
+    },
+    {
+      "path": "/behaviour/actions/7",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_008_generate_sideslip_forces"
+    },
+    {
+      "path": "/behaviour/actions/8",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_009_sideslip_forces"
+    },
+    {
+      "path": "/behaviour/actions/9",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_010_Gyration_Angle_Synchronizing_Operation_by_Wir"
+    },
+    {
+      "path": "/behaviour/actions/10",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_011_synchronize"
+    },
+    {
+      "path": "/behaviour/actions/11",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_012_shifting_operation"
+    },
+    {
+      "path": "/behaviour/actions/12",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_013_limit"
+    },
+    {
+      "path": "/behaviour/actions/13",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_014_limit_an_axial_direction_displacement"
+    },
+    {
+      "path": "/behaviour/actions/14",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_015_functional_advantages"
+    },
+    {
+      "path": "/behaviour/actions/15",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_016_assembling_operations"
+    },
+    {
+      "path": "/behaviour/actions/16",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_017_execute"
+    },
+    {
+      "path": "/behaviour/actions/17",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_018_tension_control"
+    },
+    {
+      "path": "/behaviour/actions/18",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_019_bend"
+    },
+    {
+      "path": "/behaviour/actions/19",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_020_bend_third_wire"
+    },
+    {
+      "path": "/behaviour/actions/20",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_021_bend_third_wire_9"
+    },
+    {
+      "path": "/behaviour/actions/21",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_022_sliding_operation"
+    },
+    {
+      "path": "/behaviour/actions/22",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_023_applying_a_pressing_force"
+    },
+    {
+      "path": "/behaviour/actions/23",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_024_bending"
+    },
+    {
+      "path": "/behaviour/actions/24",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_025_bending_the_wire"
+    },
+    {
+      "path": "/behaviour/actions/25",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_026_bending_the_wire_toward_the_output_discs"
+    },
+    {
+      "path": "/relationships/0",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[0]"
+    },
+    {
+      "path": "/relationships/0",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_001_power_rollers"
+    },
+    {
+      "path": "/relationships/1",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[1]"
+    },
+    {
+      "path": "/relationships/1",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_006_guide_walls"
+    },
+    {
+      "path": "/relationships/2",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[2]"
+    },
+    {
+      "path": "/relationships/2",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_003_power_roller_supporting_members"
+    },
+    {
+      "path": "/relationships/3",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[3]"
+    },
+    {
+      "path": "/relationships/3",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_002_CVT.part_P_001_power_rollers_c0470ab3"
+    },
+    {
+      "path": "/relationships/4",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[4]"
+    },
+    {
+      "path": "/relationships/4",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_007_supporting_members"
+    },
+    {
+      "path": "/relationships/5",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[5]"
+    },
+    {
+      "path": "/relationships/5",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_005_third_wire_6bc95ddd"
+    },
+    {
+      "path": "/relationships/6",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[6]"
+    },
+    {
+      "path": "/relationships/6",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_008_trunnions"
+    },
+    {
+      "path": "/relationships/7",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[7]"
+    },
+    {
+      "path": "/relationships/7",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_009_first_and_second_input_discs_47cc6f47"
+    },
+    {
+      "path": "/relationships/8",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[8]"
+    },
+    {
+      "path": "/relationships/8",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_010_input_discs_95f4a222"
+    },
+    {
+      "path": "/relationships/9",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[9]"
+    },
+    {
+      "path": "/relationships/9",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_011_first_and_second_output_discs_ca2df9b6"
+    },
+    {
+      "path": "/relationships/10",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[10]"
+    },
+    {
+      "path": "/relationships/10",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_012_output_discs_bde2a7e6"
+    },
+    {
+      "path": "/relationships/11",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[11]"
+    },
+    {
+      "path": "/relationships/11",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_013_pressure_means_448f6dc2"
+    },
+    {
+      "path": "/relationships/12",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[12]"
+    },
+    {
+      "path": "/relationships/12",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_014_first_and_second_power_rollers_5f1e9041"
+    },
+    {
+      "path": "/relationships/13",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[13]"
+    },
+    {
+      "path": "/relationships/13",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_001_power_rollers_4a02cfea"
+    },
+    {
+      "path": "/relationships/14",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[14]"
+    },
+    {
+      "path": "/relationships/14",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_009_first_and_second_input_discs"
+    },
+    {
+      "path": "/relationships/15",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[15]"
+    },
+    {
+      "path": "/relationships/15",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_010_input_discs"
+    },
+    {
+      "path": "/relationships/16",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[16]"
+    },
+    {
+      "path": "/relationships/16",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_011_first_and_second_output_discs"
+    },
+    {
+      "path": "/relationships/17",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[17]"
+    },
+    {
+      "path": "/relationships/18",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[18]"
+    },
+    {
+      "path": "/relationships/18",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_013_pressure_means"
+    },
+    {
+      "path": "/relationships/19",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[19]"
+    },
+    {
+      "path": "/relationships/19",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_014_first_and_second_power_rollers"
+    },
+    {
+      "path": "/relationships/20",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[20]"
+    },
+    {
+      "path": "/relationships/20",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_016_torque_converter.part_P_016_pump_impeller"
+    },
+    {
+      "path": "/relationships/21",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[21]"
+    },
+    {
+      "path": "/relationships/21",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_second_CVT_mechanism_20.part_P_001_power_rollers_88290e38"
+    },
+    {
+      "path": "/relationships/22",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[22]"
+    },
+    {
+      "path": "/relationships/22",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_second_CVT_mechanism_20.part_P_018_input_disc"
+    },
+    {
+      "path": "/relationships/23",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[23]"
+    },
+    {
+      "path": "/relationships/23",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_second_CVT_mechanism_20.part_P_019_output_disc"
+    },
+    {
+      "path": "/relationships/24",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[24]"
+    },
+    {
+      "path": "/relationships/24",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_second_CVT_mechanism_20.part_P_020_ball_spline"
+    },
+    {
+      "path": "/relationships/25",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[25]"
+    },
+    {
+      "path": "/relationships/25",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_second_CVT_mechanism_20.part_P_021_loading_cam_mechanism"
+    },
+    {
+      "path": "/relationships/26",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[26]"
+    },
+    {
+      "path": "/relationships/26",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_second_CVT_mechanism_20.part_P_022_loading_cam"
+    },
+    {
+      "path": "/relationships/27",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[27]"
+    },
+    {
+      "path": "/relationships/27",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_second_CVT_mechanism_20.part_P_023_dish_spring"
+    },
+    {
+      "path": "/relationships/28",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[28]"
+    },
+    {
+      "path": "/relationships/28",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_CVT_mechanism.part_P_001_power_rollers_461a55ca"
+    },
+    {
+      "path": "/relationships/29",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[29]"
+    },
+    {
+      "path": "/relationships/29",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_CVT_mechanism.part_P_018_input_disc_f2ac2cb0"
+    },
+    {
+      "path": "/relationships/30",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[30]"
+    },
+    {
+      "path": "/relationships/30",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_CVT_mechanism.part_P_019_output_disc_428aee84"
+    },
+    {
+      "path": "/relationships/31",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[31]"
+    },
+    {
+      "path": "/relationships/31",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_CVT_mechanism.part_P_021_loading_cam_mechanism_4092ff70"
+    },
+    {
+      "path": "/relationships/32",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[32]"
+    },
+    {
+      "path": "/relationships/32",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_CVT_mechanism.part_P_022_loading_cam_4d22757d"
+    },
+    {
+      "path": "/relationships/33",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[33]"
+    },
+    {
+      "path": "/relationships/33",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_CVT_mechanism_20.part_P_001_power_rollers_35ad93ea"
+    },
+    {
+      "path": "/relationships/34",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[34]"
+    },
+    {
+      "path": "/relationships/34",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_CVT_mechanism_20.part_P_018_input_disc_863b9f6f"
+    },
+    {
+      "path": "/relationships/35",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[35]"
+    },
+    {
+      "path": "/relationships/35",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_CVT_mechanism_20.part_P_019_output_disc_6479d91f"
+    },
+    {
+      "path": "/relationships/36",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[36]"
+    },
+    {
+      "path": "/relationships/36",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_CVT_mechanism_20.part_P_020_ball_spline_ee04d8d4"
+    },
+    {
+      "path": "/relationships/37",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[37]"
+    },
+    {
+      "path": "/relationships/37",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_CVT_mechanism_20.part_P_021_loading_cam_mechanism_46291f9d"
+    },
+    {
+      "path": "/relationships/38",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[38]"
+    },
+    {
+      "path": "/relationships/38",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_CVT_mechanism_20.part_P_022_loading_cam_d00dc5e7"
+    },
+    {
+      "path": "/relationships/39",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[39]"
+    },
+    {
+      "path": "/relationships/39",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_CVT_mechanism_20.part_P_023_dish_spring_fde6bc1a"
+    },
+    {
+      "path": "/relationships/40",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[40]"
+    },
+    {
+      "path": "/relationships/40",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_034_first_CVT_mechanism_18.part_P_018_input_disc_d5f9178b"
+    },
+    {
+      "path": "/relationships/41",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[41]"
+    },
+    {
+      "path": "/relationships/41",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_034_first_CVT_mechanism_18.part_P_019_output_disc_59a8c203"
+    },
+    {
+      "path": "/relationships/42",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[42]"
+    },
+    {
+      "path": "/relationships/42",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_034_first_CVT_mechanism_18.part_P_001_power_rollers_ed5bbda7"
+    },
+    {
+      "path": "/relationships/43",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[43]"
+    },
+    {
+      "path": "/relationships/43",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_037_mechanism_20.part_P_001_power_rollers_18e9fe4f"
+    },
+    {
+      "path": "/relationships/44",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[44]"
+    },
+    {
+      "path": "/relationships/44",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_037_mechanism_20.part_P_024_output_gear_3fce408b"
+    },
+    {
+      "path": "/relationships/45",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[45]"
+    },
+    {
+      "path": "/relationships/45",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_037_mechanism_20.part_P_026_gear_56_87a11540"
+    },
+    {
+      "path": "/relationships/46",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[46]"
+    },
+    {
+      "path": "/relationships/46",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_037_mechanism_20.part_P_027_idler_gear_06139d56"
+    },
+    {
+      "path": "/relationships/47",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[47]"
+    },
+    {
+      "path": "/relationships/47",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_034_first_CVT_mechanism_18.part_P_024_output_gear_fc6d97d3"
+    },
+    {
+      "path": "/relationships/48",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[48]"
+    },
+    {
+      "path": "/relationships/48",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_034_first_CVT_mechanism_18.part_P_026_gear_56_65bcc6c0"
+    },
+    {
+      "path": "/relationships/49",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[49]"
+    },
+    {
+      "path": "/relationships/49",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_034_first_CVT_mechanism_18.part_P_027_idler_gear_0d5904b7"
+    },
+    {
+      "path": "/relationships/50",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[50]"
+    },
+    {
+      "path": "/relationships/50",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_CVT_mechanism_18.part_P_001_power_rollers_8858e1d9"
+    },
+    {
+      "path": "/relationships/51",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[51]"
+    },
+    {
+      "path": "/relationships/51",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_CVT_mechanism_18.part_P_024_output_gear_74152426"
+    },
+    {
+      "path": "/relationships/52",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[52]"
+    },
+    {
+      "path": "/relationships/52",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_CVT_mechanism_18.part_P_025_gear_52_594eae68"
+    },
+    {
+      "path": "/relationships/53",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[53]"
+    },
+    {
+      "path": "/relationships/53",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_CVT_mechanism_18.part_P_026_gear_56_9b055c1a"
+    },
+    {
+      "path": "/relationships/54",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[54]"
+    },
+    {
+      "path": "/relationships/54",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_CVT_mechanism_18.part_P_027_idler_gear_54fbecde"
+    },
+    {
+      "path": "/relationships/55",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[55]"
+    },
+    {
+      "path": "/relationships/55",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_second_CVT_mechanism_20.part_P_024_output_gear"
+    },
+    {
+      "path": "/relationships/56",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[56]"
+    },
+    {
+      "path": "/relationships/56",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_second_CVT_mechanism_20.part_P_025_gear_52"
+    },
+    {
+      "path": "/relationships/57",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[57]"
+    },
+    {
+      "path": "/relationships/57",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_second_CVT_mechanism_20.part_P_026_gear_56"
+    },
+    {
+      "path": "/relationships/58",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[58]"
+    },
+    {
+      "path": "/relationships/58",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_second_CVT_mechanism_20.part_P_027_idler_gear"
+    },
+    {
+      "path": "/relationships/59",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[59]"
+    },
+    {
+      "path": "/relationships/59",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_039_transfer_mechanism.part_P_001_power_rollers_21adb206"
+    },
+    {
+      "path": "/relationships/60",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[60]"
+    },
+    {
+      "path": "/relationships/60",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_039_transfer_mechanism.part_P_024_output_gear_317846cb"
+    },
+    {
+      "path": "/relationships/61",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[61]"
+    },
+    {
+      "path": "/relationships/61",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_039_transfer_mechanism.part_P_025_gear_52_4248576a"
+    },
+    {
+      "path": "/relationships/62",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[62]"
+    },
+    {
+      "path": "/relationships/62",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_039_transfer_mechanism.part_P_026_gear_56_232edfec"
+    },
+    {
+      "path": "/relationships/63",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[63]"
+    },
+    {
+      "path": "/relationships/63",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_039_transfer_mechanism.part_P_027_idler_gear_d5d3025b"
+    },
+    {
+      "path": "/relationships/64",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[64]"
+    },
+    {
+      "path": "/relationships/64",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_transfer_mechanism_48.part_P_001_power_rollers_cfd66d79"
+    },
+    {
+      "path": "/relationships/65",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[65]"
+    },
+    {
+      "path": "/relationships/65",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_transfer_mechanism_48.part_P_024_output_gear_8f5271fb"
+    },
+    {
+      "path": "/relationships/66",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[66]"
+    },
+    {
+      "path": "/relationships/66",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_transfer_mechanism_48.part_P_025_gear_52_7ed6b5d4"
+    },
+    {
+      "path": "/relationships/67",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[67]"
+    },
+    {
+      "path": "/relationships/67",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_transfer_mechanism_48.part_P_026_gear_56_b2afe934"
+    },
+    {
+      "path": "/relationships/68",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[68]"
+    },
+    {
+      "path": "/relationships/68",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_transfer_mechanism_48.part_P_027_idler_gear_878ba110"
+    },
+    {
+      "path": "/relationships/69",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[69]"
+    },
+    {
+      "path": "/relationships/69",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_028_trunnion_2e84d643"
+    },
+    {
+      "path": "/relationships/70",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[70]"
+    },
+    {
+      "path": "/relationships/70",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_030_transmission_case_b8450fce"
+    },
+    {
+      "path": "/relationships/71",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[71]"
+    },
+    {
+      "path": "/relationships/71",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_031_swing_shafts_3c686500"
+    },
+    {
+      "path": "/relationships/72",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[72]"
+    },
+    {
+      "path": "/relationships/72",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_002_CVT.part_P_028_trunnion"
+    },
+    {
+      "path": "/relationships/73",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[73]"
+    },
+    {
+      "path": "/relationships/73",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_002_CVT.part_P_030_transmission_case"
+    },
+    {
+      "path": "/relationships/74",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[74]"
+    },
+    {
+      "path": "/relationships/74",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_002_CVT.part_P_031_swing_shafts"
+    },
+    {
+      "path": "/relationships/75",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[75]"
+    },
+    {
+      "path": "/relationships/75",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_006_guide_walls_4a6b8cdc"
+    },
+    {
+      "path": "/relationships/76",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[76]"
+    },
+    {
+      "path": "/relationships/76",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_037_guide_wall_a3373a84"
+    },
+    {
+      "path": "/relationships/77",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[77]"
+    },
+    {
+      "path": "/relationships/77",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_038_contact_surface"
+    },
+    {
+      "path": "/relationships/78",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[78]"
+    },
+    {
+      "path": "/relationships/78",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_CVT_mechanism.part_P_006_guide_walls_5ad0faf7"
+    },
+    {
+      "path": "/relationships/79",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[79]"
+    },
+    {
+      "path": "/relationships/79",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_051_second_transmission_mechanisms.part_P_001_power_rollers_eafe11bd"
+    },
+    {
+      "path": "/relationships/80",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[80]"
+    },
+    {
+      "path": "/relationships/80",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_052_transmission_mechanisms.part_P_001_power_rollers_d2753bdf"
+    },
+    {
+      "path": "/relationships/81",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[81]"
+    },
+    {
+      "path": "/relationships/81",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_052_transmission_mechanisms.part_P_008_trunnions_3690d9b2"
+    },
+    {
+      "path": "/relationships/82",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[82]"
+    },
+    {
+      "path": "/relationships/82",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_053_first_transmission_mechanism.part_P_001_power_rollers_5f8c31f1"
+    },
+    {
+      "path": "/relationships/83",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[83]"
+    },
+    {
+      "path": "/relationships/83",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_053_first_transmission_mechanism.part_P_008_trunnions_3d5fb4d0"
+    },
+    {
+      "path": "/relationships/84",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[84]"
+    },
+    {
+      "path": "/relationships/84",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_054_first_transmission_mechanism_18.part_P_001_power_rollers_d2afbf97"
+    },
+    {
+      "path": "/relationships/85",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[85]"
+    },
+    {
+      "path": "/relationships/85",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_054_first_transmission_mechanism_18.part_P_008_trunnions_3835fa88"
+    },
+    {
+      "path": "/relationships/86",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[86]"
+    },
+    {
+      "path": "/relationships/86",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_055_transmission_mechanism.part_P_001_power_rollers_0843514c"
+    },
+    {
+      "path": "/relationships/87",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[87]"
+    },
+    {
+      "path": "/relationships/87",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_055_transmission_mechanism.part_P_008_trunnions_363b4250"
+    },
+    {
+      "path": "/relationships/88",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[88]"
+    },
+    {
+      "path": "/relationships/88",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_056_second_transmission_mechanism.part_P_001_power_rollers_ad40a2ca"
+    },
+    {
+      "path": "/relationships/89",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[89]"
+    },
+    {
+      "path": "/relationships/89",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_057_second_transmission_mechanism_20.part_P_001_power_rollers_a6b17d00"
+    },
+    {
+      "path": "/relationships/90",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[90]"
+    },
+    {
+      "path": "/relationships/90",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_006_guide_walls_ca22d7c4"
+    },
+    {
+      "path": "/relationships/91",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[91]"
+    },
+    {
+      "path": "/relationships/91",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_041_fixing_member"
+    },
+    {
+      "path": "/relationships/92",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[92]"
+    },
+    {
+      "path": "/relationships/92",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_042_fixing_member_15"
+    },
+    {
+      "path": "/relationships/93",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[93]"
+    },
+    {
+      "path": "/relationships/93",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_001_power_rollers_d3cc242d"
+    },
+    {
+      "path": "/relationships/94",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[94]"
+    },
+    {
+      "path": "/relationships/94",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_041_fixing_member_ef0c7c05"
+    },
+    {
+      "path": "/relationships/95",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[95]"
+    },
+    {
+      "path": "/relationships/95",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_042_fixing_member_15_c1766e2d"
+    },
+    {
+      "path": "/relationships/96",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[96]"
+    },
+    {
+      "path": "/relationships/96",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_059_second_embodiment.part_P_005_third_wire_da0db604"
+    },
+    {
+      "path": "/relationships/97",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[97]"
+    },
+    {
+      "path": "/relationships/97",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_059_second_embodiment.part_P_040_third_wire_9_8ebb5cb3"
+    },
+    {
+      "path": "/relationships/98",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[98]"
+    },
+    {
+      "path": "/relationships/98",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_059_second_embodiment.part_P_043_intermediate_walls_8425b74a"
+    },
+    {
+      "path": "/relationships/99",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[99]"
+    },
+    {
+      "path": "/relationships/99",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_059_second_embodiment.part_P_044_intermediate_walls_23_b054dbb2"
+    },
+    {
+      "path": "/relationships/100",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[100]"
+    },
+    {
+      "path": "/relationships/100",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_040_third_wire_9_08753e80"
+    },
+    {
+      "path": "/relationships/101",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[101]"
+    },
+    {
+      "path": "/relationships/101",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_037_guide_wall_7cdcdc24"
+    },
+    {
+      "path": "/relationships/102",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[102]"
+    },
+    {
+      "path": "/relationships/102",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_043_intermediate_walls"
+    },
+    {
+      "path": "/relationships/103",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[103]"
+    },
+    {
+      "path": "/relationships/103",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_044_intermediate_walls_23"
+    },
+    {
+      "path": "/relationships/104",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[104]"
+    },
+    {
+      "path": "/relationships/104",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_005_third_wire_62049f64"
+    },
+    {
+      "path": "/relationships/105",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[105]"
+    },
+    {
+      "path": "/relationships/105",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_040_third_wire_9_b782f79f"
+    },
+    {
+      "path": "/relationships/106",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[106]"
+    },
+    {
+      "path": "/relationships/106",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_043_intermediate_walls_52eeb986"
+    },
+    {
+      "path": "/relationships/107",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[107]"
+    },
+    {
+      "path": "/relationships/107",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_044_intermediate_walls_23_ba5285f1"
+    },
+    {
+      "path": "/relationships/108",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[108]"
+    },
+    {
+      "path": "/relationships/108",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_059_second_embodiment.part_P_037_guide_wall_b29e20c2"
+    },
+    {
+      "path": "/relationships/109",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[109]"
+    },
+    {
+      "path": "/relationships/109",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_059_second_embodiment.part_P_045_guide_wall_21_fcdb1c48"
+    },
+    {
+      "path": "/relationships/110",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[110]"
+    },
+    {
+      "path": "/relationships/110",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_059_second_embodiment.part_P_001_power_rollers_a45072aa"
+    },
+    {
+      "path": "/relationships/111",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[111]"
+    },
+    {
+      "path": "/relationships/111",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_045_guide_wall_21_1c7ab0d2"
+    },
+    {
+      "path": "/relationships/112",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[112]"
+    },
+    {
+      "path": "/relationships/112",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_002_CVT.part_P_005_third_wire_9e2686f3"
+    },
+    {
+      "path": "/relationships/113",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[113]"
+    },
+    {
+      "path": "/relationships/113",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_002_CVT.part_P_040_third_wire_9"
+    },
+    {
+      "path": "/relationships/114",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[114]"
+    },
+    {
+      "path": "/relationships/114",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_002_CVT.part_P_037_guide_wall_6dc13b6b"
+    },
+    {
+      "path": "/relationships/115",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[115]"
+    },
+    {
+      "path": "/relationships/115",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_002_CVT.part_P_045_guide_wall_21"
+    },
+    {
+      "path": "/relationships/116",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[116]"
+    },
+    {
+      "path": "/relationships/116",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_third_embodiment.part_P_006_guide_walls_59724d4e"
+    },
+    {
+      "path": "/relationships/117",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[117]"
+    },
+    {
+      "path": "/relationships/117",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_third_embodiment.part_P_043_intermediate_walls_fca32d87"
+    },
+    {
+      "path": "/relationships/118",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[118]"
+    },
+    {
+      "path": "/relationships/118",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_third_embodiment.part_P_012_output_discs_9681523b"
+    },
+    {
+      "path": "/relationships/119",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[119]"
+    },
+    {
+      "path": "/relationships/119",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_third_embodiment.part_P_044_intermediate_walls_23_00489ff6"
+    },
+    {
+      "path": "/relationships/120",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[120]"
+    },
+    {
+      "path": "/relationships/120",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_trunnions.part_P_002_first_wire_ae9a2745"
+    },
+    {
+      "path": "/relationships/121",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[121]"
+    },
+    {
+      "path": "/relationships/121",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_trunnions.part_P_047_first_wire_7_db625620"
+    },
+    {
+      "path": "/relationships/122",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[122]"
+    },
+    {
+      "path": "/relationships/122",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_trunnions.part_P_004_second_wire_2f5e9f8f"
+    },
+    {
+      "path": "/relationships/123",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[123]"
+    },
+    {
+      "path": "/relationships/123",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_trunnions.part_P_048_second_wire_8_b7fd7056"
+    },
+    {
+      "path": "/relationships/124",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[124]"
+    },
+    {
+      "path": "/relationships/124",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_trunnions.part_P_005_third_wire_d7e570ca"
+    },
+    {
+      "path": "/relationships/125",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[125]"
+    },
+    {
+      "path": "/relationships/125",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_trunnions.part_P_040_third_wire_9_3bf7b473"
+    },
+    {
+      "path": "/relationships/126",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[126]"
+    },
+    {
+      "path": "/relationships/126",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_trunnions.part_P_049_Third_wire_9_34535f5e"
+    },
+    {
+      "path": "/relationships/127",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[127]"
+    },
+    {
+      "path": "/relationships/127",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_trunnions.part_P_006_guide_walls_1e5cd37f"
+    },
+    {
+      "path": "/relationships/128",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[128]"
+    },
+    {
+      "path": "/relationships/128",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_trunnions.part_P_043_intermediate_walls_9624071f"
+    },
+    {
+      "path": "/relationships/129",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[129]"
+    },
+    {
+      "path": "/relationships/129",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_trunnions.part_P_012_output_discs_67669ba1"
+    },
+    {
+      "path": "/relationships/130",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[130]"
+    },
+    {
+      "path": "/relationships/130",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_third_embodiment.part_P_002_first_wire_8d4cd808"
+    },
+    {
+      "path": "/relationships/131",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[131]"
+    },
+    {
+      "path": "/relationships/131",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_third_embodiment.part_P_047_first_wire_7_db263e93"
+    },
+    {
+      "path": "/relationships/132",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[132]"
+    },
+    {
+      "path": "/relationships/132",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_third_embodiment.part_P_004_second_wire_12644bd3"
+    },
+    {
+      "path": "/relationships/133",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[133]"
+    },
+    {
+      "path": "/relationships/133",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_third_embodiment.part_P_048_second_wire_8_9bafc976"
+    },
+    {
+      "path": "/relationships/134",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[134]"
+    },
+    {
+      "path": "/relationships/134",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_third_embodiment.part_P_005_third_wire_8a8bcbe8"
+    },
+    {
+      "path": "/relationships/135",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[135]"
+    },
+    {
+      "path": "/relationships/135",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_third_embodiment.part_P_040_third_wire_9_474a3b92"
+    },
+    {
+      "path": "/relationships/136",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[136]"
+    },
+    {
+      "path": "/relationships/136",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_third_embodiment.part_P_049_Third_wire_9_4eec9ad6"
+    },
+    {
+      "path": "/relationships/137",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[137]"
+    },
+    {
+      "path": "/relationships/137",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_061_main_assembly.part_P_002_first_wire_24a0774a"
+    },
+    {
+      "path": "/relationships/138",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[138]"
+    },
+    {
+      "path": "/relationships/138",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_061_main_assembly.part_P_005_third_wire_4fc197f5"
+    },
+    {
+      "path": "/relationships/139",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[139]"
+    },
+    {
+      "path": "/relationships/139",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_061_main_assembly.part_P_040_third_wire_9_b45ee3f3"
+    },
+    {
+      "path": "/relationships/140",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[140]"
+    },
+    {
+      "path": "/relationships/140",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_061_main_assembly.part_P_049_Third_wire_9_347386c1"
+    },
+    {
+      "path": "/relationships/141",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[141]"
+    },
+    {
+      "path": "/relationships/141",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_061_main_assembly.part_P_006_guide_walls_2117c166"
+    },
+    {
+      "path": "/relationships/142",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[142]"
+    },
+    {
+      "path": "/relationships/142",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_061_main_assembly.part_P_043_intermediate_walls_a74537ef"
+    },
+    {
+      "path": "/relationships/143",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[143]"
+    },
+    {
+      "path": "/relationships/143",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_061_main_assembly.part_P_012_output_discs_2c30a289"
+    },
+    {
+      "path": "/relationships/144",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[144]"
+    },
+    {
+      "path": "/relationships/144",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_002_first_wire_422a4c3a"
+    },
+    {
+      "path": "/relationships/145",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[145]"
+    },
+    {
+      "path": "/relationships/145",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_047_first_wire_7"
+    },
+    {
+      "path": "/relationships/146",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[146]"
+    },
+    {
+      "path": "/relationships/146",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_004_second_wire_a0291c37"
+    },
+    {
+      "path": "/relationships/147",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[147]"
+    },
+    {
+      "path": "/relationships/147",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_048_second_wire_8"
+    },
+    {
+      "path": "/relationships/148",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[148]"
+    },
+    {
+      "path": "/relationships/148",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_049_Third_wire_9"
+    },
+    {
+      "path": "/relationships/149",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[149]"
+    },
+    {
+      "path": "/relationships/149",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_002_first_wire_2167a84c"
+    },
+    {
+      "path": "/relationships/150",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[150]"
+    },
+    {
+      "path": "/relationships/150",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_047_first_wire_7_812ac1c9"
+    },
+    {
+      "path": "/relationships/151",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[151]"
+    },
+    {
+      "path": "/relationships/151",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_049_Third_wire_9_be207bec"
+    },
+    {
+      "path": "/relationships/152",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[152]"
+    },
+    {
+      "path": "/relationships/152",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_012_output_discs_1fba0cf2"
+    },
+    {
+      "path": "/relationships/153",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[153]"
+    },
+    {
+      "path": "/relationships/153",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_062_fourth_embodiment.part_P_005_third_wire_e6e6f365"
+    },
+    {
+      "path": "/relationships/154",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[154]"
+    },
+    {
+      "path": "/relationships/154",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_062_fourth_embodiment.part_P_040_third_wire_9_7e7b6595"
+    },
+    {
+      "path": "/relationships/155",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[155]"
+    },
+    {
+      "path": "/relationships/155",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_062_fourth_embodiment.part_P_006_guide_walls_fd78296f"
+    },
+    {
+      "path": "/relationships/156",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[156]"
+    },
+    {
+      "path": "/relationships/156",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_062_fourth_embodiment.part_P_050_oil_pan_e4ead28e"
+    },
+    {
+      "path": "/relationships/157",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[157]"
+    },
+    {
+      "path": "/relationships/157",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_050_oil_pan"
+    },
+    {
+      "path": "/relationships/158",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[158]"
+    },
+    {
+      "path": "/relationships/158",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_008_trunnions_74552a25"
+    },
+    {
+      "path": "/relationships/159",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[159]"
+    },
+    {
+      "path": "/relationships/159",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_053_guide_rollers"
+    },
+    {
+      "path": "/relationships/160",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[160]"
+    },
+    {
+      "path": "/relationships/160",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_toroidal_CVT_10.part_P_054_radial_bearings"
+    },
+    {
+      "path": "/relationships/161",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[161]"
+    },
+    {
+      "path": "/relationships/161",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_064_fifth_embodiment.part_P_006_guide_walls_07f3b590"
+    },
+    {
+      "path": "/relationships/162",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[162]"
+    },
+    {
+      "path": "/relationships/162",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_064_fifth_embodiment.part_P_053_guide_rollers_dea9f897"
+    },
+    {
+      "path": "/relationships/163",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[163]"
+    },
+    {
+      "path": "/relationships/163",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_064_fifth_embodiment.part_P_055_Guide_walls"
+    },
+    {
+      "path": "/relationships/164",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[164]"
+    },
+    {
+      "path": "/relationships/164",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_064_fifth_embodiment.part_P_043_intermediate_walls_aad356b3"
+    },
+    {
+      "path": "/relationships/165",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[165]"
+    },
+    {
+      "path": "/relationships/165",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_069_power_roller_supporting_members.part_P_006_guide_walls_d61029d8"
+    },
+    {
+      "path": "/relationships/166",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[166]"
+    },
+    {
+      "path": "/relationships/166",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_002_first_wire"
+    },
+    {
+      "path": "/relationships/167",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[167]"
+    },
+    {
+      "path": "/relationships/167",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_004_second_wire"
+    },
+    {
+      "path": "/relationships/168",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[168]"
+    },
+    {
+      "path": "/relationships/168",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_005_third_wire"
+    },
+    {
+      "path": "/relationships/169",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[169]"
+    },
+    {
+      "path": "/relationships/169",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_009_first_and_second_input_discs_c8a3aeff"
+    },
+    {
+      "path": "/relationships/170",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[170]"
+    },
+    {
+      "path": "/relationships/170",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_010_input_discs_908d51d9"
+    },
+    {
+      "path": "/relationships/171",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[171]"
+    },
+    {
+      "path": "/relationships/171",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_013_pressure_means_96f6e5a9"
+    },
+    {
+      "path": "/relationships/172",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[172]"
+    },
+    {
+      "path": "/relationships/172",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_014_first_and_second_power_rollers_1d0babb0"
+    },
+    {
+      "path": "/relationships/173",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[173]"
+    },
+    {
+      "path": "/relationships/173",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_001_power_rollers_83ce94ae"
+    },
+    {
+      "path": "/relationships/174",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[174]"
+    },
+    {
+      "path": "/relationships/174",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_002_first_wire_f8d5de66"
+    },
+    {
+      "path": "/relationships/175",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[175]"
+    },
+    {
+      "path": "/relationships/175",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_004_second_wire_4e86aa5d"
+    },
+    {
+      "path": "/relationships/176",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[176]"
+    },
+    {
+      "path": "/relationships/176",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_005_third_wire_c9a9c548"
+    },
+    {
+      "path": "/relationships/177",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[177]"
+    },
+    {
+      "path": "/relationships/177",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_006_guide_walls_e4b9c3e6"
+    },
+    {
+      "path": "/relationships/178",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[178]"
+    },
+    {
+      "path": "/relationships/178",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_002_CVT.part_P_014_first_and_second_power_rollers_72a0afad"
+    },
+    {
+      "path": "/relationships/179",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[179]"
+    },
+    {
+      "path": "/relationships/179",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_002_CVT.part_P_006_guide_walls_47674e5c"
+    },
+    {
+      "path": "/relationships/180",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[180]"
+    },
+    {
+      "path": "/relationships/180",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_toroidal_CVT.part_P_060_lubrication_mechanism"
+    },
+    {
+      "path": "/relationships/181",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[181]"
+    },
+    {
+      "path": "/relationships/181",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_061_first_pair_of_power_rollers"
+    },
+    {
+      "path": "/relationships/182",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[182]"
+    },
+    {
+      "path": "/relationships/182",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_062_second_pair_of_power_rollers"
+    },
+    {
+      "path": "/relationships/183",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[183]"
+    },
+    {
+      "path": "/relationships/183",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_063_wire"
+    },
+    {
+      "path": "/relationships/184",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[184]"
+    },
+    {
+      "path": "/relationships/184",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_toroidal_continuously_variable_transmission.part_P_037_guide_wall"
+    },
+    {
+      "path": "/relationships/185",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[185]"
+    },
+    {
+      "path": "/relationships/185",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_012_output_discs_4c0dd182"
+    },
+    {
+      "path": "/relationships/186",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[186]"
+    },
+    {
+      "path": "/relationships/186",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_061_first_pair_of_power_rollers_4d3894ab"
+    },
+    {
+      "path": "/relationships/187",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[187]"
+    },
+    {
+      "path": "/relationships/187",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_062_second_pair_of_power_rollers_ce8c1fba"
+    },
+    {
+      "path": "/relationships/188",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[188]"
+    },
+    {
+      "path": "/relationships/188",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_003_power_roller_supporting_members_feb0a2a3"
+    },
+    {
+      "path": "/relationships/189",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[189]"
+    },
+    {
+      "path": "/relationships/189",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_063_wire_134fbf6d"
+    },
+    {
+      "path": "/relationships/190",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[190]"
+    },
+    {
+      "path": "/relationships/190",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_070_toroidal_continuously_variable_transmission.part_P_037_guide_wall_d06d13c3"
+    },
+    {
+      "path": "/relationships/191",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[191]"
+    },
+    {
+      "path": "/relationships/191",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_002_CVT.part_P_061_first_pair_of_power_rollers_7001efee"
+    },
+    {
+      "path": "/relationships/192",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[192]"
+    },
+    {
+      "path": "/relationships/192",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_002_CVT.part_P_003_power_roller_supporting_members_7a1b841d"
+    },
+    {
+      "path": "/relationships/193",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[193]"
+    },
+    {
+      "path": "/relationships/194",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[194]"
+    },
+    {
+      "path": "/relationships/195",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[195]"
+    },
+    {
+      "path": "/relationships/196",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[196]"
+    },
+    {
+      "path": "/relationships/197",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[197]"
+    },
+    {
+      "path": "/relationships/198",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[198]"
+    },
+    {
+      "path": "/relationships/199",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[199]"
+    },
+    {
+      "path": "/relationships/200",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[200]"
+    },
+    {
+      "path": "/relationships/201",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[201]"
+    },
+    {
+      "path": "/relationships/202",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[202]"
+    },
+    {
+      "path": "/relationships/203",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[203]"
+    },
+    {
+      "path": "/relationships/204",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[204]"
+    },
+    {
+      "path": "/relationships/205",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[205]"
+    },
+    {
+      "path": "/relationships/206",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[206]"
+    },
+    {
+      "path": "/relationships/207",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[207]"
+    },
+    {
+      "path": "/relationships/208",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[208]"
+    },
+    {
+      "path": "/relationships/209",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[209]"
+    },
+    {
+      "path": "/relationships/210",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[210]"
+    },
+    {
+      "path": "/relationships/211",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[211]"
+    },
+    {
+      "path": "/relationships/212",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[212]"
+    },
+    {
+      "path": "/relationships/213",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[213]"
+    },
+    {
+      "path": "/relationships/214",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[214]"
+    },
+    {
+      "path": "/relationships/215",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[215]"
+    },
+    {
+      "path": "/relationships/216",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[216]"
+    },
+    {
+      "path": "/relationships/217",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[217]"
+    },
+    {
+      "path": "/relationships/218",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[218]"
+    },
+    {
+      "path": "/relationships/219",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[219]"
+    },
+    {
+      "path": "/relationships/220",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[220]"
+    },
+    {
+      "path": "/relationships/221",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[221]"
+    },
+    {
+      "path": "/relationships/222",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[222]"
+    },
+    {
+      "path": "/relationships/223",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[223]"
+    },
+    {
+      "path": "/relationships/224",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[224]"
+    },
+    {
+      "path": "/relationships/225",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[225]"
+    },
+    {
+      "path": "/relationships/226",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[226]"
+    },
+    {
+      "path": "/relationships/227",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[227]"
+    },
+    {
+      "path": "/relationships/228",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[228]"
+    },
+    {
+      "path": "/relationships/229",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[229]"
+    },
+    {
+      "path": "/relationships/230",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[230]"
+    },
+    {
+      "path": "/relationships/231",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[231]"
+    },
+    {
+      "path": "/relationships/232",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[232]"
+    },
+    {
+      "path": "/relationships/233",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[233]"
+    },
+    {
+      "path": "/relationships/234",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[234]"
+    },
+    {
+      "path": "/relationships/235",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[235]"
+    },
+    {
+      "path": "/relationships/236",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[236]"
+    },
+    {
+      "path": "/relationships/237",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[237]"
+    },
+    {
+      "path": "/relationships/238",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[238]"
+    },
+    {
+      "path": "/relationships/239",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[239]"
+    },
+    {
+      "path": "/relationships/240",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[240]"
+    },
+    {
+      "path": "/relationships/241",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[241]"
+    },
+    {
+      "path": "/relationships/242",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[242]"
+    },
+    {
+      "path": "/relationships/243",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[243]"
+    },
+    {
+      "path": "/relationships/244",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[244]"
+    },
+    {
+      "path": "/relationships/245",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[245]"
+    },
+    {
+      "path": "/relationships/246",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[246]"
+    },
+    {
+      "path": "/relationships/247",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[247]"
+    },
+    {
+      "path": "/relationships/248",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[248]"
+    },
+    {
+      "path": "/relationships/249",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[249]"
+    },
+    {
+      "path": "/relationships/250",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[250]"
+    },
+    {
+      "path": "/relationships/251",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[251]"
+    },
+    {
+      "path": "/relationships/252",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[252]"
+    },
+    {
+      "path": "/relationships/253",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[253]"
+    },
+    {
+      "path": "/relationships/254",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[254]"
+    },
+    {
+      "path": "/relationships/255",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[255]"
+    },
+    {
+      "path": "/relationships/256",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[256]"
+    },
+    {
+      "path": "/relationships/257",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[257]"
+    },
+    {
+      "path": "/relationships/258",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[258]"
+    },
+    {
+      "path": "/relationships/259",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[259]"
+    },
+    {
+      "path": "/relationships/260",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[260]"
+    },
+    {
+      "path": "/relationships/261",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[261]"
+    },
+    {
+      "path": "/relationships/262",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[262]"
+    },
+    {
+      "path": "/relationships/263",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[263]"
+    },
+    {
+      "path": "/relationships/264",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[264]"
+    },
+    {
+      "path": "/relationships/265",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[265]"
+    },
+    {
+      "path": "/relationships/266",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[266]"
+    },
+    {
+      "path": "/relationships/267",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[267]"
+    },
+    {
+      "path": "/relationships/268",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[268]"
+    },
+    {
+      "path": "/relationships/269",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[269]"
+    },
+    {
+      "path": "/relationships/270",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[270]"
+    },
+    {
+      "path": "/relationships/271",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[271]"
+    },
+    {
+      "path": "/relationships/272",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[272]"
+    },
+    {
+      "path": "/relationships/273",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[273]"
+    },
+    {
+      "path": "/relationships/274",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[274]"
+    },
+    {
+      "path": "/relationships/275",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[275]"
+    },
+    {
+      "path": "/relationships/276",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[276]"
+    },
+    {
+      "path": "/relationships/277",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[277]"
+    },
+    {
+      "path": "/relationships/278",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[278]"
+    },
+    {
+      "path": "/relationships/279",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[279]"
+    },
+    {
+      "path": "/relationships/280",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[280]"
+    },
+    {
+      "path": "/relationships/281",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[281]"
+    },
+    {
+      "path": "/relationships/282",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[282]"
+    },
+    {
+      "path": "/relationships/283",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[283]"
+    },
+    {
+      "path": "/relationships/284",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[284]"
+    }
+  ],
+  "unresolved": [
+    {
+      "path": "/values/0",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/1",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/2",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/3",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/4",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/5",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/6",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/7",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/8",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/9",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/10",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/11",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/12",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/13",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/14",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/15",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/16",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/17",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/18",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/19",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/20",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/21",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/2",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/3",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/4",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/5",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/6",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/17",
+      "reason": "Relationship type 'parts' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/193",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/194",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/195",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/196",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/197",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/198",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/199",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/200",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/201",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/202",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/203",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/204",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/205",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/206",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/207",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/208",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/209",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/210",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/211",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/212",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/213",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/214",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/215",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/216",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/217",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/218",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/219",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/220",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/221",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/222",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/223",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/224",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/225",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/226",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/227",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/228",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/229",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/230",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/231",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/232",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/233",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/234",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/235",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/236",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/237",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/238",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/239",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/240",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/241",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/242",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/243",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/244",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/245",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/246",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/247",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/248",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/249",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/250",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/251",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/252",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/253",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/254",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/255",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/256",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/257",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/258",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/259",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/260",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/261",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/262",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/263",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/264",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/265",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/266",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/267",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/268",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/269",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/270",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/271",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/272",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/273",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/274",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/275",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/276",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/277",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/278",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/279",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/280",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/281",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/282",
+      "reason": "Relationship type 'port_mate' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/283",
+      "reason": "Relationship type 'source' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/284",
+      "reason": "Relationship type 'source' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    }
+  ],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

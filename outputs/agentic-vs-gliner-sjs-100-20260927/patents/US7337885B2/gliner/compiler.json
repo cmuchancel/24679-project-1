@@ -1,0 +1,3771 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": false,
+  "native_element_counts": {
+    "ActionDefinition": 17,
+    "ActionUsage": 34,
+    "AttributeUsage": 13,
+    "Documentation": 291,
+    "FeatureMembership": 1426,
+    "FeatureTyping": 310,
+    "FeatureValue": 1145,
+    "ItemDefinition": 9,
+    "ItemUsage": 5,
+    "LiteralInteger": 178,
+    "LiteralString": 1145,
+    "MetadataDefinition": 1,
+    "MetadataUsage": 229,
+    "MultiplicityRange": 178,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 967,
+    "Package": 1,
+    "PartDefinition": 54,
+    "PartUsage": 233,
+    "PortUsage": 5,
+    "Redefinition": 1145,
+    "ReferenceUsage": 1145,
+    "Subclassification": 8
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder"
+    },
+    {
+      "path": "/subsystems/0/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_001_inner_rod"
+    },
+    {
+      "path": "/subsystems/0/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_002_outer_rod"
+    },
+    {
+      "path": "/subsystems/0/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_003_first_piston"
+    },
+    {
+      "path": "/subsystems/0/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_004_piston"
+    },
+    {
+      "path": "/subsystems/0/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_005_second_piston"
+    },
+    {
+      "path": "/subsystems/0/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_007_cylinder_housing"
+    },
+    {
+      "path": "/subsystems/0/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_008_rod"
+    },
+    {
+      "path": "/subsystems/0/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_009_actuating_piston"
+    },
+    {
+      "path": "/subsystems/0/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_010_actuation_piston"
+    },
+    {
+      "path": "/subsystems/0/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_006_tool"
+    },
+    {
+      "path": "/subsystems/0/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_012_head_cover"
+    },
+    {
+      "path": "/subsystems/0/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_016_first_piston_seal"
+    },
+    {
+      "path": "/subsystems/0/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_017_second_piston_seal"
+    },
+    {
+      "path": "/subsystems/0/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_020_fluid_cylinder"
+    },
+    {
+      "path": "/subsystems/0/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_021_housing"
+    },
+    {
+      "path": "/subsystems/0/parts/15",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_023_channel"
+    },
+    {
+      "path": "/subsystems/0/parts/16",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_026_valve"
+    },
+    {
+      "path": "/subsystems/0/parts/17",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_027_interior_region"
+    },
+    {
+      "path": "/subsystems/0/parts/18",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_031_flange"
+    },
+    {
+      "path": "/subsystems/0/parts/19",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_033_adjustable_flow_control_valve"
+    },
+    {
+      "path": "/subsystems/0/parts/20",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_035_post"
+    },
+    {
+      "path": "/subsystems/0/parts/21",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_037_switch_block"
+    },
+    {
+      "path": "/subsystems/0/parts/22",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_040_tool_52"
+    },
+    {
+      "path": "/subsystems/0/parts/23",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_042_vacuum_tool"
+    },
+    {
+      "path": "/subsystems/0/parts/24",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_045_cylinder_12"
+    },
+    {
+      "path": "/subsystems/0/parts/25",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_046_head_cover_20"
+    },
+    {
+      "path": "/subsystems/0/parts/26",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_047_cavity_66"
+    },
+    {
+      "path": "/subsystems/0/parts/27",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_049_cushion_seal"
+    },
+    {
+      "path": "/subsystems/0/parts/28",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_050_inner_piston_seal"
+    },
+    {
+      "path": "/subsystems/0/parts/29",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_058_rod_cavity"
+    },
+    {
+      "path": "/subsystems/0/parts/30",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_064_exhaust"
+    },
+    {
+      "path": "/subsystems/0/parts/31",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_071_front_portion"
+    },
+    {
+      "path": "/subsystems/0/parts/32",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_072_inner_piston_70"
+    },
+    {
+      "path": "/subsystems/0/parts/33",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_073_cylinder_cover"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.port_PT_001_extend_air_pressure_port"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.port_PT_002_extend_pressure_port"
+    },
+    {
+      "path": "/subsystems/0/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.port_PT_003_air_source"
+    },
+    {
+      "path": "/subsystems/0/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.port_PT_004_port_64"
+    },
+    {
+      "path": "/subsystems/0/ports/4",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.port_PT_005_port_60"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_002_fluid_cylinders"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_003_pneumatic_cylinders"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_004_Pneumatic_cylinders"
+    },
+    {
+      "path": "/subsystems/3/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_004_Pneumatic_cylinders.part_P_001_inner_rod_2da6f069"
+    },
+    {
+      "path": "/subsystems/3/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_004_Pneumatic_cylinders.part_P_002_outer_rod_97ffd0e3"
+    },
+    {
+      "path": "/subsystems/3/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_004_Pneumatic_cylinders.part_P_004_piston_6ab4451b"
+    },
+    {
+      "path": "/subsystems/3/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_004_Pneumatic_cylinders.part_P_007_cylinder_housing_dd59c3df"
+    },
+    {
+      "path": "/subsystems/3/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_004_Pneumatic_cylinders.part_P_008_rod_4521f271"
+    },
+    {
+      "path": "/subsystems/3/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_004_Pneumatic_cylinders.part_P_009_actuating_piston_921eba85"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_005_actuating_piston"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_006_actuation_piston"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_007_rod_cover"
+    },
+    {
+      "path": "/subsystems/6/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_rod_cover.part_P_060_rod_cover_cavity"
+    },
+    {
+      "path": "/subsystems/6/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_rod_cover.part_P_061_outer_piston_rod"
+    },
+    {
+      "path": "/subsystems/6/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_rod_cover.part_P_062_inner_piston_rod"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_008_head_cover"
+    },
+    {
+      "path": "/subsystems/7/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_008_head_cover.part_P_048_inner_piston_cushion_ring"
+    },
+    {
+      "path": "/subsystems/7/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_008_head_cover.part_P_018_inner_piston"
+    },
+    {
+      "path": "/subsystems/7/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_008_head_cover.part_P_004_piston_dd15b395"
+    },
+    {
+      "path": "/subsystems/7/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_008_head_cover.part_P_034_flow_control_valve"
+    },
+    {
+      "path": "/subsystems/7/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_008_head_cover.part_P_019_outer_piston"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_009_rod_assembly"
+    },
+    {
+      "path": "/subsystems/8/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_009_rod_assembly.part_P_002_outer_rod_adb09426"
+    },
+    {
+      "path": "/subsystems/8/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_009_rod_assembly.part_P_001_inner_rod_c1b855b5"
+    },
+    {
+      "path": "/subsystems/9",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_010_outer_rod"
+    },
+    {
+      "path": "/subsystems/10",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_011_inner_rod"
+    },
+    {
+      "path": "/subsystems/11",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_012_cylinder"
+    },
+    {
+      "path": "/subsystems/11/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_013_push_back_pins"
+    },
+    {
+      "path": "/subsystems/11/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_011_rod_cover"
+    },
+    {
+      "path": "/subsystems/11/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_014_part"
+    },
+    {
+      "path": "/subsystems/11/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_019_outer_piston_d6ab0582"
+    },
+    {
+      "path": "/subsystems/11/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_051_piston_rod_cavity"
+    },
+    {
+      "path": "/subsystems/11/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_052_first_valve"
+    },
+    {
+      "path": "/subsystems/11/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_053_second_valve"
+    },
+    {
+      "path": "/subsystems/11/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_061_outer_piston_rod_f721fd51"
+    },
+    {
+      "path": "/subsystems/11/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_062_inner_piston_rod_bcc32f55"
+    },
+    {
+      "path": "/subsystems/11/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_018_inner_piston_a8867fc1"
+    },
+    {
+      "path": "/subsystems/11/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_008_rod_73e9b410"
+    },
+    {
+      "path": "/subsystems/11/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_063_poppet_shaft"
+    },
+    {
+      "path": "/subsystems/11/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_065_poppet_seals"
+    },
+    {
+      "path": "/subsystems/11/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_066_poppets"
+    },
+    {
+      "path": "/subsystems/11/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_067_poppet_cavities"
+    },
+    {
+      "path": "/subsystems/11/parts/15",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_001_inner_rod_e937eb77"
+    },
+    {
+      "path": "/subsystems/11/parts/16",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_068_valves"
+    },
+    {
+      "path": "/subsystems/11/parts/17",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_069_rod_cover_18"
+    },
+    {
+      "path": "/subsystems/11/parts/18",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_025_cavity"
+    },
+    {
+      "path": "/subsystems/11/parts/19",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_074_poppet"
+    },
+    {
+      "path": "/subsystems/11/parts/20",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_003_first_piston_90cbf977"
+    },
+    {
+      "path": "/subsystems/11/parts/21",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_005_second_piston_1ee3f094"
+    },
+    {
+      "path": "/subsystems/11/parts/22",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_075_piston_rod"
+    },
+    {
+      "path": "/subsystems/12",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_013_cylinder_housing"
+    },
+    {
+      "path": "/subsystems/12/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_cylinder_housing.part_P_011_rod_cover_59724d4e"
+    },
+    {
+      "path": "/subsystems/13",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_014_second_piston"
+    },
+    {
+      "path": "/subsystems/14",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_015_piston"
+    },
+    {
+      "path": "/subsystems/15",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_016_first_piston"
+    },
+    {
+      "path": "/subsystems/16",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_017_fluid_cylinder"
+    },
+    {
+      "path": "/subsystems/16/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_fluid_cylinder.part_P_022_first_rod"
+    },
+    {
+      "path": "/subsystems/16/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_fluid_cylinder.part_P_024_second_rod"
+    },
+    {
+      "path": "/subsystems/16/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_fluid_cylinder.part_P_003_first_piston_2ade33ee"
+    },
+    {
+      "path": "/subsystems/16/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_fluid_cylinder.part_P_005_second_piston_c2fcaad4"
+    },
+    {
+      "path": "/subsystems/16/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_fluid_cylinder.part_P_028_cover"
+    },
+    {
+      "path": "/subsystems/16/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_fluid_cylinder.part_P_025_cavity_758e24ef"
+    },
+    {
+      "path": "/subsystems/16/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_fluid_cylinder.part_P_075_piston_rod_be00de9c"
+    },
+    {
+      "path": "/subsystems/16/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_fluid_cylinder.part_P_011_rod_cover_398049a1"
+    },
+    {
+      "path": "/subsystems/16/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_fluid_cylinder.part_P_074_poppet_92be841a"
+    },
+    {
+      "path": "/subsystems/17",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_018_housing"
+    },
+    {
+      "path": "/subsystems/18",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_019_first_rod"
+    },
+    {
+      "path": "/subsystems/19",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_020_channel"
+    },
+    {
+      "path": "/subsystems/20",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_021_second_rod"
+    },
+    {
+      "path": "/subsystems/21",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_022_assembly_apparatus"
+    },
+    {
+      "path": "/subsystems/21/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_assembly_apparatus.part_P_015_cylinder"
+    },
+    {
+      "path": "/subsystems/21/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_assembly_apparatus.part_P_019_outer_piston_19a1b9a9"
+    },
+    {
+      "path": "/subsystems/21/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_assembly_apparatus.part_P_029_telescoping_cylinder"
+    },
+    {
+      "path": "/subsystems/21/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_assembly_apparatus.part_P_030_support_structure"
+    },
+    {
+      "path": "/subsystems/21/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_assembly_apparatus.part_P_011_rod_cover_f9f156b4"
+    },
+    {
+      "path": "/subsystems/21/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_assembly_apparatus.part_P_032_threaded_rods"
+    },
+    {
+      "path": "/subsystems/22",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_023_telescoping_cylinder"
+    },
+    {
+      "path": "/subsystems/22/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_023_telescoping_cylinder.part_P_003_first_piston_252673bc"
+    },
+    {
+      "path": "/subsystems/22/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_023_telescoping_cylinder.part_P_005_second_piston_bb0da66d"
+    },
+    {
+      "path": "/subsystems/22/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_023_telescoping_cylinder.part_P_002_outer_rod_33438cb2"
+    },
+    {
+      "path": "/subsystems/22/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_023_telescoping_cylinder.part_P_001_inner_rod_8fa6f8d9"
+    },
+    {
+      "path": "/subsystems/22/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_023_telescoping_cylinder.part_P_019_outer_piston_3b699e60"
+    },
+    {
+      "path": "/subsystems/22/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_023_telescoping_cylinder.part_P_036_rod_34"
+    },
+    {
+      "path": "/subsystems/22/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_023_telescoping_cylinder.part_P_038_outer_rod_34"
+    },
+    {
+      "path": "/subsystems/22/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_023_telescoping_cylinder.part_P_039_inner_rod_46"
+    },
+    {
+      "path": "/subsystems/22/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_023_telescoping_cylinder.part_P_041_magnetic_device"
+    },
+    {
+      "path": "/subsystems/22/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_023_telescoping_cylinder.part_P_043_flexible_cup"
+    },
+    {
+      "path": "/subsystems/22/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_023_telescoping_cylinder.part_P_044_flexible_cup_60"
+    },
+    {
+      "path": "/subsystems/23",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_024_assembly_apparatus_10"
+    },
+    {
+      "path": "/subsystems/23/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_024_assembly_apparatus_10.part_P_015_cylinder_1122cfa6"
+    },
+    {
+      "path": "/subsystems/23/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_024_assembly_apparatus_10.part_P_019_outer_piston_1d937f17"
+    },
+    {
+      "path": "/subsystems/23/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_024_assembly_apparatus_10.part_P_029_telescoping_cylinder_1c2a9a96"
+    },
+    {
+      "path": "/subsystems/23/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_024_assembly_apparatus_10.part_P_030_support_structure_2b753bb4"
+    },
+    {
+      "path": "/subsystems/23/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_024_assembly_apparatus_10.part_P_011_rod_cover_bb89b9a4"
+    },
+    {
+      "path": "/subsystems/23/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_024_assembly_apparatus_10.part_P_032_threaded_rods_9d0f9d2d"
+    },
+    {
+      "path": "/subsystems/24",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_025_support_structure"
+    },
+    {
+      "path": "/subsystems/25",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_026_switch_block"
+    },
+    {
+      "path": "/subsystems/26",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_027_work_table"
+    },
+    {
+      "path": "/subsystems/26/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_work_table.part_P_036_rod_34_bb407521"
+    },
+    {
+      "path": "/subsystems/26/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_work_table.part_P_002_outer_rod_7e6bdd0f"
+    },
+    {
+      "path": "/subsystems/26/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_work_table.part_P_038_outer_rod_34_b9e8b407"
+    },
+    {
+      "path": "/subsystems/26/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_work_table.part_P_001_inner_rod_a7eb681a"
+    },
+    {
+      "path": "/subsystems/26/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_work_table.part_P_039_inner_rod_46_040c423b"
+    },
+    {
+      "path": "/subsystems/27",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_028_work_table_38"
+    },
+    {
+      "path": "/subsystems/27/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_028_work_table_38.part_P_036_rod_34_f6ccd605"
+    },
+    {
+      "path": "/subsystems/27/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_028_work_table_38.part_P_002_outer_rod_f564eaf0"
+    },
+    {
+      "path": "/subsystems/27/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_028_work_table_38.part_P_038_outer_rod_34_4c9e2d4e"
+    },
+    {
+      "path": "/subsystems/27/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_028_work_table_38.part_P_001_inner_rod_4e86666c"
+    },
+    {
+      "path": "/subsystems/27/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_028_work_table_38.part_P_039_inner_rod_46_8b90b861"
+    },
+    {
+      "path": "/subsystems/28",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_029_switch_block_28"
+    },
+    {
+      "path": "/subsystems/29",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_030_telescoping_cylinder_20"
+    },
+    {
+      "path": "/subsystems/29/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_telescoping_cylinder_20.part_P_036_rod_34_66e5b84e"
+    },
+    {
+      "path": "/subsystems/29/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_telescoping_cylinder_20.part_P_002_outer_rod_031ffadd"
+    },
+    {
+      "path": "/subsystems/29/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_telescoping_cylinder_20.part_P_038_outer_rod_34_7913a9f9"
+    },
+    {
+      "path": "/subsystems/29/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_telescoping_cylinder_20.part_P_001_inner_rod_e1d0b7d7"
+    },
+    {
+      "path": "/subsystems/29/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_telescoping_cylinder_20.part_P_039_inner_rod_46_0df1262a"
+    },
+    {
+      "path": "/subsystems/29/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_telescoping_cylinder_20.part_P_041_magnetic_device_629f35ff"
+    },
+    {
+      "path": "/subsystems/29/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_telescoping_cylinder_20.part_P_043_flexible_cup_b703c8b0"
+    },
+    {
+      "path": "/subsystems/29/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_telescoping_cylinder_20.part_P_044_flexible_cup_60_8bfeb635"
+    },
+    {
+      "path": "/subsystems/30",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_031_cylinder_20"
+    },
+    {
+      "path": "/subsystems/30/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_cylinder_20.part_P_002_outer_rod_88290e38"
+    },
+    {
+      "path": "/subsystems/30/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_cylinder_20.part_P_038_outer_rod_34_f5058fc3"
+    },
+    {
+      "path": "/subsystems/30/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_cylinder_20.part_P_001_inner_rod_ffb8b2b6"
+    },
+    {
+      "path": "/subsystems/30/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_cylinder_20.part_P_039_inner_rod_46_5088d0cd"
+    },
+    {
+      "path": "/subsystems/30/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_cylinder_20.part_P_043_flexible_cup_80e05e98"
+    },
+    {
+      "path": "/subsystems/30/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_cylinder_20.part_P_044_flexible_cup_60_bc114fe5"
+    },
+    {
+      "path": "/subsystems/30/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_cylinder_20.part_P_061_outer_piston_rod_ee2a69f6"
+    },
+    {
+      "path": "/subsystems/30/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_cylinder_20.part_P_062_inner_piston_rod_2ea97749"
+    },
+    {
+      "path": "/subsystems/30/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_cylinder_20.part_P_018_inner_piston_d13f2e69"
+    },
+    {
+      "path": "/subsystems/30/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_cylinder_20.part_P_019_outer_piston_7b3c716c"
+    },
+    {
+      "path": "/subsystems/30/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_cylinder_20.part_P_008_rod_c5e99bb1"
+    },
+    {
+      "path": "/subsystems/30/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_cylinder_20.part_P_063_poppet_shaft_266be452"
+    },
+    {
+      "path": "/subsystems/31",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_032_vacuum_tool_58"
+    },
+    {
+      "path": "/subsystems/31/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_vacuum_tool_58.part_P_001_inner_rod_461a55ca"
+    },
+    {
+      "path": "/subsystems/31/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_vacuum_tool_58.part_P_039_inner_rod_46_f2ac2cb0"
+    },
+    {
+      "path": "/subsystems/31/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_vacuum_tool_58.part_P_002_outer_rod_428aee84"
+    },
+    {
+      "path": "/subsystems/31/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_vacuum_tool_58.part_P_043_flexible_cup_4092ff70"
+    },
+    {
+      "path": "/subsystems/31/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_vacuum_tool_58.part_P_044_flexible_cup_60_4d22757d"
+    },
+    {
+      "path": "/subsystems/32",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_033_cylinder_12"
+    },
+    {
+      "path": "/subsystems/32/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_019_outer_piston_35ad93ea"
+    },
+    {
+      "path": "/subsystems/32/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_051_piston_rod_cavity_863b9f6f"
+    },
+    {
+      "path": "/subsystems/32/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_052_first_valve_6479d91f"
+    },
+    {
+      "path": "/subsystems/32/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_053_second_valve_ee04d8d4"
+    },
+    {
+      "path": "/subsystems/32/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_061_outer_piston_rod_46291f9d"
+    },
+    {
+      "path": "/subsystems/32/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_062_inner_piston_rod_d00dc5e7"
+    },
+    {
+      "path": "/subsystems/32/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_018_inner_piston_fde6bc1a"
+    },
+    {
+      "path": "/subsystems/32/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_065_poppet_seals_d80ad39d"
+    },
+    {
+      "path": "/subsystems/32/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_066_poppets_0d5daa0c"
+    },
+    {
+      "path": "/subsystems/32/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_067_poppet_cavities_e1412d4f"
+    },
+    {
+      "path": "/subsystems/32/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_001_inner_rod_bbcd3983"
+    },
+    {
+      "path": "/subsystems/32/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_068_valves_35442c35"
+    },
+    {
+      "path": "/subsystems/32/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_011_rod_cover_7d604343"
+    },
+    {
+      "path": "/subsystems/32/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_069_rod_cover_18_7ec90941"
+    },
+    {
+      "path": "/subsystems/33",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_034_head_cover_20"
+    },
+    {
+      "path": "/subsystems/33/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_034_head_cover_20.part_P_048_inner_piston_cushion_ring_d5f9178b"
+    },
+    {
+      "path": "/subsystems/33/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_034_head_cover_20.part_P_018_inner_piston_59a8c203"
+    },
+    {
+      "path": "/subsystems/33/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_034_head_cover_20.part_P_034_flow_control_valve_ed5bbda7"
+    },
+    {
+      "path": "/subsystems/33/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_034_head_cover_20.part_P_019_outer_piston_fc6d97d3"
+    },
+    {
+      "path": "/subsystems/34",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_035_flow_control_valve"
+    },
+    {
+      "path": "/subsystems/35",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_036_shaft"
+    },
+    {
+      "path": "/subsystems/36",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_037_valves"
+    },
+    {
+      "path": "/subsystems/36/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_037_valves.part_P_054_shaft_seal"
+    },
+    {
+      "path": "/subsystems/36/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_037_valves.part_P_070_valve_seals"
+    },
+    {
+      "path": "/subsystems/36/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_037_valves.part_P_019_outer_piston_87a11540"
+    },
+    {
+      "path": "/subsystems/36/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_037_valves.part_P_018_inner_piston_06139d56"
+    },
+    {
+      "path": "/subsystems/37",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_038_valve"
+    },
+    {
+      "path": "/subsystems/37/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_valve.part_P_054_shaft_seal_8858e1d9"
+    },
+    {
+      "path": "/subsystems/37/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_valve.part_P_055_valve_seal"
+    },
+    {
+      "path": "/subsystems/37/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_valve.part_P_056_outer_piston_seal"
+    },
+    {
+      "path": "/subsystems/37/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_valve.part_P_057_wear_ring"
+    },
+    {
+      "path": "/subsystems/37/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_valve.part_P_059_outer_rod_cushion_ring"
+    },
+    {
+      "path": "/subsystems/38",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_039_rod_cover_18"
+    },
+    {
+      "path": "/subsystems/38/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_039_rod_cover_18.part_P_061_outer_piston_rod_21adb206"
+    },
+    {
+      "path": "/subsystems/38/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_039_rod_cover_18.part_P_062_inner_piston_rod_317846cb"
+    },
+    {
+      "path": "/subsystems/38/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_039_rod_cover_18.part_P_018_inner_piston_4248576a"
+    },
+    {
+      "path": "/subsystems/38/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_039_rod_cover_18.part_P_019_outer_piston_232edfec"
+    },
+    {
+      "path": "/subsystems/39",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_040_cylinder_22"
+    },
+    {
+      "path": "/subsystems/39/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_cylinder_22.part_P_061_outer_piston_rod_cfd66d79"
+    },
+    {
+      "path": "/subsystems/39/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_cylinder_22.part_P_062_inner_piston_rod_8f5271fb"
+    },
+    {
+      "path": "/subsystems/39/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_cylinder_22.part_P_018_inner_piston_7ed6b5d4"
+    },
+    {
+      "path": "/subsystems/39/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_cylinder_22.part_P_019_outer_piston_b2afe934"
+    },
+    {
+      "path": "/subsystems/40",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_041_inner_piston"
+    },
+    {
+      "path": "/subsystems/41",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_042_rod"
+    },
+    {
+      "path": "/subsystems/42",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_043_outer_piston"
+    },
+    {
+      "path": "/subsystems/43",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_044_poppet_shaft"
+    },
+    {
+      "path": "/subsystems/44",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_045_poppet_seals"
+    },
+    {
+      "path": "/subsystems/45",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_046_poppets"
+    },
+    {
+      "path": "/subsystems/46",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_047_poppet_cavities"
+    },
+    {
+      "path": "/subsystems/47",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_048_front_poppet_seal"
+    },
+    {
+      "path": "/subsystems/48",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_049_valve_seals"
+    },
+    {
+      "path": "/subsystems/49",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_050_outer_piston_84"
+    },
+    {
+      "path": "/subsystems/50",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_051_valves_92_and_94"
+    },
+    {
+      "path": "/subsystems/51",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_052_cylinder_cover"
+    },
+    {
+      "path": "/subsystems/51/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_052_cylinder_cover.part_P_003_first_piston_d2753bdf"
+    },
+    {
+      "path": "/subsystems/51/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_052_cylinder_cover.part_P_005_second_piston_3690d9b2"
+    },
+    {
+      "path": "/subsystems/52",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_053_poppet"
+    },
+    {
+      "path": "/subsystems/53",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_054_piston_rod"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_FL_001_pressurized_air"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_FL_002_Pressurized_air"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_FL_003_air"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_FL_004_air_pressure"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_FL_005_inner_piston_70"
+    },
+    {
+      "path": "/item_flows/5",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_FL_006_air_flow"
+    },
+    {
+      "path": "/item_flows/6",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_FL_007_fluid_pressure"
+    },
+    {
+      "path": "/item_flows/7",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_FL_008_air_path"
+    },
+    {
+      "path": "/values/0",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_001_breakaway_force"
+    },
+    {
+      "path": "/values/1",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_002_first_breakaway_force"
+    },
+    {
+      "path": "/values/2",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_003_second_breakaway_force"
+    },
+    {
+      "path": "/values/3",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_004_first_piston_seal_force"
+    },
+    {
+      "path": "/values/4",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_005_second_piston_seal_force"
+    },
+    {
+      "path": "/values/5",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_006_first_dimension"
+    },
+    {
+      "path": "/values/6",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_007_dimension"
+    },
+    {
+      "path": "/values/7",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_008_length"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_001_moving_between_extended_and_retracted_positio"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_002_independent_movement"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_003_welding_operations"
+    },
+    {
+      "path": "/behaviour/actions/3",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_004_repetitive_tasks"
+    },
+    {
+      "path": "/behaviour/actions/4",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_005_operation"
+    },
+    {
+      "path": "/behaviour/actions/5",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_006_directs_air"
+    },
+    {
+      "path": "/behaviour/actions/6",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_007_repetitive_operation"
+    },
+    {
+      "path": "/behaviour/actions/7",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_008_manufacturing_operations"
+    },
+    {
+      "path": "/behaviour/actions/8",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_009_welding"
+    },
+    {
+      "path": "/behaviour/actions/9",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_010_supplies_a_vacuum"
+    },
+    {
+      "path": "/behaviour/actions/10",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_011_adjust_the_flow_of_air"
+    },
+    {
+      "path": "/behaviour/actions/11",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_012_indicator"
+    },
+    {
+      "path": "/behaviour/actions/12",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_013_control_the_air_flow"
+    },
+    {
+      "path": "/behaviour/actions/13",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_014_pressure_seal"
+    },
+    {
+      "path": "/behaviour/actions/14",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_015_travel"
+    },
+    {
+      "path": "/behaviour/actions/15",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_016_travel_in_unison"
+    },
+    {
+      "path": "/behaviour/actions/16",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_017_control"
+    },
+    {
+      "path": "/relationships/0",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[0]"
+    },
+    {
+      "path": "/relationships/0",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_001_inner_rod"
+    },
+    {
+      "path": "/relationships/1",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[1]"
+    },
+    {
+      "path": "/relationships/1",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_002_outer_rod"
+    },
+    {
+      "path": "/relationships/2",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[2]"
+    },
+    {
+      "path": "/relationships/2",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_003_first_piston"
+    },
+    {
+      "path": "/relationships/3",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[3]"
+    },
+    {
+      "path": "/relationships/3",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_004_piston"
+    },
+    {
+      "path": "/relationships/4",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[4]"
+    },
+    {
+      "path": "/relationships/4",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_005_second_piston"
+    },
+    {
+      "path": "/relationships/5",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[5]"
+    },
+    {
+      "path": "/relationships/5",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_007_cylinder_housing"
+    },
+    {
+      "path": "/relationships/6",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[6]"
+    },
+    {
+      "path": "/relationships/6",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_008_rod"
+    },
+    {
+      "path": "/relationships/7",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[7]"
+    },
+    {
+      "path": "/relationships/7",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_009_actuating_piston"
+    },
+    {
+      "path": "/relationships/8",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[8]"
+    },
+    {
+      "path": "/relationships/8",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_telescoping_fluid_cylinder.part_P_010_actuation_piston"
+    },
+    {
+      "path": "/relationships/9",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[9]"
+    },
+    {
+      "path": "/relationships/9",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_004_Pneumatic_cylinders.part_P_001_inner_rod_2da6f069"
+    },
+    {
+      "path": "/relationships/10",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[10]"
+    },
+    {
+      "path": "/relationships/10",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_004_Pneumatic_cylinders.part_P_002_outer_rod_97ffd0e3"
+    },
+    {
+      "path": "/relationships/11",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[11]"
+    },
+    {
+      "path": "/relationships/11",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_004_Pneumatic_cylinders.part_P_004_piston_6ab4451b"
+    },
+    {
+      "path": "/relationships/12",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[12]"
+    },
+    {
+      "path": "/relationships/12",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_004_Pneumatic_cylinders.part_P_007_cylinder_housing_dd59c3df"
+    },
+    {
+      "path": "/relationships/13",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[13]"
+    },
+    {
+      "path": "/relationships/13",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_004_Pneumatic_cylinders.part_P_008_rod_4521f271"
+    },
+    {
+      "path": "/relationships/14",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[14]"
+    },
+    {
+      "path": "/relationships/14",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_004_Pneumatic_cylinders.part_P_009_actuating_piston_921eba85"
+    },
+    {
+      "path": "/relationships/15",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[15]"
+    },
+    {
+      "path": "/relationships/15",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_009_rod_assembly.part_P_002_outer_rod_adb09426"
+    },
+    {
+      "path": "/relationships/16",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[16]"
+    },
+    {
+      "path": "/relationships/16",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_009_rod_assembly.part_P_001_inner_rod_c1b855b5"
+    },
+    {
+      "path": "/relationships/17",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[17]"
+    },
+    {
+      "path": "/relationships/17",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_013_push_back_pins"
+    },
+    {
+      "path": "/relationships/18",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[18]"
+    },
+    {
+      "path": "/relationships/18",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_011_rod_cover"
+    },
+    {
+      "path": "/relationships/19",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[19]"
+    },
+    {
+      "path": "/relationships/19",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_014_part"
+    },
+    {
+      "path": "/relationships/20",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[20]"
+    },
+    {
+      "path": "/relationships/20",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_cylinder_housing.part_P_011_rod_cover_59724d4e"
+    },
+    {
+      "path": "/relationships/21",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[21]"
+    },
+    {
+      "path": "/relationships/21",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_fluid_cylinder.part_P_022_first_rod"
+    },
+    {
+      "path": "/relationships/22",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[22]"
+    },
+    {
+      "path": "/relationships/22",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_fluid_cylinder.part_P_024_second_rod"
+    },
+    {
+      "path": "/relationships/23",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[23]"
+    },
+    {
+      "path": "/relationships/23",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_fluid_cylinder.part_P_003_first_piston_2ade33ee"
+    },
+    {
+      "path": "/relationships/24",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[24]"
+    },
+    {
+      "path": "/relationships/24",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_fluid_cylinder.part_P_005_second_piston_c2fcaad4"
+    },
+    {
+      "path": "/relationships/25",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[25]"
+    },
+    {
+      "path": "/relationships/25",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_fluid_cylinder.part_P_028_cover"
+    },
+    {
+      "path": "/relationships/26",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[26]"
+    },
+    {
+      "path": "/relationships/26",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_fluid_cylinder.part_P_025_cavity_758e24ef"
+    },
+    {
+      "path": "/relationships/27",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[27]"
+    },
+    {
+      "path": "/relationships/27",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_023_telescoping_cylinder.part_P_003_first_piston_252673bc"
+    },
+    {
+      "path": "/relationships/28",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[28]"
+    },
+    {
+      "path": "/relationships/28",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_023_telescoping_cylinder.part_P_005_second_piston_bb0da66d"
+    },
+    {
+      "path": "/relationships/29",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[29]"
+    },
+    {
+      "path": "/relationships/29",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_023_telescoping_cylinder.part_P_002_outer_rod_33438cb2"
+    },
+    {
+      "path": "/relationships/30",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[30]"
+    },
+    {
+      "path": "/relationships/30",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_023_telescoping_cylinder.part_P_001_inner_rod_8fa6f8d9"
+    },
+    {
+      "path": "/relationships/31",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[31]"
+    },
+    {
+      "path": "/relationships/31",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_023_telescoping_cylinder.part_P_019_outer_piston_3b699e60"
+    },
+    {
+      "path": "/relationships/32",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[32]"
+    },
+    {
+      "path": "/relationships/32",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_assembly_apparatus.part_P_015_cylinder"
+    },
+    {
+      "path": "/relationships/33",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[33]"
+    },
+    {
+      "path": "/relationships/33",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_assembly_apparatus.part_P_019_outer_piston_19a1b9a9"
+    },
+    {
+      "path": "/relationships/34",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[34]"
+    },
+    {
+      "path": "/relationships/34",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_assembly_apparatus.part_P_029_telescoping_cylinder"
+    },
+    {
+      "path": "/relationships/35",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[35]"
+    },
+    {
+      "path": "/relationships/35",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_assembly_apparatus.part_P_030_support_structure"
+    },
+    {
+      "path": "/relationships/36",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[36]"
+    },
+    {
+      "path": "/relationships/36",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_assembly_apparatus.part_P_011_rod_cover_f9f156b4"
+    },
+    {
+      "path": "/relationships/37",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[37]"
+    },
+    {
+      "path": "/relationships/37",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_assembly_apparatus.part_P_032_threaded_rods"
+    },
+    {
+      "path": "/relationships/38",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[38]"
+    },
+    {
+      "path": "/relationships/38",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_024_assembly_apparatus_10.part_P_015_cylinder_1122cfa6"
+    },
+    {
+      "path": "/relationships/39",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[39]"
+    },
+    {
+      "path": "/relationships/39",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_024_assembly_apparatus_10.part_P_019_outer_piston_1d937f17"
+    },
+    {
+      "path": "/relationships/40",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[40]"
+    },
+    {
+      "path": "/relationships/40",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_024_assembly_apparatus_10.part_P_029_telescoping_cylinder_1c2a9a96"
+    },
+    {
+      "path": "/relationships/41",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[41]"
+    },
+    {
+      "path": "/relationships/41",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_024_assembly_apparatus_10.part_P_030_support_structure_2b753bb4"
+    },
+    {
+      "path": "/relationships/42",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[42]"
+    },
+    {
+      "path": "/relationships/42",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_024_assembly_apparatus_10.part_P_011_rod_cover_bb89b9a4"
+    },
+    {
+      "path": "/relationships/43",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[43]"
+    },
+    {
+      "path": "/relationships/43",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_024_assembly_apparatus_10.part_P_032_threaded_rods_9d0f9d2d"
+    },
+    {
+      "path": "/relationships/44",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[44]"
+    },
+    {
+      "path": "/relationships/44",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_work_table.part_P_036_rod_34_bb407521"
+    },
+    {
+      "path": "/relationships/45",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[45]"
+    },
+    {
+      "path": "/relationships/45",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_work_table.part_P_002_outer_rod_7e6bdd0f"
+    },
+    {
+      "path": "/relationships/46",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[46]"
+    },
+    {
+      "path": "/relationships/46",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_work_table.part_P_038_outer_rod_34_b9e8b407"
+    },
+    {
+      "path": "/relationships/47",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[47]"
+    },
+    {
+      "path": "/relationships/47",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_work_table.part_P_001_inner_rod_a7eb681a"
+    },
+    {
+      "path": "/relationships/48",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[48]"
+    },
+    {
+      "path": "/relationships/48",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_work_table.part_P_039_inner_rod_46_040c423b"
+    },
+    {
+      "path": "/relationships/49",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[49]"
+    },
+    {
+      "path": "/relationships/49",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_028_work_table_38.part_P_036_rod_34_f6ccd605"
+    },
+    {
+      "path": "/relationships/50",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[50]"
+    },
+    {
+      "path": "/relationships/50",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_028_work_table_38.part_P_002_outer_rod_f564eaf0"
+    },
+    {
+      "path": "/relationships/51",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[51]"
+    },
+    {
+      "path": "/relationships/51",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_028_work_table_38.part_P_038_outer_rod_34_4c9e2d4e"
+    },
+    {
+      "path": "/relationships/52",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[52]"
+    },
+    {
+      "path": "/relationships/52",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_028_work_table_38.part_P_001_inner_rod_4e86666c"
+    },
+    {
+      "path": "/relationships/53",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[53]"
+    },
+    {
+      "path": "/relationships/53",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_028_work_table_38.part_P_039_inner_rod_46_8b90b861"
+    },
+    {
+      "path": "/relationships/54",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[54]"
+    },
+    {
+      "path": "/relationships/54",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_023_telescoping_cylinder.part_P_036_rod_34"
+    },
+    {
+      "path": "/relationships/55",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[55]"
+    },
+    {
+      "path": "/relationships/55",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_023_telescoping_cylinder.part_P_038_outer_rod_34"
+    },
+    {
+      "path": "/relationships/56",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[56]"
+    },
+    {
+      "path": "/relationships/56",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_023_telescoping_cylinder.part_P_039_inner_rod_46"
+    },
+    {
+      "path": "/relationships/57",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[57]"
+    },
+    {
+      "path": "/relationships/57",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_telescoping_cylinder_20.part_P_036_rod_34_66e5b84e"
+    },
+    {
+      "path": "/relationships/58",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[58]"
+    },
+    {
+      "path": "/relationships/58",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_telescoping_cylinder_20.part_P_002_outer_rod_031ffadd"
+    },
+    {
+      "path": "/relationships/59",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[59]"
+    },
+    {
+      "path": "/relationships/59",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_telescoping_cylinder_20.part_P_038_outer_rod_34_7913a9f9"
+    },
+    {
+      "path": "/relationships/60",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[60]"
+    },
+    {
+      "path": "/relationships/60",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_telescoping_cylinder_20.part_P_001_inner_rod_e1d0b7d7"
+    },
+    {
+      "path": "/relationships/61",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[61]"
+    },
+    {
+      "path": "/relationships/61",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_telescoping_cylinder_20.part_P_039_inner_rod_46_0df1262a"
+    },
+    {
+      "path": "/relationships/62",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[62]"
+    },
+    {
+      "path": "/relationships/62",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_cylinder_20.part_P_002_outer_rod_88290e38"
+    },
+    {
+      "path": "/relationships/63",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[63]"
+    },
+    {
+      "path": "/relationships/63",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_cylinder_20.part_P_038_outer_rod_34_f5058fc3"
+    },
+    {
+      "path": "/relationships/64",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[64]"
+    },
+    {
+      "path": "/relationships/64",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_cylinder_20.part_P_001_inner_rod_ffb8b2b6"
+    },
+    {
+      "path": "/relationships/65",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[65]"
+    },
+    {
+      "path": "/relationships/65",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_cylinder_20.part_P_039_inner_rod_46_5088d0cd"
+    },
+    {
+      "path": "/relationships/66",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[66]"
+    },
+    {
+      "path": "/relationships/66",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_cylinder_20.part_P_043_flexible_cup_80e05e98"
+    },
+    {
+      "path": "/relationships/67",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[67]"
+    },
+    {
+      "path": "/relationships/67",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_cylinder_20.part_P_044_flexible_cup_60_bc114fe5"
+    },
+    {
+      "path": "/relationships/68",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[68]"
+    },
+    {
+      "path": "/relationships/68",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_023_telescoping_cylinder.part_P_041_magnetic_device"
+    },
+    {
+      "path": "/relationships/69",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[69]"
+    },
+    {
+      "path": "/relationships/69",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_023_telescoping_cylinder.part_P_043_flexible_cup"
+    },
+    {
+      "path": "/relationships/70",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[70]"
+    },
+    {
+      "path": "/relationships/70",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_023_telescoping_cylinder.part_P_044_flexible_cup_60"
+    },
+    {
+      "path": "/relationships/71",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[71]"
+    },
+    {
+      "path": "/relationships/71",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_telescoping_cylinder_20.part_P_041_magnetic_device_629f35ff"
+    },
+    {
+      "path": "/relationships/72",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[72]"
+    },
+    {
+      "path": "/relationships/72",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_telescoping_cylinder_20.part_P_043_flexible_cup_b703c8b0"
+    },
+    {
+      "path": "/relationships/73",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[73]"
+    },
+    {
+      "path": "/relationships/73",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_telescoping_cylinder_20.part_P_044_flexible_cup_60_8bfeb635"
+    },
+    {
+      "path": "/relationships/74",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[74]"
+    },
+    {
+      "path": "/relationships/74",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_vacuum_tool_58.part_P_001_inner_rod_461a55ca"
+    },
+    {
+      "path": "/relationships/75",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[75]"
+    },
+    {
+      "path": "/relationships/75",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_vacuum_tool_58.part_P_039_inner_rod_46_f2ac2cb0"
+    },
+    {
+      "path": "/relationships/76",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[76]"
+    },
+    {
+      "path": "/relationships/76",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_vacuum_tool_58.part_P_002_outer_rod_428aee84"
+    },
+    {
+      "path": "/relationships/77",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[77]"
+    },
+    {
+      "path": "/relationships/77",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_vacuum_tool_58.part_P_043_flexible_cup_4092ff70"
+    },
+    {
+      "path": "/relationships/78",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[78]"
+    },
+    {
+      "path": "/relationships/78",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_vacuum_tool_58.part_P_044_flexible_cup_60_4d22757d"
+    },
+    {
+      "path": "/relationships/79",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[79]"
+    },
+    {
+      "path": "/relationships/79",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_008_head_cover.part_P_048_inner_piston_cushion_ring"
+    },
+    {
+      "path": "/relationships/80",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[80]"
+    },
+    {
+      "path": "/relationships/80",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_008_head_cover.part_P_018_inner_piston"
+    },
+    {
+      "path": "/relationships/81",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[81]"
+    },
+    {
+      "path": "/relationships/81",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_034_head_cover_20.part_P_048_inner_piston_cushion_ring_d5f9178b"
+    },
+    {
+      "path": "/relationships/82",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[82]"
+    },
+    {
+      "path": "/relationships/82",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_034_head_cover_20.part_P_018_inner_piston_59a8c203"
+    },
+    {
+      "path": "/relationships/83",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[83]"
+    },
+    {
+      "path": "/relationships/83",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_008_head_cover.part_P_004_piston_dd15b395"
+    },
+    {
+      "path": "/relationships/84",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[84]"
+    },
+    {
+      "path": "/relationships/84",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_008_head_cover.part_P_034_flow_control_valve"
+    },
+    {
+      "path": "/relationships/85",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[85]"
+    },
+    {
+      "path": "/relationships/85",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_034_head_cover_20.part_P_034_flow_control_valve_ed5bbda7"
+    },
+    {
+      "path": "/relationships/86",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[86]"
+    },
+    {
+      "path": "/relationships/86",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_019_outer_piston_d6ab0582"
+    },
+    {
+      "path": "/relationships/87",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[87]"
+    },
+    {
+      "path": "/relationships/87",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_051_piston_rod_cavity"
+    },
+    {
+      "path": "/relationships/88",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[88]"
+    },
+    {
+      "path": "/relationships/88",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_052_first_valve"
+    },
+    {
+      "path": "/relationships/89",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[89]"
+    },
+    {
+      "path": "/relationships/89",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_053_second_valve"
+    },
+    {
+      "path": "/relationships/90",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[90]"
+    },
+    {
+      "path": "/relationships/90",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_019_outer_piston_35ad93ea"
+    },
+    {
+      "path": "/relationships/91",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[91]"
+    },
+    {
+      "path": "/relationships/91",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_051_piston_rod_cavity_863b9f6f"
+    },
+    {
+      "path": "/relationships/92",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[92]"
+    },
+    {
+      "path": "/relationships/92",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_052_first_valve_6479d91f"
+    },
+    {
+      "path": "/relationships/93",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[93]"
+    },
+    {
+      "path": "/relationships/93",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_053_second_valve_ee04d8d4"
+    },
+    {
+      "path": "/relationships/94",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[94]"
+    },
+    {
+      "path": "/relationships/94",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_037_valves.part_P_054_shaft_seal"
+    },
+    {
+      "path": "/relationships/95",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[95]"
+    },
+    {
+      "path": "/relationships/95",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_valve.part_P_054_shaft_seal_8858e1d9"
+    },
+    {
+      "path": "/relationships/96",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[96]"
+    },
+    {
+      "path": "/relationships/96",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_valve.part_P_055_valve_seal"
+    },
+    {
+      "path": "/relationships/97",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[97]"
+    },
+    {
+      "path": "/relationships/97",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_valve.part_P_056_outer_piston_seal"
+    },
+    {
+      "path": "/relationships/98",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[98]"
+    },
+    {
+      "path": "/relationships/98",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_valve.part_P_057_wear_ring"
+    },
+    {
+      "path": "/relationships/99",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[99]"
+    },
+    {
+      "path": "/relationships/99",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_valve.part_P_059_outer_rod_cushion_ring"
+    },
+    {
+      "path": "/relationships/100",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[100]"
+    },
+    {
+      "path": "/relationships/100",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_rod_cover.part_P_060_rod_cover_cavity"
+    },
+    {
+      "path": "/relationships/101",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[101]"
+    },
+    {
+      "path": "/relationships/101",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_061_outer_piston_rod_f721fd51"
+    },
+    {
+      "path": "/relationships/102",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[102]"
+    },
+    {
+      "path": "/relationships/102",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_062_inner_piston_rod_bcc32f55"
+    },
+    {
+      "path": "/relationships/103",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[103]"
+    },
+    {
+      "path": "/relationships/103",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_018_inner_piston_a8867fc1"
+    },
+    {
+      "path": "/relationships/104",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[104]"
+    },
+    {
+      "path": "/relationships/104",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_cylinder_22.part_P_061_outer_piston_rod_cfd66d79"
+    },
+    {
+      "path": "/relationships/105",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[105]"
+    },
+    {
+      "path": "/relationships/105",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_cylinder_22.part_P_062_inner_piston_rod_8f5271fb"
+    },
+    {
+      "path": "/relationships/106",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[106]"
+    },
+    {
+      "path": "/relationships/106",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_cylinder_22.part_P_018_inner_piston_7ed6b5d4"
+    },
+    {
+      "path": "/relationships/107",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[107]"
+    },
+    {
+      "path": "/relationships/107",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_cylinder_22.part_P_019_outer_piston_b2afe934"
+    },
+    {
+      "path": "/relationships/108",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[108]"
+    },
+    {
+      "path": "/relationships/108",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_rod_cover.part_P_061_outer_piston_rod"
+    },
+    {
+      "path": "/relationships/109",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[109]"
+    },
+    {
+      "path": "/relationships/109",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_rod_cover.part_P_062_inner_piston_rod"
+    },
+    {
+      "path": "/relationships/110",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[110]"
+    },
+    {
+      "path": "/relationships/110",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_039_rod_cover_18.part_P_061_outer_piston_rod_21adb206"
+    },
+    {
+      "path": "/relationships/111",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[111]"
+    },
+    {
+      "path": "/relationships/111",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_039_rod_cover_18.part_P_062_inner_piston_rod_317846cb"
+    },
+    {
+      "path": "/relationships/112",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[112]"
+    },
+    {
+      "path": "/relationships/112",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_039_rod_cover_18.part_P_018_inner_piston_4248576a"
+    },
+    {
+      "path": "/relationships/113",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[113]"
+    },
+    {
+      "path": "/relationships/113",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_039_rod_cover_18.part_P_019_outer_piston_232edfec"
+    },
+    {
+      "path": "/relationships/114",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[114]"
+    },
+    {
+      "path": "/relationships/114",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_061_outer_piston_rod_46291f9d"
+    },
+    {
+      "path": "/relationships/115",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[115]"
+    },
+    {
+      "path": "/relationships/115",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_062_inner_piston_rod_d00dc5e7"
+    },
+    {
+      "path": "/relationships/116",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[116]"
+    },
+    {
+      "path": "/relationships/116",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_018_inner_piston_fde6bc1a"
+    },
+    {
+      "path": "/relationships/117",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[117]"
+    },
+    {
+      "path": "/relationships/117",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_008_head_cover.part_P_019_outer_piston"
+    },
+    {
+      "path": "/relationships/118",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[118]"
+    },
+    {
+      "path": "/relationships/118",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_034_head_cover_20.part_P_019_outer_piston_fc6d97d3"
+    },
+    {
+      "path": "/relationships/119",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[119]"
+    },
+    {
+      "path": "/relationships/119",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_cylinder_20.part_P_061_outer_piston_rod_ee2a69f6"
+    },
+    {
+      "path": "/relationships/120",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[120]"
+    },
+    {
+      "path": "/relationships/120",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_cylinder_20.part_P_062_inner_piston_rod_2ea97749"
+    },
+    {
+      "path": "/relationships/121",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[121]"
+    },
+    {
+      "path": "/relationships/121",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_cylinder_20.part_P_018_inner_piston_d13f2e69"
+    },
+    {
+      "path": "/relationships/122",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[122]"
+    },
+    {
+      "path": "/relationships/122",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_cylinder_20.part_P_019_outer_piston_7b3c716c"
+    },
+    {
+      "path": "/relationships/123",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[123]"
+    },
+    {
+      "path": "/relationships/123",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_008_rod_73e9b410"
+    },
+    {
+      "path": "/relationships/124",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[124]"
+    },
+    {
+      "path": "/relationships/124",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_063_poppet_shaft"
+    },
+    {
+      "path": "/relationships/125",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[125]"
+    },
+    {
+      "path": "/relationships/125",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_cylinder_20.part_P_008_rod_c5e99bb1"
+    },
+    {
+      "path": "/relationships/126",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[126]"
+    },
+    {
+      "path": "/relationships/126",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_cylinder_20.part_P_063_poppet_shaft_266be452"
+    },
+    {
+      "path": "/relationships/127",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[127]"
+    },
+    {
+      "path": "/relationships/127",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_065_poppet_seals"
+    },
+    {
+      "path": "/relationships/128",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[128]"
+    },
+    {
+      "path": "/relationships/128",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_066_poppets"
+    },
+    {
+      "path": "/relationships/129",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[129]"
+    },
+    {
+      "path": "/relationships/129",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_067_poppet_cavities"
+    },
+    {
+      "path": "/relationships/130",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[130]"
+    },
+    {
+      "path": "/relationships/130",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_001_inner_rod_e937eb77"
+    },
+    {
+      "path": "/relationships/131",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[131]"
+    },
+    {
+      "path": "/relationships/131",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_068_valves"
+    },
+    {
+      "path": "/relationships/132",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[132]"
+    },
+    {
+      "path": "/relationships/132",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_065_poppet_seals_d80ad39d"
+    },
+    {
+      "path": "/relationships/133",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[133]"
+    },
+    {
+      "path": "/relationships/133",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_066_poppets_0d5daa0c"
+    },
+    {
+      "path": "/relationships/134",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[134]"
+    },
+    {
+      "path": "/relationships/134",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_067_poppet_cavities_e1412d4f"
+    },
+    {
+      "path": "/relationships/135",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[135]"
+    },
+    {
+      "path": "/relationships/135",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_001_inner_rod_bbcd3983"
+    },
+    {
+      "path": "/relationships/136",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[136]"
+    },
+    {
+      "path": "/relationships/136",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_068_valves_35442c35"
+    },
+    {
+      "path": "/relationships/137",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[137]"
+    },
+    {
+      "path": "/relationships/137",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_011_rod_cover_7d604343"
+    },
+    {
+      "path": "/relationships/138",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[138]"
+    },
+    {
+      "path": "/relationships/138",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_069_rod_cover_18"
+    },
+    {
+      "path": "/relationships/139",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[139]"
+    },
+    {
+      "path": "/relationships/139",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_cylinder_12.part_P_069_rod_cover_18_7ec90941"
+    },
+    {
+      "path": "/relationships/140",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[140]"
+    },
+    {
+      "path": "/relationships/140",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_037_valves.part_P_070_valve_seals"
+    },
+    {
+      "path": "/relationships/141",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[141]"
+    },
+    {
+      "path": "/relationships/141",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_037_valves.part_P_019_outer_piston_87a11540"
+    },
+    {
+      "path": "/relationships/142",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[142]"
+    },
+    {
+      "path": "/relationships/142",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_037_valves.part_P_018_inner_piston_06139d56"
+    },
+    {
+      "path": "/relationships/143",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[143]"
+    },
+    {
+      "path": "/relationships/143",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_025_cavity"
+    },
+    {
+      "path": "/relationships/144",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[144]"
+    },
+    {
+      "path": "/relationships/144",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_074_poppet"
+    },
+    {
+      "path": "/relationships/145",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[145]"
+    },
+    {
+      "path": "/relationships/145",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_003_first_piston_90cbf977"
+    },
+    {
+      "path": "/relationships/146",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[146]"
+    },
+    {
+      "path": "/relationships/146",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_005_second_piston_1ee3f094"
+    },
+    {
+      "path": "/relationships/147",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[147]"
+    },
+    {
+      "path": "/relationships/147",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_cylinder.part_P_075_piston_rod"
+    },
+    {
+      "path": "/relationships/148",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[148]"
+    },
+    {
+      "path": "/relationships/148",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_052_cylinder_cover.part_P_003_first_piston_d2753bdf"
+    },
+    {
+      "path": "/relationships/149",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[149]"
+    },
+    {
+      "path": "/relationships/149",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_052_cylinder_cover.part_P_005_second_piston_3690d9b2"
+    },
+    {
+      "path": "/relationships/150",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[150]"
+    },
+    {
+      "path": "/relationships/150",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_fluid_cylinder.part_P_075_piston_rod_be00de9c"
+    },
+    {
+      "path": "/relationships/151",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[151]"
+    },
+    {
+      "path": "/relationships/151",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_fluid_cylinder.part_P_011_rod_cover_398049a1"
+    },
+    {
+      "path": "/relationships/152",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[152]"
+    },
+    {
+      "path": "/relationships/152",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_fluid_cylinder.part_P_074_poppet_92be841a"
+    },
+    {
+      "path": "/relationships/153",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[153]"
+    },
+    {
+      "path": "/relationships/154",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[154]"
+    },
+    {
+      "path": "/relationships/155",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[155]"
+    },
+    {
+      "path": "/relationships/156",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[156]"
+    },
+    {
+      "path": "/relationships/157",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[157]"
+    },
+    {
+      "path": "/relationships/158",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[158]"
+    },
+    {
+      "path": "/relationships/159",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[159]"
+    },
+    {
+      "path": "/relationships/160",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[160]"
+    },
+    {
+      "path": "/relationships/161",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[161]"
+    },
+    {
+      "path": "/relationships/162",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[162]"
+    },
+    {
+      "path": "/relationships/163",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[163]"
+    },
+    {
+      "path": "/relationships/164",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[164]"
+    },
+    {
+      "path": "/relationships/165",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[165]"
+    },
+    {
+      "path": "/relationships/166",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[166]"
+    },
+    {
+      "path": "/relationships/167",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[167]"
+    },
+    {
+      "path": "/relationships/168",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[168]"
+    },
+    {
+      "path": "/relationships/169",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[169]"
+    },
+    {
+      "path": "/relationships/170",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[170]"
+    },
+    {
+      "path": "/relationships/171",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[171]"
+    },
+    {
+      "path": "/relationships/172",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[172]"
+    },
+    {
+      "path": "/relationships/173",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[173]"
+    },
+    {
+      "path": "/relationships/174",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[174]"
+    },
+    {
+      "path": "/relationships/175",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[175]"
+    },
+    {
+      "path": "/relationships/176",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[176]"
+    },
+    {
+      "path": "/relationships/177",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[177]"
+    },
+    {
+      "path": "/relationships/178",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[178]"
+    },
+    {
+      "path": "/relationships/179",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[179]"
+    },
+    {
+      "path": "/relationships/180",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[180]"
+    },
+    {
+      "path": "/relationships/181",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[181]"
+    },
+    {
+      "path": "/relationships/182",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[182]"
+    },
+    {
+      "path": "/relationships/183",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[183]"
+    },
+    {
+      "path": "/relationships/184",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[184]"
+    },
+    {
+      "path": "/relationships/185",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[185]"
+    },
+    {
+      "path": "/relationships/186",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[186]"
+    },
+    {
+      "path": "/relationships/187",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[187]"
+    },
+    {
+      "path": "/relationships/188",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[188]"
+    },
+    {
+      "path": "/relationships/189",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[189]"
+    },
+    {
+      "path": "/relationships/190",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[190]"
+    },
+    {
+      "path": "/relationships/191",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[191]"
+    },
+    {
+      "path": "/relationships/192",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[192]"
+    },
+    {
+      "path": "/relationships/193",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[193]"
+    },
+    {
+      "path": "/relationships/194",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[194]"
+    },
+    {
+      "path": "/relationships/195",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[195]"
+    },
+    {
+      "path": "/relationships/196",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[196]"
+    },
+    {
+      "path": "/relationships/197",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[197]"
+    },
+    {
+      "path": "/relationships/198",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[198]"
+    },
+    {
+      "path": "/relationships/199",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[199]"
+    },
+    {
+      "path": "/relationships/200",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[200]"
+    },
+    {
+      "path": "/relationships/201",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[201]"
+    },
+    {
+      "path": "/relationships/202",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[202]"
+    },
+    {
+      "path": "/relationships/203",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[203]"
+    },
+    {
+      "path": "/relationships/204",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[204]"
+    },
+    {
+      "path": "/relationships/205",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[205]"
+    },
+    {
+      "path": "/relationships/206",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[206]"
+    },
+    {
+      "path": "/relationships/207",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[207]"
+    },
+    {
+      "path": "/relationships/208",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[208]"
+    },
+    {
+      "path": "/relationships/209",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[209]"
+    },
+    {
+      "path": "/relationships/210",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[210]"
+    },
+    {
+      "path": "/relationships/211",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[211]"
+    },
+    {
+      "path": "/relationships/212",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[212]"
+    },
+    {
+      "path": "/relationships/213",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[213]"
+    },
+    {
+      "path": "/relationships/214",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[214]"
+    },
+    {
+      "path": "/relationships/215",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[215]"
+    },
+    {
+      "path": "/relationships/216",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[216]"
+    },
+    {
+      "path": "/relationships/217",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[217]"
+    },
+    {
+      "path": "/relationships/218",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[218]"
+    },
+    {
+      "path": "/relationships/219",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[219]"
+    },
+    {
+      "path": "/relationships/220",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[220]"
+    },
+    {
+      "path": "/relationships/221",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[221]"
+    },
+    {
+      "path": "/relationships/222",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[222]"
+    },
+    {
+      "path": "/relationships/223",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[223]"
+    },
+    {
+      "path": "/relationships/224",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[224]"
+    },
+    {
+      "path": "/relationships/225",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[225]"
+    },
+    {
+      "path": "/relationships/226",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[226]"
+    },
+    {
+      "path": "/relationships/227",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[227]"
+    },
+    {
+      "path": "/relationships/228",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[228]"
+    }
+  ],
+  "unresolved": [
+    {
+      "path": "/values/0",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/1",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/2",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/3",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/4",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/5",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/6",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/7",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/2",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/3",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/4",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/5",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/6",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/7",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/8",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/9",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/153",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/154",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/155",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/156",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/157",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/158",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/159",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/160",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/161",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/162",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/163",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/164",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/165",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/166",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/167",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/168",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/169",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/170",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/171",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/172",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/173",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/174",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/175",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/176",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/177",
+      "reason": "Relationship type 'ports' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/178",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/179",
+      "reason": "Relationship type 'ports' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/180",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/181",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/182",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/183",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/184",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/185",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/186",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/187",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/188",
+      "reason": "Relationship type 'ports' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/189",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/190",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/191",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/192",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/193",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/194",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/195",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/196",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/197",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/198",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/199",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/200",
+      "reason": "Relationship type 'flow_ref' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/201",
+      "reason": "Relationship type 'flow_ref' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/202",
+      "reason": "Relationship type 'flow_ref' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/203",
+      "reason": "Relationship type 'source' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/204",
+      "reason": "Relationship type 'target' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/205",
+      "reason": "Relationship type 'source' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/206",
+      "reason": "Relationship type 'source' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/207",
+      "reason": "Relationship type 'source' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/208",
+      "reason": "Relationship type 'source' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/209",
+      "reason": "Relationship type 'target' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/210",
+      "reason": "Relationship type 'target' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/211",
+      "reason": "Relationship type 'source' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/212",
+      "reason": "Relationship type 'source' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/213",
+      "reason": "Relationship type 'source' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/214",
+      "reason": "Relationship type 'source' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/215",
+      "reason": "Relationship type 'target' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/216",
+      "reason": "Relationship type 'target' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/217",
+      "reason": "Relationship type 'target' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/218",
+      "reason": "Relationship type 'target' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/219",
+      "reason": "Relationship type 'source' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/220",
+      "reason": "Relationship type 'source' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/221",
+      "reason": "Relationship type 'source' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/222",
+      "reason": "Relationship type 'source' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/223",
+      "reason": "Relationship type 'source' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/224",
+      "reason": "Relationship type 'source' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/225",
+      "reason": "Relationship type 'owner' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/226",
+      "reason": "Relationship type 'owner' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/227",
+      "reason": "Relationship type 'owner' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/228",
+      "reason": "Relationship type 'owner' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    }
+  ],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

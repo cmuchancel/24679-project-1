@@ -1,0 +1,138 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 5,
+    "AllocationUsage": 1,
+    "Documentation": 27,
+    "EndFeatureMembership": 6,
+    "Feature": 8,
+    "FeatureChaining": 16,
+    "FeatureMembership": 30,
+    "FeatureTyping": 11,
+    "FlowEnd": 4,
+    "FlowUsage": 2,
+    "ItemDefinition": 6,
+    "ItemUsage": 6,
+    "LiteralInteger": 2,
+    "MultiplicityRange": 2,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 47,
+    "Package": 1,
+    "PartDefinition": 4,
+    "PartUsage": 7,
+    "PortUsage": 6,
+    "Redefinition": 4,
+    "ReferenceSubsetting": 6,
+    "ReferenceUsage": 4,
+    "Subclassification": 4,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_case_Differential_Case"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_case_Differential_Case.port_case_drive_in_Case_driving_force_input"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_case_Differential_Case.port_case_gear_out_Case_pinion_torque_transfer"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_pinion_Helical_Pinion_Gear_Set"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_pinion_Helical_Pinion_Gear_Set.port_pinion_in_Pinion_drive_input"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_pinion_Helical_Pinion_Gear_Set.port_pinion_to_outputs_Pinion_to_output_gear_transfer"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_outputs_Paired_Helical_Output_Gears"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_outputs_Paired_Helical_Output_Gears.port_outputs_in_Output_gear_drive_input"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_outputs_Paired_Helical_Output_Gears.port_outputs_out_Differential_output"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_bearing_Roller_Thrust_Bearing_Assembly"
+    },
+    {
+      "path": "/subsystems/3/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_bearing_Roller_Thrust_Bearing_Assembly.part_rollers_Plurality_of_rollers_arranged_radially_with_r"
+    },
+    {
+      "path": "/subsystems/3/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_bearing_Roller_Thrust_Bearing_Assembly.part_annular_plates_Pair_of_annular_plates_contacting_opposing_fa"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_torque_in_Input_driving_force_rotation"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_gear_force_Gear_transmitted_driving_force"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_output_force_Differential_output_driving_forces"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_axial_thrust_Direction_dependent_axial_thrust"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_transmit_and_bias_Transmit_torque_and_generate_direction_depend"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_case_to_pinion"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_pinion_to_output_gears"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

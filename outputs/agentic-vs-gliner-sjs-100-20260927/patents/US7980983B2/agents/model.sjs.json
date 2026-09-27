@@ -1,0 +1,211 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Hydraulically Locking Limited Slip Differential Assembly",
+    "system_id": "US7980983B2",
+    "description": "Inferred concept model of a motor-vehicle limited-slip differential assembly using an externally located pump and controller to selectively hydraulically engage an internal differential clutch.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "Motor vehicle drivetrain",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "HOUSING",
+      "subsystem_name": "Differential housing",
+      "description": "Retains the differential; the differential is arranged rotatably inside it.",
+      "domain": "Mechanical drivetrain"
+    },
+    {
+      "subsystem_id": "CARRIER",
+      "subsystem_name": "Differential carrier",
+      "description": "Supports differential components and rotates within the housing.",
+      "domain": "Mechanical drivetrain"
+    },
+    {
+      "subsystem_id": "GEARSET",
+      "subsystem_name": "Differential gear-set",
+      "description": "Located within the carrier and drives vehicle wheels.",
+      "domain": "Mechanical drivetrain",
+      "ports": [
+        {
+          "port_id": "DRIVE_OUT",
+          "name": "Drive to wheels",
+          "direction": "out",
+          "flow_type": "mechanical_rotational"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "GEARSET_TO_WHEELS",
+          "mating_subsystem": "WHEELS",
+          "port_this": "DRIVE_OUT",
+          "port_mate": "DRIVE_IN",
+          "flow_ref": "DRIVE",
+          "interface_type": "mechanical rotational drive"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "CLUTCH",
+      "subsystem_name": "Differential clutch",
+      "description": "Located within the carrier and selectively prevents slip between wheels by coupling differential elements.",
+      "domain": "Mechanical drivetrain"
+    },
+    {
+      "subsystem_id": "CHAMBER",
+      "subsystem_name": "Clutch pressure chamber",
+      "description": "Located within the carrier and receives fluid pressure to selectively engage the clutch.",
+      "domain": "Hydraulic actuation",
+      "ports": [
+        {
+          "port_id": "CHAMBER_FLUID_IN",
+          "name": "Fluid supply",
+          "direction": "in",
+          "flow_type": "hydraulic_fluid"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "PUMP",
+      "subsystem_name": "External fluid pump",
+      "description": "Stationary relative to the housing and external to the carrier; supplies fluid through a pathway to the pressure chamber.",
+      "domain": "Hydraulic actuation",
+      "ports": [
+        {
+          "port_id": "PUMP_FLUID_OUT",
+          "name": "Fluid delivery",
+          "direction": "out",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "PUMP_ACTIVATION_IN",
+          "name": "Pump activation",
+          "direction": "in",
+          "flow_type": "signal"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "PUMP_TO_CHAMBER",
+          "mating_subsystem": "CHAMBER",
+          "port_this": "PUMP_FLUID_OUT",
+          "port_mate": "CHAMBER_FLUID_IN",
+          "flow_ref": "HYDRAULIC_FLUID",
+          "interface_type": "hydraulic"
+        },
+        {
+          "interface_id": "CONTROLLER_TO_PUMP",
+          "mating_subsystem": "CONTROLLER",
+          "port_this": "PUMP_ACTIVATION_IN",
+          "port_mate": "PUMP_COMMAND_OUT",
+          "flow_ref": "PUMP_COMMAND",
+          "interface_type": "control signal"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "CONTROLLER",
+      "subsystem_name": "Pump controller",
+      "description": "External to the carrier; selectively activates the pump in response to detected slip between wheels.",
+      "domain": "Control",
+      "ports": [
+        {
+          "port_id": "PUMP_COMMAND_OUT",
+          "name": "Pump activation command",
+          "direction": "out",
+          "flow_type": "signal"
+        },
+        {
+          "port_id": "SLIP_INFO_IN",
+          "name": "Detected wheel-slip information",
+          "direction": "in",
+          "flow_type": "signal"
+        }
+      ],
+      "interfaces": []
+    },
+    {
+      "subsystem_id": "BEARINGS",
+      "subsystem_name": "Carrier support bearings",
+      "description": "At least two support bearings support the differential carrier at its interface with the housing; the fluid pathway extends across and under at least one bearing.",
+      "domain": "Mechanical drivetrain"
+    },
+    {
+      "subsystem_id": "PLENUM",
+      "subsystem_name": "Annular fluid plenum",
+      "description": "Optional dependent-claim feature arranged rotatably on the carrier, attaching to the pump and providing a circumferential pocket communicating with the fluid pathway.",
+      "domain": "Hydraulic interface"
+    },
+    {
+      "subsystem_id": "DYNAMIC_SEAL",
+      "subsystem_name": "High-pressure dynamic seal",
+      "description": "Optional dependent-claim feature between the plenum pocket and carrier.",
+      "domain": "Hydraulic interface"
+    },
+    {
+      "subsystem_id": "WHEELS",
+      "subsystem_name": "Motor-vehicle driven wheels",
+      "description": "External drivetrain elements driven by the differential gear-set; wheel slip is the condition prompting pump activation.",
+      "domain": "Vehicle drivetrain",
+      "ports": [
+        {
+          "port_id": "DRIVE_IN",
+          "name": "Differential drive input",
+          "direction": "in",
+          "flow_type": "mechanical_rotational"
+        }
+      ]
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "HYDRAULIC_FLUID",
+      "name": "Pressurized working fluid",
+      "flow_type": "hydraulic_fluid",
+      "notes": "Pump delivery to pressure chamber via fluid pathway routed across/under a support bearing; optional plenum pocket communicates with the pathway."
+    },
+    {
+      "flow_id": "SLIP_DETECTION",
+      "name": "Detected wheel-slip information",
+      "flow_type": "signal",
+      "notes": "Input to controller; detection source is not specified by the claims."
+    },
+    {
+      "flow_id": "PUMP_COMMAND",
+      "name": "Pump activation command",
+      "flow_type": "signal",
+      "notes": "Controller selectively activates pump in response to detected slip."
+    },
+    {
+      "flow_id": "DRIVE",
+      "name": "Differential drive to wheels",
+      "flow_type": "mechanical_rotational",
+      "notes": "Gear-set drives vehicle wheels; claim 1 does not specify torque values."
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "LOCK_ON_SLIP",
+        "name": "Hydraulically engage differential clutch upon detected slip",
+        "owner": "CONTROLLER",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Receive or act on detected slip between the wheels."
+          },
+          {
+            "step_no": 2,
+            "description": "Selectively activate the external fluid pump in response to the detected slip."
+          },
+          {
+            "step_no": 3,
+            "description": "Pump fluid through the pathway to the pressure chamber, selectively engaging the clutch to prevent slip between the wheels."
+          }
+        ]
+      }
+    ]
+  }
+}

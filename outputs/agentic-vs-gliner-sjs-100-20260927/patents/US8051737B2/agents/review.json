@@ -1,0 +1,34 @@
+{
+  "revision": 9,
+  "candidate_sha256": "efc5d492c7759360d11a63d35ba91dc3091037a02e68ade301b4b0ef0037c184",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 9's modeled components, claimed recessed thrust-face/rounded shaft-end contact, worm/wheel transmission, rotary and thrust bearing supports, and claim-9 housing/stub-axle/shock-absorbing embodiment are supported by the inspected cited passages. The remaining warning accurately qualifies the second bearing's matching recess as embodiment-dependent."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The model captures the explicit worm-to-wheel-to-output transmission and shaft rotational/axial support functions without adding control behavior. The previously restored shaft-to-rotary-bearing support connection remains present."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Rotational transmission flows are distinguished from mechanical support/contact; interface endpoints use compatible descriptive flow types. The wheel-to-damper and damper-to-output connections form a continuous coupling path and are not duplicate records of the same connection."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "The two requirements reflect claim 1 obligations and cite claim evidence in their rationales. Descriptions distinguish dependent-claim/embodiment-specific configuration; no unsupported numerical limits appear."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "The prior contradictory warning at /warnings/0 has been removed. Modeled interfaces connect existing ports and each connection is represented once, including the shaft/bearing support relation. External components are represented specifically rather than as generic EXTERNAL."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The retrieved functional-decomposition guidance supports distinguishing functions and requirements from physical components and tracing requirements; the unrelated scoring passage provides no invention facts and is not relied upon. Patent passages remain the basis for invention assertions."
+    }
+  },
+  "findings": [],
+  "summary": "Independent review of saved revision 9: prior revision-8 issue is resolved—the false warning claiming that no ports/interfaces were asserted is gone. The shaft-to-rotary-bearing support interface remains present, and the cited patent text supports the modeled core gear train, axial restraint, recessed rounded-end contact, and dependent motor/gearbox embodiment. Flow types and interface paths are coherent; claim-derived obligations remain traceable. No actionable issue identified. Native SysML validation cannot be independently confirmed from the supplied context.",
+  "saved_at": "2026-09-27T08:47:16.341493+00:00"
+}

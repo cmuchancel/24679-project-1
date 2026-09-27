@@ -1,0 +1,307 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Robust Over-Center Latch Assembly",
+    "system_id": "US8240724B2",
+    "description": "Inferred physical model of the latch assembly coupling two relatively movable unit parts through a hinged handle, pivot, hasp and mating hook, with rotation stop and hinge bearing. Manual/user-applied force or rotation at the handle is an external initiating input outside the modeled latch-assembly boundary; no actuator or user interface is modeled.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "Mechanical latching",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "BASE",
+      "subsystem_name": "Latch Base",
+      "description": "Mounts to a first unit part and supports the hinge and rotation stop surface.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "base_hinge",
+          "name": "Hinge support",
+          "direction": "inout",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "base_stop",
+          "name": "Stop surface contact",
+          "direction": "inout",
+          "flow_type": "mechanical_contact"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "base_stop_if",
+          "mating_subsystem": "STOP",
+          "port_this": "base_stop",
+          "port_mate": "stop_base",
+          "flow_ref": "stop_contact",
+          "interface_type": "mechanical stop attachment"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "HANDLE",
+      "subsystem_name": "Handle",
+      "description": "Force-actuated lever rotatably coupled to the base through the hinge.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "handle_hinge",
+          "name": "Hinge coupling",
+          "direction": "inout",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "handle_pivot",
+          "name": "Pivot coupling",
+          "direction": "inout",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "handle_stop",
+          "name": "Stop contact",
+          "direction": "inout",
+          "flow_type": "mechanical_contact"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "handle_hinge_if",
+          "mating_subsystem": "HINGE",
+          "port_this": "handle_hinge",
+          "port_mate": "hinge_handle",
+          "flow_ref": "motion_handle",
+          "interface_type": "rotary mechanical coupling"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "HINGE",
+      "subsystem_name": "Hinge and Hinge Bearing",
+      "description": "Couples handle to base for rotation; hinge bearing supports increased latch/unlatch cycle life.",
+      "domain": "Mechanical",
+      "parts": [
+        {
+          "part_id": "hinge_bearing",
+          "description": "Bearing selected from ball bearing, thrust bearing, roller bearing, bronze bushing, or plastic bushing options.",
+          "quantity": 1
+        },
+        {
+          "part_id": "hinge_pin",
+          "description": "Hinge pin coupled with the hinge bearing.",
+          "quantity": 1
+        }
+      ],
+      "ports": [
+        {
+          "port_id": "hinge_base",
+          "name": "Base hinge coupling",
+          "direction": "inout",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "hinge_handle",
+          "name": "Handle hinge coupling",
+          "direction": "inout",
+          "flow_type": "mechanical_rotary"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "hinge_base_if",
+          "mating_subsystem": "BASE",
+          "port_this": "hinge_base",
+          "port_mate": "base_hinge",
+          "flow_ref": "motion_handle",
+          "interface_type": "rotary mechanical support"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "PIVOT",
+      "subsystem_name": "Pivot Assembly",
+      "description": "Coupled to handle, traverses about the hinge, and carries a hasp; opposing pins have right- and left-handed threads to resist loosening under applied torque.",
+      "domain": "Mechanical",
+      "parts": [
+        {
+          "part_id": "right_pin",
+          "description": "Pivot pin with right-handed thread.",
+          "quantity": 1
+        },
+        {
+          "part_id": "left_pin",
+          "description": "Opposing pivot pin with left-handed thread.",
+          "quantity": 1
+        },
+        {
+          "part_id": "pivot_bearing",
+          "description": "Optional pivot bearing in a disclosed embodiment.",
+          "quantity": 1
+        }
+      ],
+      "ports": [
+        {
+          "port_id": "pivot_handle",
+          "name": "Handle pivot coupling",
+          "direction": "inout",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "pivot_hasp",
+          "name": "Hasp coupling",
+          "direction": "inout",
+          "flow_type": "mechanical_force"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "pivot_handle_if",
+          "mating_subsystem": "HANDLE",
+          "port_this": "pivot_handle",
+          "port_mate": "handle_pivot",
+          "flow_ref": "motion_handle",
+          "interface_type": "mechanical rotary coupling"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "STOP",
+      "subsystem_name": "Base Stop Surface",
+      "description": "Limits handle rotation at the fully latched position; shock-absorbing material is specified for a disclosed embodiment.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "stop_base",
+          "name": "Base attachment",
+          "direction": "inout",
+          "flow_type": "mechanical_contact"
+        },
+        {
+          "port_id": "stop_handle",
+          "name": "Handle limiting contact",
+          "direction": "inout",
+          "flow_type": "mechanical_contact"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "stop_handle_if",
+          "mating_subsystem": "HANDLE",
+          "port_this": "stop_handle",
+          "port_mate": "handle_stop",
+          "flow_ref": "stop_contact",
+          "interface_type": "rotation-limiting mechanical contact"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "HASP",
+      "subsystem_name": "Hasp",
+      "description": "Couples to the pivot and engages a hook on the second unit part; adjustable embodiment disclosed.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "hasp_pivot",
+          "name": "Pivot coupling",
+          "direction": "inout",
+          "flow_type": "mechanical_force"
+        },
+        {
+          "port_id": "hasp_hook",
+          "name": "Hook engagement",
+          "direction": "inout",
+          "flow_type": "mechanical_force"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "hasp_pivot_if",
+          "mating_subsystem": "PIVOT",
+          "port_this": "hasp_pivot",
+          "port_mate": "pivot_hasp",
+          "flow_ref": "mechanical_coupling",
+          "interface_type": "mechanical coupling"
+        },
+        {
+          "interface_id": "hasp_hook_if",
+          "mating_subsystem": "HOOK",
+          "port_this": "hasp_hook",
+          "port_mate": "hook_hasp",
+          "flow_ref": "mechanical_coupling",
+          "interface_type": "mechanical engagement"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "HOOK",
+      "subsystem_name": "Mating Hook",
+      "description": "Mates with the hasp and is coupled to or formed in the second unit part.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "hook_hasp",
+          "name": "Hasp engagement",
+          "direction": "inout",
+          "flow_type": "mechanical_force"
+        }
+      ],
+      "interfaces": []
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "motion_handle",
+      "name": "Handle rotation",
+      "flow_type": "mechanical_rotary",
+      "notes": "Handle rotation is transmitted through the hinge and pivot; the pivot traverses about the hinge."
+    },
+    {
+      "flow_id": "mechanical_coupling",
+      "name": "Latch coupling load",
+      "flow_type": "mechanical_force",
+      "notes": "Over-center linkage and engaged hasp/hook couple the first and second parts."
+    },
+    {
+      "flow_id": "stop_contact",
+      "name": "Stop contact reaction",
+      "flow_type": "mechanical_contact",
+      "notes": "Mechanical contact at the base-coupled stop surface limits handle rotation."
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "act_latch",
+        "name": "Latch and secure movable parts",
+        "owner": "HANDLE",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Manually rotate the handle toward its minimum arc; the pivot traverses about the hinge and the hasp engages the hook."
+          },
+          {
+            "step_no": 2,
+            "description": "As the handle reaches the stop surface, handle rotation is limited; the described reaction urges the handle against the stop."
+          }
+        ]
+      },
+      {
+        "action_id": "act_unlatch",
+        "name": "Unlatch movable parts",
+        "owner": "HANDLE",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Rotate the handle to move the hasp until it decouples from the hook."
+          },
+          {
+            "step_no": 2,
+            "description": "With the hasp disengaged, move the first part relative to the second part."
+          }
+        ]
+      }
+    ]
+  }
+}

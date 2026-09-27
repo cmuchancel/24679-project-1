@@ -1,0 +1,5281 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": false,
+  "native_element_counts": {
+    "ActionDefinition": 25,
+    "ActionUsage": 50,
+    "AttributeUsage": 54,
+    "ConstraintDefinition": 3,
+    "Documentation": 374,
+    "FeatureMembership": 1917,
+    "FeatureTyping": 433,
+    "FeatureValue": 1590,
+    "ItemDefinition": 1,
+    "ItemUsage": 4,
+    "LiteralInteger": 183,
+    "LiteralString": 1590,
+    "MetadataDefinition": 1,
+    "MetadataUsage": 318,
+    "MultiplicityRange": 183,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 1220,
+    "Package": 1,
+    "PartDefinition": 81,
+    "PartUsage": 265,
+    "PortUsage": 4,
+    "Redefinition": 1590,
+    "ReferenceUsage": 1590
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism"
+    },
+    {
+      "path": "/subsystems/0/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_001_planar_bi_stable_compliant_member"
+    },
+    {
+      "path": "/subsystems/0/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_002_spherical_mechanism_member"
+    },
+    {
+      "path": "/subsystems/0/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_015_four_bar_planar_bistable_compliant_member"
+    },
+    {
+      "path": "/subsystems/0/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_003_first_planar_bi_stable_compliant_component"
+    },
+    {
+      "path": "/subsystems/0/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_029_planar_bi_stable_compliant_component"
+    },
+    {
+      "path": "/subsystems/0/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_030_spherical_mechanism"
+    },
+    {
+      "path": "/subsystems/0/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_025_spherical_mechanism_portion"
+    },
+    {
+      "path": "/subsystems/0/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_004_integrally_formed_flexural_members"
+    },
+    {
+      "path": "/subsystems/0/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_005_flexural_members"
+    },
+    {
+      "path": "/subsystems/0/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_033_input_member"
+    },
+    {
+      "path": "/subsystems/0/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_038_compliant_segments"
+    },
+    {
+      "path": "/subsystems/0/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_032_bi_stable_compliant_component"
+    },
+    {
+      "path": "/subsystems/0/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_046_flexible_members"
+    },
+    {
+      "path": "/subsystems/0/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_047_Flexible_members"
+    },
+    {
+      "path": "/subsystems/0/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_048_segment"
+    },
+    {
+      "path": "/subsystems/0/parts/15",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_050_flexible_segment"
+    },
+    {
+      "path": "/subsystems/0/parts/16",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_051_revolute_joint"
+    },
+    {
+      "path": "/subsystems/0/parts/17",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_018_small_length_flexural_pivot"
+    },
+    {
+      "path": "/subsystems/0/parts/18",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_054_pivot"
+    },
+    {
+      "path": "/subsystems/0/parts/19",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_056_compliant_portion"
+    },
+    {
+      "path": "/subsystems/0/parts/20",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_023_torsional_springs"
+    },
+    {
+      "path": "/subsystems/0/parts/21",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_057_joints"
+    },
+    {
+      "path": "/subsystems/0/parts/22",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_058_spherical_slider_crank_mechanism_portion"
+    },
+    {
+      "path": "/subsystems/0/parts/23",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_059_slider_crank_mechanism_portion"
+    },
+    {
+      "path": "/subsystems/0/parts/24",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_067_flexures"
+    },
+    {
+      "path": "/subsystems/0/parts/25",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_069_planar_bistable_compliant_member"
+    },
+    {
+      "path": "/subsystems/0/parts/26",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_007_pin_joints"
+    },
+    {
+      "path": "/subsystems/0/parts/27",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_012_hinges"
+    },
+    {
+      "path": "/subsystems/0/parts/28",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_013_compliant_elements"
+    },
+    {
+      "path": "/subsystems/0/parts/29",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_014_moveable_members"
+    },
+    {
+      "path": "/subsystems/0/parts/30",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_016_torsion_hinge"
+    },
+    {
+      "path": "/subsystems/0/parts/31",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_017_cantilever_beam"
+    },
+    {
+      "path": "/subsystems/0/parts/32",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_019_flexural_pivot"
+    },
+    {
+      "path": "/subsystems/0/parts/33",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_020_small_length_flexural_pivot"
+    },
+    {
+      "path": "/subsystems/0/parts/34",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_021_planar_bi_stable_component"
+    },
+    {
+      "path": "/subsystems/0/parts/35",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_022_four_bar_apparatus"
+    },
+    {
+      "path": "/subsystems/0/parts/36",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_024_first_planar_bi_stable_component"
+    },
+    {
+      "path": "/subsystems/0/parts/37",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_026_spherical_links"
+    },
+    {
+      "path": "/subsystems/0/parts/38",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_027_spherical_bistable_mechanism"
+    },
+    {
+      "path": "/subsystems/0/parts/39",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_028_silicon_prototype"
+    },
+    {
+      "path": "/subsystems/0/parts/40",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_031_input_receiving_mechanism"
+    },
+    {
+      "path": "/subsystems/0/parts/41",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_036_output"
+    },
+    {
+      "path": "/subsystems/0/parts/42",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_037_actuator"
+    },
+    {
+      "path": "/subsystems/0/parts/43",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_040_coupler_link"
+    },
+    {
+      "path": "/subsystems/0/parts/44",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_041_output_link"
+    },
+    {
+      "path": "/subsystems/0/parts/45",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_042_base_substrate"
+    },
+    {
+      "path": "/subsystems/0/parts/46",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_044_thin_connecting_arms"
+    },
+    {
+      "path": "/subsystems/0/parts/47",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_049_compliant_segment"
+    },
+    {
+      "path": "/subsystems/0/parts/48",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_052_characteristic_pivot"
+    },
+    {
+      "path": "/subsystems/0/parts/49",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_053_torsional_spring"
+    },
+    {
+      "path": "/subsystems/0/parts/50",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_055_flexible_beam"
+    },
+    {
+      "path": "/subsystems/0/parts/51",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_060_crank"
+    },
+    {
+      "path": "/subsystems/0/parts/52",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_064_polysilicon"
+    },
+    {
+      "path": "/subsystems/0/parts/53",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_066_spherical_mechanism_links"
+    },
+    {
+      "path": "/subsystems/0/parts/54",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_068_micro_mirror"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.port_PT_001_motion_transmitting_end"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.port_PT_002_output"
+    },
+    {
+      "path": "/subsystems/0/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.port_PT_003_second_end"
+    },
+    {
+      "path": "/subsystems/0/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.port_PT_004_base_substrate"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_002_Assembly"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_003_MEMS"
+    },
+    {
+      "path": "/subsystems/2/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_006_pin"
+    },
+    {
+      "path": "/subsystems/2/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_008_head"
+    },
+    {
+      "path": "/subsystems/2/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_009_pin_mounting_joint"
+    },
+    {
+      "path": "/subsystems/2/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_010_ring"
+    },
+    {
+      "path": "/subsystems/2/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_011_rigid_elements"
+    },
+    {
+      "path": "/subsystems/2/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_003_first_planar_bi_stable_compliant_component_0342b892"
+    },
+    {
+      "path": "/subsystems/2/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_029_planar_bi_stable_compliant_component_0d860f11"
+    },
+    {
+      "path": "/subsystems/2/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_030_spherical_mechanism_92a150ab"
+    },
+    {
+      "path": "/subsystems/2/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_025_spherical_mechanism_portion_542f8846"
+    },
+    {
+      "path": "/subsystems/2/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_004_integrally_formed_flexural_members_6777b64e"
+    },
+    {
+      "path": "/subsystems/2/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_005_flexural_members_6e009289"
+    },
+    {
+      "path": "/subsystems/2/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_069_planar_bistable_compliant_member_61123af7"
+    },
+    {
+      "path": "/subsystems/2/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_002_spherical_mechanism_member_f6696a6f"
+    },
+    {
+      "path": "/subsystems/2/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_015_four_bar_planar_bistable_compliant_member_1fd37066"
+    },
+    {
+      "path": "/subsystems/2/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_081_four_bar_bistable_compliant_member"
+    },
+    {
+      "path": "/subsystems/2/parts/15",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_082_first_and_a_second_rigid_member"
+    },
+    {
+      "path": "/subsystems/2/parts/16",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_071_second_rigid_member"
+    },
+    {
+      "path": "/subsystems/2/parts/17",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_083_rigid_member"
+    },
+    {
+      "path": "/subsystems/2/parts/18",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_001_planar_bi_stable_compliant_member_ebe20e1d"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_004_MEMS_system"
+    },
+    {
+      "path": "/subsystems/3/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_004_MEMS_system.part_P_006_pin_2da6f069"
+    },
+    {
+      "path": "/subsystems/3/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_004_MEMS_system.part_P_008_head_97ffd0e3"
+    },
+    {
+      "path": "/subsystems/3/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_004_MEMS_system.part_P_009_pin_mounting_joint_6ab4451b"
+    },
+    {
+      "path": "/subsystems/3/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_004_MEMS_system.part_P_010_ring_dd59c3df"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_005_MEMS_devices"
+    },
+    {
+      "path": "/subsystems/4/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_MEMS_devices.part_P_006_pin_682a0648"
+    },
+    {
+      "path": "/subsystems/4/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_MEMS_devices.part_P_008_head_6bc95ddd"
+    },
+    {
+      "path": "/subsystems/4/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_MEMS_devices.part_P_009_pin_mounting_joint_03f110bf"
+    },
+    {
+      "path": "/subsystems/4/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_MEMS_devices.part_P_010_ring_47cc6f47"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_006_pin_joints"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_007_micromechanism"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_008_bi_stable_devices"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_009_Bistable_devices"
+    },
+    {
+      "path": "/subsystems/9",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_010_mechanisms"
+    },
+    {
+      "path": "/subsystems/9/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_mechanisms.part_P_011_rigid_elements_046b9475"
+    },
+    {
+      "path": "/subsystems/10",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_011_switches"
+    },
+    {
+      "path": "/subsystems/11",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_012_valves"
+    },
+    {
+      "path": "/subsystems/12",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_013_clasps"
+    },
+    {
+      "path": "/subsystems/13",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_014_closures"
+    },
+    {
+      "path": "/subsystems/14",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_015_Switches"
+    },
+    {
+      "path": "/subsystems/15",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_016_rigid_body_structures"
+    },
+    {
+      "path": "/subsystems/16",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_017_mirror_arrays"
+    },
+    {
+      "path": "/subsystems/17",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_018_erectable_structures"
+    },
+    {
+      "path": "/subsystems/18",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_019_planar_bi_stable_compliant_member"
+    },
+    {
+      "path": "/subsystems/19",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_020_spherical_mechanism_member"
+    },
+    {
+      "path": "/subsystems/20",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_021_four_bar_planar_bistable_compliant_member"
+    },
+    {
+      "path": "/subsystems/21",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_022_four_bar_apparatus"
+    },
+    {
+      "path": "/subsystems/21/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_four_bar_apparatus.part_P_023_torsional_springs_2a684247"
+    },
+    {
+      "path": "/subsystems/21/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_four_bar_apparatus.part_P_025_spherical_mechanism_portion_19a1b9a9"
+    },
+    {
+      "path": "/subsystems/22",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_023_spherical_mechanism_portion"
+    },
+    {
+      "path": "/subsystems/23",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_024_out_of_plane_positioning_microelectromechanic"
+    },
+    {
+      "path": "/subsystems/23/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_024_out_of_plane_positioning_microelectromechanic.part_P_003_first_planar_bi_stable_compliant_component_1122cfa6"
+    },
+    {
+      "path": "/subsystems/23/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_024_out_of_plane_positioning_microelectromechanic.part_P_029_planar_bi_stable_compliant_component_1d937f17"
+    },
+    {
+      "path": "/subsystems/23/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_024_out_of_plane_positioning_microelectromechanic.part_P_030_spherical_mechanism_1c2a9a96"
+    },
+    {
+      "path": "/subsystems/23/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_024_out_of_plane_positioning_microelectromechanic.part_P_025_spherical_mechanism_portion_2b753bb4"
+    },
+    {
+      "path": "/subsystems/23/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_024_out_of_plane_positioning_microelectromechanic.part_P_004_integrally_formed_flexural_members_bb89b9a4"
+    },
+    {
+      "path": "/subsystems/23/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_024_out_of_plane_positioning_microelectromechanic.part_P_005_flexural_members_9d0f9d2d"
+    },
+    {
+      "path": "/subsystems/24",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system"
+    },
+    {
+      "path": "/subsystems/24/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_003_first_planar_bi_stable_compliant_component_82e6f28b"
+    },
+    {
+      "path": "/subsystems/24/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_029_planar_bi_stable_compliant_component_718c9d86"
+    },
+    {
+      "path": "/subsystems/24/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_030_spherical_mechanism_7bda652e"
+    },
+    {
+      "path": "/subsystems/24/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_025_spherical_mechanism_portion_4bfcca27"
+    },
+    {
+      "path": "/subsystems/24/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_004_integrally_formed_flexural_members_3b966e10"
+    },
+    {
+      "path": "/subsystems/24/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_005_flexural_members_df3c7a68"
+    },
+    {
+      "path": "/subsystems/24/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_069_planar_bistable_compliant_member_212e035e"
+    },
+    {
+      "path": "/subsystems/24/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_002_spherical_mechanism_member_4350417e"
+    },
+    {
+      "path": "/subsystems/24/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_015_four_bar_planar_bistable_compliant_member_78e4e40a"
+    },
+    {
+      "path": "/subsystems/24/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_081_four_bar_bistable_compliant_member_9a00b9d9"
+    },
+    {
+      "path": "/subsystems/24/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_082_first_and_a_second_rigid_member_81ca0e99"
+    },
+    {
+      "path": "/subsystems/24/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_071_second_rigid_member_0c70eb86"
+    },
+    {
+      "path": "/subsystems/24/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_083_rigid_member_7e2cc9ed"
+    },
+    {
+      "path": "/subsystems/24/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_001_planar_bi_stable_compliant_member_c1a3f59a"
+    },
+    {
+      "path": "/subsystems/25",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_026_first_planar_bi_stable_compliant_component"
+    },
+    {
+      "path": "/subsystems/26",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_027_planar_bi_stable_compliant_component"
+    },
+    {
+      "path": "/subsystems/27",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_028_compliant_mechanism"
+    },
+    {
+      "path": "/subsystems/28",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_029_integrally_formed_flexural_members"
+    },
+    {
+      "path": "/subsystems/29",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_030_device"
+    },
+    {
+      "path": "/subsystems/30",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_031_bi_stable_compliant_component"
+    },
+    {
+      "path": "/subsystems/30/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_bi_stable_compliant_component.part_P_033_input_member_88290e38"
+    },
+    {
+      "path": "/subsystems/30/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_bi_stable_compliant_component.part_P_034_force_receiving_end"
+    },
+    {
+      "path": "/subsystems/30/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_bi_stable_compliant_component.part_P_035_motion_transmitting_end"
+    },
+    {
+      "path": "/subsystems/30/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_bi_stable_compliant_component.part_P_038_compliant_segments_5088d0cd"
+    },
+    {
+      "path": "/subsystems/30/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_bi_stable_compliant_component.part_P_039_rigid_segment"
+    },
+    {
+      "path": "/subsystems/31",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_032_input_receiving_mechanism"
+    },
+    {
+      "path": "/subsystems/32",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_033_input_member"
+    },
+    {
+      "path": "/subsystems/32/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_input_member.part_P_035_motion_transmitting_end_35ad93ea"
+    },
+    {
+      "path": "/subsystems/32/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_input_member.part_P_025_spherical_mechanism_portion_863b9f6f"
+    },
+    {
+      "path": "/subsystems/32/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_input_member.part_P_043_micro_spherical_slider_crank"
+    },
+    {
+      "path": "/subsystems/32/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_033_input_member.part_P_032_bi_stable_compliant_component_ee04d8d4"
+    },
+    {
+      "path": "/subsystems/33",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_034_substrate"
+    },
+    {
+      "path": "/subsystems/34",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_035_force_receiving_end"
+    },
+    {
+      "path": "/subsystems/35",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_036_motion_transmitting_end"
+    },
+    {
+      "path": "/subsystems/36",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_037_output"
+    },
+    {
+      "path": "/subsystems/37",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_038_actuator"
+    },
+    {
+      "path": "/subsystems/38",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_039_compliant_segments"
+    },
+    {
+      "path": "/subsystems/39",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_040_rigid_segment"
+    },
+    {
+      "path": "/subsystems/40",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_041_Young_Mechanism"
+    },
+    {
+      "path": "/subsystems/40/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_041_Young_Mechanism.part_P_038_compliant_segments_32d28d0f"
+    },
+    {
+      "path": "/subsystems/40/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_041_Young_Mechanism.part_P_032_bi_stable_compliant_component_d6257b7b"
+    },
+    {
+      "path": "/subsystems/40/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_041_Young_Mechanism.part_P_051_revolute_joint_3b72bc02"
+    },
+    {
+      "path": "/subsystems/41",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_042_coupler_link"
+    },
+    {
+      "path": "/subsystems/42",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_043_output_link"
+    },
+    {
+      "path": "/subsystems/43",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_044_micro_spherical_slider_crank"
+    },
+    {
+      "path": "/subsystems/44",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_045_flexible_members"
+    },
+    {
+      "path": "/subsystems/45",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_046_Flexible_members"
+    },
+    {
+      "path": "/subsystems/46",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_047_compliant_mechanisms"
+    },
+    {
+      "path": "/subsystems/47",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_048_rigid_link_mechanism"
+    },
+    {
+      "path": "/subsystems/48",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_049_Pseudo_Rigid_Body_Model"
+    },
+    {
+      "path": "/subsystems/49",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_050_PRBM"
+    },
+    {
+      "path": "/subsystems/50",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_051_PRBMs"
+    },
+    {
+      "path": "/subsystems/51",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_052_cantilever_beam"
+    },
+    {
+      "path": "/subsystems/52",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_053_small_length_flexural_pivot"
+    },
+    {
+      "path": "/subsystems/53",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_054_flexural_pivot"
+    },
+    {
+      "path": "/subsystems/54",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_055_flexible_segment"
+    },
+    {
+      "path": "/subsystems/55",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_056_revolute_joint"
+    },
+    {
+      "path": "/subsystems/56",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_057_torsional_spring"
+    },
+    {
+      "path": "/subsystems/57",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_058_spherical_mechanisms"
+    },
+    {
+      "path": "/subsystems/58",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_059_bi_stable_mechanism"
+    },
+    {
+      "path": "/subsystems/58/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_059_bi_stable_mechanism.part_P_032_bi_stable_compliant_component_da0db604"
+    },
+    {
+      "path": "/subsystems/58/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_059_bi_stable_mechanism.part_P_058_spherical_slider_crank_mechanism_portion_8ebb5cb3"
+    },
+    {
+      "path": "/subsystems/58/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_059_bi_stable_mechanism.part_P_059_slider_crank_mechanism_portion_8425b74a"
+    },
+    {
+      "path": "/subsystems/59",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_060_spherical_slider_crank_mechanism_portion"
+    },
+    {
+      "path": "/subsystems/60",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_061_four_bar_mechanism"
+    },
+    {
+      "path": "/subsystems/60/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_061_four_bar_mechanism.part_P_023_torsional_springs_24a0774a"
+    },
+    {
+      "path": "/subsystems/61",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_062_mechanism"
+    },
+    {
+      "path": "/subsystems/61/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_062_mechanism.part_P_057_joints_e6e6f365"
+    },
+    {
+      "path": "/subsystems/61/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_062_mechanism.part_P_061_links"
+    },
+    {
+      "path": "/subsystems/61/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_062_mechanism.part_P_062_spherical_crank_slider"
+    },
+    {
+      "path": "/subsystems/61/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_062_mechanism.part_P_063_spherical_crank_slider_portion"
+    },
+    {
+      "path": "/subsystems/61/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_062_mechanism.part_P_038_compliant_segments_98af22fb"
+    },
+    {
+      "path": "/subsystems/61/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_062_mechanism.part_P_065_segments"
+    },
+    {
+      "path": "/subsystems/62",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_063_spherical_slider_crank"
+    },
+    {
+      "path": "/subsystems/62/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_063_spherical_slider_crank.part_P_057_joints_21470d4d"
+    },
+    {
+      "path": "/subsystems/62/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_063_spherical_slider_crank.part_P_062_spherical_crank_slider_8b67124b"
+    },
+    {
+      "path": "/subsystems/62/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_063_spherical_slider_crank.part_P_063_spherical_crank_slider_portion_629a2b17"
+    },
+    {
+      "path": "/subsystems/62/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_063_spherical_slider_crank.part_P_038_compliant_segments_d3f4e1b9"
+    },
+    {
+      "path": "/subsystems/62/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_063_spherical_slider_crank.part_P_065_segments_40d06254"
+    },
+    {
+      "path": "/subsystems/62/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_063_spherical_slider_crank.part_P_061_links_d3276125"
+    },
+    {
+      "path": "/subsystems/63",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_064_novel_device"
+    },
+    {
+      "path": "/subsystems/64",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_065_micro_mirror"
+    },
+    {
+      "path": "/subsystems/64/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_065_micro_mirror.part_P_069_planar_bistable_compliant_member_734415d5"
+    },
+    {
+      "path": "/subsystems/64/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_065_micro_mirror.part_P_002_spherical_mechanism_member_87df316c"
+    },
+    {
+      "path": "/subsystems/65",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism"
+    },
+    {
+      "path": "/subsystems/65/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_067_flexures_19039fab"
+    },
+    {
+      "path": "/subsystems/65/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_069_planar_bistable_compliant_member_8adb1b40"
+    },
+    {
+      "path": "/subsystems/65/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_002_spherical_mechanism_member_3657c4ee"
+    },
+    {
+      "path": "/subsystems/65/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_001_planar_bi_stable_compliant_member_36d4eb75"
+    },
+    {
+      "path": "/subsystems/65/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_070_four_bar_structure"
+    },
+    {
+      "path": "/subsystems/65/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_071_second_rigid_member_b65f1e84"
+    },
+    {
+      "path": "/subsystems/65/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_074_Young_Mechanism"
+    },
+    {
+      "path": "/subsystems/65/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_075_spherical_slider_crank"
+    },
+    {
+      "path": "/subsystems/65/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_076_coupler_link_member"
+    },
+    {
+      "path": "/subsystems/65/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_079_compliant_torsional_hinge"
+    },
+    {
+      "path": "/subsystems/65/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_080_torsional_hinge"
+    },
+    {
+      "path": "/subsystems/65/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_078_second_end"
+    },
+    {
+      "path": "/subsystems/65/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_045_reflective_surface"
+    },
+    {
+      "path": "/subsystems/65/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_015_four_bar_planar_bistable_compliant_member_6ce89a72"
+    },
+    {
+      "path": "/subsystems/65/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_081_four_bar_bistable_compliant_member_ae4e4883"
+    },
+    {
+      "path": "/subsystems/65/parts/15",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_082_first_and_a_second_rigid_member_2cfcb341"
+    },
+    {
+      "path": "/subsystems/65/parts/16",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_083_rigid_member_15c85cc0"
+    },
+    {
+      "path": "/subsystems/66",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_067_planar_bistable_compliant_member"
+    },
+    {
+      "path": "/subsystems/67",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_068_four_bar_structure"
+    },
+    {
+      "path": "/subsystems/68",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_069_second_rigid_member"
+    },
+    {
+      "path": "/subsystems/69",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_070_first_pin_location"
+    },
+    {
+      "path": "/subsystems/70",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_071_second_pin_location"
+    },
+    {
+      "path": "/subsystems/71",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_072_input"
+    },
+    {
+      "path": "/subsystems/72",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_073_spherical_slider_crank"
+    },
+    {
+      "path": "/subsystems/72/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_073_spherical_slider_crank.part_P_076_coupler_link_member_9b8da6b2"
+    },
+    {
+      "path": "/subsystems/72/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_073_spherical_slider_crank.part_P_077_collapsible_union"
+    },
+    {
+      "path": "/subsystems/72/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_073_spherical_slider_crank.part_P_079_compliant_torsional_hinge_726ce937"
+    },
+    {
+      "path": "/subsystems/73",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_074_coupler_link_member"
+    },
+    {
+      "path": "/subsystems/74",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_075_collapsible_union"
+    },
+    {
+      "path": "/subsystems/75",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_076_reflective_surface"
+    },
+    {
+      "path": "/subsystems/76",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_077_multi_user_MEMS_processing_system"
+    },
+    {
+      "path": "/subsystems/77",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_078_MEMS_processing_system"
+    },
+    {
+      "path": "/subsystems/77/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_078_MEMS_processing_system.part_P_045_reflective_surface_81b2b3c6"
+    },
+    {
+      "path": "/subsystems/77/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_078_MEMS_processing_system.part_P_069_planar_bistable_compliant_member_c85afb04"
+    },
+    {
+      "path": "/subsystems/77/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_078_MEMS_processing_system.part_P_015_four_bar_planar_bistable_compliant_member_03f78146"
+    },
+    {
+      "path": "/subsystems/77/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_078_MEMS_processing_system.part_P_081_four_bar_bistable_compliant_member_c51be9a4"
+    },
+    {
+      "path": "/subsystems/77/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_078_MEMS_processing_system.part_P_082_first_and_a_second_rigid_member_cbb119e6"
+    },
+    {
+      "path": "/subsystems/77/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_078_MEMS_processing_system.part_P_071_second_rigid_member_5cd47aa5"
+    },
+    {
+      "path": "/subsystems/77/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_078_MEMS_processing_system.part_P_083_rigid_member_ca9d2c1f"
+    },
+    {
+      "path": "/subsystems/77/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_078_MEMS_processing_system.part_P_001_planar_bi_stable_compliant_member_856d423d"
+    },
+    {
+      "path": "/subsystems/78",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_079_microelectromechanical_system__MEMS"
+    },
+    {
+      "path": "/subsystems/78/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_079_microelectromechanical_system__MEMS.part_P_069_planar_bistable_compliant_member_3c42ff63"
+    },
+    {
+      "path": "/subsystems/78/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_079_microelectromechanical_system__MEMS.part_P_002_spherical_mechanism_member_1664b8bc"
+    },
+    {
+      "path": "/subsystems/78/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_079_microelectromechanical_system__MEMS.part_P_015_four_bar_planar_bistable_compliant_member_d043baba"
+    },
+    {
+      "path": "/subsystems/78/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_079_microelectromechanical_system__MEMS.part_P_081_four_bar_bistable_compliant_member_80896ee6"
+    },
+    {
+      "path": "/subsystems/78/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_079_microelectromechanical_system__MEMS.part_P_082_first_and_a_second_rigid_member_40453183"
+    },
+    {
+      "path": "/subsystems/78/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_079_microelectromechanical_system__MEMS.part_P_071_second_rigid_member_298c69aa"
+    },
+    {
+      "path": "/subsystems/78/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_079_microelectromechanical_system__MEMS.part_P_083_rigid_member_ebfcff18"
+    },
+    {
+      "path": "/subsystems/78/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_079_microelectromechanical_system__MEMS.part_P_001_planar_bi_stable_compliant_member_6bf2fd7e"
+    },
+    {
+      "path": "/subsystems/79",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism"
+    },
+    {
+      "path": "/subsystems/79/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism.part_P_069_planar_bistable_compliant_member_e296fad6"
+    },
+    {
+      "path": "/subsystems/79/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism.part_P_002_spherical_mechanism_member_90cdea77"
+    },
+    {
+      "path": "/subsystems/79/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism.part_P_015_four_bar_planar_bistable_compliant_member_2a60f470"
+    },
+    {
+      "path": "/subsystems/79/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism.part_P_081_four_bar_bistable_compliant_member_5c64c827"
+    },
+    {
+      "path": "/subsystems/79/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism.part_P_082_first_and_a_second_rigid_member_ec45f6e0"
+    },
+    {
+      "path": "/subsystems/79/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism.part_P_071_second_rigid_member_395d8a29"
+    },
+    {
+      "path": "/subsystems/79/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism.part_P_083_rigid_member_14d8bdb8"
+    },
+    {
+      "path": "/subsystems/79/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism.part_P_001_planar_bi_stable_compliant_member_22be3255"
+    },
+    {
+      "path": "/subsystems/79/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism.part_P_072_first_pin_location"
+    },
+    {
+      "path": "/subsystems/79/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism.part_P_073_second_pin_location"
+    },
+    {
+      "path": "/subsystems/79/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism.part_P_074_Young_Mechanism_6224ee77"
+    },
+    {
+      "path": "/subsystems/79/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism.part_P_045_reflective_surface_807458aa"
+    },
+    {
+      "path": "/subsystems/80",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_081_second_end"
+    },
+    {
+      "path": "/values/0",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_001_actuation"
+    },
+    {
+      "path": "/values/1",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_002_force"
+    },
+    {
+      "path": "/values/2",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_003_force_at_the_free_end"
+    },
+    {
+      "path": "/values/3",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_004_F"
+    },
+    {
+      "path": "/values/4",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_005_rotation_parameters"
+    },
+    {
+      "path": "/values/5",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_006___2"
+    },
+    {
+      "path": "/values/6",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_007___3"
+    },
+    {
+      "path": "/values/7",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_008___4"
+    },
+    {
+      "path": "/values/8",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_009___5"
+    },
+    {
+      "path": "/values/9",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_010___6"
+    },
+    {
+      "path": "/values/10",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_011_S_7"
+    },
+    {
+      "path": "/values/11",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_012_input_angle"
+    },
+    {
+      "path": "/values/12",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_013____2"
+    },
+    {
+      "path": "/values/13",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_014_component_angles"
+    },
+    {
+      "path": "/values/14",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_015_potential_energy_curve"
+    },
+    {
+      "path": "/values/15",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_016_input_torque"
+    },
+    {
+      "path": "/values/16",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_017_calculated_strain"
+    },
+    {
+      "path": "/values/17",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_018_strain"
+    },
+    {
+      "path": "/values/18",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_019_input_force"
+    },
+    {
+      "path": "/values/19",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_020_in_plane_input_motion"
+    },
+    {
+      "path": "/values/20",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_021_algebraic_equations"
+    },
+    {
+      "path": "/values/21",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_022_differential_equations"
+    },
+    {
+      "path": "/values/22",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_023_characteristic_radius"
+    },
+    {
+      "path": "/values/23",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_024"
+    },
+    {
+      "path": "/values/24",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_025_stiffness"
+    },
+    {
+      "path": "/values/25",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_026_K"
+    },
+    {
+      "path": "/values/26",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_027_EI"
+    },
+    {
+      "path": "/values/27",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_028___max"
+    },
+    {
+      "path": "/values/28",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_029_l"
+    },
+    {
+      "path": "/values/29",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_030_a"
+    },
+    {
+      "path": "/values/30",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_031_Mc"
+    },
+    {
+      "path": "/values/31",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_032_transmission_angle"
+    },
+    {
+      "path": "/values/32",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_033_E"
+    },
+    {
+      "path": "/values/33",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_034_169_MPa"
+    },
+    {
+      "path": "/values/34",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_035_r_3"
+    },
+    {
+      "path": "/values/35",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_036___20"
+    },
+    {
+      "path": "/values/36",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_037___40"
+    },
+    {
+      "path": "/values/37",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_038_bending_moments_of_inertia"
+    },
+    {
+      "path": "/values/38",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_039_I"
+    },
+    {
+      "path": "/values/39",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_040_I_2"
+    },
+    {
+      "path": "/values/40",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_041_radius"
+    },
+    {
+      "path": "/values/41",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_042_140__m"
+    },
+    {
+      "path": "/values/42",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_043_arc_lengths"
+    },
+    {
+      "path": "/values/43",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_044_79_3"
+    },
+    {
+      "path": "/values/44",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_045"
+    },
+    {
+      "path": "/values/45",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_046_strain_magnitude"
+    },
+    {
+      "path": "/values/46",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_047_stable_out_of_plane_orientation"
+    },
+    {
+      "path": "/values/47",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_048_potential_energy"
+    },
+    {
+      "path": "/values/48",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_049_maximum_stress"
+    },
+    {
+      "path": "/constraints/0",
+      "kind": "ConstraintDefinition (descriptive)",
+      "symbol": "Constraint_CON_001_stable_mechanism"
+    },
+    {
+      "path": "/constraints/1",
+      "kind": "ConstraintDefinition (descriptive)",
+      "symbol": "Constraint_CON_002_Young_Mechanism"
+    },
+    {
+      "path": "/constraints/2",
+      "kind": "ConstraintDefinition (descriptive)",
+      "symbol": "Constraint_CON_003_equations"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_001_actuation"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_002_motion_through_deflection"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_003_deflection"
+    },
+    {
+      "path": "/behaviour/actions/3",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_004_off"
+    },
+    {
+      "path": "/behaviour/actions/4",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_005_electrical_and_or_mechanical_switching"
+    },
+    {
+      "path": "/behaviour/actions/5",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_006_mechanical_switching"
+    },
+    {
+      "path": "/behaviour/actions/6",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_007_out_of_plane_positioning"
+    },
+    {
+      "path": "/behaviour/actions/7",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_008_position_analysis"
+    },
+    {
+      "path": "/behaviour/actions/8",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_009_convert_linear_in_plane_motion"
+    },
+    {
+      "path": "/behaviour/actions/9",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_010_motion"
+    },
+    {
+      "path": "/behaviour/actions/10",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_011_bi_stable_out_of_plane_positioning"
+    },
+    {
+      "path": "/behaviour/actions/11",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_012_in_plane_input_motion"
+    },
+    {
+      "path": "/behaviour/actions/12",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_013_actuate"
+    },
+    {
+      "path": "/behaviour/actions/13",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_014_translation"
+    },
+    {
+      "path": "/behaviour/actions/14",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_015_rotation"
+    },
+    {
+      "path": "/behaviour/actions/15",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_016_rotation_about_an_axis"
+    },
+    {
+      "path": "/behaviour/actions/16",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_017_torsional_bending"
+    },
+    {
+      "path": "/behaviour/actions/17",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_018_arcuate_motion"
+    },
+    {
+      "path": "/behaviour/actions/18",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_019_transform"
+    },
+    {
+      "path": "/behaviour/actions/19",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_020_bi_stable_positioning"
+    },
+    {
+      "path": "/behaviour/actions/20",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_021_transitioning_from_one_position_to_the_other"
+    },
+    {
+      "path": "/behaviour/actions/21",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_022_one_position_to_the_other"
+    },
+    {
+      "path": "/behaviour/actions/22",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_023_position"
+    },
+    {
+      "path": "/behaviour/actions/23",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_024_selectively_positioned"
+    },
+    {
+      "path": "/behaviour/actions/24",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_025_optical_switch"
+    },
+    {
+      "path": "/relationships/0",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[0]"
+    },
+    {
+      "path": "/relationships/0",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_001_planar_bi_stable_compliant_member"
+    },
+    {
+      "path": "/relationships/1",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[1]"
+    },
+    {
+      "path": "/relationships/1",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_002_spherical_mechanism_member"
+    },
+    {
+      "path": "/relationships/2",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[2]"
+    },
+    {
+      "path": "/relationships/2",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_006_pin"
+    },
+    {
+      "path": "/relationships/3",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[3]"
+    },
+    {
+      "path": "/relationships/3",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_008_head"
+    },
+    {
+      "path": "/relationships/4",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[4]"
+    },
+    {
+      "path": "/relationships/4",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_009_pin_mounting_joint"
+    },
+    {
+      "path": "/relationships/5",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[5]"
+    },
+    {
+      "path": "/relationships/5",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_010_ring"
+    },
+    {
+      "path": "/relationships/6",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[6]"
+    },
+    {
+      "path": "/relationships/6",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_004_MEMS_system.part_P_006_pin_2da6f069"
+    },
+    {
+      "path": "/relationships/7",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[7]"
+    },
+    {
+      "path": "/relationships/7",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_004_MEMS_system.part_P_008_head_97ffd0e3"
+    },
+    {
+      "path": "/relationships/8",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[8]"
+    },
+    {
+      "path": "/relationships/8",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_004_MEMS_system.part_P_009_pin_mounting_joint_6ab4451b"
+    },
+    {
+      "path": "/relationships/9",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[9]"
+    },
+    {
+      "path": "/relationships/9",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_004_MEMS_system.part_P_010_ring_dd59c3df"
+    },
+    {
+      "path": "/relationships/10",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[10]"
+    },
+    {
+      "path": "/relationships/10",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_MEMS_devices.part_P_006_pin_682a0648"
+    },
+    {
+      "path": "/relationships/11",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[11]"
+    },
+    {
+      "path": "/relationships/11",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_MEMS_devices.part_P_008_head_6bc95ddd"
+    },
+    {
+      "path": "/relationships/12",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[12]"
+    },
+    {
+      "path": "/relationships/12",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_MEMS_devices.part_P_009_pin_mounting_joint_03f110bf"
+    },
+    {
+      "path": "/relationships/13",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[13]"
+    },
+    {
+      "path": "/relationships/13",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_MEMS_devices.part_P_010_ring_47cc6f47"
+    },
+    {
+      "path": "/relationships/14",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[14]"
+    },
+    {
+      "path": "/relationships/14",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_mechanisms.part_P_011_rigid_elements_046b9475"
+    },
+    {
+      "path": "/relationships/15",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[15]"
+    },
+    {
+      "path": "/relationships/15",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_011_rigid_elements"
+    },
+    {
+      "path": "/relationships/16",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[16]"
+    },
+    {
+      "path": "/relationships/16",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_015_four_bar_planar_bistable_compliant_member"
+    },
+    {
+      "path": "/relationships/17",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[17]"
+    },
+    {
+      "path": "/relationships/17",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_four_bar_apparatus.part_P_023_torsional_springs_2a684247"
+    },
+    {
+      "path": "/relationships/18",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[18]"
+    },
+    {
+      "path": "/relationships/18",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_four_bar_apparatus.part_P_025_spherical_mechanism_portion_19a1b9a9"
+    },
+    {
+      "path": "/relationships/19",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[19]"
+    },
+    {
+      "path": "/relationships/19",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_003_first_planar_bi_stable_compliant_component"
+    },
+    {
+      "path": "/relationships/20",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[20]"
+    },
+    {
+      "path": "/relationships/20",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_029_planar_bi_stable_compliant_component"
+    },
+    {
+      "path": "/relationships/21",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[21]"
+    },
+    {
+      "path": "/relationships/21",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_030_spherical_mechanism"
+    },
+    {
+      "path": "/relationships/22",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[22]"
+    },
+    {
+      "path": "/relationships/22",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_025_spherical_mechanism_portion"
+    },
+    {
+      "path": "/relationships/23",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[23]"
+    },
+    {
+      "path": "/relationships/23",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_004_integrally_formed_flexural_members"
+    },
+    {
+      "path": "/relationships/24",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[24]"
+    },
+    {
+      "path": "/relationships/24",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_005_flexural_members"
+    },
+    {
+      "path": "/relationships/25",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[25]"
+    },
+    {
+      "path": "/relationships/25",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_024_out_of_plane_positioning_microelectromechanic.part_P_003_first_planar_bi_stable_compliant_component_1122cfa6"
+    },
+    {
+      "path": "/relationships/26",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[26]"
+    },
+    {
+      "path": "/relationships/26",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_024_out_of_plane_positioning_microelectromechanic.part_P_029_planar_bi_stable_compliant_component_1d937f17"
+    },
+    {
+      "path": "/relationships/27",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[27]"
+    },
+    {
+      "path": "/relationships/27",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_024_out_of_plane_positioning_microelectromechanic.part_P_030_spherical_mechanism_1c2a9a96"
+    },
+    {
+      "path": "/relationships/28",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[28]"
+    },
+    {
+      "path": "/relationships/28",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_024_out_of_plane_positioning_microelectromechanic.part_P_025_spherical_mechanism_portion_2b753bb4"
+    },
+    {
+      "path": "/relationships/29",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[29]"
+    },
+    {
+      "path": "/relationships/29",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_024_out_of_plane_positioning_microelectromechanic.part_P_004_integrally_formed_flexural_members_bb89b9a4"
+    },
+    {
+      "path": "/relationships/30",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[30]"
+    },
+    {
+      "path": "/relationships/30",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_024_out_of_plane_positioning_microelectromechanic.part_P_005_flexural_members_9d0f9d2d"
+    },
+    {
+      "path": "/relationships/31",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[31]"
+    },
+    {
+      "path": "/relationships/31",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_003_first_planar_bi_stable_compliant_component_82e6f28b"
+    },
+    {
+      "path": "/relationships/32",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[32]"
+    },
+    {
+      "path": "/relationships/32",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_029_planar_bi_stable_compliant_component_718c9d86"
+    },
+    {
+      "path": "/relationships/33",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[33]"
+    },
+    {
+      "path": "/relationships/33",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_030_spherical_mechanism_7bda652e"
+    },
+    {
+      "path": "/relationships/34",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[34]"
+    },
+    {
+      "path": "/relationships/34",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_025_spherical_mechanism_portion_4bfcca27"
+    },
+    {
+      "path": "/relationships/35",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[35]"
+    },
+    {
+      "path": "/relationships/35",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_004_integrally_formed_flexural_members_3b966e10"
+    },
+    {
+      "path": "/relationships/36",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[36]"
+    },
+    {
+      "path": "/relationships/36",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_005_flexural_members_df3c7a68"
+    },
+    {
+      "path": "/relationships/37",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[37]"
+    },
+    {
+      "path": "/relationships/37",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_003_first_planar_bi_stable_compliant_component_0342b892"
+    },
+    {
+      "path": "/relationships/38",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[38]"
+    },
+    {
+      "path": "/relationships/38",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_029_planar_bi_stable_compliant_component_0d860f11"
+    },
+    {
+      "path": "/relationships/39",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[39]"
+    },
+    {
+      "path": "/relationships/39",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_030_spherical_mechanism_92a150ab"
+    },
+    {
+      "path": "/relationships/40",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[40]"
+    },
+    {
+      "path": "/relationships/40",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_025_spherical_mechanism_portion_542f8846"
+    },
+    {
+      "path": "/relationships/41",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[41]"
+    },
+    {
+      "path": "/relationships/41",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_004_integrally_formed_flexural_members_6777b64e"
+    },
+    {
+      "path": "/relationships/42",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[42]"
+    },
+    {
+      "path": "/relationships/42",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_005_flexural_members_6e009289"
+    },
+    {
+      "path": "/relationships/43",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[43]"
+    },
+    {
+      "path": "/relationships/43",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_bi_stable_compliant_component.part_P_033_input_member_88290e38"
+    },
+    {
+      "path": "/relationships/44",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[44]"
+    },
+    {
+      "path": "/relationships/44",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_bi_stable_compliant_component.part_P_034_force_receiving_end"
+    },
+    {
+      "path": "/relationships/45",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[45]"
+    },
+    {
+      "path": "/relationships/45",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_bi_stable_compliant_component.part_P_035_motion_transmitting_end"
+    },
+    {
+      "path": "/relationships/46",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[46]"
+    },
+    {
+      "path": "/relationships/46",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_bi_stable_compliant_component.part_P_038_compliant_segments_5088d0cd"
+    },
+    {
+      "path": "/relationships/47",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[47]"
+    },
+    {
+      "path": "/relationships/47",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_bi_stable_compliant_component.part_P_039_rigid_segment"
+    },
+    {
+      "path": "/relationships/48",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[48]"
+    },
+    {
+      "path": "/relationships/48",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_041_Young_Mechanism.part_P_038_compliant_segments_32d28d0f"
+    },
+    {
+      "path": "/relationships/49",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[49]"
+    },
+    {
+      "path": "/relationships/49",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_041_Young_Mechanism.part_P_032_bi_stable_compliant_component_d6257b7b"
+    },
+    {
+      "path": "/relationships/50",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[50]"
+    },
+    {
+      "path": "/relationships/50",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_033_input_member"
+    },
+    {
+      "path": "/relationships/51",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[51]"
+    },
+    {
+      "path": "/relationships/51",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_038_compliant_segments"
+    },
+    {
+      "path": "/relationships/52",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[52]"
+    },
+    {
+      "path": "/relationships/52",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_032_bi_stable_compliant_component"
+    },
+    {
+      "path": "/relationships/53",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[53]"
+    },
+    {
+      "path": "/relationships/53",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_input_member.part_P_035_motion_transmitting_end_35ad93ea"
+    },
+    {
+      "path": "/relationships/54",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[54]"
+    },
+    {
+      "path": "/relationships/54",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_input_member.part_P_025_spherical_mechanism_portion_863b9f6f"
+    },
+    {
+      "path": "/relationships/55",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[55]"
+    },
+    {
+      "path": "/relationships/55",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_input_member.part_P_043_micro_spherical_slider_crank"
+    },
+    {
+      "path": "/relationships/56",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[56]"
+    },
+    {
+      "path": "/relationships/56",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_033_input_member.part_P_032_bi_stable_compliant_component_ee04d8d4"
+    },
+    {
+      "path": "/relationships/57",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[57]"
+    },
+    {
+      "path": "/relationships/57",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_046_flexible_members"
+    },
+    {
+      "path": "/relationships/58",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[58]"
+    },
+    {
+      "path": "/relationships/58",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_047_Flexible_members"
+    },
+    {
+      "path": "/relationships/59",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[59]"
+    },
+    {
+      "path": "/relationships/59",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_048_segment"
+    },
+    {
+      "path": "/relationships/60",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[60]"
+    },
+    {
+      "path": "/relationships/60",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_050_flexible_segment"
+    },
+    {
+      "path": "/relationships/61",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[61]"
+    },
+    {
+      "path": "/relationships/61",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_051_revolute_joint"
+    },
+    {
+      "path": "/relationships/62",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[62]"
+    },
+    {
+      "path": "/relationships/62",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_041_Young_Mechanism.part_P_051_revolute_joint_3b72bc02"
+    },
+    {
+      "path": "/relationships/63",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[63]"
+    },
+    {
+      "path": "/relationships/63",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_018_small_length_flexural_pivot"
+    },
+    {
+      "path": "/relationships/64",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[64]"
+    },
+    {
+      "path": "/relationships/64",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_054_pivot"
+    },
+    {
+      "path": "/relationships/65",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[65]"
+    },
+    {
+      "path": "/relationships/65",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_056_compliant_portion"
+    },
+    {
+      "path": "/relationships/66",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[66]"
+    },
+    {
+      "path": "/relationships/66",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_023_torsional_springs"
+    },
+    {
+      "path": "/relationships/67",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[67]"
+    },
+    {
+      "path": "/relationships/67",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_057_joints"
+    },
+    {
+      "path": "/relationships/68",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[68]"
+    },
+    {
+      "path": "/relationships/68",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_058_spherical_slider_crank_mechanism_portion"
+    },
+    {
+      "path": "/relationships/69",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[69]"
+    },
+    {
+      "path": "/relationships/69",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_059_slider_crank_mechanism_portion"
+    },
+    {
+      "path": "/relationships/70",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[70]"
+    },
+    {
+      "path": "/relationships/70",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_059_bi_stable_mechanism.part_P_032_bi_stable_compliant_component_da0db604"
+    },
+    {
+      "path": "/relationships/71",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[71]"
+    },
+    {
+      "path": "/relationships/71",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_059_bi_stable_mechanism.part_P_058_spherical_slider_crank_mechanism_portion_8ebb5cb3"
+    },
+    {
+      "path": "/relationships/72",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[72]"
+    },
+    {
+      "path": "/relationships/72",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_059_bi_stable_mechanism.part_P_059_slider_crank_mechanism_portion_8425b74a"
+    },
+    {
+      "path": "/relationships/73",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[73]"
+    },
+    {
+      "path": "/relationships/73",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_061_four_bar_mechanism.part_P_023_torsional_springs_24a0774a"
+    },
+    {
+      "path": "/relationships/74",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[74]"
+    },
+    {
+      "path": "/relationships/74",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_063_spherical_slider_crank.part_P_057_joints_21470d4d"
+    },
+    {
+      "path": "/relationships/75",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[75]"
+    },
+    {
+      "path": "/relationships/75",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_063_spherical_slider_crank.part_P_062_spherical_crank_slider_8b67124b"
+    },
+    {
+      "path": "/relationships/76",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[76]"
+    },
+    {
+      "path": "/relationships/76",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_063_spherical_slider_crank.part_P_063_spherical_crank_slider_portion_629a2b17"
+    },
+    {
+      "path": "/relationships/77",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[77]"
+    },
+    {
+      "path": "/relationships/77",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_063_spherical_slider_crank.part_P_038_compliant_segments_d3f4e1b9"
+    },
+    {
+      "path": "/relationships/78",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[78]"
+    },
+    {
+      "path": "/relationships/78",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_063_spherical_slider_crank.part_P_065_segments_40d06254"
+    },
+    {
+      "path": "/relationships/79",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[79]"
+    },
+    {
+      "path": "/relationships/79",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_063_spherical_slider_crank.part_P_061_links_d3276125"
+    },
+    {
+      "path": "/relationships/80",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[80]"
+    },
+    {
+      "path": "/relationships/80",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_062_mechanism.part_P_057_joints_e6e6f365"
+    },
+    {
+      "path": "/relationships/81",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[81]"
+    },
+    {
+      "path": "/relationships/81",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_062_mechanism.part_P_061_links"
+    },
+    {
+      "path": "/relationships/82",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[82]"
+    },
+    {
+      "path": "/relationships/82",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_062_mechanism.part_P_062_spherical_crank_slider"
+    },
+    {
+      "path": "/relationships/83",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[83]"
+    },
+    {
+      "path": "/relationships/83",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_062_mechanism.part_P_063_spherical_crank_slider_portion"
+    },
+    {
+      "path": "/relationships/84",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[84]"
+    },
+    {
+      "path": "/relationships/84",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_062_mechanism.part_P_038_compliant_segments_98af22fb"
+    },
+    {
+      "path": "/relationships/85",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[85]"
+    },
+    {
+      "path": "/relationships/85",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_062_mechanism.part_P_065_segments"
+    },
+    {
+      "path": "/relationships/86",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[86]"
+    },
+    {
+      "path": "/relationships/86",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_067_flexures"
+    },
+    {
+      "path": "/relationships/87",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[87]"
+    },
+    {
+      "path": "/relationships/87",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_spherical_bi_stable_mechanism.part_P_069_planar_bistable_compliant_member"
+    },
+    {
+      "path": "/relationships/88",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[88]"
+    },
+    {
+      "path": "/relationships/88",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_065_micro_mirror.part_P_069_planar_bistable_compliant_member_734415d5"
+    },
+    {
+      "path": "/relationships/89",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[89]"
+    },
+    {
+      "path": "/relationships/89",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_065_micro_mirror.part_P_002_spherical_mechanism_member_87df316c"
+    },
+    {
+      "path": "/relationships/90",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[90]"
+    },
+    {
+      "path": "/relationships/90",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_067_flexures_19039fab"
+    },
+    {
+      "path": "/relationships/91",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[91]"
+    },
+    {
+      "path": "/relationships/91",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_069_planar_bistable_compliant_member_8adb1b40"
+    },
+    {
+      "path": "/relationships/92",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[92]"
+    },
+    {
+      "path": "/relationships/92",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_002_spherical_mechanism_member_3657c4ee"
+    },
+    {
+      "path": "/relationships/93",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[93]"
+    },
+    {
+      "path": "/relationships/93",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_001_planar_bi_stable_compliant_member_36d4eb75"
+    },
+    {
+      "path": "/relationships/94",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[94]"
+    },
+    {
+      "path": "/relationships/94",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_070_four_bar_structure"
+    },
+    {
+      "path": "/relationships/95",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[95]"
+    },
+    {
+      "path": "/relationships/95",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_071_second_rigid_member_b65f1e84"
+    },
+    {
+      "path": "/relationships/96",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[96]"
+    },
+    {
+      "path": "/relationships/96",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_074_Young_Mechanism"
+    },
+    {
+      "path": "/relationships/97",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[97]"
+    },
+    {
+      "path": "/relationships/97",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_075_spherical_slider_crank"
+    },
+    {
+      "path": "/relationships/98",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[98]"
+    },
+    {
+      "path": "/relationships/98",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_076_coupler_link_member"
+    },
+    {
+      "path": "/relationships/99",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[99]"
+    },
+    {
+      "path": "/relationships/99",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_079_compliant_torsional_hinge"
+    },
+    {
+      "path": "/relationships/100",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[100]"
+    },
+    {
+      "path": "/relationships/100",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_080_torsional_hinge"
+    },
+    {
+      "path": "/relationships/101",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[101]"
+    },
+    {
+      "path": "/relationships/101",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_078_second_end"
+    },
+    {
+      "path": "/relationships/102",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[102]"
+    },
+    {
+      "path": "/relationships/102",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_045_reflective_surface"
+    },
+    {
+      "path": "/relationships/103",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[103]"
+    },
+    {
+      "path": "/relationships/103",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_015_four_bar_planar_bistable_compliant_member_6ce89a72"
+    },
+    {
+      "path": "/relationships/104",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[104]"
+    },
+    {
+      "path": "/relationships/104",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_081_four_bar_bistable_compliant_member_ae4e4883"
+    },
+    {
+      "path": "/relationships/105",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[105]"
+    },
+    {
+      "path": "/relationships/105",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_082_first_and_a_second_rigid_member_2cfcb341"
+    },
+    {
+      "path": "/relationships/106",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[106]"
+    },
+    {
+      "path": "/relationships/106",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_066_spherical_bistable_mechanism.part_P_083_rigid_member_15c85cc0"
+    },
+    {
+      "path": "/relationships/107",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[107]"
+    },
+    {
+      "path": "/relationships/107",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_078_MEMS_processing_system.part_P_045_reflective_surface_81b2b3c6"
+    },
+    {
+      "path": "/relationships/108",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[108]"
+    },
+    {
+      "path": "/relationships/108",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_078_MEMS_processing_system.part_P_069_planar_bistable_compliant_member_c85afb04"
+    },
+    {
+      "path": "/relationships/109",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[109]"
+    },
+    {
+      "path": "/relationships/109",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_078_MEMS_processing_system.part_P_015_four_bar_planar_bistable_compliant_member_03f78146"
+    },
+    {
+      "path": "/relationships/110",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[110]"
+    },
+    {
+      "path": "/relationships/110",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_078_MEMS_processing_system.part_P_081_four_bar_bistable_compliant_member_c51be9a4"
+    },
+    {
+      "path": "/relationships/111",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[111]"
+    },
+    {
+      "path": "/relationships/111",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_078_MEMS_processing_system.part_P_082_first_and_a_second_rigid_member_cbb119e6"
+    },
+    {
+      "path": "/relationships/112",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[112]"
+    },
+    {
+      "path": "/relationships/112",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_078_MEMS_processing_system.part_P_071_second_rigid_member_5cd47aa5"
+    },
+    {
+      "path": "/relationships/113",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[113]"
+    },
+    {
+      "path": "/relationships/113",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_078_MEMS_processing_system.part_P_083_rigid_member_ca9d2c1f"
+    },
+    {
+      "path": "/relationships/114",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[114]"
+    },
+    {
+      "path": "/relationships/114",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_078_MEMS_processing_system.part_P_001_planar_bi_stable_compliant_member_856d423d"
+    },
+    {
+      "path": "/relationships/115",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[115]"
+    },
+    {
+      "path": "/relationships/115",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_069_planar_bistable_compliant_member_212e035e"
+    },
+    {
+      "path": "/relationships/116",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[116]"
+    },
+    {
+      "path": "/relationships/116",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_002_spherical_mechanism_member_4350417e"
+    },
+    {
+      "path": "/relationships/117",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[117]"
+    },
+    {
+      "path": "/relationships/117",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_015_four_bar_planar_bistable_compliant_member_78e4e40a"
+    },
+    {
+      "path": "/relationships/118",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[118]"
+    },
+    {
+      "path": "/relationships/118",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_081_four_bar_bistable_compliant_member_9a00b9d9"
+    },
+    {
+      "path": "/relationships/119",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[119]"
+    },
+    {
+      "path": "/relationships/119",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_082_first_and_a_second_rigid_member_81ca0e99"
+    },
+    {
+      "path": "/relationships/120",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[120]"
+    },
+    {
+      "path": "/relationships/120",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_071_second_rigid_member_0c70eb86"
+    },
+    {
+      "path": "/relationships/121",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[121]"
+    },
+    {
+      "path": "/relationships/121",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_083_rigid_member_7e2cc9ed"
+    },
+    {
+      "path": "/relationships/122",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[122]"
+    },
+    {
+      "path": "/relationships/122",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_microelectromechanical_system.part_P_001_planar_bi_stable_compliant_member_c1a3f59a"
+    },
+    {
+      "path": "/relationships/123",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[123]"
+    },
+    {
+      "path": "/relationships/123",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_079_microelectromechanical_system__MEMS.part_P_069_planar_bistable_compliant_member_3c42ff63"
+    },
+    {
+      "path": "/relationships/124",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[124]"
+    },
+    {
+      "path": "/relationships/124",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_079_microelectromechanical_system__MEMS.part_P_002_spherical_mechanism_member_1664b8bc"
+    },
+    {
+      "path": "/relationships/125",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[125]"
+    },
+    {
+      "path": "/relationships/125",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_079_microelectromechanical_system__MEMS.part_P_015_four_bar_planar_bistable_compliant_member_d043baba"
+    },
+    {
+      "path": "/relationships/126",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[126]"
+    },
+    {
+      "path": "/relationships/126",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_079_microelectromechanical_system__MEMS.part_P_081_four_bar_bistable_compliant_member_80896ee6"
+    },
+    {
+      "path": "/relationships/127",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[127]"
+    },
+    {
+      "path": "/relationships/127",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_079_microelectromechanical_system__MEMS.part_P_082_first_and_a_second_rigid_member_40453183"
+    },
+    {
+      "path": "/relationships/128",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[128]"
+    },
+    {
+      "path": "/relationships/128",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_079_microelectromechanical_system__MEMS.part_P_071_second_rigid_member_298c69aa"
+    },
+    {
+      "path": "/relationships/129",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[129]"
+    },
+    {
+      "path": "/relationships/129",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_079_microelectromechanical_system__MEMS.part_P_083_rigid_member_ebfcff18"
+    },
+    {
+      "path": "/relationships/130",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[130]"
+    },
+    {
+      "path": "/relationships/130",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_079_microelectromechanical_system__MEMS.part_P_001_planar_bi_stable_compliant_member_6bf2fd7e"
+    },
+    {
+      "path": "/relationships/131",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[131]"
+    },
+    {
+      "path": "/relationships/131",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_069_planar_bistable_compliant_member_61123af7"
+    },
+    {
+      "path": "/relationships/132",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[132]"
+    },
+    {
+      "path": "/relationships/132",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_002_spherical_mechanism_member_f6696a6f"
+    },
+    {
+      "path": "/relationships/133",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[133]"
+    },
+    {
+      "path": "/relationships/133",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_015_four_bar_planar_bistable_compliant_member_1fd37066"
+    },
+    {
+      "path": "/relationships/134",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[134]"
+    },
+    {
+      "path": "/relationships/134",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_081_four_bar_bistable_compliant_member"
+    },
+    {
+      "path": "/relationships/135",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[135]"
+    },
+    {
+      "path": "/relationships/135",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_082_first_and_a_second_rigid_member"
+    },
+    {
+      "path": "/relationships/136",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[136]"
+    },
+    {
+      "path": "/relationships/136",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_071_second_rigid_member"
+    },
+    {
+      "path": "/relationships/137",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[137]"
+    },
+    {
+      "path": "/relationships/137",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_083_rigid_member"
+    },
+    {
+      "path": "/relationships/138",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[138]"
+    },
+    {
+      "path": "/relationships/138",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_MEMS.part_P_001_planar_bi_stable_compliant_member_ebe20e1d"
+    },
+    {
+      "path": "/relationships/139",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[139]"
+    },
+    {
+      "path": "/relationships/139",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism.part_P_069_planar_bistable_compliant_member_e296fad6"
+    },
+    {
+      "path": "/relationships/140",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[140]"
+    },
+    {
+      "path": "/relationships/140",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism.part_P_002_spherical_mechanism_member_90cdea77"
+    },
+    {
+      "path": "/relationships/141",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[141]"
+    },
+    {
+      "path": "/relationships/141",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism.part_P_015_four_bar_planar_bistable_compliant_member_2a60f470"
+    },
+    {
+      "path": "/relationships/142",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[142]"
+    },
+    {
+      "path": "/relationships/142",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism.part_P_081_four_bar_bistable_compliant_member_5c64c827"
+    },
+    {
+      "path": "/relationships/143",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[143]"
+    },
+    {
+      "path": "/relationships/143",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism.part_P_082_first_and_a_second_rigid_member_ec45f6e0"
+    },
+    {
+      "path": "/relationships/144",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[144]"
+    },
+    {
+      "path": "/relationships/144",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism.part_P_071_second_rigid_member_395d8a29"
+    },
+    {
+      "path": "/relationships/145",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[145]"
+    },
+    {
+      "path": "/relationships/145",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism.part_P_083_rigid_member_14d8bdb8"
+    },
+    {
+      "path": "/relationships/146",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[146]"
+    },
+    {
+      "path": "/relationships/146",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism.part_P_001_planar_bi_stable_compliant_member_22be3255"
+    },
+    {
+      "path": "/relationships/147",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[147]"
+    },
+    {
+      "path": "/relationships/147",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism.part_P_072_first_pin_location"
+    },
+    {
+      "path": "/relationships/148",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[148]"
+    },
+    {
+      "path": "/relationships/148",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism.part_P_073_second_pin_location"
+    },
+    {
+      "path": "/relationships/149",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[149]"
+    },
+    {
+      "path": "/relationships/149",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism.part_P_074_Young_Mechanism_6224ee77"
+    },
+    {
+      "path": "/relationships/150",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[150]"
+    },
+    {
+      "path": "/relationships/150",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_080_MEMS_spherical_bistable_mechanism.part_P_045_reflective_surface_807458aa"
+    },
+    {
+      "path": "/relationships/151",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[151]"
+    },
+    {
+      "path": "/relationships/152",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[152]"
+    },
+    {
+      "path": "/relationships/153",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[153]"
+    },
+    {
+      "path": "/relationships/153",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_073_spherical_slider_crank.part_P_076_coupler_link_member_9b8da6b2"
+    },
+    {
+      "path": "/relationships/154",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[154]"
+    },
+    {
+      "path": "/relationships/154",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_073_spherical_slider_crank.part_P_077_collapsible_union"
+    },
+    {
+      "path": "/relationships/155",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[155]"
+    },
+    {
+      "path": "/relationships/155",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_073_spherical_slider_crank.part_P_079_compliant_torsional_hinge_726ce937"
+    },
+    {
+      "path": "/relationships/156",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[156]"
+    },
+    {
+      "path": "/relationships/157",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[157]"
+    },
+    {
+      "path": "/relationships/158",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[158]"
+    },
+    {
+      "path": "/relationships/159",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[159]"
+    },
+    {
+      "path": "/relationships/160",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[160]"
+    },
+    {
+      "path": "/relationships/161",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[161]"
+    },
+    {
+      "path": "/relationships/162",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[162]"
+    },
+    {
+      "path": "/relationships/163",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[163]"
+    },
+    {
+      "path": "/relationships/164",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[164]"
+    },
+    {
+      "path": "/relationships/165",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[165]"
+    },
+    {
+      "path": "/relationships/166",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[166]"
+    },
+    {
+      "path": "/relationships/167",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[167]"
+    },
+    {
+      "path": "/relationships/168",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[168]"
+    },
+    {
+      "path": "/relationships/169",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[169]"
+    },
+    {
+      "path": "/relationships/170",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[170]"
+    },
+    {
+      "path": "/relationships/171",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[171]"
+    },
+    {
+      "path": "/relationships/172",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[172]"
+    },
+    {
+      "path": "/relationships/173",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[173]"
+    },
+    {
+      "path": "/relationships/174",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[174]"
+    },
+    {
+      "path": "/relationships/175",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[175]"
+    },
+    {
+      "path": "/relationships/176",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[176]"
+    },
+    {
+      "path": "/relationships/177",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[177]"
+    },
+    {
+      "path": "/relationships/178",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[178]"
+    },
+    {
+      "path": "/relationships/179",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[179]"
+    },
+    {
+      "path": "/relationships/180",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[180]"
+    },
+    {
+      "path": "/relationships/181",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[181]"
+    },
+    {
+      "path": "/relationships/182",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[182]"
+    },
+    {
+      "path": "/relationships/183",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[183]"
+    },
+    {
+      "path": "/relationships/184",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[184]"
+    },
+    {
+      "path": "/relationships/185",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[185]"
+    },
+    {
+      "path": "/relationships/186",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[186]"
+    },
+    {
+      "path": "/relationships/187",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[187]"
+    },
+    {
+      "path": "/relationships/188",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[188]"
+    },
+    {
+      "path": "/relationships/189",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[189]"
+    },
+    {
+      "path": "/relationships/190",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[190]"
+    },
+    {
+      "path": "/relationships/191",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[191]"
+    },
+    {
+      "path": "/relationships/192",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[192]"
+    },
+    {
+      "path": "/relationships/193",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[193]"
+    },
+    {
+      "path": "/relationships/194",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[194]"
+    },
+    {
+      "path": "/relationships/195",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[195]"
+    },
+    {
+      "path": "/relationships/196",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[196]"
+    },
+    {
+      "path": "/relationships/197",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[197]"
+    },
+    {
+      "path": "/relationships/198",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[198]"
+    },
+    {
+      "path": "/relationships/199",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[199]"
+    },
+    {
+      "path": "/relationships/200",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[200]"
+    },
+    {
+      "path": "/relationships/201",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[201]"
+    },
+    {
+      "path": "/relationships/202",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[202]"
+    },
+    {
+      "path": "/relationships/203",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[203]"
+    },
+    {
+      "path": "/relationships/204",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[204]"
+    },
+    {
+      "path": "/relationships/205",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[205]"
+    },
+    {
+      "path": "/relationships/206",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[206]"
+    },
+    {
+      "path": "/relationships/207",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[207]"
+    },
+    {
+      "path": "/relationships/208",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[208]"
+    },
+    {
+      "path": "/relationships/209",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[209]"
+    },
+    {
+      "path": "/relationships/210",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[210]"
+    },
+    {
+      "path": "/relationships/211",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[211]"
+    },
+    {
+      "path": "/relationships/212",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[212]"
+    },
+    {
+      "path": "/relationships/213",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[213]"
+    },
+    {
+      "path": "/relationships/214",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[214]"
+    },
+    {
+      "path": "/relationships/215",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[215]"
+    },
+    {
+      "path": "/relationships/216",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[216]"
+    },
+    {
+      "path": "/relationships/217",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[217]"
+    },
+    {
+      "path": "/relationships/218",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[218]"
+    },
+    {
+      "path": "/relationships/219",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[219]"
+    },
+    {
+      "path": "/relationships/220",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[220]"
+    },
+    {
+      "path": "/relationships/221",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[221]"
+    },
+    {
+      "path": "/relationships/222",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[222]"
+    },
+    {
+      "path": "/relationships/223",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[223]"
+    },
+    {
+      "path": "/relationships/224",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[224]"
+    },
+    {
+      "path": "/relationships/225",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[225]"
+    },
+    {
+      "path": "/relationships/226",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[226]"
+    },
+    {
+      "path": "/relationships/227",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[227]"
+    },
+    {
+      "path": "/relationships/228",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[228]"
+    },
+    {
+      "path": "/relationships/229",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[229]"
+    },
+    {
+      "path": "/relationships/230",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[230]"
+    },
+    {
+      "path": "/relationships/231",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[231]"
+    },
+    {
+      "path": "/relationships/232",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[232]"
+    },
+    {
+      "path": "/relationships/233",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[233]"
+    },
+    {
+      "path": "/relationships/234",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[234]"
+    },
+    {
+      "path": "/relationships/235",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[235]"
+    },
+    {
+      "path": "/relationships/236",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[236]"
+    },
+    {
+      "path": "/relationships/237",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[237]"
+    },
+    {
+      "path": "/relationships/238",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[238]"
+    },
+    {
+      "path": "/relationships/239",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[239]"
+    },
+    {
+      "path": "/relationships/240",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[240]"
+    },
+    {
+      "path": "/relationships/241",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[241]"
+    },
+    {
+      "path": "/relationships/242",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[242]"
+    },
+    {
+      "path": "/relationships/243",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[243]"
+    },
+    {
+      "path": "/relationships/244",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[244]"
+    },
+    {
+      "path": "/relationships/245",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[245]"
+    },
+    {
+      "path": "/relationships/246",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[246]"
+    },
+    {
+      "path": "/relationships/247",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[247]"
+    },
+    {
+      "path": "/relationships/248",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[248]"
+    },
+    {
+      "path": "/relationships/249",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[249]"
+    },
+    {
+      "path": "/relationships/250",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[250]"
+    },
+    {
+      "path": "/relationships/251",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[251]"
+    },
+    {
+      "path": "/relationships/252",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[252]"
+    },
+    {
+      "path": "/relationships/253",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[253]"
+    },
+    {
+      "path": "/relationships/254",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[254]"
+    },
+    {
+      "path": "/relationships/255",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[255]"
+    },
+    {
+      "path": "/relationships/256",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[256]"
+    },
+    {
+      "path": "/relationships/257",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[257]"
+    },
+    {
+      "path": "/relationships/258",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[258]"
+    },
+    {
+      "path": "/relationships/259",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[259]"
+    },
+    {
+      "path": "/relationships/260",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[260]"
+    },
+    {
+      "path": "/relationships/261",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[261]"
+    },
+    {
+      "path": "/relationships/262",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[262]"
+    },
+    {
+      "path": "/relationships/263",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[263]"
+    },
+    {
+      "path": "/relationships/264",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[264]"
+    },
+    {
+      "path": "/relationships/265",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[265]"
+    },
+    {
+      "path": "/relationships/266",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[266]"
+    },
+    {
+      "path": "/relationships/267",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[267]"
+    },
+    {
+      "path": "/relationships/268",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[268]"
+    },
+    {
+      "path": "/relationships/269",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[269]"
+    },
+    {
+      "path": "/relationships/270",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[270]"
+    },
+    {
+      "path": "/relationships/271",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[271]"
+    },
+    {
+      "path": "/relationships/272",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[272]"
+    },
+    {
+      "path": "/relationships/273",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[273]"
+    },
+    {
+      "path": "/relationships/274",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[274]"
+    },
+    {
+      "path": "/relationships/275",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[275]"
+    },
+    {
+      "path": "/relationships/276",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[276]"
+    },
+    {
+      "path": "/relationships/277",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[277]"
+    },
+    {
+      "path": "/relationships/278",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[278]"
+    },
+    {
+      "path": "/relationships/279",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[279]"
+    },
+    {
+      "path": "/relationships/280",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[280]"
+    },
+    {
+      "path": "/relationships/281",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[281]"
+    },
+    {
+      "path": "/relationships/282",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[282]"
+    },
+    {
+      "path": "/relationships/283",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[283]"
+    },
+    {
+      "path": "/relationships/284",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[284]"
+    },
+    {
+      "path": "/relationships/285",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[285]"
+    },
+    {
+      "path": "/relationships/286",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[286]"
+    },
+    {
+      "path": "/relationships/287",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[287]"
+    },
+    {
+      "path": "/relationships/288",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[288]"
+    },
+    {
+      "path": "/relationships/289",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[289]"
+    },
+    {
+      "path": "/relationships/290",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[290]"
+    },
+    {
+      "path": "/relationships/291",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[291]"
+    },
+    {
+      "path": "/relationships/292",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[292]"
+    },
+    {
+      "path": "/relationships/293",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[293]"
+    },
+    {
+      "path": "/relationships/294",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[294]"
+    },
+    {
+      "path": "/relationships/295",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[295]"
+    },
+    {
+      "path": "/relationships/296",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[296]"
+    },
+    {
+      "path": "/relationships/297",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[297]"
+    },
+    {
+      "path": "/relationships/298",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[298]"
+    },
+    {
+      "path": "/relationships/299",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[299]"
+    },
+    {
+      "path": "/relationships/300",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[300]"
+    },
+    {
+      "path": "/relationships/301",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[301]"
+    },
+    {
+      "path": "/relationships/302",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[302]"
+    },
+    {
+      "path": "/relationships/303",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[303]"
+    },
+    {
+      "path": "/relationships/304",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[304]"
+    },
+    {
+      "path": "/relationships/305",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[305]"
+    },
+    {
+      "path": "/relationships/306",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[306]"
+    },
+    {
+      "path": "/relationships/307",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[307]"
+    },
+    {
+      "path": "/relationships/308",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[308]"
+    },
+    {
+      "path": "/relationships/309",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[309]"
+    },
+    {
+      "path": "/relationships/310",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[310]"
+    },
+    {
+      "path": "/relationships/311",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[311]"
+    },
+    {
+      "path": "/relationships/312",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[312]"
+    },
+    {
+      "path": "/relationships/313",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[313]"
+    },
+    {
+      "path": "/relationships/314",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[314]"
+    },
+    {
+      "path": "/relationships/315",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[315]"
+    },
+    {
+      "path": "/relationships/316",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[316]"
+    },
+    {
+      "path": "/relationships/317",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[317]"
+    }
+  ],
+  "unresolved": [
+    {
+      "path": "/values/0",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/1",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/2",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/3",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/4",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/5",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/6",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/7",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/8",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/9",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/10",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/11",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/12",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/13",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/14",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/15",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/16",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/17",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/18",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/19",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/20",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/21",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/22",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/23",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/24",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/25",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/26",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/27",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/28",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/29",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/30",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/31",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/32",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/33",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/34",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/35",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/36",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/37",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/38",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/39",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/40",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/41",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/42",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/43",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/44",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/45",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/46",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/47",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/48",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/constraints/0",
+      "reason": "Constraint expression retained; it needs an explicit typed variable/expression mapping before becoming an evaluable constraint.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/constraints/1",
+      "reason": "Constraint expression retained; it needs an explicit typed variable/expression mapping before becoming an evaluable constraint.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/constraints/2",
+      "reason": "Constraint expression retained; it needs an explicit typed variable/expression mapping before becoming an evaluable constraint.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/2",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/3",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/4",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/5",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/6",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/7",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/8",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/9",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/10",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/11",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/12",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/72/interfaces/0",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/72/interfaces/1",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/151",
+      "reason": "Relationship type 'interfaces' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/152",
+      "reason": "Relationship type 'interfaces' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/156",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/157",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/158",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/159",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/160",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/161",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/162",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/163",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/164",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/165",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/166",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/167",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/168",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/169",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/170",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/171",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/172",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/173",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/174",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/175",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/176",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/177",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/178",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/179",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/180",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/181",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/182",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/183",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/184",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/185",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/186",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/187",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/188",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/189",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/190",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/191",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/192",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/193",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/194",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/195",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/196",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/197",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/198",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/199",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/200",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/201",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/202",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/203",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/204",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/205",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/206",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/207",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/208",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/209",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/210",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/211",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/212",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/213",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/214",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/215",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/216",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/217",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/218",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/219",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/220",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/221",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/222",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/223",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/224",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/225",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/226",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/227",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/228",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/229",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/230",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/231",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/232",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/233",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/234",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/235",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/236",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/237",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/238",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/239",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/240",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/241",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/242",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/243",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/244",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/245",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/246",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/247",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/248",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/249",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/250",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/251",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/252",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/253",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/254",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/255",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/256",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/257",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/258",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/259",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/260",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/261",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/262",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/263",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/264",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/265",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/266",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/267",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/268",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/269",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/270",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/271",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/272",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/273",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/274",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/275",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/276",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/277",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/278",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/279",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/280",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/281",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/282",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/283",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/284",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/285",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/286",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/287",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/288",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/289",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/290",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/291",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/292",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/293",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/294",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/295",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/296",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/297",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/298",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/299",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/300",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/301",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/302",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/303",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/304",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/305",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/306",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/307",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/308",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/309",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/310",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/311",
+      "reason": "Relationship type 'port_this' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/312",
+      "reason": "Relationship type 'port_this' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/313",
+      "reason": "Relationship type 'port_mate' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/314",
+      "reason": "Relationship type 'port_mate' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/315",
+      "reason": "Relationship type 'owner' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/316",
+      "reason": "Relationship type 'variables' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/317",
+      "reason": "Relationship type 'variables' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    }
+  ],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

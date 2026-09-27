@@ -1,0 +1,399 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 3,
+    "ActionUsage": 8,
+    "AllocationUsage": 3,
+    "ConnectionUsage": 15,
+    "Documentation": 80,
+    "EndFeatureMembership": 38,
+    "Feature": 74,
+    "FeatureChaining": 108,
+    "FeatureMembership": 90,
+    "FeatureTyping": 48,
+    "FlowEnd": 2,
+    "FlowUsage": 1,
+    "ItemDefinition": 8,
+    "ItemUsage": 32,
+    "LiteralInteger": 1,
+    "MultiplicityRange": 1,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 127,
+    "Package": 1,
+    "PartDefinition": 13,
+    "PartUsage": 15,
+    "PortUsage": 32,
+    "Redefinition": 2,
+    "ReferenceSubsetting": 38,
+    "ReferenceUsage": 2,
+    "Subclassification": 6,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CLAMP_Pallet_Clamp_Assembly"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CLAMP_Pallet_Clamp_Assembly.port_CLAMP_FORK_MOUNT_Mounting_between_forks"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_JAW1_First_Jaw"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_JAW1_First_Jaw.port_J1_PIN_Pivot_sliding_pin_mount"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_JAW1_First_Jaw.port_J1_LINK_Pivot_link_coupling"
+    },
+    {
+      "path": "/subsystems/1/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_JAW1_First_Jaw.port_SPR_J1_Spring_receiving_end"
+    },
+    {
+      "path": "/subsystems/1/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_JAW1_First_Jaw.port_J1_LOAD_Stringer_gripping_surface"
+    },
+    {
+      "path": "/subsystems/1/ports/4",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_JAW1_First_Jaw.port_J1_OPER_Operating_linkage_coupling"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_JAW2_Second_Jaw"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_JAW2_Second_Jaw.port_J2_PIN_Pivot_sliding_pin_mount"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_JAW2_Second_Jaw.port_J2_LINK_Pivot_link_coupling"
+    },
+    {
+      "path": "/subsystems/2/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_JAW2_Second_Jaw.port_SPR_J2_Spring_receiving_end"
+    },
+    {
+      "path": "/subsystems/2/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_JAW2_Second_Jaw.port_J2_LOAD_Stringer_gripping_surface"
+    },
+    {
+      "path": "/subsystems/2/ports/4",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_JAW2_Second_Jaw.port_J2_OPER_Operating_linkage_coupling"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_FRAME_Support_Frame"
+    },
+    {
+      "path": "/subsystems/3/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_FRAME_Support_Frame.part_CONN_Connector_providing_the_pivotal_mounting_betw"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FRAME_Support_Frame.port_FR_JAW1_First_jaw_pivot_support"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FRAME_Support_Frame.port_FR_JAW2_Second_jaw_pivot_support"
+    },
+    {
+      "path": "/subsystems/3/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FRAME_Support_Frame.port_FR_LINK1_First_pivot_link_frame_mount"
+    },
+    {
+      "path": "/subsystems/3/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FRAME_Support_Frame.port_SUP_FRAME_Support_frame_pivot_connection"
+    },
+    {
+      "path": "/subsystems/3/ports/4",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FRAME_Support_Frame.port_FR_SPRING_Spring_attachment"
+    },
+    {
+      "path": "/subsystems/3/ports/5",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FRAME_Support_Frame.port_FR_LINK2_Second_pivot_link_frame_mount"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SPR_Jaw_Clamping_Springs"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SPR_Jaw_Clamping_Springs.port_SPR_FRAME_Spring_frame_attachment"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SPR_Jaw_Clamping_Springs.port_SPR_JAW1_First_jaw_spring_attachment"
+    },
+    {
+      "path": "/subsystems/4/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SPR_Jaw_Clamping_Springs.port_SPR_JAW2_Second_jaw_spring_attachment"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_LINK_Pivot_Links_and_Couplings"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LINK_Pivot_Links_and_Couplings.port_LINK_J1_First_jaw_coupling"
+    },
+    {
+      "path": "/subsystems/5/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LINK_Pivot_Links_and_Couplings.port_LINK_J2_Second_jaw_coupling"
+    },
+    {
+      "path": "/subsystems/5/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LINK_Pivot_Links_and_Couplings.port_LINK_FRAME1_First_pivot_link_frame_pivot"
+    },
+    {
+      "path": "/subsystems/5/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LINK_Pivot_Links_and_Couplings.port_LINK_FRAME2_Second_pivot_link_frame_pivot"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_OPER_Foot_Pedal_Operating_Linkage_and_Latch"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_OPER_Foot_Pedal_Operating_Linkage_and_Latch.port_OPER_J1_Jaw_linkage_coupling"
+    },
+    {
+      "path": "/subsystems/6/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_OPER_Foot_Pedal_Operating_Linkage_and_Latch.port_OPER_J2_Jaw_linkage_coupling"
+    },
+    {
+      "path": "/subsystems/6/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_OPER_Foot_Pedal_Operating_Linkage_and_Latch.port_OPER_PEDAL_Foot_pedal_actuation"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_FORKS_Vehicle_Forks"
+    },
+    {
+      "path": "/subsystems/7/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FORKS_Vehicle_Forks.port_FORK_CLAMP_MOUNT_Clamp_mounting_location"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_HOIST_Vehicle_Hoisting_Device"
+    },
+    {
+      "path": "/subsystems/9",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PALLET_Pallet_Center_Stringer"
+    },
+    {
+      "path": "/subsystems/9/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PALLET_Pallet_Center_Stringer.port_PALLET_GRIP_Stringer_jaw_engagement"
+    },
+    {
+      "path": "/subsystems/10",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_OPERATOR_Vehicle_Operator"
+    },
+    {
+      "path": "/subsystems/10/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_OPERATOR_Vehicle_Operator.port_OP_PEDAL_Foot_pedal_actuation"
+    },
+    {
+      "path": "/subsystems/11",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_VEHICLE_Material_Handling_Vehicle"
+    },
+    {
+      "path": "/subsystems/11/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_VEHICLE_Material_Handling_Vehicle.port_OPERATOR_PEDAL_Foot_actuation_input"
+    },
+    {
+      "path": "/subsystems/12",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CL_SUPPORT_Clamp_Support"
+    },
+    {
+      "path": "/subsystems/12/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CL_SUPPORT_Clamp_Support.port_SUP_FRAME_PIVOT_Support_frame_pivot_endpoint"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_MECH_JAW_FRAME_Jaw_mounting_mechanical_interaction"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_MECH_JAW_LINK_Jaw_and_pivot_link_interaction"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_MECH_SPRING_Spring_force_transfer"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_MECH_SUPPORT_Frame_pivot_mounting"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_MECH_OPER_Operating_linkage_motion"
+    },
+    {
+      "path": "/item_flows/5",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_LOAD_GRIP_Jaw_stringer_engagement"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_CLOSE_Bias_jaws_to_closed_position"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_OPEN_Operate_jaws_to_open_positions"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_TIGHTEN_Increase_gripping_force_on_pallet_displacemen"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_CLAMP_FORKS"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_J1_FRAME"
+    },
+    {
+      "path": "/subsystems/1/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_J1_LINK"
+    },
+    {
+      "path": "/subsystems/1/interfaces/2",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_SPR_J1"
+    },
+    {
+      "path": "/subsystems/1/interfaces/3",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_J1_PALLET"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_J2_FRAME"
+    },
+    {
+      "path": "/subsystems/2/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_J2_LINK"
+    },
+    {
+      "path": "/subsystems/2/interfaces/2",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_SPR_J2"
+    },
+    {
+      "path": "/subsystems/2/interfaces/3",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_J2_PALLET"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_FRAME_SUPPORT"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_SPR_FRAME"
+    },
+    {
+      "path": "/subsystems/5/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_LINK_FRAME1"
+    },
+    {
+      "path": "/subsystems/5/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_LINK_FRAME2"
+    },
+    {
+      "path": "/subsystems/6/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_OPER_J1"
+    },
+    {
+      "path": "/subsystems/6/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_OPER_J2"
+    },
+    {
+      "path": "/subsystems/10/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_OPERATOR_PEDAL"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

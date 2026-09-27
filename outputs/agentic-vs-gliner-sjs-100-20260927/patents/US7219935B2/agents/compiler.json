@@ -1,0 +1,172 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 7,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 1,
+    "Documentation": 36,
+    "EndFeatureMembership": 14,
+    "Feature": 20,
+    "FeatureChaining": 38,
+    "FeatureMembership": 42,
+    "FeatureTyping": 17,
+    "FlowEnd": 8,
+    "FlowUsage": 4,
+    "ItemDefinition": 7,
+    "ItemUsage": 9,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 60,
+    "Package": 1,
+    "PartDefinition": 6,
+    "PartUsage": 7,
+    "PortUsage": 9,
+    "Redefinition": 8,
+    "ReferenceSubsetting": 14,
+    "ReferenceUsage": 8,
+    "Subclassification": 4,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_RATCHET_Ratchet"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_RATCHET_Ratchet.port_pawl_engagement_Releasable_pawl_engagement"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PAWL_Pawl"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PAWL_Pawl.port_post_link_Pawl_post___lever_aperture_coupling"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PAWL_Pawl.port_ratchet_engagement_Releasable_ratchet_engagement"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_LEVER_Control_lever"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LEVER_Control_lever.port_pawl_link_Pawl_post_aperture_coupling"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LEVER_Control_lever.port_actuation_User_lever_actuation"
+    },
+    {
+      "path": "/subsystems/2/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LEVER_Control_lever.port_positioning_Positioning_motion_input"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ROTATOR_Rotatable_positioning_element"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ROTATOR_Rotatable_positioning_element.port_lever_drive_Lever_positioning_output"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_OVER_CENTER_Over_center_positioning_device"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_OVER_CENTER_Over_center_positioning_device.port_lever_drive_Lever_positioning_output_b83aa53f"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_USER_INPUT_User_manipulatable_release_input"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_USER_INPUT_User_manipulatable_release_input.port_actuation_out_Release_actuation_output"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_HANDLE_Lever_actuation"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_PAWL_Lever_to_pawl_force_and_motion"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_POSITION_Lever_positioning_motion"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_ENGAGEMENT_Ratchet_pawl_engagement"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_POSITION_Position_lever_for_release"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_RELEASE_Release_ratchet"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_RATCHET_PAWL"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_I_LEVER_PAWL"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_I_ROTATOR_LEVER"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_I_OVERCENTER_LEVER"
+    },
+    {
+      "path": "/subsystems/5/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_I_USER_LEVER"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

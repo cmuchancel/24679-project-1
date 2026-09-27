@@ -1,0 +1,181 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 3,
+    "ActionUsage": 11,
+    "AllocationUsage": 3,
+    "Documentation": 40,
+    "EndFeatureMembership": 16,
+    "Feature": 22,
+    "FeatureChaining": 42,
+    "FeatureMembership": 52,
+    "FeatureTyping": 19,
+    "FlowEnd": 10,
+    "FlowUsage": 5,
+    "ItemDefinition": 6,
+    "ItemUsage": 10,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 65,
+    "Package": 1,
+    "PartDefinition": 6,
+    "PartUsage": 7,
+    "PortUsage": 10,
+    "Redefinition": 10,
+    "ReferenceSubsetting": 16,
+    "ReferenceUsage": 10,
+    "Subclassification": 4,
+    "SuccessionAsUsage": 5
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CHASSIS_Chassis_and_wheels"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CHASSIS_Chassis_and_wheels.port_STEERING_WHEEL_ROTATION_INPUT_Rotary_steering_input_at_wheel_assembly"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CHASSIS_Chassis_and_wheels.port_LIFT_ACTUATOR_CHASSIS_INPUT_Lift_actuator_mounting_motion_at_chassis"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_LIFT_LINKSET_Stepped_stacked_lift_linkset"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LIFT_LINKSET_Stepped_stacked_lift_linkset.port_LINKSET_PLATFORM_OUTPUT_Linkset_lifting_motion_to_platform"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LIFT_LINKSET_Stepped_stacked_lift_linkset.port_LINKSET_GUARD_DRIVE_Linkset_motion_driving_guard_mechanism"
+    },
+    {
+      "path": "/subsystems/1/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LIFT_LINKSET_Stepped_stacked_lift_linkset.port_LIFT_ACTUATOR_LINKSET_INPUT_Lift_actuator_mounting_motion_at_linkset"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PLATFORM_Lift_platform"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PLATFORM_Lift_platform.port_PLATFORM_LIFT_INPUT_Lift_motion_from_linkset"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_LIFT_ACTUATOR_Hydraulic_lift_actuator"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LIFT_ACTUATOR_Hydraulic_lift_actuator.port_LIFT_ACTUATOR_END_A_Actuator_mechanical_terminal_A"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LIFT_ACTUATOR_Hydraulic_lift_actuator.port_LIFT_ACTUATOR_END_B_Actuator_mechanical_terminal_B"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_STEERING_Hydraulic_steering_linkage"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_STEERING_Hydraulic_steering_linkage.port_STEERING_WHEEL_ROTATION_OUTPUT_Steering_wheel_rotation_output"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_GUARD_Deployable_safety_guard_mechanism"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_GUARD_Deployable_safety_guard_mechanism.port_GUARD_LINKSET_INPUT_Linkset_driven_guard_input"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_LIFT_MOTION_Linkset_lifting_motion"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_GUARD_MOTION_Guard_deployment_motion"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_STEERING_WHEEL_ROTATION_Steering_wheel_rotation"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_LIFT_ACTUATOR_MOTION_Lift_actuator_mechanical_coupling"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_RAISE_LOWER_Raise_or_lower_platform"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_STEER_WHEELS_Steer_wheels"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_DEPLOY_GUARD_Deploy_or_stow_safety_guard"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_LINKSET_TO_PLATFORM"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_ACTUATOR_TO_CHASSIS"
+    },
+    {
+      "path": "/subsystems/3/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_ACTUATOR_TO_LINKSET"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_STEERING_TO_CHASSIS"
+    },
+    {
+      "path": "/subsystems/5/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_LINKSET_TO_GUARD"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

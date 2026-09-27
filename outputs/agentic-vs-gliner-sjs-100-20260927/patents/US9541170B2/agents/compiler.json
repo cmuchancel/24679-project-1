@@ -1,0 +1,126 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 3,
+    "ActionUsage": 9,
+    "AllocationUsage": 3,
+    "Documentation": 26,
+    "EndFeatureMembership": 12,
+    "Feature": 18,
+    "FeatureChaining": 30,
+    "FeatureMembership": 31,
+    "FeatureTyping": 12,
+    "FlowEnd": 6,
+    "FlowUsage": 3,
+    "ItemDefinition": 3,
+    "ItemUsage": 4,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 45,
+    "Package": 1,
+    "PartDefinition": 5,
+    "PartUsage": 6,
+    "PortUsage": 4,
+    "Redefinition": 6,
+    "ReferenceSubsetting": 12,
+    "ReferenceUsage": 6,
+    "Subclassification": 2,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ENG_Engine"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ENG_Engine.port_ENG_OUT_Engine_torque_output"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_TRN_Planetary_transmission_assembly"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_TRN_Planetary_transmission_assembly.port_TRN_IN_Input_shaft_torque"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_TRN_Planetary_transmission_assembly.port_TRN_OUT_Changed_output_torque"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DRV_Vehicle_driveline"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DRV_Vehicle_driveline.port_DRV_IN_Driveline_torque_input"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_FRIC_Clutches_and_brakes"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_HSG_Transmission_housing"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_TORQ_IN_Engine_torque"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_TORQ_OUT_Changed_output_torque"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_RATIO_Transmit_torque_at_a_selected_ratio"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_SCHED10_Establish_ten_forward_speed_and_reverse_sched"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_SCHED12_Establish_twelve_forward_speed_and_reverse_sc"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_ENG_TRN"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_TRN_DRV"
+    },
+    {
+      "path": "/subsystems/1/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_TRN_ENG"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

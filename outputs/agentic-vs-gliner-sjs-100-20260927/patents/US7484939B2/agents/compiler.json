@@ -1,0 +1,213 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ConnectionUsage": 2,
+    "Documentation": 41,
+    "EndFeatureMembership": 14,
+    "Feature": 18,
+    "FeatureChaining": 42,
+    "FeatureMembership": 45,
+    "FeatureTyping": 21,
+    "FlowEnd": 10,
+    "FlowUsage": 5,
+    "ItemDefinition": 11,
+    "ItemUsage": 14,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 68,
+    "Package": 1,
+    "PartDefinition": 7,
+    "PartUsage": 8,
+    "PortUsage": 14,
+    "Redefinition": 10,
+    "ReferenceSubsetting": 14,
+    "ReferenceUsage": 10,
+    "Subclassification": 7
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_housing_Pump_housing_and_passages"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_housing_Pump_housing_and_passages.port_hin_Fluid_inlet"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_housing_Pump_housing_and_passages.port_hout_Fluid_outlet"
+    },
+    {
+      "path": "/subsystems/0/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_housing_Pump_housing_and_passages.port_hctrl_Control_pressure_inlet"
+    },
+    {
+      "path": "/subsystems/0/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_housing_Pump_housing_and_passages.port_h_cylinder_communication_Passage_communication_to_cylinder_ports"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_rotor_Cylinder_block_and_pump_shaft"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_rotor_Cylinder_block_and_pump_shaft.port_rdrive_Rotational_drive"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_rotor_Cylinder_block_and_pump_shaft.port_r_cylinder_fluid_Cylinder_port_fluid_communication"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_rings_Pivoting_cylinder_rings"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_rings_Pivoting_cylinder_rings.port_ring_actuation_Actuator_engagement"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_rings_Pivoting_cylinder_rings.port_ring_cam_contact_Cam_contact_with_pistons"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_pistons_Radial_pistons"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_pistons_Radial_pistons.port_piston_cam_contact_Piston_engagement_with_cam_surfaces"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_actuator_Ring_actuator_mechanism"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_actuator_Ring_actuator_mechanism.port_a_ring_motion_Ring_engagement_motion"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_drive_External_rotational_drive"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_drive_External_rotational_drive.port_dout_Shaft_output"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_fluid_context_External_fluid_circuit"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_fluid_context_External_fluid_circuit.port_supply_Fluid_supply"
+    },
+    {
+      "path": "/subsystems/6/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_fluid_context_External_fluid_circuit.port_receive_Fluid_outlet_receiver"
+    },
+    {
+      "path": "/subsystems/6/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_fluid_context_External_fluid_circuit.port_pressure_Actuator_pressure_supply"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_rotation_Rotational_drive"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_inlet_Inlet_fluid"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_outlet_Delivered_fluid"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_pressure_Actuator_pressure"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_cylinder_exchange_Fluid_exchange_between_cylinder_ports_and_hou"
+    },
+    {
+      "path": "/item_flows/5",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_ring_motion_Actuator_driven_ring_motion"
+    },
+    {
+      "path": "/item_flows/6",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_cam_contact_Piston_to_cam_mechanical_engagement"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_inlet_join"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_outlet_join"
+    },
+    {
+      "path": "/subsystems/0/interfaces/2",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_control_join"
+    },
+    {
+      "path": "/subsystems/0/interfaces/3",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_cylinder_fluid_route"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_drive_source_join"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_piston_cam_engagement"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_actuator_ring_engagement"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

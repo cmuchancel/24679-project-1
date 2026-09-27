@@ -1,0 +1,157 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 7,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 1,
+    "Documentation": 31,
+    "EndFeatureMembership": 10,
+    "Feature": 16,
+    "FeatureChaining": 26,
+    "FeatureMembership": 36,
+    "FeatureTyping": 18,
+    "FlowEnd": 4,
+    "FlowUsage": 2,
+    "ItemDefinition": 3,
+    "ItemUsage": 6,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 53,
+    "Package": 1,
+    "PartDefinition": 10,
+    "PartUsage": 11,
+    "PortUsage": 6,
+    "Redefinition": 4,
+    "ReferenceSubsetting": 10,
+    "ReferenceUsage": 4,
+    "Subclassification": 2,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_shaft_Drive_shaft"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_shaft_Drive_shaft.port_rotary_out_Rotating_force_output_to_load_sheave"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_pressed_Pressed_member"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ring_Reverse_rotation_preventing_ring"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_pressing_Pressing_member"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_pressing_Pressing_member.port_teeth_Locking_teeth_interface"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_rot_drive_Rotation_drive_member"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_rot_drive_Rotation_drive_member.port_teeth_Locking_teeth_interface_b83aa53f"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_rot_drive_Rotation_drive_member.port_rotary_in_Rotating_force_input_from_chain_wheel"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_limiter_Rotation_limiting_member"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_spring_Disk_spring"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_nut_Adjusting_nut"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_load_Load_sheave"
+    },
+    {
+      "path": "/subsystems/8/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_load_Load_sheave.port_rotary_in_Rotating_force_input_from_drive_shaft"
+    },
+    {
+      "path": "/subsystems/9",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_chain_wheel_Chain_wheel"
+    },
+    {
+      "path": "/subsystems/9/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_chain_wheel_Chain_wheel.port_rotary_out_Chain_wheel_rotating_force_output"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_rot_input_Chain_wheel_rotation"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_hoist_rotation_Hoisting_drive_rotation"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_transmit_hoist_drive_Transmit_hoisting_rotation"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_limit_overload_rotation_Limit_overload_rotation_transfer"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_shaft_to_sheave"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_locking_teeth_mesh"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_chain_drive"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

@@ -1,0 +1,111 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 4,
+    "AllocationUsage": 1,
+    "Documentation": 20,
+    "EndFeatureMembership": 4,
+    "Feature": 6,
+    "FeatureChaining": 10,
+    "FeatureMembership": 21,
+    "FeatureTyping": 12,
+    "FlowEnd": 2,
+    "FlowUsage": 1,
+    "ItemDefinition": 2,
+    "ItemUsage": 2,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 36,
+    "Package": 1,
+    "PartDefinition": 9,
+    "PartUsage": 10,
+    "PortUsage": 2,
+    "Redefinition": 2,
+    "ReferenceSubsetting": 4,
+    "ReferenceUsage": 2,
+    "Subclassification": 1,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BASE_Machine_base"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_TUBE_Feeder_tube"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_TUBE_Feeder_tube.port_TUBE_BAR_IN_Bar_material_inlet"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_TX_Transmission_mechanism"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DRIVE_Rotary_shaft_driving_mechanism"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PROJECT_Projecting_rod"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DRIVEN_Driven_mechanism"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PUSH_Pushing_rod"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_RACK_Material_rack"
+    },
+    {
+      "path": "/subsystems/7/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_RACK_Material_rack.port_RACK_BAR_OUT_Bar_material_supply"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PROCESS_Processing_machine"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_BAR_Bar_material"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_SELECT_Coordinate_rod_engagement_and_spring_return"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_RACK_TUBE"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

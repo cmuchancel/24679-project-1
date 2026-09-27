@@ -1,0 +1,288 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 6,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 8,
+    "Documentation": 52,
+    "EndFeatureMembership": 26,
+    "Feature": 50,
+    "FeatureChaining": 82,
+    "FeatureMembership": 57,
+    "FeatureReferenceExpression": 4,
+    "FeatureTyping": 30,
+    "FeatureValue": 4,
+    "FlowEnd": 6,
+    "FlowUsage": 3,
+    "ItemDefinition": 5,
+    "ItemUsage": 17,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 95,
+    "Package": 1,
+    "PartDefinition": 9,
+    "PartUsage": 10,
+    "PortUsage": 17,
+    "Redefinition": 6,
+    "ReferenceSubsetting": 30,
+    "ReferenceUsage": 10,
+    "RequirementDefinition": 2,
+    "RequirementUsage": 2,
+    "SatisfyRequirementUsage": 4,
+    "Subclassification": 3,
+    "SubjectMembership": 4,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_shaft_worm_Worm_carrying_shaft"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_shaft_worm_Worm_carrying_shaft.port_shaft_rot_out_Shaft_rotational_transmission"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_shaft_worm_Worm_carrying_shaft.port_shaft_support_Shaft_support_and_thrust_contact"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_worm_wheel_Worm_wheel"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_worm_wheel_Worm_wheel.port_wheel_rot_in_Worm_driven_rotation"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_worm_wheel_Worm_wheel.port_wheel_rot_out_Wheel_output_rotation"
+    },
+    {
+      "path": "/subsystems/1/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_worm_wheel_Worm_wheel.port_wheel_axle_mount_Rotatable_mounting_on_stub_axle"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_output_Drive_output"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_output_Drive_output.port_output_rot_in_Driven_output_rotation"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_output_Drive_output.port_output_axle_mount_Rotatable_mounting_on_stub_axle"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_rotary_bearings_Rotary_shaft_bearings"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_rotary_bearings_Rotary_shaft_bearings.port_bearing_support_Shaft_rotational_support"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_thrust_bearing_1_First_recessed_thrust_bearing"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_thrust_bearing_1_First_recessed_thrust_bearing.port_thrust_contact_Shaft_end_thrust_contact"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_thrust_bearing_1_First_recessed_thrust_bearing.port_bearing_housing_support_Housing_support_contact"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_thrust_bearing_2_Second_thrust_bearing"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_thrust_bearing_2_Second_thrust_bearing.port_thrust_contact_Opposite_shaft_end_thrust_contact"
+    },
+    {
+      "path": "/subsystems/5/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_thrust_bearing_2_Second_thrust_bearing.port_bearing_housing_support_Housing_support_contact_9a62c9e8"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_motor_gearbox_housing_Motor_and_gearbox_housing_supports"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_motor_gearbox_housing_Motor_and_gearbox_housing_supports.port_housing_support_Housing_support_contact"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_stub_axle_Gearbox_supported_stub_axle"
+    },
+    {
+      "path": "/subsystems/7/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_stub_axle_Gearbox_supported_stub_axle.port_axle_support_Rotatable_mounting_support"
+    },
+    {
+      "path": "/subsystems/7/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_stub_axle_Gearbox_supported_stub_axle.port_axle_support_mount_Stub_axle_support_contact"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_shock_absorbing_interface_Shock_absorbing_interface"
+    },
+    {
+      "path": "/subsystems/8/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_shock_absorbing_interface_Shock_absorbing_interface.port_shock_in_Wheel_side_rotation"
+    },
+    {
+      "path": "/subsystems/8/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_shock_absorbing_interface_Shock_absorbing_interface.port_shock_out_Output_side_rotation"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_shaft_rotation_Shaft_rotation"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_output_rotation_Driven_output_rotation"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_mechanical_support_Mechanical_support_contact"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_AXIAL_LIMIT"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_AXIAL_LIMIT"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_AXIAL_LIMIT"
+    },
+    {
+      "path": "/requirements/1",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_OFFSET_CONTACT"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_OFFSET_CONTACT"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_OFFSET_CONTACT"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_TRANSMIT_ROTATION_Transmit_rotation_through_worm_gearing"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_RESTRAIN_AXIAL_SHAFT_Restrain_shaft_axial_movement_at_thrust_faces"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_shaft_worm_mesh"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_shaft_thrust_contact_1"
+    },
+    {
+      "path": "/subsystems/0/interfaces/2",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_shaft_thrust_contact_2"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_wheel_shock_coupling"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_shaft_rotary_bearing_support"
+    },
+    {
+      "path": "/subsystems/6/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_housing_axle_support"
+    },
+    {
+      "path": "/subsystems/6/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_housing_thrust_bearing_1_support"
+    },
+    {
+      "path": "/subsystems/6/interfaces/2",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_housing_thrust_bearing_2_support"
+    },
+    {
+      "path": "/subsystems/7/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_stub_axle_wheel_mount"
+    },
+    {
+      "path": "/subsystems/7/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_stub_axle_output_mount"
+    },
+    {
+      "path": "/subsystems/8/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_shock_output_coupling"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

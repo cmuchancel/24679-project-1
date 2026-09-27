@@ -1,0 +1,138 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 3,
+    "ActionUsage": 7,
+    "AllocationUsage": 3,
+    "ConnectionUsage": 4,
+    "Documentation": 29,
+    "EndFeatureMembership": 14,
+    "Feature": 28,
+    "FeatureChaining": 36,
+    "FeatureMembership": 23,
+    "FeatureTyping": 13,
+    "ItemDefinition": 6,
+    "ItemUsage": 5,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 52,
+    "Package": 1,
+    "PartDefinition": 5,
+    "PartUsage": 6,
+    "PortUsage": 5,
+    "ReferenceSubsetting": 14,
+    "Subclassification": 3,
+    "SuccessionAsUsage": 1
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_shaft_Ball_Screw_Shaft"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_shaft_Ball_Screw_Shaft.port_shaft_groove_ballway_Shaft_groove_ballway"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_nut_Displacement_Nut"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_nut_Displacement_Nut.port_nut_groove_ballway_Nut_groove_ballway"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_balls_Steel_Ball_Set"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_balls_Steel_Ball_Set.port_engaged_ballway_Engaged_groove_ballway"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_return_bodies_Circulation_Main_Bodies"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_return_bodies_Circulation_Main_Bodies.port_body_passage_Main_body_passage"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_return_tube_Cylindrical_Return_Portions"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_return_tube_Cylindrical_Return_Portions.port_axial_passage_Cylindrical_axial_passage"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_ball_flow_Circulating_steel_balls"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_rotary_input_Shaft_rotation"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_nut_translation_Nut_axial_displacement"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_convert_rotation_Convert_shaft_rotation_to_nut_displacement"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_recirculate_balls_Recirculate_balls"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_return_balls_axially_Return_balls_through_cylindrical_passage"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_shaft_ball_engagement"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_nut_ball_engagement"
+    },
+    {
+      "path": "/subsystems/1/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_nut_body_return"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_body_tube_return"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

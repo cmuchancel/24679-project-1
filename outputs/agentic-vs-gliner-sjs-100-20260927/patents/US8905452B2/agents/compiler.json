@@ -1,0 +1,171 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 4,
+    "AllocationUsage": 1,
+    "Documentation": 34,
+    "EndFeatureMembership": 12,
+    "Feature": 14,
+    "FeatureChaining": 34,
+    "FeatureMembership": 41,
+    "FeatureTyping": 16,
+    "FlowEnd": 10,
+    "FlowUsage": 5,
+    "ItemDefinition": 8,
+    "ItemUsage": 10,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 56,
+    "Package": 1,
+    "PartDefinition": 5,
+    "PartUsage": 6,
+    "PortUsage": 10,
+    "Redefinition": 10,
+    "ReferenceSubsetting": 12,
+    "ReferenceUsage": 10,
+    "Subclassification": 5,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_fluid_source_Pressurized_Fluid_Source"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_fluid_source_Pressurized_Fluid_Source.port_source_fluid_out_Pressurized_fluid_outlet"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_actuator_Cylinder_Piston_Actuator"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_actuator_Cylinder_Piston_Actuator.port_actuator_fluid_in_Head_end_chamber_fluid_inlet"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_actuator_Cylinder_Piston_Actuator.port_actuator_motion_out_Piston_rod_extension"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_gear_mechanism_Rack_and_Pinion_Force_Reverser"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_gear_mechanism_Rack_and_Pinion_Force_Reverser.port_mechanism_motion_in_Rod_driven_motion_input"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_gear_mechanism_Rack_and_Pinion_Force_Reverser.port_mechanism_force_out_Force_reversed_mechanical_output"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_jaw_assembly_Jaw_Assembly"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_jaw_assembly_Jaw_Assembly.port_jaw_force_in_Mechanism_force_input"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_jaw_assembly_Jaw_Assembly.port_jaw_grip_out_Workpiece_gripping_force_output"
+    },
+    {
+      "path": "/subsystems/3/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_jaw_assembly_Jaw_Assembly.port_jaw_baseline_clamp_out_Baseline_clamping_force_output"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_workpiece_Workpiece"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_workpiece_Workpiece.port_workpiece_grip_in_Jaw_contact_force_input"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_workpiece_Workpiece.port_workpiece_baseline_clamp_in_Baseline_jaw_clamping_force_input"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_pressurized_fluid_Pressurized_fluid"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_linear_motion_Piston_rod_linear_motion"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_reversed_force_Re_directed_mechanical_force"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_grip_force_Gripping_force"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_baseline_clamping_force_Baseline_jaw_clamping_force"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_actuate_and_grip_Actuate_and_augment_grip"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_fluid_source_to_actuator"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_actuator_to_mechanism"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_mechanism_to_jaw"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_jaw_to_workpiece"
+    },
+    {
+      "path": "/subsystems/3/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_jaw_baseline_clamp_to_workpiece"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

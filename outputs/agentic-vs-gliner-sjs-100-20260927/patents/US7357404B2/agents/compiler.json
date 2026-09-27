@@ -1,0 +1,190 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 3,
+    "AllocationUsage": 1,
+    "ConnectionUsage": 4,
+    "Documentation": 32,
+    "EndFeatureMembership": 10,
+    "Feature": 22,
+    "FeatureChaining": 32,
+    "FeatureMembership": 32,
+    "FeatureReferenceExpression": 2,
+    "FeatureTyping": 19,
+    "FeatureValue": 2,
+    "ItemDefinition": 5,
+    "ItemUsage": 11,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 57,
+    "Package": 1,
+    "PartDefinition": 6,
+    "PartUsage": 7,
+    "PortUsage": 11,
+    "ReferenceSubsetting": 12,
+    "ReferenceUsage": 2,
+    "RequirementDefinition": 1,
+    "RequirementUsage": 1,
+    "SatisfyRequirementUsage": 2,
+    "Subclassification": 4,
+    "SubjectMembership": 2,
+    "SuccessionAsUsage": 1
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_LINK1_First_Link"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LINK1_First_Link.port_frame_mount_ATV_frame_mounting_opening"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LINK1_First_Link.port_link2_mount_Second_link_mounting_opening"
+    },
+    {
+      "path": "/subsystems/0/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LINK1_First_Link.port_shock_mount_Optional_shock_mounting_opening"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_LINK2_Second_Link"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LINK2_Second_Link.port_link1_mount_First_link_mounting_opening"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LINK2_Second_Link.port_swing_arm_mount_ATV_swing_arm_mounting_opening"
+    },
+    {
+      "path": "/subsystems/1/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LINK2_Second_Link.port_shock_mount_Optional_shock_mounting_opening_21fe98cc"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ATV_FRAME_ATV_Frame"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ATV_FRAME_ATV_Frame.port_frame_link_mount_Linkage_mount"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ATV_FRAME_ATV_Frame.port_frame_shock_mount_Rear_shock_upper_mounting_point"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SWING_ARM_ATV_Swing_Arm"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SWING_ARM_ATV_Swing_Arm.port_arm_link_mount_Linkage_mount"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_REAR_SHOCK_ATV_Rear_Shock_Absorber"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_REAR_SHOCK_ATV_Rear_Shock_Absorber.port_shock_upper_mount_Upper_mount"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_REAR_SHOCK_ATV_Rear_Shock_Absorber.port_shock_link_mount_Linkage_mount"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_LINKAGE_Rear_Suspension_Linkage_Assembly"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_J_FRAME_LINK_Frame_to_first_link_mechanical_mounting"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_J_LINK_LINK_First_link_to_second_link_mechanical_mounting"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_J_LINK_ARM_Second_link_to_swing_arm_mechanical_mounting"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_J_SHOCK_FRAME_Shock_to_frame_mechanical_mounting"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_PROGRESSION"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_PROGRESSION"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_PROGRESSION"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_PROGRESS_Vary_leverage_through_wheel_travel"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_FRAME_LINK1"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_LINK1_LINK2"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_LINK2_ARM"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_SHOCK_FRAME"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

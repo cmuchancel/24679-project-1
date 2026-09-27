@@ -1,0 +1,151 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 5,
+    "ActionUsage": 10,
+    "AllocationUsage": 5,
+    "ConnectionUsage": 2,
+    "Documentation": 31,
+    "EndFeatureMembership": 16,
+    "Feature": 30,
+    "FeatureChaining": 38,
+    "FeatureMembership": 30,
+    "FeatureTyping": 17,
+    "FlowEnd": 2,
+    "FlowUsage": 1,
+    "ItemDefinition": 4,
+    "ItemUsage": 6,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 56,
+    "Package": 1,
+    "PartDefinition": 6,
+    "PartUsage": 7,
+    "PortUsage": 6,
+    "Redefinition": 2,
+    "ReferenceSubsetting": 16,
+    "ReferenceUsage": 2,
+    "Subclassification": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_outer_race_Outer_Race"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_outer_race_Outer_Race.port_outer_torque_Torque_interface"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_inner_race_Inner_Race"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_inner_race_Inner_Race.port_inner_torque_Torque_interface"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_engaging_members_Engaging_Members"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_engaging_members_Engaging_Members.port_members_torque_outer_Outer_race_torque_interface"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_engaging_members_Engaging_Members.port_members_torque_inner_Inner_race_torque_interface"
+    },
+    {
+      "path": "/subsystems/2/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_engaging_members_Engaging_Members.port_members_spring_force_Spring_urging_interface"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_cage_Cage"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_volute_springs_Volute_Springs"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_volute_springs_Volute_Springs.port_spring_force_out_Urging_force_interface"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_side_plate_Side_Plate"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_torque_Rotary_torque"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_spring_force_Spring_urging_force"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_bias_members_Bias_engaging_members_toward_cam_face"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_retain_engaging_members_Retain_engaging_members"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_retain_and_fix_springs_Fix_volute_springs_axially"
+    },
+    {
+      "path": "/behaviour/actions/3",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_transmit_torque_Transmit_torque_between_races"
+    },
+    {
+      "path": "/behaviour/actions/4",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_retain_springs_circumferentially_Retain_volute_springs_circumferentially"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_outer_race_to_members_torque"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_members_to_inner_race_torque"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_springs_to_members_urging"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

@@ -1,0 +1,172 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 5,
+    "AllocationUsage": 1,
+    "Documentation": 29,
+    "EndFeatureMembership": 10,
+    "Feature": 15,
+    "FeatureChaining": 34,
+    "FeatureMembership": 36,
+    "FeatureReferenceExpression": 3,
+    "FeatureTyping": 15,
+    "FeatureValue": 3,
+    "FlowEnd": 8,
+    "FlowUsage": 4,
+    "ItemDefinition": 4,
+    "ItemUsage": 8,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 55,
+    "Package": 1,
+    "PartDefinition": 4,
+    "PartUsage": 5,
+    "PortUsage": 8,
+    "Redefinition": 8,
+    "ReferenceSubsetting": 13,
+    "ReferenceUsage": 11,
+    "RequirementDefinition": 2,
+    "RequirementUsage": 2,
+    "SatisfyRequirementUsage": 3,
+    "Subclassification": 3,
+    "SubjectMembership": 3,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SCREW_ROTOR_Screw_rotor"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SCREW_ROTOR_Screw_rotor.port_GROOVE_FIRST_GAS_Gas_from_first_adjacent_helical_groove"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SCREW_ROTOR_Screw_rotor.port_GROOVE_SECOND_GAS_Gas_from_second_adjacent_helical_groove"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_GATE_ROTOR_Gate_rotor"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CASING_Casing"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CASING_Casing.port_CASING_FIRST_DISCHARGE_PASSAGE_First_downstream_discharge_passage"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CASING_Casing.port_CASING_SECOND_DISCHARGE_PASSAGE_Second_downstream_discharge_passage"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SLIDE_VALVE_Partitioned_discharge_slide_valve"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SLIDE_VALVE_Partitioned_discharge_slide_valve.port_VALVE_FIRST_PORT_First_discharge_port"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SLIDE_VALVE_Partitioned_discharge_slide_valve.port_VALVE_SECOND_PORT_Second_discharge_port"
+    },
+    {
+      "path": "/subsystems/3/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SLIDE_VALVE_Partitioned_discharge_slide_valve.port_VALVE_FIRST_PASSAGE_First_downstream_discharge_passage"
+    },
+    {
+      "path": "/subsystems/3/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SLIDE_VALVE_Partitioned_discharge_slide_valve.port_VALVE_SECOND_PASSAGE_Second_downstream_discharge_passage"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_GAS_Gas_undergoing_compression_and_discharge"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_GAS_FIRST_Gas_from_first_port_through_first_discharge_p"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_GAS_SECOND_Gas_from_second_port_through_second_discharge"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_PARTITION_ADJACENT_DISCHARGE"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_PARTITION_ADJACENT_DISCHARGE"
+    },
+    {
+      "path": "/requirements/1",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_DOWNSTREAM_PASSAGE"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_DOWNSTREAM_PASSAGE"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_DOWNSTREAM_PASSAGE"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_COMPRESS_AND_DISCHARGE_Compress_and_discharge_gas"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_GROOVE_FIRST_PORT"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_GROOVE_SECOND_PORT"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_FIRST_DISCHARGE"
+    },
+    {
+      "path": "/subsystems/3/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_SECOND_DISCHARGE"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

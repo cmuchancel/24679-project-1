@@ -1,0 +1,34 @@
+{
+  "revision": 4,
+  "candidate_sha256": "bc644b79d54d569f394e025d20d0b74805317dbf240cdddad27ef5576512ed99",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 4 correctly separates the claimed direct fitting of second cap to second arm from the torsionally elastic member. Claim 1's cited text expressly states that caps are angularly fixed to the elastic-member ends, second cap is fitted directly with second arm, and angular connecting means are separately interposed between first arm and first cap. The main components and contexts are supported."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "Includes fixed support, both arms, wheels, elastic member, caps, belt branches and the passive forcing/contact outcome. Direct fit, spring-cap and first cap/arm angular coupling relations are represented. The radial opening passage is stated in component description; no force interface is fabricated."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "TORSION is now confined to elastic member and its angularly fixed cap connections. DIRECT_FITTING is a distinct mechanical_rotational relation with explicit notes that it does not assert elastic behavior. Rotational joints remain separately identified."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Key model components, interfaces and flows cite claim passages. The direct-fitting interface is traceable to claim 1 and now uses a semantically distinct flow. Action's passive forcing/contact steps have descriptive evidence."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Modeled connections reference existing subsystems and ports, with compatible mechanical flow types; the CAP2/ARM2 direct fitting is represented once and no longer mislabeled as elastic torsion. Belt and fixed-structure contexts are separately modeled."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Physical decomposition is component-based and mutually alternative coupling variants are not merged as simultaneous components. Passive elastic forcing is represented without inventing active sensing or feedback. Retrieved textbook response about control was irrelevant; no textbook material is used as patent fact."
+    }
+  },
+  "findings": [],
+  "summary": "Revision 4 resolves the prior flow-scope issue: the direct CAP2-to-ARM2 fitting uses a distinct DIRECT_FITTING relation, while TORSION notes and use are scoped to the elastic member and angularly fixed end-cap connections. The claim passage expressly supports that distinction. Overall grounding, modeled architecture, flow consistency and interface traceability are sound; no actionable unresolved findings identified. Reviewed cited claim and description passages and relevant modeling guidance; no edits made.",
+  "saved_at": "2026-09-27T05:36:05.624988+00:00"
+}

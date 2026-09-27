@@ -1,0 +1,34 @@
+{
+  "revision": 4,
+  "candidate_sha256": "5ce3b3e10aeaedb9c91f37519c9b368ec9a3aa919778a921388e77fd484ccb11",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 4 removes the prior unsupported cylinder-side and slot-drain housing port assignments. The modeled core pressure chamber→fluid path→actuator slot, movable pressure plate/lever contact, slot drainage to return chamber, and broad pressure/return external connections are supported by claims 1–3 and 13. Optional construction features are explicitly not assumed present. No quantitative constraints are invented."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The core claimed spool/plate function and the supported slot-drain behavior are represented in subsystem description, requirements, flows, and action. Omitting optional bores, cavity, restrictor, guides, and parallel-valve actuator configuration is reasonable for a core embodiment model; the cavity-specific qualitative behavior is included in the action/requirement."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "The prior reuse of one return flow for separate cylinder-to-reservoir and slot-drain routes is corrected: F_RETURN explicitly denotes cylinder-to-reservoir return and F_SLOT_PATH denotes the internal pressure-chamber-to-slot flow with drainage. No unsupported individual cylinder port mapping or dedicated slot-drain port remains. Flow notes preserve endpoint uncertainty."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Core statements have citations at the relevant SJS paths. Requirement rationales identify claims; action steps cite the passages for the described path, pressure-plate interaction, and drainage. No unsupported operating constraints or quantitative values are claimed."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "The sole explicit interface connects compatible hydraulic supply ports and is grounded in the disclosed pump/pressure supply connection. The previous unsupported detailed cylinder and slot-drain interface assignments are removed. Lack of detailed interface topology is transparently acknowledged rather than guessed; the patent does not map individual housing ports to cylinder sides."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The modeling approach distinguishes boundary entities and flow categories while avoiding inferred connection detail and numerical performance. Textbook material is used only as modeling guidance, not as evidence of invention facts."
+    }
+  },
+  "findings": [],
+  "summary": "Revision 4 addresses the prior routing findings: unsupported cylinder-side and slot-drain housing ports/interfaces are gone; cylinder-to-reservoir return is distinguished from slot drainage; the pressure-chamber-to-slot path is represented separately; optional features remain optional. The remaining abstraction is appropriately cautious: no detailed cylinder-side port mapping is asserted, while the one explicit supply interface is supported. Overall patent support is adequate for the selected core conceptual scope, with no unresolved review findings.",
+  "saved_at": "2026-09-27T03:10:09.062434+00:00"
+}

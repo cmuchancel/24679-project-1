@@ -1,0 +1,213 @@
+package Model__Telescoping_Fluid_Cylinder {
+    private import ScalarValues::*;
+    doc SJS_Source
+    /* SJS_JSON_V1
+     * {"$schema": "sjs/1.0", "model_meta": {"system_name": "Telescoping Fluid Cylinder", "system_id": "US7337885B2", "description": "Concept-level structural and behavioral model of a telescoping fluid cylinder using staged piston movement and poppet-controlled flow paths.", "version": "1.0", "lifecycle_stage": "concept", "domain": "pneumatic actuation", "maturity": "draft", "date_modified": "2026-09-27"}, "subsystems": [{"subsystem_id": "CYL", "subsystem_name": "Cylinder Housing and Covers", "description": "Cylinder housing 22 encloses interior region 82. In the preferred embodiment, head cover 20 contains cavity 66 and port 64; distinct rod cover 18 has port 128. Claim 1 recites a cylinder cover cavity and generalized first/second pistons, not explicitly equated with preferred-embodiment inner/outer pistons.", "domain": "mechanical", "parts": [{"part_id": "FCV80", "description": "Head-cover flow-control valve 80 adjusts airflow received through port 64.", "quantity": 1}, {"part_id": "FCV130", "description": "Rod-cover flow-control valve 130.", "quantity": 1}], "ports": [{"port_id": "P64", "name": "Head-cover air port 64", "direction": "in", "flow_type": "pneumatic_fluid"}, {"port_id": "P128", "name": "Rod-cover air port 128 (exhaust destination during initial extension; pressure inlet during retraction)", "direction": "inout", "flow_type": "pneumatic_fluid"}]}, {"subsystem_id": "OP", "subsystem_name": "Outer Piston and Outer Rod", "description": "Preferred embodiment outer piston 84 travels in housing interior 82 and couples to outer rod 34; it carries poppet cavities and passages. This embodiment-specific mapping is not an assertion it is claim 1's first piston: claim 1 distinguishes a first piston too large for the cover cavity from a second piston fitted in that cavity.", "domain": "pneumatic-mechanical", "functional_basis": ["move outer rod", "route air"], "ports": [{"port_id": "OP_AIR", "name": "Outer piston poppet-cavity air path", "direction": "inout", "flow_type": "pneumatic_fluid"}, {"port_id": "OP_MOTION", "name": "Outer rod axial motion", "direction": "in", "flow_type": "mechanical_linear"}, {"port_id": "OP_WORK", "name": "Outer rod workpiece contact", "direction": "out", "flow_type": "mechanical_force"}], "interfaces": [{"interface_id": "IF_AIR128", "mating_subsystem": "CYL", "port_this": "OP_AIR", "port_mate": "P128", "flow_ref": "F_AIR", "interface_type": "pneumatic exhaust flow during initial extension"}, {"interface_id": "IF_WORK", "mating_subsystem": "LOAD", "port_this": "OP_WORK", "port_mate": "LOAD_CONTACT", "flow_ref": "F_WORK", "interface_type": "mechanical contact/force transfer"}]}, {"subsystem_id": "IP", "subsystem_name": "Inner Piston and Inner Rod", "description": "Preferred embodiment inner piston 70 is in head-cover cavity 66 and couples to inner rod 46, which passes through outer piston 84 and outer-rod channel 48. These embodiment labels are not automatically equivalent to claim 1's first/second piston labels.", "domain": "pneumatic-mechanical", "functional_basis": ["extend inner rod", "move independently"], "ports": [{"port_id": "IP_MOTION", "name": "Inner rod axial motion within outer rod", "direction": "out", "flow_type": "mechanical_linear"}], "interfaces": [{"interface_id": "IF_MOTION", "mating_subsystem": "OP", "port_this": "IP_MOTION", "port_mate": "OP_MOTION", "flow_ref": "F_MOTION", "interface_type": "nested and coordinated axial rod motion"}]}, {"subsystem_id": "POPP", "subsystem_name": "Poppet Valve Assembly", "description": "Poppets, shafts, and seals selectively open or close air paths through the outer piston as the pistons move.", "domain": "pneumatic"}, {"subsystem_id": "SUP", "subsystem_name": "External Pneumatic Pressure Source", "description": "External operating context representing pneumatic pressure applied at head-cover port 64 for extension and rod-cover port 128 for retraction. Supply internals and switching equipment are not modeled; the patent separately describes a switch block in the operating context without establishing it as part of this pressure-source subsystem.", "domain": "pneumatic", "ports": [{"port_id": "SUP64", "name": "Pressure applied at port 64", "direction": "out", "flow_type": "pneumatic_fluid"}, {"port_id": "SUP128", "name": "Pressure applied at port 128", "direction": "inout", "flow_type": "pneumatic_fluid"}], "interfaces": [{"interface_id": "IF_SUP64", "mating_subsystem": "CYL", "port_this": "SUP64", "port_mate": "P64", "flow_ref": "F_SUP", "interface_type": "pneumatic fluid pressure"}, {"interface_id": "IF_SUP128", "mating_subsystem": "CYL", "port_this": "SUP128", "port_mate": "P128", "flow_ref": "F_SUP", "interface_type": "pneumatic fluid pressure, retract phase"}]}, {"subsystem_id": "LOAD", "subsystem_name": "Tool or Workpiece", "description": "External tool/workpiece acted upon by the telescoping rods.", "domain": "mechanical", "ports": [{"port_id": "LOAD_CONTACT", "name": "Workpiece contact", "direction": "in", "flow_type": "mechanical_force"}]}], "item_flows": [{"flow_id": "F_SUP", "name": "Pneumatic pressure supply", "flow_type": "pneumatic_fluid", "notes": "Pressure is applied at head-cover port 64 during extension and at rod-cover port 128 during retraction; no internal supply or switching topology is asserted."}, {"flow_id": "F_AIR", "name": "Internal air flow", "flow_type": "pneumatic_fluid", "notes": "During initial extension, air ahead of inner piston 70 passes through outer-piston cavities 88/90 and chambers 98, then exits the cylinder at rod-cover exhaust port 128; after pistons contact, seals close this path."}, {"flow_id": "F_MOTION", "name": "Telescoping axial motion", "flow_type": "mechanical_linear", "notes": "Relative and coordinated motion of inner and outer rods."}, {"flow_id": "F_WORK", "name": "Workpiece interaction", "flow_type": "mechanical_force", "notes": "Rod/tool contact transfers force to workpiece."}], "requirements": [{"req_id": "R_STAGE", "category": "functional", "priority": "high", "statement": "The cylinder shall permit inner-rod movement relative to the outer rod and coordinated movement of both rods during the stroke.", "rationale": "Claim 1 supports structural piston/rod arrangement only. Independent initial movement followed by contact and joint movement is described in the abstract and preferred-embodiment operation, not as claim 1 behavior.", "satisfied_by": ["IP", "OP"]}, {"req_id": "R_FLOW", "category": "functional", "priority": "high", "statement": "The poppet arrangement shall control air paths through the outer piston by opening and sealing the paths as piston positions change.", "rationale": "Claim 1 supports a poppet held in an aperture. Air-path opening/closing is described for preferred-embodiment cavities and seals, not as operating behavior recited in claim 1.", "satisfied_by": ["POPP", "OP"]}, {"req_id": "R_STOP", "category": "functional", "priority": "medium", "statement": "The poppet length shall stop the claim-defined second piston from forward movement before the claim-defined first piston contacts the rod cover.", "rationale": "Claims 4\u20135 specify poppet contact with rod cover closing the first-piston aperture and poppet length stopping the second piston before the first piston contacts the rod cover. Preferred embodiment instead describes valves stopping inner piston 70 while outer piston 84 continues; labels are not asserted as claim-number equivalents.", "satisfied_by": ["POPP", "CYL", "IP"]}], "behaviour": {"actions": [{"action_id": "A_EXT", "name": "Extend telescoping cylinder", "owner": "CYL", "steps": [{"step_no": 1, "description": "During preferred-embodiment extension, pressure is applied through head-cover port 64. Inner piston 70 moves forward independently; air ahead passes through poppet cavities 88/90 around shafts and exits rod-cover port 128."}, {"step_no": 2, "description": "When inner piston 70 contacts outer piston 84, poppet seals close cavities 88/90; pressure through port 64 then acts on both pistons, which move together."}, {"step_no": 3, "description": "At the forward end, poppets contact the rod-cover inner surface and prevent inner-piston forward movement while outer piston 84 continues forward."}]}, {"action_id": "A_RET", "name": "Retract telescoping cylinder", "owner": "CYL", "steps": [{"step_no": 1, "description": "During retraction, pressure is applied at rod-cover port 128; outer piston 84 and inner piston 70 move in unison while valves 92/94 remain seated."}, {"step_no": 2, "description": "The cited description does not specify the exhaust destination during this retract sequence; no exhaust route is asserted."}]}]}}
+     */
+    doc
+    /* {"system_name": "Telescoping Fluid Cylinder", "system_id": "US7337885B2", "description": "Concept-level structural and behavioral model of a telescoping fluid cylinder using staged piston movement and poppet-controlled flow paths.", "version": "1.0", "lifecycle_stage": "concept", "domain": "pneumatic actuation", "maturity": "draft", "date_modified": "2026-09-27"} */
+    item def FlowType__pneumatic_fluid {
+        doc
+        /* {"flow_type": "pneumatic_fluid"} */
+    }
+    item def FlowType__mechanical_linear {
+        doc
+        /* {"flow_type": "mechanical_linear"} */
+    }
+    item def FlowType__mechanical_force {
+        doc
+        /* {"flow_type": "mechanical_force"} */
+    }
+    part def Component_CYL_Cylinder_Housing_and_Covers {
+        doc
+        /* {"subsystem_id": "CYL", "subsystem_name": "Cylinder Housing and Covers", "description": "Cylinder housing 22 encloses interior region 82. In the preferred embodiment, head cover 20 contains cavity 66 and port 64; distinct rod cover 18 has port 128. Claim 1 recites a cylinder cover cavity and generalized first/second pistons, not explicitly equated with preferred-embodiment inner/outer pistons.", "domain": "mechanical", "parts": [{"part_id": "FCV80", "description": "Head-cover flow-control valve 80 adjusts airflow received through port 64.", "quantity": 1}, {"part_id": "FCV130", "description": "Rod-cover flow-control valve 130.", "quantity": 1}], "ports": [{"port_id": "P64", "name": "Head-cover air port 64", "direction": "in", "flow_type": "pneumatic_fluid"}, {"port_id": "P128", "name": "Rod-cover air port 128 (exhaust destination during initial extension; pressure inlet during retraction)", "direction": "inout", "flow_type": "pneumatic_fluid"}]} */
+        part part_FCV80_Head_cover_flow_control_valve_80_adjusts_airf [1] {
+            doc
+            /* {"part_id": "FCV80", "description": "Head-cover flow-control valve 80 adjusts airflow received through port 64.", "quantity": 1} */
+        }
+        part part_FCV130_Rod_cover_flow_control_valve_130 [1] {
+            doc
+            /* {"part_id": "FCV130", "description": "Rod-cover flow-control valve 130.", "quantity": 1} */
+        }
+        port port_P64_Head_cover_air_port_64 {
+            doc
+            /* {"port_id": "P64", "name": "Head-cover air port 64", "direction": "in", "flow_type": "pneumatic_fluid"} */
+            in item payload : FlowType__pneumatic_fluid;
+        }
+        port port_P128_Rod_cover_air_port_128__exhaust_destination_d {
+            doc
+            /* {"port_id": "P128", "name": "Rod-cover air port 128 (exhaust destination during initial extension; pressure inlet during retraction)", "direction": "inout", "flow_type": "pneumatic_fluid"} */
+            inout item payload : FlowType__pneumatic_fluid;
+        }
+    }
+    part def Component_OP_Outer_Piston_and_Outer_Rod {
+        doc
+        /* {"subsystem_id": "OP", "subsystem_name": "Outer Piston and Outer Rod", "description": "Preferred embodiment outer piston 84 travels in housing interior 82 and couples to outer rod 34; it carries poppet cavities and passages. This embodiment-specific mapping is not an assertion it is claim 1's first piston: claim 1 distinguishes a first piston too large for the cover cavity from a second piston fitted in that cavity.", "domain": "pneumatic-mechanical", "functional_basis": ["move outer rod", "route air"], "ports": [{"port_id": "OP_AIR", "name": "Outer piston poppet-cavity air path", "direction": "inout", "flow_type": "pneumatic_fluid"}, {"port_id": "OP_MOTION", "name": "Outer rod axial motion", "direction": "in", "flow_type": "mechanical_linear"}, {"port_id": "OP_WORK", "name": "Outer rod workpiece contact", "direction": "out", "flow_type": "mechanical_force"}], "interfaces": [{"interface_id": "IF_AIR128", "mating_subsystem": "CYL", "port_this": "OP_AIR", "port_mate": "P128", "flow_ref": "F_AIR", "interface_type": "pneumatic exhaust flow during initial extension"}, {"interface_id": "IF_WORK", "mating_subsystem": "LOAD", "port_this": "OP_WORK", "port_mate": "LOAD_CONTACT", "flow_ref": "F_WORK", "interface_type": "mechanical contact/force transfer"}]} */
+        port port_OP_AIR_Outer_piston_poppet_cavity_air_path {
+            doc
+            /* {"port_id": "OP_AIR", "name": "Outer piston poppet-cavity air path", "direction": "inout", "flow_type": "pneumatic_fluid"} */
+            inout item payload : FlowType__pneumatic_fluid;
+        }
+        port port_OP_MOTION_Outer_rod_axial_motion {
+            doc
+            /* {"port_id": "OP_MOTION", "name": "Outer rod axial motion", "direction": "in", "flow_type": "mechanical_linear"} */
+            in item payload : FlowType__mechanical_linear;
+        }
+        port port_OP_WORK_Outer_rod_workpiece_contact {
+            doc
+            /* {"port_id": "OP_WORK", "name": "Outer rod workpiece contact", "direction": "out", "flow_type": "mechanical_force"} */
+            out item payload : FlowType__mechanical_force;
+        }
+    }
+    part def Component_IP_Inner_Piston_and_Inner_Rod {
+        doc
+        /* {"subsystem_id": "IP", "subsystem_name": "Inner Piston and Inner Rod", "description": "Preferred embodiment inner piston 70 is in head-cover cavity 66 and couples to inner rod 46, which passes through outer piston 84 and outer-rod channel 48. These embodiment labels are not automatically equivalent to claim 1's first/second piston labels.", "domain": "pneumatic-mechanical", "functional_basis": ["extend inner rod", "move independently"], "ports": [{"port_id": "IP_MOTION", "name": "Inner rod axial motion within outer rod", "direction": "out", "flow_type": "mechanical_linear"}], "interfaces": [{"interface_id": "IF_MOTION", "mating_subsystem": "OP", "port_this": "IP_MOTION", "port_mate": "OP_MOTION", "flow_ref": "F_MOTION", "interface_type": "nested and coordinated axial rod motion"}]} */
+        port port_IP_MOTION_Inner_rod_axial_motion_within_outer_rod {
+            doc
+            /* {"port_id": "IP_MOTION", "name": "Inner rod axial motion within outer rod", "direction": "out", "flow_type": "mechanical_linear"} */
+            out item payload : FlowType__mechanical_linear;
+        }
+    }
+    part def Component_POPP_Poppet_Valve_Assembly {
+        doc
+        /* {"subsystem_id": "POPP", "subsystem_name": "Poppet Valve Assembly", "description": "Poppets, shafts, and seals selectively open or close air paths through the outer piston as the pistons move.", "domain": "pneumatic"} */
+    }
+    part def Component_SUP_External_Pneumatic_Pressure_Source {
+        doc
+        /* {"subsystem_id": "SUP", "subsystem_name": "External Pneumatic Pressure Source", "description": "External operating context representing pneumatic pressure applied at head-cover port 64 for extension and rod-cover port 128 for retraction. Supply internals and switching equipment are not modeled; the patent separately describes a switch block in the operating context without establishing it as part of this pressure-source subsystem.", "domain": "pneumatic", "ports": [{"port_id": "SUP64", "name": "Pressure applied at port 64", "direction": "out", "flow_type": "pneumatic_fluid"}, {"port_id": "SUP128", "name": "Pressure applied at port 128", "direction": "inout", "flow_type": "pneumatic_fluid"}], "interfaces": [{"interface_id": "IF_SUP64", "mating_subsystem": "CYL", "port_this": "SUP64", "port_mate": "P64", "flow_ref": "F_SUP", "interface_type": "pneumatic fluid pressure"}, {"interface_id": "IF_SUP128", "mating_subsystem": "CYL", "port_this": "SUP128", "port_mate": "P128", "flow_ref": "F_SUP", "interface_type": "pneumatic fluid pressure, retract phase"}]} */
+        port port_SUP64_Pressure_applied_at_port_64 {
+            doc
+            /* {"port_id": "SUP64", "name": "Pressure applied at port 64", "direction": "out", "flow_type": "pneumatic_fluid"} */
+            out item payload : FlowType__pneumatic_fluid;
+        }
+        port port_SUP128_Pressure_applied_at_port_128 {
+            doc
+            /* {"port_id": "SUP128", "name": "Pressure applied at port 128", "direction": "inout", "flow_type": "pneumatic_fluid"} */
+            inout item payload : FlowType__pneumatic_fluid;
+        }
+    }
+    part def Component_LOAD_Tool_or_Workpiece {
+        doc
+        /* {"subsystem_id": "LOAD", "subsystem_name": "Tool or Workpiece", "description": "External tool/workpiece acted upon by the telescoping rods.", "domain": "mechanical", "ports": [{"port_id": "LOAD_CONTACT", "name": "Workpiece contact", "direction": "in", "flow_type": "mechanical_force"}]} */
+        port port_LOAD_CONTACT_Workpiece_contact {
+            doc
+            /* {"port_id": "LOAD_CONTACT", "name": "Workpiece contact", "direction": "in", "flow_type": "mechanical_force"} */
+            in item payload : FlowType__mechanical_force;
+        }
+    }
+    item def Flow_F_SUP_Pneumatic_pressure_supply :> FlowType__pneumatic_fluid {
+        doc
+        /* {"flow_id": "F_SUP", "name": "Pneumatic pressure supply", "flow_type": "pneumatic_fluid", "notes": "Pressure is applied at head-cover port 64 during extension and at rod-cover port 128 during retraction; no internal supply or switching topology is asserted."} */
+    }
+    item def Flow_F_AIR_Internal_air_flow :> FlowType__pneumatic_fluid {
+        doc
+        /* {"flow_id": "F_AIR", "name": "Internal air flow", "flow_type": "pneumatic_fluid", "notes": "During initial extension, air ahead of inner piston 70 passes through outer-piston cavities 88/90 and chambers 98, then exits the cylinder at rod-cover exhaust port 128; after pistons contact, seals close this path."} */
+    }
+    item def Flow_F_MOTION_Telescoping_axial_motion :> FlowType__mechanical_linear {
+        doc
+        /* {"flow_id": "F_MOTION", "name": "Telescoping axial motion", "flow_type": "mechanical_linear", "notes": "Relative and coordinated motion of inner and outer rods."} */
+    }
+    item def Flow_F_WORK_Workpiece_interaction :> FlowType__mechanical_force {
+        doc
+        /* {"flow_id": "F_WORK", "name": "Workpiece interaction", "flow_type": "mechanical_force", "notes": "Rod/tool contact transfers force to workpiece."} */
+    }
+    requirement def Requirement_R_STAGE {
+        doc
+        /* {"req_id": "R_STAGE", "category": "functional", "priority": "high", "statement": "The cylinder shall permit inner-rod movement relative to the outer rod and coordinated movement of both rods during the stroke.", "rationale": "Claim 1 supports structural piston/rod arrangement only. Independent initial movement followed by contact and joint movement is described in the abstract and preferred-embodiment operation, not as claim 1 behavior.", "satisfied_by": ["IP", "OP"]} */
+    }
+    requirement requirement_R_STAGE : Requirement_R_STAGE;
+    requirement def Requirement_R_FLOW {
+        doc
+        /* {"req_id": "R_FLOW", "category": "functional", "priority": "high", "statement": "The poppet arrangement shall control air paths through the outer piston by opening and sealing the paths as piston positions change.", "rationale": "Claim 1 supports a poppet held in an aperture. Air-path opening/closing is described for preferred-embodiment cavities and seals, not as operating behavior recited in claim 1.", "satisfied_by": ["POPP", "OP"]} */
+    }
+    requirement requirement_R_FLOW : Requirement_R_FLOW;
+    requirement def Requirement_R_STOP {
+        doc
+        /* {"req_id": "R_STOP", "category": "functional", "priority": "medium", "statement": "The poppet length shall stop the claim-defined second piston from forward movement before the claim-defined first piston contacts the rod cover.", "rationale": "Claims 4\u20135 specify poppet contact with rod cover closing the first-piston aperture and poppet length stopping the second piston before the first piston contacts the rod cover. Preferred embodiment instead describes valves stopping inner piston 70 while outer piston 84 continues; labels are not asserted as claim-number equivalents.", "satisfied_by": ["POPP", "CYL", "IP"]} */
+    }
+    requirement requirement_R_STOP : Requirement_R_STOP;
+    action def Action_A_EXT_Extend_telescoping_cylinder {
+        doc
+        /* {"action_id": "A_EXT", "name": "Extend telescoping cylinder", "owner": "CYL", "steps": [{"step_no": 1, "description": "During preferred-embodiment extension, pressure is applied through head-cover port 64. Inner piston 70 moves forward independently; air ahead passes through poppet cavities 88/90 around shafts and exits rod-cover port 128."}, {"step_no": 2, "description": "When inner piston 70 contacts outer piston 84, poppet seals close cavities 88/90; pressure through port 64 then acts on both pistons, which move together."}, {"step_no": 3, "description": "At the forward end, poppets contact the rod-cover inner surface and prevent inner-piston forward movement while outer piston 84 continues forward."}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "During preferred-embodiment extension, pressure is applied through head-cover port 64. Inner piston 70 moves forward independently; air ahead passes through poppet cavities 88/90 around shafts and exits rod-cover port 128."} */
+        }
+        then action step_2 {
+            doc
+            /* {"step_no": 2, "description": "When inner piston 70 contacts outer piston 84, poppet seals close cavities 88/90; pressure through port 64 then acts on both pistons, which move together."} */
+        }
+        then action step_3 {
+            doc
+            /* {"step_no": 3, "description": "At the forward end, poppets contact the rod-cover inner surface and prevent inner-piston forward movement while outer piston 84 continues forward."} */
+        }
+    }
+    action def Action_A_RET_Retract_telescoping_cylinder {
+        doc
+        /* {"action_id": "A_RET", "name": "Retract telescoping cylinder", "owner": "CYL", "steps": [{"step_no": 1, "description": "During retraction, pressure is applied at rod-cover port 128; outer piston 84 and inner piston 70 move in unison while valves 92/94 remain seated."}, {"step_no": 2, "description": "The cited description does not specify the exhaust destination during this retract sequence; no exhaust route is asserted."}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "During retraction, pressure is applied at rod-cover port 128; outer piston 84 and inner piston 70 move in unison while valves 92/94 remain seated."} */
+        }
+        then action step_2 {
+            doc
+            /* {"step_no": 2, "description": "The cited description does not specify the exhaust destination during this retract sequence; no exhaust route is asserted."} */
+        }
+    }
+    part systemModel {
+        part component_CYL_Cylinder_Housing_and_Covers : Component_CYL_Cylinder_Housing_and_Covers;
+        part component_OP_Outer_Piston_and_Outer_Rod : Component_OP_Outer_Piston_and_Outer_Rod;
+        part component_IP_Inner_Piston_and_Inner_Rod : Component_IP_Inner_Piston_and_Inner_Rod;
+        part component_POPP_Poppet_Valve_Assembly : Component_POPP_Poppet_Valve_Assembly;
+        part component_SUP_External_Pneumatic_Pressure_Source
+            : Component_SUP_External_Pneumatic_Pressure_Source;
+        part component_LOAD_Tool_or_Workpiece : Component_LOAD_Tool_or_Workpiece;
+        action action_A_EXT_Extend_telescoping_cylinder : Action_A_EXT_Extend_telescoping_cylinder;
+        action action_A_RET_Retract_telescoping_cylinder
+            : Action_A_RET_Retract_telescoping_cylinder;
+    }
+    satisfy requirement_R_STAGE by systemModel.component_IP_Inner_Piston_and_Inner_Rod;
+    satisfy requirement_R_STAGE by systemModel.component_OP_Outer_Piston_and_Outer_Rod;
+    satisfy requirement_R_FLOW by systemModel.component_POPP_Poppet_Valve_Assembly;
+    satisfy requirement_R_FLOW by systemModel.component_OP_Outer_Piston_and_Outer_Rod;
+    satisfy requirement_R_STOP by systemModel.component_POPP_Poppet_Valve_Assembly;
+    satisfy requirement_R_STOP by systemModel.component_CYL_Cylinder_Housing_and_Covers;
+    satisfy requirement_R_STOP by systemModel.component_IP_Inner_Piston_and_Inner_Rod;
+    allocate systemModel.action_A_EXT_Extend_telescoping_cylinder
+        to systemModel.component_CYL_Cylinder_Housing_and_Covers;
+    allocate systemModel.action_A_RET_Retract_telescoping_cylinder
+        to systemModel.component_CYL_Cylinder_Housing_and_Covers;
+    doc
+    /* {"interface_id": "IF_AIR128", "mating_subsystem": "CYL", "port_this": "OP_AIR", "port_mate": "P128", "flow_ref": "F_AIR", "interface_type": "pneumatic exhaust flow during initial extension"} */
+    connection connection_IF_AIR128
+        connect systemModel.component_OP_Outer_Piston_and_Outer_Rod
+                    .port_OP_AIR_Outer_piston_poppet_cavity_air_path
+        to systemModel.component_CYL_Cylinder_Housing_and_Covers
+                    .port_P128_Rod_cover_air_port_128__exhaust_destination_d;
+    doc
+    /* {"interface_id": "IF_WORK", "mating_subsystem": "LOAD", "port_this": "OP_WORK", "port_mate": "LOAD_CONTACT", "flow_ref": "F_WORK", "interface_type": "mechanical contact/force transfer"} */
+    flow connection_IF_WORK
+        from systemModel.component_OP_Outer_Piston_and_Outer_Rod
+            .port_OP_WORK_Outer_rod_workpiece_contact.payload
+        to systemModel.component_LOAD_Tool_or_Workpiece.port_LOAD_CONTACT_Workpiece_contact.payload;
+    doc
+    /* {"interface_id": "IF_MOTION", "mating_subsystem": "OP", "port_this": "IP_MOTION", "port_mate": "OP_MOTION", "flow_ref": "F_MOTION", "interface_type": "nested and coordinated axial rod motion"} */
+    flow connection_IF_MOTION
+        from systemModel.component_IP_Inner_Piston_and_Inner_Rod
+            .port_IP_MOTION_Inner_rod_axial_motion_within_outer_rod.payload
+        to systemModel.component_OP_Outer_Piston_and_Outer_Rod.port_OP_MOTION_Outer_rod_axial_motion
+            .payload;
+    doc
+    /* {"interface_id": "IF_SUP64", "mating_subsystem": "CYL", "port_this": "SUP64", "port_mate": "P64", "flow_ref": "F_SUP", "interface_type": "pneumatic fluid pressure"} */
+    flow connection_IF_SUP64
+        from systemModel.component_SUP_External_Pneumatic_Pressure_Source
+            .port_SUP64_Pressure_applied_at_port_64.payload
+        to systemModel.component_CYL_Cylinder_Housing_and_Covers.port_P64_Head_cover_air_port_64.payload;
+    doc
+    /* {"interface_id": "IF_SUP128", "mating_subsystem": "CYL", "port_this": "SUP128", "port_mate": "P128", "flow_ref": "F_SUP", "interface_type": "pneumatic fluid pressure, retract phase"} */
+    connection connection_IF_SUP128
+        connect systemModel.component_SUP_External_Pneumatic_Pressure_Source
+                    .port_SUP128_Pressure_applied_at_port_128
+        to systemModel.component_CYL_Cylinder_Housing_and_Covers
+                    .port_P128_Rod_cover_air_port_128__exhaust_destination_d;
+} // package Model__Telescoping_Fluid_Cylinder

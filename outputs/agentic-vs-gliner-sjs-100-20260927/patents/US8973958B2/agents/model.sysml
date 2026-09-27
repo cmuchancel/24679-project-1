@@ -1,0 +1,92 @@
+package Model__Two_Mode_Underactuated_Mechanical_Gripper {
+    private import ScalarValues::*;
+    doc SJS_Source
+    /* SJS_JSON_V1
+     * {"$schema": "sjs/1.0", "model_meta": {"system_name": "Two-Mode Underactuated Mechanical Gripper", "system_id": "US8973958B2", "description": "Inferred concept model of a mechanical finger gripper that provides stable pinch and encompassing grasps through differential mechanical motion. Scope is limited to the core gripper grasp behavior and supported mechanical components; disclosed stopper/bias, flexion stopper, opposed-finger variants, and optional robot sensor/controller/positioning integration are intentionally outside scope. No item flows, ports, endpoints, directions, or interfaces are asserted because the available patent evidence does not establish a complete typed flow architecture. Flow and interface connectivity are outside this model's verification scope.", "version": "1.0", "lifecycle_stage": "concept", "domain": "robotics and mechanical grippers", "maturity": "draft", "date_modified": "2026-09-26"}, "subsystems": [{"subsystem_id": "BASE", "subsystem_name": "Gripper Base and Palm", "description": "Supports proximal finger pivot(s); optional palm surface stabilizes a load during an encompassing grasp.", "domain": "mechanical"}, {"subsystem_id": "PHALANGES", "subsystem_name": "Two-Phalanx Finger", "description": "First phalanx pivotally connected at its proximal end and second phalanx pivotally connected to the first phalanx distal end, with a load-contact surface.", "domain": "mechanical", "functional_basis": ["contact load", "pivot finger", "translate distal phalanx", "pivot distal phalanx"]}, {"subsystem_id": "DIFF_ACT", "subsystem_name": "Differential Actuation Mechanism", "description": "Mechanism connected to the second phalanx; a disclosed configuration uses links forming essentially a parallelogram, while another uses a linear-motion link. These are alternative configurations, not asserted as simultaneous parts.", "domain": "mechanical", "functional_basis": ["transmit motion", "maintain contact orientation", "enable grasp"]}, {"subsystem_id": "DRIVE", "subsystem_name": "Drive Mechanism", "description": "Single drive mechanism drives a corresponding actuation mechanism; specific drive technology is not fixed by this model.", "domain": "mechanical"}, {"subsystem_id": "OBJECT", "subsystem_name": "Grasped Object", "description": "External load contacted and grasped by the mechanical finger(s).", "domain": "physical environment"}], "item_flows": [], "behaviour": {"actions": [{"action_id": "A_PINCH", "name": "Perform stable pinch grasp", "owner": "DIFF_ACT", "steps": [{"step_no": 1, "description": "Apply load at the stable pinch grasp region on the second phalanx contact surface."}, {"step_no": 2, "description": "Differential actuation permits the second phalanx to translate while its contact surface maintains a constant orientation."}, {"step_no": 3, "description": "Opposed fingers, when present, cooperate to pinch the object."}]}, {"action_id": "A_ENCOMPASS", "name": "Perform encompassing grasp", "owner": "DIFF_ACT", "steps": [{"step_no": 1, "description": "Apply load on the first phalanx or below the stable pinch region on the second phalanx."}, {"step_no": 2, "description": "Differential actuation permits the second phalanx to pivot."}, {"step_no": 3, "description": "The second phalanx pivots to perform an encompassing grasp; where the optional palm surface is present, it stabilizes the load."}]}]}, "requirements": [{"req_id": "R_PINCH", "category": "functional", "priority": "high", "statement": "The gripper shall automatically perform a pinch grasp when load is applied within the stable pinch grasp region, allowing second-phalanx translation while maintaining contact-surface orientation.", "rationale": "Claim 1; core disclosed pinch response.", "satisfied_by": ["PHALANGES", "DIFF_ACT"]}, {"req_id": "R_ENCOMPASS", "category": "functional", "priority": "high", "statement": "The gripper shall automatically perform an encompassing grasp when load is applied on the first phalanx or below the stable pinch grasp region, allowing second-phalanx pivoting.", "rationale": "Claim 1; core disclosed encompassing response.", "satisfied_by": ["PHALANGES", "DIFF_ACT"]}]}
+     */
+    doc
+    /* {"system_name": "Two-Mode Underactuated Mechanical Gripper", "system_id": "US8973958B2", "description": "Inferred concept model of a mechanical finger gripper that provides stable pinch and encompassing grasps through differential mechanical motion. Scope is limited to the core gripper grasp behavior and supported mechanical components; disclosed stopper/bias, flexion stopper, opposed-finger variants, and optional robot sensor/controller/positioning integration are intentionally outside scope. No item flows, ports, endpoints, directions, or interfaces are asserted because the available patent evidence does not establish a complete typed flow architecture. Flow and interface connectivity are outside this model's verification scope.", "version": "1.0", "lifecycle_stage": "concept", "domain": "robotics and mechanical grippers", "maturity": "draft", "date_modified": "2026-09-26"} */
+    part def Component_BASE_Gripper_Base_and_Palm {
+        doc
+        /* {"subsystem_id": "BASE", "subsystem_name": "Gripper Base and Palm", "description": "Supports proximal finger pivot(s); optional palm surface stabilizes a load during an encompassing grasp.", "domain": "mechanical"} */
+    }
+    part def Component_PHALANGES_Two_Phalanx_Finger {
+        doc
+        /* {"subsystem_id": "PHALANGES", "subsystem_name": "Two-Phalanx Finger", "description": "First phalanx pivotally connected at its proximal end and second phalanx pivotally connected to the first phalanx distal end, with a load-contact surface.", "domain": "mechanical", "functional_basis": ["contact load", "pivot finger", "translate distal phalanx", "pivot distal phalanx"]} */
+    }
+    part def Component_DIFF_ACT_Differential_Actuation_Mechanism {
+        doc
+        /* {"subsystem_id": "DIFF_ACT", "subsystem_name": "Differential Actuation Mechanism", "description": "Mechanism connected to the second phalanx; a disclosed configuration uses links forming essentially a parallelogram, while another uses a linear-motion link. These are alternative configurations, not asserted as simultaneous parts.", "domain": "mechanical", "functional_basis": ["transmit motion", "maintain contact orientation", "enable grasp"]} */
+    }
+    part def Component_DRIVE_Drive_Mechanism {
+        doc
+        /* {"subsystem_id": "DRIVE", "subsystem_name": "Drive Mechanism", "description": "Single drive mechanism drives a corresponding actuation mechanism; specific drive technology is not fixed by this model.", "domain": "mechanical"} */
+    }
+    part def Component_OBJECT_Grasped_Object {
+        doc
+        /* {"subsystem_id": "OBJECT", "subsystem_name": "Grasped Object", "description": "External load contacted and grasped by the mechanical finger(s).", "domain": "physical environment"} */
+    }
+    requirement def Requirement_R_PINCH {
+        doc
+        /* {"req_id": "R_PINCH", "category": "functional", "priority": "high", "statement": "The gripper shall automatically perform a pinch grasp when load is applied within the stable pinch grasp region, allowing second-phalanx translation while maintaining contact-surface orientation.", "rationale": "Claim 1; core disclosed pinch response.", "satisfied_by": ["PHALANGES", "DIFF_ACT"]} */
+    }
+    requirement requirement_R_PINCH : Requirement_R_PINCH;
+    requirement def Requirement_R_ENCOMPASS {
+        doc
+        /* {"req_id": "R_ENCOMPASS", "category": "functional", "priority": "high", "statement": "The gripper shall automatically perform an encompassing grasp when load is applied on the first phalanx or below the stable pinch grasp region, allowing second-phalanx pivoting.", "rationale": "Claim 1; core disclosed encompassing response.", "satisfied_by": ["PHALANGES", "DIFF_ACT"]} */
+    }
+    requirement requirement_R_ENCOMPASS : Requirement_R_ENCOMPASS;
+    action def Action_A_PINCH_Perform_stable_pinch_grasp {
+        doc
+        /* {"action_id": "A_PINCH", "name": "Perform stable pinch grasp", "owner": "DIFF_ACT", "steps": [{"step_no": 1, "description": "Apply load at the stable pinch grasp region on the second phalanx contact surface."}, {"step_no": 2, "description": "Differential actuation permits the second phalanx to translate while its contact surface maintains a constant orientation."}, {"step_no": 3, "description": "Opposed fingers, when present, cooperate to pinch the object."}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "Apply load at the stable pinch grasp region on the second phalanx contact surface."} */
+        }
+        then action step_2 {
+            doc
+            /* {"step_no": 2, "description": "Differential actuation permits the second phalanx to translate while its contact surface maintains a constant orientation."} */
+        }
+        then action step_3 {
+            doc
+            /* {"step_no": 3, "description": "Opposed fingers, when present, cooperate to pinch the object."} */
+        }
+    }
+    action def Action_A_ENCOMPASS_Perform_encompassing_grasp {
+        doc
+        /* {"action_id": "A_ENCOMPASS", "name": "Perform encompassing grasp", "owner": "DIFF_ACT", "steps": [{"step_no": 1, "description": "Apply load on the first phalanx or below the stable pinch region on the second phalanx."}, {"step_no": 2, "description": "Differential actuation permits the second phalanx to pivot."}, {"step_no": 3, "description": "The second phalanx pivots to perform an encompassing grasp; where the optional palm surface is present, it stabilizes the load."}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "Apply load on the first phalanx or below the stable pinch region on the second phalanx."} */
+        }
+        then action step_2 {
+            doc
+            /* {"step_no": 2, "description": "Differential actuation permits the second phalanx to pivot."} */
+        }
+        then action step_3 {
+            doc
+            /* {"step_no": 3, "description": "The second phalanx pivots to perform an encompassing grasp; where the optional palm surface is present, it stabilizes the load."} */
+        }
+    }
+    part systemModel {
+        part component_BASE_Gripper_Base_and_Palm : Component_BASE_Gripper_Base_and_Palm;
+        part component_PHALANGES_Two_Phalanx_Finger : Component_PHALANGES_Two_Phalanx_Finger;
+        part component_DIFF_ACT_Differential_Actuation_Mechanism
+            : Component_DIFF_ACT_Differential_Actuation_Mechanism;
+        part component_DRIVE_Drive_Mechanism : Component_DRIVE_Drive_Mechanism;
+        part component_OBJECT_Grasped_Object : Component_OBJECT_Grasped_Object;
+        action action_A_PINCH_Perform_stable_pinch_grasp
+            : Action_A_PINCH_Perform_stable_pinch_grasp;
+        action action_A_ENCOMPASS_Perform_encompassing_grasp
+            : Action_A_ENCOMPASS_Perform_encompassing_grasp;
+    }
+    satisfy requirement_R_PINCH by systemModel.component_PHALANGES_Two_Phalanx_Finger;
+    satisfy requirement_R_PINCH by systemModel.component_DIFF_ACT_Differential_Actuation_Mechanism;
+    satisfy requirement_R_ENCOMPASS by systemModel.component_PHALANGES_Two_Phalanx_Finger;
+    satisfy requirement_R_ENCOMPASS
+        by systemModel.component_DIFF_ACT_Differential_Actuation_Mechanism;
+    allocate systemModel.action_A_PINCH_Perform_stable_pinch_grasp
+        to systemModel.component_DIFF_ACT_Differential_Actuation_Mechanism;
+    allocate systemModel.action_A_ENCOMPASS_Perform_encompassing_grasp
+        to systemModel.component_DIFF_ACT_Differential_Actuation_Mechanism;
+} // package Model__Two_Mode_Underactuated_Mechanical_Gripper

@@ -1,0 +1,199 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 2,
+    "AllocationUsage": 1,
+    "ConnectionUsage": 3,
+    "Documentation": 27,
+    "EndFeatureMembership": 8,
+    "Feature": 25,
+    "FeatureChaining": 40,
+    "FeatureMembership": 19,
+    "FeatureReferenceExpression": 9,
+    "FeatureTyping": 17,
+    "FeatureValue": 9,
+    "ItemDefinition": 4,
+    "ItemUsage": 6,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 71,
+    "Package": 1,
+    "PartDefinition": 5,
+    "PartUsage": 6,
+    "PortUsage": 6,
+    "ReferenceSubsetting": 17,
+    "ReferenceUsage": 9,
+    "RequirementDefinition": 5,
+    "RequirementUsage": 5,
+    "SatisfyRequirementUsage": 9,
+    "Subclassification": 2,
+    "SubjectMembership": 9
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_VALVE_BODY_Valve_body_and_flow_channel"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_VALVE_BODY_Valve_body_and_flow_channel.port_OPENING_1_First_channel_opening"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_VALVE_BODY_Valve_body_and_flow_channel.port_OPENING_2_Second_channel_opening"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CLOSURE_Rotatable_closure_member"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CLOSURE_Rotatable_closure_member.port_CLOSURE_SEAL_CONTACT_Second_sealing_surface_contact"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DRIVE_SHAFT_Drive_shaft"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SEAL_Flow_channel_seal"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SEAL_Flow_channel_seal.port_BODY_SEAL_CONTACT_First_sealing_surface_contact"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_FLOW_CHANNEL_Internal_flow_channel_passage"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FLOW_CHANNEL_Internal_flow_channel_passage.port_CHANNEL_END_1_Passage_end_at_first_opening"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FLOW_CHANNEL_Internal_flow_channel_passage.port_CHANNEL_END_2_Passage_end_at_second_opening"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_FLUID_FLOW_Fluid_through_channel"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_SEAL_CONTACT_Sealing_surface_contact"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_SEAL_CONTACT"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_SEAL_CONTACT"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_SEAL_CONTACT"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/2",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_SEAL_CONTACT"
+    },
+    {
+      "path": "/requirements/1",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_GEOMETRY"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_GEOMETRY"
+    },
+    {
+      "path": "/requirements/2",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_ROTATION"
+    },
+    {
+      "path": "/requirements/2/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_ROTATION"
+    },
+    {
+      "path": "/requirements/2/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_ROTATION"
+    },
+    {
+      "path": "/requirements/3",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_CLAIM1_SECTION_GEOMETRY"
+    },
+    {
+      "path": "/requirements/3/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_CLAIM1_SECTION_GEOMETRY"
+    },
+    {
+      "path": "/requirements/4",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_CLAIM1_ROUNDED_LOCATION"
+    },
+    {
+      "path": "/requirements/4/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_CLAIM1_ROUNDED_LOCATION"
+    },
+    {
+      "path": "/requirements/4/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_CLAIM1_ROUNDED_LOCATION"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_ROTATE_Rotate_closure_member"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_OPENING_1_CHANNEL"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_OPENING_2_CHANNEL"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_SEAL_CLOSURE_CONTACT"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

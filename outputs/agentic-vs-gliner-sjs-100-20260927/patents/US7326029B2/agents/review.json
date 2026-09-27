@@ -1,0 +1,34 @@
+{
+  "revision": 4,
+  "candidate_sha256": "9bc0ae5c11a818f5da1490acd9f80f6a094743147891a996c3e1f21a35aedff1",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 4 removes the shaft-drive assertion from both SJS descriptions and assumptions. Assumptions[1] explicitly disclaims inferring a drive source or shaft-drive function. Cited claim evidence supports attachment and impeller rotation inside the volute. The impeller flow-path description is supported by the patent description of liquid flowing via balancing holes to the rear-vane area."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The flat component model includes the named volute, rear wall, shaft, and impeller assembly. The impeller description captures supported balancing-hole geometry and flow purpose. No drive-source subsystem is established in the cited patent and omission is appropriate."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "No typed item flows or flow interfaces are asserted. The descriptive hole path toward the rear-vane area is consistent with the patent description and avoids a fabricated boundary flow connection."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Model captures the independent-claim component/attachment and front-opening relative placement attributes. Omitting dependent-claim geometric refinements is reasonable."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "The shaft-impeller interface connects existing mechanical_rotational ports, once, and represents the expressly supported attachment/rotation relation. It does not assert that the shaft drives the impeller."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Textbook modeling guidance informs system decomposition and restraint in defining interfaces only; invention facts are grounded in patent passages. No unsupported controls, external components, or requirements have been added."
+    }
+  },
+  "findings": [],
+  "summary": "Revision 4 resolves the sole prior finding: no unsupported shaft-drive assertion remains in the SJS or assumptions. Patent passages support the shaft-impeller attachment/rotation relationship and the balancing-hole flow description; no further actionable issues found in the reviewed categories.",
+  "saved_at": "2026-09-27T08:52:03.533331+00:00"
+}

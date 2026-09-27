@@ -1,0 +1,34 @@
+{
+  "revision": 4,
+  "candidate_sha256": "261dca34aa1d4864c0e3e3676097e41960eaa3a156dbb8e622b798e6be18e04d",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 4's first/second rotor-groove gas ports and corresponding slide-valve ports/interfaces are supported by the passages describing adjacent grooves opening respectively to first and second ports (b4aef000688830e9e72a04be17bdc39c; b65fd4e51433bafb4f6b5a7dd4f4118c). The two downstream passage ports and valve-to-casing mating are supported by the first/second passage correspondence in 1bd5120252f0fb6ffd6ce5fece75fc53 and gas paths in b65fd4e51433bafb4f6b5a7dd4f4118c. The model does not include claim 2's second partition wall; its warning appropriately notes the omission. No unsupported pressure, drive, or controller facts are asserted."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The flat component set includes screw rotor, gate rotor, casing, and slide valve; behavior describes chamber formation/compression, partitioned discharge to the paired ports, and downstream passage flow. This covers the selected claim-1 compressor scope. The model appropriately omits unsupported external drive/source/sink components."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Revision 4 resolves the prior gaps: first and second groove gas outputs mate to the corresponding valve port inputs, and the two valve passage outputs mate separately to respective casing passage inputs. All connected port flow_types are gas and directions are compatible (out-to-in); flow references preserve the paired paths."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Both requirements identify claim 1 in their rationale and map to relevant subsystems. The second-partition-wall feature of claim 2 is not represented as a requirement or component; the warning distinguishes that optional scope."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Each interface references existing subsystem IDs, valid local/mate port IDs, and an existing flow reference. The paired chamber/groove-to-slide-valve and valve-to-casing boundaries are each represented once, using distinct paths and compatible gas ports."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The model uses physical patent-named components, separates behavior from physical structure, and records interfaces/flows without inventing controller or detailed state behavior. This is consistent with modeling guidance; textbook evidence is not used to support invention facts."
+    }
+  },
+  "findings": [],
+  "summary": "Revision 4 resolves the prior casing-port mating and missing groove-to-slide-valve connectivity issues. Patent passages support the paired groove/port correspondence and the respective downstream discharge passages. Full SJS review found no remaining actionable grounding, completeness, flow, traceability, interface, or textbook-application issues. All six checklist categories pass; no unresolved findings.",
+  "saved_at": "2026-09-27T08:44:53.844156+00:00"
+}

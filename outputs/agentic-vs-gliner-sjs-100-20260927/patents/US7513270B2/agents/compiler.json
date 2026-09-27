@@ -1,0 +1,116 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 4,
+    "AllocationUsage": 1,
+    "Documentation": 21,
+    "EndFeatureMembership": 6,
+    "Feature": 8,
+    "FeatureChaining": 16,
+    "FeatureMembership": 24,
+    "FeatureTyping": 11,
+    "FlowEnd": 4,
+    "FlowUsage": 2,
+    "ItemDefinition": 3,
+    "ItemUsage": 4,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 36,
+    "Package": 1,
+    "PartDefinition": 6,
+    "PartUsage": 7,
+    "PortUsage": 4,
+    "Redefinition": 4,
+    "ReferenceSubsetting": 6,
+    "ReferenceUsage": 4,
+    "Subclassification": 2,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BODY_Valve_Body_and_Chamber"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BODY_Valve_Body_and_Chamber.port_BODY_INLET_Flow_inlet"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BODY_Valve_Body_and_Chamber.port_BODY_RELIEF_OUT_Relief_outlet"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SPINDLE_Spindle_Assembly"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BIAS_Control_Spring"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_GUIDE_SEAL_Spindle_Guide_Seal"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_INLET_SOURCE_Pressurized_System_Inlet"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_INLET_SOURCE_Pressurized_System_Inlet.port_INLET_SOURCE_OUT_Inlet_supply_connection"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_OUTLET_SINK_Relief_Discharge_System"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_OUTLET_SINK_Relief_Discharge_System.port_OUTLET_SINK_IN_Relief_discharge_receiving_connection"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_IN_Inlet_service_fluid"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_RELIEF_Relief_discharge"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_RELIEVE_Relieve_excess_inlet_pressure"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_RELIEF"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_INLET"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

@@ -1,0 +1,34 @@
+{
+  "revision": 12,
+  "candidate_sha256": "f572a554975a7a1a2fa782c380cb94bb4ef95d0987012378b31df342903ef846",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 12's feed interface now correctly marks the external source-to-housing inlet_feed segment as feed. The housing description and route_inlet_feed action ground the internal route through the inlet region toward pump_in, consistent with the disclosed inlet region and its relationship to insert/valve plate. Pumping and bypass directions and spring/insert contacts are grounded in cited passages."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "For modeled scope, source supply, housing inlet routing, inlet/outlet pumping path, outlet discharge, bypass return, and spring-supported insert mechanics are represented. Internal housing routing is explicitly modeled without a self-interface. No additional necessary core function is clearly omitted by this patent-scoped model."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "The source interface references feed, and downstream housing.pump_in-to-valve and valve-to-pumping-region paths use pumpflow; bypassflow links outlet region through bypass to inlet return, and discharge reaches the external sink. Flow types and interface directions align. Mechanical spring contacts are opposite-direction mechanical_linear ports."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Claim/specification passages support claimed structural and functional facts. Context source/sink are separately identified and stated as inferred assumptions. Alternative housing details are explicitly treated as alternatives, not combined as mandatory."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Graph is connected across source->housing->valves->housing outlet/sink, with bypass branch housing->bypass->housing inlet. Mechanical spring interfaces connect bypass assembly to insert and bypass valve using compatible types/directions. Feed reference at source interface resolves prior issue."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Directed typed boundary interfaces and explicit context entities, plus internal routing represented as component-owned action rather than artificial external/self connection, are sound modeling choices. Textbook evidence informs method only."
+    }
+  },
+  "findings": [],
+  "summary": "Reviewed saved SJS revision 12 and read all distinct patent passages cited by the candidate, plus the five relevant textbook retrievals. The previous revision's source-to-housing flow_ref mismatch is fixed: source_out to housing.inlet_feed now references feed; pumpflow is reserved for the downstream inlet-valve/pumping path. The housing-owned route_inlet_feed action provides meaningful internal continuity from inlet_feed through the inlet region toward pump_in, without an incompatible self-interface. The fluid graph is connected and directionally/types consistently modeled, including bypass return and external discharge; mechanical spring contacts connect to the insert and bypass valve with compatible mechanical_linear ports. Modeled mechanics and functions are supported by cited patent text. No unresolved issues identified.",
+  "saved_at": "2026-09-27T07:01:16.609138+00:00"
+}

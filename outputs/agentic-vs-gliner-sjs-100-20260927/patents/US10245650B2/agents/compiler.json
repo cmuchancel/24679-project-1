@@ -1,0 +1,187 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 7,
+    "AllocationUsage": 2,
+    "Documentation": 41,
+    "EndFeatureMembership": 4,
+    "Feature": 8,
+    "FeatureChaining": 8,
+    "FeatureMembership": 52,
+    "FeatureTyping": 26,
+    "ItemDefinition": 8,
+    "ItemUsage": 18,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 61,
+    "Package": 1,
+    "PartDefinition": 6,
+    "PartUsage": 7,
+    "PortUsage": 18,
+    "ReferenceSubsetting": 4,
+    "Subclassification": 4,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_RECEIVER_Tool_receiving_element"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_RECEIVER_Tool_receiving_element.port_r_axial_Axial_load_interface"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_RECEIVER_Tool_receiving_element.port_r_rot_Pressure_piece_coupling_mating_interface"
+    },
+    {
+      "path": "/subsystems/0/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_RECEIVER_Tool_receiving_element.port_r_tool_Tool_receiving_opening"
+    },
+    {
+      "path": "/subsystems/0/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_RECEIVER_Tool_receiving_element.port_r_detent_Detent_lug_groove_interface"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_COLLET_Collet"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_COLLET_Collet.port_c_axial_Axial_drive_interface"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_COLLET_Collet.port_c_tool_Tool_shank_bore"
+    },
+    {
+      "path": "/subsystems/1/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_COLLET_Collet.port_c_rot_Detent_interface"
+    },
+    {
+      "path": "/subsystems/1/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_COLLET_Collet.port_c_pressure_index_Indexed_detachable_pressure_piece_coupling"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_NUT_Clamping_nut"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_NUT_Clamping_nut.port_n_force_Pressure_piece_drive_interface"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_NUT_Clamping_nut.port_n_bearing_Bearing_support_interface"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PRESSURE_Pressure_piece"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PRESSURE_Pressure_piece.port_p_nut_Nut_side_axial_interface"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PRESSURE_Pressure_piece.port_p_collet_Collet_side_axial_interface"
+    },
+    {
+      "path": "/subsystems/3/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PRESSURE_Pressure_piece.port_p_key_Receiver_coupling_interface"
+    },
+    {
+      "path": "/subsystems/3/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PRESSURE_Pressure_piece.port_p_bearing_Bearing_race_interface"
+    },
+    {
+      "path": "/subsystems/3/ports/4",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PRESSURE_Pressure_piece.port_p_collet_index_Indexed_detachable_collet_coupling"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BEARING_Spherical_roller_bearing_support"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BEARING_Spherical_roller_bearing_support.port_b_nut_Nut_race_interface"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BEARING_Spherical_roller_bearing_support.port_b_pressure_Pressure_piece_race_interface"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_TOOL_Tool_and_shank"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_TOOL_Tool_and_shank.port_t_shank_Tool_shank_interface"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_AXIAL_Axial_clamping_force_and_displacement"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_RADIAL_Radial_clamping_force"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_TOOL_Tool_shank_insertion_and_retention"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_ROT_Torsional_reaction"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_CLAMP_Clamp_tool_shank"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_KEY_Resist_relative_rotation"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

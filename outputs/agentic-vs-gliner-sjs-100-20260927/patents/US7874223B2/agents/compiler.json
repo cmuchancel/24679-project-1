@@ -1,0 +1,152 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 7,
+    "AllocationUsage": 2,
+    "Documentation": 26,
+    "EndFeatureMembership": 8,
+    "Feature": 15,
+    "FeatureChaining": 26,
+    "FeatureMembership": 29,
+    "FeatureReferenceExpression": 3,
+    "FeatureTyping": 14,
+    "FeatureValue": 3,
+    "FlowEnd": 4,
+    "FlowUsage": 2,
+    "ItemDefinition": 3,
+    "ItemUsage": 4,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 52,
+    "Package": 1,
+    "PartDefinition": 7,
+    "PartUsage": 8,
+    "PortUsage": 4,
+    "Redefinition": 4,
+    "ReferenceSubsetting": 11,
+    "ReferenceUsage": 7,
+    "RequirementDefinition": 1,
+    "RequirementUsage": 1,
+    "SatisfyRequirementUsage": 3,
+    "Subclassification": 2,
+    "SubjectMembership": 3,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SUPPORTS_Perpendicular_Slider_Supports"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SLIDERS_Slider_Pair"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SLIDERS_Slider_Pair.port_P_SLIDER_FORCE_IN_Applied_force_at_first_slider"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SLIDERS_Slider_Pair.port_P_OPPOSING_FORCE_Opposing_force_output_at_mechanism_boundary"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_RESILIENT_Resilient_Members"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_LINK_Pivoting_Linkage"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ADJUST_Length_Adjustment_Mechanism"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_APPLIED_FORCE_BOUNDARY_Applied_Force_Source"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_APPLIED_FORCE_BOUNDARY_Applied_Force_Source.port_P_APPLIED_FORCE_Applied_force_boundary"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_FORCE_OUTPUT_BOUNDARY_Opposing_Force_Boundary"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FORCE_OUTPUT_BOUNDARY_Opposing_Force_Boundary.port_P_FORCE_RESPONSE_Mechanism_force_response"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_INPUT_Applied_force"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_OUTPUT_Opposing_force"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_R_CONST"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_R_CONST"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_R_CONST"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/2",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_R_CONST"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_ADJUST_Adjust_force_setting_by_changing_resilient_me"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_FORCE_Transmit_applied_force_and_provide_opposing_f"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_I_APPLIED_FORCE"
+    },
+    {
+      "path": "/subsystems/1/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_I_OPPOSING_FORCE_BOUNDARY"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

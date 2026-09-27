@@ -1,0 +1,1690 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": false,
+  "native_element_counts": {
+    "ActionDefinition": 14,
+    "ActionUsage": 28,
+    "AttributeUsage": 11,
+    "Documentation": 156,
+    "FeatureMembership": 604,
+    "FeatureTyping": 138,
+    "FeatureValue": 455,
+    "ItemDefinition": 2,
+    "LiteralInteger": 88,
+    "LiteralString": 455,
+    "MetadataDefinition": 1,
+    "MetadataUsage": 91,
+    "MultiplicityRange": 88,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 477,
+    "Package": 1,
+    "PartDefinition": 28,
+    "PartUsage": 117,
+    "Redefinition": 455,
+    "ReferenceUsage": 455,
+    "RequirementDefinition": 1,
+    "Subclassification": 1
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train"
+    },
+    {
+      "path": "/subsystems/0/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_001_worm"
+    },
+    {
+      "path": "/subsystems/0/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_003_worm_wheel"
+    },
+    {
+      "path": "/subsystems/0/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_005_faces"
+    },
+    {
+      "path": "/subsystems/0/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_004_thrust_bearings"
+    },
+    {
+      "path": "/subsystems/0/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_006_input_shaft"
+    },
+    {
+      "path": "/subsystems/0/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_007_output_shaft"
+    },
+    {
+      "path": "/subsystems/0/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_002_motor_shaft"
+    },
+    {
+      "path": "/subsystems/0/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_009_thrust_bearing"
+    },
+    {
+      "path": "/subsystems/0/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_010_shaft"
+    },
+    {
+      "path": "/subsystems/0/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_019_gearbox_housing"
+    },
+    {
+      "path": "/subsystems/0/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_020_stub_axle"
+    },
+    {
+      "path": "/subsystems/0/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_008_helical_thread"
+    },
+    {
+      "path": "/subsystems/0/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_011_gear_interface"
+    },
+    {
+      "path": "/subsystems/0/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_012_thrust_bearing_plates"
+    },
+    {
+      "path": "/subsystems/0/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_013_gear_train"
+    },
+    {
+      "path": "/subsystems/0/parts/15",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_014_output"
+    },
+    {
+      "path": "/subsystems/0/parts/16",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_015_first_end_of_the_shaft"
+    },
+    {
+      "path": "/subsystems/0/parts/17",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_023_gearbox"
+    },
+    {
+      "path": "/subsystems/0/parts/18",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_028_electrical_connector"
+    },
+    {
+      "path": "/subsystems/0/parts/19",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_029_lid"
+    },
+    {
+      "path": "/subsystems/0/parts/20",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_031_drive_plate"
+    },
+    {
+      "path": "/subsystems/0/parts/21",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_032_axle"
+    },
+    {
+      "path": "/subsystems/0/parts/22",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_033_thrust_bearing_29"
+    },
+    {
+      "path": "/subsystems/0/parts/23",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_034_end_cap"
+    },
+    {
+      "path": "/subsystems/0/parts/24",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_035_end_cap_31"
+    },
+    {
+      "path": "/subsystems/0/parts/25",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_036_boss"
+    },
+    {
+      "path": "/subsystems/0/parts/26",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_038_rim"
+    },
+    {
+      "path": "/subsystems/0/parts/27",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_039_Teeth"
+    },
+    {
+      "path": "/subsystems/0/parts/28",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_040_seal"
+    },
+    {
+      "path": "/subsystems/0/parts/29",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_041_Thrust_bearing"
+    },
+    {
+      "path": "/subsystems/0/parts/30",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_042_Thrust_bearing_29"
+    },
+    {
+      "path": "/subsystems/0/parts/31",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_043_sleeve_bearing"
+    },
+    {
+      "path": "/subsystems/0/parts/32",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_046_Damper"
+    },
+    {
+      "path": "/subsystems/0/parts/33",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_047_bearings"
+    },
+    {
+      "path": "/subsystems/0/parts/34",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_048_seals"
+    },
+    {
+      "path": "/subsystems/0/parts/35",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_051_recess_56"
+    },
+    {
+      "path": "/subsystems/0/parts/36",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_052_screw_thread"
+    },
+    {
+      "path": "/subsystems/0/parts/37",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_053_slot"
+    },
+    {
+      "path": "/subsystems/0/parts/38",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_054_slot_30"
+    },
+    {
+      "path": "/subsystems/0/parts/39",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_058_second_end_of_the_shaft"
+    },
+    {
+      "path": "/subsystems/0/parts/40",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_059_first_end"
+    },
+    {
+      "path": "/subsystems/0/parts/41",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_060_second_thrust_bearing"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_002_worm"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_003_worm_wheel"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_004_thrust_bearings"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_005_worm_gear_drives"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_006_Worm_gear_drives"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_007_motor"
+    },
+    {
+      "path": "/subsystems/6/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_motor.part_P_010_shaft_6235acf7"
+    },
+    {
+      "path": "/subsystems/6/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_motor.part_P_017_housing"
+    },
+    {
+      "path": "/subsystems/6/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_motor.part_P_018_stator"
+    },
+    {
+      "path": "/subsystems/6/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_motor.part_P_019_gearbox_housing_c21f609d"
+    },
+    {
+      "path": "/subsystems/6/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_motor.part_P_056_shaft_32"
+    },
+    {
+      "path": "/subsystems/6/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_motor.part_P_057_bearing_recess"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_008_input_shaft"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_009_output_shaft"
+    },
+    {
+      "path": "/subsystems/9",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_010_motor_shaft"
+    },
+    {
+      "path": "/subsystems/10",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_011_final_assembly"
+    },
+    {
+      "path": "/subsystems/11",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive"
+    },
+    {
+      "path": "/subsystems/11/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_010_shaft_8f59f3b9"
+    },
+    {
+      "path": "/subsystems/11/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_017_housing_185d7743"
+    },
+    {
+      "path": "/subsystems/11/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_018_stator_fc762f20"
+    },
+    {
+      "path": "/subsystems/11/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_019_gearbox_housing_d6ab0582"
+    },
+    {
+      "path": "/subsystems/11/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_020_stub_axle_54de25c4"
+    },
+    {
+      "path": "/subsystems/11/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_003_worm_wheel_1eab3eb6"
+    },
+    {
+      "path": "/subsystems/11/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_021_gear_box_housing"
+    },
+    {
+      "path": "/subsystems/11/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_009_thrust_bearing_f721fd51"
+    },
+    {
+      "path": "/subsystems/11/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_025_closed_lower_end"
+    },
+    {
+      "path": "/subsystems/11/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_026_open_upper_end"
+    },
+    {
+      "path": "/subsystems/11/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_002_motor_shaft_73e9b410"
+    },
+    {
+      "path": "/subsystems/11/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_024_deep_drawn_steel_housing"
+    },
+    {
+      "path": "/subsystems/11/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_027_flange"
+    },
+    {
+      "path": "/subsystems/11/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_001_worm_8589e122"
+    },
+    {
+      "path": "/subsystems/12",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_013_shaft"
+    },
+    {
+      "path": "/subsystems/13",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_014_output"
+    },
+    {
+      "path": "/subsystems/14",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_015_drive"
+    },
+    {
+      "path": "/subsystems/14/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_015_drive.part_P_003_worm_wheel_f268a079"
+    },
+    {
+      "path": "/subsystems/14/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_015_drive.part_P_021_gear_box_housing_dba62a4f"
+    },
+    {
+      "path": "/subsystems/14/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_015_drive.part_P_009_thrust_bearing_846d0f9a"
+    },
+    {
+      "path": "/subsystems/14/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_015_drive.part_P_002_motor_shaft_9718eedd"
+    },
+    {
+      "path": "/subsystems/14/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_015_drive.part_P_024_deep_drawn_steel_housing_955b9304"
+    },
+    {
+      "path": "/subsystems/14/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_015_drive.part_P_025_closed_lower_end_c2a7b5fa"
+    },
+    {
+      "path": "/subsystems/14/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_015_drive.part_P_026_open_upper_end_4148bc3e"
+    },
+    {
+      "path": "/subsystems/14/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_015_drive.part_P_019_gearbox_housing_6ae73d1d"
+    },
+    {
+      "path": "/subsystems/14/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_015_drive.part_P_022_motor"
+    },
+    {
+      "path": "/subsystems/14/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_015_drive.part_P_027_flange_097671f5"
+    },
+    {
+      "path": "/subsystems/15",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_016_gearbox"
+    },
+    {
+      "path": "/subsystems/15/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_016_gearbox.part_P_030_lid_23"
+    },
+    {
+      "path": "/subsystems/15/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_016_gearbox.part_P_003_worm_wheel_8a1ef077"
+    },
+    {
+      "path": "/subsystems/15/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_016_gearbox.part_P_001_worm_82c04369"
+    },
+    {
+      "path": "/subsystems/15/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_016_gearbox.part_P_045_spigots"
+    },
+    {
+      "path": "/subsystems/15/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_016_gearbox.part_P_044_damper"
+    },
+    {
+      "path": "/subsystems/15/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_016_gearbox.part_P_037_ribs"
+    },
+    {
+      "path": "/subsystems/16",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_017_window_lift_motor"
+    },
+    {
+      "path": "/subsystems/17",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_018_gearbox_14"
+    },
+    {
+      "path": "/subsystems/17/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_gearbox_14.part_P_030_lid_23_a9946de7"
+    },
+    {
+      "path": "/subsystems/18",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_019_end_cap"
+    },
+    {
+      "path": "/subsystems/19",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_020_motor_housing"
+    },
+    {
+      "path": "/subsystems/19/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_020_motor_housing.part_P_055_thrust_bearing_29_is_as_described_above__A_se"
+    },
+    {
+      "path": "/subsystems/19/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_020_motor_housing.part_P_009_thrust_bearing_b9e5fa55"
+    },
+    {
+      "path": "/subsystems/19/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_020_motor_housing.part_P_010_shaft_a16d8cbf"
+    },
+    {
+      "path": "/subsystems/19/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_020_motor_housing.part_P_056_shaft_32_48b7706c"
+    },
+    {
+      "path": "/subsystems/19/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_020_motor_housing.part_P_016_thrust_face"
+    },
+    {
+      "path": "/subsystems/19/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_020_motor_housing.part_P_050_recess"
+    },
+    {
+      "path": "/subsystems/19/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_020_motor_housing.part_P_057_bearing_recess_146e0175"
+    },
+    {
+      "path": "/subsystems/20",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_021_gearbox_housing"
+    },
+    {
+      "path": "/subsystems/20/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_021_gearbox_housing.part_P_016_thrust_face_9241777d"
+    },
+    {
+      "path": "/subsystems/20/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_021_gearbox_housing.part_P_049_thrust_face_54"
+    },
+    {
+      "path": "/subsystems/21",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_022_drive_plate"
+    },
+    {
+      "path": "/subsystems/22",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_023_damper"
+    },
+    {
+      "path": "/subsystems/23",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_024_axle"
+    },
+    {
+      "path": "/subsystems/24",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_025_axle_28"
+    },
+    {
+      "path": "/subsystems/25",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_026_bearings"
+    },
+    {
+      "path": "/subsystems/26",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_027_thrust_bearing"
+    },
+    {
+      "path": "/subsystems/27",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_028_first_thrust_bearing"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_FL_001_driving_torque"
+    },
+    {
+      "path": "/values/0",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_001_lead_angle"
+    },
+    {
+      "path": "/values/1",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_002_frictional_force"
+    },
+    {
+      "path": "/values/2",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_003_contact_position"
+    },
+    {
+      "path": "/values/3",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_004_force"
+    },
+    {
+      "path": "/values/4",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_005_friction"
+    },
+    {
+      "path": "/values/5",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_006_gear_ratio"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_001"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_001_self_locking"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_002_drive"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_003_drive_the_output_shaft"
+    },
+    {
+      "path": "/behaviour/actions/3",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_004_drive_the_input_shaft"
+    },
+    {
+      "path": "/behaviour/actions/4",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_005_locking"
+    },
+    {
+      "path": "/behaviour/actions/5",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_006_locking_the_gears"
+    },
+    {
+      "path": "/behaviour/actions/6",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_007_self_lock"
+    },
+    {
+      "path": "/behaviour/actions/7",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_008_moving"
+    },
+    {
+      "path": "/behaviour/actions/8",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_009_moving_a_window"
+    },
+    {
+      "path": "/behaviour/actions/9",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_010_keying"
+    },
+    {
+      "path": "/behaviour/actions/10",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_011_bearing_support"
+    },
+    {
+      "path": "/behaviour/actions/11",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_012_transmit_the_driving_torque"
+    },
+    {
+      "path": "/behaviour/actions/12",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_013_absorbs_sudden_shocks"
+    },
+    {
+      "path": "/behaviour/actions/13",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_014_interface"
+    },
+    {
+      "path": "/relationships/0",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[0]"
+    },
+    {
+      "path": "/relationships/0",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_001_worm"
+    },
+    {
+      "path": "/relationships/1",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[1]"
+    },
+    {
+      "path": "/relationships/1",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_003_worm_wheel"
+    },
+    {
+      "path": "/relationships/2",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[2]"
+    },
+    {
+      "path": "/relationships/2",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_005_faces"
+    },
+    {
+      "path": "/relationships/3",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[3]"
+    },
+    {
+      "path": "/relationships/3",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_004_thrust_bearings"
+    },
+    {
+      "path": "/relationships/4",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[4]"
+    },
+    {
+      "path": "/relationships/4",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_006_input_shaft"
+    },
+    {
+      "path": "/relationships/5",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[5]"
+    },
+    {
+      "path": "/relationships/5",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_007_output_shaft"
+    },
+    {
+      "path": "/relationships/6",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[6]"
+    },
+    {
+      "path": "/relationships/6",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_002_motor_shaft"
+    },
+    {
+      "path": "/relationships/7",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[7]"
+    },
+    {
+      "path": "/relationships/7",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_009_thrust_bearing"
+    },
+    {
+      "path": "/relationships/8",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[8]"
+    },
+    {
+      "path": "/relationships/8",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_010_shaft"
+    },
+    {
+      "path": "/relationships/9",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[9]"
+    },
+    {
+      "path": "/relationships/9",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_010_shaft_8f59f3b9"
+    },
+    {
+      "path": "/relationships/10",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[10]"
+    },
+    {
+      "path": "/relationships/10",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_017_housing_185d7743"
+    },
+    {
+      "path": "/relationships/11",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[11]"
+    },
+    {
+      "path": "/relationships/11",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_018_stator_fc762f20"
+    },
+    {
+      "path": "/relationships/12",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[12]"
+    },
+    {
+      "path": "/relationships/12",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_019_gearbox_housing_d6ab0582"
+    },
+    {
+      "path": "/relationships/13",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[13]"
+    },
+    {
+      "path": "/relationships/13",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_020_stub_axle_54de25c4"
+    },
+    {
+      "path": "/relationships/14",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[14]"
+    },
+    {
+      "path": "/relationships/14",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_motor.part_P_010_shaft_6235acf7"
+    },
+    {
+      "path": "/relationships/15",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[15]"
+    },
+    {
+      "path": "/relationships/15",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_motor.part_P_017_housing"
+    },
+    {
+      "path": "/relationships/16",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[16]"
+    },
+    {
+      "path": "/relationships/16",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_motor.part_P_018_stator"
+    },
+    {
+      "path": "/relationships/17",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[17]"
+    },
+    {
+      "path": "/relationships/17",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_motor.part_P_019_gearbox_housing_c21f609d"
+    },
+    {
+      "path": "/relationships/18",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[18]"
+    },
+    {
+      "path": "/relationships/18",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_019_gearbox_housing"
+    },
+    {
+      "path": "/relationships/19",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[19]"
+    },
+    {
+      "path": "/relationships/19",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_gear_train.part_P_020_stub_axle"
+    },
+    {
+      "path": "/relationships/20",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[20]"
+    },
+    {
+      "path": "/relationships/20",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_003_worm_wheel_1eab3eb6"
+    },
+    {
+      "path": "/relationships/21",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[21]"
+    },
+    {
+      "path": "/relationships/21",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_021_gear_box_housing"
+    },
+    {
+      "path": "/relationships/22",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[22]"
+    },
+    {
+      "path": "/relationships/22",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_009_thrust_bearing_f721fd51"
+    },
+    {
+      "path": "/relationships/23",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[23]"
+    },
+    {
+      "path": "/relationships/23",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_025_closed_lower_end"
+    },
+    {
+      "path": "/relationships/24",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[24]"
+    },
+    {
+      "path": "/relationships/24",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_026_open_upper_end"
+    },
+    {
+      "path": "/relationships/25",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[25]"
+    },
+    {
+      "path": "/relationships/25",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_015_drive.part_P_003_worm_wheel_f268a079"
+    },
+    {
+      "path": "/relationships/26",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[26]"
+    },
+    {
+      "path": "/relationships/26",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_015_drive.part_P_021_gear_box_housing_dba62a4f"
+    },
+    {
+      "path": "/relationships/27",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[27]"
+    },
+    {
+      "path": "/relationships/27",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_015_drive.part_P_009_thrust_bearing_846d0f9a"
+    },
+    {
+      "path": "/relationships/28",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[28]"
+    },
+    {
+      "path": "/relationships/28",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_015_drive.part_P_002_motor_shaft_9718eedd"
+    },
+    {
+      "path": "/relationships/29",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[29]"
+    },
+    {
+      "path": "/relationships/29",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_015_drive.part_P_024_deep_drawn_steel_housing_955b9304"
+    },
+    {
+      "path": "/relationships/30",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[30]"
+    },
+    {
+      "path": "/relationships/30",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_015_drive.part_P_025_closed_lower_end_c2a7b5fa"
+    },
+    {
+      "path": "/relationships/31",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[31]"
+    },
+    {
+      "path": "/relationships/31",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_015_drive.part_P_026_open_upper_end_4148bc3e"
+    },
+    {
+      "path": "/relationships/32",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[32]"
+    },
+    {
+      "path": "/relationships/32",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_015_drive.part_P_019_gearbox_housing_6ae73d1d"
+    },
+    {
+      "path": "/relationships/33",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[33]"
+    },
+    {
+      "path": "/relationships/33",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_015_drive.part_P_022_motor"
+    },
+    {
+      "path": "/relationships/34",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[34]"
+    },
+    {
+      "path": "/relationships/34",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_015_drive.part_P_027_flange_097671f5"
+    },
+    {
+      "path": "/relationships/35",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[35]"
+    },
+    {
+      "path": "/relationships/35",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_002_motor_shaft_73e9b410"
+    },
+    {
+      "path": "/relationships/36",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[36]"
+    },
+    {
+      "path": "/relationships/36",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_024_deep_drawn_steel_housing"
+    },
+    {
+      "path": "/relationships/37",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[37]"
+    },
+    {
+      "path": "/relationships/37",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_027_flange"
+    },
+    {
+      "path": "/relationships/38",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[38]"
+    },
+    {
+      "path": "/relationships/38",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_016_gearbox.part_P_030_lid_23"
+    },
+    {
+      "path": "/relationships/39",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[39]"
+    },
+    {
+      "path": "/relationships/39",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_gearbox_14.part_P_030_lid_23_a9946de7"
+    },
+    {
+      "path": "/relationships/40",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[40]"
+    },
+    {
+      "path": "/relationships/40",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_016_gearbox.part_P_003_worm_wheel_8a1ef077"
+    },
+    {
+      "path": "/relationships/41",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[41]"
+    },
+    {
+      "path": "/relationships/41",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_016_gearbox.part_P_001_worm_82c04369"
+    },
+    {
+      "path": "/relationships/42",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[42]"
+    },
+    {
+      "path": "/relationships/42",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_016_gearbox.part_P_045_spigots"
+    },
+    {
+      "path": "/relationships/43",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[43]"
+    },
+    {
+      "path": "/relationships/43",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_016_gearbox.part_P_044_damper"
+    },
+    {
+      "path": "/relationships/44",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[44]"
+    },
+    {
+      "path": "/relationships/44",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_016_gearbox.part_P_037_ribs"
+    },
+    {
+      "path": "/relationships/45",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[45]"
+    },
+    {
+      "path": "/relationships/45",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_021_gearbox_housing.part_P_016_thrust_face_9241777d"
+    },
+    {
+      "path": "/relationships/46",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[46]"
+    },
+    {
+      "path": "/relationships/46",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_021_gearbox_housing.part_P_049_thrust_face_54"
+    },
+    {
+      "path": "/relationships/47",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[47]"
+    },
+    {
+      "path": "/relationships/47",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_motor.part_P_056_shaft_32"
+    },
+    {
+      "path": "/relationships/48",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[48]"
+    },
+    {
+      "path": "/relationships/48",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_motor.part_P_057_bearing_recess"
+    },
+    {
+      "path": "/relationships/49",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[49]"
+    },
+    {
+      "path": "/relationships/49",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_020_motor_housing.part_P_055_thrust_bearing_29_is_as_described_above__A_se"
+    },
+    {
+      "path": "/relationships/50",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[50]"
+    },
+    {
+      "path": "/relationships/50",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_020_motor_housing.part_P_009_thrust_bearing_b9e5fa55"
+    },
+    {
+      "path": "/relationships/51",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[51]"
+    },
+    {
+      "path": "/relationships/51",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_020_motor_housing.part_P_010_shaft_a16d8cbf"
+    },
+    {
+      "path": "/relationships/52",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[52]"
+    },
+    {
+      "path": "/relationships/52",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_020_motor_housing.part_P_056_shaft_32_48b7706c"
+    },
+    {
+      "path": "/relationships/53",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[53]"
+    },
+    {
+      "path": "/relationships/53",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_020_motor_housing.part_P_016_thrust_face"
+    },
+    {
+      "path": "/relationships/54",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[54]"
+    },
+    {
+      "path": "/relationships/54",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_020_motor_housing.part_P_050_recess"
+    },
+    {
+      "path": "/relationships/55",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[55]"
+    },
+    {
+      "path": "/relationships/55",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_020_motor_housing.part_P_057_bearing_recess_146e0175"
+    },
+    {
+      "path": "/relationships/56",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[56]"
+    },
+    {
+      "path": "/relationships/57",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[57]"
+    },
+    {
+      "path": "/relationships/58",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[58]"
+    },
+    {
+      "path": "/relationships/58",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_worm_gear_drive.part_P_001_worm_8589e122"
+    },
+    {
+      "path": "/relationships/59",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[59]"
+    },
+    {
+      "path": "/relationships/60",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[60]"
+    },
+    {
+      "path": "/relationships/61",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[61]"
+    },
+    {
+      "path": "/relationships/62",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[62]"
+    },
+    {
+      "path": "/relationships/63",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[63]"
+    },
+    {
+      "path": "/relationships/64",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[64]"
+    },
+    {
+      "path": "/relationships/65",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[65]"
+    },
+    {
+      "path": "/relationships/66",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[66]"
+    },
+    {
+      "path": "/relationships/67",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[67]"
+    },
+    {
+      "path": "/relationships/68",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[68]"
+    },
+    {
+      "path": "/relationships/69",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[69]"
+    },
+    {
+      "path": "/relationships/70",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[70]"
+    },
+    {
+      "path": "/relationships/71",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[71]"
+    },
+    {
+      "path": "/relationships/72",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[72]"
+    },
+    {
+      "path": "/relationships/73",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[73]"
+    },
+    {
+      "path": "/relationships/74",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[74]"
+    },
+    {
+      "path": "/relationships/75",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[75]"
+    },
+    {
+      "path": "/relationships/76",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[76]"
+    },
+    {
+      "path": "/relationships/77",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[77]"
+    },
+    {
+      "path": "/relationships/78",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[78]"
+    },
+    {
+      "path": "/relationships/79",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[79]"
+    },
+    {
+      "path": "/relationships/80",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[80]"
+    },
+    {
+      "path": "/relationships/81",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[81]"
+    },
+    {
+      "path": "/relationships/82",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[82]"
+    },
+    {
+      "path": "/relationships/83",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[83]"
+    },
+    {
+      "path": "/relationships/84",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[84]"
+    },
+    {
+      "path": "/relationships/85",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[85]"
+    },
+    {
+      "path": "/relationships/86",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[86]"
+    },
+    {
+      "path": "/relationships/87",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[87]"
+    },
+    {
+      "path": "/relationships/88",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[88]"
+    },
+    {
+      "path": "/relationships/89",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[89]"
+    },
+    {
+      "path": "/relationships/90",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[90]"
+    }
+  ],
+  "unresolved": [
+    {
+      "path": "/values/0",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/1",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/2",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/3",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/4",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/5",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/2",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/11/interfaces/0",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/56",
+      "reason": "Relationship type 'interfaces' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/57",
+      "reason": "Relationship type 'interfaces' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/59",
+      "reason": "Relationship type 'interfaces' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/60",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/61",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/62",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/63",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/64",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/65",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/66",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/67",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/68",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/69",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/70",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/71",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/72",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/73",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/74",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/75",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/76",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/77",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/78",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/79",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/80",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/81",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/82",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/83",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/84",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/85",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/86",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/87",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/88",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/89",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/90",
+      "reason": "Relationship type 'preconditions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    }
+  ],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

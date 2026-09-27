@@ -1,0 +1,75 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 6,
+    "AllocationUsage": 2,
+    "Documentation": 16,
+    "EndFeatureMembership": 4,
+    "Feature": 8,
+    "FeatureChaining": 8,
+    "FeatureMembership": 12,
+    "FeatureTyping": 6,
+    "ItemDefinition": 4,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 30,
+    "Package": 1,
+    "PartDefinition": 4,
+    "PartUsage": 5,
+    "ReferenceSubsetting": 4,
+    "Subclassification": 2,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_apply_mechanism_Clutch_apply_mechanism"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_one_way_synchronizer_dog_clutch_Integrated_one_way__synchronizer__and_dog_clu"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_return_spring_Return_spring"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_transmission_controller_Transmission_controller"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_axial_apply_motion_Axial_apply_displacement"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_rotational_speed_Rotational_speed"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_shift_and_engage_Synchronize_then_engage_dog_clutch"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_release_and_return_Release_and_return_apply_plate"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

@@ -1,0 +1,198 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Volute-Spring One-Way Clutch",
+    "system_id": "US8622184B2",
+    "description": "Inferred conceptual model of a one-way clutch using volute springs to bias engaging members toward a race cam face, with spring retention by race/cage features and an axial side plate.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "mechanical power transmission",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "outer_race",
+      "subsystem_name": "Outer Race",
+      "description": "Outer concentric race; in a supported configuration it provides the cam face and an inward projection that retains a volute spring.",
+      "domain": "mechanical",
+      "ports": [
+        {
+          "port_id": "outer_torque",
+          "name": "Torque interface",
+          "direction": "inout",
+          "flow_type": "mechanical_rotary"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "outer_race_to_members_torque",
+          "mating_subsystem": "engaging_members",
+          "port_this": "outer_torque",
+          "port_mate": "members_torque_outer",
+          "flow_ref": "torque",
+          "interface_type": "mechanical_rotary"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "inner_race",
+      "subsystem_name": "Inner Race",
+      "description": "Inner race spaced radially inside the outer race and arranged concentrically for relative rotation; alternatively may provide the cam face.",
+      "domain": "mechanical",
+      "ports": [
+        {
+          "port_id": "inner_torque",
+          "name": "Torque interface",
+          "direction": "inout",
+          "flow_type": "mechanical_rotary"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "engaging_members",
+      "subsystem_name": "Engaging Members",
+      "description": "Plural members between the races that engage a race cam face and transmit torque; rollers are a claimed option.",
+      "domain": "mechanical",
+      "ports": [
+        {
+          "port_id": "members_torque_outer",
+          "name": "Outer-race torque interface",
+          "direction": "inout",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "members_torque_inner",
+          "name": "Inner-race torque interface",
+          "direction": "inout",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "members_spring_force",
+          "name": "Spring urging interface",
+          "direction": "in",
+          "flow_type": "mechanical_force"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "members_to_inner_race_torque",
+          "mating_subsystem": "inner_race",
+          "port_this": "members_torque_inner",
+          "port_mate": "inner_torque",
+          "flow_ref": "torque",
+          "interface_type": "mechanical_rotary"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "cage",
+      "subsystem_name": "Cage",
+      "description": "Cage retains the engaging members; its cylindrical portion provides a circumferential face that participates in volute-spring retention.",
+      "domain": "mechanical"
+    },
+    {
+      "subsystem_id": "volute_springs",
+      "subsystem_name": "Volute Springs",
+      "description": "Springs urge engaging members toward engagement with a cam face and are retained between an outer-race projection and cage cylindrical portion.",
+      "domain": "mechanical",
+      "ports": [
+        {
+          "port_id": "spring_force_out",
+          "name": "Urging force interface",
+          "direction": "out",
+          "flow_type": "mechanical_force"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "springs_to_members_urging",
+          "mating_subsystem": "engaging_members",
+          "port_this": "spring_force_out",
+          "port_mate": "members_spring_force",
+          "flow_ref": "spring_force",
+          "interface_type": "mechanical_force"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "side_plate",
+      "subsystem_name": "Side Plate",
+      "description": "Plate at an axial end face that sandwiches and fixes volute springs against the clutch end face.",
+      "domain": "mechanical"
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "torque",
+      "name": "Rotary torque",
+      "flow_type": "mechanical_rotary",
+      "notes": "Torque transmitted by engaging members between races when engaged."
+    },
+    {
+      "flow_id": "spring_force",
+      "name": "Spring urging force",
+      "flow_type": "mechanical_force",
+      "notes": "Volute springs urge engaging members toward cam-face engagement."
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "bias_members",
+        "name": "Bias engaging members toward cam face",
+        "owner": "volute_springs",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Apply urging force to the engaging members in the direction of engagement with a cam face on one of the races."
+          }
+        ]
+      },
+      {
+        "action_id": "retain_engaging_members",
+        "name": "Retain engaging members",
+        "owner": "cage",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Retain the engaging members between the outer and inner races."
+          }
+        ]
+      },
+      {
+        "action_id": "retain_and_fix_springs",
+        "name": "Fix volute springs axially",
+        "owner": "side_plate",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Fix the volute springs by sandwiching them between the side plate and the axial end face of the one-way clutch."
+          }
+        ]
+      },
+      {
+        "action_id": "transmit_torque",
+        "name": "Transmit torque between races",
+        "owner": "engaging_members",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Transmit torque between the outer race and inner race through the engaging members arranged between them."
+          }
+        ]
+      },
+      {
+        "action_id": "retain_springs_circumferentially",
+        "name": "Retain volute springs circumferentially",
+        "owner": "cage",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Retain each volute spring by sandwiching it between the outer-race convex inward projection and the outer circumferential face of the cage cylindrical portion."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "revision": 3,
+  "candidate_sha256": "a138bfffb60b8dfea12656324d54782bd84c8bf4147a540192e40d194979bd63",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 3 facts are supported by the read patent passages. Claim 1 describes conical retainer seat, arcuate outer race, ring force holding it to seat, spherical movement, and prevention of outer-race rotation while inner race responds to shaft rotation. The description expressly states less resistance to spherical motion than rotational motion. Shaft insertion/alignment and retainer pivot are supported by the cited description and claim passages."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "Captures the claimed retainer, bearing/races, elastomeric compression ring, shaft context, self-alignment, inner-race rotation, outer-race rotational restraint, and alternative mounting obligation without modeling alternate mounting geometries as simultaneous parts. No essential central function appears omitted."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Each interface references existing ports, existing subsystem IDs, and declared flows with matching types and sensible directions. Shaft rotation, spherical/pivot movement, and ring bias force are distinct physical interactions. The ring-force flow correctly represents contact force; relative resistance behavior is stated as an attribute of that force/contact rather than misrepresented as a separate force-flow direction."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Requirements and behavior trace to claim 1, claims 6/9-11, and the described operation. Revision 3 explicitly traces the compression-ring resistance distinction at the bearing-ring force interface and in F_RING_FORCE notes: less resistance to spherical motion than rotational motion, thereby restraining outer-race rotation. This distinction is expressly supported by the description passage."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Interfaces connect compatible, existing ports once each: retainer-bearing angular support, bearing-ring force contact, and bearing-shaft rotary coupling. The compression ring interface description explicitly associates ring force contact with differential resistance and restraint. Shaft is a distinct external component, consistently stated as a boundary assumption."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Textbook guidance supports physical decomposition/function allocation and explicit system boundary/context treatment only. The bearing components are physical subsystems; shaft externalization and variable mounting context are sensible modeling choices. Patent claims/passages, not textbook, substantiate invention facts."
+    }
+  },
+  "findings": [],
+  "summary": "Reviewed saved SJS revision 3 against the actual cited patent passages and relevant textbook guidance. The revision directly addresses the earlier traceability caveat: the bearing-to-ring force interface states that the compression-ring contact permits spherical motion with less resistance than rotational motion and thereby restrains outer-race rotation; the associated force-flow notes repeat the distinction. This is explicitly supported by the patent description. Ports, interface endpoints, flow types/directions, claim mapping, and modeled core functions are consistent. No unresolved findings.",
+  "saved_at": "2026-09-27T03:32:17.513236+00:00"
+}

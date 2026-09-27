@@ -1,0 +1,192 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 4,
+    "AllocationUsage": 1,
+    "ConnectionUsage": 4,
+    "Documentation": 37,
+    "EndFeatureMembership": 14,
+    "Feature": 24,
+    "FeatureChaining": 40,
+    "FeatureMembership": 42,
+    "FeatureTyping": 20,
+    "FlowEnd": 4,
+    "FlowUsage": 2,
+    "ItemDefinition": 6,
+    "ItemUsage": 13,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 59,
+    "Package": 1,
+    "PartDefinition": 6,
+    "PartUsage": 7,
+    "PortUsage": 13,
+    "Redefinition": 4,
+    "ReferenceSubsetting": 14,
+    "ReferenceUsage": 4,
+    "Subclassification": 4,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_FRAME_Compliant_Frame"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FRAME_Compliant_Frame.port_FRAME_FORCE_IN_Force_application_at_second_frame_element"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FRAME_Compliant_Frame.port_FRAME_LINK_1_First_inner_surface_linkage_attachment"
+    },
+    {
+      "path": "/subsystems/0/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FRAME_Compliant_Frame.port_FRAME_LINK_2_Second_inner_surface_linkage_attachment"
+    },
+    {
+      "path": "/subsystems/0/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FRAME_Compliant_Frame.port_FRAME_SUPPORT_First_frame_element_support_attachment"
+    },
+    {
+      "path": "/subsystems/0/ports/4",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FRAME_Compliant_Frame.port_FRAME_CONTOUR_OUT_First_outer_surface_contour_response"
+    },
+    {
+      "path": "/subsystems/0/ports/5",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FRAME_Compliant_Frame.port_FRAME_SURFACE_Compliant_surface_communication"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_LINK_Resilient_Linkage"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LINK_Resilient_Linkage.port_LINK_END_1_Linkage_first_end"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LINK_Resilient_Linkage.port_LINK_END_2_Linkage_second_end"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ACT_Actuator"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ACT_Actuator.port_ACT_FORCE_OUT_Actuator_force_output"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_COUPLER_Frame_Coupler"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_COUPLER_Frame_Coupler.port_COUPLER_FRAME_Frame_coupling_attachment"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_COUPLER_Frame_Coupler.port_COUPLER_SUPPORT_Support_coupling_attachment"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SUPPORT_Support_Element"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SUPPORT_Support_Element.port_SUPPORT_FRAME_Frame_coupler_attachment"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SURFACE_Compliant_Surface"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SURFACE_Compliant_Surface.port_SURFACE_FRAME_Frame_outer_surface_contour_input"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_FORCE_Actuator_force"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_CONTOUR_Surface_contour_variation"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_LINKAGE_COUPLING_Resilient_linkage_coupling"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_STRUCTURAL_ATTACHMENT_Frame_support_structural_attachment"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_CHANGE_CONTOUR_Change_compliant_surface_contour"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_ACT_FRAME_FORCE"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_FRAME_LINK_FIRST"
+    },
+    {
+      "path": "/subsystems/0/interfaces/2",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_FRAME_LINK_SECOND"
+    },
+    {
+      "path": "/subsystems/0/interfaces/3",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_FRAME_COUPLER"
+    },
+    {
+      "path": "/subsystems/0/interfaces/4",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_FRAME_SURFACE_CONTOUR"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_COUPLER_SUPPORT_LINK"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

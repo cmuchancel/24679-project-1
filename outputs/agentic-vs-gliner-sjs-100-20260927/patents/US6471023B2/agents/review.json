@@ -1,0 +1,34 @@
+{
+  "revision": 3,
+  "candidate_sha256": "337999ff1d4552f454557020370801408598f78d64e72fa5d6846ea9d7510146",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 3 corrects the previously disconnected auxiliary shaft using the patent's application configuration in which the pulley-integrated clutch is carried on the auxiliary-equipment input shaft: crank torque reaches the outer ring through belt/pulley and the inner ring connects to the auxiliary shaft. Claim-1 single-bearing scope remains explicit. The modeled passive clutch behavior and lower-speed unitary cage coupling are supported. Citations were inspected as passages, not accepted by ID alone."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The application torque chain is now continuous: crankshaft to belt to pulley/outer ring, through direction-dependent clutch behavior to inner ring and auxiliary shaft. The previously orphaned bearing-cage flow was removed; coupled cage motion is represented by the connected cage flow. The chosen claim-1 application alternative is coherent."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Torque and rotational motion interfaces connect compatible rotational ports, including the newly connected inout inner-ring and auxiliary-shaft ports. The formerly unused bearing-cage item flow is gone; the single coupled-cage flow is referenced at the bearing-cage/clutch-cage interface and its notes convey the lower-speed relationship."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "The description and behavioral steps track claim 1 and the cited application embodiment, without inventing quantitative speed values or requirements. Claim 2's distinct pair of bearings is explicitly outside the configured model. Claim 4 supports the alternative inner-ring connection chosen here."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "The inner-ring-to-auxiliary-shaft interface now connects existing compatible ports and completes the selected application torque route. Other modeled belt, pulley, ring, and cage interfaces likewise join existing ports and are recorded once."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The model distinguishes physical components and their interfaces and models passive direction-dependent behavior without adding active control or unsupported executable constraints. Retrieved textbook excerpts are tangential and contribute no patent facts; no textbook-based invention claims were made."
+    }
+  },
+  "findings": [],
+  "summary": "Revision 3 resolves both findings from revision 2: the application-level inner-ring/auxiliary-shaft connection is now present and connected using the compatible rotational port, and the orphan bearing-cage flow is removed with its speed/coupling meaning retained in the connected coupled-cage flow. The selected claim-1 configuration and chosen claim-4 application alternative are supported by the inspected patent passages. No remaining evidence, interface, or structural issue was identified; no edits were made.",
+  "saved_at": "2026-09-27T05:20:42.238302+00:00"
+}

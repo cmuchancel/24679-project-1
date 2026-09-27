@@ -1,0 +1,34 @@
+{
+  "revision": 4,
+  "candidate_sha256": "8bbd1719c1b5e16ee99c57c8dc2efbdec97fafe1b8e4e970b9b2b1a9e1e5e413",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 4's modeled worm-part/peg-part recirculation features are supported by cited passages: boss redirects balls into the hole, fillet smooths the transition, and oblique hole continues into peg U-shaped helical channel. Double-profile tooth-gap description matches claims 17/19: circular side-contact profile and concave bottom clearance. No fabricated dimensions or unsupported constraints appear."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "Candidate represents the principal transmission elements, passive race, worm/peg components and transition features, and both swept-space tooth geometry and dependent double-profile geometry. Passive-path traversal is qualified rather than forced into one universal sequence."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Ball circulation is internal cyclic motion; notes explicitly allow direct recirculation entry without passive-path traversal. Detailed boss-hole-channel transition agrees with cited evidence. Rotary transfer is consistent with worm-to-balls-to-gear transfer."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Transition parts have individual part-level citations, including worm part, peg part, boss, hole, fillet, and U-channel. Double-profile step has its own citation and describes side contact and bottom non-contact. Core actions and flows are cited."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "No explicit subsystem ports/interfaces are modeled, but no incompatible connection is asserted. Ball circulation is an internal route and the candidate appropriately avoids inventing external drive/load interfaces. Lack of detailed port boundaries is acceptable for this concept-level model."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Consulted guidance supports distinguishing internal interactions and physical decomposition/functional allocation; it supplies no invention facts. Candidate uses physical parts and verb-noun functions and avoids unsupported interface or requirement details."
+    }
+  },
+  "findings": [],
+  "summary": "Independent review of saved SJS 1.0 revision 4: added recirculation transition elements and double-profile tooth geometry are grounded in actual cited patent passages and address revision 3 completeness/traceability gaps. Structure and citations appear coherent; no unresolved errors or warnings identified. Omitted explicit ports/interfaces are acceptable because circulation is internal and no incompatible connection or unsupported external interface is asserted.",
+  "saved_at": "2026-09-27T06:56:39.091732+00:00"
+}

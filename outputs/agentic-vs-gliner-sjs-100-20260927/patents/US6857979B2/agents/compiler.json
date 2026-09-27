@@ -1,0 +1,285 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 7,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 3,
+    "Documentation": 49,
+    "EndFeatureMembership": 16,
+    "Feature": 35,
+    "FeatureChaining": 62,
+    "FeatureMembership": 52,
+    "FeatureReferenceExpression": 9,
+    "FeatureTyping": 25,
+    "FeatureValue": 9,
+    "FlowEnd": 6,
+    "FlowUsage": 3,
+    "ItemDefinition": 8,
+    "ItemUsage": 12,
+    "LiteralInteger": 3,
+    "MultiplicityRange": 3,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 106,
+    "Package": 1,
+    "PartDefinition": 9,
+    "PartUsage": 13,
+    "PortUsage": 12,
+    "Redefinition": 6,
+    "ReferenceSubsetting": 25,
+    "ReferenceUsage": 15,
+    "RequirementDefinition": 2,
+    "RequirementUsage": 2,
+    "SatisfyRequirementUsage": 9,
+    "Subclassification": 4,
+    "SubjectMembership": 9,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_pivot_mount_Fixed_Pivot_Structure_and_Mounting_Bolt"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_pivot_mount_Fixed_Pivot_Structure_and_Mounting_Bolt.port_pivot_mount_engine_Engine_mounting_interface"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_movable_arm_Pivoting_Arm_Assembly"
+    },
+    {
+      "path": "/subsystems/1/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_movable_arm_Pivoting_Arm_Assembly.part_tension_pulley_mount_bearing_Integral_pulley_mounting_portion_with_axial_b"
+    },
+    {
+      "path": "/subsystems/1/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_movable_arm_Pivoting_Arm_Assembly.part_arm_retainer_thrust_washer_Thrust_washer_positioned_between_the_arm_and"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_movable_arm_Pivoting_Arm_Assembly.port_arm_spring_torque_Spring_bias_torque_input"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_movable_arm_Pivoting_Arm_Assembly.port_arm_axial_load_Axial_spring_force_input"
+    },
+    {
+      "path": "/subsystems/1/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_movable_arm_Pivoting_Arm_Assembly.port_arm_retainer_axial_Axial_retention_reaction"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_torsion_spring_Torsion_Spring"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_torsion_spring_Torsion_Spring.port_spring_torque_out_Bias_torque_to_arm"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_torsion_spring_Torsion_Spring.port_spring_axial_load_Axial_spring_force"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_retainer_Retaining_Member"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_retainer_Retaining_Member.port_retainer_axial_load_Axial_load_retained"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_tension_pulley_Belt_Tensioning_Pulley"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_tension_pulley_Belt_Tensioning_Pulley.port_tension_belt_contact_Belt_contact"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_idler_pulley_Idler_Pulley"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_idler_pulley_Idler_Pulley.port_idler_belt_contact_Belt_contact"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_damping_support_Damping_Sleeve_and_Force_Transmitting_Ring"
+    },
+    {
+      "path": "/subsystems/6/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_damping_support_Damping_Sleeve_and_Force_Transmitting_Ring.part_damping_force_ring_Force_transmitting_ring_surrounding_the_sleev"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_engine_block_Motor_Vehicle_Engine_Block"
+    },
+    {
+      "path": "/subsystems/7/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_engine_block_Motor_Vehicle_Engine_Block.port_engine_mount_Mounting_bolt_interface"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_drive_belt_Engine_Drive_Belt"
+    },
+    {
+      "path": "/subsystems/8/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_drive_belt_Engine_Drive_Belt.port_belt_tension_contact_Tensioning_pulley_contact"
+    },
+    {
+      "path": "/subsystems/8/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_drive_belt_Engine_Drive_Belt.port_belt_idler_contact_Idler_pulley_contact"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_spring_torque_Spring_biasing_torque"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_axial_spring_load_Axial_spring_load"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_belt_contact_load_Belt_contact_and_load"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_engine_mount_load_Engine_mounting_load"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_claim1_combination"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_claim1_combination"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_claim1_combination"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/2",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_claim1_combination"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/3",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_claim1_combination"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/4",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_claim1_combination"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/5",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_claim1_combination"
+    },
+    {
+      "path": "/requirements/1",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_claim8_axial_retention"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_claim8_axial_retention"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_claim8_axial_retention"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/2",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_claim8_axial_retention"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_take_up_belt_slack_Operational_slack_response"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_retain_axial_force_Retain_spring_axial_force"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_engine_mount_connection"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_arm_retainer_axial_connection"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_spring_arm_bias"
+    },
+    {
+      "path": "/subsystems/2/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_spring_arm_axial_load"
+    },
+    {
+      "path": "/subsystems/8/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_belt_tension_pulley_contact"
+    },
+    {
+      "path": "/subsystems/8/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_belt_idler_pulley_contact"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

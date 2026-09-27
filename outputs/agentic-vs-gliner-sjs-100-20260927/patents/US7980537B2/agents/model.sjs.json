@@ -1,0 +1,201 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Fluid vibration isolator",
+    "system_id": "US7980537B2",
+    "description": "A vibration isolator combining elastic mechanical isolation with fluid chambers and a reciprocating orifice control member.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "mechanical vibration isolation and fluid damping",
+    "maturity": "draft",
+    "date_modified": "2026-09-26"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "mounts",
+      "subsystem_name": "Mounting members",
+      "description": "First and second members connect respectively to vibration generation and vibration reception portions.",
+      "domain": "mechanical",
+      "functional_basis": [
+        "connect respective mounting members to generation and reception portions"
+      ]
+    },
+    {
+      "subsystem_id": "elastic_element",
+      "subsystem_name": "Elastic element",
+      "description": "Disposed between mounting members; deforms elastically and forms part of the main chamber partition wall.",
+      "domain": "mechanical/fluid",
+      "functional_basis": [
+        "reduce vibration transmission"
+      ]
+    },
+    {
+      "subsystem_id": "main_chamber",
+      "subsystem_name": "Main fluid chamber",
+      "description": "Fluid-filled chamber whose volume changes with deformation of the elastic element.",
+      "domain": "hydraulic"
+    },
+    {
+      "subsystem_id": "sub_chamber",
+      "subsystem_name": "Fluid sub-chamber",
+      "description": "Fluid-filled chamber with at least a portion of its partition wall deformably formed.",
+      "domain": "hydraulic"
+    },
+    {
+      "subsystem_id": "orifice",
+      "subsystem_name": "Orifice path",
+      "description": "Provides fluid communication between main and sub-chambers; a portion may be opened or closed by the reciprocating member.",
+      "domain": "hydraulic"
+    },
+    {
+      "subsystem_id": "opening_member",
+      "subsystem_name": "Opening and closing member",
+      "description": "Reciprocates to open and close a portion of the orifice; an opposed abutting portion contacts the elastic valve body.",
+      "domain": "mechanical/hydraulic",
+      "functional_basis": [
+        "open orifice",
+        "close orifice",
+        "reciprocate"
+      ]
+    },
+    {
+      "subsystem_id": "check_valve",
+      "subsystem_name": "Check valve",
+      "description": "Valve body and valve seat provide one-way fluid flow from the opening-member side toward the main chamber; valve body is elastic.",
+      "domain": "hydraulic"
+    },
+    {
+      "subsystem_id": "bias_element",
+      "subsystem_name": "Elastic bias member",
+      "description": "Biases the opening and closing member away from the check valve.",
+      "domain": "mechanical"
+    },
+    {
+      "subsystem_id": "guide",
+      "subsystem_name": "Reciprocation guide",
+      "description": "Central shaft and bearing guide the opening and closing member; claims describe alternative placements on the member, orifice-forming member, or partition member.",
+      "domain": "mechanical"
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "fluid_between_chambers",
+      "name": "Chamber fluid through orifice",
+      "flow_type": "hydraulic_fluid",
+      "notes": "Fluid communicates between main chamber and sub-chamber through the orifice; opening/closing member changes whether part of the path is open."
+    },
+    {
+      "flow_id": "mechanical_vibration",
+      "name": "Vibration transmission toward reception portion",
+      "flow_type": "mechanical_motion",
+      "notes": "Mechanical interaction: vibration transmitted from the vibration-generation portion connected to either mounting member deforms the elastic element; this reduces vibration and makes transmission to the vibration-reception portion connected to the other mounting member difficult."
+    }
+  ],
+  "requirements": [
+    {
+      "req_id": "req_oneway",
+      "category": "functional",
+      "priority": "claim-supported",
+      "statement": "Check valve permits fluid flow only from the opening and closing member side toward the main fluid chamber.",
+      "rationale": "Claim 1; one-way direction expressly specified.",
+      "satisfied_by": [
+        "check_valve"
+      ]
+    },
+    {
+      "req_id": "req_guide",
+      "category": "functional",
+      "priority": "claim-supported",
+      "statement": "Guide member guides reciprocating motion of the opening and closing member.",
+      "rationale": "Claims 4–8.",
+      "satisfied_by": [
+        "guide"
+      ]
+    },
+    {
+      "req_id": "req_contact",
+      "category": "functional",
+      "priority": "claim-supported",
+      "statement": "Opening and closing member includes an abutting portion capable of contacting the elastic check-valve body when brought close.",
+      "rationale": "Claim 1; claim 2 specifies protrusion toward valve body.",
+      "satisfied_by": [
+        "opening_member",
+        "check_valve"
+      ]
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "deform_volume",
+        "name": "Deform elastic element and change chamber volume",
+        "owner": "elastic_element",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Vibration transmitted from the vibration-generation portion connected to either mounting member elastically deforms the elastic element between the mounting members and is thereby reduced, making transmission to the vibration-reception portion connected to the other mounting member difficult."
+          },
+          {
+            "step_no": 2,
+            "description": "Deformation changes the internal volume of the main fluid chamber."
+          }
+        ]
+      },
+      {
+        "action_id": "guide_reciprocation",
+        "name": "Guide reciprocation",
+        "owner": "guide",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Shaft and bearing constrain the opening and closing member's reciprocating motion."
+          }
+        ]
+      },
+      {
+        "action_id": "bias_member",
+        "name": "Bias opening and closing member",
+        "owner": "bias_element",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Elastic member biases the opening and closing member in a direction away from the check valve."
+          }
+        ]
+      },
+      {
+        "action_id": "check_flow",
+        "name": "Permit one-way check-valve flow",
+        "owner": "check_valve",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Check valve permits flow from the opening-member side only toward the main fluid chamber."
+          }
+        ]
+      },
+      {
+        "action_id": "abutting_contact",
+        "name": "Contact elastic valve body",
+        "owner": "opening_member",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "When brought close to the valve body, the opposed abutting portion contacts the elastic valve body."
+          }
+        ]
+      },
+      {
+        "action_id": "reduce_vibration_transmission",
+        "name": "Reduce vibration transmission",
+        "owner": "elastic_element",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Elastic deformation of the element absorbs vibration and makes transmission to the vibration-reception portion connected to the other mounting member difficult."
+          }
+        ]
+      }
+    ]
+  }
+}

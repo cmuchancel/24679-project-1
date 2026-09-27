@@ -1,0 +1,264 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 3,
+    "ActionUsage": 10,
+    "AllocationUsage": 3,
+    "Documentation": 51,
+    "EndFeatureMembership": 26,
+    "Feature": 37,
+    "FeatureChaining": 82,
+    "FeatureMembership": 62,
+    "FeatureReferenceExpression": 5,
+    "FeatureTyping": 23,
+    "FeatureValue": 5,
+    "FlowEnd": 20,
+    "FlowUsage": 10,
+    "ItemDefinition": 8,
+    "ItemUsage": 10,
+    "LiteralInteger": 1,
+    "MultiplicityRange": 1,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 102,
+    "Package": 1,
+    "PartDefinition": 7,
+    "PartUsage": 9,
+    "PortUsage": 10,
+    "Redefinition": 20,
+    "ReferenceSubsetting": 31,
+    "ReferenceUsage": 25,
+    "RequirementDefinition": 3,
+    "RequirementUsage": 3,
+    "SatisfyRequirementUsage": 5,
+    "Subclassification": 4,
+    "SubjectMembership": 5,
+    "SuccessionAsUsage": 4
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_housing_Pump_Housing"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_piston_pump_Cylinder_Drum_and_Pump_Pistons"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_piston_pump_Cylinder_Drum_and_Pump_Pistons.port_drive_in_Rotational_drive_at_cylinder_drum"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_piston_pump_Cylinder_Drum_and_Pump_Pistons.port_hydraulic_out_Generated_system_pressure_output"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_swash_Pivotable_Swash_Plate_and_Lever"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_swash_Pivotable_Swash_Plate_and_Lever.port_actuation_in_Adjustment_linkage_motion"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_swash_Pivotable_Swash_Plate_and_Lever.port_plate_support_Piston_sliding_contact"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_adjuster_Hydraulic_Adjustment_Device"
+    },
+    {
+      "path": "/subsystems/3/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_adjuster_Hydraulic_Adjustment_Device.part_spring_Compression_spring_preloads_second_piston_rod"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_adjuster_Hydraulic_Adjustment_Device.port_control_pressure_Control_pressure"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_adjuster_Hydraulic_Adjustment_Device.port_system_pressure_System_pressure_input"
+    },
+    {
+      "path": "/subsystems/3/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_adjuster_Hydraulic_Adjustment_Device.port_linkage_out_Rod_and_joint_movement"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_rotary_source_External_Rotary_Drive"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_rotary_source_External_Rotary_Drive.port_shaft_out_Drive_shaft_rotation"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_hydraulic_delivery_sink_Downstream_Hydraulic_System"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_hydraulic_delivery_sink_Downstream_Hydraulic_System.port_fluid_in_Pump_fluid_delivery_input"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_control_pressure_source_Upstream_Control_Pressure_Supply"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_control_pressure_source_Upstream_Control_Pressure_Supply.port_control_out_Control_pressure_supply"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_shaft_rotation_Drive_shaft_rotation"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_control_hyd_Adjustment_control_pressure"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_system_hyd_Prevailing_system_pressure"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_linkage_motion_Adjustment_linkage_displacement"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_req_adjust_capacity"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_req_adjust_capacity"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_req_adjust_capacity"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/2",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_req_adjust_capacity"
+    },
+    {
+      "path": "/requirements/1",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_req_opposed_adjusters"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_req_opposed_adjusters"
+    },
+    {
+      "path": "/requirements/2",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_req_piston_area"
+    },
+    {
+      "path": "/requirements/2/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_req_piston_area"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_vary_delivery_Adjust_pump_delivery_capacity"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_spring_bias_Bias_linkage_toward_maximum_capacity"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_lubricate_joints_Route_system_fluid_to_ball_joints"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_drum_drive_connection"
+    },
+    {
+      "path": "/subsystems/1/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_delivery_connection"
+    },
+    {
+      "path": "/subsystems/1/interfaces/2",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_system_pressure_to_adjuster"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_adjustment_linkage"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_linkage_to_swash"
+    },
+    {
+      "path": "/subsystems/3/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_control_supply_connection"
+    },
+    {
+      "path": "/subsystems/3/interfaces/2",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_system_pressure_from_pump"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_drive_to_drum"
+    },
+    {
+      "path": "/subsystems/5/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_delivery_from_pump"
+    },
+    {
+      "path": "/subsystems/6/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_control_to_adjuster"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

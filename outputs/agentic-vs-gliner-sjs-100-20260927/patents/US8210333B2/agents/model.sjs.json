@@ -1,0 +1,300 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Centrifugal Clutch",
+    "system_id": "US8210333B2",
+    "description": "Inferred concept model of a centrifugal clutch with rotation-driven press bodies that axially load a plate group.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "Mechanical power transmission",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "input_member",
+      "subsystem_name": "Input-side clutch member",
+      "description": "Rotating member carrying input clutch disc and input-side press assembly.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "rotation_out",
+          "name": "Rotation to input press",
+          "direction": "out",
+          "flow_type": "mechanical_rotational"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "input_rotation_link",
+          "mating_subsystem": "input_press",
+          "port_this": "rotation_out",
+          "port_mate": "rotation_in",
+          "flow_ref": "input_rotation",
+          "interface_type": "rotational coupling"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "output_member",
+      "subsystem_name": "Output-side clutch member",
+      "description": "Coaxial rotating member carrying output clutch disc and output-side press assembly.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "rotation_out",
+          "name": "Rotation to output press",
+          "direction": "out",
+          "flow_type": "mechanical_rotational"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "output_rotation_link",
+          "mating_subsystem": "output_press",
+          "port_this": "rotation_out",
+          "port_mate": "rotation_in",
+          "flow_ref": "output_rotation",
+          "interface_type": "rotational coupling"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "plate_group",
+      "subsystem_name": "Clutch plate group",
+      "description": "Facing input and output discs brought into pressed contact to couple members.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "input_contact",
+          "name": "Input-side pressed contact",
+          "direction": "in",
+          "flow_type": "mechanical_contact"
+        },
+        {
+          "port_id": "output_contact",
+          "name": "Output-side pressed contact",
+          "direction": "in",
+          "flow_type": "mechanical_contact"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "input_press",
+      "subsystem_name": "Input centrifugal press assembly",
+      "description": "Pressure member, retainer, press body and biasing elements convert centrifugal action into axial plate loading. The input retainer and pressure member bound the radially narrowing space; the retainer is biased toward the plate group.",
+      "domain": "Mechanical",
+      "functional_basis": [
+        "convert rotation to axial pressing force",
+        "press plate group"
+      ],
+      "ports": [
+        {
+          "port_id": "rotation_in",
+          "name": "Input rotation",
+          "direction": "in",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "plate_load",
+          "name": "Axial plate loading",
+          "direction": "out",
+          "flow_type": "mechanical_contact"
+        },
+        {
+          "port_id": "release_force_in",
+          "name": "Axial release force at pressure member",
+          "direction": "in",
+          "flow_type": "mechanical_force"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "input_plate_link",
+          "mating_subsystem": "plate_group",
+          "port_this": "plate_load",
+          "port_mate": "input_contact",
+          "flow_ref": "plate_contact",
+          "interface_type": "pressed contact"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "output_press",
+      "subsystem_name": "Output centrifugal press assembly",
+      "description": "Pressure member, retainer, press body and biasing elements convert centrifugal action into axial plate loading. The output retainer and pressure member bound the radially narrowing space; the retainer is biased toward the plate group.",
+      "domain": "Mechanical",
+      "functional_basis": [
+        "convert rotation to axial pressing force",
+        "press plate group"
+      ],
+      "ports": [
+        {
+          "port_id": "rotation_in",
+          "name": "Output rotation",
+          "direction": "in",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "plate_load",
+          "name": "Axial plate loading",
+          "direction": "out",
+          "flow_type": "mechanical_contact"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "output_plate_link",
+          "mating_subsystem": "plate_group",
+          "port_this": "plate_load",
+          "port_mate": "output_contact",
+          "flow_ref": "plate_contact",
+          "interface_type": "pressed contact"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "release",
+      "subsystem_name": "Clutch release mechanism",
+      "description": "Externally actuated mechanism displaces pressure member away from plate group to release pressed contact.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "actuation_in",
+          "name": "Release force input",
+          "direction": "in",
+          "flow_type": "mechanical_force"
+        },
+        {
+          "port_id": "pressure_member_release_out",
+          "name": "Axial release force to first pressure member",
+          "direction": "out",
+          "flow_type": "mechanical_force"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "release_pressure_link",
+          "mating_subsystem": "input_press",
+          "port_this": "pressure_member_release_out",
+          "port_mate": "release_force_in",
+          "flow_ref": "release_pressure_force",
+          "interface_type": "axial mechanical actuation"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "release_actuator",
+      "subsystem_name": "Clutch actuation source",
+      "description": "Rider-operated clutch lever or pedal applies force to the release mechanism.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "force_out",
+          "name": "Actuation force",
+          "direction": "out",
+          "flow_type": "mechanical_force"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "release_force_link",
+          "mating_subsystem": "release",
+          "port_this": "force_out",
+          "port_mate": "actuation_in",
+          "flow_ref": "release_actuation",
+          "interface_type": "mechanical actuation"
+        }
+      ]
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "input_rotation",
+      "name": "Input-side rotation",
+      "flow_type": "mechanical_rotational",
+      "notes": "Input member rotation drives input press body (claim 1)."
+    },
+    {
+      "flow_id": "output_rotation",
+      "name": "Output-side rotation",
+      "flow_type": "mechanical_rotational",
+      "notes": "Output member rotation drives output press body (claim 1)."
+    },
+    {
+      "flow_id": "plate_contact",
+      "name": "Pressed plate contact",
+      "flow_type": "mechanical_contact",
+      "notes": "Pressed contact couples facing discs."
+    },
+    {
+      "flow_id": "release_actuation",
+      "name": "Release actuation",
+      "flow_type": "mechanical_force",
+      "notes": "External force actuates release mechanism (claim 5)."
+    },
+    {
+      "flow_id": "release_pressure_force",
+      "name": "Release force on first pressure member",
+      "flow_type": "mechanical_force",
+      "notes": "Upon actuation, the release mechanism presses the first pressure member axially away from the plate group, releasing pressed contact (claim 15)."
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "centrifugal_engagement",
+        "name": "Centrifugal engagement",
+        "owner": "input_press",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Member rotation revolves press body about the axis."
+          },
+          {
+            "step_no": 2,
+            "description": "Centrifugal force moves press body radially outward in narrowing space."
+          },
+          {
+            "step_no": 3,
+            "description": "Press body displaces pressure member axially toward plate group, establishing pressed contact."
+          }
+        ]
+      },
+      {
+        "action_id": "release_plate_contact",
+        "name": "Release plate contact",
+        "owner": "release",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "External force actuates release mechanism."
+          },
+          {
+            "step_no": 2,
+            "description": "Mechanism displaces pressure member away from plate group to release contact."
+          }
+        ]
+      },
+      {
+        "action_id": "output_centrifugal_engagement",
+        "name": "Output centrifugal engagement",
+        "owner": "output_press",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Output-side press body revolves with output clutch member rotation."
+          },
+          {
+            "step_no": 2,
+            "description": "Centrifugal force moves press body radially outward in the narrowing space."
+          },
+          {
+            "step_no": 3,
+            "description": "Press body presses output pressure member axially toward the plate group."
+          }
+        ]
+      }
+    ]
+  }
+}

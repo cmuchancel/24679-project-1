@@ -1,0 +1,34 @@
+{
+  "revision": 5,
+  "candidate_sha256": "97cdff258babc59b9d6ecd0bbf3d41f28c3a16c08cc83e67c65c7407047ad9c0",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 5's subsystem descriptions, contact/coupling/support relationships, and behavior statements are supported by the cited patent passages. Embodiment-specific details are explicitly qualified; no unsupported numeric engineering constraints are asserted."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The modeled core wave-generator/FTE interaction and the previously identified spline coupling, running-tooth mesh/torque transfer, sliding support, and cover engagement are represented. No further major supported relationship appears omitted within the stated assembly scope."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "WG wg_contact (out) and FTE fte_wg_contact (in) are joined via fte_wg_contour_contact using flow_ref contour_contact; both ports and the flow are mechanical_contact. The contour-induced deformation is separately described as an internal transformation, not mislabeled as the contact interface."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "The represented features trace to the cited claim/embodiment evidence, and optional embodiment details are qualified. No fabricated requirement or constraint is presented as a patent fact."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "All listed interfaces reference existing subsystem and port IDs and flow IDs, and connect compatible flow types. The revision-4 dangling WG/FTE contour-contact ports are now coherently connected. Previously identified sliding-support and separate rotational torque-transfer interfaces remain distinct and compatible."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Textbook context/boundary and allocation guidance is used only to inform modeling scope and structure, not as evidence for invention facts. The assembly boundary and omission of unspecified external prime mover/load are reasonable for this model."
+    }
+  },
+  "findings": [],
+  "summary": "Revision 5 resolves prior finding R4-1: the wave-generator and flexible-element contour-contact ports are connected by a correctly typed mechanical-contact interface, while induced deformation remains an internal transformation. Previously identified relationships remain distinct and connected, structural checks are clean, and review found no unresolved or newly introduced issues.",
+  "saved_at": "2026-09-27T09:29:56.773347+00:00"
+}

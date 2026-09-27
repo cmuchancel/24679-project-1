@@ -1,0 +1,34 @@
+{
+  "revision": 4,
+  "candidate_sha256": "3c15ff7bdd7f7161dcbd68b9b6b1d4f884aeb721eb1c8910cad1a227363c53af",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 4 replaces the unsupported damping domain with neutral 'mechanical component'. The added pin-support/bush interface captures the claim's explicit spaced-apart surrounding relation. Inspected passages support the block/receptacle, pin/sleeve threading, bush spacing/play, cap-port entry/alignment, and hydraulic-cylinder context. No unsupported engineering bounds or active controls are asserted."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "Core pin, piston block/rod, housing/cap port, sleeve, floating bush, mounting/threaded relations, sleeve/bush play, and alignment sequence are represented. The prior omitted bush-around-pin-support relation is now expressed. Dependent retention variants and broader machine integration are reasonably excluded per stated model scope."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Mechanical_linear ports and the qualitative alignment_motion flow are consistent with the modeled physical movement and sliding entry; no incompatible flow types or numerical constraints appear. The new spatial interface has no fabricated flow_ref."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Citations are supplied for model metadata and all ID-bearing components, ports, interfaces, flow, and action. Inspected cited patent text supports the corresponding assertions. No unsupported requirements or state machines are introduced."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Each modeled interface connects existing ports on the stated mating subsystems. The new bush-to-pin interface uses the explicitly declared matching ports and accurately characterizes the claim's spaced-apart surrounding relation. The earlier cap-port/housing containment issue remains removed."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Textbook guidance informs boundary selection and qualitative representation only; patent passages, not textbook material, support invention facts. Assembly-focused scope is explicitly identified as an assumption outside the SJS."
+    }
+  },
+  "findings": [],
+  "summary": "Independently reviewed saved revision 4. Both revision-3 findings are resolved: FLOATING_BUSH now has a neutral domain and its supported spaced-apart surrounding relation to the pin support is connected through a compatible interface. Inspected passages support the core components, relationships, and alignment behavior; cited model items have appropriate patent citations. No new structural, factual, flow, claim-traceability, or interface issue was identified. Textbook evidence is used only for modeling guidance.",
+  "saved_at": "2026-09-27T06:09:01.399166+00:00"
+}

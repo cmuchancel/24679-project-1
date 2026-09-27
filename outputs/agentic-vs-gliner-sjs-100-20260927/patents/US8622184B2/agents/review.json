@@ -1,0 +1,34 @@
+{
+  "revision": 4,
+  "candidate_sha256": "a287b1a458b37492fbe4fffb41b77ea9eb3987ad0ee28143343ccb4ff0bdacf1",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 4's modeled facts are supported by read passages. Claim 1 excerpt 7b5bdf69f02d912531e185173b35fda6 supports the races, engaging members transmitting torque, cage retention, spring urging, paired outer-race projection/cage face retention, and side-plate axial fixing. Abstract passage 14c41548883694b205d25d93b2f04eb9 corroborates principal arrangement and spring bias. Action 4's cage owner is a representative allocation; its text explicitly describes both claimed retaining features, not sole cage action."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "All central supported elements and functions are represented: races, torque-transmitting members, cage retention, spring bias, paired circumferential retention, and side-plate axial fixation. Optional roller, pin/cap variants are appropriately not asserted as installed."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Rotary interfaces and spring-force interface have compatible types and endpoints; flow path links the races through engaging members. The sandwiching relations are correctly prose/actions rather than fabricated material flows."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Citation paths now cover all actions, including 1–4, and ID-bearing model elements. The actual cited claim passage supports the four actions, including both features in action 4. The cited side-plate passage also supports axial fixing."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Typed connections refer to existing compatible ports and flows, with no duplicated mating connection. The model avoids asserting a direct unsupported flow/interface between concentric races while describing their relative rotatability."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Textbook guidance was considered as modeling-method evidence only. The candidate separates physical components from functions and keeps claim alternatives and optional elements from becoming simultaneous or mandatory patent facts."
+    }
+  },
+  "findings": [],
+  "summary": "Independent review of saved SJS revision 4: pass; no unresolved findings. Action citations 1–4 are present and point to claim 1 evidence that supports the described actions. In particular, action 4's cage representative ownership is appropriately qualified by wording that identifies the claimed pair—the outer-race convex inward projection and the cage cylindrical portion's outer face—so it does not imply exclusive cage participation. Whole-model grounding, flow/port/interface consistency, traceability, and representation are satisfactory.",
+  "saved_at": "2026-09-27T06:35:28.778592+00:00"
+}

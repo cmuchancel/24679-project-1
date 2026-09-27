@@ -1,0 +1,120 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Flexible Shaft Coupling",
+    "system_id": "US7303480B2",
+    "description": "Concept model of the claimed flexible shaft coupling: a rigid tubular hub with an axial bore and substantially circumferential slit transmits rotational force between drive and driven shafts; the hub has convex slit-adjacent ends with arcuately receding outer surfaces.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "Mechanical power transmission",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "DRIVE_SHAFT",
+      "subsystem_name": "Drive rotation shaft",
+      "description": "External source shaft received at the drive end of the coupling's axial bore; supplies rotational force.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "DRIVE_TORQUE_OUT",
+          "name": "Rotational force output",
+          "direction": "out",
+          "flow_type": "mechanical_rotational"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "DRIVE_TO_HUB",
+          "mating_subsystem": "HUB",
+          "port_this": "DRIVE_TORQUE_OUT",
+          "port_mate": "HUB_TORQUE_IN",
+          "flow_ref": "DRIVE_TORQUE",
+          "interface_type": "mechanical_rotational"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "HUB",
+      "subsystem_name": "Flexible tubular hub",
+      "description": "Rigid-material tubular coupling hub with an axial bore and substantially circumferential slit providing flexibility. Slit-adjacent circumferential ends are convex with arcuately receding outer peripheral surfaces.",
+      "domain": "Mechanical",
+      "functional_basis": [
+        "Transmit rotational force",
+        "Provide hub flexibility"
+      ],
+      "ports": [
+        {
+          "port_id": "HUB_TORQUE_IN",
+          "name": "Drive-side torque input",
+          "direction": "in",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "HUB_TORQUE_OUT",
+          "name": "Driven-side torque output",
+          "direction": "out",
+          "flow_type": "mechanical_rotational"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "HUB_TO_DRIVEN",
+          "mating_subsystem": "DRIVEN_SHAFT",
+          "port_this": "HUB_TORQUE_OUT",
+          "port_mate": "DRIVEN_TORQUE_IN",
+          "flow_ref": "OUTPUT_TORQUE",
+          "interface_type": "mechanical_rotational"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "DRIVEN_SHAFT",
+      "subsystem_name": "Driven rotation shaft",
+      "description": "External receiving shaft attached at the opposite end of the hub and receiving transmitted rotational force.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "DRIVEN_TORQUE_IN",
+          "name": "Rotational force input",
+          "direction": "in",
+          "flow_type": "mechanical_rotational"
+        }
+      ]
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "DRIVE_TORQUE",
+      "name": "Drive-shaft rotational force",
+      "flow_type": "mechanical_rotational",
+      "notes": "Rotational force enters the hub from the drive rotation shaft."
+    },
+    {
+      "flow_id": "OUTPUT_TORQUE",
+      "name": "Transmitted rotational force",
+      "flow_type": "mechanical_rotational",
+      "notes": "Rotational force exits the hub to the driven rotation shaft."
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "TRANSMIT_ROTATION",
+        "name": "Transmit rotational force",
+        "owner": "HUB",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Receive rotational force from the drive rotation shaft through the axial bore at one end of the hub."
+          },
+          {
+            "step_no": 2,
+            "description": "Transmit rotational force through the flexible hub to the driven rotation shaft attached at the other end."
+          }
+        ]
+      }
+    ]
+  }
+}

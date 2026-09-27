@@ -1,0 +1,34 @@
+{
+  "revision": 6,
+  "candidate_sha256": "dfd39094005e4e0ec18ccf5e368952a7c7ae50b921dc22935c4f15337b0b3cf3",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "The cited patent passages support the modeled turbine, injector, supply reservoir/pipe, alternator and coupling, sensing/control, and optional collecting reservoir/pump return loop. The unsupported turbine-discharge port/interface/flow identified in revision 5 is absent in revision 6."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The representative core energy-conversion and sensing/control functions are modeled. Optional collection and pump are retained; no unsupported turbine discharge connection is asserted. Omission of the no-break embodiment is disclosed as a warning."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Each remaining interface references a declared port ID with compatible flow types and directionality: supply-to-injector, jet-to-turbine, shaft/coupling/alternator, electrical output, signals, and collection-to-pump / pump-to-supply. No turbine discharge connection remains."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Model metadata, physical components, ports, flows, interfaces, requirements and behavior items have citations; claim-based ranges and bucket geometry are supported. Optional collection/pump elements cite the patent's express preferred embodiment."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Revision 6 fixes the prior malformed qualified identifiers: i_pump_supply now uses exact declared IDs `water_out` and `return_in`, and each other interface also references exact port IDs rather than qualified subsystem.port strings. Endpoints correspond to declared ports on the paired components, and interface flow types/directions are compatible. The schema does not provide an explicit owner field on interface records, but the current endpoint assignments follow the established port_this/port_mate convention consistently."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Textbook guidance supports modeling physical subsystems, flows/interfaces, and traceability; it is used as modeling guidance rather than as evidence of patent facts."
+    }
+  },
+  "findings": [],
+  "summary": "Independent review of saved revision 6: the earlier interface defects are corrected. The remaining interface records use exact declared port IDs and connect compatible endpoints; the inferred turbine-discharge connection has been removed, along with its unsupported port and flow. No actionable findings identified.",
+  "saved_at": "2026-09-27T07:34:39.285815+00:00"
+}

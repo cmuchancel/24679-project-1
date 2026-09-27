@@ -1,0 +1,283 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 3,
+    "AllocationUsage": 1,
+    "ConnectionUsage": 11,
+    "Documentation": 56,
+    "EndFeatureMembership": 24,
+    "Feature": 48,
+    "FeatureChaining": 70,
+    "FeatureMembership": 56,
+    "FeatureTyping": 32,
+    "ItemDefinition": 9,
+    "ItemUsage": 21,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 90,
+    "Package": 1,
+    "PartDefinition": 10,
+    "PartUsage": 11,
+    "PortUsage": 21,
+    "ReferenceSubsetting": 24,
+    "Subclassification": 6,
+    "SuccessionAsUsage": 1
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SUPPORT_Tubular_supporting_portion"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SUPPORT_Tubular_supporting_portion.port_hinge_Common_hinge_support"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SUPPORT_Tubular_supporting_portion.port_mount_Fixed_attachment"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ARM1_First_tensioner_arm"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ARM1_First_tensioner_arm.port_pivot_Arm_pivot"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ARM1_First_tensioner_arm.port_wheel_Wheel_mount"
+    },
+    {
+      "path": "/subsystems/1/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ARM1_First_tensioner_arm.port_cap_First_cap_angular_connection"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ARM2_Second_tensioner_arm"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ARM2_Second_tensioner_arm.port_pivot_Arm_pivot_da3307f4"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ARM2_Second_tensioner_arm.port_wheel_Wheel_mount_c25adc43"
+    },
+    {
+      "path": "/subsystems/2/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ARM2_Second_tensioner_arm.port_cap_Second_cap_direct_fitting"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_WHEEL1_First_idle_wheel"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_WHEEL1_First_idle_wheel.port_mount_Rotatable_wheel_mount"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_WHEEL1_First_idle_wheel.port_contact_Belt_contact"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_WHEEL2_Second_idle_wheel"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_WHEEL2_Second_idle_wheel.port_mount_Rotatable_wheel_mount_b83aa53f"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_WHEEL2_Second_idle_wheel.port_contact_Belt_contact_c975e0f7"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SPRING_Elongated_torsionally_elastic_member"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SPRING_Elongated_torsionally_elastic_member.port_cap1_Angular_connection_to_first_cap"
+    },
+    {
+      "path": "/subsystems/5/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SPRING_Elongated_torsionally_elastic_member.port_cap2_Angular_connection_to_second_cap"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CAP1_First_end_cap"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CAP1_First_end_cap.port_spring_Elastic_member_end_connection"
+    },
+    {
+      "path": "/subsystems/6/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CAP1_First_end_cap.port_arm1_First_arm_angular_coupling"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CAP2_Second_end_cap"
+    },
+    {
+      "path": "/subsystems/7/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CAP2_Second_end_cap.port_spring_Elastic_member_end_connection_453697bf"
+    },
+    {
+      "path": "/subsystems/7/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CAP2_Second_end_cap.port_arm2_Second_arm_fitting"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BELT_Drive_belt"
+    },
+    {
+      "path": "/subsystems/8/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BELT_Drive_belt.port_branch1_First_branch_contact"
+    },
+    {
+      "path": "/subsystems/8/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BELT_Drive_belt.port_branch2_Second_branch_contact"
+    },
+    {
+      "path": "/subsystems/9",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_FIXED_Fixed_supporting_structure"
+    },
+    {
+      "path": "/subsystems/9/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FIXED_Fixed_supporting_structure.port_mount_Fixed_structure_attachment"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_BELT_CONTACT1_First_idle_wheel_belt_contact"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_BELT_CONTACT2_Second_idle_wheel_belt_contact"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_TORSION_Torsional_elastic_action"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_FIXED_ATTACHMENT_Tubular_support_attachment"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_ROTATIONAL_JOINT_Rotational_joint_relation"
+    },
+    {
+      "path": "/item_flows/5",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_DIRECT_FITTING_Direct_cap_to_arm_fitting_relation"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_FORCE_Passively_force_arms_toward_one_another"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_FIXED"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_ARM1"
+    },
+    {
+      "path": "/subsystems/0/interfaces/2",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_ARM2"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_WHEEL1"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_WHEEL2"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_BELT1"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_BELT2"
+    },
+    {
+      "path": "/subsystems/5/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_SPRING_CAP1"
+    },
+    {
+      "path": "/subsystems/5/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_SPRING_CAP2"
+    },
+    {
+      "path": "/subsystems/6/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_CAP1_ARM1"
+    },
+    {
+      "path": "/subsystems/7/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_CAP2_ARM2"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

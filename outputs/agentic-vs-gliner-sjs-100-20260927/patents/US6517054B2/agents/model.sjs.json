@@ -1,0 +1,203 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Lever Hoist Overload-Preventing Device",
+    "system_id": "US6517054B2",
+    "description": "Concept model of the claimed hoist drive and overload-prevention mechanism.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "Mechanical hoisting",
+    "maturity": "draft",
+    "date_modified": "2026-09-26"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "shaft",
+      "subsystem_name": "Drive shaft",
+      "description": "Transmits rotating force to the load sheave; embodiment connects through reduction gearing.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "rotary_out",
+          "name": "Rotating-force output to load sheave",
+          "direction": "out",
+          "flow_type": "mechanical_rotary"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "shaft_to_sheave",
+          "mating_subsystem": "load",
+          "port_this": "rotary_out",
+          "port_mate": "rotary_in",
+          "flow_ref": "hoist_rotation",
+          "interface_type": "mechanical_rotary"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "pressed",
+      "subsystem_name": "Pressed member",
+      "description": "Fixed to the drive shaft. Claim 1 states the pressing member presses this member via the reverse-rotation-preventing ring; the exact internal friction-member arrangement is not modeled here.",
+      "domain": "Mechanical"
+    },
+    {
+      "subsystem_id": "ring",
+      "subsystem_name": "Reverse-rotation-preventing ring",
+      "description": "Rotates in only one direction with respect to the drive shaft and mediates pressing of the pressed member by the pressing member.",
+      "domain": "Mechanical"
+    },
+    {
+      "subsystem_id": "pressing",
+      "subsystem_name": "Pressing member",
+      "description": "Screwed to the drive shaft so it can advance or retreat; presses the pressed member via the reverse-rotation-preventing ring. Carries triangular locking teeth with moderately inclined hoisting-up faces and sharply inclined hoisting-down faces. Has a large-diameter boss projecting toward the shaft tip and a smaller boss with a circumferential screw groove. The rotation drive member is rotatably fitted to the large boss.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "teeth",
+          "name": "Locking teeth interface",
+          "direction": "inout",
+          "flow_type": "mechanical_rotary"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "locking_teeth_mesh",
+          "mating_subsystem": "rot_drive",
+          "port_this": "teeth",
+          "port_mate": "teeth",
+          "flow_ref": "rot_input",
+          "interface_type": "meshing_mechanical_rotary"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "rot_drive",
+      "subsystem_name": "Rotation drive member",
+      "description": "Rotatably fitted to the large-diameter boss of the pressing member, facing it axially, with peripheral drive teeth and meshing locking teeth.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "teeth",
+          "name": "Locking teeth interface",
+          "direction": "inout",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "rotary_in",
+          "name": "Rotating-force input from chain wheel",
+          "direction": "in",
+          "flow_type": "mechanical_rotary"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "chain_drive",
+          "mating_subsystem": "chain_wheel",
+          "port_this": "rotary_in",
+          "port_mate": "rotary_out",
+          "flow_ref": "rot_input",
+          "interface_type": "mechanical_rotary"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "limiter",
+      "subsystem_name": "Rotation limiting member",
+      "description": "Interposed between the rotation drive member and urging means. Its inner engaged portion engages the large-boss engaging portion to inhibit circumferential relative rotation; its outer edge restricts axial movement of the rotation drive member. It transmits the disk-spring urging force toward the pressing member.",
+      "domain": "Mechanical"
+    },
+    {
+      "subsystem_id": "spring",
+      "subsystem_name": "Disk spring",
+      "description": "Fitted on the small-diameter boss nearer the axial tip than the rotation limiting member; presses the rotation drive member toward the pressing member via the rotation limiting member.",
+      "domain": "Mechanical"
+    },
+    {
+      "subsystem_id": "nut",
+      "subsystem_name": "Adjusting nut",
+      "description": "Screwed onto the small-diameter boss and positions the urging means relative to the pressing member.",
+      "domain": "Mechanical"
+    },
+    {
+      "subsystem_id": "load",
+      "subsystem_name": "Load sheave",
+      "description": "Receives rotating force transmitted by the drive shaft.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "rotary_in",
+          "name": "Rotating-force input from drive shaft",
+          "direction": "in",
+          "flow_type": "mechanical_rotary"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "chain_wheel",
+      "subsystem_name": "Chain wheel",
+      "description": "Abstract identifies it as a source of rotating force for the rotation drive member.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "rotary_out",
+          "name": "Chain-wheel rotating-force output",
+          "direction": "out",
+          "flow_type": "mechanical_rotary"
+        }
+      ]
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "rot_input",
+      "name": "Chain-wheel rotation",
+      "flow_type": "mechanical_rotary",
+      "notes": "Abstract identifies rotating force from chain wheel to rotation drive member."
+    },
+    {
+      "flow_id": "hoist_rotation",
+      "name": "Hoisting drive rotation",
+      "flow_type": "mechanical_rotary",
+      "notes": "Drive shaft transmits rotation to load sheave."
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "transmit_hoist_drive",
+        "name": "Transmit hoisting rotation",
+        "owner": "pressing",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "The chain wheel supplies rotating force to the rotation drive member; its peripheral drive teeth receive this drive."
+          },
+          {
+            "step_no": 2,
+            "description": "Meshing locking teeth transmit rotation from rotation drive member to pressing member; the pressing member presses the pressed member via the reverse-rotation-preventing ring."
+          },
+          {
+            "step_no": 3,
+            "description": "The drive shaft transmits rotating force to the load sheave."
+          }
+        ]
+      },
+      {
+        "action_id": "limit_overload_rotation",
+        "name": "Limit overload rotation transfer",
+        "owner": "limiter",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "During hoisting-up overload, locking teeth can ride over their moderately inclined hoisting-up faces against the urging force."
+          },
+          {
+            "step_no": 2,
+            "description": "During hoisting-down, the urging force prevents the locking teeth from riding over the sharply inclined hoisting-down faces. The rotation limiting member's keyed engagement inhibits circumferential rotation relative to the large boss while its outer edge restricts axial movement; overload rotation is not transmitted to the disk spring and nut."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,5200 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": false,
+  "native_element_counts": {
+    "ActionDefinition": 22,
+    "ActionUsage": 44,
+    "AttributeUsage": 26,
+    "Documentation": 388,
+    "FeatureMembership": 1976,
+    "FeatureTyping": 405,
+    "FeatureValue": 1615,
+    "ItemDefinition": 3,
+    "LiteralInteger": 257,
+    "LiteralString": 1615,
+    "MetadataDefinition": 1,
+    "MetadataUsage": 323,
+    "MultiplicityRange": 257,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 1334,
+    "Package": 1,
+    "PartDefinition": 55,
+    "PartUsage": 313,
+    "Redefinition": 1615,
+    "ReferenceUsage": 1615,
+    "RequirementDefinition": 5,
+    "Subclassification": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body"
+    },
+    {
+      "path": "/subsystems/0/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_054_inner_wall"
+    },
+    {
+      "path": "/subsystems/0/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_042_stepped_upstream_recess"
+    },
+    {
+      "path": "/subsystems/0/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_055_stepped_downstream_recess"
+    },
+    {
+      "path": "/subsystems/0/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_058_guide_screw"
+    },
+    {
+      "path": "/subsystems/0/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_059_freely_rotating_bearing"
+    },
+    {
+      "path": "/subsystems/0/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_067_valve_top_cover"
+    },
+    {
+      "path": "/subsystems/0/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_006_ball_seats"
+    },
+    {
+      "path": "/subsystems/0/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_007_ball_member"
+    },
+    {
+      "path": "/subsystems/0/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_001_ball_seat"
+    },
+    {
+      "path": "/subsystems/0/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_051_flange"
+    },
+    {
+      "path": "/subsystems/0/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_065_head"
+    },
+    {
+      "path": "/subsystems/0/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_002_ball_seat_assemblies"
+    },
+    {
+      "path": "/subsystems/0/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_011_floating_ball_seat_assemblies"
+    },
+    {
+      "path": "/subsystems/0/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_012_springs"
+    },
+    {
+      "path": "/subsystems/0/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_015_ball_ball_seat_spacers"
+    },
+    {
+      "path": "/subsystems/0/parts/15",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_018_cam_tool"
+    },
+    {
+      "path": "/subsystems/0/parts/16",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_020_ball_seat_retainer"
+    },
+    {
+      "path": "/subsystems/0/parts/17",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_021_conical_ended_pin"
+    },
+    {
+      "path": "/subsystems/0/parts/18",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_026_bolt"
+    },
+    {
+      "path": "/subsystems/0/parts/19",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_030_seat_rings"
+    },
+    {
+      "path": "/subsystems/0/parts/20",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_035_Cam_followers"
+    },
+    {
+      "path": "/subsystems/0/parts/21",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_036_cam_slots"
+    },
+    {
+      "path": "/subsystems/0/parts/22",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_038_bushings"
+    },
+    {
+      "path": "/subsystems/0/parts/23",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_039_carriers"
+    },
+    {
+      "path": "/subsystems/0/parts/24",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_040_ball_seat_retracting_mechanism"
+    },
+    {
+      "path": "/subsystems/0/parts/25",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_041_ball_seat_retraction_mechanism"
+    },
+    {
+      "path": "/subsystems/0/parts/26",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_053_threaded_through_hole"
+    },
+    {
+      "path": "/subsystems/0/parts/27",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_060_guide_assembly_is_such_that_when_the_guide_as"
+    },
+    {
+      "path": "/subsystems/0/parts/28",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_061_parking_hole"
+    },
+    {
+      "path": "/subsystems/0/parts/29",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_062_bearing"
+    },
+    {
+      "path": "/subsystems/0/parts/30",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_064_internal_components"
+    },
+    {
+      "path": "/subsystems/0/parts/31",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_068_parking_holes"
+    },
+    {
+      "path": "/subsystems/0/parts/32",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_070_end_connections"
+    },
+    {
+      "path": "/subsystems/0/parts/33",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_071_studs"
+    },
+    {
+      "path": "/subsystems/0/parts/34",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_072_inlet_flow_passage"
+    },
+    {
+      "path": "/subsystems/0/parts/35",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_073_ball_member_30"
+    },
+    {
+      "path": "/subsystems/0/parts/36",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_077_guide_assembly_55"
+    },
+    {
+      "path": "/subsystems/0/parts/37",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_080_straight_rods"
+    },
+    {
+      "path": "/subsystems/0/parts/38",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_083_engaging_holes_56"
+    },
+    {
+      "path": "/subsystems/0/parts/39",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_084_straight_rod_60"
+    },
+    {
+      "path": "/subsystems/0/parts/40",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_086_main_valve_body"
+    },
+    {
+      "path": "/subsystems/0/parts/41",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_087_upstream_ball_seat_assembly"
+    },
+    {
+      "path": "/subsystems/0/parts/42",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_088_ball_sea"
+    },
+    {
+      "path": "/subsystems/0/parts/43",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_089_outlet_flow_passage"
+    },
+    {
+      "path": "/subsystems/0/parts/44",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_090_member"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_002_upstream_and_a_downstream_ball_seat_assembly"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_003_downstream_ball_seat_assembly"
+    },
+    {
+      "path": "/subsystems/2/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_downstream_ball_seat_assembly.part_P_003_soft_insert_seal"
+    },
+    {
+      "path": "/subsystems/2/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_downstream_ball_seat_assembly.part_P_001_ball_seat_b3f45e31"
+    },
+    {
+      "path": "/subsystems/2/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_downstream_ball_seat_assembly.part_P_075_ball_seat_21"
+    },
+    {
+      "path": "/subsystems/2/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_downstream_ball_seat_assembly.part_P_004_seat_retainer"
+    },
+    {
+      "path": "/subsystems/2/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_downstream_ball_seat_assembly.part_P_005_compression_springs"
+    },
+    {
+      "path": "/subsystems/2/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_downstream_ball_seat_assembly.part_P_047_sealant_groove"
+    },
+    {
+      "path": "/subsystems/2/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_downstream_ball_seat_assembly.part_P_057_guide_assembly"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_004_ball_seat"
+    },
+    {
+      "path": "/subsystems/3/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_004_ball_seat.part_P_046_seal_grooves"
+    },
+    {
+      "path": "/subsystems/3/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_004_ball_seat.part_P_003_soft_insert_seal_97ffd0e3"
+    },
+    {
+      "path": "/subsystems/3/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_004_ball_seat.part_P_049_ball_end"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly"
+    },
+    {
+      "path": "/subsystems/4/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_001_ball_seat_682a0648"
+    },
+    {
+      "path": "/subsystems/4/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_003_soft_insert_seal_6bc95ddd"
+    },
+    {
+      "path": "/subsystems/4/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_004_seat_retainer_03f110bf"
+    },
+    {
+      "path": "/subsystems/4/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_005_compression_springs_47cc6f47"
+    },
+    {
+      "path": "/subsystems/4/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_006_ball_seats_95f4a222"
+    },
+    {
+      "path": "/subsystems/4/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_046_seal_grooves_ca2df9b6"
+    },
+    {
+      "path": "/subsystems/4/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_048_tubular_cavity"
+    },
+    {
+      "path": "/subsystems/4/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_049_ball_end_448f6dc2"
+    },
+    {
+      "path": "/subsystems/4/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_050_guiding_groove"
+    },
+    {
+      "path": "/subsystems/4/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_051_flange_4a02cfea"
+    },
+    {
+      "path": "/subsystems/4/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_007_ball_member_2e84d643"
+    },
+    {
+      "path": "/subsystems/4/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_075_ball_seat_21_b8450fce"
+    },
+    {
+      "path": "/subsystems/4/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_047_sealant_groove_3c686500"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies"
+    },
+    {
+      "path": "/subsystems/5/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_003_soft_insert_seal_ae9a2745"
+    },
+    {
+      "path": "/subsystems/5/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_001_ball_seat_db625620"
+    },
+    {
+      "path": "/subsystems/5/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_004_seat_retainer_2f5e9f8f"
+    },
+    {
+      "path": "/subsystems/5/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_005_compression_springs_b7fd7056"
+    },
+    {
+      "path": "/subsystems/5/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_006_ball_seats_d7e570ca"
+    },
+    {
+      "path": "/subsystems/5/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_007_ball_member_3bf7b473"
+    },
+    {
+      "path": "/subsystems/5/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_027_lower_trunnion"
+    },
+    {
+      "path": "/subsystems/5/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_009_upper_trunnion"
+    },
+    {
+      "path": "/subsystems/5/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_010_stem"
+    },
+    {
+      "path": "/subsystems/5/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_043_spring_locators"
+    },
+    {
+      "path": "/subsystems/5/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_044_O_rings"
+    },
+    {
+      "path": "/subsystems/5/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_045_spring_covers"
+    },
+    {
+      "path": "/subsystems/5/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_046_seal_grooves_4bfc1642"
+    },
+    {
+      "path": "/subsystems/5/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_047_sealant_groove_b6eb448d"
+    },
+    {
+      "path": "/subsystems/5/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_048_tubular_cavity_d1942cdf"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_007_soft_insert_seal"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_008_seat_retainer"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_009_compression_springs"
+    },
+    {
+      "path": "/subsystems/9",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_010_ball_seats"
+    },
+    {
+      "path": "/subsystems/9/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_ball_seats.part_P_050_guiding_groove_046b9475"
+    },
+    {
+      "path": "/subsystems/9/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_ball_seats.part_P_051_flange_c24d8549"
+    },
+    {
+      "path": "/subsystems/10",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve"
+    },
+    {
+      "path": "/subsystems/10/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_046_seal_grooves_b42c9e27"
+    },
+    {
+      "path": "/subsystems/10/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_047_sealant_groove_2ae63231"
+    },
+    {
+      "path": "/subsystems/10/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_048_tubular_cavity_00a6ecd7"
+    },
+    {
+      "path": "/subsystems/10/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_003_soft_insert_seal_869ebd0b"
+    },
+    {
+      "path": "/subsystems/10/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_049_ball_end_cc7a091c"
+    },
+    {
+      "path": "/subsystems/10/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_007_ball_member_fadd3eb5"
+    },
+    {
+      "path": "/subsystems/10/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_050_guiding_groove_fba87240"
+    },
+    {
+      "path": "/subsystems/10/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_051_flange_ff916333"
+    },
+    {
+      "path": "/subsystems/10/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_057_guide_assembly_f14fab93"
+    },
+    {
+      "path": "/subsystems/10/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_001_ball_seat_9face250"
+    },
+    {
+      "path": "/subsystems/10/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_067_valve_top_cover_61abdd22"
+    },
+    {
+      "path": "/subsystems/10/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_006_ball_seats_a147acf7"
+    },
+    {
+      "path": "/subsystems/10/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_076_cylindrical_surface"
+    },
+    {
+      "path": "/subsystems/10/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_052_engaging_holes"
+    },
+    {
+      "path": "/subsystems/10/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_058_guide_screw_5f0b94d0"
+    },
+    {
+      "path": "/subsystems/10/parts/15",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_059_freely_rotating_bearing_7f23efa7"
+    },
+    {
+      "path": "/subsystems/10/parts/16",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_056_guide_assemblies"
+    },
+    {
+      "path": "/subsystems/10/parts/17",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_004_seat_retainer_0c36d4a2"
+    },
+    {
+      "path": "/subsystems/10/parts/18",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_005_compression_springs_59e18827"
+    },
+    {
+      "path": "/subsystems/11",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_012_top_entry_trunnion_mounted_ball_valve"
+    },
+    {
+      "path": "/subsystems/12",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve"
+    },
+    {
+      "path": "/subsystems/12/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_007_ball_member_59724d4e"
+    },
+    {
+      "path": "/subsystems/12/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_006_ball_seats_fca32d87"
+    },
+    {
+      "path": "/subsystems/12/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_001_ball_seat_9681523b"
+    },
+    {
+      "path": "/subsystems/12/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_027_lower_trunnion_00489ff6"
+    },
+    {
+      "path": "/subsystems/12/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_009_upper_trunnion_8d4cd808"
+    },
+    {
+      "path": "/subsystems/12/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_010_stem_db263e93"
+    },
+    {
+      "path": "/subsystems/12/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_003_soft_insert_seal_12644bd3"
+    },
+    {
+      "path": "/subsystems/12/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_004_seat_retainer_9bafc976"
+    },
+    {
+      "path": "/subsystems/12/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_005_compression_springs_8a8bcbe8"
+    },
+    {
+      "path": "/subsystems/12/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_043_spring_locators_474a3b92"
+    },
+    {
+      "path": "/subsystems/12/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_044_O_rings_4eec9ad6"
+    },
+    {
+      "path": "/subsystems/12/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_045_spring_covers_19650475"
+    },
+    {
+      "path": "/subsystems/12/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_046_seal_grooves_f514eae9"
+    },
+    {
+      "path": "/subsystems/12/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_047_sealant_groove_24dfdad5"
+    },
+    {
+      "path": "/subsystems/12/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_048_tubular_cavity_686804c6"
+    },
+    {
+      "path": "/subsystems/12/parts/15",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_065_head_91b702d5"
+    },
+    {
+      "path": "/subsystems/12/parts/16",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_066_head_of_the_guide_assembly"
+    },
+    {
+      "path": "/subsystems/12/parts/17",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_063_straight_rod"
+    },
+    {
+      "path": "/subsystems/12/parts/18",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_085_circular_rod"
+    },
+    {
+      "path": "/subsystems/13",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_014_Rotary_ball_valves"
+    },
+    {
+      "path": "/subsystems/14",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_015_single_piece_valve_body"
+    },
+    {
+      "path": "/subsystems/15",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_016_valve_body"
+    },
+    {
+      "path": "/subsystems/15/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_016_valve_body.part_P_007_ball_member_7f5f8dd7"
+    },
+    {
+      "path": "/subsystems/15/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_016_valve_body.part_P_008_lower_end_trunnion"
+    },
+    {
+      "path": "/subsystems/15/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_016_valve_body.part_P_009_upper_trunnion_82c04369"
+    },
+    {
+      "path": "/subsystems/15/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_016_valve_body.part_P_006_ball_seats_e413faf5"
+    },
+    {
+      "path": "/subsystems/15/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_016_valve_body.part_P_013_Seat_retainer"
+    },
+    {
+      "path": "/subsystems/15/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_016_valve_body.part_P_014_cylindrical_recess"
+    },
+    {
+      "path": "/subsystems/15/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_016_valve_body.part_P_037_slide_rings"
+    },
+    {
+      "path": "/subsystems/15/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_016_valve_body.part_P_004_seat_retainer_c25665b7"
+    },
+    {
+      "path": "/subsystems/16",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_017_ball_member"
+    },
+    {
+      "path": "/subsystems/16/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_ball_member.part_P_001_ball_seat_8ab293f7"
+    },
+    {
+      "path": "/subsystems/16/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_ball_member.part_P_051_flange_f8d64b14"
+    },
+    {
+      "path": "/subsystems/16/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_ball_member.part_P_006_ball_seats_2ade33ee"
+    },
+    {
+      "path": "/subsystems/16/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_ball_member.part_P_050_guiding_groove_c2fcaad4"
+    },
+    {
+      "path": "/subsystems/16/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_ball_member.part_P_003_soft_insert_seal_5a073c2d"
+    },
+    {
+      "path": "/subsystems/16/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_ball_member.part_P_081_sealing_surface"
+    },
+    {
+      "path": "/subsystems/16/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_ball_member.part_P_082_recess"
+    },
+    {
+      "path": "/subsystems/17",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_018_stem"
+    },
+    {
+      "path": "/subsystems/18",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_019_floating_ball_seat_assemblies"
+    },
+    {
+      "path": "/subsystems/19",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_020_Seat_retainer"
+    },
+    {
+      "path": "/subsystems/20",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_021_assembly"
+    },
+    {
+      "path": "/subsystems/20/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_021_assembly.part_P_013_Seat_retainer_9241777d"
+    },
+    {
+      "path": "/subsystems/20/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_021_assembly.part_P_014_cylindrical_recess_0d6f3e0f"
+    },
+    {
+      "path": "/subsystems/21",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_022_valve"
+    },
+    {
+      "path": "/subsystems/21/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_valve.part_P_016_ball"
+    },
+    {
+      "path": "/subsystems/21/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_valve.part_P_001_ball_seat_19a1b9a9"
+    },
+    {
+      "path": "/subsystems/21/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_valve.part_P_017_ball_ball_seat_spacer"
+    },
+    {
+      "path": "/subsystems/21/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_valve.part_P_006_ball_seats_43d3ffc1"
+    },
+    {
+      "path": "/subsystems/21/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_valve.part_P_019_cover_plate"
+    },
+    {
+      "path": "/subsystems/21/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_valve.part_P_031_Camming_surfaces"
+    },
+    {
+      "path": "/subsystems/21/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_valve.part_P_032_ball_seat_flange"
+    },
+    {
+      "path": "/subsystems/21/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_valve.part_P_033_plate"
+    },
+    {
+      "path": "/subsystems/21/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_valve.part_P_034_cam_plates"
+    },
+    {
+      "path": "/subsystems/21/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_valve.part_P_037_slide_rings_ef11d52a"
+    },
+    {
+      "path": "/subsystems/21/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_022_valve.part_P_029_cams"
+    },
+    {
+      "path": "/subsystems/22",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_023_ball_valves"
+    },
+    {
+      "path": "/subsystems/22/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_023_ball_valves.part_P_016_ball_252673bc"
+    },
+    {
+      "path": "/subsystems/22/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_023_ball_valves.part_P_001_ball_seat_bb0da66d"
+    },
+    {
+      "path": "/subsystems/22/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_023_ball_valves.part_P_006_ball_seats_33438cb2"
+    },
+    {
+      "path": "/subsystems/23",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_024_Valve_assembly_and_disassembly_device"
+    },
+    {
+      "path": "/subsystems/23/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_024_Valve_assembly_and_disassembly_device.part_P_023_pins"
+    },
+    {
+      "path": "/subsystems/23/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_024_Valve_assembly_and_disassembly_device.part_P_022_pin"
+    },
+    {
+      "path": "/subsystems/24",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_025_housing"
+    },
+    {
+      "path": "/subsystems/24/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_housing.part_P_023_pins_82e6f28b"
+    },
+    {
+      "path": "/subsystems/24/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_housing.part_P_022_pin_718c9d86"
+    },
+    {
+      "path": "/subsystems/24/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_housing.part_P_024_indexing_holes"
+    },
+    {
+      "path": "/subsystems/24/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_housing.part_P_001_ball_seat_4bfcca27"
+    },
+    {
+      "path": "/subsystems/24/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_housing.part_P_025_bearing_seat"
+    },
+    {
+      "path": "/subsystems/24/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_housing.part_P_028_cam_pins"
+    },
+    {
+      "path": "/subsystems/24/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_housing.part_P_007_ball_member_212e035e"
+    },
+    {
+      "path": "/subsystems/24/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_housing.part_P_032_ball_seat_flange_4350417e"
+    },
+    {
+      "path": "/subsystems/25",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_026_Top_entry_trunnion_ball_valve"
+    },
+    {
+      "path": "/subsystems/25/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_Top_entry_trunnion_ball_valve.part_P_023_pins_770071d2"
+    },
+    {
+      "path": "/subsystems/26",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_027_lower_trunnion"
+    },
+    {
+      "path": "/subsystems/27",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_028_bearing_seat"
+    },
+    {
+      "path": "/subsystems/28",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_029_removable_stop"
+    },
+    {
+      "path": "/subsystems/29",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_030_main_housing"
+    },
+    {
+      "path": "/subsystems/30",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_031_trunnion_mounted_ball_valve"
+    },
+    {
+      "path": "/subsystems/30/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_trunnion_mounted_ball_valve.part_P_006_ball_seats_88290e38"
+    },
+    {
+      "path": "/subsystems/30/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_trunnion_mounted_ball_valve.part_P_034_cam_plates_f5058fc3"
+    },
+    {
+      "path": "/subsystems/30/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_trunnion_mounted_ball_valve.part_P_037_slide_rings_ffb8b2b6"
+    },
+    {
+      "path": "/subsystems/31",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_032_slide_rings"
+    },
+    {
+      "path": "/subsystems/32",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_033_valve_ball"
+    },
+    {
+      "path": "/subsystems/33",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_034_ball_valve"
+    },
+    {
+      "path": "/subsystems/33/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_034_ball_valve.part_P_006_ball_seats_d5f9178b"
+    },
+    {
+      "path": "/subsystems/33/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_034_ball_valve.part_P_037_slide_rings_59a8c203"
+    },
+    {
+      "path": "/subsystems/33/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_034_ball_valve.part_P_029_cams_ed5bbda7"
+    },
+    {
+      "path": "/subsystems/34",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_035_top_entry_trunnion_ball_valve"
+    },
+    {
+      "path": "/subsystems/34/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_top_entry_trunnion_ball_valve.part_P_007_ball_member_4a6b8cdc"
+    },
+    {
+      "path": "/subsystems/34/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_035_top_entry_trunnion_ball_valve.part_P_006_ball_seats_a3373a84"
+    },
+    {
+      "path": "/subsystems/35",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_036_trunnion_mounted_rotary_ball_valve"
+    },
+    {
+      "path": "/subsystems/35/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_trunnion_mounted_rotary_ball_valve.part_P_001_ball_seat_6426918d"
+    },
+    {
+      "path": "/subsystems/35/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_trunnion_mounted_rotary_ball_valve.part_P_007_ball_member_f6a4e022"
+    },
+    {
+      "path": "/subsystems/35/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_trunnion_mounted_rotary_ball_valve.part_P_069_seat_balls"
+    },
+    {
+      "path": "/subsystems/36",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_037_valve_top_cover"
+    },
+    {
+      "path": "/subsystems/37",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly"
+    },
+    {
+      "path": "/subsystems/37/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_001_ball_seat_8858e1d9"
+    },
+    {
+      "path": "/subsystems/37/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_007_ball_member_74152426"
+    },
+    {
+      "path": "/subsystems/37/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_027_lower_trunnion_594eae68"
+    },
+    {
+      "path": "/subsystems/37/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_009_upper_trunnion_9b055c1a"
+    },
+    {
+      "path": "/subsystems/37/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_010_stem_54fbecde"
+    },
+    {
+      "path": "/subsystems/37/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_003_soft_insert_seal_cc36f9ee"
+    },
+    {
+      "path": "/subsystems/37/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_004_seat_retainer_51e5b4f8"
+    },
+    {
+      "path": "/subsystems/37/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_005_compression_springs_34c4d2fe"
+    },
+    {
+      "path": "/subsystems/37/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_043_spring_locators_537da97e"
+    },
+    {
+      "path": "/subsystems/37/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_044_O_rings_57dc5ce9"
+    },
+    {
+      "path": "/subsystems/37/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_045_spring_covers_9ce4686f"
+    },
+    {
+      "path": "/subsystems/37/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_006_ball_seats_82aa2fe2"
+    },
+    {
+      "path": "/subsystems/37/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_046_seal_grooves_ce3b8763"
+    },
+    {
+      "path": "/subsystems/37/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_047_sealant_groove_a7a8fa45"
+    },
+    {
+      "path": "/subsystems/37/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_048_tubular_cavity_890653fb"
+    },
+    {
+      "path": "/subsystems/37/parts/15",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_049_ball_end_12324bad"
+    },
+    {
+      "path": "/subsystems/37/parts/16",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_074_lower_stem_end"
+    },
+    {
+      "path": "/subsystems/37/parts/17",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_075_ball_seat_21_ca49b7f2"
+    },
+    {
+      "path": "/subsystems/37/parts/18",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_057_guide_assembly_3b124351"
+    },
+    {
+      "path": "/subsystems/38",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_039_upper_trunnion"
+    },
+    {
+      "path": "/subsystems/39",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies"
+    },
+    {
+      "path": "/subsystems/39/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_001_ball_seat_cfd66d79"
+    },
+    {
+      "path": "/subsystems/39/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_007_ball_member_8f5271fb"
+    },
+    {
+      "path": "/subsystems/39/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_009_upper_trunnion_7ed6b5d4"
+    },
+    {
+      "path": "/subsystems/39/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_010_stem_b2afe934"
+    },
+    {
+      "path": "/subsystems/39/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_003_soft_insert_seal_878ba110"
+    },
+    {
+      "path": "/subsystems/39/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_004_seat_retainer_cea3dc98"
+    },
+    {
+      "path": "/subsystems/39/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_005_compression_springs_d49a4a41"
+    },
+    {
+      "path": "/subsystems/39/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_043_spring_locators_b5c15690"
+    },
+    {
+      "path": "/subsystems/39/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_044_O_rings_3ee27c6f"
+    },
+    {
+      "path": "/subsystems/39/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_045_spring_covers_8510c32e"
+    },
+    {
+      "path": "/subsystems/39/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_006_ball_seats_631a1140"
+    },
+    {
+      "path": "/subsystems/39/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_046_seal_grooves_95992750"
+    },
+    {
+      "path": "/subsystems/39/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_047_sealant_groove_51d1d375"
+    },
+    {
+      "path": "/subsystems/39/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_048_tubular_cavity_ffd3a804"
+    },
+    {
+      "path": "/subsystems/40",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_041_guide_assembly"
+    },
+    {
+      "path": "/subsystems/40/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_001_ball_seat_32d28d0f"
+    },
+    {
+      "path": "/subsystems/40/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_007_ball_member_d6257b7b"
+    },
+    {
+      "path": "/subsystems/40/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_069_seat_balls_3b72bc02"
+    },
+    {
+      "path": "/subsystems/40/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_058_guide_screw_b7869deb"
+    },
+    {
+      "path": "/subsystems/40/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_059_freely_rotating_bearing_a8b6daf7"
+    },
+    {
+      "path": "/subsystems/40/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_051_flange_a0455da1"
+    },
+    {
+      "path": "/subsystems/40/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_078_flange_49"
+    },
+    {
+      "path": "/subsystems/40/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_006_ball_seats_801b3e79"
+    },
+    {
+      "path": "/subsystems/40/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_050_guiding_groove_ec8949be"
+    },
+    {
+      "path": "/subsystems/40/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_003_soft_insert_seal_79e55227"
+    },
+    {
+      "path": "/subsystems/40/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_081_sealing_surface_6b2ddce1"
+    },
+    {
+      "path": "/subsystems/40/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_082_recess_b2e09c38"
+    },
+    {
+      "path": "/subsystems/40/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_065_head_7a47095e"
+    },
+    {
+      "path": "/subsystems/41",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_042_stepped_upstream_recess"
+    },
+    {
+      "path": "/subsystems/42",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_043_guide_assemblies"
+    },
+    {
+      "path": "/subsystems/42/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_043_guide_assemblies.part_P_058_guide_screw_fe3ab2a4"
+    },
+    {
+      "path": "/subsystems/42/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_043_guide_assemblies.part_P_059_freely_rotating_bearing_4d42bba3"
+    },
+    {
+      "path": "/subsystems/43",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_044_valve_main_body"
+    },
+    {
+      "path": "/subsystems/43/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_044_valve_main_body.part_P_001_ball_seat_13b0a34c"
+    },
+    {
+      "path": "/subsystems/44",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_045_straight_rod"
+    },
+    {
+      "path": "/subsystems/45",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_046_upstream_a_downstream_ball_seat_assembly"
+    },
+    {
+      "path": "/subsystems/45/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_046_upstream_a_downstream_ball_seat_assembly.part_P_001_ball_seat_e3bafc5f"
+    },
+    {
+      "path": "/subsystems/45/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_046_upstream_a_downstream_ball_seat_assembly.part_P_007_ball_member_cce495e4"
+    },
+    {
+      "path": "/subsystems/45/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_046_upstream_a_downstream_ball_seat_assembly.part_P_006_ball_seats_9eb864c0"
+    },
+    {
+      "path": "/subsystems/46",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11"
+    },
+    {
+      "path": "/subsystems/46/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11.part_P_007_ball_member_fca6a596"
+    },
+    {
+      "path": "/subsystems/46/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11.part_P_027_lower_trunnion_d7babafe"
+    },
+    {
+      "path": "/subsystems/46/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11.part_P_009_upper_trunnion_9c100053"
+    },
+    {
+      "path": "/subsystems/46/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11.part_P_074_lower_stem_end_9f655ec3"
+    },
+    {
+      "path": "/subsystems/46/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11.part_P_010_stem_337f4a62"
+    },
+    {
+      "path": "/subsystems/46/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11.part_P_003_soft_insert_seal_8dd55531"
+    },
+    {
+      "path": "/subsystems/46/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11.part_P_001_ball_seat_815a96f5"
+    },
+    {
+      "path": "/subsystems/46/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11.part_P_004_seat_retainer_79179180"
+    },
+    {
+      "path": "/subsystems/46/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11.part_P_005_compression_springs_2127ec2f"
+    },
+    {
+      "path": "/subsystems/46/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11.part_P_043_spring_locators_7530ac5d"
+    },
+    {
+      "path": "/subsystems/46/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11.part_P_075_ball_seat_21_9ffe6468"
+    },
+    {
+      "path": "/subsystems/46/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11.part_P_047_sealant_groove_29f5b3fa"
+    },
+    {
+      "path": "/subsystems/47",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_048_downstream_ball_seat_assembly_13"
+    },
+    {
+      "path": "/subsystems/47/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_048_downstream_ball_seat_assembly_13.part_P_003_soft_insert_seal_dd957ebd"
+    },
+    {
+      "path": "/subsystems/47/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_048_downstream_ball_seat_assembly_13.part_P_001_ball_seat_14c5b500"
+    },
+    {
+      "path": "/subsystems/47/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_048_downstream_ball_seat_assembly_13.part_P_075_ball_seat_21_840ecc8a"
+    },
+    {
+      "path": "/subsystems/47/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_048_downstream_ball_seat_assembly_13.part_P_004_seat_retainer_65c6cead"
+    },
+    {
+      "path": "/subsystems/47/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_048_downstream_ball_seat_assembly_13.part_P_005_compression_springs_5f0d1123"
+    },
+    {
+      "path": "/subsystems/47/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_048_downstream_ball_seat_assembly_13.part_P_047_sealant_groove_cdc15b3a"
+    },
+    {
+      "path": "/subsystems/48",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_049_main_valve_body_12"
+    },
+    {
+      "path": "/subsystems/48/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_049_main_valve_body_12.part_P_058_guide_screw_4ecbe20b"
+    },
+    {
+      "path": "/subsystems/48/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_049_main_valve_body_12.part_P_059_freely_rotating_bearing_631ceb4d"
+    },
+    {
+      "path": "/subsystems/49",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_050_guide_assembly_55"
+    },
+    {
+      "path": "/subsystems/49/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_050_guide_assembly_55.part_P_051_flange_3c95f678"
+    },
+    {
+      "path": "/subsystems/49/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_050_guide_assembly_55.part_P_078_flange_49_b72d0761"
+    },
+    {
+      "path": "/subsystems/50",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_051_rotary_ball_valve_10"
+    },
+    {
+      "path": "/subsystems/50/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_051_rotary_ball_valve_10.part_P_058_guide_screw_eafe11bd"
+    },
+    {
+      "path": "/subsystems/50/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_051_rotary_ball_valve_10.part_P_057_guide_assembly_879df624"
+    },
+    {
+      "path": "/subsystems/50/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_051_rotary_ball_valve_10.part_P_001_ball_seat_5306c8d3"
+    },
+    {
+      "path": "/subsystems/50/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_051_rotary_ball_valve_10.part_P_056_guide_assemblies_d1c8d8fa"
+    },
+    {
+      "path": "/subsystems/50/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_051_rotary_ball_valve_10.part_P_007_ball_member_17d40831"
+    },
+    {
+      "path": "/subsystems/51",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_052_guide_assemblies_55"
+    },
+    {
+      "path": "/subsystems/52",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_053_ball_seats_21"
+    },
+    {
+      "path": "/subsystems/53",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_054_internal_components"
+    },
+    {
+      "path": "/subsystems/53/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_054_internal_components.part_P_006_ball_seats_d2afbf97"
+    },
+    {
+      "path": "/subsystems/53/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_054_internal_components.part_P_079_ball_seats_21"
+    },
+    {
+      "path": "/subsystems/54",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_055_mounted_rotary_ball_valve"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_FL_001_flow"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_FL_002_upstream"
+    },
+    {
+      "path": "/values/0",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_001_guide_height"
+    },
+    {
+      "path": "/values/1",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_002_tangential_force"
+    },
+    {
+      "path": "/values/2",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_003_Ft"
+    },
+    {
+      "path": "/values/3",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_004_Fc"
+    },
+    {
+      "path": "/values/4",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_005_force"
+    },
+    {
+      "path": "/values/5",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_006_force_Ft"
+    },
+    {
+      "path": "/values/6",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_007_angle_of_groove"
+    },
+    {
+      "path": "/values/7",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_008"
+    },
+    {
+      "path": "/values/8",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_009_angular_span"
+    },
+    {
+      "path": "/values/9",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_010_axial_distance"
+    },
+    {
+      "path": "/values/10",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_011_mechanical_clearance"
+    },
+    {
+      "path": "/values/11",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_012_8"
+    },
+    {
+      "path": "/values/12",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_013_groove_depth"
+    },
+    {
+      "path": "/values/13",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_014_groove_width"
+    },
+    {
+      "path": "/values/14",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_015_cross_sectional_dimension"
+    },
+    {
+      "path": "/values/15",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_016_angle_of_groove"
+    },
+    {
+      "path": "/values/16",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_017_distance"
+    },
+    {
+      "path": "/values/17",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_018_50"
+    },
+    {
+      "path": "/values/18",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_019_relatively_low_value"
+    },
+    {
+      "path": "/values/19",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_020_low_value"
+    },
+    {
+      "path": "/values/20",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_021_depth"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_001"
+    },
+    {
+      "path": "/requirements/1",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_002"
+    },
+    {
+      "path": "/requirements/2",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_003"
+    },
+    {
+      "path": "/requirements/3",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_004"
+    },
+    {
+      "path": "/requirements/4",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_005"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_001_fluid_flow_management"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_002_fluid_flow_control"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_003_sealing_engagement"
+    },
+    {
+      "path": "/behaviour/actions/3",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_004_in_line_removal"
+    },
+    {
+      "path": "/behaviour/actions/4",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_005_ball_seat_retraction"
+    },
+    {
+      "path": "/behaviour/actions/5",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_006_retracting_movement"
+    },
+    {
+      "path": "/behaviour/actions/6",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_007_blocks_rotation"
+    },
+    {
+      "path": "/behaviour/actions/7",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_008_retract"
+    },
+    {
+      "path": "/behaviour/actions/8",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_009_retraction"
+    },
+    {
+      "path": "/behaviour/actions/9",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_010_safe_in_line_maintenance"
+    },
+    {
+      "path": "/behaviour/actions/10",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_011_in_line_maintenance"
+    },
+    {
+      "path": "/behaviour/actions/11",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_012_safe_inline_maintenance"
+    },
+    {
+      "path": "/behaviour/actions/12",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_013_inline_maintenance"
+    },
+    {
+      "path": "/behaviour/actions/13",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_014_engagement"
+    },
+    {
+      "path": "/behaviour/actions/14",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_015_rotating_bearing"
+    },
+    {
+      "path": "/behaviour/actions/15",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_016_normal_functioning"
+    },
+    {
+      "path": "/behaviour/actions/16",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_017_retracted"
+    },
+    {
+      "path": "/behaviour/actions/17",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_018_operational_use"
+    },
+    {
+      "path": "/behaviour/actions/18",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_019_in_line_maintain"
+    },
+    {
+      "path": "/behaviour/actions/19",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_020_on_line_maintenance"
+    },
+    {
+      "path": "/behaviour/actions/20",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_021_retracting_out"
+    },
+    {
+      "path": "/behaviour/actions/21",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_022_retracting_out_the_ball_seats"
+    },
+    {
+      "path": "/relationships/0",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[0]"
+    },
+    {
+      "path": "/relationships/0",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_001_ball_seat_682a0648"
+    },
+    {
+      "path": "/relationships/1",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[1]"
+    },
+    {
+      "path": "/relationships/1",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_003_soft_insert_seal_6bc95ddd"
+    },
+    {
+      "path": "/relationships/2",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[2]"
+    },
+    {
+      "path": "/relationships/2",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_004_seat_retainer_03f110bf"
+    },
+    {
+      "path": "/relationships/3",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[3]"
+    },
+    {
+      "path": "/relationships/3",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_005_compression_springs_47cc6f47"
+    },
+    {
+      "path": "/relationships/4",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[4]"
+    },
+    {
+      "path": "/relationships/4",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_006_ball_seats_95f4a222"
+    },
+    {
+      "path": "/relationships/5",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[5]"
+    },
+    {
+      "path": "/relationships/5",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_003_soft_insert_seal_ae9a2745"
+    },
+    {
+      "path": "/relationships/6",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[6]"
+    },
+    {
+      "path": "/relationships/6",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_001_ball_seat_db625620"
+    },
+    {
+      "path": "/relationships/7",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[7]"
+    },
+    {
+      "path": "/relationships/7",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_004_seat_retainer_2f5e9f8f"
+    },
+    {
+      "path": "/relationships/8",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[8]"
+    },
+    {
+      "path": "/relationships/8",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_005_compression_springs_b7fd7056"
+    },
+    {
+      "path": "/relationships/9",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[9]"
+    },
+    {
+      "path": "/relationships/9",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_006_ball_seats_d7e570ca"
+    },
+    {
+      "path": "/relationships/10",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[10]"
+    },
+    {
+      "path": "/relationships/10",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_016_valve_body.part_P_007_ball_member_7f5f8dd7"
+    },
+    {
+      "path": "/relationships/11",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[11]"
+    },
+    {
+      "path": "/relationships/11",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_016_valve_body.part_P_008_lower_end_trunnion"
+    },
+    {
+      "path": "/relationships/12",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[12]"
+    },
+    {
+      "path": "/relationships/12",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_016_valve_body.part_P_009_upper_trunnion_82c04369"
+    },
+    {
+      "path": "/relationships/13",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[13]"
+    },
+    {
+      "path": "/relationships/13",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_016_valve_body.part_P_006_ball_seats_e413faf5"
+    },
+    {
+      "path": "/relationships/14",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[14]"
+    },
+    {
+      "path": "/relationships/14",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_016_valve_body.part_P_013_Seat_retainer"
+    },
+    {
+      "path": "/relationships/15",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[15]"
+    },
+    {
+      "path": "/relationships/15",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_016_valve_body.part_P_014_cylindrical_recess"
+    },
+    {
+      "path": "/relationships/16",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[16]"
+    },
+    {
+      "path": "/relationships/16",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_021_assembly.part_P_013_Seat_retainer_9241777d"
+    },
+    {
+      "path": "/relationships/17",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[17]"
+    },
+    {
+      "path": "/relationships/17",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_021_assembly.part_P_014_cylindrical_recess_0d6f3e0f"
+    },
+    {
+      "path": "/relationships/18",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[18]"
+    },
+    {
+      "path": "/relationships/18",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_valve.part_P_016_ball"
+    },
+    {
+      "path": "/relationships/19",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[19]"
+    },
+    {
+      "path": "/relationships/19",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_valve.part_P_001_ball_seat_19a1b9a9"
+    },
+    {
+      "path": "/relationships/20",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[20]"
+    },
+    {
+      "path": "/relationships/20",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_valve.part_P_017_ball_ball_seat_spacer"
+    },
+    {
+      "path": "/relationships/21",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[21]"
+    },
+    {
+      "path": "/relationships/21",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_valve.part_P_006_ball_seats_43d3ffc1"
+    },
+    {
+      "path": "/relationships/22",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[22]"
+    },
+    {
+      "path": "/relationships/22",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_valve.part_P_019_cover_plate"
+    },
+    {
+      "path": "/relationships/23",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[23]"
+    },
+    {
+      "path": "/relationships/23",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_023_ball_valves.part_P_016_ball_252673bc"
+    },
+    {
+      "path": "/relationships/24",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[24]"
+    },
+    {
+      "path": "/relationships/24",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_023_ball_valves.part_P_001_ball_seat_bb0da66d"
+    },
+    {
+      "path": "/relationships/25",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[25]"
+    },
+    {
+      "path": "/relationships/25",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_023_ball_valves.part_P_006_ball_seats_33438cb2"
+    },
+    {
+      "path": "/relationships/26",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[26]"
+    },
+    {
+      "path": "/relationships/26",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_housing.part_P_023_pins_82e6f28b"
+    },
+    {
+      "path": "/relationships/27",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[27]"
+    },
+    {
+      "path": "/relationships/27",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_housing.part_P_022_pin_718c9d86"
+    },
+    {
+      "path": "/relationships/28",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[28]"
+    },
+    {
+      "path": "/relationships/28",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_housing.part_P_024_indexing_holes"
+    },
+    {
+      "path": "/relationships/29",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[29]"
+    },
+    {
+      "path": "/relationships/29",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_housing.part_P_001_ball_seat_4bfcca27"
+    },
+    {
+      "path": "/relationships/30",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[30]"
+    },
+    {
+      "path": "/relationships/30",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_housing.part_P_025_bearing_seat"
+    },
+    {
+      "path": "/relationships/31",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[31]"
+    },
+    {
+      "path": "/relationships/31",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_housing.part_P_028_cam_pins"
+    },
+    {
+      "path": "/relationships/32",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[32]"
+    },
+    {
+      "path": "/relationships/32",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_housing.part_P_007_ball_member_212e035e"
+    },
+    {
+      "path": "/relationships/33",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[33]"
+    },
+    {
+      "path": "/relationships/33",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_housing.part_P_032_ball_seat_flange_4350417e"
+    },
+    {
+      "path": "/relationships/34",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[34]"
+    },
+    {
+      "path": "/relationships/34",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_024_Valve_assembly_and_disassembly_device.part_P_023_pins"
+    },
+    {
+      "path": "/relationships/35",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[35]"
+    },
+    {
+      "path": "/relationships/35",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_024_Valve_assembly_and_disassembly_device.part_P_022_pin"
+    },
+    {
+      "path": "/relationships/36",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[36]"
+    },
+    {
+      "path": "/relationships/36",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_Top_entry_trunnion_ball_valve.part_P_023_pins_770071d2"
+    },
+    {
+      "path": "/relationships/37",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[37]"
+    },
+    {
+      "path": "/relationships/37",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_valve.part_P_031_Camming_surfaces"
+    },
+    {
+      "path": "/relationships/38",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[38]"
+    },
+    {
+      "path": "/relationships/38",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_valve.part_P_032_ball_seat_flange"
+    },
+    {
+      "path": "/relationships/39",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[39]"
+    },
+    {
+      "path": "/relationships/39",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_valve.part_P_033_plate"
+    },
+    {
+      "path": "/relationships/40",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[40]"
+    },
+    {
+      "path": "/relationships/40",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_valve.part_P_034_cam_plates"
+    },
+    {
+      "path": "/relationships/41",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[41]"
+    },
+    {
+      "path": "/relationships/41",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_valve.part_P_037_slide_rings_ef11d52a"
+    },
+    {
+      "path": "/relationships/42",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[42]"
+    },
+    {
+      "path": "/relationships/42",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_022_valve.part_P_029_cams"
+    },
+    {
+      "path": "/relationships/43",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[43]"
+    },
+    {
+      "path": "/relationships/43",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_trunnion_mounted_ball_valve.part_P_006_ball_seats_88290e38"
+    },
+    {
+      "path": "/relationships/44",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[44]"
+    },
+    {
+      "path": "/relationships/44",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_trunnion_mounted_ball_valve.part_P_034_cam_plates_f5058fc3"
+    },
+    {
+      "path": "/relationships/45",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[45]"
+    },
+    {
+      "path": "/relationships/45",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_trunnion_mounted_ball_valve.part_P_037_slide_rings_ffb8b2b6"
+    },
+    {
+      "path": "/relationships/46",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[46]"
+    },
+    {
+      "path": "/relationships/46",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_016_valve_body.part_P_037_slide_rings"
+    },
+    {
+      "path": "/relationships/47",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[47]"
+    },
+    {
+      "path": "/relationships/47",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_034_ball_valve.part_P_006_ball_seats_d5f9178b"
+    },
+    {
+      "path": "/relationships/48",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[48]"
+    },
+    {
+      "path": "/relationships/48",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_034_ball_valve.part_P_037_slide_rings_59a8c203"
+    },
+    {
+      "path": "/relationships/49",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[49]"
+    },
+    {
+      "path": "/relationships/49",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_034_ball_valve.part_P_029_cams_ed5bbda7"
+    },
+    {
+      "path": "/relationships/50",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[50]"
+    },
+    {
+      "path": "/relationships/50",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_top_entry_trunnion_ball_valve.part_P_007_ball_member_4a6b8cdc"
+    },
+    {
+      "path": "/relationships/51",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[51]"
+    },
+    {
+      "path": "/relationships/51",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_035_top_entry_trunnion_ball_valve.part_P_006_ball_seats_a3373a84"
+    },
+    {
+      "path": "/relationships/52",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[52]"
+    },
+    {
+      "path": "/relationships/52",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_007_ball_member_59724d4e"
+    },
+    {
+      "path": "/relationships/53",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[53]"
+    },
+    {
+      "path": "/relationships/53",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_006_ball_seats_fca32d87"
+    },
+    {
+      "path": "/relationships/54",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[54]"
+    },
+    {
+      "path": "/relationships/54",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_001_ball_seat_9681523b"
+    },
+    {
+      "path": "/relationships/55",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[55]"
+    },
+    {
+      "path": "/relationships/55",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_027_lower_trunnion_00489ff6"
+    },
+    {
+      "path": "/relationships/56",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[56]"
+    },
+    {
+      "path": "/relationships/56",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_009_upper_trunnion_8d4cd808"
+    },
+    {
+      "path": "/relationships/57",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[57]"
+    },
+    {
+      "path": "/relationships/57",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_010_stem_db263e93"
+    },
+    {
+      "path": "/relationships/58",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[58]"
+    },
+    {
+      "path": "/relationships/58",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_003_soft_insert_seal_12644bd3"
+    },
+    {
+      "path": "/relationships/59",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[59]"
+    },
+    {
+      "path": "/relationships/59",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_004_seat_retainer_9bafc976"
+    },
+    {
+      "path": "/relationships/60",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[60]"
+    },
+    {
+      "path": "/relationships/60",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_005_compression_springs_8a8bcbe8"
+    },
+    {
+      "path": "/relationships/61",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[61]"
+    },
+    {
+      "path": "/relationships/61",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_043_spring_locators_474a3b92"
+    },
+    {
+      "path": "/relationships/62",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[62]"
+    },
+    {
+      "path": "/relationships/62",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_044_O_rings_4eec9ad6"
+    },
+    {
+      "path": "/relationships/63",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[63]"
+    },
+    {
+      "path": "/relationships/63",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_045_spring_covers_19650475"
+    },
+    {
+      "path": "/relationships/64",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[64]"
+    },
+    {
+      "path": "/relationships/64",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_046_seal_grooves_f514eae9"
+    },
+    {
+      "path": "/relationships/65",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[65]"
+    },
+    {
+      "path": "/relationships/65",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_047_sealant_groove_24dfdad5"
+    },
+    {
+      "path": "/relationships/66",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[66]"
+    },
+    {
+      "path": "/relationships/66",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_048_tubular_cavity_686804c6"
+    },
+    {
+      "path": "/relationships/67",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[67]"
+    },
+    {
+      "path": "/relationships/67",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_001_ball_seat_8858e1d9"
+    },
+    {
+      "path": "/relationships/68",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[68]"
+    },
+    {
+      "path": "/relationships/68",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_007_ball_member_74152426"
+    },
+    {
+      "path": "/relationships/69",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[69]"
+    },
+    {
+      "path": "/relationships/69",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_027_lower_trunnion_594eae68"
+    },
+    {
+      "path": "/relationships/70",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[70]"
+    },
+    {
+      "path": "/relationships/70",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_009_upper_trunnion_9b055c1a"
+    },
+    {
+      "path": "/relationships/71",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[71]"
+    },
+    {
+      "path": "/relationships/71",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_010_stem_54fbecde"
+    },
+    {
+      "path": "/relationships/72",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[72]"
+    },
+    {
+      "path": "/relationships/72",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_003_soft_insert_seal_cc36f9ee"
+    },
+    {
+      "path": "/relationships/73",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[73]"
+    },
+    {
+      "path": "/relationships/73",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_004_seat_retainer_51e5b4f8"
+    },
+    {
+      "path": "/relationships/74",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[74]"
+    },
+    {
+      "path": "/relationships/74",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_005_compression_springs_34c4d2fe"
+    },
+    {
+      "path": "/relationships/75",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[75]"
+    },
+    {
+      "path": "/relationships/75",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_043_spring_locators_537da97e"
+    },
+    {
+      "path": "/relationships/76",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[76]"
+    },
+    {
+      "path": "/relationships/76",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_044_O_rings_57dc5ce9"
+    },
+    {
+      "path": "/relationships/77",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[77]"
+    },
+    {
+      "path": "/relationships/77",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_045_spring_covers_9ce4686f"
+    },
+    {
+      "path": "/relationships/78",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[78]"
+    },
+    {
+      "path": "/relationships/78",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_006_ball_seats_82aa2fe2"
+    },
+    {
+      "path": "/relationships/79",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[79]"
+    },
+    {
+      "path": "/relationships/79",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_046_seal_grooves_ce3b8763"
+    },
+    {
+      "path": "/relationships/80",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[80]"
+    },
+    {
+      "path": "/relationships/80",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_047_sealant_groove_a7a8fa45"
+    },
+    {
+      "path": "/relationships/81",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[81]"
+    },
+    {
+      "path": "/relationships/81",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_048_tubular_cavity_890653fb"
+    },
+    {
+      "path": "/relationships/82",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[82]"
+    },
+    {
+      "path": "/relationships/82",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_001_ball_seat_cfd66d79"
+    },
+    {
+      "path": "/relationships/83",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[83]"
+    },
+    {
+      "path": "/relationships/83",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_007_ball_member_8f5271fb"
+    },
+    {
+      "path": "/relationships/84",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[84]"
+    },
+    {
+      "path": "/relationships/84",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_009_upper_trunnion_7ed6b5d4"
+    },
+    {
+      "path": "/relationships/85",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[85]"
+    },
+    {
+      "path": "/relationships/85",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_010_stem_b2afe934"
+    },
+    {
+      "path": "/relationships/86",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[86]"
+    },
+    {
+      "path": "/relationships/86",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_003_soft_insert_seal_878ba110"
+    },
+    {
+      "path": "/relationships/87",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[87]"
+    },
+    {
+      "path": "/relationships/87",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_004_seat_retainer_cea3dc98"
+    },
+    {
+      "path": "/relationships/88",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[88]"
+    },
+    {
+      "path": "/relationships/88",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_005_compression_springs_d49a4a41"
+    },
+    {
+      "path": "/relationships/89",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[89]"
+    },
+    {
+      "path": "/relationships/89",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_043_spring_locators_b5c15690"
+    },
+    {
+      "path": "/relationships/90",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[90]"
+    },
+    {
+      "path": "/relationships/90",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_044_O_rings_3ee27c6f"
+    },
+    {
+      "path": "/relationships/91",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[91]"
+    },
+    {
+      "path": "/relationships/91",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_045_spring_covers_8510c32e"
+    },
+    {
+      "path": "/relationships/92",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[92]"
+    },
+    {
+      "path": "/relationships/92",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_006_ball_seats_631a1140"
+    },
+    {
+      "path": "/relationships/93",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[93]"
+    },
+    {
+      "path": "/relationships/93",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_046_seal_grooves_95992750"
+    },
+    {
+      "path": "/relationships/94",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[94]"
+    },
+    {
+      "path": "/relationships/94",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_047_sealant_groove_51d1d375"
+    },
+    {
+      "path": "/relationships/95",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[95]"
+    },
+    {
+      "path": "/relationships/95",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_downstream_ball_seat_assemblies.part_P_048_tubular_cavity_ffd3a804"
+    },
+    {
+      "path": "/relationships/96",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[96]"
+    },
+    {
+      "path": "/relationships/96",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_007_ball_member_3bf7b473"
+    },
+    {
+      "path": "/relationships/97",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[97]"
+    },
+    {
+      "path": "/relationships/97",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_027_lower_trunnion"
+    },
+    {
+      "path": "/relationships/98",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[98]"
+    },
+    {
+      "path": "/relationships/98",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_009_upper_trunnion"
+    },
+    {
+      "path": "/relationships/99",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[99]"
+    },
+    {
+      "path": "/relationships/99",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_010_stem"
+    },
+    {
+      "path": "/relationships/100",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[100]"
+    },
+    {
+      "path": "/relationships/100",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_043_spring_locators"
+    },
+    {
+      "path": "/relationships/101",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[101]"
+    },
+    {
+      "path": "/relationships/101",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_044_O_rings"
+    },
+    {
+      "path": "/relationships/102",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[102]"
+    },
+    {
+      "path": "/relationships/102",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_045_spring_covers"
+    },
+    {
+      "path": "/relationships/103",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[103]"
+    },
+    {
+      "path": "/relationships/103",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_046_seal_grooves_4bfc1642"
+    },
+    {
+      "path": "/relationships/104",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[104]"
+    },
+    {
+      "path": "/relationships/104",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_047_sealant_groove_b6eb448d"
+    },
+    {
+      "path": "/relationships/105",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[105]"
+    },
+    {
+      "path": "/relationships/105",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_ball_seat_assemblies.part_P_048_tubular_cavity_d1942cdf"
+    },
+    {
+      "path": "/relationships/106",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[106]"
+    },
+    {
+      "path": "/relationships/106",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_004_ball_seat.part_P_046_seal_grooves"
+    },
+    {
+      "path": "/relationships/107",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[107]"
+    },
+    {
+      "path": "/relationships/107",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_004_ball_seat.part_P_003_soft_insert_seal_97ffd0e3"
+    },
+    {
+      "path": "/relationships/108",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[108]"
+    },
+    {
+      "path": "/relationships/108",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_004_ball_seat.part_P_049_ball_end"
+    },
+    {
+      "path": "/relationships/109",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[109]"
+    },
+    {
+      "path": "/relationships/109",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_046_seal_grooves_b42c9e27"
+    },
+    {
+      "path": "/relationships/110",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[110]"
+    },
+    {
+      "path": "/relationships/110",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_047_sealant_groove_2ae63231"
+    },
+    {
+      "path": "/relationships/111",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[111]"
+    },
+    {
+      "path": "/relationships/111",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_048_tubular_cavity_00a6ecd7"
+    },
+    {
+      "path": "/relationships/112",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[112]"
+    },
+    {
+      "path": "/relationships/112",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_003_soft_insert_seal_869ebd0b"
+    },
+    {
+      "path": "/relationships/113",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[113]"
+    },
+    {
+      "path": "/relationships/113",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_049_ball_end_cc7a091c"
+    },
+    {
+      "path": "/relationships/114",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[114]"
+    },
+    {
+      "path": "/relationships/114",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_007_ball_member_fadd3eb5"
+    },
+    {
+      "path": "/relationships/115",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[115]"
+    },
+    {
+      "path": "/relationships/115",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_050_guiding_groove_fba87240"
+    },
+    {
+      "path": "/relationships/116",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[116]"
+    },
+    {
+      "path": "/relationships/116",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_051_flange_ff916333"
+    },
+    {
+      "path": "/relationships/117",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[117]"
+    },
+    {
+      "path": "/relationships/117",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_049_ball_end_12324bad"
+    },
+    {
+      "path": "/relationships/118",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[118]"
+    },
+    {
+      "path": "/relationships/118",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_046_seal_grooves_ca2df9b6"
+    },
+    {
+      "path": "/relationships/119",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[119]"
+    },
+    {
+      "path": "/relationships/119",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_048_tubular_cavity"
+    },
+    {
+      "path": "/relationships/120",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[120]"
+    },
+    {
+      "path": "/relationships/120",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_049_ball_end_448f6dc2"
+    },
+    {
+      "path": "/relationships/121",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[121]"
+    },
+    {
+      "path": "/relationships/121",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_050_guiding_groove"
+    },
+    {
+      "path": "/relationships/122",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[122]"
+    },
+    {
+      "path": "/relationships/122",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_051_flange_4a02cfea"
+    },
+    {
+      "path": "/relationships/123",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[123]"
+    },
+    {
+      "path": "/relationships/123",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_ball_seats.part_P_050_guiding_groove_046b9475"
+    },
+    {
+      "path": "/relationships/124",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[124]"
+    },
+    {
+      "path": "/relationships/124",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_ball_seats.part_P_051_flange_c24d8549"
+    },
+    {
+      "path": "/relationships/125",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[125]"
+    },
+    {
+      "path": "/relationships/125",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_054_inner_wall"
+    },
+    {
+      "path": "/relationships/126",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[126]"
+    },
+    {
+      "path": "/relationships/126",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_042_stepped_upstream_recess"
+    },
+    {
+      "path": "/relationships/127",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[127]"
+    },
+    {
+      "path": "/relationships/127",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_055_stepped_downstream_recess"
+    },
+    {
+      "path": "/relationships/128",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[128]"
+    },
+    {
+      "path": "/relationships/128",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_058_guide_screw"
+    },
+    {
+      "path": "/relationships/129",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[129]"
+    },
+    {
+      "path": "/relationships/129",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_059_freely_rotating_bearing"
+    },
+    {
+      "path": "/relationships/130",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[130]"
+    },
+    {
+      "path": "/relationships/130",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_043_guide_assemblies.part_P_058_guide_screw_fe3ab2a4"
+    },
+    {
+      "path": "/relationships/131",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[131]"
+    },
+    {
+      "path": "/relationships/131",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_057_guide_assembly_f14fab93"
+    },
+    {
+      "path": "/relationships/132",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[132]"
+    },
+    {
+      "path": "/relationships/132",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_001_ball_seat_9face250"
+    },
+    {
+      "path": "/relationships/133",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[133]"
+    },
+    {
+      "path": "/relationships/133",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_ball_member.part_P_001_ball_seat_8ab293f7"
+    },
+    {
+      "path": "/relationships/134",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[134]"
+    },
+    {
+      "path": "/relationships/134",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_ball_member.part_P_051_flange_f8d64b14"
+    },
+    {
+      "path": "/relationships/135",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[135]"
+    },
+    {
+      "path": "/relationships/135",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_ball_member.part_P_006_ball_seats_2ade33ee"
+    },
+    {
+      "path": "/relationships/136",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[136]"
+    },
+    {
+      "path": "/relationships/136",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_ball_member.part_P_050_guiding_groove_c2fcaad4"
+    },
+    {
+      "path": "/relationships/137",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[137]"
+    },
+    {
+      "path": "/relationships/138",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[138]"
+    },
+    {
+      "path": "/relationships/138",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_065_head_91b702d5"
+    },
+    {
+      "path": "/relationships/139",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[139]"
+    },
+    {
+      "path": "/relationships/139",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_066_head_of_the_guide_assembly"
+    },
+    {
+      "path": "/relationships/140",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[140]"
+    },
+    {
+      "path": "/relationships/140",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_063_straight_rod"
+    },
+    {
+      "path": "/relationships/141",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[141]"
+    },
+    {
+      "path": "/relationships/141",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_046_upstream_a_downstream_ball_seat_assembly.part_P_001_ball_seat_e3bafc5f"
+    },
+    {
+      "path": "/relationships/142",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[142]"
+    },
+    {
+      "path": "/relationships/142",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_046_upstream_a_downstream_ball_seat_assembly.part_P_007_ball_member_cce495e4"
+    },
+    {
+      "path": "/relationships/143",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[143]"
+    },
+    {
+      "path": "/relationships/143",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_046_upstream_a_downstream_ball_seat_assembly.part_P_006_ball_seats_9eb864c0"
+    },
+    {
+      "path": "/relationships/144",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[144]"
+    },
+    {
+      "path": "/relationships/144",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_007_ball_member_2e84d643"
+    },
+    {
+      "path": "/relationships/145",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[145]"
+    },
+    {
+      "path": "/relationships/145",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_044_valve_main_body.part_P_001_ball_seat_13b0a34c"
+    },
+    {
+      "path": "/relationships/146",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[146]"
+    },
+    {
+      "path": "/relationships/146",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_001_ball_seat_32d28d0f"
+    },
+    {
+      "path": "/relationships/147",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[147]"
+    },
+    {
+      "path": "/relationships/147",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_007_ball_member_d6257b7b"
+    },
+    {
+      "path": "/relationships/148",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[148]"
+    },
+    {
+      "path": "/relationships/148",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_069_seat_balls_3b72bc02"
+    },
+    {
+      "path": "/relationships/149",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[149]"
+    },
+    {
+      "path": "/relationships/149",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_trunnion_mounted_rotary_ball_valve.part_P_001_ball_seat_6426918d"
+    },
+    {
+      "path": "/relationships/150",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[150]"
+    },
+    {
+      "path": "/relationships/150",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_trunnion_mounted_rotary_ball_valve.part_P_007_ball_member_f6a4e022"
+    },
+    {
+      "path": "/relationships/151",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[151]"
+    },
+    {
+      "path": "/relationships/151",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_trunnion_mounted_rotary_ball_valve.part_P_069_seat_balls"
+    },
+    {
+      "path": "/relationships/152",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[152]"
+    },
+    {
+      "path": "/relationships/152",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_074_lower_stem_end"
+    },
+    {
+      "path": "/relationships/153",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[153]"
+    },
+    {
+      "path": "/relationships/153",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11.part_P_007_ball_member_fca6a596"
+    },
+    {
+      "path": "/relationships/154",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[154]"
+    },
+    {
+      "path": "/relationships/154",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11.part_P_027_lower_trunnion_d7babafe"
+    },
+    {
+      "path": "/relationships/155",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[155]"
+    },
+    {
+      "path": "/relationships/155",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11.part_P_009_upper_trunnion_9c100053"
+    },
+    {
+      "path": "/relationships/156",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[156]"
+    },
+    {
+      "path": "/relationships/156",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11.part_P_074_lower_stem_end_9f655ec3"
+    },
+    {
+      "path": "/relationships/157",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[157]"
+    },
+    {
+      "path": "/relationships/157",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11.part_P_010_stem_337f4a62"
+    },
+    {
+      "path": "/relationships/158",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[158]"
+    },
+    {
+      "path": "/relationships/158",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11.part_P_003_soft_insert_seal_8dd55531"
+    },
+    {
+      "path": "/relationships/159",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[159]"
+    },
+    {
+      "path": "/relationships/159",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11.part_P_001_ball_seat_815a96f5"
+    },
+    {
+      "path": "/relationships/160",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[160]"
+    },
+    {
+      "path": "/relationships/160",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11.part_P_004_seat_retainer_79179180"
+    },
+    {
+      "path": "/relationships/161",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[161]"
+    },
+    {
+      "path": "/relationships/161",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11.part_P_005_compression_springs_2127ec2f"
+    },
+    {
+      "path": "/relationships/162",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[162]"
+    },
+    {
+      "path": "/relationships/162",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11.part_P_043_spring_locators_7530ac5d"
+    },
+    {
+      "path": "/relationships/163",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[163]"
+    },
+    {
+      "path": "/relationships/163",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_016_valve_body.part_P_004_seat_retainer_c25665b7"
+    },
+    {
+      "path": "/relationships/164",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[164]"
+    },
+    {
+      "path": "/relationships/164",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_075_ball_seat_21_ca49b7f2"
+    },
+    {
+      "path": "/relationships/165",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[165]"
+    },
+    {
+      "path": "/relationships/165",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11.part_P_075_ball_seat_21_9ffe6468"
+    },
+    {
+      "path": "/relationships/166",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[166]"
+    },
+    {
+      "path": "/relationships/166",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_047_upstream_ball_seat_assembly_11.part_P_047_sealant_groove_29f5b3fa"
+    },
+    {
+      "path": "/relationships/167",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[167]"
+    },
+    {
+      "path": "/relationships/167",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_075_ball_seat_21_b8450fce"
+    },
+    {
+      "path": "/relationships/168",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[168]"
+    },
+    {
+      "path": "/relationships/168",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_ball_seat_assembly.part_P_047_sealant_groove_3c686500"
+    },
+    {
+      "path": "/relationships/169",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[169]"
+    },
+    {
+      "path": "/relationships/169",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_downstream_ball_seat_assembly.part_P_003_soft_insert_seal"
+    },
+    {
+      "path": "/relationships/170",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[170]"
+    },
+    {
+      "path": "/relationships/170",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_downstream_ball_seat_assembly.part_P_001_ball_seat_b3f45e31"
+    },
+    {
+      "path": "/relationships/171",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[171]"
+    },
+    {
+      "path": "/relationships/171",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_downstream_ball_seat_assembly.part_P_075_ball_seat_21"
+    },
+    {
+      "path": "/relationships/172",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[172]"
+    },
+    {
+      "path": "/relationships/172",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_downstream_ball_seat_assembly.part_P_004_seat_retainer"
+    },
+    {
+      "path": "/relationships/173",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[173]"
+    },
+    {
+      "path": "/relationships/173",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_downstream_ball_seat_assembly.part_P_005_compression_springs"
+    },
+    {
+      "path": "/relationships/174",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[174]"
+    },
+    {
+      "path": "/relationships/174",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_downstream_ball_seat_assembly.part_P_047_sealant_groove"
+    },
+    {
+      "path": "/relationships/175",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[175]"
+    },
+    {
+      "path": "/relationships/175",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_048_downstream_ball_seat_assembly_13.part_P_003_soft_insert_seal_dd957ebd"
+    },
+    {
+      "path": "/relationships/176",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[176]"
+    },
+    {
+      "path": "/relationships/176",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_048_downstream_ball_seat_assembly_13.part_P_001_ball_seat_14c5b500"
+    },
+    {
+      "path": "/relationships/177",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[177]"
+    },
+    {
+      "path": "/relationships/177",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_048_downstream_ball_seat_assembly_13.part_P_075_ball_seat_21_840ecc8a"
+    },
+    {
+      "path": "/relationships/178",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[178]"
+    },
+    {
+      "path": "/relationships/178",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_048_downstream_ball_seat_assembly_13.part_P_004_seat_retainer_65c6cead"
+    },
+    {
+      "path": "/relationships/179",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[179]"
+    },
+    {
+      "path": "/relationships/179",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_048_downstream_ball_seat_assembly_13.part_P_005_compression_springs_5f0d1123"
+    },
+    {
+      "path": "/relationships/180",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[180]"
+    },
+    {
+      "path": "/relationships/180",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_048_downstream_ball_seat_assembly_13.part_P_047_sealant_groove_cdc15b3a"
+    },
+    {
+      "path": "/relationships/181",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[181]"
+    },
+    {
+      "path": "/relationships/181",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_067_valve_top_cover_61abdd22"
+    },
+    {
+      "path": "/relationships/182",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[182]"
+    },
+    {
+      "path": "/relationships/182",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_006_ball_seats_a147acf7"
+    },
+    {
+      "path": "/relationships/183",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[183]"
+    },
+    {
+      "path": "/relationships/183",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_076_cylindrical_surface"
+    },
+    {
+      "path": "/relationships/184",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[184]"
+    },
+    {
+      "path": "/relationships/184",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_052_engaging_holes"
+    },
+    {
+      "path": "/relationships/185",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[185]"
+    },
+    {
+      "path": "/relationships/185",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_058_guide_screw_5f0b94d0"
+    },
+    {
+      "path": "/relationships/186",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[186]"
+    },
+    {
+      "path": "/relationships/186",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_059_freely_rotating_bearing_7f23efa7"
+    },
+    {
+      "path": "/relationships/187",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[187]"
+    },
+    {
+      "path": "/relationships/187",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_049_main_valve_body_12.part_P_058_guide_screw_4ecbe20b"
+    },
+    {
+      "path": "/relationships/188",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[188]"
+    },
+    {
+      "path": "/relationships/188",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_049_main_valve_body_12.part_P_059_freely_rotating_bearing_631ceb4d"
+    },
+    {
+      "path": "/relationships/189",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[189]"
+    },
+    {
+      "path": "/relationships/189",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_058_guide_screw_b7869deb"
+    },
+    {
+      "path": "/relationships/190",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[190]"
+    },
+    {
+      "path": "/relationships/190",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_059_freely_rotating_bearing_a8b6daf7"
+    },
+    {
+      "path": "/relationships/191",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[191]"
+    },
+    {
+      "path": "/relationships/191",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_056_guide_assemblies"
+    },
+    {
+      "path": "/relationships/192",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[192]"
+    },
+    {
+      "path": "/relationships/192",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_051_rotary_ball_valve_10.part_P_058_guide_screw_eafe11bd"
+    },
+    {
+      "path": "/relationships/193",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[193]"
+    },
+    {
+      "path": "/relationships/193",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_051_rotary_ball_valve_10.part_P_057_guide_assembly_879df624"
+    },
+    {
+      "path": "/relationships/194",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[194]"
+    },
+    {
+      "path": "/relationships/194",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_051_rotary_ball_valve_10.part_P_001_ball_seat_5306c8d3"
+    },
+    {
+      "path": "/relationships/195",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[195]"
+    },
+    {
+      "path": "/relationships/195",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_051_rotary_ball_valve_10.part_P_056_guide_assemblies_d1c8d8fa"
+    },
+    {
+      "path": "/relationships/196",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[196]"
+    },
+    {
+      "path": "/relationships/196",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_051_rotary_ball_valve_10.part_P_007_ball_member_17d40831"
+    },
+    {
+      "path": "/relationships/197",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[197]"
+    },
+    {
+      "path": "/relationships/197",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_051_flange_a0455da1"
+    },
+    {
+      "path": "/relationships/198",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[198]"
+    },
+    {
+      "path": "/relationships/198",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_078_flange_49"
+    },
+    {
+      "path": "/relationships/199",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[199]"
+    },
+    {
+      "path": "/relationships/199",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_050_guide_assembly_55.part_P_051_flange_3c95f678"
+    },
+    {
+      "path": "/relationships/200",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[200]"
+    },
+    {
+      "path": "/relationships/200",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_050_guide_assembly_55.part_P_078_flange_49_b72d0761"
+    },
+    {
+      "path": "/relationships/201",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[201]"
+    },
+    {
+      "path": "/relationships/201",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_006_ball_seats_801b3e79"
+    },
+    {
+      "path": "/relationships/202",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[202]"
+    },
+    {
+      "path": "/relationships/202",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_050_guiding_groove_ec8949be"
+    },
+    {
+      "path": "/relationships/203",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[203]"
+    },
+    {
+      "path": "/relationships/203",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_003_soft_insert_seal_79e55227"
+    },
+    {
+      "path": "/relationships/204",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[204]"
+    },
+    {
+      "path": "/relationships/204",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_081_sealing_surface_6b2ddce1"
+    },
+    {
+      "path": "/relationships/205",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[205]"
+    },
+    {
+      "path": "/relationships/205",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_082_recess_b2e09c38"
+    },
+    {
+      "path": "/relationships/206",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[206]"
+    },
+    {
+      "path": "/relationships/206",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_ball_member.part_P_003_soft_insert_seal_5a073c2d"
+    },
+    {
+      "path": "/relationships/207",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[207]"
+    },
+    {
+      "path": "/relationships/207",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_ball_member.part_P_081_sealing_surface"
+    },
+    {
+      "path": "/relationships/208",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[208]"
+    },
+    {
+      "path": "/relationships/208",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_ball_member.part_P_082_recess"
+    },
+    {
+      "path": "/relationships/209",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[209]"
+    },
+    {
+      "path": "/relationships/209",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_054_internal_components.part_P_006_ball_seats_d2afbf97"
+    },
+    {
+      "path": "/relationships/210",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[210]"
+    },
+    {
+      "path": "/relationships/210",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_054_internal_components.part_P_079_ball_seats_21"
+    },
+    {
+      "path": "/relationships/211",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[211]"
+    },
+    {
+      "path": "/relationships/211",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_004_seat_retainer_0c36d4a2"
+    },
+    {
+      "path": "/relationships/212",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[212]"
+    },
+    {
+      "path": "/relationships/212",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_rotary_ball_valve.part_P_005_compression_springs_59e18827"
+    },
+    {
+      "path": "/relationships/213",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[213]"
+    },
+    {
+      "path": "/relationships/213",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_067_valve_top_cover"
+    },
+    {
+      "path": "/relationships/214",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[214]"
+    },
+    {
+      "path": "/relationships/214",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_006_ball_seats"
+    },
+    {
+      "path": "/relationships/215",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[215]"
+    },
+    {
+      "path": "/relationships/215",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_038_upstream_ball_seat_assembly.part_P_057_guide_assembly_3b124351"
+    },
+    {
+      "path": "/relationships/216",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[216]"
+    },
+    {
+      "path": "/relationships/216",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_downstream_ball_seat_assembly.part_P_057_guide_assembly"
+    },
+    {
+      "path": "/relationships/217",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[217]"
+    },
+    {
+      "path": "/relationships/217",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_007_ball_member"
+    },
+    {
+      "path": "/relationships/218",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[218]"
+    },
+    {
+      "path": "/relationships/218",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_001_ball_seat"
+    },
+    {
+      "path": "/relationships/219",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[219]"
+    },
+    {
+      "path": "/relationships/219",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_051_flange"
+    },
+    {
+      "path": "/relationships/220",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[220]"
+    },
+    {
+      "path": "/relationships/220",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_043_guide_assemblies.part_P_059_freely_rotating_bearing_4d42bba3"
+    },
+    {
+      "path": "/relationships/221",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[221]"
+    },
+    {
+      "path": "/relationships/222",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[222]"
+    },
+    {
+      "path": "/relationships/222",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_041_guide_assembly.part_P_065_head_7a47095e"
+    },
+    {
+      "path": "/relationships/223",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[223]"
+    },
+    {
+      "path": "/relationships/223",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_main_valve_body.part_P_065_head"
+    },
+    {
+      "path": "/relationships/224",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[224]"
+    },
+    {
+      "path": "/relationships/224",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_top_entry_trunnion_mounted_rotary_ball_valve.part_P_085_circular_rod"
+    },
+    {
+      "path": "/relationships/225",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[225]"
+    },
+    {
+      "path": "/relationships/226",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[226]"
+    },
+    {
+      "path": "/relationships/227",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[227]"
+    },
+    {
+      "path": "/relationships/228",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[228]"
+    },
+    {
+      "path": "/relationships/229",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[229]"
+    },
+    {
+      "path": "/relationships/230",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[230]"
+    },
+    {
+      "path": "/relationships/231",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[231]"
+    },
+    {
+      "path": "/relationships/232",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[232]"
+    },
+    {
+      "path": "/relationships/233",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[233]"
+    },
+    {
+      "path": "/relationships/234",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[234]"
+    },
+    {
+      "path": "/relationships/235",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[235]"
+    },
+    {
+      "path": "/relationships/236",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[236]"
+    },
+    {
+      "path": "/relationships/237",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[237]"
+    },
+    {
+      "path": "/relationships/238",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[238]"
+    },
+    {
+      "path": "/relationships/239",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[239]"
+    },
+    {
+      "path": "/relationships/240",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[240]"
+    },
+    {
+      "path": "/relationships/241",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[241]"
+    },
+    {
+      "path": "/relationships/242",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[242]"
+    },
+    {
+      "path": "/relationships/243",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[243]"
+    },
+    {
+      "path": "/relationships/244",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[244]"
+    },
+    {
+      "path": "/relationships/245",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[245]"
+    },
+    {
+      "path": "/relationships/246",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[246]"
+    },
+    {
+      "path": "/relationships/247",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[247]"
+    },
+    {
+      "path": "/relationships/248",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[248]"
+    },
+    {
+      "path": "/relationships/249",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[249]"
+    },
+    {
+      "path": "/relationships/250",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[250]"
+    },
+    {
+      "path": "/relationships/251",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[251]"
+    },
+    {
+      "path": "/relationships/252",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[252]"
+    },
+    {
+      "path": "/relationships/253",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[253]"
+    },
+    {
+      "path": "/relationships/254",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[254]"
+    },
+    {
+      "path": "/relationships/255",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[255]"
+    },
+    {
+      "path": "/relationships/256",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[256]"
+    },
+    {
+      "path": "/relationships/257",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[257]"
+    },
+    {
+      "path": "/relationships/258",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[258]"
+    },
+    {
+      "path": "/relationships/259",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[259]"
+    },
+    {
+      "path": "/relationships/260",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[260]"
+    },
+    {
+      "path": "/relationships/261",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[261]"
+    },
+    {
+      "path": "/relationships/262",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[262]"
+    },
+    {
+      "path": "/relationships/263",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[263]"
+    },
+    {
+      "path": "/relationships/264",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[264]"
+    },
+    {
+      "path": "/relationships/265",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[265]"
+    },
+    {
+      "path": "/relationships/266",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[266]"
+    },
+    {
+      "path": "/relationships/267",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[267]"
+    },
+    {
+      "path": "/relationships/268",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[268]"
+    },
+    {
+      "path": "/relationships/269",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[269]"
+    },
+    {
+      "path": "/relationships/270",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[270]"
+    },
+    {
+      "path": "/relationships/271",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[271]"
+    },
+    {
+      "path": "/relationships/272",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[272]"
+    },
+    {
+      "path": "/relationships/273",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[273]"
+    },
+    {
+      "path": "/relationships/274",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[274]"
+    },
+    {
+      "path": "/relationships/275",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[275]"
+    },
+    {
+      "path": "/relationships/276",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[276]"
+    },
+    {
+      "path": "/relationships/277",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[277]"
+    },
+    {
+      "path": "/relationships/278",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[278]"
+    },
+    {
+      "path": "/relationships/279",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[279]"
+    },
+    {
+      "path": "/relationships/280",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[280]"
+    },
+    {
+      "path": "/relationships/281",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[281]"
+    },
+    {
+      "path": "/relationships/282",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[282]"
+    },
+    {
+      "path": "/relationships/283",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[283]"
+    },
+    {
+      "path": "/relationships/284",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[284]"
+    },
+    {
+      "path": "/relationships/285",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[285]"
+    },
+    {
+      "path": "/relationships/286",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[286]"
+    },
+    {
+      "path": "/relationships/287",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[287]"
+    },
+    {
+      "path": "/relationships/288",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[288]"
+    },
+    {
+      "path": "/relationships/289",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[289]"
+    },
+    {
+      "path": "/relationships/290",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[290]"
+    },
+    {
+      "path": "/relationships/291",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[291]"
+    },
+    {
+      "path": "/relationships/292",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[292]"
+    },
+    {
+      "path": "/relationships/293",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[293]"
+    },
+    {
+      "path": "/relationships/294",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[294]"
+    },
+    {
+      "path": "/relationships/295",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[295]"
+    },
+    {
+      "path": "/relationships/296",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[296]"
+    },
+    {
+      "path": "/relationships/297",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[297]"
+    },
+    {
+      "path": "/relationships/298",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[298]"
+    },
+    {
+      "path": "/relationships/299",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[299]"
+    },
+    {
+      "path": "/relationships/300",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[300]"
+    },
+    {
+      "path": "/relationships/301",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[301]"
+    },
+    {
+      "path": "/relationships/302",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[302]"
+    },
+    {
+      "path": "/relationships/303",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[303]"
+    },
+    {
+      "path": "/relationships/304",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[304]"
+    },
+    {
+      "path": "/relationships/305",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[305]"
+    },
+    {
+      "path": "/relationships/306",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[306]"
+    },
+    {
+      "path": "/relationships/307",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[307]"
+    },
+    {
+      "path": "/relationships/308",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[308]"
+    },
+    {
+      "path": "/relationships/309",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[309]"
+    },
+    {
+      "path": "/relationships/310",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[310]"
+    },
+    {
+      "path": "/relationships/311",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[311]"
+    },
+    {
+      "path": "/relationships/312",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[312]"
+    },
+    {
+      "path": "/relationships/313",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[313]"
+    },
+    {
+      "path": "/relationships/314",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[314]"
+    },
+    {
+      "path": "/relationships/315",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[315]"
+    },
+    {
+      "path": "/relationships/316",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[316]"
+    },
+    {
+      "path": "/relationships/317",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[317]"
+    },
+    {
+      "path": "/relationships/318",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[318]"
+    },
+    {
+      "path": "/relationships/319",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[319]"
+    },
+    {
+      "path": "/relationships/320",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[320]"
+    },
+    {
+      "path": "/relationships/321",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[321]"
+    },
+    {
+      "path": "/relationships/322",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[322]"
+    }
+  ],
+  "unresolved": [
+    {
+      "path": "/values/0",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/1",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/2",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/3",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/4",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/5",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/6",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/7",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/8",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/9",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/10",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/11",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/12",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/13",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/14",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/15",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/16",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/17",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/18",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/19",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/20",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/subsystems/40/interfaces/0",
+      "reason": "Interface has an unresolved subsystem or port endpoint; no connection was invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/137",
+      "reason": "Relationship type 'interfaces' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/221",
+      "reason": "Relationship type 'satisfies_requirements' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/225",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/226",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/227",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/228",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/229",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/230",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/231",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/232",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/233",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/234",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/235",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/236",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/237",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/238",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/239",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/240",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/241",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/242",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/243",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/244",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/245",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/246",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/247",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/248",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/249",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/250",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/251",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/252",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/253",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/254",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/255",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/256",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/257",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/258",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/259",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/260",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/261",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/262",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/263",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/264",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/265",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/266",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/267",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/268",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/269",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/270",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/271",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/272",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/273",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/274",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/275",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/276",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/277",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/278",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/279",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/280",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/281",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/282",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/283",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/284",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/285",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/286",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/287",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/288",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/289",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/290",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/291",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/292",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/293",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/294",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/295",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/296",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/297",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/298",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/299",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/300",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/301",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/302",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/303",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/304",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/305",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/306",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/307",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/308",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/309",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/310",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/311",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/312",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/313",
+      "reason": "Relationship type 'owner' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/314",
+      "reason": "Relationship type 'owner' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/315",
+      "reason": "Relationship type 'owner' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/316",
+      "reason": "Relationship type 'postconditions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/317",
+      "reason": "Relationship type 'owner' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/318",
+      "reason": "Relationship type 'preconditions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/319",
+      "reason": "Relationship type 'owner' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/320",
+      "reason": "Relationship type 'postconditions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/321",
+      "reason": "Relationship type 'owner' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/322",
+      "reason": "Relationship type 'postconditions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    }
+  ],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

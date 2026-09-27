@@ -1,0 +1,160 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Balanced Safety Relief Valve",
+    "system_id": "US7513270B2",
+    "description": "Spring-operated relief valve model emphasizing outlet-backpressure balancing across equal-area spindle surfaces and containment at the spindle guide.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "mechanical fluid control",
+    "maturity": "draft",
+    "date_modified": "2026-09-26"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "BODY",
+      "subsystem_name": "Valve Body and Chamber",
+      "description": "Body defining the inlet connection, interior chamber, valve seat, outlet passage communicating peripherally of the seat, aligned spindle guide opening, and an internal fluid path placing the outlet in communication with the opposite chamber end to balance outlet-pressure forces across equal-area spindle surfaces.",
+      "domain": "pressure boundary",
+      "functional_basis": [
+        "contain fluid",
+        "route inlet flow",
+        "provide guide"
+      ],
+      "ports": [
+        {
+          "port_id": "BODY_INLET",
+          "name": "Flow inlet",
+          "direction": "in",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "BODY_RELIEF_OUT",
+          "name": "Relief outlet",
+          "direction": "out",
+          "flow_type": "hydraulic_fluid"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_RELIEF",
+          "mating_subsystem": "OUTLET_SINK",
+          "port_this": "BODY_RELIEF_OUT",
+          "port_mate": "OUTLET_SINK_IN",
+          "flow_ref": "F_RELIEF",
+          "interface_type": "fluid connection"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "SPINDLE",
+      "subsystem_name": "Spindle Assembly",
+      "description": "Spindle assembly comprising a first part defining the valve-engaging end and enlarged mid-portion, and a cap fixed to the mid-portion; the cap cooperates with the mid-portion to locate the fluid seal lengthwise within the body guide opening. The enlarged mid-portion has equal opposing pressure areas.",
+      "domain": "mechanical fluid control",
+      "functional_basis": [
+        "engage seat",
+        "transmit pressure force",
+        "balance backpressure"
+      ]
+    },
+    {
+      "subsystem_id": "BIAS",
+      "subsystem_name": "Control Spring",
+      "description": "Spring biases the spindle toward seat engagement; its setting establishes the relief opening set point.",
+      "domain": "mechanical control",
+      "functional_basis": [
+        "bias spindle",
+        "set opening threshold"
+      ]
+    },
+    {
+      "subsystem_id": "GUIDE_SEAL",
+      "subsystem_name": "Spindle Guide Seal",
+      "description": "Seal engaging body and spindle within the guide opening to prevent fluid escaping from the opposite chamber end; disclosed embodiment uses an annular U-section Teflon member with seal spring.",
+      "domain": "sealing",
+      "functional_basis": [
+        "seal spindle guide"
+      ]
+    },
+    {
+      "subsystem_id": "INLET_SOURCE",
+      "subsystem_name": "Pressurized System Inlet",
+      "description": "External inlet pipeline/system supplying fluid to the valve inlet; the patent identifies the connected inlet pipe but does not require a particular source pressure classification.",
+      "domain": "external fluid system",
+      "ports": [
+        {
+          "port_id": "INLET_SOURCE_OUT",
+          "name": "Inlet supply connection",
+          "direction": "out",
+          "flow_type": "hydraulic_fluid"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_INLET",
+          "mating_subsystem": "BODY",
+          "port_this": "INLET_SOURCE_OUT",
+          "port_mate": "BODY_INLET",
+          "flow_ref": "F_IN",
+          "interface_type": "fluid connection"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "OUTLET_SINK",
+      "subsystem_name": "Relief Discharge System",
+      "description": "External outlet pipeline/discharge system receiving relief flow; outlet-pressure balancing communication is modeled internally within the valve body.",
+      "domain": "external fluid system",
+      "ports": [
+        {
+          "port_id": "OUTLET_SINK_IN",
+          "name": "Relief discharge receiving connection",
+          "direction": "in",
+          "flow_type": "hydraulic_fluid"
+        }
+      ],
+      "interfaces": []
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "F_IN",
+      "name": "Inlet service fluid",
+      "flow_type": "hydraulic_fluid",
+      "notes": "External flow from the connected inlet pipeline/system to the valve body inlet."
+    },
+    {
+      "flow_id": "F_RELIEF",
+      "name": "Relief discharge",
+      "flow_type": "hydraulic_fluid",
+      "notes": "Flow from inlet past the opened seat through chamber to outlet."
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "A_RELIEVE",
+        "name": "Relieve excess inlet pressure",
+        "owner": "SPINDLE",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "The control spring biases the spindle into engagement with the valve seat, blocking inlet flow while the inlet pressure force does not overcome the spring bias."
+          },
+          {
+            "step_no": 2,
+            "description": "When inlet pressure force overcomes the spring bias, the spindle disengages from the seat and permits fluid to flow from inlet through the chamber to the outlet."
+          },
+          {
+            "step_no": 3,
+            "description": "Within the valve body, outlet pressure communicates through the internal path to the opposite chamber end, exposing equal opposing spindle areas to pressure and producing forces that cancel the outlet-backpressure contribution to spindle force."
+          }
+        ]
+      }
+    ]
+  },
+  "assumptions": [],
+  "warnings": [
+    "The patent supports flow paths and pressure communication but does not specify detailed port geometry; ports and interfaces are descriptive connections only."
+  ]
+}

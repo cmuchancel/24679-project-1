@@ -1,0 +1,47 @@
+{
+  "revision": 5,
+  "candidate_sha256": "15d89eaa61b10dccae095b0924636761cac6f6a3657ab7d3883b9de2cd74e670",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Modeled components, pusher contacts, work contact, staged transfers, release/detachment, and optional groove guidance agree with cited patent text. F_AXIAL now has translation-only semantics; assumptions are outside the model."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "Core physical elements and principal staged strokes, work clamping, release/detachment, and optional guidance behavior are present. More detailed claim 5–6 operating-position/engagement configurations are an optional detail-level enhancement, not necessary for this concept-level model."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "F_AXIAL denotes axial translation consistent with mechanical_linear; spring forces are separated into mechanical_force flows. Interface endpoint types and directions are compatible."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Requirements and action descriptions are supported by cited claims/passages, including the larger second spring constant; no unsupported quantitative or executable constraints are introduced."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Interfaces reference existing ports and flows with compatible types/directions. External rod, protrusion, and work/pallet are separate context components; connections are recorded once."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Context/interface guidance supports external context separation and boundary interactions; functional-allocation guidance is consistent with the physical subsystem decomposition. Irrelevant state-modeling retrieval is not used as factual support."
+    }
+  },
+  "findings": [
+    {
+      "id": "R5-F1",
+      "severity": "info",
+      "kind": "missing_content",
+      "path": "",
+      "description": "The model omits claim 5's four named operating positions and claim 6's groove and small-diameter/unlocking-segment engagement configurations. Core staged strokes and release are represented; this remains an optional completeness enhancement at the present abstraction level.",
+      "evidence_ids": [
+        "17b9fe148e3ce037a5ae135629a1967d",
+        "085cce02224964488d26808701018cd9"
+      ],
+      "recommendation": "Optionally add concise, supported position/configuration descriptions for claim-level completeness, without inventing transition triggers or guards."
+    }
+  ],
+  "summary": "Revision 5 resolves the prior F_AXIAL semantic inconsistency: its translation-only name and notes distinguish it from the separate spring-force flows. Actual cited patent passages and relevant textbook guidance were checked. The model's core evidence, interfaces, types/directions, and traceability are coherent, with no structural findings or actionable unresolved warnings/errors. Only an informational claim 5–6 position/configuration detail omission remains. Candidate not edited.",
+  "saved_at": "2026-09-27T08:21:37.835879+00:00"
+}

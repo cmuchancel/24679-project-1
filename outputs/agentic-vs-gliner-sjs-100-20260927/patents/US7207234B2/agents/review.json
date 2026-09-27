@@ -1,0 +1,34 @@
+{
+  "revision": 2,
+  "candidate_sha256": "2f26d237481deab25ddaff26893651ef563b8a4c15137b23ead258fe22e7f14a",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Reviewed the cited patent passages directly. Component descriptions, claim features, circulation, nut rotation, ball loading, and retainer contact are supported. Revision 2 explicitly scopes shaft support and retainer anti-rubbing/scoop-up effects to the described embodiment, resolving prior unqualified assertions."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "Includes shaft and nut grooves, groove-defined rolling path, plural metal return paths, load balls, retainers, endless circulation, relative helical motion, load transmission, and disclosed retainer-ball contact. Excluding motor, housing, supports, sensors, and controls is consistent with the model boundary and claim focus."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "The aggregate circulation flow is explicitly descriptive and does not imply separate inter-subsystem connections. Nut rotation and ball-retainer contact are descriptive flows; no incompatible ports or directions are asserted."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Claim 1 scope and dependent-claim features are distinguishable in prose; embodiment-specific facts/effects carry an explicit embodiment qualification. Evidence supports the behavior steps."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "No ports/interfaces are modeled, avoiding ungrounded connectivity and conflation of a groove-defined route with a manufactured subsystem. The descriptive flow notes clarify this intentional abstraction; no missing connection is needed to represent the supported claims."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The model distinguishes physical components from functions (captured in behavior actions), avoids unsupported requirements and control architecture, and does not model the rolling path as a manufactured component. Retrieved functional-allocation guidance is applied appropriately and is not used as invention evidence."
+    }
+  },
+  "findings": [],
+  "summary": "Independent review of saved SJS revision 2 found no actionable defects. The two previous warning-level issues were repaired by qualifying shaft support and retainer effects as embodiment details. Direct patent evidence supports modeled components, functions, claim features, and flow descriptions; the structure and component-level decomposition are appropriate. Interfaces are intentionally unmodeled, without an unsupported claim of connectivity. No unresolved or newly introduced issues identified.",
+  "saved_at": "2026-09-27T08:04:34.331645+00:00"
+}

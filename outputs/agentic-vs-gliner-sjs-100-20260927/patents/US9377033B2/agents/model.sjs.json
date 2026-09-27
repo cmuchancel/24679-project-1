@@ -1,0 +1,273 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Gerotor pump with reversible fluid routing",
+    "system_id": "US9377033B2",
+    "description": "Concept model of an eccentric gerotor pump with a turnable supply tube routing pressure medium between two sockets.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "hydraulic power transmission",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "housing",
+      "subsystem_name": "Pump housing",
+      "description": "Pump housing with first and second supply sockets.",
+      "domain": "mechanical/hydraulic",
+      "ports": [
+        {
+          "port_id": "socket_1",
+          "name": "First supply socket",
+          "direction": "inout",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "socket_2",
+          "name": "Second supply socket",
+          "direction": "inout",
+          "flow_type": "hydraulic_fluid"
+        }
+      ],
+      "interfaces": []
+    },
+    {
+      "subsystem_id": "rotor_set",
+      "subsystem_name": "Inner rotor and radial conduits",
+      "description": "Inner lobed rotor engages the separately represented outer rotor on eccentric axes. Its radial conduits communicate the high- and low-pressure sections of the chamber between the rotors with respective shaft-cylinder openings.",
+      "domain": "mechanical/hydraulic",
+      "functional_basis": [
+        "pump pressure medium",
+        "form pressure chamber"
+      ],
+      "ports": [
+        {
+          "port_id": "high_path",
+          "name": "High-pressure passage",
+          "direction": "inout",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "low_path",
+          "name": "Low-pressure passage",
+          "direction": "inout",
+          "flow_type": "hydraulic_fluid"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "shaft_cylinder",
+      "subsystem_name": "Eccentric shaft cylinder",
+      "description": "Fixed to the central drive shaft and supports the inner rotor eccentrically; axially displaced cylinder openings communicate with high- and low-pressure sections.",
+      "domain": "mechanical/hydraulic",
+      "ports": [
+        {
+          "port_id": "cylinder_high",
+          "name": "High-pressure cylinder opening",
+          "direction": "inout",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "cylinder_low",
+          "name": "Low-pressure cylinder opening",
+          "direction": "inout",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "shaft_rotary",
+          "name": "Rotary drive from central shaft",
+          "direction": "in",
+          "flow_type": "mechanical_rotary"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "cylinder_drive",
+          "mating_subsystem": "drive_shaft",
+          "port_this": "shaft_rotary",
+          "port_mate": "torque_out",
+          "flow_ref": "rotary_torque",
+          "interface_type": "rotary mechanical"
+        },
+        {
+          "interface_id": "rotor_to_cylinder_high",
+          "mating_subsystem": "rotor_set",
+          "port_this": "cylinder_high",
+          "port_mate": "high_path",
+          "flow_ref": "high_fluid",
+          "interface_type": "hydraulic fluid"
+        },
+        {
+          "interface_id": "rotor_to_cylinder_low",
+          "mating_subsystem": "rotor_set",
+          "port_this": "cylinder_low",
+          "port_mate": "low_path",
+          "flow_ref": "low_fluid",
+          "interface_type": "hydraulic fluid"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "supply_tube",
+      "subsystem_name": "Turnable supply tube",
+      "description": "Contains two supply lines with opposed sub-lines, axially displaced groups of inner supply openings, and two outer feeding openings. The supply-opening groups communicate through respective sealed annular spaces formed between the tube and shaft cylinder; three sealing rings form the two mutually sealed spaces. Tube rotation selects corresponding socket paths, crossed paths, or direct interconnection between the two feeding openings.",
+      "domain": "hydraulic",
+      "ports": [
+        {
+          "port_id": "line_1",
+          "name": "First supply line extending to first feed opening",
+          "direction": "inout",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "line_2",
+          "name": "Second supply line extending to second feed opening",
+          "direction": "inout",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "tube_feed_1",
+          "name": "First feeding opening",
+          "direction": "inout",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "tube_feed_2",
+          "name": "Second feeding opening",
+          "direction": "inout",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "supply_opening_1",
+          "name": "First group of supply openings to annular space 1",
+          "direction": "inout",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "supply_opening_2",
+          "name": "Second group of supply openings to annular space 2",
+          "direction": "inout",
+          "flow_type": "hydraulic_fluid"
+        }
+      ],
+      "parts": [
+        {
+          "part_id": "sealing_rings",
+          "description": "Three sealing rings forming two sealed annular spaces.",
+          "quantity": 3
+        },
+        {
+          "part_id": "annular_space_1",
+          "description": "First sealed annular space between supply tube and shaft cylinder; first group of supply openings mouth into this space.",
+          "quantity": 1
+        },
+        {
+          "part_id": "annular_space_2",
+          "description": "Second sealed annular space between supply tube and shaft cylinder; second group of supply openings mouth into this space.",
+          "quantity": 1
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "cylinder_to_supply_line1",
+          "mating_subsystem": "shaft_cylinder",
+          "port_this": "supply_opening_1",
+          "port_mate": "cylinder_high",
+          "flow_ref": "high_fluid",
+          "interface_type": "hydraulic fluid"
+        },
+        {
+          "interface_id": "cylinder_to_supply_line2",
+          "mating_subsystem": "shaft_cylinder",
+          "port_this": "supply_opening_2",
+          "port_mate": "cylinder_low",
+          "flow_ref": "low_fluid",
+          "interface_type": "hydraulic fluid"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "outer_rotor",
+      "subsystem_name": "Outer rotor",
+      "description": "Lobed outer rotor rotatably located relative to the housing, with lobes engaged with the inner rotor; claim 2 flanges rotate with it and bound the chamber axially.",
+      "domain": "mechanical/hydraulic",
+      "parts": [
+        {
+          "part_id": "first_flange",
+          "description": "First flange rotating with outer rotor and limiting pressure chamber axially.",
+          "quantity": 1
+        },
+        {
+          "part_id": "second_flange",
+          "description": "Second flange rotating with outer rotor and limiting pressure chamber axially.",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "subsystem_id": "drive_shaft",
+      "subsystem_name": "Central drive shaft input",
+      "description": "External mechanical input shaft fixed at one end to the shaft cylinder; turning it drives the inner rotor motion.",
+      "domain": "mechanical",
+      "ports": [
+        {
+          "port_id": "torque_out",
+          "name": "Rotary torque output",
+          "direction": "out",
+          "flow_type": "mechanical_rotary"
+        }
+      ]
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "high_fluid",
+      "name": "High-pressure fluid",
+      "flow_type": "hydraulic_fluid",
+      "notes": "Between high-pressure chamber, cylinder opening, tube path and selected socket."
+    },
+    {
+      "flow_id": "low_fluid",
+      "name": "Low-pressure fluid",
+      "flow_type": "hydraulic_fluid",
+      "notes": "Between low-pressure chamber, cylinder opening, tube path and selected socket."
+    },
+    {
+      "flow_id": "rotary_torque",
+      "name": "Drive torque",
+      "flow_type": "mechanical_rotary",
+      "notes": "Turns central shaft and eccentric shaft cylinder."
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "pump_fluid",
+        "name": "Pump pressure medium",
+        "owner": "rotor_set",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Drive shaft rotation turns the eccentric shaft cylinder, causing the engaged inner rotor to wander within the outer rotor."
+          },
+          {
+            "step_no": 2,
+            "description": "Pressure medium passes from the low- and high-pressure chamber sections through radial conduits and respective shaft-cylinder openings into sealed spaces, then through corresponding supply-tube openings and lines to selected feeding openings and sockets."
+          }
+        ]
+      },
+      {
+        "action_id": "change_route",
+        "name": "Change socket routing",
+        "owner": "supply_tube",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Turn the supply tube to select corresponding socket connections, crossed socket connections, or direct interconnection of feed openings."
+          }
+        ]
+      }
+    ]
+  }
+}

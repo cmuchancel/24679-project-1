@@ -1,0 +1,162 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 6,
+    "ActionUsage": 13,
+    "AllocationUsage": 6,
+    "Documentation": 31,
+    "EndFeatureMembership": 12,
+    "Feature": 28,
+    "FeatureChaining": 32,
+    "FeatureMembership": 23,
+    "FeatureReferenceExpression": 4,
+    "FeatureTyping": 18,
+    "FeatureValue": 4,
+    "ItemDefinition": 4,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 72,
+    "Package": 1,
+    "PartDefinition": 9,
+    "PartUsage": 10,
+    "ReferenceSubsetting": 16,
+    "ReferenceUsage": 4,
+    "RequirementDefinition": 3,
+    "RequirementUsage": 3,
+    "SatisfyRequirementUsage": 4,
+    "Subclassification": 2,
+    "SubjectMembership": 4,
+    "SuccessionAsUsage": 1
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_mounts_Mounting_members"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_elastic_element_Elastic_element"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_main_chamber_Main_fluid_chamber"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_sub_chamber_Fluid_sub_chamber"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_orifice_Orifice_path"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_opening_member_Opening_and_closing_member"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_check_valve_Check_valve"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_bias_element_Elastic_bias_member"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_guide_Reciprocation_guide"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_fluid_between_chambers_Chamber_fluid_through_orifice"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_mechanical_vibration_Vibration_transmission_toward_reception_porti"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_req_oneway"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_req_oneway"
+    },
+    {
+      "path": "/requirements/1",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_req_guide"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_req_guide"
+    },
+    {
+      "path": "/requirements/2",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_req_contact"
+    },
+    {
+      "path": "/requirements/2/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_req_contact"
+    },
+    {
+      "path": "/requirements/2/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_req_contact"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_deform_volume_Deform_elastic_element_and_change_chamber_vol"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_guide_reciprocation_Guide_reciprocation"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_bias_member_Bias_opening_and_closing_member"
+    },
+    {
+      "path": "/behaviour/actions/3",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_check_flow_Permit_one_way_check_valve_flow"
+    },
+    {
+      "path": "/behaviour/actions/4",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_abutting_contact_Contact_elastic_valve_body"
+    },
+    {
+      "path": "/behaviour/actions/5",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_reduce_vibration_transmission_Reduce_vibration_transmission"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

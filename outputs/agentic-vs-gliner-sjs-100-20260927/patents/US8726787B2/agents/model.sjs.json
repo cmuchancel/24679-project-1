@@ -1,0 +1,282 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Rotary Hydraulic Actuator with Hydraulically Controlled Position Limits",
+    "system_id": "US8726787B2",
+    "description": "Inferred concept model of a rotary hydraulic actuator that converts selectively routed pressurized fluid into rotor motion and provides angular limits through hydraulic porting and boss contact.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "hydraulic actuation",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "housing",
+      "subsystem_name": "Actuator Housing and Chamber",
+      "description": "Base and cover define the internal chamber and carry opposed inward bosses; one boss includes a stator fluid hole.",
+      "domain": "mechanical/hydraulic",
+      "functional_basis": [
+        "contain hydraulic chamber",
+        "limit rotor travel"
+      ],
+      "ports": [
+        {
+          "port_id": "chamber_fluid",
+          "name": "Internal chamber fluid boundary",
+          "direction": "inout",
+          "flow_type": "hydraulic_fluid"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "port_block",
+      "subsystem_name": "Port Block",
+      "description": "Port block protrudes from the housing end wall and provides a bore, rotor supply and drain ports and grooves, and communication to the rotor stub-shaft region.",
+      "domain": "hydraulic",
+      "ports": [
+        {
+          "port_id": "pb_supply",
+          "name": "Rotor supply port",
+          "direction": "in",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "pb_drain",
+          "name": "Rotor drain port",
+          "direction": "inout",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "pb_bore",
+          "name": "Bore and grooves to rotor base slots",
+          "direction": "inout",
+          "flow_type": "hydraulic_fluid"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "pump_to_supply",
+          "mating_subsystem": "hydraulic_supply",
+          "port_this": "pb_supply",
+          "port_mate": "pump_out",
+          "flow_ref": "hydraulic_flow",
+          "interface_type": "hydraulic_fluid"
+        },
+        {
+          "interface_id": "drain_to_reservoir",
+          "mating_subsystem": "reservoir",
+          "port_this": "pb_drain",
+          "port_mate": "reservoir_fluid",
+          "flow_ref": "hydraulic_flow",
+          "interface_type": "hydraulic_fluid"
+        },
+        {
+          "interface_id": "bore_to_rotor_base",
+          "mating_subsystem": "rotor",
+          "port_this": "pb_bore",
+          "port_mate": "rotor_base",
+          "flow_ref": "hydraulic_flow",
+          "interface_type": "hydraulic_fluid"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "rotor",
+      "subsystem_name": "Rotor and Hydraulic Galleries",
+      "description": "Rotating body and arms carry stub shaft base slots and internal galleries connecting hydraulic ports to tangential arm ports communicating with chamber cavities; output shaft couples to a mechanical load.",
+      "domain": "hydraulic/mechanical",
+      "functional_basis": [
+        "route hydraulic fluid",
+        "convert fluid pressure to rotation"
+      ],
+      "ports": [
+        {
+          "port_id": "rotor_base",
+          "name": "Base slots",
+          "direction": "inout",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "rotor_arm",
+          "name": "Tangential arm ports to chamber",
+          "direction": "inout",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "rotor_output",
+          "name": "Rotary mechanical output",
+          "direction": "out",
+          "flow_type": "mechanical_rotary"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "rotor_to_load",
+          "mating_subsystem": "mechanical_load",
+          "port_this": "rotor_output",
+          "port_mate": "load_input",
+          "flow_ref": "rotary_output",
+          "interface_type": "mechanical_rotary"
+        },
+        {
+          "interface_id": "rotor_arm_to_chamber",
+          "mating_subsystem": "housing",
+          "port_this": "rotor_arm",
+          "port_mate": "chamber_fluid",
+          "flow_ref": "hydraulic_flow",
+          "interface_type": "hydraulic_fluid"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "stator_supply",
+      "subsystem_name": "Stator Port and Boss Hole",
+      "description": "Stator port and passage through a housing boss communicate hydraulic fluid to the internal chamber.",
+      "domain": "hydraulic",
+      "ports": [
+        {
+          "port_id": "stator_in",
+          "name": "Stator port",
+          "direction": "inout",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "stator_pressure_in",
+          "name": "Selected pressurized fluid input",
+          "direction": "in",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "stator_return_out",
+          "name": "Selected return fluid path",
+          "direction": "inout",
+          "flow_type": "hydraulic_fluid"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "stator_hole_to_chamber",
+          "mating_subsystem": "housing",
+          "port_this": "stator_in",
+          "port_mate": "chamber_fluid",
+          "flow_ref": "hydraulic_flow",
+          "interface_type": "hydraulic_fluid"
+        },
+        {
+          "interface_id": "stator_pressure_from_pump",
+          "mating_subsystem": "hydraulic_supply",
+          "port_this": "stator_pressure_in",
+          "port_mate": "pump_out",
+          "flow_ref": "hydraulic_flow",
+          "interface_type": "hydraulic_fluid"
+        },
+        {
+          "interface_id": "stator_return_to_reservoir",
+          "mating_subsystem": "reservoir",
+          "port_this": "stator_return_out",
+          "port_mate": "reservoir_fluid",
+          "flow_ref": "hydraulic_flow",
+          "interface_type": "hydraulic_fluid"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "hydraulic_supply",
+      "subsystem_name": "Hydraulic Pump",
+      "description": "External pump supplies pressurized hydraulic fluid to selected actuator ports.",
+      "domain": "hydraulic",
+      "ports": [
+        {
+          "port_id": "pump_out",
+          "name": "Pressurized fluid supply",
+          "direction": "out",
+          "flow_type": "hydraulic_fluid"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "reservoir",
+      "subsystem_name": "Hydraulic Reservoir",
+      "description": "External reservoir receives return fluid and provides the fluid source in the described operating circuit.",
+      "domain": "hydraulic",
+      "ports": [
+        {
+          "port_id": "reservoir_fluid",
+          "name": "Reservoir fluid connection",
+          "direction": "inout",
+          "flow_type": "hydraulic_fluid"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "mechanical_load",
+      "subsystem_name": "Driven Mechanical Load",
+      "description": "External load, such as a fan or propeller blade, is coupled to the rotor output shaft.",
+      "domain": "mechanical",
+      "ports": [
+        {
+          "port_id": "load_input",
+          "name": "Rotary input",
+          "direction": "in",
+          "flow_type": "mechanical_rotary"
+        }
+      ]
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "hydraulic_flow",
+      "name": "Pressurized and return hydraulic fluid",
+      "flow_type": "hydraulic_fluid",
+      "notes": "Fluid enters selected supply ports, passes through port-block and rotor passages into chamber cavities, and displaced fluid returns through rotor passages and ports."
+    },
+    {
+      "flow_id": "rotary_output",
+      "name": "Rotor rotary motion",
+      "flow_type": "mechanical_rotary",
+      "notes": "Rotor output shaft couples to a mechanical load."
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "drive_clockwise",
+        "name": "Drive rotor clockwise",
+        "owner": "rotor",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Pressurize rotor supply port while connecting rotor drain and stator ports to reservoir; fluid travels through base slots and inboard galleries to rotor arm ports, applying pressure to drive clockwise rotation."
+          }
+        ]
+      },
+      {
+        "action_id": "drive_opposite",
+        "name": "Drive rotor in opposite direction",
+        "owner": "rotor",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Pressurize stator port while rotor supply and drain ports are connected to reservoir; fluid pressure in chamber cavities drives the rotor in the opposite direction."
+          }
+        ]
+      },
+      {
+        "action_id": "bypass_position_limit",
+        "name": "Move beyond hydraulic position limit",
+        "owner": "port_block",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "At the selected angular position, base slots connect supply and drain paths to form a hydraulic limit during the applicable porting condition."
+          },
+          {
+            "step_no": 2,
+            "description": "Simultaneously pressurize rotor supply and drain ports to permit continued rotor motion beyond the selected position."
+          }
+        ]
+      }
+    ]
+  }
+}

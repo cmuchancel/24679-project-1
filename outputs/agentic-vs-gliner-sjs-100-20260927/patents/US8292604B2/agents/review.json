@@ -1,0 +1,55 @@
+{
+  "revision": 9,
+  "candidate_sha256": "498e390e4fc0ee6add59faff1a250cf71758d4a8085745cf6b8db2e8083f341a",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 9's worm_gear_mesh connects worm output to pump_gear.gear_rotary_in using compatible mechanical_rotary ports and rotary_drive flow. Claim 10 expressly recites a worm gear rotated by the motor and first gear teeth configured for meshed engagement with it (f24973b2816d4ff52ef31a72c9b7f09b); motor-to-worm drive is supported by df17b76b2f74f720d383d3bae0a9cb14. Component/function descriptions are supported by cited claim and specification passages."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The selected single-channel claim-10/11 baseline includes the motor, worm, pump gear/roller carriage, axles, support plate, ribs, housing, and tube, and represents the drive and occlusion function. Optional configurations are omitted consistently."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "The rotary path is continuous motor output to worm input/output to pump-gear input. Worm-to-gear is mechanical_rotary and references rotary_drive; placement relations are separately typed mechanical_structure."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "All ID-bearing items have citations, including /model_meta and the newly added interface. The model metadata are explicitly descriptions of this inferred model, rather than assertions about actual invention maturity. The metadata citation is weakly relevant but does not substantiate an invention fact. Roller positioning in action step 1 is supported by claim 1, though arguably static rather than an operational action."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "The worm-to-gear interface connects existing matching mechanical_rotary ports with the proper flow reference and is recorded once. Other interfaces resolve to existing ports/subsystems and use structural placement flow types."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Functional-allocation guidance supports selecting a particular physical decomposition without combining alternatives. The model declares the baseline assumptions outside SJS. Textbook evidence is not used for invention facts; irrelevant retrieved drive guidance is not treated as support."
+    }
+  },
+  "findings": [
+    {
+      "id": "R9-1",
+      "severity": "info",
+      "path": "/sjs/model_meta",
+      "description": "The assigned citation is claim-10 axle/rib/tube language, not patent identification or evidence for model-level metadata. Since the fields are framed as descriptors of the inferred model, this is a weak citation relevance issue rather than an unsupported invention assertion.",
+      "evidence_ids": [
+        "60f84f775ce0edd15e2a27fa8a00565d"
+      ],
+      "recommendation": "Use a patent-identifying passage for system_id if available; otherwise retain clear model-descriptive framing without representing the claim passage as evidence for metadata."
+    },
+    {
+      "id": "R9-2",
+      "severity": "info",
+      "path": "/sjs/behaviour/actions/0/steps/1",
+      "description": "This step describes the rollers' fixed 180° arrangement on gear-mounted axles, supported by claim 1, but frames static geometry as an action performed during pumping. This may blur structure and behavior.",
+      "evidence_ids": [
+        "cf709d292cad007481fd35c5ed67fc3e"
+      ],
+      "recommendation": "Consider removing this static fact from the action sequence or distinguishing structural configuration from dynamic operation."
+    }
+  ],
+  "summary": "Revision 9 resolves the prior central drive-flow omission: the worm output now meshes with pump gear input through compatible ports, supported by claim 10. The motor-to-worm-to-gear flow is continuous; selected embodiment and remaining structural interfaces are coherent and supported. No unresolved errors or warnings identified. Two informational notes remain: /model_meta uses a weakly relevant claim citation, and a static roller-positioning fact is phrased as an action step. No candidate changes made.",
+  "saved_at": "2026-09-27T03:43:50.020012+00:00"
+}

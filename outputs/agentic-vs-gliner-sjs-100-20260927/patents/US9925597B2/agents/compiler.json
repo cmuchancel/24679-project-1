@@ -1,0 +1,227 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 4,
+    "ActionUsage": 11,
+    "AllocationUsage": 4,
+    "ConnectionUsage": 4,
+    "Documentation": 49,
+    "EndFeatureMembership": 22,
+    "Feature": 38,
+    "FeatureChaining": 58,
+    "FeatureMembership": 51,
+    "FeatureTyping": 23,
+    "FlowEnd": 6,
+    "FlowUsage": 3,
+    "ItemDefinition": 10,
+    "ItemUsage": 12,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 83,
+    "Package": 1,
+    "PartDefinition": 7,
+    "PartUsage": 8,
+    "PortUsage": 12,
+    "Redefinition": 6,
+    "ReferenceSubsetting": 22,
+    "ReferenceUsage": 6,
+    "Subclassification": 7,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CHUCK_Chuck_body"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CHUCK_Chuck_body.port_receiver_mount_Receiver_mounting_interface"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_JAWS_Chuck_jaws_and_guides"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_JAWS_Chuck_jaws_and_guides.port_jaw_drive_Rotary_jaw_drive_input"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_JAWS_Chuck_jaws_and_guides.port_clamp_contact_Jaw_contact_and_clamping_output"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_TRANSMISSION_Chuck_torque_transfer_train"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_TRANSMISSION_Chuck_torque_transfer_train.port_torque_in_Coupled_torque_input"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_TRANSMISSION_Chuck_torque_transfer_train.port_jaw_motion_out_Jaw_drive_output"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DRIVE_Chuck_receiver"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DRIVE_Chuck_receiver.port_chuck_mount_Chuck_mounting_interface"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DRIVE_Chuck_receiver.port_motor_structural_mount_Drive_motor_structural_association"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_HANDLER_Automation_device"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_HANDLER_Automation_device.port_chuck_handling_Chuck_handling_and_replacement_contact"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_HANDLER_Automation_device.port_receiver_handling_Receiver_handling_and_mounting_contact"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_WORKPIECE_Workpiece_or_tool"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_WORKPIECE_Workpiece_or_tool.port_workpiece_clamp_in_Clamping_force_contact_input"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_MOTOR_Drive_motor"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_MOTOR_Drive_motor.port_motor_torque_out_Motor_torque_output"
+    },
+    {
+      "path": "/subsystems/6/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_MOTOR_Drive_motor.port_receiver_structural_mount_Receiver_structural_association"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_TORQUE_Drive_torque"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_JAW_Jaw_drive_rotation"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_CLAMP_Clamping_contact_force"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_MOUNT_Chuck_mounting_support"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_MOTOR_MOUNT_Motor_receiver_structural_association"
+    },
+    {
+      "path": "/item_flows/5",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_HANDLER_CHUCK_Handler_chuck_replacement_interaction"
+    },
+    {
+      "path": "/item_flows/6",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_HANDLER_RECEIVER_Handler_receiver_replacement_interaction"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_DRIVE_TORQUE_Transfer_drive_torque_to_jaw_mechanism"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_REPLACE_Replace_chuck"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_MOVE_JAWS_Move_jaws_and_adjust_clamping_space"
+    },
+    {
+      "path": "/behaviour/actions/3",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_CLAMP_ITEM_Apply_clamping_force"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_TRAIN_JAWS"
+    },
+    {
+      "path": "/subsystems/1/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_JAWS_WORKPIECE"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_MOTOR_TRAIN"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_RECEIVER_CHUCK_MOUNT"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_HANDLER_CHUCK"
+    },
+    {
+      "path": "/subsystems/4/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_HANDLER_RECEIVER"
+    },
+    {
+      "path": "/subsystems/6/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_MOTOR_RECEIVER"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

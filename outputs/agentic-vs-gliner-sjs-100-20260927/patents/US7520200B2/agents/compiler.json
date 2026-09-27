@@ -1,0 +1,223 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 8,
+    "AllocationUsage": 2,
+    "Documentation": 47,
+    "EndFeatureMembership": 16,
+    "Feature": 20,
+    "FeatureChaining": 44,
+    "FeatureMembership": 58,
+    "FeatureTyping": 20,
+    "FlowEnd": 12,
+    "FlowUsage": 6,
+    "ItemDefinition": 9,
+    "ItemUsage": 12,
+    "LiteralInteger": 4,
+    "MultiplicityRange": 4,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 82,
+    "Package": 1,
+    "PartDefinition": 6,
+    "PartUsage": 11,
+    "PortUsage": 12,
+    "Redefinition": 12,
+    "ReferenceSubsetting": 16,
+    "ReferenceUsage": 12,
+    "Subclassification": 6,
+    "SuccessionAsUsage": 4
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_RACK_Bar_rack"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_RACK_Bar_rack.port_rack_bar_out_Selected_bar_toward_take_out"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_TAKEOUT_Bar_take_out_mechanism"
+    },
+    {
+      "path": "/subsystems/1/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_TAKEOUT_Bar_take_out_mechanism.part_P_ROTATION_SHAFT_Rotation_shaft_located_above_the_guide_rail_a"
+    },
+    {
+      "path": "/subsystems/1/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_TAKEOUT_Bar_take_out_mechanism.part_P_SWING_MEMBER_Swing_member_attached_to_the_rotation_shaft"
+    },
+    {
+      "path": "/subsystems/1/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_TAKEOUT_Bar_take_out_mechanism.part_P_ARC_GUIDE_SURFACE_Arc_shaped_guide_surface_that_guides_a_select"
+    },
+    {
+      "path": "/subsystems/1/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_TAKEOUT_Bar_take_out_mechanism.part_P_PUSH_UP_DEVICE_Bar_push_up_device_that_supplies_one_bar_from"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_TAKEOUT_Bar_take_out_mechanism.port_bar_in_Bar_from_rack"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_TAKEOUT_Bar_take_out_mechanism.port_bar_out_Released_bar_to_rail"
+    },
+    {
+      "path": "/subsystems/1/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_TAKEOUT_Bar_take_out_mechanism.port_motion_command_in_Swing_movement_command"
+    },
+    {
+      "path": "/subsystems/1/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_TAKEOUT_Bar_take_out_mechanism.port_supply_inhibit_in_Bar_supply_inhibit"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_GUIDE_Guide_rail"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_GUIDE_Guide_rail.port_bar_in_Bar_from_take_out_mechanism"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_GUIDE_Guide_rail.port_bar_out_Bar_toward_machining_apparatus"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_MACHINE_Bar_machining_apparatus"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_MACHINE_Bar_machining_apparatus.port_bar_in_Bar_from_guide_rail"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_OPERATOR_Operator"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_OPERATOR_Operator.port_manual_command_Removal_mode_operation"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CONTROLLER_Feeder_controller"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CONTROLLER_Feeder_controller.port_operator_command_Manual_removal_command"
+    },
+    {
+      "path": "/subsystems/5/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CONTROLLER_Feeder_controller.port_motion_command_Swing_movement_command"
+    },
+    {
+      "path": "/subsystems/5/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CONTROLLER_Feeder_controller.port_supply_inhibit_Bar_supply_inhibit"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_BAR_RACK_TAKEOUT_Selected_bar"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_BAR_TAKEOUT_GUIDE_Released_bar"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_BAR_GUIDE_MACHINE_Fed_bar"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_MANUAL_Manual_removal_operation"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_SWING_CMD_Swing_motion_control"
+    },
+    {
+      "path": "/item_flows/5",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_INHIBIT_Bar_supply_inhibition"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_LOAD_Load_bar_in_normal_mode"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_REMOVE_Create_removal_clearance"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_I_RACK_TAKEOUT_BAR"
+    },
+    {
+      "path": "/subsystems/1/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_I_CONTROLLER_SWING_CMD"
+    },
+    {
+      "path": "/subsystems/1/interfaces/2",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_I_CONTROLLER_INHIBIT"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_I_TAKEOUT_GUIDE_BAR"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_I_GUIDE_MACHINE_BAR"
+    },
+    {
+      "path": "/subsystems/5/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_I_OPERATOR_COMMAND"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

@@ -1,0 +1,156 @@
+package Model__Partitioned_discharge_screw_compressor {
+    private import ScalarValues::*;
+    doc SJS_Source
+    /* SJS_JSON_V1
+     * {"$schema": "sjs/1.0", "model_meta": {"system_name": "Partitioned-discharge screw compressor", "system_id": "US8845311B2", "description": "Concept model of a screw compressor that compresses gas in chambers formed by helical grooves, casing, and gate rotor gates, and separates adjacent-groove discharge paths using a partitioned port.", "version": "1.0", "lifecycle_stage": "concept", "domain": "Rotary gas compression", "maturity": "draft", "date_modified": "2026-09-27"}, "subsystems": [{"subsystem_id": "SCREW_ROTOR", "subsystem_name": "Screw rotor", "description": "Rotor having helical grooves that cooperate with gates to compress gas.", "domain": "Rotating machinery", "functional_basis": ["rotate rotor", "form compression chambers"], "ports": [{"port_id": "GROOVE_FIRST_GAS", "name": "Gas from first adjacent helical groove", "direction": "out", "flow_type": "gas"}, {"port_id": "GROOVE_SECOND_GAS", "name": "Gas from second adjacent helical groove", "direction": "out", "flow_type": "gas"}], "interfaces": [{"interface_id": "IF_GROOVE_FIRST_PORT", "mating_subsystem": "SLIDE_VALVE", "port_this": "GROOVE_FIRST_GAS", "port_mate": "VALVE_FIRST_PORT", "flow_ref": "GAS_FIRST", "interface_type": "gas communication"}, {"interface_id": "IF_GROOVE_SECOND_PORT", "mating_subsystem": "SLIDE_VALVE", "port_this": "GROOVE_SECOND_GAS", "port_mate": "VALVE_SECOND_PORT", "flow_ref": "GAS_SECOND", "interface_type": "gas communication"}]}, {"subsystem_id": "GATE_ROTOR", "subsystem_name": "Gate rotor", "description": "Rotor with gates meshing with the screw rotor helical grooves.", "domain": "Rotating machinery", "functional_basis": ["mesh gates"]}, {"subsystem_id": "CASING", "subsystem_name": "Casing", "description": "Contains screw rotor and helps define compression chambers and downstream discharge passage.", "domain": "Pressure containment", "ports": [{"port_id": "CASING_FIRST_DISCHARGE_PASSAGE", "name": "First downstream discharge passage", "direction": "in", "flow_type": "gas"}, {"port_id": "CASING_SECOND_DISCHARGE_PASSAGE", "name": "Second downstream discharge passage", "direction": "in", "flow_type": "gas"}]}, {"subsystem_id": "SLIDE_VALVE", "subsystem_name": "Partitioned discharge slide valve", "description": "Defines part of the discharge port and carries the first partition wall dividing it into first and second ports.", "domain": "Gas flow routing", "ports": [{"port_id": "VALVE_FIRST_PORT", "name": "First discharge port", "direction": "in", "flow_type": "gas"}, {"port_id": "VALVE_SECOND_PORT", "name": "Second discharge port", "direction": "in", "flow_type": "gas"}, {"port_id": "VALVE_FIRST_PASSAGE", "name": "First downstream discharge passage", "direction": "out", "flow_type": "gas"}, {"port_id": "VALVE_SECOND_PASSAGE", "name": "Second downstream discharge passage", "direction": "out", "flow_type": "gas"}], "interfaces": [{"interface_id": "IF_FIRST_DISCHARGE", "mating_subsystem": "CASING", "port_this": "VALVE_FIRST_PASSAGE", "port_mate": "CASING_FIRST_DISCHARGE_PASSAGE", "flow_ref": "GAS_FIRST", "interface_type": "gas passage"}, {"interface_id": "IF_SECOND_DISCHARGE", "mating_subsystem": "CASING", "port_this": "VALVE_SECOND_PASSAGE", "port_mate": "CASING_SECOND_DISCHARGE_PASSAGE", "flow_ref": "GAS_SECOND", "interface_type": "gas passage"}]}], "item_flows": [{"flow_id": "GAS", "name": "Gas undergoing compression and discharge", "flow_type": "gas", "notes": "Compression chambers discharge through partitioned ports into downstream passage(s)."}, {"flow_id": "GAS_FIRST", "name": "Gas from first port through first discharge passage", "flow_type": "gas", "notes": "First port communicates with the first discharge passage and high-pressure space; the optional claim-2 partition is not required by this model."}, {"flow_id": "GAS_SECOND", "name": "Gas from second port through second discharge passage", "flow_type": "gas", "notes": "Second port communicates with the second discharge passage and high-pressure space; the optional claim-2 partition is not required by this model."}], "behaviour": {"actions": [{"action_id": "COMPRESS_AND_DISCHARGE", "name": "Compress and discharge gas", "owner": "SCREW_ROTOR", "steps": [{"step_no": 1, "description": "Rotation moves meshing gates along helical grooves and forms compression chambers."}, {"step_no": 2, "description": "Gas is compressed in the chambers."}, {"step_no": 3, "description": "When adjacent grooves open to the discharge port, the slide-valve partition separates communication into first and second ports."}, {"step_no": 4, "description": "Gas passes into downstream discharge passage(s) communicating with the respective ports."}]}]}, "requirements": [{"req_id": "REQ_PARTITION_ADJACENT_DISCHARGE", "category": "functional", "priority": "high", "statement": "When two adjacent helical grooves are open to the discharge port, one communicates with the first port and the other with the second port, divided by a partition wall.", "rationale": "Claim 1; partitioned discharge arrangement.", "satisfied_by": ["SLIDE_VALVE"]}, {"req_id": "REQ_DOWNSTREAM_PASSAGE", "category": "functional", "priority": "medium", "statement": "The casing and slide valve together define a discharge passage downstream of and communicating with the discharge port.", "rationale": "Claim 1; downstream relative to fluid flow.", "satisfied_by": ["CASING", "SLIDE_VALVE"]}]}
+     */
+    doc
+    /* {"system_name": "Partitioned-discharge screw compressor", "system_id": "US8845311B2", "description": "Concept model of a screw compressor that compresses gas in chambers formed by helical grooves, casing, and gate rotor gates, and separates adjacent-groove discharge paths using a partitioned port.", "version": "1.0", "lifecycle_stage": "concept", "domain": "Rotary gas compression", "maturity": "draft", "date_modified": "2026-09-27"} */
+    item def FlowType__gas {
+        doc
+        /* {"flow_type": "gas"} */
+    }
+    part def Component_SCREW_ROTOR_Screw_rotor {
+        doc
+        /* {"subsystem_id": "SCREW_ROTOR", "subsystem_name": "Screw rotor", "description": "Rotor having helical grooves that cooperate with gates to compress gas.", "domain": "Rotating machinery", "functional_basis": ["rotate rotor", "form compression chambers"], "ports": [{"port_id": "GROOVE_FIRST_GAS", "name": "Gas from first adjacent helical groove", "direction": "out", "flow_type": "gas"}, {"port_id": "GROOVE_SECOND_GAS", "name": "Gas from second adjacent helical groove", "direction": "out", "flow_type": "gas"}], "interfaces": [{"interface_id": "IF_GROOVE_FIRST_PORT", "mating_subsystem": "SLIDE_VALVE", "port_this": "GROOVE_FIRST_GAS", "port_mate": "VALVE_FIRST_PORT", "flow_ref": "GAS_FIRST", "interface_type": "gas communication"}, {"interface_id": "IF_GROOVE_SECOND_PORT", "mating_subsystem": "SLIDE_VALVE", "port_this": "GROOVE_SECOND_GAS", "port_mate": "VALVE_SECOND_PORT", "flow_ref": "GAS_SECOND", "interface_type": "gas communication"}]} */
+        port port_GROOVE_FIRST_GAS_Gas_from_first_adjacent_helical_groove {
+            doc
+            /* {"port_id": "GROOVE_FIRST_GAS", "name": "Gas from first adjacent helical groove", "direction": "out", "flow_type": "gas"} */
+            out item payload : FlowType__gas;
+        }
+        port port_GROOVE_SECOND_GAS_Gas_from_second_adjacent_helical_groove {
+            doc
+            /* {"port_id": "GROOVE_SECOND_GAS", "name": "Gas from second adjacent helical groove", "direction": "out", "flow_type": "gas"} */
+            out item payload : FlowType__gas;
+        }
+    }
+    part def Component_GATE_ROTOR_Gate_rotor {
+        doc
+        /* {"subsystem_id": "GATE_ROTOR", "subsystem_name": "Gate rotor", "description": "Rotor with gates meshing with the screw rotor helical grooves.", "domain": "Rotating machinery", "functional_basis": ["mesh gates"]} */
+    }
+    part def Component_CASING_Casing {
+        doc
+        /* {"subsystem_id": "CASING", "subsystem_name": "Casing", "description": "Contains screw rotor and helps define compression chambers and downstream discharge passage.", "domain": "Pressure containment", "ports": [{"port_id": "CASING_FIRST_DISCHARGE_PASSAGE", "name": "First downstream discharge passage", "direction": "in", "flow_type": "gas"}, {"port_id": "CASING_SECOND_DISCHARGE_PASSAGE", "name": "Second downstream discharge passage", "direction": "in", "flow_type": "gas"}]} */
+        port port_CASING_FIRST_DISCHARGE_PASSAGE_First_downstream_discharge_passage {
+            doc
+            /* {"port_id": "CASING_FIRST_DISCHARGE_PASSAGE", "name": "First downstream discharge passage", "direction": "in", "flow_type": "gas"} */
+            in item payload : FlowType__gas;
+        }
+        port port_CASING_SECOND_DISCHARGE_PASSAGE_Second_downstream_discharge_passage {
+            doc
+            /* {"port_id": "CASING_SECOND_DISCHARGE_PASSAGE", "name": "Second downstream discharge passage", "direction": "in", "flow_type": "gas"} */
+            in item payload : FlowType__gas;
+        }
+    }
+    part def Component_SLIDE_VALVE_Partitioned_discharge_slide_valve {
+        doc
+        /* {"subsystem_id": "SLIDE_VALVE", "subsystem_name": "Partitioned discharge slide valve", "description": "Defines part of the discharge port and carries the first partition wall dividing it into first and second ports.", "domain": "Gas flow routing", "ports": [{"port_id": "VALVE_FIRST_PORT", "name": "First discharge port", "direction": "in", "flow_type": "gas"}, {"port_id": "VALVE_SECOND_PORT", "name": "Second discharge port", "direction": "in", "flow_type": "gas"}, {"port_id": "VALVE_FIRST_PASSAGE", "name": "First downstream discharge passage", "direction": "out", "flow_type": "gas"}, {"port_id": "VALVE_SECOND_PASSAGE", "name": "Second downstream discharge passage", "direction": "out", "flow_type": "gas"}], "interfaces": [{"interface_id": "IF_FIRST_DISCHARGE", "mating_subsystem": "CASING", "port_this": "VALVE_FIRST_PASSAGE", "port_mate": "CASING_FIRST_DISCHARGE_PASSAGE", "flow_ref": "GAS_FIRST", "interface_type": "gas passage"}, {"interface_id": "IF_SECOND_DISCHARGE", "mating_subsystem": "CASING", "port_this": "VALVE_SECOND_PASSAGE", "port_mate": "CASING_SECOND_DISCHARGE_PASSAGE", "flow_ref": "GAS_SECOND", "interface_type": "gas passage"}]} */
+        port port_VALVE_FIRST_PORT_First_discharge_port {
+            doc
+            /* {"port_id": "VALVE_FIRST_PORT", "name": "First discharge port", "direction": "in", "flow_type": "gas"} */
+            in item payload : FlowType__gas;
+        }
+        port port_VALVE_SECOND_PORT_Second_discharge_port {
+            doc
+            /* {"port_id": "VALVE_SECOND_PORT", "name": "Second discharge port", "direction": "in", "flow_type": "gas"} */
+            in item payload : FlowType__gas;
+        }
+        port port_VALVE_FIRST_PASSAGE_First_downstream_discharge_passage {
+            doc
+            /* {"port_id": "VALVE_FIRST_PASSAGE", "name": "First downstream discharge passage", "direction": "out", "flow_type": "gas"} */
+            out item payload : FlowType__gas;
+        }
+        port port_VALVE_SECOND_PASSAGE_Second_downstream_discharge_passage {
+            doc
+            /* {"port_id": "VALVE_SECOND_PASSAGE", "name": "Second downstream discharge passage", "direction": "out", "flow_type": "gas"} */
+            out item payload : FlowType__gas;
+        }
+    }
+    item def Flow_GAS_Gas_undergoing_compression_and_discharge :> FlowType__gas {
+        doc
+        /* {"flow_id": "GAS", "name": "Gas undergoing compression and discharge", "flow_type": "gas", "notes": "Compression chambers discharge through partitioned ports into downstream passage(s)."} */
+    }
+    item def Flow_GAS_FIRST_Gas_from_first_port_through_first_discharge_p :> FlowType__gas {
+        doc
+        /* {"flow_id": "GAS_FIRST", "name": "Gas from first port through first discharge passage", "flow_type": "gas", "notes": "First port communicates with the first discharge passage and high-pressure space; the optional claim-2 partition is not required by this model."} */
+    }
+    item def Flow_GAS_SECOND_Gas_from_second_port_through_second_discharge :> FlowType__gas {
+        doc
+        /* {"flow_id": "GAS_SECOND", "name": "Gas from second port through second discharge passage", "flow_type": "gas", "notes": "Second port communicates with the second discharge passage and high-pressure space; the optional claim-2 partition is not required by this model."} */
+    }
+    requirement def Requirement_REQ_PARTITION_ADJACENT_DISCHARGE {
+        doc
+        /* {"req_id": "REQ_PARTITION_ADJACENT_DISCHARGE", "category": "functional", "priority": "high", "statement": "When two adjacent helical grooves are open to the discharge port, one communicates with the first port and the other with the second port, divided by a partition wall.", "rationale": "Claim 1; partitioned discharge arrangement.", "satisfied_by": ["SLIDE_VALVE"]} */
+    }
+    requirement requirement_REQ_PARTITION_ADJACENT_DISCHARGE
+        : Requirement_REQ_PARTITION_ADJACENT_DISCHARGE;
+    requirement def Requirement_REQ_DOWNSTREAM_PASSAGE {
+        doc
+        /* {"req_id": "REQ_DOWNSTREAM_PASSAGE", "category": "functional", "priority": "medium", "statement": "The casing and slide valve together define a discharge passage downstream of and communicating with the discharge port.", "rationale": "Claim 1; downstream relative to fluid flow.", "satisfied_by": ["CASING", "SLIDE_VALVE"]} */
+    }
+    requirement requirement_REQ_DOWNSTREAM_PASSAGE : Requirement_REQ_DOWNSTREAM_PASSAGE;
+    action def Action_COMPRESS_AND_DISCHARGE_Compress_and_discharge_gas {
+        doc
+        /* {"action_id": "COMPRESS_AND_DISCHARGE", "name": "Compress and discharge gas", "owner": "SCREW_ROTOR", "steps": [{"step_no": 1, "description": "Rotation moves meshing gates along helical grooves and forms compression chambers."}, {"step_no": 2, "description": "Gas is compressed in the chambers."}, {"step_no": 3, "description": "When adjacent grooves open to the discharge port, the slide-valve partition separates communication into first and second ports."}, {"step_no": 4, "description": "Gas passes into downstream discharge passage(s) communicating with the respective ports."}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "Rotation moves meshing gates along helical grooves and forms compression chambers."} */
+        }
+        then action step_2 {
+            doc
+            /* {"step_no": 2, "description": "Gas is compressed in the chambers."} */
+        }
+        then action step_3 {
+            doc
+            /* {"step_no": 3, "description": "When adjacent grooves open to the discharge port, the slide-valve partition separates communication into first and second ports."} */
+        }
+        then action step_4 {
+            doc
+            /* {"step_no": 4, "description": "Gas passes into downstream discharge passage(s) communicating with the respective ports."} */
+        }
+    }
+    part systemModel {
+        part component_SCREW_ROTOR_Screw_rotor : Component_SCREW_ROTOR_Screw_rotor;
+        part component_GATE_ROTOR_Gate_rotor : Component_GATE_ROTOR_Gate_rotor;
+        part component_CASING_Casing : Component_CASING_Casing;
+        part component_SLIDE_VALVE_Partitioned_discharge_slide_valve
+            : Component_SLIDE_VALVE_Partitioned_discharge_slide_valve;
+        action action_COMPRESS_AND_DISCHARGE_Compress_and_discharge_gas
+            : Action_COMPRESS_AND_DISCHARGE_Compress_and_discharge_gas;
+    }
+    satisfy requirement_REQ_PARTITION_ADJACENT_DISCHARGE
+        by systemModel.component_SLIDE_VALVE_Partitioned_discharge_slide_valve;
+    satisfy requirement_REQ_DOWNSTREAM_PASSAGE by systemModel.component_CASING_Casing;
+    satisfy requirement_REQ_DOWNSTREAM_PASSAGE
+        by systemModel.component_SLIDE_VALVE_Partitioned_discharge_slide_valve;
+    allocate systemModel.action_COMPRESS_AND_DISCHARGE_Compress_and_discharge_gas
+        to systemModel.component_SCREW_ROTOR_Screw_rotor;
+    doc
+    /* {"interface_id": "IF_GROOVE_FIRST_PORT", "mating_subsystem": "SLIDE_VALVE", "port_this": "GROOVE_FIRST_GAS", "port_mate": "VALVE_FIRST_PORT", "flow_ref": "GAS_FIRST", "interface_type": "gas communication"} */
+    flow connection_IF_GROOVE_FIRST_PORT
+        from systemModel.component_SCREW_ROTOR_Screw_rotor
+            .port_GROOVE_FIRST_GAS_Gas_from_first_adjacent_helical_groove.payload
+        to systemModel.component_SLIDE_VALVE_Partitioned_discharge_slide_valve
+            .port_VALVE_FIRST_PORT_First_discharge_port.payload;
+    doc
+    /* {"interface_id": "IF_GROOVE_SECOND_PORT", "mating_subsystem": "SLIDE_VALVE", "port_this": "GROOVE_SECOND_GAS", "port_mate": "VALVE_SECOND_PORT", "flow_ref": "GAS_SECOND", "interface_type": "gas communication"} */
+    flow connection_IF_GROOVE_SECOND_PORT
+        from systemModel.component_SCREW_ROTOR_Screw_rotor
+            .port_GROOVE_SECOND_GAS_Gas_from_second_adjacent_helical_groove.payload
+        to systemModel.component_SLIDE_VALVE_Partitioned_discharge_slide_valve
+            .port_VALVE_SECOND_PORT_Second_discharge_port.payload;
+    doc
+    /* {"interface_id": "IF_FIRST_DISCHARGE", "mating_subsystem": "CASING", "port_this": "VALVE_FIRST_PASSAGE", "port_mate": "CASING_FIRST_DISCHARGE_PASSAGE", "flow_ref": "GAS_FIRST", "interface_type": "gas passage"} */
+    flow connection_IF_FIRST_DISCHARGE
+        from systemModel.component_SLIDE_VALVE_Partitioned_discharge_slide_valve
+            .port_VALVE_FIRST_PASSAGE_First_downstream_discharge_passage.payload
+        to systemModel.component_CASING_Casing
+            .port_CASING_FIRST_DISCHARGE_PASSAGE_First_downstream_discharge_passage.payload;
+    doc
+    /* {"interface_id": "IF_SECOND_DISCHARGE", "mating_subsystem": "CASING", "port_this": "VALVE_SECOND_PASSAGE", "port_mate": "CASING_SECOND_DISCHARGE_PASSAGE", "flow_ref": "GAS_SECOND", "interface_type": "gas passage"} */
+    flow connection_IF_SECOND_DISCHARGE
+        from systemModel.component_SLIDE_VALVE_Partitioned_discharge_slide_valve
+            .port_VALVE_SECOND_PASSAGE_Second_downstream_discharge_passage.payload
+        to systemModel.component_CASING_Casing
+            .port_CASING_SECOND_DISCHARGE_PASSAGE_Second_downstream_discharge_passage.payload;
+} // package Model__Partitioned_discharge_screw_compressor

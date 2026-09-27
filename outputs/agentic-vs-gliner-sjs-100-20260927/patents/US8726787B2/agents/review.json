@@ -1,0 +1,34 @@
+{
+  "revision": 4,
+  "candidate_sha256": "ff8078f5d6c8349602a1e0beb75d0ca24ce4d63b03d0ef60577dfac27552454c",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 4's actuator structure, rotor galleries/ports, chamber communications, angular port-block function, operating routes, external pump/reservoir, and mechanical load context are supported by the cited patent passages. No unsupported numeric performance values or invented valve architecture are asserted."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The formerly missing rotor-arm/chamber route and stator pressure/return context routes are now represented. Core pressurization, displaced-fluid return, rotor output, and conditional position-limit bypass are captured. Optional disclosed variants are explicitly omitted from this draft."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Hydraulic and rotary flows use compatible port types; flow directions are compatible (including inout drain/reservoir paths). The action descriptions agree with the modeled paths and cited operating cases."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Claimed apparatus elements and claim 11/12 operating behaviors are traceable to the cited passages. No fabricated requirements or constraints are introduced."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Supply, drain/return, bore-to-rotor-base, rotor-to-chamber, stator-hole-to-chamber, stator pressure/return context, and rotary load interfaces have compatible existing endpoints. Shared pump/reservoir ports reflect selectable operating connections rather than simultaneous fixed routing."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "External pump, reservoir, and driven load are modeled as distinct context components, consistent with textbook boundary/context guidance. The textbook is not used as evidence for invention facts."
+    }
+  },
+  "findings": [],
+  "summary": "Independently reviewed saved SJS revision 4. Read all cited patent passages and relevant textbook guidance. The prior connectivity gaps are resolved: rotor arm ports now connect to the chamber, and stator routing has pump/reservoir context connections. Modeled behavior and interfaces align with patent operating descriptions; no unresolved issues identified. No candidate edits made.",
+  "saved_at": "2026-09-27T06:16:52.766172+00:00"
+}

@@ -1,0 +1,151 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 3,
+    "ActionUsage": 7,
+    "AllocationUsage": 3,
+    "Documentation": 31,
+    "EndFeatureMembership": 12,
+    "Feature": 18,
+    "FeatureChaining": 30,
+    "FeatureMembership": 33,
+    "FeatureTyping": 16,
+    "FlowEnd": 6,
+    "FlowUsage": 3,
+    "ItemDefinition": 6,
+    "ItemUsage": 6,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 55,
+    "Package": 1,
+    "PartDefinition": 7,
+    "PartUsage": 8,
+    "PortUsage": 6,
+    "Redefinition": 6,
+    "ReferenceSubsetting": 12,
+    "ReferenceUsage": 6,
+    "Subclassification": 3,
+    "SuccessionAsUsage": 1
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_GUIDE_Feed_rod_guide_assembly"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_GUIDE_Feed_rod_guide_assembly.port_GUIDE_ROD_IN_Feed_rod_passage"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_GUIDE_Feed_rod_guide_assembly.port_GUIDE_FLUID_IN_Fluid_access_to_guide"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BUSH_Spaced_feed_rod_bushes"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ELASTIC_Bush_to_guide_elastic_materials"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BASE_ISO_Base_and_guide_vibration_isolation"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_FLUID_Fluid_supply_and_distribution"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FLUID_Fluid_supply_and_distribution.port_FLUID_GUIDE_OUT_Fluid_delivery_to_guide"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_FEEDROD_Feed_rod"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FEEDROD_Feed_rod.port_ROD_OUT_Moving_rod_to_guide"
+    },
+    {
+      "path": "/subsystems/5/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FEEDROD_Feed_rod.port_MATERIAL_OUT_Material_delivery"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_MACHINE_Working_machine"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_MACHINE_Working_machine.port_MATERIAL_IN_Fed_material_receipt"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_ROD_Moving_feed_rod"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_FLUID_Fluid_through_guide_reservoirs"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_MATERIAL_Fed_material"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_GUIDE_Guide_moving_feed_rod"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_DISTRIBUTE_Distribute_fluid_between_reservoirs"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_ATTENUATE_Attenuate_feed_rod_vibration"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_GUIDE_ROD"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_GUIDE_FLUID"
+    },
+    {
+      "path": "/subsystems/5/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_MATERIAL_MACHINE"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

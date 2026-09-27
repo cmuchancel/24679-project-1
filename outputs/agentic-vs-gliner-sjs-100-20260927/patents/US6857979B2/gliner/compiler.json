@@ -1,0 +1,4042 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": false,
+  "native_element_counts": {
+    "ActionDefinition": 26,
+    "ActionUsage": 52,
+    "AttributeUsage": 5,
+    "Documentation": 310,
+    "FeatureMembership": 1612,
+    "FeatureTyping": 340,
+    "FeatureValue": 1300,
+    "LiteralInteger": 206,
+    "LiteralString": 1300,
+    "MetadataDefinition": 1,
+    "MetadataUsage": 260,
+    "MultiplicityRange": 206,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 1060,
+    "Package": 1,
+    "PartDefinition": 49,
+    "PartUsage": 256,
+    "Redefinition": 1300,
+    "ReferenceUsage": 1300
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_001_automotive_engine_serpentine_belt_systems"
+    },
+    {
+      "path": "/subsystems/0/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_automotive_engine_serpentine_belt_systems.part_P_018_flat_coil_spring"
+    },
+    {
+      "path": "/subsystems/0/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_automotive_engine_serpentine_belt_systems.part_P_019_helical_coil_torsion_spring"
+    },
+    {
+      "path": "/subsystems/0/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_automotive_engine_serpentine_belt_systems.part_P_032_spindle_structure"
+    },
+    {
+      "path": "/subsystems/0/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_automotive_engine_serpentine_belt_systems.part_P_044_spring_28"
+    },
+    {
+      "path": "/subsystems/0/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_automotive_engine_serpentine_belt_systems.part_P_058_spring_20"
+    },
+    {
+      "path": "/subsystems/0/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_automotive_engine_serpentine_belt_systems.part_P_060_shoulder"
+    },
+    {
+      "path": "/subsystems/0/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_automotive_engine_serpentine_belt_systems.part_P_062_thrust_washer"
+    },
+    {
+      "path": "/subsystems/0/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_automotive_engine_serpentine_belt_systems.part_P_063_thrust_washer_84"
+    },
+    {
+      "path": "/subsystems/0/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_automotive_engine_serpentine_belt_systems.part_P_069_belt"
+    },
+    {
+      "path": "/subsystems/0/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_automotive_engine_serpentine_belt_systems.part_P_070_belt_16"
+    },
+    {
+      "path": "/subsystems/0/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_automotive_engine_serpentine_belt_systems.part_P_071_coil_torsion_spring"
+    },
+    {
+      "path": "/subsystems/0/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_automotive_engine_serpentine_belt_systems.part_P_072_motor_vehicle_engine"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_002_timing_belt_systems"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_003_serpentine_belt_system"
+    },
+    {
+      "path": "/subsystems/2/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_serpentine_belt_system.part_P_004_belt_tensioning_pulley"
+    },
+    {
+      "path": "/subsystems/2/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_serpentine_belt_system.part_P_006_mounting_bolt"
+    },
+    {
+      "path": "/subsystems/2/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_serpentine_belt_system.part_P_007_idler_pulley"
+    },
+    {
+      "path": "/subsystems/2/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_serpentine_belt_system.part_P_008_belt_tensioner"
+    },
+    {
+      "path": "/subsystems/2/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_serpentine_belt_system.part_P_009_driving_crankshaft_pulley"
+    },
+    {
+      "path": "/subsystems/2/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_serpentine_belt_system.part_P_010_driven_pulleys"
+    },
+    {
+      "path": "/subsystems/2/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_003_serpentine_belt_system.part_P_011_shafts"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_004_belt_system"
+    },
+    {
+      "path": "/subsystems/3/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_004_belt_system.part_P_007_idler_pulley_2da6f069"
+    },
+    {
+      "path": "/subsystems/3/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_004_belt_system.part_P_009_driving_crankshaft_pulley_97ffd0e3"
+    },
+    {
+      "path": "/subsystems/3/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_004_belt_system.part_P_010_driven_pulleys_6ab4451b"
+    },
+    {
+      "path": "/subsystems/3/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_004_belt_system.part_P_011_shafts_dd59c3df"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_005_engine_components"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_006_belt_tensioning_assembly"
+    },
+    {
+      "path": "/subsystems/5/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_belt_tensioning_assembly.part_P_012_idler_pulleys"
+    },
+    {
+      "path": "/subsystems/5/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_belt_tensioning_assembly.part_P_007_idler_pulley_db625620"
+    },
+    {
+      "path": "/subsystems/5/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_belt_tensioning_assembly.part_P_013_arm"
+    },
+    {
+      "path": "/subsystems/5/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_belt_tensioning_assembly.part_P_014_arm_12"
+    },
+    {
+      "path": "/subsystems/5/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_belt_tensioning_assembly.part_P_015_pulley"
+    },
+    {
+      "path": "/subsystems/5/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_belt_tensioning_assembly.part_P_016_pulley_14"
+    },
+    {
+      "path": "/subsystems/5/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_belt_tensioning_assembly.part_P_017_sleeve"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_007_combination_belt_tensioner"
+    },
+    {
+      "path": "/subsystems/6/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_combination_belt_tensioner.part_P_001_fixed_pivot_structure"
+    },
+    {
+      "path": "/subsystems/6/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_combination_belt_tensioner.part_P_003_moveable_arm"
+    },
+    {
+      "path": "/subsystems/6/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_combination_belt_tensioner.part_P_013_arm_61df95c4"
+    },
+    {
+      "path": "/subsystems/6/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_combination_belt_tensioner.part_P_004_belt_tensioning_pulley_c21f609d"
+    },
+    {
+      "path": "/subsystems/6/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_combination_belt_tensioner.part_P_015_pulley_fd8ac0ef"
+    },
+    {
+      "path": "/subsystems/6/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_combination_belt_tensioner.part_P_007_idler_pulley_38e8816f"
+    },
+    {
+      "path": "/subsystems/6/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_007_combination_belt_tensioner.part_P_020_retaining_member"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_008_combination_belt_tensioner_and_idler"
+    },
+    {
+      "path": "/subsystems/7/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_008_combination_belt_tensioner_and_idler.part_P_001_fixed_pivot_structure_7b44aaca"
+    },
+    {
+      "path": "/subsystems/7/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_008_combination_belt_tensioner_and_idler.part_P_003_moveable_arm_67812f15"
+    },
+    {
+      "path": "/subsystems/7/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_008_combination_belt_tensioner_and_idler.part_P_013_arm_dd15b395"
+    },
+    {
+      "path": "/subsystems/7/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_008_combination_belt_tensioner_and_idler.part_P_004_belt_tensioning_pulley_1d29fcba"
+    },
+    {
+      "path": "/subsystems/7/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_008_combination_belt_tensioner_and_idler.part_P_015_pulley_eb8c2084"
+    },
+    {
+      "path": "/subsystems/7/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_008_combination_belt_tensioner_and_idler.part_P_005_helical_coil_spring"
+    },
+    {
+      "path": "/subsystems/7/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_008_combination_belt_tensioner_and_idler.part_P_007_idler_pulley_ed586118"
+    },
+    {
+      "path": "/subsystems/7/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_008_combination_belt_tensioner_and_idler.part_P_020_retaining_member_b2a2945f"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_009_belt_tensioner"
+    },
+    {
+      "path": "/subsystems/9",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_010_combination_10"
+    },
+    {
+      "path": "/subsystems/9/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_combination_10.part_P_013_arm_046b9475"
+    },
+    {
+      "path": "/subsystems/9/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_combination_10.part_P_066_arm_20"
+    },
+    {
+      "path": "/subsystems/9/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_combination_10.part_P_015_pulley_34f20547"
+    },
+    {
+      "path": "/subsystems/9/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_combination_10.part_P_051_pulley_24"
+    },
+    {
+      "path": "/subsystems/9/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_combination_10.part_P_067_arm_travel_stops"
+    },
+    {
+      "path": "/subsystems/9/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_combination_10.part_P_002_pivot_structure"
+    },
+    {
+      "path": "/subsystems/9/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_combination_10.part_P_007_idler_pulley_49f03a6c"
+    },
+    {
+      "path": "/subsystems/9/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_combination_10.part_P_068_idler_pulley_30"
+    },
+    {
+      "path": "/subsystems/9/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_combination_10.part_P_001_fixed_pivot_structure_3d0600af"
+    },
+    {
+      "path": "/subsystems/9/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_combination_10.part_P_003_moveable_arm_fcdecf9d"
+    },
+    {
+      "path": "/subsystems/9/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_combination_10.part_P_004_belt_tensioning_pulley_d055dbed"
+    },
+    {
+      "path": "/subsystems/9/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_combination_10.part_P_020_retaining_member_2ac4a433"
+    },
+    {
+      "path": "/subsystems/10",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_011_belt_drive_system"
+    },
+    {
+      "path": "/subsystems/10/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_021_engine_block"
+    },
+    {
+      "path": "/subsystems/10/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_022_frame"
+    },
+    {
+      "path": "/subsystems/10/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_023_drive_belt"
+    },
+    {
+      "path": "/subsystems/10/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_024_tensioner"
+    },
+    {
+      "path": "/subsystems/10/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_001_fixed_pivot_structure_cc7a091c"
+    },
+    {
+      "path": "/subsystems/10/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_002_pivot_structure_fadd3eb5"
+    },
+    {
+      "path": "/subsystems/10/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_003_moveable_arm_fba87240"
+    },
+    {
+      "path": "/subsystems/10/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_025_moveable_arm_20"
+    },
+    {
+      "path": "/subsystems/10/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_013_arm_f14fab93"
+    },
+    {
+      "path": "/subsystems/10/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_026_pivot_axis"
+    },
+    {
+      "path": "/subsystems/10/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_004_belt_tensioning_pulley_61abdd22"
+    },
+    {
+      "path": "/subsystems/10/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_027_Arm"
+    },
+    {
+      "path": "/subsystems/10/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_028_spring"
+    },
+    {
+      "path": "/subsystems/10/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_052_outer_annular_wall"
+    },
+    {
+      "path": "/subsystems/10/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_007_idler_pulley_5f0b94d0"
+    },
+    {
+      "path": "/subsystems/11",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_012_accessory_belt_drive_system"
+    },
+    {
+      "path": "/subsystems/11/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_accessory_belt_drive_system.part_P_003_moveable_arm_8f59f3b9"
+    },
+    {
+      "path": "/subsystems/11/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_accessory_belt_drive_system.part_P_013_arm_185d7743"
+    },
+    {
+      "path": "/subsystems/11/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_012_accessory_belt_drive_system.part_P_027_Arm_fc762f20"
+    },
+    {
+      "path": "/subsystems/12",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_013_pivot_structure"
+    },
+    {
+      "path": "/subsystems/12/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_pivot_structure.part_P_028_spring_59724d4e"
+    },
+    {
+      "path": "/subsystems/12/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_pivot_structure.part_P_013_arm_fca32d87"
+    },
+    {
+      "path": "/subsystems/12/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_pivot_structure.part_P_007_idler_pulley_9681523b"
+    },
+    {
+      "path": "/subsystems/12/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_pivot_structure.part_P_029_tensioning_pulley"
+    },
+    {
+      "path": "/subsystems/12/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_pivot_structure.part_P_030_shaft"
+    },
+    {
+      "path": "/subsystems/12/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_pivot_structure.part_P_031_shaft_32"
+    },
+    {
+      "path": "/subsystems/12/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_013_pivot_structure.part_P_006_mounting_bolt_12644bd3"
+    },
+    {
+      "path": "/subsystems/13",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_014_pivot_structure_18"
+    },
+    {
+      "path": "/subsystems/13/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_014_pivot_structure_18.part_P_028_spring_0dc8836d"
+    },
+    {
+      "path": "/subsystems/13/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_014_pivot_structure_18.part_P_013_arm_c7a34035"
+    },
+    {
+      "path": "/subsystems/13/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_014_pivot_structure_18.part_P_007_idler_pulley_5ccb6bcd"
+    },
+    {
+      "path": "/subsystems/13/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_014_pivot_structure_18.part_P_029_tensioning_pulley_613b81fe"
+    },
+    {
+      "path": "/subsystems/13/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_014_pivot_structure_18.part_P_030_shaft_706764f8"
+    },
+    {
+      "path": "/subsystems/13/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_014_pivot_structure_18.part_P_031_shaft_32_f19a7971"
+    },
+    {
+      "path": "/subsystems/13/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_014_pivot_structure_18.part_P_006_mounting_bolt_a3fae22b"
+    },
+    {
+      "path": "/subsystems/14",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_015_engine_block_12"
+    },
+    {
+      "path": "/subsystems/14/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_015_engine_block_12.part_P_007_idler_pulley_f268a079"
+    },
+    {
+      "path": "/subsystems/14/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_015_engine_block_12.part_P_004_belt_tensioning_pulley_dba62a4f"
+    },
+    {
+      "path": "/subsystems/14/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_015_engine_block_12.part_P_028_spring_846d0f9a"
+    },
+    {
+      "path": "/subsystems/14/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_015_engine_block_12.part_P_068_idler_pulley_30_9718eedd"
+    },
+    {
+      "path": "/subsystems/15",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_016_mounting_bolt"
+    },
+    {
+      "path": "/subsystems/16",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_017_base_or_spindle_structure_36"
+    },
+    {
+      "path": "/subsystems/17",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_018_spindle_structure"
+    },
+    {
+      "path": "/subsystems/17/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_spindle_structure.part_P_033_annular_portion"
+    },
+    {
+      "path": "/subsystems/17/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_spindle_structure.part_P_034_annular_portion_42"
+    },
+    {
+      "path": "/subsystems/17/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_spindle_structure.part_P_035_hub_portion"
+    },
+    {
+      "path": "/subsystems/17/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_spindle_structure.part_P_036_hub_portion_46"
+    },
+    {
+      "path": "/subsystems/17/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_spindle_structure.part_P_040_arm_portion"
+    },
+    {
+      "path": "/subsystems/17/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_spindle_structure.part_P_041_arm_portion_54"
+    },
+    {
+      "path": "/subsystems/17/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_spindle_structure.part_P_045_pulley_mounting_portion"
+    },
+    {
+      "path": "/subsystems/17/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_spindle_structure.part_P_047_mounting_portion"
+    },
+    {
+      "path": "/subsystems/18",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_019_spindle_structure_36"
+    },
+    {
+      "path": "/subsystems/18/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_019_spindle_structure_36.part_P_033_annular_portion_4199b046"
+    },
+    {
+      "path": "/subsystems/18/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_019_spindle_structure_36.part_P_034_annular_portion_42_a2f17236"
+    },
+    {
+      "path": "/subsystems/18/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_019_spindle_structure_36.part_P_035_hub_portion_8b48e243"
+    },
+    {
+      "path": "/subsystems/18/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_019_spindle_structure_36.part_P_036_hub_portion_46_2a78cf2d"
+    },
+    {
+      "path": "/subsystems/19",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_020_spindle"
+    },
+    {
+      "path": "/subsystems/19/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_020_spindle.part_P_033_annular_portion_7bd36cd9"
+    },
+    {
+      "path": "/subsystems/19/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_020_spindle.part_P_034_annular_portion_42_b9e5fa55"
+    },
+    {
+      "path": "/subsystems/19/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_020_spindle.part_P_035_hub_portion_a16d8cbf"
+    },
+    {
+      "path": "/subsystems/19/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_020_spindle.part_P_036_hub_portion_46_48b7706c"
+    },
+    {
+      "path": "/subsystems/20",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_021_spindle_36"
+    },
+    {
+      "path": "/subsystems/20/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_021_spindle_36.part_P_033_annular_portion_9241777d"
+    },
+    {
+      "path": "/subsystems/20/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_021_spindle_36.part_P_034_annular_portion_42_0d6f3e0f"
+    },
+    {
+      "path": "/subsystems/20/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_021_spindle_36.part_P_035_hub_portion_79bb0a56"
+    },
+    {
+      "path": "/subsystems/20/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_021_spindle_36.part_P_036_hub_portion_46_64e9a4d3"
+    },
+    {
+      "path": "/subsystems/21",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_022_bracket"
+    },
+    {
+      "path": "/subsystems/22",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_023_engine_block"
+    },
+    {
+      "path": "/subsystems/22/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_023_engine_block.part_P_007_idler_pulley_252673bc"
+    },
+    {
+      "path": "/subsystems/22/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_023_engine_block.part_P_004_belt_tensioning_pulley_bb0da66d"
+    },
+    {
+      "path": "/subsystems/22/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_023_engine_block.part_P_001_fixed_pivot_structure_33438cb2"
+    },
+    {
+      "path": "/subsystems/22/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_023_engine_block.part_P_003_moveable_arm_8fa6f8d9"
+    },
+    {
+      "path": "/subsystems/22/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_023_engine_block.part_P_020_retaining_member_3b699e60"
+    },
+    {
+      "path": "/subsystems/23",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_024_arm"
+    },
+    {
+      "path": "/subsystems/23/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_024_arm.part_P_035_hub_portion_1122cfa6"
+    },
+    {
+      "path": "/subsystems/23/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_024_arm.part_P_036_hub_portion_46_1d937f17"
+    },
+    {
+      "path": "/subsystems/23/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_024_arm.part_P_037_spring_support"
+    },
+    {
+      "path": "/subsystems/23/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_024_arm.part_P_038_damping_sleeve"
+    },
+    {
+      "path": "/subsystems/23/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_024_arm.part_P_039_ring"
+    },
+    {
+      "path": "/subsystems/23/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_024_arm.part_P_020_retaining_member_9d0f9d2d"
+    },
+    {
+      "path": "/subsystems/23/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_024_arm.part_P_040_arm_portion_2f48c459"
+    },
+    {
+      "path": "/subsystems/23/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_024_arm.part_P_007_idler_pulley_11d668ce"
+    },
+    {
+      "path": "/subsystems/24",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_025_arm_20"
+    },
+    {
+      "path": "/subsystems/24/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_035_hub_portion_82e6f28b"
+    },
+    {
+      "path": "/subsystems/24/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_036_hub_portion_46_718c9d86"
+    },
+    {
+      "path": "/subsystems/24/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_037_spring_support_7bda652e"
+    },
+    {
+      "path": "/subsystems/24/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_038_damping_sleeve_4bfcca27"
+    },
+    {
+      "path": "/subsystems/24/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_039_ring_3b966e10"
+    },
+    {
+      "path": "/subsystems/24/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_028_spring_df3c7a68"
+    },
+    {
+      "path": "/subsystems/24/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_040_arm_portion_212e035e"
+    },
+    {
+      "path": "/subsystems/24/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_041_arm_portion_54_4350417e"
+    },
+    {
+      "path": "/subsystems/24/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_042_cylindrical_wall_portion"
+    },
+    {
+      "path": "/subsystems/24/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_043_cylindrical_wall_portion_56"
+    },
+    {
+      "path": "/subsystems/24/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_045_pulley_mounting_portion_81ca0e99"
+    },
+    {
+      "path": "/subsystems/24/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_046_pulley_mounting_portion_58"
+    },
+    {
+      "path": "/subsystems/24/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_047_mounting_portion_7e2cc9ed"
+    },
+    {
+      "path": "/subsystems/24/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_048_steel_headed_bolt_64"
+    },
+    {
+      "path": "/subsystems/24/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_049_nut"
+    },
+    {
+      "path": "/subsystems/24/parts/15",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_050_dust_shield"
+    },
+    {
+      "path": "/subsystems/24/parts/16",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_015_pulley_1cab7a3b"
+    },
+    {
+      "path": "/subsystems/24/parts/17",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_051_pulley_24_46217906"
+    },
+    {
+      "path": "/subsystems/24/parts/18",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_052_outer_annular_wall_a72eefb4"
+    },
+    {
+      "path": "/subsystems/25",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_026_hub_portion"
+    },
+    {
+      "path": "/subsystems/26",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly"
+    },
+    {
+      "path": "/subsystems/26/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_045_pulley_mounting_portion_bb407521"
+    },
+    {
+      "path": "/subsystems/26/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_047_mounting_portion_7e6bdd0f"
+    },
+    {
+      "path": "/subsystems/26/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_015_pulley_b9e8b407"
+    },
+    {
+      "path": "/subsystems/26/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_051_pulley_24_a7eb681a"
+    },
+    {
+      "path": "/subsystems/26/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_052_outer_annular_wall_040c423b"
+    },
+    {
+      "path": "/subsystems/26/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_020_retaining_member_36c6ac62"
+    },
+    {
+      "path": "/subsystems/26/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_059_retaining_member_82"
+    },
+    {
+      "path": "/subsystems/26/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_028_spring_702ef798"
+    },
+    {
+      "path": "/subsystems/26/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_061_mounting_surface"
+    },
+    {
+      "path": "/subsystems/26/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_064_inner_race"
+    },
+    {
+      "path": "/subsystems/26/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_006_mounting_bolt_12de40fe"
+    },
+    {
+      "path": "/subsystems/26/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_007_idler_pulley_cd122dcf"
+    },
+    {
+      "path": "/subsystems/26/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_004_belt_tensioning_pulley_2bc9a267"
+    },
+    {
+      "path": "/subsystems/27",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_028_ball_bearing_assembly_62"
+    },
+    {
+      "path": "/subsystems/27/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_028_ball_bearing_assembly_62.part_P_047_mounting_portion_f6ccd605"
+    },
+    {
+      "path": "/subsystems/27/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_028_ball_bearing_assembly_62.part_P_015_pulley_f564eaf0"
+    },
+    {
+      "path": "/subsystems/27/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_028_ball_bearing_assembly_62.part_P_051_pulley_24_4c9e2d4e"
+    },
+    {
+      "path": "/subsystems/27/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_028_ball_bearing_assembly_62.part_P_052_outer_annular_wall_4e86666c"
+    },
+    {
+      "path": "/subsystems/28",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_029_pulley"
+    },
+    {
+      "path": "/subsystems/28/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_029_pulley.part_P_053_wall"
+    },
+    {
+      "path": "/subsystems/28/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_029_pulley.part_P_054_wall_70"
+    },
+    {
+      "path": "/subsystems/28/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_029_pulley.part_P_052_outer_annular_wall_4009a2a7"
+    },
+    {
+      "path": "/subsystems/28/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_029_pulley.part_P_055_circular_wall"
+    },
+    {
+      "path": "/subsystems/28/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_029_pulley.part_P_056_circular_wall_74"
+    },
+    {
+      "path": "/subsystems/28/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_029_pulley.part_P_035_hub_portion_3d437d7b"
+    },
+    {
+      "path": "/subsystems/28/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_029_pulley.part_P_057_cup_shaped_portion"
+    },
+    {
+      "path": "/subsystems/29",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_030_pulley_24"
+    },
+    {
+      "path": "/subsystems/29/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_pulley_24.part_P_053_wall_66e5b84e"
+    },
+    {
+      "path": "/subsystems/29/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_pulley_24.part_P_054_wall_70_031ffadd"
+    },
+    {
+      "path": "/subsystems/29/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_pulley_24.part_P_052_outer_annular_wall_7913a9f9"
+    },
+    {
+      "path": "/subsystems/29/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_pulley_24.part_P_055_circular_wall_e1d0b7d7"
+    },
+    {
+      "path": "/subsystems/29/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_pulley_24.part_P_056_circular_wall_74_0df1262a"
+    },
+    {
+      "path": "/subsystems/29/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_pulley_24.part_P_035_hub_portion_629f35ff"
+    },
+    {
+      "path": "/subsystems/29/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_030_pulley_24.part_P_057_cup_shaped_portion_b703c8b0"
+    },
+    {
+      "path": "/subsystems/30",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_031_retaining_member"
+    },
+    {
+      "path": "/subsystems/31",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_032_retaining_member_82"
+    },
+    {
+      "path": "/subsystems/32",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_033_idler_pulley"
+    },
+    {
+      "path": "/subsystems/33",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_034_ball_bearing_assembly_86"
+    },
+    {
+      "path": "/subsystems/33/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_034_ball_bearing_assembly_86.part_P_020_retaining_member_d5f9178b"
+    },
+    {
+      "path": "/subsystems/33/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_034_ball_bearing_assembly_86.part_P_059_retaining_member_82_59a8c203"
+    },
+    {
+      "path": "/subsystems/33/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_034_ball_bearing_assembly_86.part_P_061_mounting_surface_ed5bbda7"
+    },
+    {
+      "path": "/subsystems/33/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_034_ball_bearing_assembly_86.part_P_064_inner_race_fc6d97d3"
+    },
+    {
+      "path": "/subsystems/33/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_034_ball_bearing_assembly_86.part_P_006_mounting_bolt_65bcc6c0"
+    },
+    {
+      "path": "/subsystems/33/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_034_ball_bearing_assembly_86.part_P_052_outer_annular_wall_0d5904b7"
+    },
+    {
+      "path": "/subsystems/34",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_035_dust_shield"
+    },
+    {
+      "path": "/subsystems/35",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_036_combination"
+    },
+    {
+      "path": "/subsystems/35/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_combination.part_P_052_outer_annular_wall_6426918d"
+    },
+    {
+      "path": "/subsystems/35/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_combination.part_P_007_idler_pulley_f6a4e022"
+    },
+    {
+      "path": "/subsystems/35/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_combination.part_P_055_circular_wall_45dc01ca"
+    },
+    {
+      "path": "/subsystems/35/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_combination.part_P_065_integral_hub_portion"
+    },
+    {
+      "path": "/subsystems/35/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_combination.part_P_035_hub_portion_b30b57d5"
+    },
+    {
+      "path": "/subsystems/35/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_combination.part_P_004_belt_tensioning_pulley_31688915"
+    },
+    {
+      "path": "/subsystems/35/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_combination.part_P_006_mounting_bolt_f94dfab4"
+    },
+    {
+      "path": "/subsystems/35/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_combination.part_P_028_spring_756643d0"
+    },
+    {
+      "path": "/subsystems/35/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_combination.part_P_013_arm_6cd114f4"
+    },
+    {
+      "path": "/subsystems/35/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_combination.part_P_066_arm_20_44d3ec36"
+    },
+    {
+      "path": "/subsystems/35/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_combination.part_P_015_pulley_b35b684e"
+    },
+    {
+      "path": "/subsystems/35/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_combination.part_P_051_pulley_24_ff8b41f6"
+    },
+    {
+      "path": "/subsystems/35/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_combination.part_P_067_arm_travel_stops_c7927272"
+    },
+    {
+      "path": "/subsystems/35/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_combination.part_P_002_pivot_structure_a898c12b"
+    },
+    {
+      "path": "/subsystems/35/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_combination.part_P_068_idler_pulley_30_c1fb6ff3"
+    },
+    {
+      "path": "/subsystems/35/parts/15",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_combination.part_P_001_fixed_pivot_structure_6ec5819b"
+    },
+    {
+      "path": "/subsystems/35/parts/16",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_combination.part_P_003_moveable_arm_3a2a63ba"
+    },
+    {
+      "path": "/subsystems/35/parts/17",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_036_combination.part_P_020_retaining_member_38864c8a"
+    },
+    {
+      "path": "/subsystems/36",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_037_spring_82"
+    },
+    {
+      "path": "/subsystems/37",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_038_idler_pulley_30"
+    },
+    {
+      "path": "/subsystems/38",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_039_second_idler_pulley"
+    },
+    {
+      "path": "/subsystems/39",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_040_spring_biased_tensioner"
+    },
+    {
+      "path": "/subsystems/40",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_041_hydraulic_biased_tensioners"
+    },
+    {
+      "path": "/subsystems/41",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_042_moveable_arm"
+    },
+    {
+      "path": "/subsystems/42",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_043_belt_tensioning_pulley"
+    },
+    {
+      "path": "/subsystems/43",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_044_damping_sleeve"
+    },
+    {
+      "path": "/subsystems/44",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_045_motor_vehicle_engine"
+    },
+    {
+      "path": "/subsystems/45",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_046_combination_belt_tensioner_and_idler_pulley"
+    },
+    {
+      "path": "/subsystems/45/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_046_combination_belt_tensioner_and_idler_pulley.part_P_015_pulley_e3bafc5f"
+    },
+    {
+      "path": "/subsystems/45/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_046_combination_belt_tensioner_and_idler_pulley.part_P_007_idler_pulley_cce495e4"
+    },
+    {
+      "path": "/subsystems/45/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_046_combination_belt_tensioner_and_idler_pulley.part_P_003_moveable_arm_9eb864c0"
+    },
+    {
+      "path": "/subsystems/45/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_046_combination_belt_tensioner_and_idler_pulley.part_P_040_arm_portion_1afa4988"
+    },
+    {
+      "path": "/subsystems/45/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_046_combination_belt_tensioner_and_idler_pulley.part_P_035_hub_portion_dd920280"
+    },
+    {
+      "path": "/subsystems/45/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_046_combination_belt_tensioner_and_idler_pulley.part_P_004_belt_tensioning_pulley_6bac49e1"
+    },
+    {
+      "path": "/subsystems/46",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_047_fixed_pivot_structure"
+    },
+    {
+      "path": "/subsystems/47",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_048_coil_torsion_spring"
+    },
+    {
+      "path": "/subsystems/48",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_049_arm_portion"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_001_pivotable_movement"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_002_tensioning_engagement"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_003_rotational_movement"
+    },
+    {
+      "path": "/behaviour/actions/3",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_004_movable_support_structure"
+    },
+    {
+      "path": "/behaviour/actions/4",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_005_rotatably_supports"
+    },
+    {
+      "path": "/behaviour/actions/5",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_006_biases"
+    },
+    {
+      "path": "/behaviour/actions/6",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_007_belt_tensioning_device"
+    },
+    {
+      "path": "/behaviour/actions/7",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_008_idler_pulley"
+    },
+    {
+      "path": "/behaviour/actions/8",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_009_pivotal_movement"
+    },
+    {
+      "path": "/behaviour/actions/9",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_010_hydraulic_tensioning"
+    },
+    {
+      "path": "/behaviour/actions/10",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_011_increase"
+    },
+    {
+      "path": "/behaviour/actions/11",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_012_increase_the_damping"
+    },
+    {
+      "path": "/behaviour/actions/12",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_013_connection"
+    },
+    {
+      "path": "/behaviour/actions/13",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_014_bias"
+    },
+    {
+      "path": "/behaviour/actions/14",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_015_axially_compressed"
+    },
+    {
+      "path": "/behaviour/actions/15",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_016_apply_an_axial_force"
+    },
+    {
+      "path": "/behaviour/actions/16",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_017_axially_retain"
+    },
+    {
+      "path": "/behaviour/actions/17",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_018_Operation"
+    },
+    {
+      "path": "/behaviour/actions/18",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_019_moves"
+    },
+    {
+      "path": "/behaviour/actions/19",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_020_rotates"
+    },
+    {
+      "path": "/behaviour/actions/20",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_021_engages"
+    },
+    {
+      "path": "/behaviour/actions/21",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_022_engages_the_belt"
+    },
+    {
+      "path": "/behaviour/actions/22",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_023_routing"
+    },
+    {
+      "path": "/behaviour/actions/23",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_024_increased_belt_wrap"
+    },
+    {
+      "path": "/behaviour/actions/24",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_025_function"
+    },
+    {
+      "path": "/behaviour/actions/25",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_026_biasing"
+    },
+    {
+      "path": "/relationships/0",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[0]"
+    },
+    {
+      "path": "/relationships/0",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_serpentine_belt_system.part_P_004_belt_tensioning_pulley"
+    },
+    {
+      "path": "/relationships/1",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[1]"
+    },
+    {
+      "path": "/relationships/1",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_serpentine_belt_system.part_P_006_mounting_bolt"
+    },
+    {
+      "path": "/relationships/2",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[2]"
+    },
+    {
+      "path": "/relationships/2",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_serpentine_belt_system.part_P_007_idler_pulley"
+    },
+    {
+      "path": "/relationships/3",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[3]"
+    },
+    {
+      "path": "/relationships/3",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_serpentine_belt_system.part_P_008_belt_tensioner"
+    },
+    {
+      "path": "/relationships/4",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[4]"
+    },
+    {
+      "path": "/relationships/4",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_serpentine_belt_system.part_P_009_driving_crankshaft_pulley"
+    },
+    {
+      "path": "/relationships/5",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[5]"
+    },
+    {
+      "path": "/relationships/5",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_serpentine_belt_system.part_P_010_driven_pulleys"
+    },
+    {
+      "path": "/relationships/6",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[6]"
+    },
+    {
+      "path": "/relationships/6",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_003_serpentine_belt_system.part_P_011_shafts"
+    },
+    {
+      "path": "/relationships/7",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[7]"
+    },
+    {
+      "path": "/relationships/7",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_004_belt_system.part_P_007_idler_pulley_2da6f069"
+    },
+    {
+      "path": "/relationships/8",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[8]"
+    },
+    {
+      "path": "/relationships/8",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_004_belt_system.part_P_009_driving_crankshaft_pulley_97ffd0e3"
+    },
+    {
+      "path": "/relationships/9",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[9]"
+    },
+    {
+      "path": "/relationships/9",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_004_belt_system.part_P_010_driven_pulleys_6ab4451b"
+    },
+    {
+      "path": "/relationships/10",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[10]"
+    },
+    {
+      "path": "/relationships/10",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_004_belt_system.part_P_011_shafts_dd59c3df"
+    },
+    {
+      "path": "/relationships/11",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[11]"
+    },
+    {
+      "path": "/relationships/11",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_belt_tensioning_assembly.part_P_012_idler_pulleys"
+    },
+    {
+      "path": "/relationships/12",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[12]"
+    },
+    {
+      "path": "/relationships/12",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_belt_tensioning_assembly.part_P_007_idler_pulley_db625620"
+    },
+    {
+      "path": "/relationships/13",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[13]"
+    },
+    {
+      "path": "/relationships/13",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_belt_tensioning_assembly.part_P_013_arm"
+    },
+    {
+      "path": "/relationships/14",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[14]"
+    },
+    {
+      "path": "/relationships/14",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_belt_tensioning_assembly.part_P_014_arm_12"
+    },
+    {
+      "path": "/relationships/15",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[15]"
+    },
+    {
+      "path": "/relationships/15",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_belt_tensioning_assembly.part_P_015_pulley"
+    },
+    {
+      "path": "/relationships/16",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[16]"
+    },
+    {
+      "path": "/relationships/16",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_belt_tensioning_assembly.part_P_016_pulley_14"
+    },
+    {
+      "path": "/relationships/17",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[17]"
+    },
+    {
+      "path": "/relationships/17",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_belt_tensioning_assembly.part_P_017_sleeve"
+    },
+    {
+      "path": "/relationships/18",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[18]"
+    },
+    {
+      "path": "/relationships/18",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_combination_belt_tensioner.part_P_001_fixed_pivot_structure"
+    },
+    {
+      "path": "/relationships/19",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[19]"
+    },
+    {
+      "path": "/relationships/19",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_combination_belt_tensioner.part_P_003_moveable_arm"
+    },
+    {
+      "path": "/relationships/20",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[20]"
+    },
+    {
+      "path": "/relationships/20",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_combination_belt_tensioner.part_P_013_arm_61df95c4"
+    },
+    {
+      "path": "/relationships/21",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[21]"
+    },
+    {
+      "path": "/relationships/21",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_combination_belt_tensioner.part_P_004_belt_tensioning_pulley_c21f609d"
+    },
+    {
+      "path": "/relationships/22",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[22]"
+    },
+    {
+      "path": "/relationships/22",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_combination_belt_tensioner.part_P_015_pulley_fd8ac0ef"
+    },
+    {
+      "path": "/relationships/23",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[23]"
+    },
+    {
+      "path": "/relationships/23",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_combination_belt_tensioner.part_P_007_idler_pulley_38e8816f"
+    },
+    {
+      "path": "/relationships/24",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[24]"
+    },
+    {
+      "path": "/relationships/24",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_007_combination_belt_tensioner.part_P_020_retaining_member"
+    },
+    {
+      "path": "/relationships/25",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[25]"
+    },
+    {
+      "path": "/relationships/25",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_008_combination_belt_tensioner_and_idler.part_P_001_fixed_pivot_structure_7b44aaca"
+    },
+    {
+      "path": "/relationships/26",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[26]"
+    },
+    {
+      "path": "/relationships/26",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_008_combination_belt_tensioner_and_idler.part_P_003_moveable_arm_67812f15"
+    },
+    {
+      "path": "/relationships/27",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[27]"
+    },
+    {
+      "path": "/relationships/27",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_008_combination_belt_tensioner_and_idler.part_P_013_arm_dd15b395"
+    },
+    {
+      "path": "/relationships/28",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[28]"
+    },
+    {
+      "path": "/relationships/28",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_008_combination_belt_tensioner_and_idler.part_P_004_belt_tensioning_pulley_1d29fcba"
+    },
+    {
+      "path": "/relationships/29",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[29]"
+    },
+    {
+      "path": "/relationships/29",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_008_combination_belt_tensioner_and_idler.part_P_015_pulley_eb8c2084"
+    },
+    {
+      "path": "/relationships/30",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[30]"
+    },
+    {
+      "path": "/relationships/30",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_008_combination_belt_tensioner_and_idler.part_P_005_helical_coil_spring"
+    },
+    {
+      "path": "/relationships/31",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[31]"
+    },
+    {
+      "path": "/relationships/31",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_008_combination_belt_tensioner_and_idler.part_P_007_idler_pulley_ed586118"
+    },
+    {
+      "path": "/relationships/32",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[32]"
+    },
+    {
+      "path": "/relationships/32",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_008_combination_belt_tensioner_and_idler.part_P_020_retaining_member_b2a2945f"
+    },
+    {
+      "path": "/relationships/33",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[33]"
+    },
+    {
+      "path": "/relationships/33",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_021_engine_block"
+    },
+    {
+      "path": "/relationships/34",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[34]"
+    },
+    {
+      "path": "/relationships/34",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_022_frame"
+    },
+    {
+      "path": "/relationships/35",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[35]"
+    },
+    {
+      "path": "/relationships/35",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_023_drive_belt"
+    },
+    {
+      "path": "/relationships/36",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[36]"
+    },
+    {
+      "path": "/relationships/36",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_024_tensioner"
+    },
+    {
+      "path": "/relationships/37",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[37]"
+    },
+    {
+      "path": "/relationships/37",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_001_fixed_pivot_structure_cc7a091c"
+    },
+    {
+      "path": "/relationships/38",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[38]"
+    },
+    {
+      "path": "/relationships/38",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_002_pivot_structure_fadd3eb5"
+    },
+    {
+      "path": "/relationships/39",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[39]"
+    },
+    {
+      "path": "/relationships/39",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_003_moveable_arm_fba87240"
+    },
+    {
+      "path": "/relationships/40",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[40]"
+    },
+    {
+      "path": "/relationships/40",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_025_moveable_arm_20"
+    },
+    {
+      "path": "/relationships/41",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[41]"
+    },
+    {
+      "path": "/relationships/41",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_013_arm_f14fab93"
+    },
+    {
+      "path": "/relationships/42",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[42]"
+    },
+    {
+      "path": "/relationships/42",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_026_pivot_axis"
+    },
+    {
+      "path": "/relationships/43",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[43]"
+    },
+    {
+      "path": "/relationships/43",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_004_belt_tensioning_pulley_61abdd22"
+    },
+    {
+      "path": "/relationships/44",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[44]"
+    },
+    {
+      "path": "/relationships/44",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_027_Arm"
+    },
+    {
+      "path": "/relationships/45",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[45]"
+    },
+    {
+      "path": "/relationships/45",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_028_spring"
+    },
+    {
+      "path": "/relationships/46",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[46]"
+    },
+    {
+      "path": "/relationships/46",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_accessory_belt_drive_system.part_P_003_moveable_arm_8f59f3b9"
+    },
+    {
+      "path": "/relationships/47",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[47]"
+    },
+    {
+      "path": "/relationships/47",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_accessory_belt_drive_system.part_P_013_arm_185d7743"
+    },
+    {
+      "path": "/relationships/48",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[48]"
+    },
+    {
+      "path": "/relationships/48",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_012_accessory_belt_drive_system.part_P_027_Arm_fc762f20"
+    },
+    {
+      "path": "/relationships/49",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[49]"
+    },
+    {
+      "path": "/relationships/49",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_pivot_structure.part_P_028_spring_59724d4e"
+    },
+    {
+      "path": "/relationships/50",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[50]"
+    },
+    {
+      "path": "/relationships/50",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_pivot_structure.part_P_013_arm_fca32d87"
+    },
+    {
+      "path": "/relationships/51",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[51]"
+    },
+    {
+      "path": "/relationships/51",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_pivot_structure.part_P_007_idler_pulley_9681523b"
+    },
+    {
+      "path": "/relationships/52",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[52]"
+    },
+    {
+      "path": "/relationships/52",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_pivot_structure.part_P_029_tensioning_pulley"
+    },
+    {
+      "path": "/relationships/53",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[53]"
+    },
+    {
+      "path": "/relationships/53",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_pivot_structure.part_P_030_shaft"
+    },
+    {
+      "path": "/relationships/54",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[54]"
+    },
+    {
+      "path": "/relationships/54",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_pivot_structure.part_P_031_shaft_32"
+    },
+    {
+      "path": "/relationships/55",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[55]"
+    },
+    {
+      "path": "/relationships/55",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_013_pivot_structure.part_P_006_mounting_bolt_12644bd3"
+    },
+    {
+      "path": "/relationships/56",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[56]"
+    },
+    {
+      "path": "/relationships/56",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_014_pivot_structure_18.part_P_028_spring_0dc8836d"
+    },
+    {
+      "path": "/relationships/57",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[57]"
+    },
+    {
+      "path": "/relationships/57",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_014_pivot_structure_18.part_P_013_arm_c7a34035"
+    },
+    {
+      "path": "/relationships/58",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[58]"
+    },
+    {
+      "path": "/relationships/58",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_014_pivot_structure_18.part_P_007_idler_pulley_5ccb6bcd"
+    },
+    {
+      "path": "/relationships/59",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[59]"
+    },
+    {
+      "path": "/relationships/59",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_014_pivot_structure_18.part_P_029_tensioning_pulley_613b81fe"
+    },
+    {
+      "path": "/relationships/60",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[60]"
+    },
+    {
+      "path": "/relationships/60",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_014_pivot_structure_18.part_P_030_shaft_706764f8"
+    },
+    {
+      "path": "/relationships/61",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[61]"
+    },
+    {
+      "path": "/relationships/61",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_014_pivot_structure_18.part_P_031_shaft_32_f19a7971"
+    },
+    {
+      "path": "/relationships/62",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[62]"
+    },
+    {
+      "path": "/relationships/62",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_014_pivot_structure_18.part_P_006_mounting_bolt_a3fae22b"
+    },
+    {
+      "path": "/relationships/63",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[63]"
+    },
+    {
+      "path": "/relationships/63",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_020_spindle.part_P_033_annular_portion_7bd36cd9"
+    },
+    {
+      "path": "/relationships/64",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[64]"
+    },
+    {
+      "path": "/relationships/64",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_020_spindle.part_P_034_annular_portion_42_b9e5fa55"
+    },
+    {
+      "path": "/relationships/65",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[65]"
+    },
+    {
+      "path": "/relationships/65",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_020_spindle.part_P_035_hub_portion_a16d8cbf"
+    },
+    {
+      "path": "/relationships/66",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[66]"
+    },
+    {
+      "path": "/relationships/66",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_020_spindle.part_P_036_hub_portion_46_48b7706c"
+    },
+    {
+      "path": "/relationships/67",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[67]"
+    },
+    {
+      "path": "/relationships/67",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_021_spindle_36.part_P_033_annular_portion_9241777d"
+    },
+    {
+      "path": "/relationships/68",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[68]"
+    },
+    {
+      "path": "/relationships/68",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_021_spindle_36.part_P_034_annular_portion_42_0d6f3e0f"
+    },
+    {
+      "path": "/relationships/69",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[69]"
+    },
+    {
+      "path": "/relationships/69",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_021_spindle_36.part_P_035_hub_portion_79bb0a56"
+    },
+    {
+      "path": "/relationships/70",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[70]"
+    },
+    {
+      "path": "/relationships/70",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_021_spindle_36.part_P_036_hub_portion_46_64e9a4d3"
+    },
+    {
+      "path": "/relationships/71",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[71]"
+    },
+    {
+      "path": "/relationships/71",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_spindle_structure.part_P_033_annular_portion"
+    },
+    {
+      "path": "/relationships/72",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[72]"
+    },
+    {
+      "path": "/relationships/72",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_spindle_structure.part_P_034_annular_portion_42"
+    },
+    {
+      "path": "/relationships/73",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[73]"
+    },
+    {
+      "path": "/relationships/73",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_spindle_structure.part_P_035_hub_portion"
+    },
+    {
+      "path": "/relationships/74",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[74]"
+    },
+    {
+      "path": "/relationships/74",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_spindle_structure.part_P_036_hub_portion_46"
+    },
+    {
+      "path": "/relationships/75",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[75]"
+    },
+    {
+      "path": "/relationships/75",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_019_spindle_structure_36.part_P_033_annular_portion_4199b046"
+    },
+    {
+      "path": "/relationships/76",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[76]"
+    },
+    {
+      "path": "/relationships/76",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_019_spindle_structure_36.part_P_034_annular_portion_42_a2f17236"
+    },
+    {
+      "path": "/relationships/77",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[77]"
+    },
+    {
+      "path": "/relationships/77",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_019_spindle_structure_36.part_P_035_hub_portion_8b48e243"
+    },
+    {
+      "path": "/relationships/78",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[78]"
+    },
+    {
+      "path": "/relationships/78",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_019_spindle_structure_36.part_P_036_hub_portion_46_2a78cf2d"
+    },
+    {
+      "path": "/relationships/79",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[79]"
+    },
+    {
+      "path": "/relationships/79",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_024_arm.part_P_035_hub_portion_1122cfa6"
+    },
+    {
+      "path": "/relationships/80",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[80]"
+    },
+    {
+      "path": "/relationships/80",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_024_arm.part_P_036_hub_portion_46_1d937f17"
+    },
+    {
+      "path": "/relationships/81",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[81]"
+    },
+    {
+      "path": "/relationships/81",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_024_arm.part_P_037_spring_support"
+    },
+    {
+      "path": "/relationships/82",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[82]"
+    },
+    {
+      "path": "/relationships/82",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_024_arm.part_P_038_damping_sleeve"
+    },
+    {
+      "path": "/relationships/83",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[83]"
+    },
+    {
+      "path": "/relationships/83",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_024_arm.part_P_039_ring"
+    },
+    {
+      "path": "/relationships/84",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[84]"
+    },
+    {
+      "path": "/relationships/84",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_035_hub_portion_82e6f28b"
+    },
+    {
+      "path": "/relationships/85",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[85]"
+    },
+    {
+      "path": "/relationships/85",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_036_hub_portion_46_718c9d86"
+    },
+    {
+      "path": "/relationships/86",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[86]"
+    },
+    {
+      "path": "/relationships/86",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_037_spring_support_7bda652e"
+    },
+    {
+      "path": "/relationships/87",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[87]"
+    },
+    {
+      "path": "/relationships/87",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_038_damping_sleeve_4bfcca27"
+    },
+    {
+      "path": "/relationships/88",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[88]"
+    },
+    {
+      "path": "/relationships/88",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_039_ring_3b966e10"
+    },
+    {
+      "path": "/relationships/89",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[89]"
+    },
+    {
+      "path": "/relationships/89",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_028_spring_df3c7a68"
+    },
+    {
+      "path": "/relationships/90",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[90]"
+    },
+    {
+      "path": "/relationships/90",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_040_arm_portion_212e035e"
+    },
+    {
+      "path": "/relationships/91",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[91]"
+    },
+    {
+      "path": "/relationships/91",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_041_arm_portion_54_4350417e"
+    },
+    {
+      "path": "/relationships/92",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[92]"
+    },
+    {
+      "path": "/relationships/92",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_042_cylindrical_wall_portion"
+    },
+    {
+      "path": "/relationships/93",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[93]"
+    },
+    {
+      "path": "/relationships/93",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_043_cylindrical_wall_portion_56"
+    },
+    {
+      "path": "/relationships/94",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[94]"
+    },
+    {
+      "path": "/relationships/94",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_045_pulley_mounting_portion_81ca0e99"
+    },
+    {
+      "path": "/relationships/95",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[95]"
+    },
+    {
+      "path": "/relationships/95",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_046_pulley_mounting_portion_58"
+    },
+    {
+      "path": "/relationships/96",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[96]"
+    },
+    {
+      "path": "/relationships/96",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_047_mounting_portion_7e2cc9ed"
+    },
+    {
+      "path": "/relationships/97",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[97]"
+    },
+    {
+      "path": "/relationships/97",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_048_steel_headed_bolt_64"
+    },
+    {
+      "path": "/relationships/98",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[98]"
+    },
+    {
+      "path": "/relationships/98",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_049_nut"
+    },
+    {
+      "path": "/relationships/99",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[99]"
+    },
+    {
+      "path": "/relationships/99",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_050_dust_shield"
+    },
+    {
+      "path": "/relationships/100",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[100]"
+    },
+    {
+      "path": "/relationships/100",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_015_pulley_1cab7a3b"
+    },
+    {
+      "path": "/relationships/101",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[101]"
+    },
+    {
+      "path": "/relationships/101",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_051_pulley_24_46217906"
+    },
+    {
+      "path": "/relationships/102",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[102]"
+    },
+    {
+      "path": "/relationships/102",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_arm_20.part_P_052_outer_annular_wall_a72eefb4"
+    },
+    {
+      "path": "/relationships/103",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[103]"
+    },
+    {
+      "path": "/relationships/103",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_spindle_structure.part_P_040_arm_portion"
+    },
+    {
+      "path": "/relationships/104",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[104]"
+    },
+    {
+      "path": "/relationships/104",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_spindle_structure.part_P_041_arm_portion_54"
+    },
+    {
+      "path": "/relationships/105",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[105]"
+    },
+    {
+      "path": "/relationships/105",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_spindle_structure.part_P_045_pulley_mounting_portion"
+    },
+    {
+      "path": "/relationships/106",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[106]"
+    },
+    {
+      "path": "/relationships/106",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_spindle_structure.part_P_047_mounting_portion"
+    },
+    {
+      "path": "/relationships/107",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[107]"
+    },
+    {
+      "path": "/relationships/107",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_045_pulley_mounting_portion_bb407521"
+    },
+    {
+      "path": "/relationships/108",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[108]"
+    },
+    {
+      "path": "/relationships/108",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_047_mounting_portion_7e6bdd0f"
+    },
+    {
+      "path": "/relationships/109",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[109]"
+    },
+    {
+      "path": "/relationships/109",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_015_pulley_b9e8b407"
+    },
+    {
+      "path": "/relationships/110",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[110]"
+    },
+    {
+      "path": "/relationships/110",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_051_pulley_24_a7eb681a"
+    },
+    {
+      "path": "/relationships/111",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[111]"
+    },
+    {
+      "path": "/relationships/111",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_052_outer_annular_wall_040c423b"
+    },
+    {
+      "path": "/relationships/112",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[112]"
+    },
+    {
+      "path": "/relationships/112",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_028_ball_bearing_assembly_62.part_P_047_mounting_portion_f6ccd605"
+    },
+    {
+      "path": "/relationships/113",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[113]"
+    },
+    {
+      "path": "/relationships/113",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_028_ball_bearing_assembly_62.part_P_015_pulley_f564eaf0"
+    },
+    {
+      "path": "/relationships/114",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[114]"
+    },
+    {
+      "path": "/relationships/114",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_028_ball_bearing_assembly_62.part_P_051_pulley_24_4c9e2d4e"
+    },
+    {
+      "path": "/relationships/115",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[115]"
+    },
+    {
+      "path": "/relationships/115",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_028_ball_bearing_assembly_62.part_P_052_outer_annular_wall_4e86666c"
+    },
+    {
+      "path": "/relationships/116",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[116]"
+    },
+    {
+      "path": "/relationships/116",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_029_pulley.part_P_053_wall"
+    },
+    {
+      "path": "/relationships/117",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[117]"
+    },
+    {
+      "path": "/relationships/117",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_029_pulley.part_P_054_wall_70"
+    },
+    {
+      "path": "/relationships/118",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[118]"
+    },
+    {
+      "path": "/relationships/118",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_029_pulley.part_P_052_outer_annular_wall_4009a2a7"
+    },
+    {
+      "path": "/relationships/119",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[119]"
+    },
+    {
+      "path": "/relationships/119",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_029_pulley.part_P_055_circular_wall"
+    },
+    {
+      "path": "/relationships/120",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[120]"
+    },
+    {
+      "path": "/relationships/120",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_029_pulley.part_P_056_circular_wall_74"
+    },
+    {
+      "path": "/relationships/121",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[121]"
+    },
+    {
+      "path": "/relationships/121",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_029_pulley.part_P_035_hub_portion_3d437d7b"
+    },
+    {
+      "path": "/relationships/122",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[122]"
+    },
+    {
+      "path": "/relationships/122",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_029_pulley.part_P_057_cup_shaped_portion"
+    },
+    {
+      "path": "/relationships/123",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[123]"
+    },
+    {
+      "path": "/relationships/123",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_pulley_24.part_P_053_wall_66e5b84e"
+    },
+    {
+      "path": "/relationships/124",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[124]"
+    },
+    {
+      "path": "/relationships/124",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_pulley_24.part_P_054_wall_70_031ffadd"
+    },
+    {
+      "path": "/relationships/125",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[125]"
+    },
+    {
+      "path": "/relationships/125",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_pulley_24.part_P_052_outer_annular_wall_7913a9f9"
+    },
+    {
+      "path": "/relationships/126",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[126]"
+    },
+    {
+      "path": "/relationships/126",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_pulley_24.part_P_055_circular_wall_e1d0b7d7"
+    },
+    {
+      "path": "/relationships/127",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[127]"
+    },
+    {
+      "path": "/relationships/127",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_pulley_24.part_P_056_circular_wall_74_0df1262a"
+    },
+    {
+      "path": "/relationships/128",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[128]"
+    },
+    {
+      "path": "/relationships/128",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_pulley_24.part_P_035_hub_portion_629f35ff"
+    },
+    {
+      "path": "/relationships/129",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[129]"
+    },
+    {
+      "path": "/relationships/129",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_030_pulley_24.part_P_057_cup_shaped_portion_b703c8b0"
+    },
+    {
+      "path": "/relationships/130",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[130]"
+    },
+    {
+      "path": "/relationships/130",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_020_retaining_member_36c6ac62"
+    },
+    {
+      "path": "/relationships/131",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[131]"
+    },
+    {
+      "path": "/relationships/131",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_059_retaining_member_82"
+    },
+    {
+      "path": "/relationships/132",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[132]"
+    },
+    {
+      "path": "/relationships/132",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_028_spring_702ef798"
+    },
+    {
+      "path": "/relationships/133",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[133]"
+    },
+    {
+      "path": "/relationships/133",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_061_mounting_surface"
+    },
+    {
+      "path": "/relationships/134",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[134]"
+    },
+    {
+      "path": "/relationships/134",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_064_inner_race"
+    },
+    {
+      "path": "/relationships/135",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[135]"
+    },
+    {
+      "path": "/relationships/135",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_006_mounting_bolt_12de40fe"
+    },
+    {
+      "path": "/relationships/136",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[136]"
+    },
+    {
+      "path": "/relationships/136",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_034_ball_bearing_assembly_86.part_P_020_retaining_member_d5f9178b"
+    },
+    {
+      "path": "/relationships/137",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[137]"
+    },
+    {
+      "path": "/relationships/137",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_034_ball_bearing_assembly_86.part_P_059_retaining_member_82_59a8c203"
+    },
+    {
+      "path": "/relationships/138",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[138]"
+    },
+    {
+      "path": "/relationships/138",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_034_ball_bearing_assembly_86.part_P_061_mounting_surface_ed5bbda7"
+    },
+    {
+      "path": "/relationships/139",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[139]"
+    },
+    {
+      "path": "/relationships/139",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_034_ball_bearing_assembly_86.part_P_064_inner_race_fc6d97d3"
+    },
+    {
+      "path": "/relationships/140",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[140]"
+    },
+    {
+      "path": "/relationships/140",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_034_ball_bearing_assembly_86.part_P_006_mounting_bolt_65bcc6c0"
+    },
+    {
+      "path": "/relationships/141",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[141]"
+    },
+    {
+      "path": "/relationships/141",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_034_ball_bearing_assembly_86.part_P_052_outer_annular_wall_0d5904b7"
+    },
+    {
+      "path": "/relationships/142",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[142]"
+    },
+    {
+      "path": "/relationships/142",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_007_idler_pulley_cd122dcf"
+    },
+    {
+      "path": "/relationships/143",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[143]"
+    },
+    {
+      "path": "/relationships/143",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_027_ball_bearing_assembly.part_P_004_belt_tensioning_pulley_2bc9a267"
+    },
+    {
+      "path": "/relationships/144",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[144]"
+    },
+    {
+      "path": "/relationships/144",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_combination.part_P_052_outer_annular_wall_6426918d"
+    },
+    {
+      "path": "/relationships/145",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[145]"
+    },
+    {
+      "path": "/relationships/145",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_combination.part_P_007_idler_pulley_f6a4e022"
+    },
+    {
+      "path": "/relationships/146",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[146]"
+    },
+    {
+      "path": "/relationships/146",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_combination.part_P_055_circular_wall_45dc01ca"
+    },
+    {
+      "path": "/relationships/147",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[147]"
+    },
+    {
+      "path": "/relationships/147",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_combination.part_P_065_integral_hub_portion"
+    },
+    {
+      "path": "/relationships/148",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[148]"
+    },
+    {
+      "path": "/relationships/148",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_combination.part_P_035_hub_portion_b30b57d5"
+    },
+    {
+      "path": "/relationships/149",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[149]"
+    },
+    {
+      "path": "/relationships/149",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_combination.part_P_004_belt_tensioning_pulley_31688915"
+    },
+    {
+      "path": "/relationships/150",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[150]"
+    },
+    {
+      "path": "/relationships/150",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_combination.part_P_006_mounting_bolt_f94dfab4"
+    },
+    {
+      "path": "/relationships/151",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[151]"
+    },
+    {
+      "path": "/relationships/151",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_combination.part_P_028_spring_756643d0"
+    },
+    {
+      "path": "/relationships/152",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[152]"
+    },
+    {
+      "path": "/relationships/152",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_023_engine_block.part_P_007_idler_pulley_252673bc"
+    },
+    {
+      "path": "/relationships/153",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[153]"
+    },
+    {
+      "path": "/relationships/153",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_023_engine_block.part_P_004_belt_tensioning_pulley_bb0da66d"
+    },
+    {
+      "path": "/relationships/154",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[154]"
+    },
+    {
+      "path": "/relationships/154",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_015_engine_block_12.part_P_007_idler_pulley_f268a079"
+    },
+    {
+      "path": "/relationships/155",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[155]"
+    },
+    {
+      "path": "/relationships/155",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_015_engine_block_12.part_P_004_belt_tensioning_pulley_dba62a4f"
+    },
+    {
+      "path": "/relationships/156",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[156]"
+    },
+    {
+      "path": "/relationships/156",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_015_engine_block_12.part_P_028_spring_846d0f9a"
+    },
+    {
+      "path": "/relationships/157",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[157]"
+    },
+    {
+      "path": "/relationships/157",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_052_outer_annular_wall"
+    },
+    {
+      "path": "/relationships/158",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[158]"
+    },
+    {
+      "path": "/relationships/158",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_011_belt_drive_system.part_P_007_idler_pulley_5f0b94d0"
+    },
+    {
+      "path": "/relationships/159",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[159]"
+    },
+    {
+      "path": "/relationships/159",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_combination.part_P_013_arm_6cd114f4"
+    },
+    {
+      "path": "/relationships/160",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[160]"
+    },
+    {
+      "path": "/relationships/160",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_combination.part_P_066_arm_20_44d3ec36"
+    },
+    {
+      "path": "/relationships/161",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[161]"
+    },
+    {
+      "path": "/relationships/161",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_combination.part_P_015_pulley_b35b684e"
+    },
+    {
+      "path": "/relationships/162",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[162]"
+    },
+    {
+      "path": "/relationships/162",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_combination.part_P_051_pulley_24_ff8b41f6"
+    },
+    {
+      "path": "/relationships/163",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[163]"
+    },
+    {
+      "path": "/relationships/163",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_combination.part_P_067_arm_travel_stops_c7927272"
+    },
+    {
+      "path": "/relationships/164",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[164]"
+    },
+    {
+      "path": "/relationships/164",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_combination.part_P_002_pivot_structure_a898c12b"
+    },
+    {
+      "path": "/relationships/165",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[165]"
+    },
+    {
+      "path": "/relationships/165",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_combination.part_P_068_idler_pulley_30_c1fb6ff3"
+    },
+    {
+      "path": "/relationships/166",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[166]"
+    },
+    {
+      "path": "/relationships/166",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_combination_10.part_P_013_arm_046b9475"
+    },
+    {
+      "path": "/relationships/167",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[167]"
+    },
+    {
+      "path": "/relationships/167",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_combination_10.part_P_066_arm_20"
+    },
+    {
+      "path": "/relationships/168",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[168]"
+    },
+    {
+      "path": "/relationships/168",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_combination_10.part_P_015_pulley_34f20547"
+    },
+    {
+      "path": "/relationships/169",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[169]"
+    },
+    {
+      "path": "/relationships/169",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_combination_10.part_P_051_pulley_24"
+    },
+    {
+      "path": "/relationships/170",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[170]"
+    },
+    {
+      "path": "/relationships/170",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_combination_10.part_P_067_arm_travel_stops"
+    },
+    {
+      "path": "/relationships/171",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[171]"
+    },
+    {
+      "path": "/relationships/171",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_combination_10.part_P_002_pivot_structure"
+    },
+    {
+      "path": "/relationships/172",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[172]"
+    },
+    {
+      "path": "/relationships/172",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_combination_10.part_P_007_idler_pulley_49f03a6c"
+    },
+    {
+      "path": "/relationships/173",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[173]"
+    },
+    {
+      "path": "/relationships/173",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_combination_10.part_P_068_idler_pulley_30"
+    },
+    {
+      "path": "/relationships/174",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[174]"
+    },
+    {
+      "path": "/relationships/174",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_015_engine_block_12.part_P_068_idler_pulley_30_9718eedd"
+    },
+    {
+      "path": "/relationships/175",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[175]"
+    },
+    {
+      "path": "/relationships/175",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_023_engine_block.part_P_001_fixed_pivot_structure_33438cb2"
+    },
+    {
+      "path": "/relationships/176",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[176]"
+    },
+    {
+      "path": "/relationships/176",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_023_engine_block.part_P_003_moveable_arm_8fa6f8d9"
+    },
+    {
+      "path": "/relationships/177",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[177]"
+    },
+    {
+      "path": "/relationships/177",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_023_engine_block.part_P_020_retaining_member_3b699e60"
+    },
+    {
+      "path": "/relationships/178",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[178]"
+    },
+    {
+      "path": "/relationships/178",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_combination.part_P_001_fixed_pivot_structure_6ec5819b"
+    },
+    {
+      "path": "/relationships/179",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[179]"
+    },
+    {
+      "path": "/relationships/179",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_combination.part_P_003_moveable_arm_3a2a63ba"
+    },
+    {
+      "path": "/relationships/180",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[180]"
+    },
+    {
+      "path": "/relationships/180",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_036_combination.part_P_020_retaining_member_38864c8a"
+    },
+    {
+      "path": "/relationships/181",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[181]"
+    },
+    {
+      "path": "/relationships/181",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_combination_10.part_P_001_fixed_pivot_structure_3d0600af"
+    },
+    {
+      "path": "/relationships/182",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[182]"
+    },
+    {
+      "path": "/relationships/182",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_combination_10.part_P_003_moveable_arm_fcdecf9d"
+    },
+    {
+      "path": "/relationships/183",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[183]"
+    },
+    {
+      "path": "/relationships/183",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_combination_10.part_P_004_belt_tensioning_pulley_d055dbed"
+    },
+    {
+      "path": "/relationships/184",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[184]"
+    },
+    {
+      "path": "/relationships/184",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_combination_10.part_P_020_retaining_member_2ac4a433"
+    },
+    {
+      "path": "/relationships/185",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[185]"
+    },
+    {
+      "path": "/relationships/185",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_046_combination_belt_tensioner_and_idler_pulley.part_P_015_pulley_e3bafc5f"
+    },
+    {
+      "path": "/relationships/186",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[186]"
+    },
+    {
+      "path": "/relationships/186",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_046_combination_belt_tensioner_and_idler_pulley.part_P_007_idler_pulley_cce495e4"
+    },
+    {
+      "path": "/relationships/187",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[187]"
+    },
+    {
+      "path": "/relationships/187",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_046_combination_belt_tensioner_and_idler_pulley.part_P_003_moveable_arm_9eb864c0"
+    },
+    {
+      "path": "/relationships/188",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[188]"
+    },
+    {
+      "path": "/relationships/188",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_046_combination_belt_tensioner_and_idler_pulley.part_P_040_arm_portion_1afa4988"
+    },
+    {
+      "path": "/relationships/189",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[189]"
+    },
+    {
+      "path": "/relationships/189",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_046_combination_belt_tensioner_and_idler_pulley.part_P_035_hub_portion_dd920280"
+    },
+    {
+      "path": "/relationships/190",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[190]"
+    },
+    {
+      "path": "/relationships/190",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_046_combination_belt_tensioner_and_idler_pulley.part_P_004_belt_tensioning_pulley_6bac49e1"
+    },
+    {
+      "path": "/relationships/191",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[191]"
+    },
+    {
+      "path": "/relationships/191",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_024_arm.part_P_020_retaining_member_9d0f9d2d"
+    },
+    {
+      "path": "/relationships/192",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[192]"
+    },
+    {
+      "path": "/relationships/192",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_024_arm.part_P_040_arm_portion_2f48c459"
+    },
+    {
+      "path": "/relationships/193",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[193]"
+    },
+    {
+      "path": "/relationships/193",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_024_arm.part_P_007_idler_pulley_11d668ce"
+    },
+    {
+      "path": "/relationships/194",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[194]"
+    },
+    {
+      "path": "/relationships/195",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[195]"
+    },
+    {
+      "path": "/relationships/196",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[196]"
+    },
+    {
+      "path": "/relationships/197",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[197]"
+    },
+    {
+      "path": "/relationships/198",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[198]"
+    },
+    {
+      "path": "/relationships/199",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[199]"
+    },
+    {
+      "path": "/relationships/200",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[200]"
+    },
+    {
+      "path": "/relationships/201",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[201]"
+    },
+    {
+      "path": "/relationships/202",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[202]"
+    },
+    {
+      "path": "/relationships/203",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[203]"
+    },
+    {
+      "path": "/relationships/204",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[204]"
+    },
+    {
+      "path": "/relationships/205",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[205]"
+    },
+    {
+      "path": "/relationships/206",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[206]"
+    },
+    {
+      "path": "/relationships/207",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[207]"
+    },
+    {
+      "path": "/relationships/208",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[208]"
+    },
+    {
+      "path": "/relationships/209",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[209]"
+    },
+    {
+      "path": "/relationships/210",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[210]"
+    },
+    {
+      "path": "/relationships/211",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[211]"
+    },
+    {
+      "path": "/relationships/212",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[212]"
+    },
+    {
+      "path": "/relationships/213",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[213]"
+    },
+    {
+      "path": "/relationships/214",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[214]"
+    },
+    {
+      "path": "/relationships/215",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[215]"
+    },
+    {
+      "path": "/relationships/216",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[216]"
+    },
+    {
+      "path": "/relationships/217",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[217]"
+    },
+    {
+      "path": "/relationships/218",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[218]"
+    },
+    {
+      "path": "/relationships/219",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[219]"
+    },
+    {
+      "path": "/relationships/220",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[220]"
+    },
+    {
+      "path": "/relationships/221",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[221]"
+    },
+    {
+      "path": "/relationships/222",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[222]"
+    },
+    {
+      "path": "/relationships/223",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[223]"
+    },
+    {
+      "path": "/relationships/224",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[224]"
+    },
+    {
+      "path": "/relationships/225",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[225]"
+    },
+    {
+      "path": "/relationships/226",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[226]"
+    },
+    {
+      "path": "/relationships/227",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[227]"
+    },
+    {
+      "path": "/relationships/228",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[228]"
+    },
+    {
+      "path": "/relationships/229",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[229]"
+    },
+    {
+      "path": "/relationships/230",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[230]"
+    },
+    {
+      "path": "/relationships/231",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[231]"
+    },
+    {
+      "path": "/relationships/232",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[232]"
+    },
+    {
+      "path": "/relationships/233",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[233]"
+    },
+    {
+      "path": "/relationships/234",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[234]"
+    },
+    {
+      "path": "/relationships/235",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[235]"
+    },
+    {
+      "path": "/relationships/236",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[236]"
+    },
+    {
+      "path": "/relationships/237",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[237]"
+    },
+    {
+      "path": "/relationships/238",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[238]"
+    },
+    {
+      "path": "/relationships/239",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[239]"
+    },
+    {
+      "path": "/relationships/240",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[240]"
+    },
+    {
+      "path": "/relationships/241",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[241]"
+    },
+    {
+      "path": "/relationships/242",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[242]"
+    },
+    {
+      "path": "/relationships/243",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[243]"
+    },
+    {
+      "path": "/relationships/244",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[244]"
+    },
+    {
+      "path": "/relationships/245",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[245]"
+    },
+    {
+      "path": "/relationships/246",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[246]"
+    },
+    {
+      "path": "/relationships/247",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[247]"
+    },
+    {
+      "path": "/relationships/248",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[248]"
+    },
+    {
+      "path": "/relationships/249",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[249]"
+    },
+    {
+      "path": "/relationships/250",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[250]"
+    },
+    {
+      "path": "/relationships/251",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[251]"
+    },
+    {
+      "path": "/relationships/252",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[252]"
+    },
+    {
+      "path": "/relationships/253",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[253]"
+    },
+    {
+      "path": "/relationships/254",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[254]"
+    },
+    {
+      "path": "/relationships/255",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[255]"
+    },
+    {
+      "path": "/relationships/256",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[256]"
+    },
+    {
+      "path": "/relationships/257",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[257]"
+    },
+    {
+      "path": "/relationships/258",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[258]"
+    },
+    {
+      "path": "/relationships/259",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[259]"
+    }
+  ],
+  "unresolved": [
+    {
+      "path": "/relationships/194",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/195",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/196",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/197",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/198",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/199",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/200",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/201",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/202",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/203",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/204",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/205",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/206",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/207",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/208",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/209",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/210",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/211",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/212",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/213",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/214",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/215",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/216",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/217",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/218",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/219",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/220",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/221",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/222",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/223",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/224",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/225",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/226",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/227",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/228",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/229",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/230",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/231",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/232",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/233",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/234",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/235",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/236",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/237",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/238",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/239",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/240",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/241",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/242",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/243",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/244",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/245",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/246",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/247",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/248",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/249",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/250",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/251",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/252",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/253",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/254",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/255",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/256",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/257",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/258",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/259",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    }
+  ],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

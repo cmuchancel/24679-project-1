@@ -1,0 +1,253 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 7,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 1,
+    "Documentation": 43,
+    "EndFeatureMembership": 16,
+    "Feature": 29,
+    "FeatureChaining": 58,
+    "FeatureMembership": 51,
+    "FeatureReferenceExpression": 7,
+    "FeatureTyping": 23,
+    "FeatureValue": 7,
+    "FlowEnd": 10,
+    "FlowUsage": 5,
+    "ItemDefinition": 7,
+    "ItemUsage": 12,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 87,
+    "Package": 1,
+    "PartDefinition": 7,
+    "PartUsage": 8,
+    "PortUsage": 12,
+    "Redefinition": 10,
+    "ReferenceSubsetting": 23,
+    "ReferenceUsage": 17,
+    "RequirementDefinition": 2,
+    "RequirementUsage": 2,
+    "SatisfyRequirementUsage": 7,
+    "Subclassification": 5,
+    "SubjectMembership": 7,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CASE_Clamping_case_assembly"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CASE_Clamping_case_assembly.port_CASE_SHAFT_Shaft_sliding_contact_interface"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SHAFT_ARM_Clamping_shaft_and_arm"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SHAFT_ARM_Clamping_shaft_and_arm.port_SHAFT_CASE_Axial_shaft_motion_interface"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SHAFT_ARM_Clamping_shaft_and_arm.port_PUSH_IN_Pusher_contact_input"
+    },
+    {
+      "path": "/subsystems/1/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SHAFT_ARM_Clamping_shaft_and_arm.port_CLAMP_OUT_Arm_to_work_clamping_contact"
+    },
+    {
+      "path": "/subsystems/1/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SHAFT_ARM_Clamping_shaft_and_arm.port_STAGE1_IN_First_stage_force_input"
+    },
+    {
+      "path": "/subsystems/1/ports/4",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SHAFT_ARM_Clamping_shaft_and_arm.port_STAGE2_IN_Second_stage_force_input"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_STAGE1_First_spring_retainer_stage"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_STAGE1_First_spring_retainer_stage.port_STAGE1_OUT_First_stage_force_to_shaft"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_STAGE2_Second_spring_retainer_stage"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_STAGE2_Second_spring_retainer_stage.port_STAGE2_OUT_Second_stage_force_to_shaft"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_STAGE2_Second_spring_retainer_stage.port_PUSH2_IN_Second_retainer_push_input"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PUSH_ROD_First_pushing_rod"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PUSH_ROD_First_pushing_rod.port_ROD_OUT_Rod_push_output"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PUSH_PROTRUSION_Second_pushing_protrusion"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PUSH_PROTRUSION_Second_pushing_protrusion.port_PROTRUSION_OUT_Protrusion_push_output"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_WORK_Workpiece_and_pallet"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_WORK_Workpiece_and_pallet.port_WORK_IN_Clamping_contact_input"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_AXIAL_Axial_shaft_translation"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_CLAMP_Clamping_contact_force"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_RET1_First_stage_engagement_force"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_RET2_Second_stage_engagement_force"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_PUSH2_Second_retainer_push"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_RELEASE"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_RELEASE"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_RELEASE"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/2",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_RELEASE"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/3",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_RELEASE"
+    },
+    {
+      "path": "/requirements/1",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_STAGED"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_STAGED"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_STAGED"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/2",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_STAGED"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_CLAMP_Apply_staged_clamp"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_GUIDE_Guide_shaft_pivot_and_enable_removal"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_CASE_SHAFT"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_ROD_SHAFT"
+    },
+    {
+      "path": "/subsystems/1/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_ARM_WORK"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_STAGE1_SHAFT"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_STAGE2_SHAFT"
+    },
+    {
+      "path": "/subsystems/5/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_PROTRUSION_RET2"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

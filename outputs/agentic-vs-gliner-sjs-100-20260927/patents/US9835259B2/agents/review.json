@@ -1,0 +1,34 @@
+{
+  "revision": 4,
+  "candidate_sha256": "b60751c8c2ffcb1f55d4b281266fb8399da7a091b09812568d176f90c55598a7",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 4's new downstream rod-to-seat interface is supported by the method passage describing rods engaging holes on each seat flange and retracting both seats; the seat-owned transformations are directly supported by the passage stating tangential force causes axial force and seat movement against spring force. Other modeled physical components and maintenance obligations align with cited passages."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The revision addresses both previously identified omissions: DNSEAT now receives rod force through ROD_DNSEAT, and each seat has an owned transformation/retraction action. The sequence action covers the claimed maintenance flow. No additional unsupported operational states are needed."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Rod/operator/seat interfaces carry mechanical_force; seat-to-guide interfaces carry mechanical_linear movement. The conversion from tangential force to axial force and seat movement is modeled internally as seat-owned behavior, rather than by connecting incompatible flow types."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Clearance and cover interference retain claim-number rationales and cited evidence. Maintenance sequence/action and seat transformations have relevant patent citations. No unsupported requirement or state machine is introduced."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "The revised DNSEAT force endpoint is connected compatibly to the rod output, resolving the previously absent downstream force path. Fluid and guide/movement endpoints are also type-consistent. The shared ROD_FORCE_OUT endpoint represents the described rods collectively and is connected once to each distinct seat endpoint; the claim expressly describes rods for both seats."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Modeling the force-to-motion conversion as seat-owned behavior while reserving interfaces for boundary interactions is consistent with the reviewed guidance distinguishing internal interactions from external/boundary interfaces. Textbook guidance is not used as evidence for invention facts."
+    }
+  },
+  "findings": [],
+  "summary": "Independent review of revision 4 confirms resolution of both prior issues: the downstream seat now has a compatible rod-force connection, and the tangential-to-axial-force/seat-retraction transformation is represented by actions owned by each seat. The reviewed interfaces use compatible flow types; claims and cited passage text support the maintenance sequence and stated transformations. No actionable SJS model issue remains. The candidate's external warning string that says the transformation remains only textual is now stale, but it does not describe the revised SJS model; synchronize/remove it during cleanup.",
+  "saved_at": "2026-09-27T05:47:49.786527+00:00"
+}

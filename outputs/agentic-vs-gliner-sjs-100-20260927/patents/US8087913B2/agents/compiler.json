@@ -1,0 +1,146 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 6,
+    "AllocationUsage": 2,
+    "Documentation": 29,
+    "EndFeatureMembership": 10,
+    "Feature": 14,
+    "FeatureChaining": 26,
+    "FeatureMembership": 35,
+    "FeatureTyping": 15,
+    "FlowEnd": 6,
+    "FlowUsage": 3,
+    "ItemDefinition": 5,
+    "ItemUsage": 8,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 48,
+    "Package": 1,
+    "PartDefinition": 5,
+    "PartUsage": 6,
+    "PortUsage": 8,
+    "Redefinition": 6,
+    "ReferenceSubsetting": 10,
+    "ReferenceUsage": 6,
+    "Subclassification": 3,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_drive_source_Drive_Source"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_drive_source_Drive_Source.port_drive_out_Drive_output"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_drive_gear_First__Drive__Gear"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_drive_gear_First__Drive__Gear.port_drive_in_Drive_input"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_drive_gear_First__Drive__Gear.port_mesh_out_Rotation_transfer_to_driven_gear"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_driven_gear_Second__Driven__Gear"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_driven_gear_Second__Driven__Gear.port_mesh_in_Rotation_from_drive_gear"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_driven_gear_Second__Driven__Gear.port_component_out_Drive_to_associated_component"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_associated_component_Driven_Gear_Associated_Component"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_associated_component_Driven_Gear_Associated_Component.port_component_in_Driven_input"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_housing_Pump_Housing"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_housing_Pump_Housing.port_inlet_Fluid_inlet"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_housing_Pump_Housing.port_outlet_Fluid_outlet"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_drive_rotation_Drive_rotation"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_gear_mesh_rotation_Gear_mesh_rotation_transfer"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_component_drive_Driven_gear_component_drive"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_transfer_rotation_Transfer_rotation_from_first_gear"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_transport_fluid_Transport_fluid_from_inlet_to_outlet"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_drive_to_gear"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_gear_mesh"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_gear_to_component"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

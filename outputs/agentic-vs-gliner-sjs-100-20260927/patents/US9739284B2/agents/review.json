@@ -1,0 +1,34 @@
+{
+  "revision": 6,
+  "candidate_sha256": "3a91eec9610acff25a85066da88e32e15a091400639fb85c62b74908041a592b",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 6 correctly describes the patent-supported three-component housing and outlet, two-half impeller, rotating inlet tube(s), seal, motor drive alternatives, optional flange/bearings, centrifugal action, and weep indication. The supply-to-impeller external boundary is cautiously framed as a boundary interface and its flow note explicitly avoids asserting an unsupported internal housing-to-tube topology. One wording issue remains in the housing description: 'At least one outer component includes an inlet' is supported by Claim 1; it does not imply a specific internal connection."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "Prior inlet gap is addressed: SUPPLY output now mates to IMPELLER fluid_in, which is expressly the rotating tube intake boundary, and IMPELLER discharge mates to housing volute. The external outlet receiver is connected. The pump action was de-duplicated into drive, outward forcing, transfer into volute, and routing to outlet. Seal-load and leak indication are represented."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Fluid boundary and internal discharge flows have compatible hydraulic_fluid types and source/out directions. Supply-to-impeller and impeller-to-volute connections are coherent; housing outlet to receiver is coherent. Rotary motor-to-impeller ports are matching mechanical_rotary out/in. No transformation is modeled as a mismatched interface."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "R_PUMP and R_SEAL_LOAD are grounded in Claims 1/8. Claim-dependent motor drive and single/dual inlet options are preserved in descriptions/notes rather than asserted as a single universal arrangement. The optional parts and leak indication have patent passage citations."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "The external supply interface now connects to the impeller fluid-entry port corresponding to the rotating hollow inlet tube(s), resolving the prior disconnected intake issue without inventing a housing-to-impeller internal connection. Motor drive, discharge-to-volute, and outlet-to-receiver interfaces are compatible and each connection is represented once."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Separate supply and receiver context components with directed boundary flows apply the textbook context/interface principle. The textbook material informs modeling method only; all asserted pump facts derive from patent passages."
+    }
+  },
+  "findings": [],
+  "summary": "Independently reviewed saved revision 6 against its actual cited patent passages, the prior revision-5 findings, and relevant textbook modeling guidance. The formerly unmodeled inlet path is now represented as an external source boundary directly mating to the impeller's rotating inlet-tube entry port, with notes preserving the one/two-tube variants and explicitly avoiding a guessed internal connection. The repeated outward-forcing step was removed; behavior and flow progression are coherent. Motor drive alternatives remain qualified. No structural, citation-grounding, flow, claim traceability, or interface issues remain. No candidate changes made.",
+  "saved_at": "2026-09-27T08:22:56.358437+00:00"
+}

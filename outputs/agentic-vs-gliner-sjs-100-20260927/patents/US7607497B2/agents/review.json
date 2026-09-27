@@ -1,0 +1,34 @@
+{
+  "revision": 4,
+  "candidate_sha256": "67cdbd69fb45313020263a84acfdbdf09170e01563931699917ed977dd9701b6",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 4's actuator outputs now describe longitudinal mechanical motion, the linkage's radial toe-link motion is internal to LINKAGE, and the BODY–LINKAGE anchor represents the claimed roller-link first-end coupling. Hydraulic inputs are qualified in assumptions/warnings as the dependent hydraulic embodiment with unspecified supply equipment."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The model includes both slidable actuation assemblies, linkage expansion/contact, distinct propulsion/body advance, body anchoring of the roller-link first end, and both hydraulic inputs for the optional hydraulic embodiment. No unsupported control states are required."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Actuator outputs and linkage inputs use mechanical_linear F_AXIAL; the radial result remains internal; hydraulic supply output meets actuator hydraulic inputs; propulsion output meets body advance input; and contact output meets passage contact input. Types and directions align."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "The changed anchor connection is supported by claim 1's roller-link first end coupled to the elongate body (582649b7e391cedfe538f8ccc20548f7). Actuation, passage contact, propulsion, and hydraulic inputs likewise map to cited claim passages. Patent citations cover the model's ID-bearing items."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "All nine interfaces connect distinct existing subsystems and extant ports with compatible flow types and endpoint directions: propulsion/body, linkage/passage, hydraulic/actuator inputs, actuator/body sliding, actuator/linkage, and BODY/LINKAGE anchor. No self-connections remain."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The boundary/interface guidance supports explicit external passage and hydraulic boundary entities and distinguishing internal interactions. It is used only as modeling guidance; invention facts remain grounded in patent passages."
+    }
+  },
+  "findings": [],
+  "summary": "Revision 4 resolves the prior connectivity defects: the former self-connections are gone, the roller-link first-end body anchor is represented with distinct BODY and LINKAGE endpoints, and both actuator-to-linkage interfaces now carry longitudinal mechanical motion rather than asserting direct radial actuator output. Reviewed endpoint ownership, direction, and flow types across all interfaces; no remaining evidence or traceability defect identified. Verdict: pass.",
+  "saved_at": "2026-09-27T04:11:38.103959+00:00"
+}

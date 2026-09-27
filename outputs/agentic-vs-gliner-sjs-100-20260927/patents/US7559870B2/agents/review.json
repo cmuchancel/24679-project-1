@@ -1,0 +1,34 @@
+{
+  "revision": 3,
+  "candidate_sha256": "51e4d7e7824ce23a3ee25540ab61d171d9653a2e39de5483677da1b8ec5667a5",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "The selected pump/relief embodiment descriptions and threshold behavior are supported by the read passages. Revision 3 removes unsupported hydraulic-lock causation; R1/R2 distinguish claim-1 general behavior from claim-3 implementation. No numeric operating values are asserted."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "Revision 3 addresses the specific prior omission by adding carrier and pump gear-pair parts. The gear train, input/output annuli, pump, chamber, and relief valve are present. The detailed description contains further embodiment details (including housing/reservoir and multiple pumps), but they are not essential to the chosen claim-3 level of abstraction."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Mechanical rotary drive and hydraulic fluid paths use compatible types and connected ports. The relief discharge has no speculative destination, appropriately leaving its ultimate path unspecified."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "R1 and R2 rationale now explicitly connect claim-1 behavior to the selected dependent claim-3 embodiment through claim 2; their citations include claims 1 and 3. The carrier and pump gear pair parts cite the detailed disclosure."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Recorded interfaces connect existing ports and are recorded once. Flow directions and types are coherent for input, gear transmission, pump drive, chamber, relief valve, and output. The unspecified valve discharge is not attached to an invented sink."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The model separates physical components, flows, ports, requirements, and actions, and describes alternative architectures as not co-installed. Textbook retrieval did not provide relevant system-modeling guidance; no patent facts are inferred from it."
+    }
+  },
+  "findings": [],
+  "summary": "Independent review of revision 3 finds the prior carrier/pump gear-pair completeness concern and R2 claim-traceability concern repaired. All cited patent passages used for the modeled pump embodiment, claims 1–3, and external coupling context support the pertinent facts. No actionable unresolved issue was found. The model appropriately does not invent a relief-discharge destination or threshold values.",
+  "saved_at": "2026-09-27T09:13:53.772365+00:00"
+}

@@ -1,0 +1,69 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 4,
+    "AllocationUsage": 2,
+    "Documentation": 11,
+    "EndFeatureMembership": 4,
+    "Feature": 8,
+    "FeatureChaining": 8,
+    "FeatureMembership": 9,
+    "FeatureTyping": 5,
+    "LiteralInteger": 2,
+    "MultiplicityRange": 2,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 24,
+    "Package": 1,
+    "PartDefinition": 3,
+    "PartUsage": 6,
+    "ReferenceSubsetting": 4
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BODY_Bearing_Main_Body"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_TILT_Spherical_Sliding_Tilt_Mechanism"
+    },
+    {
+      "path": "/subsystems/1/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_TILT_Spherical_Sliding_Tilt_Mechanism.part_SLIDER_Self_lubricating_sliding_member_with_protrudi"
+    },
+    {
+      "path": "/subsystems/1/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_TILT_Spherical_Sliding_Tilt_Mechanism.part_BALL_Spherical_part_with_through_hole"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ROT_Rolling_Rotation_Mechanism"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ENABLE_TILT_Permit_shaft_center_tilt"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_SUPPORT_ROTATION_Support_shaft_rotation"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

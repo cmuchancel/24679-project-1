@@ -1,0 +1,34 @@
+{
+  "revision": 6,
+  "candidate_sha256": "d27586691ff33669084a5666cb4b591e5359b8725c0ea1610c06838844227b05",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 6 removes the unsupported device-outlet-to-return-tank interface and tank component. The lateral discharge opening and relief_discharge are represented as an outward body port and a hydraulic item flow with destination explicitly unspecified. The cited claim and description support the openings, connective-opening relationship, discharge pressure, spring-load effect, and valve structure."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The model retains the supported circuit inlet, valve seat piece and chambers, ball/orifice, spring-biased pusher, body discharge and connective openings, pressure-barrier exposure, and relief behavior. No omitted supported device function is evident in reviewed cited passages."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Inlet fluid enters through compatible hydraulic ports; the body connective-opening pressure interface connects to the pusher control-volume port; lateral discharge is represented as a hydraulic outlet boundary port and corresponding item flow, not routed to an unsupported endpoint. The output item flow is not assigned a mating subsystem."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "The cited claim passages support the device structure, pressure barrier, connective opening, discharge openings and partial throttling. The description supports discharge-generated differential pressure opposing spring action. Claim 2's optional integral ball/protrusion configuration is appropriately omitted."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "The two modeled interfaces connect existing compatible ports and are supported: circuit supply to upstream chamber, and connective opening to the pusher's sealed control volume. Unlike revision 5, there is no direct tank interface. Lateral discharge remains at the system boundary as an outward port without an invented mate."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The relevant context/interface guidance supports representing direction of flow across a system boundary while distinguishing environment from the system of interest. This is consistent with the abstract outlet representation; textbook evidence is not used for patent facts. The retrieved sequential-modeling textbook result was unrelated scoring material and provides no basis for invention assertions."
+    }
+  },
+  "findings": [],
+  "summary": "Reviewed revision 6 and its cited patent passages. The prior unsupported direct return-tank connection is removed, along with the tank subsystem. Lateral discharge is represented as the body's outward hydraulic port (lateral_discharge_out) and as relief_discharge with destination unspecified; it is not attached to an unsupported tank or other external component. Remaining structure, two actual interfaces, flows, and relief action are consistent with the cited evidence. No unresolved review findings.",
+  "saved_at": "2026-09-27T05:08:53.716878+00:00"
+}

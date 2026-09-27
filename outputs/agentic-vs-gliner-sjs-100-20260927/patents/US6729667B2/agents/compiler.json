@@ -1,0 +1,268 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 7,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 6,
+    "Documentation": 51,
+    "EndFeatureMembership": 20,
+    "Feature": 39,
+    "FeatureChaining": 62,
+    "FeatureMembership": 53,
+    "FeatureReferenceExpression": 3,
+    "FeatureTyping": 28,
+    "FeatureValue": 3,
+    "FlowEnd": 4,
+    "FlowUsage": 2,
+    "ItemDefinition": 8,
+    "ItemUsage": 15,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 92,
+    "Package": 1,
+    "PartDefinition": 9,
+    "PartUsage": 10,
+    "PortUsage": 15,
+    "Redefinition": 4,
+    "ReferenceSubsetting": 23,
+    "ReferenceUsage": 7,
+    "RequirementDefinition": 2,
+    "RequirementUsage": 2,
+    "SatisfyRequirementUsage": 3,
+    "Subclassification": 5,
+    "SubjectMembership": 3,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BASE_Mounting_Base"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BASE_Mounting_Base.port_base_linkage_Linkage_pivots"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_RECEIVER_Stretcher_Receiving_Member"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_RECEIVER_Stretcher_Receiving_Member.port_receiver_linkage_Linkage_pivots_and_sliding_guides"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_LINKAGE_Pivot_and_Sliding_Linkage"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LINKAGE_Pivot_and_Sliding_Linkage.port_base_pivots_Base_fixed_pivot_couplings"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LINKAGE_Pivot_and_Sliding_Linkage.port_receiver_pivots_Receiver_sliding_pivot_couplings"
+    },
+    {
+      "path": "/subsystems/2/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LINKAGE_Pivot_and_Sliding_Linkage.port_spring_mount_Spring_mounting_points"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SPRING_Suspension_Spring"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SPRING_Suspension_Spring.port_spring_force_Mechanical_force_interface"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SPRING_Suspension_Spring.port_air_inlet_Pneumatic_circuit_connection"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_AIR_SOURCE_Compressed_Air_Source"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_AIR_SOURCE_Compressed_Air_Source.port_air_out_Compressed_air_outlet"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_AUX_TANK_Auxiliary_Tank"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_AUX_TANK_Auxiliary_Tank.port_tank_air_Pneumatic_connection"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_VALVE_SYSTEM_Pneumatic_Control_and_Exhaust_Valves"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_VALVE_SYSTEM_Pneumatic_Control_and_Exhaust_Valves.port_source_side_Supply_connection"
+    },
+    {
+      "path": "/subsystems/6/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_VALVE_SYSTEM_Pneumatic_Control_and_Exhaust_Valves.port_spring_side_Spring_circuit_connection"
+    },
+    {
+      "path": "/subsystems/6/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_VALVE_SYSTEM_Pneumatic_Control_and_Exhaust_Valves.port_exhaust_side_Exhaust_outlet"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PNEUMATIC_BOUNDARY_External_Pneumatic_Exhaust_Boundary"
+    },
+    {
+      "path": "/subsystems/7/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PNEUMATIC_BOUNDARY_External_Pneumatic_Exhaust_Boundary.port_exhaust_in_Exhaust_boundary_connection"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ORIFICE_PLATE_Orifice_Plate"
+    },
+    {
+      "path": "/subsystems/8/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ORIFICE_PLATE_Orifice_Plate.port_tank_side_Auxiliary_tank_side_pneumatic_connection"
+    },
+    {
+      "path": "/subsystems/8/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ORIFICE_PLATE_Orifice_Plate.port_spring_side_Pneumatic_spring_side_connection"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_BASE_LINK_Base_to_linkage_motion_load_transfer"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_RECEIVER_LINK_Linkage_to_receiver_motion_load_transfer"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_SPRING_FORCE_Suspension_spring_force"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_AIR_Compressed_air"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_EXHAUST_Exhaust_air"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_RELATIVE_MOTION"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_RELATIVE_MOTION"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_RELATIVE_MOTION"
+    },
+    {
+      "path": "/requirements/1",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_WHEEL_ARCH_FIT"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_WHEEL_ARCH_FIT"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_SUPPORT_MOVE_Support_relative_stretcher_motion"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_HEIGHT_CONTROL_Control_pneumatic_ride_height"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_BASE_LINKAGE"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_RECEIVER_LINKAGE"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_LINK_SPRING"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_SPRING_VALVE"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_SOURCE_VALVE"
+    },
+    {
+      "path": "/subsystems/5/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_TANK_ORIFICE"
+    },
+    {
+      "path": "/subsystems/6/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_EXHAUST_BOUNDARY"
+    },
+    {
+      "path": "/subsystems/8/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_ORIFICE_SPRING"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

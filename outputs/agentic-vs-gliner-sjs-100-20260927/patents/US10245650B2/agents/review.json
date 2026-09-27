@@ -1,0 +1,34 @@
+{
+  "revision": 4,
+  "candidate_sha256": "ad0c76d176ade7aa064a1e3af1b615de157fb055f0a08b5935fb865673b45a75",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Reviewed cited passages substantiate receiver/collet conical compression and tool clamping, pressure-piece anti-rotation coupling, indexed detachable pressure-piece/collet coupling, detent angular correspondence, and cross-configured spherical roller bearing capability."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "Revision 4 represents the main physical components and supported functions and flows assessed previously; no clear additional supported function is omitted."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Mechanical linear and torque/contact interfaces are coherently typed. Pressure-to-radial compression is represented as an internal collet/receiver transformation, not an incompatible interface."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Previously flagged bearing evidence/citation issue is resolved; the bearing passage supports the claimed cross-configured rollers and bidirectional pulling/pressure force capability. Other cited passages support the modeled couplings and clamping."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Revision 4 resolves the prior error: I_CRDET now connects COLLET.c_rot to RECEIVER.r_detent, distinct from pressure-piece I_PR connecting PRESSURE.p_key to RECEIVER.r_rot. Interface endpoints exist and are appropriately distinguished."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "External tool is separately represented, consistent with context/interface modeling guidance. Textbook material supports modeling approach only, not patent facts; no unsupported engineering requirements or state machines are added."
+    }
+  },
+  "findings": [],
+  "summary": "Reviewed saved revision 4 independently. The prior interface defect is fixed: I_CRDET mates to RECEIVER.r_detent while I_PR retains RECEIVER.r_rot. Reassessed prior bearing citation concern and other grounding, function, flow, claim-traceability, interface, and textbook-application issues; found no unresolved issues. Review passes.",
+  "saved_at": "2026-09-27T06:03:18.085075+00:00"
+}

@@ -1,0 +1,320 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Top-entry trunnion ball valve maintenance system",
+    "system_id": "US9835259B2",
+    "description": "Inferred physical and maintenance-operation model of a top-entry trunnion rotary ball valve with retractable spring-loaded seats.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "Valve equipment",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "BODY",
+      "subsystem_name": "Main valve body",
+      "description": "Body with inlet/outlet passages, end connections, stepped seat recesses and threaded guide holes.",
+      "domain": "Valve structure",
+      "ports": [
+        {
+          "port_id": "BODY_IN",
+          "name": "Inlet passage boundary",
+          "direction": "inout",
+          "flow_type": "fluid"
+        },
+        {
+          "port_id": "BODY_OUT",
+          "name": "Outlet passage boundary",
+          "direction": "inout",
+          "flow_type": "fluid"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "BODY_BALL_IN",
+          "mating_subsystem": "BALL",
+          "port_this": "BODY_IN",
+          "port_mate": "BALL_IN",
+          "flow_ref": "FLUID",
+          "interface_type": "fluid passage connection"
+        },
+        {
+          "interface_id": "BODY_BALL_OUT",
+          "mating_subsystem": "BALL",
+          "port_this": "BODY_OUT",
+          "port_mate": "BALL_OUT",
+          "flow_ref": "FLUID",
+          "interface_type": "fluid passage connection"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "COVER",
+      "subsystem_name": "Valve top cover",
+      "description": "Removable cover secured to the body by studs for top-entry access.",
+      "domain": "Valve structure"
+    },
+    {
+      "subsystem_id": "BALL",
+      "subsystem_name": "Ball member",
+      "description": "Trunnion-mounted ball member with central bore and stem connection.",
+      "domain": "Valve mechanism",
+      "ports": [
+        {
+          "port_id": "BALL_IN",
+          "name": "Central bore inlet-side opening",
+          "direction": "inout",
+          "flow_type": "fluid"
+        },
+        {
+          "port_id": "BALL_OUT",
+          "name": "Central bore outlet-side opening",
+          "direction": "inout",
+          "flow_type": "fluid"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "UPSEAT",
+      "subsystem_name": "Upstream seat assembly",
+      "description": "Soft insert seal, ball seat with flange bearing equally spaced engaging holes and cylindrical-surface guiding groove, seat retainer and compression springs in upstream recess.",
+      "domain": "Sealing mechanism",
+      "ports": [
+        {
+          "port_id": "UP_FORCE",
+          "name": "Tangential force at flange",
+          "direction": "inout",
+          "flow_type": "mechanical_force"
+        },
+        {
+          "port_id": "UP_MOVE",
+          "name": "Guided axial seat movement",
+          "direction": "inout",
+          "flow_type": "mechanical_linear"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "UPSEAT_GUIDE",
+          "mating_subsystem": "GUIDE",
+          "port_this": "UP_MOVE",
+          "port_mate": "GUIDE_UP_MOVE",
+          "flow_ref": "SEAT_MOVE",
+          "interface_type": "guiding groove and guide assembly interaction"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "DNSEAT",
+      "subsystem_name": "Downstream seat assembly",
+      "description": "Soft insert seal, ball seat with flange bearing equally spaced engaging holes and cylindrical-surface guiding groove, seat retainer and compression springs in downstream recess.",
+      "domain": "Sealing mechanism",
+      "ports": [
+        {
+          "port_id": "DN_FORCE",
+          "name": "Tangential force at flange",
+          "direction": "inout",
+          "flow_type": "mechanical_force"
+        },
+        {
+          "port_id": "DN_MOVE",
+          "name": "Guided axial seat movement",
+          "direction": "inout",
+          "flow_type": "mechanical_linear"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "DNSEAT_GUIDE",
+          "mating_subsystem": "GUIDE",
+          "port_this": "DN_MOVE",
+          "port_mate": "GUIDE_DN_MOVE",
+          "flow_ref": "SEAT_MOVE",
+          "interface_type": "guiding groove and guide assembly interaction"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "GUIDE",
+      "subsystem_name": "Guide assemblies",
+      "description": "Relocatable guide screws with freely rotating bearings, parked normally and installed in threaded body holes for maintenance.",
+      "domain": "Maintenance mechanism",
+      "ports": [
+        {
+          "port_id": "GUIDE_UP_MOVE",
+          "name": "Upstream groove guidance",
+          "direction": "inout",
+          "flow_type": "mechanical_linear"
+        },
+        {
+          "port_id": "GUIDE_DN_MOVE",
+          "name": "Downstream groove guidance",
+          "direction": "inout",
+          "flow_type": "mechanical_linear"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "ROD",
+      "subsystem_name": "Straight maintenance rods",
+      "description": "Removable rods engage seat-flange holes and transmit manual tangential force.",
+      "domain": "Maintenance tooling",
+      "ports": [
+        {
+          "port_id": "ROD_FORCE_IN",
+          "name": "Operator force reception",
+          "direction": "inout",
+          "flow_type": "mechanical_force"
+        },
+        {
+          "port_id": "ROD_FORCE_OUT",
+          "name": "Force delivered to seat flange holes",
+          "direction": "inout",
+          "flow_type": "mechanical_force"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "ROD_UPSEAT",
+          "mating_subsystem": "UPSEAT",
+          "port_this": "ROD_FORCE_OUT",
+          "port_mate": "UP_FORCE",
+          "flow_ref": "TANGENTIAL",
+          "interface_type": "rod engagement with flange holes"
+        },
+        {
+          "interface_id": "ROD_DNSEAT",
+          "mating_subsystem": "DNSEAT",
+          "port_this": "ROD_FORCE_OUT",
+          "port_mate": "DN_FORCE",
+          "flow_ref": "TANGENTIAL",
+          "interface_type": "rod engagement with downstream seat flange holes"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "OPERATOR",
+      "subsystem_name": "Maintenance operator",
+      "description": "External actor applying manual force and handling cover and ball member.",
+      "domain": "External actor",
+      "ports": [
+        {
+          "port_id": "OP_FORCE",
+          "name": "Manual force input",
+          "direction": "inout",
+          "flow_type": "mechanical_force"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "OP_ROD",
+          "mating_subsystem": "ROD",
+          "port_this": "OP_FORCE",
+          "port_mate": "ROD_FORCE_IN",
+          "flow_ref": "TANGENTIAL",
+          "interface_type": "manual mechanical force transfer"
+        }
+      ]
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "FLUID",
+      "name": "Pipeline fluid",
+      "flow_type": "fluid",
+      "notes": "Passes through body passages and ball central bore when aligned."
+    },
+    {
+      "flow_id": "TANGENTIAL",
+      "name": "Manual tangential force",
+      "flow_type": "mechanical_force",
+      "notes": "Applied to seat flange through straight rod."
+    },
+    {
+      "flow_id": "SEAT_MOVE",
+      "name": "Seat axial movement",
+      "flow_type": "mechanical_linear",
+      "notes": "Guide and groove arrangement enables seat retraction against spring force."
+    }
+  ],
+  "requirements": [
+    {
+      "req_id": "CLEARANCE",
+      "category": "maintenance function",
+      "priority": "high",
+      "statement": "Seat retraction creates clearance between ball sealing surface and soft inserts sufficient to remove or assemble the ball member.",
+      "rationale": "Claims 1 and 4 describe retraction against spring force and resulting mechanical clearance.",
+      "satisfied_by": [
+        "UPSEAT",
+        "DNSEAT",
+        "GUIDE",
+        "ROD"
+      ]
+    },
+    {
+      "req_id": "COVER_INTERFERENCE",
+      "category": "safety constraint",
+      "priority": "medium",
+      "statement": "A guide left in a threaded body hole interferes with the cover and prevents its installation.",
+      "rationale": "Claim 5.",
+      "satisfied_by": [
+        "GUIDE",
+        "COVER"
+      ]
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "MAINTENANCE",
+        "name": "Retract seats and access ball",
+        "owner": "BODY",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Remove the valve top cover by opening its studs."
+          },
+          {
+            "step_no": 2,
+            "description": "Move guide assemblies from parking holes to threaded through-holes and tighten them."
+          },
+          {
+            "step_no": 3,
+            "description": "Engage rods in seat-flange holes and turn in the marked direction repeatedly until seats retract against spring force and clearance is attained."
+          },
+          {
+            "step_no": 4,
+            "description": "Remove or assemble the ball member through the top opening."
+          },
+          {
+            "step_no": 5,
+            "description": "Turn rods in reverse to retract seats outward and restore sealing position or enable seat removal."
+          }
+        ]
+      },
+      {
+        "action_id": "UPSEAT_FORCE_TO_AXIAL",
+        "name": "Convert tangential force to upstream seat retraction",
+        "owner": "UPSEAT",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Tangential force applied through the rod at the flange engaging holes causes axial force; the ball seat moves relative to the guide assembly and retracts into the recess against compression-spring force."
+          }
+        ]
+      },
+      {
+        "action_id": "DNSEAT_FORCE_TO_AXIAL",
+        "name": "Convert tangential force to downstream seat retraction",
+        "owner": "DNSEAT",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Tangential force applied through the rod at the flange engaging holes causes axial force; the ball seat moves relative to the guide assembly and retracts into the recess against compression-spring force."
+          }
+        ]
+      }
+    ]
+  }
+}

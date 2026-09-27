@@ -1,0 +1,177 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 5,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 2,
+    "Documentation": 34,
+    "EndFeatureMembership": 14,
+    "Feature": 22,
+    "FeatureChaining": 38,
+    "FeatureMembership": 38,
+    "FeatureTyping": 19,
+    "FlowEnd": 6,
+    "FlowUsage": 3,
+    "ItemDefinition": 5,
+    "ItemUsage": 9,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 58,
+    "Package": 1,
+    "PartDefinition": 8,
+    "PartUsage": 9,
+    "PortUsage": 9,
+    "Redefinition": 6,
+    "ReferenceSubsetting": 14,
+    "ReferenceUsage": 6,
+    "Subclassification": 3,
+    "SuccessionAsUsage": 1
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DISK_Brake_disk"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DISK_Brake_disk.port_P_DISK_PAD1_First_side_friction_surface"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DISK_Brake_disk.port_P_DISK_PAD2_Second_side_friction_surface"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PAD1_First_brake_pad"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PAD1_First_brake_pad.port_P_PAD1_FORCE_First_pad_normal_force_input"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PAD1_First_brake_pad.port_P_PAD1_CONTACT_First_pad_disk_friction_contact"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PAD2_Second_brake_pad"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PAD2_Second_brake_pad.port_P_PAD2_CAL_Second_pad_braking_force_transfer"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PAD2_Second_brake_pad.port_P_PAD2_CONTACT_Second_pad_disk_friction_contact"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CAL_Brake_caliper"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CAL_Brake_caliper.port_P_CAL_PAD2_Second_pad_force_input"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CAL_Brake_caliper.port_P_CAL_PAD1_First_side_force_output"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CLAMP_Clamping_device"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CLAMP_Clamping_device.port_P_CLAMP_OUT_Clamp_force_output"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BRACKET_Bracket_part"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_AXLE_Axle_part"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_VEHICLE_Vehicle_structure"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_CLAMP_Clamping_force"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_BRAKE_Braking_force"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_CONTACT_Pad_disk_frictional_contact"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_APPLY_Apply_first_pad"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_BRAKE_CONTACT_Engage_opposed_pads_with_disk"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_PAD1_DISK"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_PAD2_DISK"
+    },
+    {
+      "path": "/subsystems/2/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_I_PAD2_CAL"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_I_CAL_PAD1"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_I_CLAMP_PAD1"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

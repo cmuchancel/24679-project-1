@@ -1,0 +1,240 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 7,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 2,
+    "Documentation": 41,
+    "EndFeatureMembership": 14,
+    "Feature": 29,
+    "FeatureChaining": 52,
+    "FeatureMembership": 42,
+    "FeatureReferenceExpression": 7,
+    "FeatureTyping": 20,
+    "FeatureValue": 7,
+    "FlowEnd": 6,
+    "FlowUsage": 3,
+    "ItemDefinition": 7,
+    "ItemUsage": 9,
+    "LiteralInteger": 2,
+    "MultiplicityRange": 2,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 89,
+    "Package": 1,
+    "PartDefinition": 6,
+    "PartUsage": 9,
+    "PortUsage": 9,
+    "Redefinition": 6,
+    "ReferenceSubsetting": 21,
+    "ReferenceUsage": 13,
+    "RequirementDefinition": 3,
+    "RequirementUsage": 3,
+    "SatisfyRequirementUsage": 7,
+    "Subclassification": 4,
+    "SubjectMembership": 7,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CYL_Cylinder_Housing_and_Covers"
+    },
+    {
+      "path": "/subsystems/0/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_CYL_Cylinder_Housing_and_Covers.part_FCV80_Head_cover_flow_control_valve_80_adjusts_airf"
+    },
+    {
+      "path": "/subsystems/0/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_CYL_Cylinder_Housing_and_Covers.part_FCV130_Rod_cover_flow_control_valve_130"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CYL_Cylinder_Housing_and_Covers.port_P64_Head_cover_air_port_64"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CYL_Cylinder_Housing_and_Covers.port_P128_Rod_cover_air_port_128__exhaust_destination_d"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_OP_Outer_Piston_and_Outer_Rod"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_OP_Outer_Piston_and_Outer_Rod.port_OP_AIR_Outer_piston_poppet_cavity_air_path"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_OP_Outer_Piston_and_Outer_Rod.port_OP_MOTION_Outer_rod_axial_motion"
+    },
+    {
+      "path": "/subsystems/1/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_OP_Outer_Piston_and_Outer_Rod.port_OP_WORK_Outer_rod_workpiece_contact"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_IP_Inner_Piston_and_Inner_Rod"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_IP_Inner_Piston_and_Inner_Rod.port_IP_MOTION_Inner_rod_axial_motion_within_outer_rod"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_POPP_Poppet_Valve_Assembly"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SUP_External_Pneumatic_Pressure_Source"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SUP_External_Pneumatic_Pressure_Source.port_SUP64_Pressure_applied_at_port_64"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SUP_External_Pneumatic_Pressure_Source.port_SUP128_Pressure_applied_at_port_128"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_LOAD_Tool_or_Workpiece"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LOAD_Tool_or_Workpiece.port_LOAD_CONTACT_Workpiece_contact"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_SUP_Pneumatic_pressure_supply"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_AIR_Internal_air_flow"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_MOTION_Telescoping_axial_motion"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_WORK_Workpiece_interaction"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_R_STAGE"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_R_STAGE"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_R_STAGE"
+    },
+    {
+      "path": "/requirements/1",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_R_FLOW"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_R_FLOW"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_R_FLOW"
+    },
+    {
+      "path": "/requirements/2",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_R_STOP"
+    },
+    {
+      "path": "/requirements/2/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_R_STOP"
+    },
+    {
+      "path": "/requirements/2/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_R_STOP"
+    },
+    {
+      "path": "/requirements/2/satisfied_by/2",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_R_STOP"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_EXT_Extend_telescoping_cylinder"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_RET_Retract_telescoping_cylinder"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_AIR128"
+    },
+    {
+      "path": "/subsystems/1/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_WORK"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_MOTION"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_SUP64"
+    },
+    {
+      "path": "/subsystems/4/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_SUP128"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

@@ -1,0 +1,145 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 6,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 4,
+    "Documentation": 28,
+    "EndFeatureMembership": 12,
+    "Feature": 24,
+    "FeatureChaining": 32,
+    "FeatureMembership": 29,
+    "FeatureTyping": 14,
+    "ItemDefinition": 3,
+    "ItemUsage": 8,
+    "LiteralInteger": 1,
+    "MultiplicityRange": 1,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 47,
+    "Package": 1,
+    "PartDefinition": 4,
+    "PartUsage": 6,
+    "PortUsage": 8,
+    "ReferenceSubsetting": 12,
+    "Subclassification": 2,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CVJ_A_First_constant_velocity_joint"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CVJ_A_First_constant_velocity_joint.port_outer_ring_back_Back_side_outer_ring_coupling"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CVJ_A_First_constant_velocity_joint.port_inner_ring_shaft_Inner_ring_spline_shaft_engagement"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CVJ_B_Second_constant_velocity_joint"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CVJ_B_Second_constant_velocity_joint.port_outer_ring_back_Back_side_outer_ring_coupling_abce67a6"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CVJ_B_Second_constant_velocity_joint.port_inner_ring_shaft_Inner_ring_spline_shaft_engagement_3d8a976b"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_OUTER_RING_COUPLING_Coaxial_outer_ring_coupling"
+    },
+    {
+      "path": "/subsystems/2/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_OUTER_RING_COUPLING_Coaxial_outer_ring_coupling.part_adapter_flange_Optional_disk_shaped_adapter_flange_with_cent"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_OUTER_RING_COUPLING_Coaxial_outer_ring_coupling.port_ring_A_First_outer_ring_mechanical_connection"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_OUTER_RING_COUPLING_Coaxial_outer_ring_coupling.port_ring_B_Second_outer_ring_mechanical_connection"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SHAFTS_Joint_shafts"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SHAFTS_Joint_shafts.port_shaft_a_First_joint_shaft_interface"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SHAFTS_Joint_shafts.port_shaft_b_Second_joint_shaft_interface"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_shaft_torque_Shaft_torque"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_ring_rotation_Outer_ring_rotational_coupling"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_transmit_joint_torque_Transmit_torque_through_CVJ_A"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_transmit_joint_torque_b_Transmit_torque_through_CVJ_B"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_couple_cvj_a"
+    },
+    {
+      "path": "/subsystems/2/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_couple_cvj_b"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_shaft_a_inner_ring"
+    },
+    {
+      "path": "/subsystems/3/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_shaft_b_inner_ring"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

@@ -1,0 +1,352 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 3,
+    "ActionUsage": 9,
+    "AllocationUsage": 3,
+    "Documentation": 71,
+    "EndFeatureMembership": 28,
+    "Feature": 36,
+    "FeatureChaining": 82,
+    "FeatureMembership": 91,
+    "FeatureReferenceExpression": 2,
+    "FeatureTyping": 39,
+    "FeatureValue": 2,
+    "FlowEnd": 22,
+    "FlowUsage": 11,
+    "ItemDefinition": 13,
+    "ItemUsage": 22,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 122,
+    "Package": 1,
+    "PartDefinition": 13,
+    "PartUsage": 14,
+    "PortUsage": 22,
+    "Redefinition": 22,
+    "ReferenceSubsetting": 30,
+    "ReferenceUsage": 24,
+    "RequirementDefinition": 1,
+    "RequirementUsage": 1,
+    "SatisfyRequirementUsage": 2,
+    "Subclassification": 9,
+    "SubjectMembership": 2,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_pump_housing_Pump_Housing_and_Port_Plate"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_pump_housing_Pump_Housing_and_Port_Plate.port_pump_in_Pump_inlet"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_pump_housing_Pump_Housing_and_Port_Plate.port_pump_out_Pump_outlet"
+    },
+    {
+      "path": "/subsystems/0/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_pump_housing_Pump_Housing_and_Port_Plate.port_rotating_group_hydraulic_in_Hydraulic_communication_to_rotating_group"
+    },
+    {
+      "path": "/subsystems/0/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_pump_housing_Pump_Housing_and_Port_Plate.port_rotating_group_hydraulic_out_Hydraulic_communication_from_rotating_group"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_rotating_group_Rotating_Group"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_rotating_group_Rotating_Group.port_shoe_contact_Piston_shoe_contact_surface"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_rotating_group_Rotating_Group.port_hydraulic_in_Hydraulic_fluid_from_housing_inlet_passage"
+    },
+    {
+      "path": "/subsystems/1/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_rotating_group_Rotating_Group.port_hydraulic_out_Hydraulic_fluid_to_housing_outlet_passage"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_primary_swashplate_Primary_Swashplate_Member"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_secondary_swashplate_Secondary_Swashplate_Member"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_secondary_swashplate_Secondary_Swashplate_Member.port_shoe_mating_surface_Shoe_mating_surface"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_actuating_mechanism_Actuating_Mechanism_and_Link"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_actuating_mechanism_Actuating_Mechanism_and_Link.port_link_force_in_Force_member_input_at_link"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_tank_Tank"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_tank_Tank.port_tank_out_Tank_conduit_outlet"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_controller_Controller"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_controller_Controller.port_controller_inlet_pressure_in_Inlet_pressure_signal_input"
+    },
+    {
+      "path": "/subsystems/6/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_controller_Controller.port_controller_command_out_Remote_actuator_command_output"
+    },
+    {
+      "path": "/subsystems/6/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_controller_Controller.port_controller_outlet_pressure_in_Outlet_pressure_signal_input"
+    },
+    {
+      "path": "/subsystems/6/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_controller_Controller.port_controller_position_in_Primary_member_position_signal_input"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_remote_actuator_Remote_Controlled_Actuating_Mechanism"
+    },
+    {
+      "path": "/subsystems/7/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_remote_actuator_Remote_Controlled_Actuating_Mechanism.port_remote_command_in_Controller_command_input"
+    },
+    {
+      "path": "/subsystems/7/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_remote_actuator_Remote_Controlled_Actuating_Mechanism.port_force_out_Mechanical_force_output"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_fluid_control_valve_Fluid_Control_Valve"
+    },
+    {
+      "path": "/subsystems/8/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_fluid_control_valve_Fluid_Control_Valve.port_valve_supply_in_Pump_supply_inlet"
+    },
+    {
+      "path": "/subsystems/8/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_fluid_control_valve_Fluid_Control_Valve.port_valve_work_out_Work_fluid_outlet"
+    },
+    {
+      "path": "/subsystems/9",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_fluid_actuator_Fluid_Actuator"
+    },
+    {
+      "path": "/subsystems/9/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_fluid_actuator_Fluid_Actuator.port_actuator_fluid_in_Fluid_inlet"
+    },
+    {
+      "path": "/subsystems/10",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_pressure_sensor_inlet_Inlet_Pressure_Sensor"
+    },
+    {
+      "path": "/subsystems/10/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_pressure_sensor_inlet_Inlet_Pressure_Sensor.port_inlet_pressure_signal_Inlet_pressure_signal"
+    },
+    {
+      "path": "/subsystems/11",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_pressure_sensor_outlet_Outlet_Pressure_Sensor"
+    },
+    {
+      "path": "/subsystems/11/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_pressure_sensor_outlet_Outlet_Pressure_Sensor.port_outlet_pressure_signal_Outlet_pressure_signal"
+    },
+    {
+      "path": "/subsystems/12",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_position_sensor_Primary_Member_Position_Sensor"
+    },
+    {
+      "path": "/subsystems/12/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_position_sensor_Primary_Member_Position_Sensor.port_position_signal_Position_signal"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_inlet_fluid_Tank_fluid_to_pump_inlet"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_pressurized_outlet_Pressurized_pump_delivery"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_parameter_signals_Pressure_and_position_sensor_signals"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_controller_actuation_Controller_signal_to_remote_actuator"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_mechanical_actuation_Remote_actuator_force_to_link"
+    },
+    {
+      "path": "/item_flows/5",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_shoe_surface_contact_Piston_shoe_to_secondary_swashplate_contact"
+    },
+    {
+      "path": "/item_flows/6",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_inlet_pressure_signal_flow_Inlet_pressure_sensor_signal"
+    },
+    {
+      "path": "/item_flows/7",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_outlet_pressure_signal_flow_Outlet_pressure_sensor_signal"
+    },
+    {
+      "path": "/item_flows/8",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_primary_position_signal_flow_Primary_member_position_sensor_signal"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_PIVOT_ORIENTATION"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_PIVOT_ORIENTATION"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_PIVOT_ORIENTATION"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_PUMP_FLUID_Pump_fluid_through_rotating_group"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_MODULATE_TRANSITION_Adjust_pressure_transition_using_secondary_me"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_TRANSMIT_MOTION_Transmit_actuator_motion_through_link"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_tank_pump_inlet"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_pump_valve_supply"
+    },
+    {
+      "path": "/subsystems/0/interfaces/2",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_housing_rotating_group_inlet"
+    },
+    {
+      "path": "/subsystems/0/interfaces/3",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_rotating_group_housing_outlet"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_shoe_secondary_surface_contact"
+    },
+    {
+      "path": "/subsystems/6/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_controller_remote_actuator_command"
+    },
+    {
+      "path": "/subsystems/7/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_remote_actuator_link_force"
+    },
+    {
+      "path": "/subsystems/8/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_valve_actuator_work"
+    },
+    {
+      "path": "/subsystems/10/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_inlet_sensor_controller"
+    },
+    {
+      "path": "/subsystems/11/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_outlet_sensor_controller"
+    },
+    {
+      "path": "/subsystems/12/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_position_sensor_controller"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

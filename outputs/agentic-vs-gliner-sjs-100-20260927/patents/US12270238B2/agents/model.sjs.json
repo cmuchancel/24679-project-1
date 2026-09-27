@@ -1,0 +1,226 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Counterbalance Hinge Assembly",
+    "system_id": "US12270238B2",
+    "description": "Inferred conceptual model of a mechanical hinge assembly that uses housing-driven followers, a variable-incline cam and a compression device to partially counterbalance a movable member.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "Mechanical systems",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "HINGE_HOUSING",
+      "subsystem_name": "Hinge Housing and Guides",
+      "description": "Housing engaged with the movable member; its cam-follower guides drive the first followers as the movable member rotates.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "HOUSING_GUIDE_CONTACT",
+          "name": "Guide contact",
+          "direction": "out",
+          "flow_type": "mechanical_contact"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "GUIDE_TO_HOLDER",
+          "mating_subsystem": "FOLLOWER_HOLDER",
+          "port_this": "HOUSING_GUIDE_CONTACT",
+          "port_mate": "HOLDER_GUIDE_CONTACT",
+          "flow_ref": "GUIDE_FORCE",
+          "interface_type": "mechanical contact"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "FOLLOWER_HOLDER",
+      "subsystem_name": "Cam Follower Holder and Followers",
+      "description": "Holder mounted on the shaft and carrying first followers that receive guide motion and second followers that engage the cam; in disclosed configurations it rotates and moves laterally relative to the shaft.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "HOLDER_GUIDE_CONTACT",
+          "name": "First-follower guide contact",
+          "direction": "in",
+          "flow_type": "mechanical_contact"
+        },
+        {
+          "port_id": "HOLDER_CAM_CONTACT",
+          "name": "Second-follower cam contact",
+          "direction": "in",
+          "flow_type": "mechanical_contact"
+        },
+        {
+          "port_id": "HOLDER_BIAS_IN",
+          "name": "Bias force input",
+          "direction": "in",
+          "flow_type": "mechanical_linear"
+        },
+        {
+          "port_id": "HOLDER_SHAFT_MOUNT",
+          "name": "Shaft mounting and passage",
+          "direction": "inout",
+          "flow_type": "mechanical_support"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "PROFILE_CAM",
+      "subsystem_name": "Variable-Incline Cam",
+      "description": "Cam with slots or cam surfaces of varying incline, engaged by the holder's second followers to produce lateral displacement.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "CAM_TRACK_CONTACT",
+          "name": "Cam track contact",
+          "direction": "out",
+          "flow_type": "mechanical_contact"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "CAM_TO_HOLDER",
+          "mating_subsystem": "FOLLOWER_HOLDER",
+          "port_this": "CAM_TRACK_CONTACT",
+          "port_mate": "HOLDER_CAM_CONTACT",
+          "flow_ref": "CAM_FORCE",
+          "interface_type": "mechanical contact"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "COMPRESSION_UNIT",
+      "subsystem_name": "Compression Device",
+      "description": "Biasing device acting on the follower holder to provide at least partial counterbalance; disclosed implementations include springs and non-spring alternatives.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "COMPRESSION_BIAS_OUT",
+          "name": "Compression bias",
+          "direction": "out",
+          "flow_type": "mechanical_linear"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "COMPRESSION_TO_HOLDER",
+          "mating_subsystem": "FOLLOWER_HOLDER",
+          "port_this": "COMPRESSION_BIAS_OUT",
+          "port_mate": "HOLDER_BIAS_IN",
+          "flow_ref": "COMPRESSION_FORCE",
+          "interface_type": "mechanical force"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "HINGE_SHAFT",
+      "subsystem_name": "Hinge Shaft",
+      "description": "Shaft supporting the follower holder and providing its rotation/sliding axis.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "SHAFT_HOLDER_SUPPORT",
+          "name": "Holder mounting and shaft passage",
+          "direction": "inout",
+          "flow_type": "mechanical_support"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "SHAFT_TO_HOLDER",
+          "mating_subsystem": "FOLLOWER_HOLDER",
+          "port_this": "SHAFT_HOLDER_SUPPORT",
+          "port_mate": "HOLDER_SHAFT_MOUNT",
+          "flow_ref": "SHAFT_HOLDER_MOUNTING",
+          "interface_type": "mechanical mounting"
+        }
+      ]
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "GUIDE_FORCE",
+      "name": "Guide-to-first-follower force",
+      "flow_type": "mechanical_contact",
+      "notes": "Housing guide contact imparts rotation to the follower holder."
+    },
+    {
+      "flow_id": "CAM_FORCE",
+      "name": "Cam-to-second-follower force",
+      "flow_type": "mechanical_contact",
+      "notes": "Cam surface engagement drives holder laterally."
+    },
+    {
+      "flow_id": "COMPRESSION_FORCE",
+      "name": "Compression bias force",
+      "flow_type": "mechanical_linear",
+      "notes": "Compression device biases the holder and counterbalances movable-member weight."
+    },
+    {
+      "flow_id": "SHAFT_HOLDER_MOUNTING",
+      "name": "Shaft-holder mounting relationship",
+      "flow_type": "mechanical_support",
+      "notes": "The holder is mounted to the shaft, which passes through its central passage (claims 7, 15, and 19)."
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "DRIVE_HOLDER",
+        "name": "Drive holder and bias compression device",
+        "owner": "FOLLOWER_HOLDER",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Movable-member movement carries the housing and its cam-follower guides (claims 1, 15, and 20)."
+          },
+          {
+            "step_no": 2,
+            "description": "Housing guides drive the first cam followers and rotate the cam-follower holder (claims 1, 12, 15, and 20)."
+          },
+          {
+            "step_no": 3,
+            "description": "Second cam followers engage the cam slots or surfaces; varying incline drives the holder laterally against the compression-device bias (claims 1, 10, 15, 16, and 19)."
+          },
+          {
+            "step_no": 4,
+            "description": "Compression-device force is transmitted through the holder and cam arrangement to partially counterbalance the movable member (claims 1 and 15)."
+          }
+        ]
+      },
+      {
+        "action_id": "MOVE_STOWED",
+        "name": "Move movable member toward stowed position",
+        "owner": "FOLLOWER_HOLDER",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Housing guides drive the first followers and rotate the holder as the movable member is pushed toward stowed (method claim 22)."
+          },
+          {
+            "step_no": 2,
+            "description": "Second followers engage the cam surfaces and drive the holder away from the compression-device bias (method claim 22)."
+          }
+        ]
+      },
+      {
+        "action_id": "MOVE_DEPLOYED",
+        "name": "Move movable member toward deployed position",
+        "owner": "FOLLOWER_HOLDER",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Pulling the movable member toward deployed drives the housing guides against the first followers and imparts rotation to the holder (method claim 21)."
+          },
+          {
+            "step_no": 2,
+            "description": "The second followers engage the cam surfaces, driving the holder laterally against the compression-device bias and further compressing the device (method claim 21)."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 6,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 3,
+    "Documentation": 28,
+    "EndFeatureMembership": 10,
+    "Feature": 20,
+    "FeatureChaining": 26,
+    "FeatureMembership": 24,
+    "FeatureTyping": 12,
+    "ItemDefinition": 7,
+    "ItemUsage": 6,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 48,
+    "Package": 1,
+    "PartDefinition": 4,
+    "PartUsage": 5,
+    "PortUsage": 6,
+    "ReferenceSubsetting": 10,
+    "Subclassification": 5,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_latch_Latching_Member"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_latch_Latching_Member.port_latch_lever_joint_Lever_pivot_and_actuation_interface"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_latch_Latching_Member.port_latch_frame_engagement_Clasp_frame_engagement_interface"
+    },
+    {
+      "path": "/subsystems/0/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_latch_Latching_Member.port_latch_carrier_pivot_Carrier_frame_pivot_interface"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_lever_Folding_Lever_Arm"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_lever_Folding_Lever_Arm.port_lever_latch_joint_Latch_pivot_and_actuation_interface"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_carrier_Carrier_Board_Frame_and_Faceplate"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_carrier_Carrier_Board_Frame_and_Faceplate.port_carrier_latch_pivot_Latch_pivot_support_interface"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_chassis_Chassis_Frame_Member"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_chassis_Chassis_Frame_Member.port_frame_latch_engagement_Frame_member_engagement_interface"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_lever_motion_Lever_actuation_motion"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_latch_motion_Latching_member_rotation"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_fold_motion_Lever_folding_motion"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_frame_contact_Clasp_frame_engagement_contact"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_carrier_pivot_coupling_Carrier_frame_latch_pivot_coupling"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_engage_latch_Engage_frame_member"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_fold_lever_Fold_lever_after_latching"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_lever_latch_actuation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_latch_frame_coupling"
+    },
+    {
+      "path": "/subsystems/0/interfaces/2",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_carrier_latch_pivot_mount"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

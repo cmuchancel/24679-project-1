@@ -1,0 +1,281 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Two-piece impeller centrifugal pump",
+    "system_id": "US9739284B2",
+    "description": "Inferred conceptual model of the claimed centrifugal pump, its fluid interfaces, rotating impeller, housing, sealing behavior, and drive.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "fluid machinery",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "MOTOR",
+      "subsystem_name": "Drive motor",
+      "description": "Motor mounted on the pump housing and driving at least one impeller half; some described configurations drive both.",
+      "domain": "electromechanical",
+      "functional_basis": [
+        "drive impeller"
+      ],
+      "ports": [
+        {
+          "port_id": "rotary_out",
+          "name": "Rotary drive output",
+          "direction": "out",
+          "flow_type": "mechanical_rotary"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_MOTOR_IMPELLER_DRIVE",
+          "mating_subsystem": "IMPELLER",
+          "port_this": "rotary_out",
+          "port_mate": "shaft_in",
+          "flow_ref": "F_ROT",
+          "interface_type": "rotary drive interaction"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "IMPELLER",
+      "subsystem_name": "Two-half impeller assembly",
+      "description": "Facing impeller halves arranged within the volute, held together by plural pins, with plural blades floating on the pins and at least one rotating inlet tube.",
+      "domain": "rotating machinery",
+      "functional_basis": [
+        "rotate impeller",
+        "accelerate fluid",
+        "urge halves apart"
+      ],
+      "ports": [
+        {
+          "port_id": "shaft_in",
+          "name": "Rotary drive input",
+          "direction": "in",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "fluid_in",
+          "name": "Rotating inlet tube fluid entry (one or both halves)",
+          "direction": "in",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "fluid_out",
+          "name": "Outward fluid delivery",
+          "direction": "out",
+          "flow_type": "hydraulic_fluid"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_IMPELLER_HOUSING_DISCHARGE",
+          "mating_subsystem": "HOUSING",
+          "port_this": "fluid_out",
+          "port_mate": "volute_in",
+          "flow_ref": "F_VOLUTE",
+          "interface_type": "impeller discharge to volute"
+        }
+      ],
+      "parts": []
+    },
+    {
+      "subsystem_id": "HOUSING",
+      "subsystem_name": "Three-component housing and volute",
+      "description": "Central housing component contains the impeller and comprises the outlet; two outer housing components are adjacent to the respective impeller halves. At least one outer component includes an inlet.",
+      "domain": "pump structure",
+      "functional_basis": [
+        "contain impeller",
+        "route fluid",
+        "support rotation"
+      ],
+      "ports": [
+        {
+          "port_id": "inlet",
+          "name": "Housing inlet",
+          "direction": "in",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "outlet",
+          "name": "Housing outlet",
+          "direction": "out",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "volute_in",
+          "name": "Impeller discharge into volute",
+          "direction": "in",
+          "flow_type": "hydraulic_fluid"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_HOUSING_RECEIVER",
+          "mating_subsystem": "RECEIVER",
+          "port_this": "outlet",
+          "port_mate": "fluid_in",
+          "flow_ref": "F_OUT",
+          "interface_type": "fluid discharge"
+        }
+      ],
+      "parts": [
+        {
+          "part_id": "PIPE_FLANGE",
+          "description": "Optional pipe flange attached to the housing (Claim 4).",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "subsystem_id": "SEAL",
+      "subsystem_name": "Inlet-side sliding seal",
+      "description": "Seal slides over the rotating inlet tube and sits perpendicular to it between an impeller ridge and adjacent housing.",
+      "domain": "sealing",
+      "functional_basis": [
+        "seal interface"
+      ]
+    },
+    {
+      "subsystem_id": "SUPPLY",
+      "subsystem_name": "Fluid supply",
+      "description": "External source of fluid or material delivered to one or more pump inlet tubes.",
+      "domain": "external fluid system",
+      "ports": [
+        {
+          "port_id": "fluid_out",
+          "name": "Fluid source output",
+          "direction": "out",
+          "flow_type": "hydraulic_fluid"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_SUPPLY_HOUSING",
+          "mating_subsystem": "IMPELLER",
+          "port_this": "fluid_out",
+          "port_mate": "fluid_in",
+          "flow_ref": "F_IN",
+          "interface_type": "fluid supply to rotating inlet tube(s)"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "RECEIVER",
+      "subsystem_name": "Discharge receiver",
+      "description": "External receiving system for fluid or material leaving through the housing outlet.",
+      "domain": "external fluid system",
+      "ports": [
+        {
+          "port_id": "fluid_in",
+          "name": "Receiver fluid input",
+          "direction": "in",
+          "flow_type": "hydraulic_fluid"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "BEARINGS",
+      "subsystem_name": "Impeller bearings",
+      "description": "Optional bearings in the outer housing components support rotation of the impeller halves.",
+      "domain": "rotating machinery"
+    },
+    {
+      "subsystem_id": "WEEP",
+      "subsystem_name": "Housing weep-hole indication",
+      "description": "Optional housing passage/weep hole through which leakage indicates a seal needs replacement.",
+      "domain": "pump structure"
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "F_IN",
+      "name": "Incoming fluid/material",
+      "flow_type": "hydraulic_fluid",
+      "notes": "Fluid/material enters at the housing inlet arrangement and reaches the impeller intake through the rotating hollow inlet tube(s); at least one tube is claimed, both halves may have tubes, and a single-inlet embodiment is also claimed (Claims 1–2 and 6). The external supply boundary is connected to the impeller fluid-entry port without asserting an unsupported internal housing-to-tube connection."
+    },
+    {
+      "flow_id": "F_OUT",
+      "name": "Pumped fluid/material",
+      "flow_type": "hydraulic_fluid",
+      "notes": "Fluid/material exits through the housing component comprising the outlet (Claims 1 and 3)."
+    },
+    {
+      "flow_id": "F_ROT",
+      "name": "Rotary drive",
+      "flow_type": "mechanical_rotary",
+      "notes": "Motor drives at least one impeller half (Claim 1); another claimed configuration drives both (Claim 8)."
+    },
+    {
+      "flow_id": "F_VOLUTE",
+      "name": "Impeller discharge to volute",
+      "flow_type": "hydraulic_fluid",
+      "notes": "Fluid forced outward by the impeller passes through the volute/housing toward the housing outlet."
+    }
+  ],
+  "requirements": [
+    {
+      "req_id": "R_PUMP",
+      "category": "functional",
+      "priority": "high",
+      "statement": "Move fluid or material from an inlet to an outlet using a motor-driven two-half centrifugal impeller in a volute.",
+      "rationale": "Claim 1; claim 8 independently recites pumping fluid/material from inlet to outlet.",
+      "satisfied_by": [
+        "MOTOR",
+        "IMPELLER",
+        "HOUSING"
+      ]
+    },
+    {
+      "req_id": "R_SEAL_LOAD",
+      "category": "functional",
+      "priority": "medium",
+      "statement": "Centrifugal loading of the fluid/impeller forces the halves apart against adjacent housing surfaces.",
+      "rationale": "Claim 1; claim 8 also describes the halves forced apart against adjacent housing.",
+      "satisfied_by": [
+        "IMPELLER",
+        "HOUSING",
+        "SEAL"
+      ]
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "A_PUMP",
+        "name": "Centrifugally pump fluid",
+        "owner": "IMPELLER",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Motor drives at least one impeller half in the claimed configuration."
+          },
+          {
+            "step_no": 2,
+            "description": "The rotating impeller forces inlet fluid or material outward within the volute."
+          },
+          {
+            "step_no": 3,
+            "description": "The impeller transfers the outwardly forced fluid or material into the housing volute."
+          },
+          {
+            "step_no": 4,
+            "description": "The housing/volute routes the discharged fluid or material through its outlet."
+          }
+        ]
+      },
+      {
+        "action_id": "A_INDICATE_LEAK",
+        "name": "Indicate seal leakage",
+        "owner": "WEEP",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "A leak through the housing weep hole indicates that a seal needs replacement."
+          }
+        ]
+      }
+    ]
+  }
+}

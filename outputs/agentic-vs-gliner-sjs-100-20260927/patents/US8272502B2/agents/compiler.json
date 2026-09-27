@@ -1,0 +1,353 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 3,
+    "AllocationUsage": 1,
+    "ConnectionUsage": 2,
+    "Documentation": 67,
+    "EndFeatureMembership": 26,
+    "Feature": 35,
+    "FeatureChaining": 82,
+    "FeatureMembership": 84,
+    "FeatureReferenceExpression": 3,
+    "FeatureTyping": 39,
+    "FeatureValue": 3,
+    "FlowEnd": 20,
+    "FlowUsage": 10,
+    "ItemDefinition": 12,
+    "ItemUsage": 24,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 117,
+    "Package": 1,
+    "PartDefinition": 12,
+    "PartUsage": 13,
+    "PortUsage": 24,
+    "Redefinition": 20,
+    "ReferenceSubsetting": 29,
+    "ReferenceUsage": 23,
+    "RequirementDefinition": 2,
+    "RequirementUsage": 2,
+    "SatisfyRequirementUsage": 3,
+    "Subclassification": 7,
+    "SubjectMembership": 3,
+    "SuccessionAsUsage": 1
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PRESS_Mechanical_Press"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PRESS_Mechanical_Press.port_press_mount_Conveyor_mounting_support"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PRESS_Mechanical_Press.port_scrap_source_Scrap_material_source"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_MOTOR_Electric_Motor"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_MOTOR_Electric_Motor.port_motor_rot_Motor_shaft_rotation"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_REDUCER_Gear_Reducer"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_REDUCER_Gear_Reducer.port_red_in_Reducer_rotary_input"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_REDUCER_Gear_Reducer.port_red_out_Reducer_rotary_output"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_GEARBOX_Elliptical_Gearbox"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_GEARBOX_Elliptical_Gearbox.port_gear_in_Gearbox_rotary_input"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_GEARBOX_Elliptical_Gearbox.port_gear_out_Gearbox_rotary_output"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ECCLINK_Eccentric_Output_Link_and_Rocker"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ECCLINK_Eccentric_Output_Link_and_Rocker.port_ecc_in_Rotary_drive_input"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ECCLINK_Eccentric_Output_Link_and_Rocker.port_ecc_out_Oscillatory_shaft_drive"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DRIVESHAFT_Oscillating_Drive_Shaft"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DRIVESHAFT_Oscillating_Drive_Shaft.port_shaft_in_Oscillatory_input"
+    },
+    {
+      "path": "/subsystems/5/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DRIVESHAFT_Oscillating_Drive_Shaft.port_shaft_out_Oscillating_shaft_output"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CARRIAGE_LINKS_Carriage_Rocker_and_Link_Assemblies"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CARRIAGE_LINKS_Carriage_Rocker_and_Link_Assemblies.port_links_in_Shaft_oscillation_input"
+    },
+    {
+      "path": "/subsystems/6/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CARRIAGE_LINKS_Carriage_Rocker_and_Link_Assemblies.port_links_out_Carriage_reciprocation"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_GUIDE_Carriage_Supports_and_Linear_Guides"
+    },
+    {
+      "path": "/subsystems/7/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_GUIDE_Carriage_Supports_and_Linear_Guides.port_guide_motion_Guided_carriage_motion"
+    },
+    {
+      "path": "/subsystems/7/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_GUIDE_Carriage_Supports_and_Linear_Guides.port_link_input_Rocker_link_carriage_motion_input"
+    },
+    {
+      "path": "/subsystems/7/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_GUIDE_Carriage_Supports_and_Linear_Guides.port_press_support_Press_mounting_support"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CARRIAGE_Elongated_Carriage_and_Shaker_Shaft"
+    },
+    {
+      "path": "/subsystems/8/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CARRIAGE_Elongated_Carriage_and_Shaker_Shaft.port_carriage_motion_Carriage_reciprocation"
+    },
+    {
+      "path": "/subsystems/8/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CARRIAGE_Elongated_Carriage_and_Shaker_Shaft.port_shaker_attach_Shaker_shaft_attachment"
+    },
+    {
+      "path": "/subsystems/8/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CARRIAGE_Elongated_Carriage_and_Shaker_Shaft.port_shaft_attach_Shaker_shaft_attachment"
+    },
+    {
+      "path": "/subsystems/9",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_TRAYS_Shaker_Trays"
+    },
+    {
+      "path": "/subsystems/9/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_TRAYS_Shaker_Trays.port_tray_motion_Tray_reciprocation"
+    },
+    {
+      "path": "/subsystems/9/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_TRAYS_Shaker_Trays.port_tray_attach_Saddle_bracket_attachment"
+    },
+    {
+      "path": "/subsystems/10",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SCRAP_Scrap_Material"
+    },
+    {
+      "path": "/subsystems/10/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SCRAP_Scrap_Material.port_scrap_in_Scrap_material"
+    },
+    {
+      "path": "/subsystems/11",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SADDLES_Detachable_Tray_Saddle_Brackets"
+    },
+    {
+      "path": "/subsystems/11/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SADDLES_Detachable_Tray_Saddle_Brackets.port_saddle_shaft_Releasable_shaft_attachment"
+    },
+    {
+      "path": "/subsystems/11/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SADDLES_Detachable_Tray_Saddle_Brackets.port_saddle_tray_Tray_bracket_attachment"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_rotary_motor_Motor_shaft_rotation"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_rotary_gearbox_Reducer_output___gearbox_input_rotation"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_gear_output_Gearbox_output_rotation"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_oscillation_Drive_shaft_oscillation"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_linear_motion_Reciprocating_carriage_motion"
+    },
+    {
+      "path": "/item_flows/5",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_scrap_transfer_Scrap_metal_pieces"
+    },
+    {
+      "path": "/item_flows/6",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_structural_support_Structural_support_or_attachment"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_TRANSFER"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_TRANSFER"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_TRANSFER"
+    },
+    {
+      "path": "/requirements/1",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_GUIDANCE"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_GUIDANCE"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_DRIVE_Transmit_motor_rotation_through_elliptical_ge"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_PRESS_SCRAP"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_PRESS_GUIDE_MOUNT"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_MOTOR_REDUCER"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_REDUCER_GEARBOX"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_GEARBOX_ECC"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_ECC_SHAFT"
+    },
+    {
+      "path": "/subsystems/5/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_SHAFT_LINKS"
+    },
+    {
+      "path": "/subsystems/6/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_LINK_GUIDE"
+    },
+    {
+      "path": "/subsystems/8/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_CARRIAGE_GUIDE"
+    },
+    {
+      "path": "/subsystems/8/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_CARRIAGE_TRAYS"
+    },
+    {
+      "path": "/subsystems/8/interfaces/2",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_CARRIAGE_SADDLES"
+    },
+    {
+      "path": "/subsystems/11/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_SADDLES_TRAYS"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

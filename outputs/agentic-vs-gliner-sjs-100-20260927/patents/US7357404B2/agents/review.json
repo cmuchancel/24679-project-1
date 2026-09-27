@@ -1,0 +1,34 @@
+{
+  "revision": 5,
+  "candidate_sha256": "b2459ac433193dba26fbaa1c5743a190447ac9238c2572e481429eb6fa8596a7",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 5 adds the abstract passage 78591240f49ebe53ec5e6e5c13598dc5 at item level to the frame shock mount port, shock upper mount port, shock-frame flow, and interface. That passage expressly states that the rear shock attaches to the linkage and frame. Claim 1 passage 99957d7f6c4eb694f7d5952940717ddd supports the two links, frame/link and swing-arm/link openings, mutual link openings, alternative shock opening, and progression range. The model does not assert which link is selected for shock attachment."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "Captures the claimed two-link architecture and mating mounting relationships, shock-to-frame context, shock-mount alternatives as unconnected optional ports, and qualitative leverage/progression behavior. Detailed geometry and application-specific configurations are appropriately omitted; model warnings acknowledge the uninstantiated alternative shock-link topology."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "All instantiated links are mechanical mounting interfaces with compatible mechanical_joint ports; references resolve to existing component/port/flow IDs and connections are recorded once. No incompatible transformation is modeled. Shock-to-link connection remains intentionally uninstantiated rather than imposing either disclosed alternative."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Previously flagged shock-to-frame endpoints and connection now cite the abstract passage, which expressly supports the relation. ID-bearing model elements have item-level citations in the candidate; claim-level progression statement is supported by claim passage 99957d7f6c4eb694f7d5952940717ddd and calculation rationale by 6a2e639cae72218a86a7fc32ee20277c."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Frame-link, inter-link, link-swing-arm, and shock-frame interfaces reference existing compatible ports and flows. Separate external frame, swing arm, and shock components avoid a generic EXTERNAL. Alternative shock-link ports are present without a falsely fixed connection."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Textbook context/interface guidance supports the modeling choice to distinguish external contextual components and avoid fixing application-dependent configuration; it is not used as invention evidence. The retrieved alternative-configuration textbook result was unrelated scoring guidance, so no invention claims are derived from it."
+    }
+  },
+  "findings": [],
+  "summary": "Independent review of saved SJS 1.0 revision 5: no unresolved findings. The revision-4 shock-frame citation concern is resolved: the abstract passage 78591240f49ebe53ec5e6e5c13598dc5 explicitly says the rear shock attaches to both linkage and frame, and revision 5 cites it at the relevant shock/frame ports, shock-frame interface, and flow. Reviewed the cited claim, abstract, and calculation passages against the model; the two-link structure, mount interfaces, alternative shock opening, qualitative leverage behavior, and progression claim are supported. External context components and deliberately uninstantiated alternative shock-link topology are reasonable. No evident SJS reference or flow compatibility defects; omitted geometry is appropriately left unspecified.",
+  "saved_at": "2026-09-27T05:14:58.063058+00:00"
+}

@@ -1,0 +1,197 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 5,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 5,
+    "Documentation": 39,
+    "EndFeatureMembership": 16,
+    "Feature": 30,
+    "FeatureChaining": 44,
+    "FeatureMembership": 37,
+    "FeatureTyping": 19,
+    "FlowEnd": 2,
+    "FlowUsage": 1,
+    "ItemDefinition": 9,
+    "ItemUsage": 12,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 65,
+    "Package": 1,
+    "PartDefinition": 5,
+    "PartUsage": 6,
+    "PortUsage": 12,
+    "Redefinition": 2,
+    "ReferenceSubsetting": 16,
+    "ReferenceUsage": 2,
+    "Subclassification": 6,
+    "SuccessionAsUsage": 1
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_WG_Wave_Generator"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_WG_Wave_Generator.port_wg_contact_Contour_contact"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_FTE_Flexible_Toothed_Transmission_Element"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FTE_Flexible_Toothed_Transmission_Element.port_fte_wg_contact_Wave_generator_contact"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FTE_Flexible_Toothed_Transmission_Element.port_fte_output_mesh_Running_tooth_mesh"
+    },
+    {
+      "path": "/subsystems/1/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FTE_Flexible_Toothed_Transmission_Element.port_fte_housing_torque_Spline_coupling"
+    },
+    {
+      "path": "/subsystems/1/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FTE_Flexible_Toothed_Transmission_Element.port_fte_cover_retention_Cover_tongue_recess_engagement"
+    },
+    {
+      "path": "/subsystems/1/ports/4",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FTE_Flexible_Toothed_Transmission_Element.port_fte_output_torque_Running_mesh_rotational_torque_transfer"
+    },
+    {
+      "path": "/subsystems/1/ports/5",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FTE_Flexible_Toothed_Transmission_Element.port_fte_output_sliding_support_Output_element_sliding_support"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_HC_Housing_Side_Connecting_Element"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_HC_Housing_Side_Connecting_Element.port_hc_spline_Housing_side_spline_coupling"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_OC_Output_Side_Connecting_Element"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_OC_Output_Side_Connecting_Element.port_oc_mesh_Mating_running_tooth_mesh"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_OC_Output_Side_Connecting_Element.port_oc_mesh_torque_Mating_running_tooth_rotational_torque"
+    },
+    {
+      "path": "/subsystems/3/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_OC_Output_Side_Connecting_Element.port_oc_sliding_support_Sliding_bearing_surface"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_FC_Front_Cover"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FC_Front_Cover.port_fc_tongues_Tongue_engagement"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_deformation_Noncircular_mechanical_deformation"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_tooth_engagement_Running_tooth_engagement"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_torque_Rotational_torque"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_cover_retention_Axial_cover_retention_contact"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_sliding_support_Output_element_sliding_support"
+    },
+    {
+      "path": "/item_flows/5",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_contour_contact_Wave_generator_contour_contact"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_impose_contour_Impose_wave_generator_contour"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_engage_teeth_Engage_running_tooth_systems"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_fte_oc_running_mesh"
+    },
+    {
+      "path": "/subsystems/1/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_fte_hc_spline_coupling"
+    },
+    {
+      "path": "/subsystems/1/interfaces/2",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_fte_fc_retention"
+    },
+    {
+      "path": "/subsystems/1/interfaces/3",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_fte_oc_mesh_torque"
+    },
+    {
+      "path": "/subsystems/1/interfaces/4",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_fte_oc_sliding_support"
+    },
+    {
+      "path": "/subsystems/1/interfaces/5",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_fte_wg_contour_contact"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

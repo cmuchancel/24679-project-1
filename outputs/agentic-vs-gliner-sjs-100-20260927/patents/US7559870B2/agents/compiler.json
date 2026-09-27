@@ -1,0 +1,294 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 7,
+    "AllocationUsage": 2,
+    "Documentation": 51,
+    "EndFeatureMembership": 18,
+    "Feature": 29,
+    "FeatureChaining": 64,
+    "FeatureMembership": 64,
+    "FeatureReferenceExpression": 7,
+    "FeatureTyping": 27,
+    "FeatureValue": 7,
+    "FlowEnd": 14,
+    "FlowUsage": 7,
+    "ItemDefinition": 8,
+    "ItemUsage": 15,
+    "LiteralInteger": 2,
+    "MultiplicityRange": 2,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 102,
+    "Package": 1,
+    "PartDefinition": 8,
+    "PartUsage": 11,
+    "PortUsage": 15,
+    "Redefinition": 14,
+    "ReferenceSubsetting": 25,
+    "ReferenceUsage": 21,
+    "RequirementDefinition": 2,
+    "RequirementUsage": 2,
+    "SatisfyRequirementUsage": 7,
+    "Subclassification": 6,
+    "SubjectMembership": 7,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DRIVE_Driving_machine_interface"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DRIVE_Driving_machine_interface.port_drive_out_Rotary_input"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_IN_Input_half_coupling_and_annular_gear"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_IN_Input_half_coupling_and_annular_gear.port_input_shaft_Input_rotation_and_torque"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_IN_Input_half_coupling_and_annular_gear.port_gear_drive_Gear_engagement_to_planet_gears"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PLANET_Epicyclic_planet_gear_train"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PLANET_Epicyclic_planet_gear_train.port_input_mesh_Input_annulus_mesh"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PLANET_Epicyclic_planet_gear_train.port_output_mesh_Output_annulus_mesh"
+    },
+    {
+      "path": "/subsystems/2/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PLANET_Epicyclic_planet_gear_train.port_pump_drive_Pump_gear_drive"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_OUT_Output_annular_gear_and_half_coupling"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_OUT_Output_annular_gear_and_half_coupling.port_gear_input_Output_annulus_mesh"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_OUT_Output_annular_gear_and_half_coupling.port_shaft_out_Output_rotation_and_torque"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PUMP_Carrier_mounted_gear_pump_assembly"
+    },
+    {
+      "path": "/subsystems/4/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_PUMP_Carrier_mounted_gear_pump_assembly.part_carrier_Carrier_housing_the_planet_gears_and_a_corres"
+    },
+    {
+      "path": "/subsystems/4/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_PUMP_Carrier_mounted_gear_pump_assembly.part_pump_gear_pair_Pair_of_gears_in_each_gear_pump__driven_by_it"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PUMP_Carrier_mounted_gear_pump_assembly.port_rotary_in_Pump_drive"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PUMP_Carrier_mounted_gear_pump_assembly.port_oil_out_Pumped_oil"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CHAMBER_Pressurized_oil_chamber"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CHAMBER_Pressurized_oil_chamber.port_oil_in_Pumped_oil_inlet"
+    },
+    {
+      "path": "/subsystems/5/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CHAMBER_Pressurized_oil_chamber.port_relief_out_Relieved_oil_path"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_RELIEF_Pressure_relief_valve"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_RELIEF_Pressure_relief_valve.port_pressure_in_Chamber_pressure_and_oil"
+    },
+    {
+      "path": "/subsystems/6/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_RELIEF_Pressure_relief_valve.port_oil_release_Relief_discharge"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_LOAD_Driven_machine_interface"
+    },
+    {
+      "path": "/subsystems/7/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LOAD_Driven_machine_interface.port_load_in_Rotary_power_input"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F1_Input_rotary_power"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F2_Epicyclic_gear_transmission"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F3_Pump_drive_rotation"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F4_Pumped_oil"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F5_Relief_flow"
+    },
+    {
+      "path": "/item_flows/5",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F6_Output_rotary_power"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_R1"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_R1"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_R1"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/2",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_R1"
+    },
+    {
+      "path": "/requirements/1",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_R2"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_R2"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_R2"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/2",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_R2"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/3",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_R2"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A1_Transmit_torque_below_threshold"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A2_Relieve_excess_torque"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF1"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF2"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF3"
+    },
+    {
+      "path": "/subsystems/2/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF4"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF7"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF5"
+    },
+    {
+      "path": "/subsystems/5/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF6"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

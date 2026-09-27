@@ -1,0 +1,187 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 6,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 3,
+    "Documentation": 36,
+    "EndFeatureMembership": 16,
+    "Feature": 26,
+    "FeatureChaining": 44,
+    "FeatureMembership": 43,
+    "FeatureTyping": 20,
+    "FlowEnd": 6,
+    "FlowUsage": 3,
+    "ItemDefinition": 4,
+    "ItemUsage": 11,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 59,
+    "Package": 1,
+    "PartDefinition": 7,
+    "PartUsage": 8,
+    "PortUsage": 11,
+    "Redefinition": 6,
+    "ReferenceSubsetting": 16,
+    "ReferenceUsage": 6,
+    "Subclassification": 3,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_INNER_RING_Inner_ring"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_INNER_RING_Inner_ring.port_INNER_RING_TORQUE_Inner_ring_torque_interface"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_OUTER_RING_PULLEY_Outer_ring_and_pulley_section"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_OUTER_RING_PULLEY_Outer_ring_and_pulley_section.port_PULLEY_TORQUE_IN_Pulley_belt_torque_input"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_OUTER_RING_PULLEY_Outer_ring_and_pulley_section.port_OUTER_RING_TORQUE_Outer_ring_torque_interface"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ROLLING_BEARING_Rolling_bearing_and_bearing_cage"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ROLLING_BEARING_Rolling_bearing_and_bearing_cage.port_BEARING_CAGE_MOTION_OUT_Bearing_cage_motion_output"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ONE_WAY_CLUTCH_Cam_clutch_and_clutch_cage"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ONE_WAY_CLUTCH_Cam_clutch_and_clutch_cage.port_CLUTCH_CAGE_MOTION_IN_Clutch_cage_coupled_motion_input"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ONE_WAY_CLUTCH_Cam_clutch_and_clutch_cage.port_OUTER_TORQUE_Outer_ring_torque_side"
+    },
+    {
+      "path": "/subsystems/3/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ONE_WAY_CLUTCH_Cam_clutch_and_clutch_cage.port_INNER_TORQUE_Inner_ring_torque_side"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ENGINE_CRANKSHAFT_Vehicle_engine_crankshaft"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ENGINE_CRANKSHAFT_Vehicle_engine_crankshaft.port_CRANK_TORQUE_OUT_Crankshaft_torque_output"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_AUXILIARY_SHAFT_Auxiliary_equipment_input_shaft"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_AUXILIARY_SHAFT_Auxiliary_equipment_input_shaft.port_AUX_TORQUE_IN_Auxiliary_shaft_torque_input"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DRIVE_BELT_Power_transmission_belt"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DRIVE_BELT_Power_transmission_belt.port_BELT_DRIVE_IN_Belt_drive_input"
+    },
+    {
+      "path": "/subsystems/6/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DRIVE_BELT_Power_transmission_belt.port_BELT_DRIVE_OUT_Belt_drive_output"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_BELT_TORQUE_Belt_torque"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_CLUTCH_TORQUE_Inter_ring_torque"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_CAGE_COUPLED_MOTION_Unitary_coupled_cage_rotation"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_TRANSFER_OR_BLOCK_TORQUE_Transfer_or_block_inter_ring_torque"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_REDUCE_SPRAG_SLIDING_Reduce_concentrated_cam_sliding_during_idling"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_CLUTCH_TO_INNER_RING"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_INNER_RING_TO_AUXILIARY_SHAFT"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_OUTER_RING_TO_CLUTCH"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_BEARING_CAGE_TO_CLUTCH_CAGE"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_CRANK_TO_BELT"
+    },
+    {
+      "path": "/subsystems/6/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_BELT_TO_PULLEY"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

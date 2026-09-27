@@ -1,0 +1,95 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Segmented-cage rolling-element bearing",
+    "system_id": "US9541130B2",
+    "description": "Conceptual structural and behavioral model of the bearing and segmented cage arrangement described in the patent.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "Mechanical bearing systems",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "INNER_RING",
+      "subsystem_name": "Inner ring",
+      "description": "Bearing ring on the inner side of the rolling elements.",
+      "domain": "Mechanical"
+    },
+    {
+      "subsystem_id": "OUTER_RING",
+      "subsystem_name": "Outer ring",
+      "description": "Bearing ring on the outer side of the rolling elements.",
+      "domain": "Mechanical"
+    },
+    {
+      "subsystem_id": "CAGE",
+      "subsystem_name": "Segmented cage",
+      "description": "Multiple separate cage segments with lateral boundary walls defining rolling-element receiving pockets and first and second running surfaces configured to guide the pocketed rolling element (claims 2–3). Disclosed alternatives include rolling-element-, raceway-, flange-, or shoulder-guided segments; one-piece plastic molded segments; and cylindrical or tapered rolling elements (claims 4–11), without selecting a single variant.",
+      "domain": "Mechanical",
+      "functional_basis": [
+        "guide rolling elements",
+        "deform under load"
+      ],
+      "ports": []
+    },
+    {
+      "subsystem_id": "POCKET_ROLLERS",
+      "subsystem_name": "Pocketed rolling elements",
+      "description": "Rolling elements received in cage-segment pockets and positioned between the inner and outer rings.",
+      "domain": "Mechanical",
+      "ports": []
+    },
+    {
+      "subsystem_id": "GAP_ROLLERS",
+      "subsystem_name": "Gap rolling elements",
+      "description": "In the separate-segment embodiment, a second set of rolling elements occupies gaps between adjacent cage segments.",
+      "domain": "Mechanical"
+    }
+  ],
+  "item_flows": [],
+  "requirements": [
+    {
+      "req_id": "REQ_CLEARANCE",
+      "category": "geometric",
+      "priority": "high",
+      "statement": "In the load-free state, pocket circumferential clearance c on the pitch circle satisfies cmax ≥ c ≥ cmin, where cmin=0.01*Dw−0.5 mm and cmax=0.02*Dw−0.4 mm; Dw is at least 50 mm, and c<0.2x under the stated uniform-distribution condition.",
+      "rationale": "Claim 1 specifies these clearance bounds and the relationship to total clearance x.",
+      "satisfied_by": [
+        "CAGE",
+        "POCKET_ROLLERS"
+      ]
+    },
+    {
+      "req_id": "REQ_LOAD_CLAMP",
+      "category": "behavioral",
+      "priority": "high",
+      "statement": "When load on the cage from an adjacent roller exceeds a predetermined amount, cage deformation clamps the rolling element in its pocket.",
+      "rationale": "Claim 1; described as a mechanical response of the cage, without a claimed active controller.",
+      "satisfied_by": [
+        "CAGE",
+        "POCKET_ROLLERS"
+      ]
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "ACT_LOAD_CLAMP",
+        "name": "Deform cage and clamp pocket roller under elevated adjacent load",
+        "owner": "CAGE",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "A load from an adjacent rolling element located outside the cage acts on the cage; represent this as a stated load condition, not as a modeled connection from the pocketed rolling elements."
+          },
+          {
+            "step_no": 2,
+            "description": "When the load exceeds the predetermined amount, deform the cage so the rolling element within the pocket is clamped."
+          }
+        ]
+      }
+    ]
+  }
+}

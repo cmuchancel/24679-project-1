@@ -1,0 +1,34 @@
+{
+  "revision": 4,
+  "candidate_sha256": "40aef693a86f007f64be82cc943343af5c540b7344b4d69598c01ae7bf8ffd55",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 4's new valve coupling is grounded in claims 8/16, which say bypass valve(s) are respectively coupled to bypass hole(s); the valve opening condition matches claims 9/17. The scroll, frame passage, routing, and varying wrap descriptions are supported by cited claim/embodiment passages. Optional valve framing is consistent with dependent-claim embodiments."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The previously unrepresented claimed bypass-valve coupling is now represented. Model captures scroll compression, discharge/bypass routing, pressure-trigger opening, and frame-to-discharge-space path. It does not guess external source/sink or unsupported drive topology."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Discharge and bypass material flows use gas flow ports with compatible directionality across scroll-to-frame and frame-to-casing interfaces. The valve-to-bypass coupling uses the bypass flow reference and compatible inout ports; it does not assert a distinct incompatible transformation."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Claim-supported requirements cite claims 1/13 and 9/17 in rationale; actions and components have patent evidence. No unsupported quantitative limitation is inserted."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "The revision adds the missing single interface from ORBITING_SCROLL bypass-hole coupling port to BYPASS_VALVE coupling port, with existing IDs and matching flow types. Discharge and bypass routing interfaces are also coherent. Shaft coupling is described textually and no unsupported mechanical port topology is asserted."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The model distinguishes internal material paths and leaves external endpoints unspecified; textbook guidance is used only for modeling organization, not patent facts. Omitting a detailed valve state machine is prudent because the patent specifies only the pressure condition and open action."
+    }
+  },
+  "findings": [],
+  "summary": "Independent review of revision 4 finds the prior bypass-valve coupling gap repaired: the modeled valve is now connected to the orbiting-scroll bypass-hole port by a compatible interface expressly supported by claims 8/16. Reviewed all cited patent passages and relevant textbook guidance; the represented architecture, claims, flows, and interfaces are evidence-aligned. No remaining evidence-supported issues identified.",
+  "saved_at": "2026-09-27T06:54:49.081902+00:00"
+}

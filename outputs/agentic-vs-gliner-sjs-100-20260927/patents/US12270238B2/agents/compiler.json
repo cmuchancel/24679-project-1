@@ -1,0 +1,162 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 3,
+    "ActionUsage": 11,
+    "AllocationUsage": 3,
+    "ConnectionUsage": 1,
+    "Documentation": 37,
+    "EndFeatureMembership": 14,
+    "Feature": 22,
+    "FeatureChaining": 36,
+    "FeatureMembership": 43,
+    "FeatureTyping": 16,
+    "FlowEnd": 6,
+    "FlowUsage": 3,
+    "ItemDefinition": 7,
+    "ItemUsage": 8,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 61,
+    "Package": 1,
+    "PartDefinition": 5,
+    "PartUsage": 6,
+    "PortUsage": 8,
+    "Redefinition": 6,
+    "ReferenceSubsetting": 14,
+    "ReferenceUsage": 6,
+    "Subclassification": 4,
+    "SuccessionAsUsage": 5
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_HINGE_HOUSING_Hinge_Housing_and_Guides"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_HINGE_HOUSING_Hinge_Housing_and_Guides.port_HOUSING_GUIDE_CONTACT_Guide_contact"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_FOLLOWER_HOLDER_Cam_Follower_Holder_and_Followers"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FOLLOWER_HOLDER_Cam_Follower_Holder_and_Followers.port_HOLDER_GUIDE_CONTACT_First_follower_guide_contact"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FOLLOWER_HOLDER_Cam_Follower_Holder_and_Followers.port_HOLDER_CAM_CONTACT_Second_follower_cam_contact"
+    },
+    {
+      "path": "/subsystems/1/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FOLLOWER_HOLDER_Cam_Follower_Holder_and_Followers.port_HOLDER_BIAS_IN_Bias_force_input"
+    },
+    {
+      "path": "/subsystems/1/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FOLLOWER_HOLDER_Cam_Follower_Holder_and_Followers.port_HOLDER_SHAFT_MOUNT_Shaft_mounting_and_passage"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PROFILE_CAM_Variable_Incline_Cam"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PROFILE_CAM_Variable_Incline_Cam.port_CAM_TRACK_CONTACT_Cam_track_contact"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_COMPRESSION_UNIT_Compression_Device"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_COMPRESSION_UNIT_Compression_Device.port_COMPRESSION_BIAS_OUT_Compression_bias"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_HINGE_SHAFT_Hinge_Shaft"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_HINGE_SHAFT_Hinge_Shaft.port_SHAFT_HOLDER_SUPPORT_Holder_mounting_and_shaft_passage"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_GUIDE_FORCE_Guide_to_first_follower_force"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_CAM_FORCE_Cam_to_second_follower_force"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_COMPRESSION_FORCE_Compression_bias_force"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_SHAFT_HOLDER_MOUNTING_Shaft_holder_mounting_relationship"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_DRIVE_HOLDER_Drive_holder_and_bias_compression_device"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_MOVE_STOWED_Move_movable_member_toward_stowed_position"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_MOVE_DEPLOYED_Move_movable_member_toward_deployed_position"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_GUIDE_TO_HOLDER"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_CAM_TO_HOLDER"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_COMPRESSION_TO_HOLDER"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_SHAFT_TO_HOLDER"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

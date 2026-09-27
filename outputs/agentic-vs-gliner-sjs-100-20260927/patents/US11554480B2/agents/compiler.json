@@ -1,0 +1,222 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 3,
+    "AllocationUsage": 1,
+    "ConnectionUsage": 7,
+    "Documentation": 43,
+    "EndFeatureMembership": 18,
+    "Feature": 34,
+    "FeatureChaining": 52,
+    "FeatureMembership": 48,
+    "FeatureTyping": 26,
+    "FlowEnd": 2,
+    "FlowUsage": 1,
+    "ItemDefinition": 5,
+    "ItemUsage": 17,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 68,
+    "Package": 1,
+    "PartDefinition": 8,
+    "PartUsage": 9,
+    "PortUsage": 17,
+    "Redefinition": 2,
+    "ReferenceSubsetting": 18,
+    "ReferenceUsage": 2,
+    "Subclassification": 2,
+    "SuccessionAsUsage": 1
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_drive_shaft_Eccentric_Drive_Shaft"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_drive_shaft_Eccentric_Drive_Shaft.port_command_in_Driving_command_input"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_drive_shaft_Eccentric_Drive_Shaft.port_shaft_bearing_Cartridge_bearing_coupling"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_cartridge_bearing_Cartridge_Bearing"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_cartridge_bearing_Cartridge_Bearing.port_bearing_shaft_Eccentric_shaft_coupling"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_cartridge_bearing_Cartridge_Bearing.port_bearing_gear_a_First_gear_coupling"
+    },
+    {
+      "path": "/subsystems/1/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_cartridge_bearing_Cartridge_Bearing.port_bearing_gear_b_Second_gear_coupling"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_gear_a_First_Cycloidal_Gear"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_gear_a_First_Cycloidal_Gear.port_gear_bearing_Cartridge_bearing_coupling"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_gear_a_First_Cycloidal_Gear.port_gear_ball_bearings_Pocket_engagement_with_ball_bearings"
+    },
+    {
+      "path": "/subsystems/2/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_gear_a_First_Cycloidal_Gear.port_gear_drive_pins_Drive_pin_passage_through_holes"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_gear_b_Second_Cycloidal_Gear"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_gear_b_Second_Cycloidal_Gear.port_gear_bearing_Cartridge_bearing_coupling_46b36783"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_gear_b_Second_Cycloidal_Gear.port_gear_ball_bearings_Pocket_engagement_with_ball_bearings_770ef616"
+    },
+    {
+      "path": "/subsystems/3/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_gear_b_Second_Cycloidal_Gear.port_gear_drive_pins_Drive_pin_passage_through_holes_f950f81c"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ball_bearings_Ball_Bearings"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ball_bearings_Ball_Bearings.port_bearing_gear_a_Engagement_with_first_gear_pockets"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ball_bearings_Ball_Bearings.port_bearing_gear_b_Engagement_with_second_gear_pockets"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_drive_pins_Drive_Pins"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_drive_pins_Drive_Pins.port_pin_gear_a_Passage_through_first_gear_holes"
+    },
+    {
+      "path": "/subsystems/5/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_drive_pins_Drive_Pins.port_pin_gear_b_Passage_through_second_gear_holes"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_command_source_Driving_Command_Source"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_command_source_Driving_Command_Source.port_command_out_Driving_command_output"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_coupled_component_Coupled_Rotating_Component"
+    },
+    {
+      "path": "/subsystems/7/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_coupled_component_Coupled_Rotating_Component.port_rotation_in_Rotational_input"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_f_command_Driving_command"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_f_mech_coupling_Mechanical_coupling_relationship"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_act_drive_Command_gear_system_to_rotate_coupled_compone"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_bearing_to_shaft"
+    },
+    {
+      "path": "/subsystems/1/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_bearing_to_gear_a"
+    },
+    {
+      "path": "/subsystems/1/interfaces/2",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_bearing_to_gear_b"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_gear_to_drive_pins"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_gear_to_drive_pins_5841fee4"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_ball_bearings_to_gear_a_pockets"
+    },
+    {
+      "path": "/subsystems/4/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_ball_bearings_to_gear_b_pockets"
+    },
+    {
+      "path": "/subsystems/6/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_command_boundary"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

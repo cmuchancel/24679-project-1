@@ -1,0 +1,676 @@
+{
+  "citations": [
+    {
+      "path": "/model_meta",
+      "source_passages": [
+        "a6999e4da3a21f245c816bc9b53c0649"
+      ]
+    },
+    {
+      "path": "/subsystems/0",
+      "source_passages": [
+        "a6999e4da3a21f245c816bc9b53c0649"
+      ]
+    },
+    {
+      "path": "/subsystems/1",
+      "source_passages": [
+        "a6999e4da3a21f245c816bc9b53c0649",
+        "373675c0b818f6231f9a6651fce9e634"
+      ]
+    },
+    {
+      "path": "/subsystems/2",
+      "source_passages": [
+        "a6999e4da3a21f245c816bc9b53c0649",
+        "2abbf7779112981029545014982982ca"
+      ]
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "source_passages": [
+        "28ee6c078af74abcb26da3b0a3b52940"
+      ]
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "source_passages": [
+        "d9ac15c2c8f5df295efaa7a9598a7a40"
+      ]
+    },
+    {
+      "path": "/subsystems/2/ports/2",
+      "source_passages": [
+        "f7c063dfb2b7a9217498f4b8c50c2235"
+      ]
+    },
+    {
+      "path": "/subsystems/3",
+      "source_passages": [
+        "f7c063dfb2b7a9217498f4b8c50c2235"
+      ]
+    },
+    {
+      "path": "/subsystems/4",
+      "source_passages": [
+        "809e02cc10aef20793bfe5ef65707279"
+      ]
+    },
+    {
+      "path": "/item_flows/0",
+      "source_passages": [
+        "d9ac15c2c8f5df295efaa7a9598a7a40"
+      ]
+    },
+    {
+      "path": "/item_flows/1",
+      "source_passages": [
+        "28ee6c078af74abcb26da3b0a3b52940"
+      ]
+    },
+    {
+      "path": "/item_flows/2",
+      "source_passages": [
+        "f7c063dfb2b7a9217498f4b8c50c2235",
+        "809e02cc10aef20793bfe5ef65707279"
+      ]
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "source_passages": [
+        "f7c063dfb2b7a9217498f4b8c50c2235"
+      ]
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "source_passages": [
+        "28ee6c078af74abcb26da3b0a3b52940"
+      ]
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "source_passages": [
+        "f7c063dfb2b7a9217498f4b8c50c2235"
+      ]
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "source_passages": [
+        "f7c063dfb2b7a9217498f4b8c50c2235"
+      ]
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "source_passages": [
+        "809e02cc10aef20793bfe5ef65707279"
+      ]
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "source_passages": [
+        "809e02cc10aef20793bfe5ef65707279"
+      ]
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "source_passages": [
+        "28ee6c078af74abcb26da3b0a3b52940"
+      ]
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "source_passages": [
+        "28ee6c078af74abcb26da3b0a3b52940"
+      ]
+    },
+    {
+      "path": "/subsystems/5",
+      "source_passages": [
+        "d9ac15c2c8f5df295efaa7a9598a7a40"
+      ]
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "source_passages": [
+        "d9ac15c2c8f5df295efaa7a9598a7a40"
+      ]
+    },
+    {
+      "path": "/subsystems/5/interfaces/0",
+      "source_passages": [
+        "d9ac15c2c8f5df295efaa7a9598a7a40"
+      ]
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "source_passages": [
+        "a6999e4da3a21f245c816bc9b53c0649",
+        "373675c0b818f6231f9a6651fce9e634"
+      ]
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "source_passages": [
+        "a6999e4da3a21f245c816bc9b53c0649",
+        "373675c0b818f6231f9a6651fce9e634"
+      ]
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "source_passages": [
+        "a6999e4da3a21f245c816bc9b53c0649"
+      ]
+    },
+    {
+      "path": "/item_flows/3",
+      "source_passages": [
+        "a6999e4da3a21f245c816bc9b53c0649",
+        "373675c0b818f6231f9a6651fce9e634"
+      ]
+    }
+  ],
+  "raw_results": [
+    {
+      "question": "What components constitute the latch assembly and how do the ratchet and pawl interact to retain and release the ratchet?",
+      "passages": [
+        {
+          "chunk_id": "f380fd6ae92398ae7a568a728a47f778",
+          "text": "generator to change between locked and unlocked states.\n\nlatch assemblies\nAn important issue with regard to the design of latch assemblies is the desirability of a latch assembly to operate smoothly. Unless friction is employed to retain one or more elements in desired positions in the latch assembly, low-friction contact (such as contact between rotatably-connected elements) is preferred. In addition, latch assembly designs in which part wear is reduced or eliminated is highly desirable. These latch assembly design considerations significantly limit the number of viable solutions for a number of latch assembly design problems described below.\n\na pawl\ncan be movable to release a ratchet holding the striker of the latch.\n\nthe pawl\n(or other movable element used to hold the ratchet in a latched position) can be moved in many different manners, such as by being rotated, pushed, pulled, shifted, and the like.\n\none or more elements\nsuch as levers are movable by actuation of a handle or other latch assembly input to move the pawl.\n\nThese pawl-moving elements\ncan be connected directly to the pawl or can otherwise be moved to exert motive force upon the pawl.",
+          "score": -0.5157114863395691,
+          "score_kind": "negative_distance",
+          "distance": 0.5157114863395691,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 9
+        },
+        {
+          "chunk_id": "eeb029083014f488bbf83c56665c8f65",
+          "text": "assembly, low-friction contact (such as contact between rotatably-connected elements) is preferred. In addition, latch assembly designs in which part wear is reduced or eliminated is highly desirable. These latch assembly design considerations significantly limit the number of viable solutions for a number of latch assembly design problems described below.\n\nIn most conventional latch designs, one or more elements are moved to release a retaining element holding the latch in a latched position. For example, a pawl can be movable to release a ratchet holding the striker of the latch. The pawl (or other movable element used to hold the ratchet in a latched position) can be moved in many different manners, such as by being rotated, pushed, pulled, shifted, and the like. Typically, one or more elements such as levers are movable by actuation of a handle or other latch assembly input to move the pawl. These pawl-moving elements can be connected directly to the pawl or can otherwise be moved to exert motive force upon the pawl.",
+          "score": -0.5349518656730652,
+          "score_kind": "negative_distance",
+          "distance": 0.5349518656730652,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 124
+        },
+        {
+          "chunk_id": "62c0f20edab0d8f3775546002e2786da",
+          "text": "element.\n\n11. A latch assembly, comprising:\n\na ratchet having latched and unlatched positions;\n\na pawl releasably engagable with the ratchet to releasably retain the ratchet in its latched position;\n\na lever movable to two different positions with respect to the pawl, the lever having a pivot point about which the lever pivots in both of the two different positions, the pivot point having substantially the same location with respect to the lever in both of the two different positions,\n\nthe lever pivotable about the pivot point in a first of the two different positions of the lever to move the pawl and to disengage the ratchet, the lever incapable of moving the pawl sufficiently to disengage the ratchet in a second of the two different positions of the lever.\n\na rotatable element coupled to the lever, the lever movable to the two different positions by rotation of the rotatable element, the rotatable element being disc-shaped.\n\n12. The latch assembly as claimed in claim 11, wherein the lever is directly coupled to the rotatable element.\n\n13. The latch assembly as claimed in claim 11, wherein the lever is coupled to the rotatable element by a link.\n\n14.",
+          "score": -0.5682192444801331,
+          "score_kind": "negative_distance",
+          "distance": 0.5682192444801331,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 260
+        },
+        {
+          "chunk_id": "a6999e4da3a21f245c816bc9b53c0649",
+          "text": "bly, comprising:\n\na ratchet having latched and unlatched positions;\n\na pawl having a post and being releasably engagable with the ratchet to releasably retain the ratchet in its latched position; and\n\na lever movable to two different positions with respect to the pawl, the lever having an enclosed aperture receiving the post during the entire range of motion of the post and a pivot point about which the lever pivots in both of the two different positions, the pivot point having substantially the same location with respect to the lever in both of the two different positions,\n\nthe lever pivotable about the pivot point in a first of the two different positions of the lever to move the pawl and to disengage the ratchet, the lever incapable of moving the pawl sufficiently to disengage the ratchet in a second of the two different positions of the lever, and the enclosed aperture allowing lost motion of the post.\n\n2. The latch assembly as claimed in claim 1, wherein:\n\nthe lever is movable to additional positions with respect to the pawl in which the lever is pivotable about the pivot point; and",
+          "score": -0.5743837356567383,
+          "score_kind": "negative_distance",
+          "distance": 0.5743837356567383,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 257
+        },
+        {
+          "chunk_id": "be383309e519631b201a3808b3958ae0",
+          "text": "n of the post.\n\n2. The latch assembly as claimed in claim 1, wherein:\n\nthe lever is movable to additional positions with respect to the pawl in which the lever is pivotable about the pivot point; and\n\nthe pivot point is in substantially the same location with respect to the lever in the two different positions and in at least some of the additional positions.\n\n3. The latch assembly as claimed in claim 1, wherein the lever is movable to additional positions with respect to the pawl, the lever pivotable to move the pawl and to disengage the ratchet in at least some of the additional positions.\n\n4. The latch assembly as claimed in claim 3, wherein:\n\nthe lever is pivotable about the pivot point in at least some of the additional positions; and\n\nthe pivot point is in substantially the same location with respect to the lever in the two different positions and in at least some of the additional positions.\n\n5. The latch assembly as claimed in claim 1, wherein the lever transmits no motive force to the pawl in the second of the two different positions of the lever.\n\n6.",
+          "score": -0.5787514448165894,
+          "score_kind": "negative_distance",
+          "distance": 0.5787514448165894,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 258
+        }
+      ]
+    },
+    {
+      "question": "How does the lever's first position relative to the pawl prevent sufficient movement to disengage the ratchet, and how does its other position enable release?",
+      "passages": [
+        {
+          "chunk_id": "2abbf7779112981029545014982982ca",
+          "text": "he handle does not generate sufficient pawl movement to release the ratchet, and a locking and unlocking mechanism coupled to the lever for moving the lever between its unlocked and locked positions.\n\nthe locking and unlocking mechanism\nis an over-center device capable of moving the lever between its unlocked and locked positions.\n\nthe lever\nin some highly preferred embodiments is pivotable about the same or substantially the same location with respect to the lever in the locked and unlocked positions of the lever.\n\nthe lever\ncan be moved (e.g., by the locking and unlocking mechanism) between a locked position in which the mass of the lever or portion thereof is removed a distance from the pawl and an unlocked position in which the mass of the lever or portion thereof is moved closer to the pawl.\n\nThis location\ncan be (and in some embodiments is) a location where the locking and unlocking mechanism is attached to the lever.\n\nthe pivot point of the lever\ncan be in the same place or substantially the same place with respect to the lever in all positions of the lever in the latch assembly or in only a locked position and an unlocked position of the lever in the latch assembly.",
+          "score": -0.40565261244773865,
+          "score_kind": "negative_distance",
+          "distance": 0.40565261244773865,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 13
+        },
+        {
+          "chunk_id": "a6999e4da3a21f245c816bc9b53c0649",
+          "text": "bly, comprising:\n\na ratchet having latched and unlatched positions;\n\na pawl having a post and being releasably engagable with the ratchet to releasably retain the ratchet in its latched position; and\n\na lever movable to two different positions with respect to the pawl, the lever having an enclosed aperture receiving the post during the entire range of motion of the post and a pivot point about which the lever pivots in both of the two different positions, the pivot point having substantially the same location with respect to the lever in both of the two different positions,\n\nthe lever pivotable about the pivot point in a first of the two different positions of the lever to move the pawl and to disengage the ratchet, the lever incapable of moving the pawl sufficiently to disengage the ratchet in a second of the two different positions of the lever, and the enclosed aperture allowing lost motion of the post.\n\n2. The latch assembly as claimed in claim 1, wherein:\n\nthe lever is movable to additional positions with respect to the pawl in which the lever is pivotable about the pivot point; and",
+          "score": -0.5115537643432617,
+          "score_kind": "negative_distance",
+          "distance": 0.5115537643432617,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 257
+        },
+        {
+          "chunk_id": "468730197303de1738ca655c7c7cb9b7",
+          "text": "t 244 and a position removed from the pawl post 244 .\n\nthe control lever 12 , 112\nis rotatable between such positions or is movable between such positions by a combination of rotation and translation. It should be noted that the control lever of the present invention can move with respect to the pawl in any manner desired.\n\nAny type of movement capable of positioning the control lever in an unlocked position (in which the control lever can be actuated to move the pawl and release the ratchet) and in a locked position (in which the control lever is incapable of moving or sufficiently moving the pawl to release the ratchet)\ncan be employed.\n\nthe locking and unlocking mechanism 348\npreferably includes a second element 352 mounted to rotate about an axis 354 adjacent to the first element 350 .\n\nthe second element 352\nis preferably eccentric with respect to the axis 354 , is lobed, or is otherwise shaped so that all or a portion of the second element 352 moves toward and away from the first element 350 when the second element 352 is rotated about the axis 354 .",
+          "score": -0.5375110507011414,
+          "score_kind": "negative_distance",
+          "distance": 0.5375110507011414,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 85
+        },
+        {
+          "chunk_id": "373675c0b818f6231f9a6651fce9e634",
+          "text": "on by engagement with a step 36 on the ratchet 30 .\n\nthe pawl 28\nis pivotable into and out of engagement with a lip, ledge, peg, abutment, boss, tooth, or other element or feature of the ratchet 30 .\n\nthe ratchet 30\nis preferably spring-loaded toward its unlatched position, disengagement of the pawl 28 from the ratchet 30 permits the ratchet 30 to move and to thereby release a striker (not shown). Rotation of the pawl 28 therefore generates striker release.\n\nthe pawl 28\ncan take any form capable of releasably engaging with the ratchet 30 to selectively limit ratchet movement.\n\na rotatable pawl 28\nis most preferred. Accordingly, and with reference to the illustrated preferred embodiments of the present invention, rotation of the pawl 28 is preferably performed to disengage the ratchet 30 and thereby to unlatch the latch assembly 10 .\n\nthe latch assembly 10\nis preferably controlled by control of pawl movement and position in the latch assembly 10 .\n\nthe control levers 12 , 20\ncan be actuated to move the pawl 28 .\n\nAny number of control levers 12 , 20\ncan be employed for this purpose, each control lever 12 , 20 being connected to one or more latch release inputs (not shown).",
+          "score": -0.5487385988235474,
+          "score_kind": "negative_distance",
+          "distance": 0.5487385988235474,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 30
+        },
+        {
+          "chunk_id": "72dbddddabfce382ebf8473a5abe924a",
+          "text": "or a combination of translation and rotation) to engage and disengage the ratchet 30 are possible and fall within the spirit and scope of the present invention, a rotatable pawl 28 is most preferred. Accordingly, and with reference to the illustrated preferred embodiments of the present invention, rotation of the pawl 28 is preferably performed to disengage the ratchet 30 and thereby to unlatch the latch assembly 10.\n\nBecause the pawl 28 functions to retain the ratchet 30 in a latched state until the pawl 28 is actuated to its unlatched position, the latch assembly 10 is preferably controlled by control of pawl movement and position in the latch assembly 10. To this end, the control levers 12, 20 can be actuated to move the pawl 28. Any number of control levers 12, 20 can be employed for this purpose, each control lever 12, 20 being connected to one or more latch release inputs (not shown). In some highly preferred embodiments, each control lever 12, 20 is movable in at least two different manners. In at least one manner, the control lever 12, 20 can move the pawl 28 to release the ratchet 30 (thereby unlatching the latch 10).",
+          "score": -0.5546419620513916,
+          "score_kind": "negative_distance",
+          "distance": 0.5546419620513916,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 153
+        }
+      ]
+    },
+    {
+      "question": "What is the role of the pawl post and enclosed aperture throughout motion, including the claimed lost motion?",
+      "passages": [
+        {
+          "chunk_id": "36105608a9c6cd99f68fa725c745408f",
+          "text": "closed aperture receiving the post during the entire range of motion of the post and being incapable of transferring sufficient motive force to release the ratchet by pivoting through the first path;\n\nmoving the lever to move the pivot point to a different location with respect to the pawl;\n\npivoting the lever through a second path about the pivot point;\n\ntransferring motive force from the lever to the pawl by pivoting the lever through the second path;\n\nreleasing the pawl from engagement with the ratchet by transferring motive force from the lever to the pawl; and\n\ncreating lost motion of the post in the enclosed aperture.\n\n18. The method as claimed in claim 17, wherein moving the lever includes moving the pivot through at least one other location in which the lever is pivotable about the pivot point.\n\n19. The method as claimed in claim 18, wherein the lever is pivotable in the at least one other location to transfer motive force from the lever to the pawl and to release the pawl.\n\n20.",
+          "score": -0.7803691029548645,
+          "score_kind": "negative_distance",
+          "distance": 0.7803691029548645,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 262
+        },
+        {
+          "chunk_id": "f277a8c84734d63feb6ae3df249d39e6",
+          "text": "in the first element 50 and control lever 12 of the illustrated preferred embodiment\ncan be larger than the pin 56 to permit lost motion of the first element 50 with respect to the control lever 12 . More preferably however, the pin 56 is similar in shape and size to both apertures 58 , 60 .\n\nthe first element 50\nis preferably connected to the second element 52 at a distance from the axis of rotation 54 of the second element 52 .\n\nthe first element 50\nis rotatably connected to the second element 52 in any conventional manner, such as by a pivot on the first or second element 50 , 52 received within an aperture in the second or first element 52 , 50 , respectively.\n\nthe first element 50 of the embodiment shown in FIGS. 1–7\npreferably has an elongated aperture 62 in which a pivot post 64 is rotatably received. Still other manners of rotatable connection are possible and would be recognized by those of ordinary skill in the art.\n\nthe second element 52\ncan also take any shape desired, and is shown as a generally round, disc-shaped element in FIGS. 1 and 2 – 7 only by way of example and illustration.",
+          "score": -1.044899821281433,
+          "score_kind": "negative_distance",
+          "distance": 1.044899821281433,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 44
+        },
+        {
+          "chunk_id": "6c300abba5c968ee5a231e08113dbaf2",
+          "text": "pawl 28 without re-actuating the control lever 12 .\n\nThis\nis in contrast to many conventional latch assemblies in which the control lever 12 must be re-actuated to release the pawl 28 in such a case.\n\nthe locking and unlocking mechanism 48\ncan be moved to its unlocked state by clockwise rotation of the second element 52 about its axis 54 .\n\nthe pivot post 64\nis moved across the center position 66 , pulling the first element 50 in the same direction.\n\nthe control lever 12\nis connected to the first element 50 , the control lever 12 is thereby moved with respect to the pawl 28 .\n\nThis motion of the control lever 12\ncauses the aperture 46 in the control lever 12 to move with respect to the pawl post 44 , eventually pushing the pawl post 44 and moving the pawl 28 . If the control lever 12 has been actuated sufficiently, the pawl 28 is released from the ratchet 30 .\n\neach of the illustrated preferred embodiments of FIGS. 1–19\nis capable of pawl release upon movement of the locking and unlocking mechanism 48 , 148 , 248 , 348 , 448 , 548 , 648 to an unlocked position without re-actuation of the control lever 12 , 112 , 212 , 312 , 412 , 512 , 612 .",
+          "score": -1.0566823482513428,
+          "score_kind": "negative_distance",
+          "distance": 1.0566823482513428,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 116
+        },
+        {
+          "chunk_id": "28ee6c078af74abcb26da3b0a3b52940",
+          "text": "or pull against other surfaces of the pawl 28 to generate movement thereof, such as against one or more edge surfaces of the pawl 28 , interior surfaces of an aperture in the pawl 28 , and the like.\n\nmotive force\ni.e., force generating motion of an element\n\nmotive force\ncan be imparted to the pawl 28 by any interior or exterior surface of the control lever 12 .\n\nthe outside handle control lever 12 in the latch assembly 10 illustrated in FIGS. 1–7\nis connected to the pawl 28 by the pawl post 44 extending through an aperture 46 in the outside handle control lever 12 (see FIGS. 3–7 ). Therefore, actuation of the outside handle control lever 12 in its unlocked state (described below) causes an interior surface of the control lever aperture 46 to push against the pawl post 44 and to move the pawl 28 .\n\nthe control lever aperture 46\nis elongated or is otherwise shaped to permit lost motion of the pawl post 44 therein in at least one of the positions of the control lever 12 .\n\ncontrol lever surfaces\ncan push or pull the pawl post 44 or any other portion of the pawl 28 for generating motion of the pawl 28 .",
+          "score": -1.1179349422454834,
+          "score_kind": "negative_distance",
+          "distance": 1.1179349422454834,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 37
+        },
+        {
+          "chunk_id": "abd0493870608e9c6e302a4335074c89",
+          "text": "ove the pawl 28 in other manners (e.g., translation or a combination of translation and rotation) depending at least partially upon the manner in which the pawl 28 is mounted in the latch assembly 10. Also, one having ordinary skill in the art will appreciate that the control lever 12 can push or pull against other surfaces of the pawl 28 to generate movement thereof, such as against one or more edge surfaces of the pawl 28, interior surfaces of an aperture in the pawl 28, and the like.\n\nDepending at least partially upon whether the control lever 12 is connected to the pawl 28 and upon which portion of the control lever 12 acts upon the pawl 28, motive force (i.e., force generating motion of an element) can be imparted to the pawl 28 by any interior or exterior surface of the control lever 12. For example, the outside handle control lever 12 in the latch assembly 10 illustrated in FIGS. 1–7 is connected to the pawl 28 by the pawl post 44 extending through an aperture 46 in the outside handle control lever 12 (see FIGS. 3–7).",
+          "score": -1.1351195573806763,
+          "score_kind": "negative_distance",
+          "distance": 1.1351195573806763,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 161
+        }
+      ]
+    },
+    {
+      "question": "How is the lever pivot point maintained across its two positions, and what changes relative to the pawl?",
+      "passages": [
+        {
+          "chunk_id": "b95b1883e5c57ad977961ce9a8604dba",
+          "text": "t which the lever pivots in its various states, the lever can be reliably moved to different locations with respect to the pawl while maintaining a degree of control over lever orientation and action. The pivot point of the lever can be in the same place or substantially the same place with respect to the lever in all positions of the lever in the latch assembly or in only a locked position and an unlocked position of the lever in the latch assembly. Also, the lever can be moved between its locked and unlocked positions by translating and/or rotating the lever or by moving the lever in any other manner desired.\n\nIn some embodiments of the present invention, additional control over the lever used to move the pawl is achieved by use of an over-center locking and unlocking mechanism. Specifically, an over-center device can be used to move the lever between its locked and unlocked positions. The over-center device has at least two stable positions separated by an unstable “center” position.",
+          "score": -0.40932321548461914,
+          "score_kind": "negative_distance",
+          "distance": 0.40932321548461914,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 133
+        },
+        {
+          "chunk_id": "579bbe0bf8549422dfb06c150ee3ccd9",
+          "text": "pivot point.\n\n19. The method as claimed in claim 18, wherein the lever is pivotable in the at least one other location to transfer motive force from the lever to the pawl and to release the pawl.\n\n20. The method as claimed in claim 17, wherein pivoting the lever through the second path occurs during movement of the lever to move the pivot point to the different location with respect to the pawl.\n\n21. The method as claimed in claim 17, wherein the lever transmits no motive force to release the ratchet when the lever is pivoted through the first path.\n\n22. The method as claimed in claim 17, wherein moving the lever includes rotating the lever with respect to the pawl.\n\n23. The method as claimed in claim 17, wherein moving the lever includes translating the lever with respect to the pawl.\n\n24. The method as claimed in claim 17, wherein moving the lever includes translating and rotating the lever with respect to the pawl.\n\n25. The method as claimed in claim 17, wherein moving the lever includes moving the lever from a first position with respect to the pawl to a second position closer to the pawl.\n\n26.",
+          "score": -0.49271249771118164,
+          "score_kind": "negative_distance",
+          "distance": 0.49271249771118164,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 263
+        },
+        {
+          "chunk_id": "2abbf7779112981029545014982982ca",
+          "text": "he handle does not generate sufficient pawl movement to release the ratchet, and a locking and unlocking mechanism coupled to the lever for moving the lever between its unlocked and locked positions.\n\nthe locking and unlocking mechanism\nis an over-center device capable of moving the lever between its unlocked and locked positions.\n\nthe lever\nin some highly preferred embodiments is pivotable about the same or substantially the same location with respect to the lever in the locked and unlocked positions of the lever.\n\nthe lever\ncan be moved (e.g., by the locking and unlocking mechanism) between a locked position in which the mass of the lever or portion thereof is removed a distance from the pawl and an unlocked position in which the mass of the lever or portion thereof is moved closer to the pawl.\n\nThis location\ncan be (and in some embodiments is) a location where the locking and unlocking mechanism is attached to the lever.\n\nthe pivot point of the lever\ncan be in the same place or substantially the same place with respect to the lever in all positions of the lever in the latch assembly or in only a locked position and an unlocked position of the lever in the latch assembly.",
+          "score": -0.5060054063796997,
+          "score_kind": "negative_distance",
+          "distance": 0.5060054063796997,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 13
+        },
+        {
+          "chunk_id": "9329e38929fd0cd5f4d0e778f7f3793f",
+          "text": "d at a third pivot point to the lever used to move the pawl. By rotating either element of the over-center device, the other element also rotates and causes the lever to move with respect to the pawl. In some embodiments, the center position of such an over-center device is defined by a line passing through the second and third pivot points, whereby the position of the first pivot with respect to either side of the line determines whether the lever is in a locked or unlocked state.\n\nThe two elements in the over-center device just described can take a number of different forms, such as an elongated bar pivotably coupled at one end to the lever and at another end to an edge of a disc that is rotatable about its axis, two links connected in a similar manner, and the like. Other types of over-center devices can be employed, such as an over-center device having a first element connected to or capable of moving the pawl and biased against an inclined surface of a second element.",
+          "score": -0.5188736319541931,
+          "score_kind": "negative_distance",
+          "distance": 0.5188736319541931,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 136
+        },
+        {
+          "chunk_id": "f4131980b391da93e275054ebeca1aef",
+          "text": "by the over-center device in a locked state in which the lever is in one position with respect to the pawl and in an unlocked state in which the lever is in another position with respect to the pawl.\n\nthe over-center device\nis biased away from the center position in either or both directions, thereby further retaining the lever in its locked or unlocked state until the over-center device is actuated again.\n\nthe over-center device\nis not biased away from the center position in one or both directions. In such embodiments, actuation of the lever can draw the over-center device further away from the center position, thereby ensuring that the lever stays in the locked or unlocked state to which it has already been moved.\n\nthe over-center device\ncan take a number of different forms.\n\nthe over-center device\ncan be or include two elements that are rotatably coupled together at a first pivot point.\n\nOne of the two elements\ncan be mounted for pivotal movement about a second pivot point and the other element can be pivotably connected at a third pivot point to the lever used to move the pawl.",
+          "score": -0.5233073234558105,
+          "score_kind": "negative_distance",
+          "distance": 0.5233073234558105,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 15
+        }
+      ]
+    },
+    {
+      "question": "What mechanisms move the lever between positions, including the rotatable element, link, pin-aperture connection, camming action, or over-center device?",
+      "passages": [
+        {
+          "chunk_id": "64acbccf0a8fa9e09974b7d8cf97d30c",
+          "text": "ever in its locked or unlocked state until the over-center device is actuated again. In other embodiments, the over-center device is not biased away from the center position in one or both directions. In such embodiments, actuation of the lever can draw the over-center device further away from the center position, thereby ensuring that the lever stays in the locked or unlocked state to which it has already been moved.\n\nThe over-center device can take a number of different forms. For example, the over-center device can be or include two elements that are rotatably coupled together at a first pivot point. One of the two elements can be mounted for pivotal movement about a second pivot point and the other element can be pivotably connected at a third pivot point to the lever used to move the pawl. By rotating either element of the over-center device, the other element also rotates and causes the lever to move with respect to the pawl.",
+          "score": -0.6103060245513916,
+          "score_kind": "negative_distance",
+          "distance": 0.6103060245513916,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 135
+        },
+        {
+          "chunk_id": "f4131980b391da93e275054ebeca1aef",
+          "text": "by the over-center device in a locked state in which the lever is in one position with respect to the pawl and in an unlocked state in which the lever is in another position with respect to the pawl.\n\nthe over-center device\nis biased away from the center position in either or both directions, thereby further retaining the lever in its locked or unlocked state until the over-center device is actuated again.\n\nthe over-center device\nis not biased away from the center position in one or both directions. In such embodiments, actuation of the lever can draw the over-center device further away from the center position, thereby ensuring that the lever stays in the locked or unlocked state to which it has already been moved.\n\nthe over-center device\ncan take a number of different forms.\n\nthe over-center device\ncan be or include two elements that are rotatably coupled together at a first pivot point.\n\nOne of the two elements\ncan be mounted for pivotal movement about a second pivot point and the other element can be pivotably connected at a third pivot point to the lever used to move the pawl.",
+          "score": -0.6388983726501465,
+          "score_kind": "negative_distance",
+          "distance": 0.6388983726501465,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 15
+        },
+        {
+          "chunk_id": "6deaf22e592d26b84c193d971eb595e5",
+          "text": "nt.\n\nOne of the two elements\ncan be mounted for pivotal movement about a second pivot point and the other element can be pivotably connected at a third pivot point to the lever used to move the pawl.\n\nthe center position of such an over-center device\nis defined by a line passing through the second and third pivot points, whereby the position of the first pivot with respect to either side of the line determines whether the lever is in a locked or unlocked state.\n\nthe two elements in the over-center device just described\ncan take a number of different forms, such as an elongated bar pivotably coupled at one end to the lever and at another end to an edge of a disc that is rotatable about its axis, two links connected in a similar manner, and the like.\n\nOther types of over-center devices\ncan be employed, such as an over-center device having a first element connected to or capable of moving the pawl and biased against an inclined surface of a second element.",
+          "score": -0.6509584784507751,
+          "score_kind": "negative_distance",
+          "distance": 0.6509584784507751,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 16
+        },
+        {
+          "chunk_id": "9329e38929fd0cd5f4d0e778f7f3793f",
+          "text": "d at a third pivot point to the lever used to move the pawl. By rotating either element of the over-center device, the other element also rotates and causes the lever to move with respect to the pawl. In some embodiments, the center position of such an over-center device is defined by a line passing through the second and third pivot points, whereby the position of the first pivot with respect to either side of the line determines whether the lever is in a locked or unlocked state.\n\nThe two elements in the over-center device just described can take a number of different forms, such as an elongated bar pivotably coupled at one end to the lever and at another end to an edge of a disc that is rotatable about its axis, two links connected in a similar manner, and the like. Other types of over-center devices can be employed, such as an over-center device having a first element connected to or capable of moving the pawl and biased against an inclined surface of a second element.",
+          "score": -0.6555516719818115,
+          "score_kind": "negative_distance",
+          "distance": 0.6555516719818115,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 136
+        },
+        {
+          "chunk_id": "8ea1de8404229046c780cb97fdbebffc",
+          "text": "ion between the control lever 12 and pawl 28 described above, and can take other forms as described in greater detail with reference to the first preferred embodiment illustrated in FIGS. 1–7 .\n\nFIGS. 16–19\nillustrates another example of a locking an unlocking mechanism according to the present invention.\n\nthe locking and unlocking mechanism\n(indicated generally at 648 ) is preferably similar to that of the first preferred embodiment illustrated in FIGS. 1–7 , and has first and second elements 650 , 652 , a pivot post 664 connecting the first and second element 650 , 652 , a control lever pivot 618 , and a center position 666 as described above with reference to the first preferred embodiment.\n\nneither of the connections between the first and second elements 650 , 652 and between the first element 650 and the control lever 612\nare lost-motion connections, although either or both connections can be lost-motion connections if desired.\n\nthe locking and unlocking mechanism 648\nis another example of an over-center device used to position the control lever 612 with respect to the pawl 628 .",
+          "score": -0.7014230489730835,
+          "score_kind": "negative_distance",
+          "distance": 0.7014230489730835,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 99
+        }
+      ]
+    },
+    {
+      "question": "How does the over-center device move the lever across center between its two states?",
+      "passages": [
+        {
+          "chunk_id": "64acbccf0a8fa9e09974b7d8cf97d30c",
+          "text": "ever in its locked or unlocked state until the over-center device is actuated again. In other embodiments, the over-center device is not biased away from the center position in one or both directions. In such embodiments, actuation of the lever can draw the over-center device further away from the center position, thereby ensuring that the lever stays in the locked or unlocked state to which it has already been moved.\n\nThe over-center device can take a number of different forms. For example, the over-center device can be or include two elements that are rotatably coupled together at a first pivot point. One of the two elements can be mounted for pivotal movement about a second pivot point and the other element can be pivotably connected at a third pivot point to the lever used to move the pawl. By rotating either element of the over-center device, the other element also rotates and causes the lever to move with respect to the pawl.",
+          "score": -0.36081749200820923,
+          "score_kind": "negative_distance",
+          "distance": 0.36081749200820923,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 135
+        },
+        {
+          "chunk_id": "f4131980b391da93e275054ebeca1aef",
+          "text": "by the over-center device in a locked state in which the lever is in one position with respect to the pawl and in an unlocked state in which the lever is in another position with respect to the pawl.\n\nthe over-center device\nis biased away from the center position in either or both directions, thereby further retaining the lever in its locked or unlocked state until the over-center device is actuated again.\n\nthe over-center device\nis not biased away from the center position in one or both directions. In such embodiments, actuation of the lever can draw the over-center device further away from the center position, thereby ensuring that the lever stays in the locked or unlocked state to which it has already been moved.\n\nthe over-center device\ncan take a number of different forms.\n\nthe over-center device\ncan be or include two elements that are rotatably coupled together at a first pivot point.\n\nOne of the two elements\ncan be mounted for pivotal movement about a second pivot point and the other element can be pivotably connected at a third pivot point to the lever used to move the pawl.",
+          "score": -0.36821967363357544,
+          "score_kind": "negative_distance",
+          "distance": 0.36821967363357544,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 15
+        },
+        {
+          "chunk_id": "809e02cc10aef20793bfe5ef65707279",
+          "text": "or substantially the same place with respect to the lever in all positions of the lever in the latch assembly or in only a locked position and an unlocked position of the lever in the latch assembly.\n\nthe lever\ncan be moved between its locked and unlocked positions by translating and/or rotating the lever or by moving the lever in any other manner desired.\n\nan over-center device\ncan be used to move the lever between its locked and unlocked positions.\n\nthe over-center device\nhas at least two stable positions separated by an unstable “center” position. Therefore, when the over-center device is actuated to one side of the center position, the lever connected thereto remains on that side until the over-center device is actuated to the opposite side of the center position. In this manner, the lever can be placed by the over-center device in a locked state in which the lever is in one position with respect to the pawl and in an unlocked state in which the lever is in another position with respect to the pawl.",
+          "score": -0.42115071415901184,
+          "score_kind": "negative_distance",
+          "distance": 0.42115071415901184,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 14
+        },
+        {
+          "chunk_id": "dd2e2753def359df6e754815deacab04",
+          "text": "lly, an over-center device can be used to move the lever between its locked and unlocked positions. The over-center device has at least two stable positions separated by an unstable “center” position. Therefore, when the over-center device is actuated to one side of the center position, the lever connected thereto remains on that side until the over-center device is actuated to the opposite side of the center position. In this manner, the lever can be placed by the over-center device in a locked state in which the lever is in one position with respect to the pawl and in an unlocked state in which the lever is in another position with respect to the pawl. In some embodiments, the over-center device is biased away from the center position in either or both directions, thereby further retaining the lever in its locked or unlocked state until the over-center device is actuated again. In other embodiments, the over-center device is not biased away from the center position in one or both directions.",
+          "score": -0.4276294708251953,
+          "score_kind": "negative_distance",
+          "distance": 0.4276294708251953,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 134
+        },
+        {
+          "chunk_id": "9329e38929fd0cd5f4d0e778f7f3793f",
+          "text": "d at a third pivot point to the lever used to move the pawl. By rotating either element of the over-center device, the other element also rotates and causes the lever to move with respect to the pawl. In some embodiments, the center position of such an over-center device is defined by a line passing through the second and third pivot points, whereby the position of the first pivot with respect to either side of the line determines whether the lever is in a locked or unlocked state.\n\nThe two elements in the over-center device just described can take a number of different forms, such as an elongated bar pivotably coupled at one end to the lever and at another end to an edge of a disc that is rotatable about its axis, two links connected in a similar manner, and the like. Other types of over-center devices can be employed, such as an over-center device having a first element connected to or capable of moving the pawl and biased against an inclined surface of a second element.",
+          "score": -0.43812739849090576,
+          "score_kind": "negative_distance",
+          "distance": 0.43812739849090576,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 136
+        }
+      ]
+    },
+    {
+      "question": "How does rotation of a coupled rotatable member move the lever toward an unlocked position, including the lost-motion connection?",
+      "passages": [
+        {
+          "chunk_id": "f7c063dfb2b7a9217498f4b8c50c2235",
+          "text": "tched position;\n\ninitiating rotation of a rotatable member about an axis thereof, the rotatable member coupled to the lever;\n\nrotating the rotatable member about the axis toward an unlocked position;\n\nmoving the lever from the first position to a second position by rotation of the rotatable member toward the unlocked position;\n\nactuating the lever after initiating rotation of the rotatable member; and\n\nmoving the pawl to the unlatched position by actuation of the lever;\n\nthe rotatable member coupled to the lever by a lost-motion connection.\n\n30. The method as claimed in claim 29, wherein actuating the lever includes pivoting the lever about a pivot point.\n\n31. The method as claimed in claim 30, wherein the lever is pivotable about the pivot point in the first and second positions of the lever, the pivot point located in substantially the same location with respect to the lever in the first and second positions of the lever.\n\n32. The method as claimed in claim 29, wherein the lever is actuated and the pawl is moved to the unlatched position after the lever has been moved to the second position.\n\n33.",
+          "score": -0.6345917582511902,
+          "score_kind": "negative_distance",
+          "distance": 0.6345917582511902,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 265
+        },
+        {
+          "chunk_id": "cfbf9d1aba6c1a9f245a6cc671e11fba",
+          "text": "s can be lost-motion connections if desired.\n\nthe locking and unlocking mechanism 648\nis another example of an over-center device used to position the control lever 612 with respect to the pawl 628 .\n\nthe locking and unlocking mechanism\nis placed generally in compression when the control lever 612 is actuated.\n\nother locking and unlocking mechanisms\n(whether over-center or otherwise) as described herein can be employed.\n\nthe locking and unlocking mechanism 648\npreferably operates in a manner similar to the locking and unlocking mechanism illustrated in FIGS. 1–7 .\n\nthe second element 652\ncan be rotated in one direction (counter-clockwise as viewed in FIGS. 16–19 ) to move the pivot post 664 to one side of the center position 666 of the second element 652 .\n\nthe second element 652\npreferably rotates until stopped by one or more stops (not shown).\n\nthe control lever 612 in this position\nis incapable of moving the pawl 628 due to the lost-motion connection with the pawl 628 as described above.",
+          "score": -0.664298415184021,
+          "score_kind": "negative_distance",
+          "distance": 0.664298415184021,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 100
+        },
+        {
+          "chunk_id": "7ca089a5fced4b7c5a57c8350f0a186c",
+          "text": "rection past the center position 66 of the locking and unlocking mechanism 48 as shown in FIG. 3 of the illustrated preferred embodiment, the second element 52 is stopped by a stop as described above. Preferably, the second element 52 is spring-biased in this direction toward a stable position as also described above. When the control lever 12 is actuated in this position (rotated counter-clockwise as viewed in FIG. 4) the control lever 12 pivots about or near the control lever pivot 18 while the control lever 12 moves the pawl post 44 to release the pawl 28. Therefore, rotation of the pivot post 64 to the right of the center position 66 in FIGS. 3–7 defines the unlocked state of the control lever 12.\n\nWhen the second element 52 is rotated in a second direction opposite to the first direction and past the center position 66 of the locking and unlocking mechanism 48 as shown in FIG. 5 of the illustrated preferred embodiment, the second element 52 is preferably again stopped by a stop as described above. The second element 52 can be spring-biased in this direction as also described above.",
+          "score": -0.7104805111885071,
+          "score_kind": "negative_distance",
+          "distance": 0.7104805111885071,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 176
+        },
+        {
+          "chunk_id": "4560758f2c5b6757c3fcd0e3a6fb6ee8",
+          "text": "rection past the center position 66 of the locking and unlocking mechanism 48 as shown in FIG. 3 of the illustrated preferred embodiment, the second element 52 is stopped by a stop as described above. Preferably, the second element 52 is spring-biased in this direction toward a stable position as also described above.\n\nthe control lever 12\nWhen the control lever 12 is actuated in this position (rotated counter-clockwise as viewed in FIG. 4 ) the control lever 12 pivots about or near the control lever pivot 18 while the control lever 12 moves the pawl post 44 to release the pawl 28 . Therefore, rotation of the pivot post 64 to the right of the center position 66 in FIGS. 3–7 defines the unlocked state of the control lever 12 .\n\nthe second element 52\nWhen the second element 52 is rotated in a second direction opposite to the first direction and past the center position 66 of the locking and unlocking mechanism 48 as shown in FIG. 5 of the illustrated preferred embodiment, the second element 52 is preferably again stopped by a stop as described above.\n\nthe second element 52\ncan be spring-biased in this direction as also described above.",
+          "score": -0.721413254737854,
+          "score_kind": "negative_distance",
+          "distance": 0.721413254737854,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 51
+        },
+        {
+          "chunk_id": "8ea1de8404229046c780cb97fdbebffc",
+          "text": "ion between the control lever 12 and pawl 28 described above, and can take other forms as described in greater detail with reference to the first preferred embodiment illustrated in FIGS. 1–7 .\n\nFIGS. 16–19\nillustrates another example of a locking an unlocking mechanism according to the present invention.\n\nthe locking and unlocking mechanism\n(indicated generally at 648 ) is preferably similar to that of the first preferred embodiment illustrated in FIGS. 1–7 , and has first and second elements 650 , 652 , a pivot post 664 connecting the first and second element 650 , 652 , a control lever pivot 618 , and a center position 666 as described above with reference to the first preferred embodiment.\n\nneither of the connections between the first and second elements 650 , 652 and between the first element 650 and the control lever 612\nare lost-motion connections, although either or both connections can be lost-motion connections if desired.\n\nthe locking and unlocking mechanism 648\nis another example of an over-center device used to position the control lever 612 with respect to the pawl 628 .",
+          "score": -0.7227857112884521,
+          "score_kind": "negative_distance",
+          "distance": 0.7227857112884521,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 99
+        }
+      ]
+    },
+    {
+      "question": "When can lever actuation occur during transition, and can pawl release occur before the lever fully reaches its second position?",
+      "passages": [
+        {
+          "chunk_id": "f34d7287c161ed040b2b4264f5bd330b",
+          "text": "re specifically, the mass of the lever that is located nearest to the pawl when the lever is in its unlocked state is preferably removed a distance from the pawl when the lever is in its locked state. In this manner, the opportunity for the lever to be forced toward and against the pawl when the lever is in its locked state is further reduced. For example, protection is increased against lever movement against the pawl causing pawl release as a result of shock, impact, or severe vibration of the latch assembly, such as from a vehicle collision or rollover. Preferably, an over-center device coupled to the lever can be used to move the mass of the lever toward and away from the pawl in the unlocked and locked states of the lever, respectively. However, any locking and unlocking mechanism can be employed to move the lever for this purpose.\n\nIn some preferred embodiments of the present invention, the latch assembly is capable of properly responding to unlatching and unlocking inputs received at the same time or closely in time.",
+          "score": -0.6103308200836182,
+          "score_kind": "negative_distance",
+          "distance": 0.6103308200836182,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 139
+        },
+        {
+          "chunk_id": "d6aef51575780f67401d4f98493e47ef",
+          "text": "moved a distance from the pawl when the lever is in its locked state.\n\nthe opportunity for the lever to be forced toward and against the pawl when the lever is in its locked state\nis further reduced.\n\nprotection\nis increased against lever movement against the pawl causing pawl release as a result of shock, impact, or severe vibration of the latch assembly, such as from a vehicle collision or rollover.\n\nan over-center device coupled to the lever\ncan be used to move the mass of the lever toward and away from the pawl in the unlocked and locked states of the lever, respectively.\n\nany locking and unlocking mechanism\ncan be employed to move the lever for this purpose.\n\nthe latch assembly\nis capable of properly responding to unlatching and unlocking inputs received at the same time or closely in time. In other words, when the lever used to move the pawl is actuated before or while a locking and unlocking mechanism is placed in its unlocked state, the latch assembly properly responds by unlatching the latch upon movement of the locking and unlocking mechanism to the unlocked state.",
+          "score": -0.612122118473053,
+          "score_kind": "negative_distance",
+          "distance": 0.612122118473053,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 19
+        },
+        {
+          "chunk_id": "e52ee1edf4d06a609553b746d924489c",
+          "text": "ect to the pawl.\n\n25. The method as claimed in claim 17, wherein moving the lever includes moving the lever from a first position with respect to the pawl to a second position closer to the pawl.\n\n26. The method as claimed in claim 17, further comprising moving an element coupled to the lever to move the lever.\n\n27. The method as claimed in claim 26, wherein the element is at least part of an over-center device coupled to the lever, the method further comprising actuating the over-center device from a first state, across a center position of the over-center device, and to a second state to move the lever.\n\n28. The method as claimed in claim 26, wherein:\n\nthe element is rotatable with respect to the lever; and\n\nthe lever is moved responsive to rotation of the element.\n\n29. A method of operating a latch, comprising:\n\nmoving a pawl to a latched position;\n\nproviding a lever in a first position in which actuation of the lever is incapable of moving the pawl to an unlatched position;\n\ninitiating rotation of a rotatable member about an axis thereof, the rotatable member coupled to the lever;\n\nrotating the rotatable member about the axis toward an unlocked position;",
+          "score": -0.6229564547538757,
+          "score_kind": "negative_distance",
+          "distance": 0.6229564547538757,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 264
+        },
+        {
+          "chunk_id": "28ee6c078af74abcb26da3b0a3b52940",
+          "text": "or pull against other surfaces of the pawl 28 to generate movement thereof, such as against one or more edge surfaces of the pawl 28 , interior surfaces of an aperture in the pawl 28 , and the like.\n\nmotive force\ni.e., force generating motion of an element\n\nmotive force\ncan be imparted to the pawl 28 by any interior or exterior surface of the control lever 12 .\n\nthe outside handle control lever 12 in the latch assembly 10 illustrated in FIGS. 1–7\nis connected to the pawl 28 by the pawl post 44 extending through an aperture 46 in the outside handle control lever 12 (see FIGS. 3–7 ). Therefore, actuation of the outside handle control lever 12 in its unlocked state (described below) causes an interior surface of the control lever aperture 46 to push against the pawl post 44 and to move the pawl 28 .\n\nthe control lever aperture 46\nis elongated or is otherwise shaped to permit lost motion of the pawl post 44 therein in at least one of the positions of the control lever 12 .\n\ncontrol lever surfaces\ncan push or pull the pawl post 44 or any other portion of the pawl 28 for generating motion of the pawl 28 .",
+          "score": -0.6290323734283447,
+          "score_kind": "negative_distance",
+          "distance": 0.6290323734283447,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 37
+        },
+        {
+          "chunk_id": "b95b1883e5c57ad977961ce9a8604dba",
+          "text": "t which the lever pivots in its various states, the lever can be reliably moved to different locations with respect to the pawl while maintaining a degree of control over lever orientation and action. The pivot point of the lever can be in the same place or substantially the same place with respect to the lever in all positions of the lever in the latch assembly or in only a locked position and an unlocked position of the lever in the latch assembly. Also, the lever can be moved between its locked and unlocked positions by translating and/or rotating the lever or by moving the lever in any other manner desired.\n\nIn some embodiments of the present invention, additional control over the lever used to move the pawl is achieved by use of an over-center locking and unlocking mechanism. Specifically, an over-center device can be used to move the lever between its locked and unlocked positions. The over-center device has at least two stable positions separated by an unstable “center” position.",
+          "score": -0.6347531080245972,
+          "score_kind": "negative_distance",
+          "distance": 0.6347531080245972,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 133
+        }
+      ]
+    },
+    {
+      "question": "What is the system's external user input and what mechanical output signifies unlatching?",
+      "passages": [
+        {
+          "chunk_id": "1c296c4d31084a8073db193a92022daf",
+          "text": "er unlocking the door latch while the door handle is partially or fully actuated. While this problem can exist for door latches that are not powered, it is particularly problematic in powered latches. For example, a user of a keyless entry system can push a button on a key fob, enter an access code on a door keypad, or otherwise transmit a signal (by wire or wirelessly) to a controller in the vehicle that in turn sends a signal to power unlock a handle input to the latch. In conventional power latches, an amount of time is required for this process to take place. During this time, a user may attempt to unlatch the latch by actuating the handle input. Because the latch has not yet been unlocked, such actuation does nothing—even after the latch has been powered to its unlocked state while the handle input is in a partially or fully actuated position. The user must release the handle, transmit another unlocking signal to power unlock the handle, and then re-actuate the handle to unlatch the latch. In other words, to unlatch a conventional latch, actuation of the handle input must occur after the handle input has been placed in its unlocked state.",
+          "score": -1.2013587951660156,
+          "score_kind": "negative_distance",
+          "distance": 1.2013587951660156,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 128
+        },
+        {
+          "chunk_id": "d9ac15c2c8f5df295efaa7a9598a7a40",
+          "text": "plications. The present invention can be used in any application in which it is desirable to releasably secure one body to another. Such applications can be non-automotive and need not involve doors.\n\nIn most vehicle door latch applications, a latch will have a connection to an inside door handle, an outside door handle, an inside lock, and possibly an outside lock (e.g., usually for front doors of a vehicle). Each of these connections represents an input to the latch. Typically, latch inputs are operable either to generate latch release or to enable or disable such an input. Inputs for generating latch release usually run from a user-manipulatable device such as a lever located inside or outside of the vehicle. Inputs for enabling and disabling these latch release inputs can also run from a user-manipulatable device inside or outside of the vehicle, such as a lock cylinder, a sill button, an electrical controller or user-operable electronic device such as a keypad or remote access electronic system connected to the latch assembly, and the like.",
+          "score": -1.2099008560180664,
+          "score_kind": "negative_distance",
+          "distance": 1.2099008560180664,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 146
+        },
+        {
+          "chunk_id": "302f48024f233c32fc54d436793d0f05",
+          "text": "locked and unlocked states. Such movement can limit the ability to fully secure and control the pawl-moving element within the latch assembly (both highly desirable features of pawl-moving elements). Therefore, the possible manners in which pawl-moving elements can be connected and move within latch assemblies is often significantly limited.\n\na user of a keyless entry system\ncan push a button on a key fob, enter an access code on a door keypad, or otherwise transmit a signal (by wire or wirelessly) to a controller in the vehicle that in turn sends a signal to power unlock a handle input to the latch.\n\na controller in the vehicle\nthat in turn sends a signal to power unlock a handle input to the latch.\n\nan amount of time\nis required for this process to take place.\n\na user\nmay attempt to unlatch the latch by actuating the handle input. Because the latch has not yet been unlocked, such actuation does nothing—even after the latch has been powered to its unlocked state while the handle input is in a partially or fully actuated position.\n\nthe user\nmust release the handle, transmit another unlocking signal to power unlock the handle, and then re-actuate the handle to unlatch the latch.",
+          "score": -1.2130811214447021,
+          "score_kind": "negative_distance",
+          "distance": 1.2130811214447021,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 11
+        },
+        {
+          "chunk_id": "efa1c94aa4dec0a3c967e0386988bdfe",
+          "text": "then re-actuate the handle to unlatch the latch. In other words, to unlatch a conventional latch, actuation of the handle input must occur after the handle input has been placed in its unlocked state. Partial or full actuation of the handle input before this time will not unlatch the latch and will require the user to release and re-actuate the handle input.\n\nThis shortcoming of conventional door latches exists for powered and fully manual door latches alike. In addition to requiring the user to re-actuate an input to unlatch the unlocked latch, this problem can even prevent the latch from changing between its locked and unlocked states. In such a case, the user is required to unlock the latch assembly again (re-transmit a signal to the latch assembly or manually unlock the latch assembly again as described above) after the handle input has been released. Any of the results just described represent an annoying attribute of conventional latch assembly designs. In this and other examples, a conventional latch assembly is unable to respond to actuation of more than one input at a time, or is only responsive to one of two inputs actuated simultaneously or closely in time.",
+          "score": -1.2376481294631958,
+          "score_kind": "negative_distance",
+          "distance": 1.2376481294631958,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 129
+        },
+        {
+          "chunk_id": "4c7f093d236fdc73b787e178d3b2d6f2",
+          "text": ", usually for front doors of a vehicle). Each of these connections represents an input to the latch.\n\nlatch inputs\nare operable either to generate latch release or to enable or disable such an input.\n\nInputs for generating latch release\nusually run from a user-manipulatable device such as a lever located inside or outside of the vehicle.\n\nInputs for enabling and disabling these latch release inputs\ncan also run from a user-manipulatable device inside or outside of the vehicle, such as a lock cylinder, a sill button, an electrical controller or user-operable electronic device such as a keypad or remote access electronic system connected to the latch assembly, and the like. Regardless of what mechanical or electrical controls are employed to control and trigger latching, unlatching, and latch input enabling and disabling, virtually every vehicle latch has a mechanism for ultimately performing these functions.\n\nthe latch assembly in the illustrated preferred embodiment\nhas two latch inputs for generating latch release (i.e., “latch release inputs”) and two latch inputs for enabling and disabling these latch release inputs (i.e., “locking and unlocking inputs”).",
+          "score": -1.2722238302230835,
+          "score_kind": "negative_distance",
+          "distance": 1.2722238302230835,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 25
+        }
+      ]
+    },
+    {
+      "question": "Which claimed constraints govern lever position, motion, and force transfer in the locked and unlocked conditions?",
+      "passages": [
+        {
+          "chunk_id": "df105ebb3141d57b6a46d8780dfbbe32",
+          "text": "12 and/or changing the location of the locking and unlocking mechanism to block, retain, or otherwise limit another portion of the control lever 12 , 112 , 212 , 312 , 412 , 512 , 612 , and the like.\n\nOne aspect of the present invention\nresides not in the manner in which a control lever triggers release of the pawl, but in how the control lever is placed in its locked and unlocked positions (incapable and capable of moving to trigger pawl release) based upon the position of the locking and unlocking mechanism relative to the control lever.\n\ncontrol lever\ncan be blocked, retained, or otherwise limited in motion by the locking and unlocking mechanism in either or both of its locked and unlocked states. Therefore, it should be noted that the control lever need not necessarily be free to move without limitation from the locking and unlocking mechanism in the unlocked state. In different embodiments of the present invention, movement of the control lever can be partially or fully defined by the locking and unlocking mechanism in either or both states.",
+          "score": -0.518950343132019,
+          "score_kind": "negative_distance",
+          "distance": 0.518950343132019,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 113
+        },
+        {
+          "chunk_id": "f18aa83bce76decfa21911885f4cce78",
+          "text": ", 512, 612 and/or changing the location of the locking and unlocking mechanism to block, retain, or otherwise limit another portion of the control lever 12, 112, 212, 312, 412, 512, 612, and the like. One aspect of the present invention resides not in the manner in which a control lever triggers release of the pawl, but in how the control lever is placed in its locked and unlocked positions (incapable and capable of moving to trigger pawl release) based upon the position of the locking and unlocking mechanism relative to the control lever.\n\nAs described above, the control lever can be blocked, retained, or otherwise limited in motion by the locking and unlocking mechanism in either or both of its locked and unlocked states. Therefore, it should be noted that the control lever need not necessarily be free to move without limitation from the locking and unlocking mechanism in the unlocked state. In different embodiments of the present invention, movement of the control lever can be partially or fully defined by the locking and unlocking mechanism in either or both states.",
+          "score": -0.522079348564148,
+          "score_kind": "negative_distance",
+          "distance": 0.522079348564148,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 247
+        },
+        {
+          "chunk_id": "c7c154100a52f607b8e62053ff037d27",
+          "text": "linkage of the locking and unlocking mechanism should at least be movable into and out of a position whereby a surface of the linkage blocks, retains, or otherwise limits motion of the control lever. It should be noted that motion of the control lever in this state can be limited to rotation about or near the point at which the linkage blocks, retains, or otherwise limits motion of the control lever (as is the case in the preferred embodiments illustrated in FIGS. 1–19), or can be limited to sliding, translation, or other types of movement in other embodiments of the present invention.\n\nIn the preferred embodiments of the present invention illustrated in FIGS. 1–19, the control lever 12, 112, 212, 312, 412, 512, 612 moves in one manner when blocked, retained, or otherwise limited by a locking and unlocking mechanism 48, 148, 248, 348, 448, 548, 648 and in another manner when not so blocked, retained, or otherwise limited by the locking and unlocking mechanism 48, 148, 248, 348, 448, 548, 648.",
+          "score": -0.5322343111038208,
+          "score_kind": "negative_distance",
+          "distance": 0.5322343111038208,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 245
+        },
+        {
+          "chunk_id": "f9470332668bca11f1c7a22af1f71b33",
+          "text": "8 of the fourth preferred embodiment illustrated in FIG. 10 could potentially be placed in a state where actuation of the control lever 312 places the elements 350, 352 in almost complete compression. In contrast, the locking and unlocking mechanism 148 of the second preferred embodiment illustrated in FIG. 8 can experience a combination of forces when in the unlocked state. These forces can include rotational and compressive forces with little to no tensile forces. In yet another example as shown in FIGS. 1–7, the first element 50 of the locking and unlocking mechanism 48 can experience forces that are mostly or all tensile. Other types of locking and unlocking mechanisms fall within the spirit and scope of the present invention, and can experience any combination of tensile, compressive, and moment forces in reaction to control lever actuation in either or both locked and unlocked states of such mechanisms.\n\nEach of the illustrated preferred embodiments described above has a control lever 12, 112, 212, 312 which is pivotable about the same location with respect to the control lever 12, 112, 212, 312 in both locked and unlocked states of the control lever 12, 112, 212, 312.",
+          "score": -0.5664743781089783,
+          "score_kind": "negative_distance",
+          "distance": 0.5664743781089783,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 220
+        },
+        {
+          "chunk_id": "be1414d371c7127b0b6e3f5130819a13",
+          "text": "ing and unlocking mechanisms 48, 148 in the first and second preferred embodiments illustrated in FIGS. 1–7 and 8, respectively, are biased into their locked and unlocked positions as described above. When the control levers 12, 112 in such embodiments are actuated while the locking and unlocking mechanisms 48, 148 are in their locked states, the locking and unlocking mechanisms 48, 148 remain stationary or substantially stationary. Alternatively however, either or both components 50, 52, 150, 152 of these mechanisms can move to some degree in either or both states, such as through an amount of rotation, shifting, or other movement responsive to control handle actuation.\n\nIn other embodiments of the present invention described above, the elements defining the locking and unlocking mechanism do not move or are relatively stationary when the control lever is actuated in one state (e.g., locked or unlocked) but can and do move when the control lever is actuated in another state (e.g., unlocked or locked, respectively). The illustrated preferred embodiments of FIGS. 9 and 10 provide examples of such locking and unlocking mechanisms.",
+          "score": -0.5679018497467041,
+          "score_kind": "negative_distance",
+          "distance": 0.5679018497467041,
+          "source": "/Users/chancelavoie/.cache/patent2sysml/studies/representation-100-20260926/work/runs/patent-qnqg4pot/input/US7219935B2.html",
+          "chunk_index": 238
+        }
+      ]
+    }
+  ],
+  "revision": 5,
+  "candidate_sha256": "d2105aab333e53e0d1ea8e3a87b96bedd72dbd0705f08bb224ecf8c8152a80ee"
+}

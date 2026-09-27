@@ -1,0 +1,174 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 7,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 3,
+    "Documentation": 35,
+    "EndFeatureMembership": 14,
+    "Feature": 24,
+    "FeatureChaining": 38,
+    "FeatureMembership": 39,
+    "FeatureTyping": 17,
+    "FlowEnd": 4,
+    "FlowUsage": 2,
+    "ItemDefinition": 5,
+    "ItemUsage": 9,
+    "LiteralInteger": 1,
+    "MultiplicityRange": 1,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 59,
+    "Package": 1,
+    "PartDefinition": 6,
+    "PartUsage": 8,
+    "PortUsage": 9,
+    "Redefinition": 4,
+    "ReferenceSubsetting": 14,
+    "ReferenceUsage": 4,
+    "Subclassification": 3,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_MASTER_Master_unit"
+    },
+    {
+      "path": "/subsystems/0/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_MASTER_Master_unit.part_MASTER_OPENING_SEAL_Deformable_O_ring_seated_in_the_master_unit_c"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_MASTER_Master_unit.port_MASTER_ROLLER_CONTACT_Retention_area_rolling_member_contact"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PISTON_Piston_and_stem"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PISTON_Piston_and_stem.port_PISTON_FLUID_Fluid_pressure_input"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PISTON_Piston_and_stem.port_PISTON_ROLLER_Piston_surface_contact_with_rollers"
+    },
+    {
+      "path": "/subsystems/1/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PISTON_Piston_and_stem.port_PISTON_SEAL_Stem_step_contact_with_opening_seal"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ROLLERS_Rolling_members_and_retention_area"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ROLLERS_Rolling_members_and_retention_area.port_ROLLER_PISTON_Piston_contact"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ROLLERS_Rolling_members_and_retention_area.port_ROLLER_RACE_Locking_race_contact"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_TOOL_Tool_unit_and_locking_race"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_TOOL_Tool_unit_and_locking_race.port_TOOL_RACE_Locking_race_contact"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_FLUID_Abstract_external_pressurized_fluid_context"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FLUID_Abstract_external_pressurized_fluid_context.port_FLUID_OUT_Pressurized_fluid_supply"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SEAL_Stem_opening_seal"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SEAL_Stem_opening_seal.port_SEAL_STEP_Deformable_seal_contact_with_piston_step"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_PRESS_Pressurized_actuation_fluid"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_LOCK_Locking_contact_force"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_SEAL_CONTACT_Stem_step_to_opening_seal_contact"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_ACTUATE_Move_piston_to_lock_units"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_RETARD_Retard_unintended_piston_movement_toward_unlo"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_I_FLUID_PISTON"
+    },
+    {
+      "path": "/subsystems/1/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_PISTON_ROLLER"
+    },
+    {
+      "path": "/subsystems/1/interfaces/2",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_PISTON_SEAL"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_I_ROLLER_TOOL"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_I_FLUID_PISTON_MATE"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

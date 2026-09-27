@@ -1,0 +1,34 @@
+{
+  "revision": 5,
+  "candidate_sha256": "9bad4ffaa857893f5954da458c9bc30d63174a52ed998186a975679af501b3a7",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 5's narrowed projected-profile requirement states only that at the local maximum the first derivative is zero and second derivative is negative. Passage 8545e0cb537a2598cde3625dd15fd89d explicitly gives both at local maximum M; model geometry and water-driven runner descriptions remain consistent with read patent passages."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The selected scope includes shaft, crown, blades, band, incoming water, water-driven rotation, and disclosed optional geometry requirements. No clear omission requiring repair identified."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Single hydraulic-fluid flow connects external water output to blade input once; port directions and flow type are compatible. Rotation is represented as runner behavior, not a spurious connected flow."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Requirement /requirements/4 now precisely states the two local-maximum derivative conditions supported by passage 8545e0cb537a2598cde3625dd15fd89d, and its rationale explicitly excludes the unsupported broader band-side qualifier. Other listed requirement citations match their stated geometric/functional content."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "The source-to-blade interface references existing compatible ports and the same hydraulic flow. No unsupported shaft-load or controller interface is modeled."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Textbook guidance is used only for modeling/context conventions (boundary flows and subsystem relationships), not as evidence for patent facts."
+    }
+  },
+  "findings": [],
+  "summary": "Revision 5 resolves the prior requirement traceability issue: /requirements/4 now exactly expresses the derivative conditions substantiated at the local maximum by cited passage 8545e0cb537a2598cde3625dd15fd89d, without asserting the separate band-side curvature qualifier. Prior corrections remain intact: component/function grounding, water-only flow and compatible interface, and no invented output or control interface. No unresolved issues found in the supplied candidate/context. Native SysML validation remains unconfirmed in the candidate warning; no validation result was provided, and this review does not claim validation.",
+  "saved_at": "2026-09-27T07:35:06.726662+00:00"
+}

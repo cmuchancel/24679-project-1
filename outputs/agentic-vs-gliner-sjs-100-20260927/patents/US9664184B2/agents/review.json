@@ -1,0 +1,34 @@
+{
+  "revision": 6,
+  "candidate_sha256": "0f1a09c2ee23d960084b655c38e3c5ce6209acf3737e0503d6642abda62aff09",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 6 retains modeled components and behavior supported by retrieved passages: drum/pistons/swash plate and stroke-pressure relation (59188fbbd1be52293d9532425b19c0fb; 7cff0e4ae8108315c099db9462b36c91), opposed actuator and pressure inputs (73aaaf247912ad2d0478e900f5017dd1; 8afd828f7c9053711d35d4a1a9b75570), spring bias (733134f7aac7928e319b85b5ccb9a1ea; 8700ac8570064dc4363e3425359a3096), and lubrication path (4429abea1304d274c78ad18aa757db28)."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "Pump, stroke/capacity adjustment, opposing pressure actuators, lever linkage, spring bias, and disclosed joint lubrication function are represented. The pump_delivery orphan deletion does not remove a function; the output remains represented by system_hyd connections."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Revision 6 removes the prior unused pump_delivery flow. Interfaces use declared shaft_rotation, control_hyd, system_hyd, or linkage_motion, with matching port flow types and bidirectional interface records referencing the same flow_ref. Hydraulic system pressure from pump to adjustment input and delivery sink is consistently represented."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Requirements and modeled behaviors retain claim references and supported passage citations. No disconnected or uncited requirement/action was found."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Paired interface entries connect existing ports with compatible direction and flow types, and each represented connection is recorded at both mating subsystems consistently. External rotary drive, downstream hydraulic sink, and control-pressure source are distinct contextual components rather than generic external nodes."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Context/interface guidance supports explicitly representing relevant sources, sinks, and crossing flows; it is methodological rather than evidence for patent facts. No problematic textbook-derived invention assertion identified."
+    }
+  },
+  "findings": [],
+  "summary": "Revision 6 resolves prior finding R5-1: pump_delivery is absent from item_flows, and the connected delivery route consistently uses system_hyd. The change does not delete supported pump delivery behavior. Review of the current candidate and cited patent passages found no remaining actionable issue. The SJS is acceptable on the reviewed evidence and checklist; host determines final approval. No candidate edits made.",
+  "saved_at": "2026-09-27T09:17:15.624025+00:00"
+}

@@ -1,0 +1,81 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Independent-Tilt and Rotary Bearing Assembly",
+    "system_id": "US7249893B2",
+    "description": "Conceptual system model of a bearing assembly with separately functioning spherical sliding tilt support and rolling-bearing rotation mechanism.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "Mechanical bearing systems",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "BODY",
+      "subsystem_name": "Bearing Main Body",
+      "description": "Main body with a spherically shaped mounting hole including a concave portion that receives and retains the sliding member's protrusion.",
+      "domain": "Mechanical structure",
+      "functional_basis": [
+        "House tilt mechanism"
+      ]
+    },
+    {
+      "subsystem_id": "TILT",
+      "subsystem_name": "Spherical Sliding Tilt Mechanism",
+      "description": "Self-lubricating sliding member and spherical part; spherical part slides within the member to allow shaft-center tilt. Member protrusion mates with the main body's concave portion. The sliding structure is non-lubricated; shaft-center tilt is a supported capability, not a modeled external flow.",
+      "domain": "Mechanical motion support",
+      "functional_basis": [
+        "Allow shaft-center tilt"
+      ],
+      "parts": [
+        {
+          "part_id": "SLIDER",
+          "description": "Self-lubricating sliding member with protruding portion",
+          "quantity": 1
+        },
+        {
+          "part_id": "BALL",
+          "description": "Spherical part with through hole",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "subsystem_id": "ROT",
+      "subsystem_name": "Rolling Rotation Mechanism",
+      "description": "Two rolling bearings, each having inner and outer races, are fitted by their outer races into the spherical part's through hole. A sealed structure is an optional claimed configuration (claims 2 and 4). The mechanism supports shaft rotation, including the described high-speed and continuous rotation capability; external shaft interfaces are not specified.",
+      "domain": "Rotary mechanical support",
+      "functional_basis": [
+        "Support shaft rotation"
+      ]
+    }
+  ],
+  "item_flows": [],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "ENABLE_TILT",
+        "name": "Permit shaft-center tilt",
+        "owner": "TILT",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Spherical part slides within the self-lubricating sliding member to permit shaft-center tilt."
+          }
+        ]
+      },
+      {
+        "action_id": "SUPPORT_ROTATION",
+        "name": "Support shaft rotation",
+        "owner": "ROT",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Rolling bearings provide the rotary mechanism; the patent describes high-speed and continuous rotation, including when shaft center is tilted."
+          }
+        ]
+      }
+    ]
+  }
+}

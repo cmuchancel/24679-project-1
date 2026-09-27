@@ -1,0 +1,34 @@
+{
+  "revision": 4,
+  "candidate_sha256": "0488bf576a09cd918cb6338bda3eae6de3aa6b73ed50887960a52d685cbfb4cb",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 4's component descriptions and behavior are grounded in the cited passages. Ring/rolling-element/cage-pocket arrangement appears in 4046d44d35ec1704d8de8c404d98dd4f; cage segments, gap rollers, guiding surfaces, and alternatives are supported by 20861417fd8c50c959d2953a3640da4e and claim context; clearance and adjacent-outside-roller load-induced clamping are stated in 1552a1c5f87c1272d533d6daff1782b0. No assumption is presented as an invention fact."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The model captures the principal physical elements, separate-segment/gap-roller embodiment, guide function and alternatives, claimed clearance relationships, and passive deformation/clamping response. Unsupported bearing-level external context is omitted."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "There are no item flows or connections implying unsupported direction/type, and the load condition is explicitly prose rather than a false connection from pocket rollers. Removal of the orphan force ports leaves no disconnected modeled flow."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Requirements and behavior action cite claim 1 evidence; component descriptions cite relevant patent passages. Clearance values and conditions track the passage, and alternative embodiments are described without falsely selecting one."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Revision 4 removes the prior unconnected CAGE force ports and empty interfaces field. No external interface is asserted where the cited evidence does not define one; internal relationships remain described in component prose rather than misrepresented as incompatible connections."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The model uses descriptive requirements for quantitative relationships and passive behavior prose without inventing executable constraints, sensor/controller hardware, or unsupported interface details. Retrieved textbook passages are modeling guidance only and are not used as patent-fact evidence."
+    }
+  },
+  "findings": [],
+  "summary": "Revision 4 resolves the prior unused-port issue: CAGE now has no orphan ports/interfaces, while the outside-cage adjacent-roller load condition and cage response remain explicitly represented as supported behavior prose. Independent review finds the SJS grounded, structurally coherent, adequately complete for the evidence, and appropriately cautious about interfaces and external context. No unresolved findings.",
+  "saved_at": "2026-09-27T07:56:05.530742+00:00"
+}

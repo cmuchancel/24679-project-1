@@ -1,0 +1,206 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 3,
+    "ActionUsage": 11,
+    "AllocationUsage": 3,
+    "Documentation": 46,
+    "EndFeatureMembership": 18,
+    "Feature": 24,
+    "FeatureChaining": 48,
+    "FeatureMembership": 59,
+    "FeatureTyping": 22,
+    "FlowEnd": 12,
+    "FlowUsage": 6,
+    "ItemDefinition": 8,
+    "ItemUsage": 12,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 75,
+    "Package": 1,
+    "PartDefinition": 7,
+    "PartUsage": 8,
+    "PortUsage": 12,
+    "Redefinition": 12,
+    "ReferenceSubsetting": 18,
+    "ReferenceUsage": 12,
+    "Subclassification": 5,
+    "SuccessionAsUsage": 5
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_input_member_Input_side_clutch_member"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_input_member_Input_side_clutch_member.port_rotation_out_Rotation_to_input_press"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_output_member_Output_side_clutch_member"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_output_member_Output_side_clutch_member.port_rotation_out_Rotation_to_output_press"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_plate_group_Clutch_plate_group"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_plate_group_Clutch_plate_group.port_input_contact_Input_side_pressed_contact"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_plate_group_Clutch_plate_group.port_output_contact_Output_side_pressed_contact"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_input_press_Input_centrifugal_press_assembly"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_input_press_Input_centrifugal_press_assembly.port_rotation_in_Input_rotation"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_input_press_Input_centrifugal_press_assembly.port_plate_load_Axial_plate_loading"
+    },
+    {
+      "path": "/subsystems/3/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_input_press_Input_centrifugal_press_assembly.port_release_force_in_Axial_release_force_at_pressure_member"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_output_press_Output_centrifugal_press_assembly"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_output_press_Output_centrifugal_press_assembly.port_rotation_in_Output_rotation"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_output_press_Output_centrifugal_press_assembly.port_plate_load_Axial_plate_loading_c975e0f7"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_release_Clutch_release_mechanism"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_release_Clutch_release_mechanism.port_actuation_in_Release_force_input"
+    },
+    {
+      "path": "/subsystems/5/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_release_Clutch_release_mechanism.port_pressure_member_release_out_Axial_release_force_to_first_pressure_member"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_release_actuator_Clutch_actuation_source"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_release_actuator_Clutch_actuation_source.port_force_out_Actuation_force"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_input_rotation_Input_side_rotation"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_output_rotation_Output_side_rotation"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_plate_contact_Pressed_plate_contact"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_release_actuation_Release_actuation"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_release_pressure_force_Release_force_on_first_pressure_member"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_centrifugal_engagement_Centrifugal_engagement"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_release_plate_contact_Release_plate_contact"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_output_centrifugal_engagement_Output_centrifugal_engagement"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_input_rotation_link"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_output_rotation_link"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_input_plate_link"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_output_plate_link"
+    },
+    {
+      "path": "/subsystems/5/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_release_pressure_link"
+    },
+    {
+      "path": "/subsystems/6/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_release_force_link"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

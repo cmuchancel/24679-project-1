@@ -1,0 +1,34 @@
+{
+  "revision": 4,
+  "candidate_sha256": "c2d1c358c2e0baa24d79b9656d5bc5bde157ad40761b0a9b08324168e7ee7f5d",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 4’s new DIVE–BODY suspension-linkage connection is supported by claim 7’s express connection of the suspension linkage to both ends of the frame upright, read with claim 4’s body-side linkage attachment. The selected roll bell-crank embodiment, wheel/ski attachment, and locking behavior are also supported by the cited passages. The alternative hydraulic embodiment remains excluded."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The prior missing DIVE-to-BODY/frame-upright attachment is now explicitly modeled with a distinct interface, in addition to the roll-to-dive push-rod connection and wheel/ski attachment. Major relationships in the selected claimed topology and behavior are represented; alternative configurations are explicitly out of scope."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "The new linkage interface connects existing DIVE_BODY_LINK and BODY_DIVE_LINK ports, both mechanical_motion and bidirectional, and references the existing F_DIVE_BODY_LINK flow. It is distinct from the ROLL–DIVE push-rod flow and from the roll/body pivot coupling. No incompatible transformation is modeled as an interface."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "The newly added interface and flow cite claim/specification text supporting the frame-upright linkage attachment; its notes identify claims 4 and 7. Actions remain claim-grounded mechanical behavior, not electronic control. No unsupported engineering requirement is introduced."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "The revision resolves the prior topology concern. DIVE_BODY_LINK to BODY_DIVE_LINK has compatible ports and a matching item flow; the added connection is separate from the push-rod interface. Other modeled connections also refer to existing endpoints and flows."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Retrieved guidance supports distinguishing physical subsystems/interfaces and selecting a specific physical decomposition, but does not supply invention facts. It is not used as patent evidence. The model consistently represents one supported embodiment and leaves alternatives outside the model."
+    }
+  },
+  "findings": [],
+  "summary": "Independent review of saved revision 4: the prior concern is resolved. The new DIVE-to-BODY linkage interface coherently represents the patent-supported suspension linkage connection to both ends of the frame upright, with compatible bidirectional mechanical-motion ports and its own flow, distinct from the roll push rod. The selected bell-crank embodiment and modeled behavior remain grounded in patent passages; no unsupported requirements or new material issues were found. Textbook guidance is applied only to modeling choices, not invention facts. No structural findings were reported in the supplied context.",
+  "saved_at": "2026-09-27T06:10:13.596975+00:00"
+}

@@ -1,0 +1,52 @@
+{
+  "agents": {
+    "source_study": "representation-100-20260926",
+    "model": "openai/gpt-6-luna",
+    "roles": [
+      "orchestrator",
+      "functional decomposer",
+      "independent quality reviewer"
+    ],
+    "workflow": "Patent evidence retrieval, functional decomposition, independent quality review, SJS 1.0, deterministic SysML export.",
+    "source_manifest": "provenance/agents-source-sha256.json"
+  },
+  "gliner": {
+    "source_study": "gliner-sjs-100-20260927",
+    "model": "knowledgator/gliner-relex-large-v1.0",
+    "fine_tuned_checkpoint": 450,
+    "checkpoint_sha256": "dfe14c04e6b346faafc4c6e96a7fd269285fd9a7af4471126106d53796a636cc",
+    "device": "mps",
+    "seed": 260926,
+    "extraction": {
+      "entity_threshold": 0.4,
+      "relation_threshold": 0.6,
+      "adjacency_threshold": 0.5,
+      "properties_per_batch": 4,
+      "max_tokens": 384,
+      "overlap_tokens": 24
+    },
+    "passes": [
+      "Subsystem",
+      "Part",
+      "Port",
+      "Interface",
+      "ItemFlow",
+      "Requirement",
+      "Action",
+      "StateMachine",
+      "Constraint",
+      "VerificationCase",
+      "Value"
+    ],
+    "source_manifest": "provenance/gliner-source-sha256.json",
+    "training_scope": "SysML entity labels; no labeled patent relationship supervision.",
+    "independent_review": false
+  },
+  "compiler": {
+    "name": "Syside Automator",
+    "version": "0.10.3",
+    "source_schema": "sjs/1.0",
+    "gliner_allows_unresolved_mappings": true
+  },
+  "scope": "The SJS intermediate representation conditions only. No official-JSON results are part of this completed release."
+}

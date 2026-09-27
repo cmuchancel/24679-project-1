@@ -1,0 +1,386 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Machine-tool Tool Changer",
+    "system_id": "US8425386B2",
+    "description": "Inferred concept model of a cam-driven tool changer that lifts and rotates a gripper to exchange machining tools.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "Machine tools and automated tool changing",
+    "maturity": "draft",
+    "date_modified": "2026-09-26"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "housing",
+      "subsystem_name": "Tool-changer housing",
+      "description": "Supports and encloses the changer mechanisms and supports the column and Maltese wheel.",
+      "domain": "Mechanical structure"
+    },
+    {
+      "subsystem_id": "motor",
+      "subsystem_name": "Drive motor",
+      "description": "Rotates the cam barrel through reduction gearing.",
+      "domain": "Mechanical power",
+      "ports": [
+        {
+          "port_id": "motor_rotary_out",
+          "name": "Motor rotary output",
+          "direction": "out",
+          "flow_type": "mechanical_rotary"
+        }
+      ],
+      "parts": [
+        {
+          "part_id": "motor_barrel_reduction_pair",
+          "description": "Reduction gear pair by which the motor drives the cam barrel; claims 9 and 18.",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "subsystem_id": "cam_barrel",
+      "subsystem_name": "Cam barrel",
+      "description": "Rotating barrel with peripheral groove cam for lift and a front tappet for Maltese-wheel indexing.",
+      "domain": "Cam mechanism",
+      "ports": [
+        {
+          "port_id": "barrel_rotary_in",
+          "name": "Cam-barrel rotary input",
+          "direction": "in",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "barrel_index_out",
+          "name": "Tappet indexing interaction",
+          "direction": "out",
+          "flow_type": "mechanical_rotary"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "motor_to_barrel",
+          "mating_subsystem": "motor",
+          "port_this": "barrel_rotary_in",
+          "port_mate": "motor_rotary_out",
+          "flow_ref": "motor_rotation",
+          "interface_type": "mechanical_rotary"
+        }
+      ],
+      "parts": [
+        {
+          "part_id": "barrel_first_tappet",
+          "description": "Eccentrically fixed front tappet engaging a radial slot of the Maltese wheel; claim 1 and described embodiment.",
+          "quantity": 1
+        },
+        {
+          "part_id": "barrel_groove_cam",
+          "description": "Peripheral groove-shaped cam curve engaging the rod-guide tappet; claim 1.",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "subsystem_id": "maltese_wheel",
+      "subsystem_name": "Maltese wheel",
+      "description": "Indexed by the barrel tappet and coupled through intermediate gearing to column rotation.",
+      "domain": "Rotary transmission",
+      "ports": [
+        {
+          "port_id": "wheel_index_in",
+          "name": "Maltese-wheel indexing input",
+          "direction": "in",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "wheel_rotation_out",
+          "name": "Maltese-wheel rotation output",
+          "direction": "out",
+          "flow_type": "mechanical_rotary"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "barrel_tappet_to_wheel",
+          "mating_subsystem": "cam_barrel",
+          "port_this": "wheel_index_in",
+          "port_mate": "barrel_index_out",
+          "flow_ref": "cam_index_drive",
+          "interface_type": "mechanical_rotary"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "intermediate_gearing",
+      "subsystem_name": "Intermediate gear arrangement",
+      "description": "Transfers Maltese-wheel rotation to the supporting column and provides the claimed rotation gearing.",
+      "domain": "Rotary transmission",
+      "ports": [
+        {
+          "port_id": "gearing_rotation_in",
+          "name": "Intermediate-gear rotation input",
+          "direction": "in",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "gearing_rotation_out",
+          "name": "Intermediate-gear rotational output to column",
+          "direction": "out",
+          "flow_type": "mechanical_rotary"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "wheel_to_intermediate_gearing",
+          "mating_subsystem": "maltese_wheel",
+          "port_this": "gearing_rotation_in",
+          "port_mate": "wheel_rotation_out",
+          "flow_ref": "wheel_rotation",
+          "interface_type": "mechanical_rotary"
+        },
+        {
+          "interface_id": "gearing_to_column",
+          "mating_subsystem": "supporting_column",
+          "port_this": "gearing_rotation_out",
+          "port_mate": "column_rotation_in",
+          "flow_ref": "column_rotation",
+          "interface_type": "mechanical_rotary"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "supporting_column",
+      "subsystem_name": "Supporting column and guide",
+      "description": "Column is rotatably coupled to housing and has a portion guided for linear raising/lowering; carries the gripper.",
+      "domain": "Mechanical structure and motion",
+      "ports": [
+        {
+          "port_id": "column_rotation_in",
+          "name": "Column rotational input",
+          "direction": "in",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "column_lift_out",
+          "name": "Guided column lift motion",
+          "direction": "out",
+          "flow_type": "mechanical_linear"
+        },
+        {
+          "port_id": "column_motion_out",
+          "name": "Column rotation and translation to gripper",
+          "direction": "out",
+          "flow_type": "mechanical_motion"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "column_to_gripper_motion",
+          "mating_subsystem": "tool_gripper",
+          "port_this": "column_motion_out",
+          "port_mate": "gripper_column_motion_in",
+          "flow_ref": "column_motion",
+          "interface_type": "mechanical_motion"
+        }
+      ],
+      "parts": [
+        {
+          "part_id": "column_lift_guide_assembly",
+          "description": "Guide rod, transversely aligned member connected to the upper column portion, and end tappet(s) engaging the cam groove; claims 1 and 4.",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "subsystem_id": "tool_gripper",
+      "subsystem_name": "Tool gripper",
+      "description": "Mounted on the supporting column and moves with its linear and rotational motions to transfer machining tools.",
+      "domain": "Tool handling",
+      "ports": [
+        {
+          "port_id": "tool_to_unit",
+          "name": "Tool exchange with working unit",
+          "direction": "inout",
+          "flow_type": "physical_object"
+        },
+        {
+          "port_id": "tool_to_magazine",
+          "name": "Tool exchange with embodiment magazine",
+          "direction": "inout",
+          "flow_type": "physical_object"
+        },
+        {
+          "port_id": "gripper_column_motion_in",
+          "name": "Supporting-column motion input",
+          "direction": "in",
+          "flow_type": "mechanical_motion"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "gripper_working_unit_tool_exchange",
+          "mating_subsystem": "machine_working_unit",
+          "port_this": "tool_to_unit",
+          "port_mate": "unit_tool_exchange",
+          "flow_ref": "machining_tool_exchange",
+          "interface_type": "physical_object"
+        },
+        {
+          "interface_id": "gripper_magazine_tool_exchange",
+          "mating_subsystem": "tool_supply",
+          "port_this": "tool_to_magazine",
+          "port_mate": "magazine_tool_exchange",
+          "flow_ref": "machining_tool_exchange",
+          "interface_type": "physical_object"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "machine_working_unit",
+      "subsystem_name": "Machine working unit",
+      "description": "External machine unit holding a machining tool to be exchanged; shown with a work spindle/tool holding fixture.",
+      "domain": "Machine tool context",
+      "ports": [
+        {
+          "port_id": "unit_tool_exchange",
+          "name": "Tool exchange with changer",
+          "direction": "inout",
+          "flow_type": "physical_object"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "tool_supply",
+      "subsystem_name": "Tool magazine",
+      "description": "External tool magazine in the illustrated embodiment; the described chain magazine carries tools and can move a selected tool to a tool-change position. The claims do not require this magazine.",
+      "domain": "Tool supply",
+      "ports": [
+        {
+          "port_id": "magazine_tool_exchange",
+          "name": "Presented tool exchange",
+          "direction": "inout",
+          "flow_type": "physical_object"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "foundation",
+      "subsystem_name": "Stationary foundation",
+      "description": "External supporting structure on which the optional changer carriage travels or to which housing may be fixed.",
+      "domain": "Mechanical support"
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "motor_rotation",
+      "name": "Motor rotary drive",
+      "flow_type": "mechanical_rotary",
+      "notes": "Motor drives cam barrel through reduction gears."
+    },
+    {
+      "flow_id": "cam_index_drive",
+      "name": "Cam-barrel tappet drive",
+      "flow_type": "mechanical_rotary",
+      "notes": "Barrel tappet engages Maltese-wheel radial slots."
+    },
+    {
+      "flow_id": "wheel_rotation",
+      "name": "Indexed Maltese-wheel rotation",
+      "flow_type": "mechanical_rotary",
+      "notes": "Intermediate gears transmit wheel rotation toward supporting-column rotation."
+    },
+    {
+      "flow_id": "cam_follower_lift",
+      "name": "Cam-follower lift motion",
+      "flow_type": "mechanical_linear",
+      "notes": "Peripheral groove engages a tappet/member linked to the column's upper portion."
+    },
+    {
+      "flow_id": "column_motion",
+      "name": "Column/gripper combined motion",
+      "flow_type": "mechanical_motion",
+      "notes": "Column motion carries gripper through raising/lowering and rotation."
+    },
+    {
+      "flow_id": "machining_tool_exchange",
+      "name": "Machining tool exchange",
+      "flow_type": "physical_object",
+      "notes": "Gripper exchanges a machining tool associated with the working unit and a replacement tool presented by the magazine."
+    },
+    {
+      "flow_id": "column_lift_motion",
+      "name": "Guided column lift motion",
+      "flow_type": "mechanical_linear",
+      "notes": "The guide rod/member and second tappet guide raising/lowering of the column portion and gripper; claim 1."
+    },
+    {
+      "flow_id": "column_rotation",
+      "name": "Intermediate gearing to supporting-column rotation",
+      "flow_type": "mechanical_rotary",
+      "notes": "Gear arrangement is coupled between Maltese wheel and supporting column; embodiment describes output gear on column rotational axis. Gear-by-gear routing not asserted."
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "drive_barrel",
+        "name": "Drive cam barrel",
+        "owner": "motor",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Drive motor turns the cam barrel through the reduction gear pair (claims 9 and 18)."
+          }
+        ]
+      },
+      {
+        "action_id": "index_gripper",
+        "name": "Index gripper rotation",
+        "owner": "cam_barrel",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "The barrel's front tappet engages a radial slot of the Maltese wheel and sets it into rotation (claim 1)."
+          },
+          {
+            "step_no": 2,
+            "description": "Intermediate gearing transfers the Maltese-wheel rotation to the supporting column and gripper."
+          }
+        ]
+      },
+      {
+        "action_id": "raise_lower_gripper",
+        "name": "Raise and lower gripper",
+        "owner": "cam_barrel",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "The peripheral groove-shaped cam curve engages the supporting-column rod-guide tappet/member (claim 1)."
+          },
+          {
+            "step_no": 2,
+            "description": "The guided member moves linearly and raises or lowers the column portion and gripper."
+          }
+        ]
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "req_id": "claim1_tool_changer_architecture",
+      "category": "functional",
+      "priority": "claim-derived",
+      "statement": "Provide a housing-supported, motor-driven cam mechanism that raises, lowers, and rotates a tool gripper carried by a supporting column, with Maltese-wheel indexing and cam-groove lift actuation.",
+      "rationale": "Traceability to claim 1; this records the claimed combination, not an additional engineering obligation.",
+      "satisfied_by": [
+        "housing",
+        "motor",
+        "cam_barrel",
+        "maltese_wheel",
+        "intermediate_gearing",
+        "supporting_column",
+        "tool_gripper"
+      ]
+    }
+  ]
+}

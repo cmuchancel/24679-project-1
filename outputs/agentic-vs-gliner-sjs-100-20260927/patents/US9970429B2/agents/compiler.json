@@ -1,0 +1,251 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 3,
+    "ActionUsage": 8,
+    "AllocationUsage": 3,
+    "Documentation": 51,
+    "EndFeatureMembership": 22,
+    "Feature": 28,
+    "FeatureChaining": 60,
+    "FeatureMembership": 68,
+    "FeatureTyping": 28,
+    "FlowEnd": 16,
+    "FlowUsage": 8,
+    "ItemDefinition": 8,
+    "ItemUsage": 17,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 83,
+    "Package": 1,
+    "PartDefinition": 8,
+    "PartUsage": 9,
+    "PortUsage": 17,
+    "Redefinition": 16,
+    "ReferenceSubsetting": 22,
+    "ReferenceUsage": 16,
+    "Subclassification": 6,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_housing_Pump_housing_and_fluid_regions"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_housing_Pump_housing_and_fluid_regions.port_inlet_feed_Pump_inlet_feed"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_housing_Pump_housing_and_fluid_regions.port_outlet_to_bypass_Outlet_region_to_bypass"
+    },
+    {
+      "path": "/subsystems/0/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_housing_Pump_housing_and_fluid_regions.port_inlet_return_Return_to_inlet_region"
+    },
+    {
+      "path": "/subsystems/0/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_housing_Pump_housing_and_fluid_regions.port_pump_in_Fluid_toward_pumping_zone"
+    },
+    {
+      "path": "/subsystems/0/ports/4",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_housing_Pump_housing_and_fluid_regions.port_pump_out_Fluid_from_pumping_zone"
+    },
+    {
+      "path": "/subsystems/0/ports/5",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_housing_Pump_housing_and_fluid_regions.port_outlet_discharge_Outlet_region_discharge_to_receiver"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_diaphragm_Flexible_diaphragm_and_pumping_zone"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_diaphragm_Flexible_diaphragm_and_pumping_zone.port_diaphragm_motion_Pumping_zone_volume_changing_displacement"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_valves_Valve_support_and_inlet_outlet_valves"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_valves_Valve_support_and_inlet_outlet_valves.port_valve_in_Inlet_valve_path"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_valves_Valve_support_and_inlet_outlet_valves.port_valve_out_Outlet_valve_path"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_bypass_Bypass_valve_and_spring"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_bypass_Bypass_valve_and_spring.port_bypass_in_Bypass_outlet_region_inlet"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_bypass_Bypass_valve_and_spring.port_bypass_out_Bypass_inlet_region_return"
+    },
+    {
+      "path": "/subsystems/3/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_bypass_Bypass_valve_and_spring.port_spring_force_to_valve_Spring_pressing_communication_to_valve"
+    },
+    {
+      "path": "/subsystems/3/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_bypass_Bypass_valve_and_spring.port_spring_to_insert_contact_Spring_distal_end_pressing_contact_at_insert"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_insert_Support_insert"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_insert_Support_insert.port_spring_from_bypass_contact_Spring_distal_end_pressing_contact_from_bypas"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_process_source_Process_fluid_supply"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_process_source_Process_fluid_supply.port_source_out_Supply_outlet"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_process_sink_Process_fluid_discharge"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_process_sink_Process_fluid_discharge.port_sink_in_Receiver_inlet"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_bypass_valve_Bypass_valve"
+    },
+    {
+      "path": "/subsystems/7/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_bypass_valve_Bypass_valve.port_spring_contact_Spring_proximal_end_pressing_contact"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_feed_Process_fluid_feed"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_pumpflow_Pumped_process_fluid"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_bypassflow_Bypass_return_fluid"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_discharge_Discharged_process_fluid"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_motion_Diaphragm_volume_changing_motion"
+    },
+    {
+      "path": "/item_flows/5",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_springforce_Bypass_spring_force"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_pump_process_Pump_process_fluid"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_bypass_return_Return_fluid_through_bypass"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_route_inlet_feed_Route_supplied_fluid_through_housing_inlet_re"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_outlet_region_to_bypass"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_inlet_region_to_inlet_valve"
+    },
+    {
+      "path": "/subsystems/0/interfaces/2",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_outlet_region_to_receiver"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_valves_to_pumping_region"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_bypass_return_to_inlet"
+    },
+    {
+      "path": "/subsystems/3/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_insert_spring_force"
+    },
+    {
+      "path": "/subsystems/3/interfaces/2",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_spring_to_bypass_valve_pressing"
+    },
+    {
+      "path": "/subsystems/5/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_source_to_pump_inlet"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

@@ -1,0 +1,257 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 6,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 5,
+    "Documentation": 53,
+    "EndFeatureMembership": 22,
+    "Feature": 36,
+    "FeatureChaining": 62,
+    "FeatureMembership": 61,
+    "FeatureTyping": 28,
+    "FlowEnd": 8,
+    "FlowUsage": 4,
+    "ItemDefinition": 10,
+    "ItemUsage": 19,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 85,
+    "Package": 1,
+    "PartDefinition": 7,
+    "PartUsage": 8,
+    "PortUsage": 19,
+    "Redefinition": 8,
+    "ReferenceSubsetting": 22,
+    "ReferenceUsage": 8,
+    "Subclassification": 6,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DISC_ASSEMBLY_Rotatable_Axially_Sliding_Disc_Assembly"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DISC_ASSEMBLY_Rotatable_Axially_Sliding_Disc_Assembly.port_disc_active_face_Active_side_friction_interface"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DISC_ASSEMBLY_Rotatable_Axially_Sliding_Disc_Assembly.port_disc_passive_face_Opposite_side_friction_interface"
+    },
+    {
+      "path": "/subsystems/0/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DISC_ASSEMBLY_Rotatable_Axially_Sliding_Disc_Assembly.port_disc_axial_motion_Axial_displacement_output_during_secondary_br"
+    },
+    {
+      "path": "/subsystems/0/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DISC_ASSEMBLY_Rotatable_Axially_Sliding_Disc_Assembly.port_disc_rotatable_mount_Rotatable_mounting_and_drive_dog_relationship"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CALIPER_SUPPORT_Fixed_Caliper_and_Mounting_Support"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CALIPER_SUPPORT_Fixed_Caliper_and_Mounting_Support.port_support_pad_mount_Friction_element_and_stop_support"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CALIPER_SUPPORT_Fixed_Caliper_and_Mounting_Support.port_support_reaction_Actuator_reaction_support"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ACTIVE_PAD_Active_Friction_Element"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ACTIVE_PAD_Active_Friction_Element.port_active_disc_contact_Active_side_disc_contact"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ACTIVE_PAD_Active_Friction_Element.port_active_primary_contact_Primary_thrust_contact"
+    },
+    {
+      "path": "/subsystems/2/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ACTIVE_PAD_Active_Friction_Element.port_active_secondary_contact_Secondary_thrust_contact"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PASSIVE_PAD_Opposite_Friction_Element"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PASSIVE_PAD_Opposite_Friction_Element.port_passive_disc_contact_Opposite_side_disc_contact"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PASSIVE_PAD_Opposite_Friction_Element.port_passive_stop_Fixed_stop_contact"
+    },
+    {
+      "path": "/subsystems/3/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PASSIVE_PAD_Opposite_Friction_Element.port_passive_axial_response_Axial_displacement_received_from_sliding_disc"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PRIMARY_HYDRAULIC_Primary_Hydraulic_Piston_Cylinder_Actuator"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PRIMARY_HYDRAULIC_Primary_Hydraulic_Piston_Cylinder_Actuator.port_primary_hydraulic_port_Hydraulic_supply_port"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PRIMARY_HYDRAULIC_Primary_Hydraulic_Piston_Cylinder_Actuator.port_primary_thrust_port_Thrust_collar_output"
+    },
+    {
+      "path": "/subsystems/4/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PRIMARY_HYDRAULIC_Primary_Hydraulic_Piston_Cylinder_Actuator.port_primary_mount_Mount_reaction"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SECONDARY_LEVER_Secondary_Parking_Lever_Mechanism"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SECONDARY_LEVER_Secondary_Parking_Lever_Mechanism.port_lever_input_Parking_actuation_input"
+    },
+    {
+      "path": "/subsystems/5/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SECONDARY_LEVER_Secondary_Parking_Lever_Mechanism.port_lever_thrust_Lever_thrust_output"
+    },
+    {
+      "path": "/subsystems/5/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SECONDARY_LEVER_Secondary_Parking_Lever_Mechanism.port_lever_pivot_support_Lever_pivot_support"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PRIMARY_CONTROL_Vehicle_Primary_Hydraulic_Brake_Control"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PRIMARY_CONTROL_Vehicle_Primary_Hydraulic_Brake_Control.port_control_hydraulic_out_Hydraulic_output"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_HYDRAULIC_INPUT_Primary_brake_hydraulic_pressure"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_PRIMARY_THRUST_Primary_actuator_thrust"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_PARKING_THRUST_Active_side_secondary_lever_thrust"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_AXIAL_DISC_MOTION_Axial_disc_sliding_motion"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_FRICTION_CONTACT_Frictional_contact"
+    },
+    {
+      "path": "/item_flows/5",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_SUPPORT_REACTION_Fixed_support_reaction"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_apply_primary_brake_Apply_primary_hydraulic_braking"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_apply_parking_brake_Apply_secondary_parking_brake"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_disc_axial_motion_to_passive_pad"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_caliper_to_passive_pad_stop"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_active_pad_to_disc"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_passive_pad_to_disc"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_primary_thrust_to_active_pad"
+    },
+    {
+      "path": "/subsystems/4/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_primary_mount_to_caliper_support"
+    },
+    {
+      "path": "/subsystems/5/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_lever_thrust_to_active_pad"
+    },
+    {
+      "path": "/subsystems/5/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_lever_pivot_to_caliper_support"
+    },
+    {
+      "path": "/subsystems/6/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_control_to_primary_hydraulic"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

@@ -1,0 +1,205 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 5,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 5,
+    "Documentation": 33,
+    "EndFeatureMembership": 14,
+    "Feature": 34,
+    "FeatureChaining": 50,
+    "FeatureMembership": 28,
+    "FeatureReferenceExpression": 6,
+    "FeatureTyping": 18,
+    "FeatureValue": 6,
+    "ItemDefinition": 5,
+    "ItemUsage": 9,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 71,
+    "Package": 1,
+    "PartDefinition": 4,
+    "PartUsage": 5,
+    "PortUsage": 9,
+    "ReferenceSubsetting": 20,
+    "ReferenceUsage": 6,
+    "RequirementDefinition": 3,
+    "RequirementUsage": 3,
+    "SatisfyRequirementUsage": 6,
+    "Subclassification": 3,
+    "SubjectMembership": 6,
+    "SuccessionAsUsage": 1
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_shaft_Screw_Shaft"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_shaft_Screw_Shaft.port_shaft_groove_contact_Shaft_groove_rolling_contact"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_nut_Nut"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_nut_Nut.port_nut_groove_contact_Nut_groove_rolling_contact"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_nut_Nut.port_nut_bridge_mount_Bridge_member_mounting"
+    },
+    {
+      "path": "/subsystems/1/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_nut_Nut.port_nut_bridge_passage_Nut_groove_to_bridge_connecting_groove_passag"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_balls_Rolling_Balls"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_balls_Rolling_Balls.port_ball_race_contact_Rolling_contact_with_opposed_grooves"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_balls_Rolling_Balls.port_ball_bridge_path_Ball_passage_through_bridge_groove"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_bridges_Bridge_Members"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_bridges_Bridge_Members.port_bridge_nut_mount_Mounting_on_nut_barrel"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_bridges_Bridge_Members.port_bridge_ball_path_Connecting_groove_ball_passage"
+    },
+    {
+      "path": "/subsystems/3/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_bridges_Bridge_Members.port_bridge_nut_passage_Connecting_groove_passage_to_nut_screw_groove"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_ball_circulation_Rolling_ball_circulation"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_groove_rolling_contact_Ball_rolling_contact_with_opposed_grooves"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_bridge_mount_contact_Bridge_member_mounting_contact"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_contact_angle"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_contact_angle"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_contact_angle"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/2",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_contact_angle"
+    },
+    {
+      "path": "/requirements/1",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_ball_diameter"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_ball_diameter"
+    },
+    {
+      "path": "/requirements/2",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_groove_depth"
+    },
+    {
+      "path": "/requirements/2/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_groove_depth"
+    },
+    {
+      "path": "/requirements/2/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_groove_depth"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_convert_motion_Convert_rotation_to_axial_translation"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_circulate_balls_Circulate_rolling_balls"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_shaft_ball_contact"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_nut_ball_contact"
+    },
+    {
+      "path": "/subsystems/1/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_nut_bridge_fit"
+    },
+    {
+      "path": "/subsystems/1/interfaces/2",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_nut_bridge_circulation"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_balls_bridge_circulation"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

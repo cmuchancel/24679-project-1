@@ -1,0 +1,102 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 3,
+    "AllocationUsage": 1,
+    "Documentation": 13,
+    "EndFeatureMembership": 2,
+    "Feature": 7,
+    "FeatureChaining": 10,
+    "FeatureMembership": 11,
+    "FeatureReferenceExpression": 3,
+    "FeatureTyping": 7,
+    "FeatureValue": 3,
+    "LiteralInteger": 2,
+    "MultiplicityRange": 2,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 34,
+    "Package": 1,
+    "PartDefinition": 5,
+    "PartUsage": 8,
+    "ReferenceSubsetting": 5,
+    "ReferenceUsage": 3,
+    "RequirementDefinition": 1,
+    "RequirementUsage": 1,
+    "SatisfyRequirementUsage": 3,
+    "SubjectMembership": 3,
+    "SuccessionAsUsage": 1
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_HOUSING_Rotor_housing"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ROTORS_Engaging_rotor_bodies"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_INLET_BEARINGS_Inlet_side_loose_bearings"
+    },
+    {
+      "path": "/subsystems/2/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_INLET_BEARINGS_Inlet_side_loose_bearings.part_INLET_BALL_BEARING_Loose_deep_groove_ball_bearing_at_each_shaft"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_OUTLET_BEARINGS_Outlet_side_fixed_cylindrical_roller_bearings"
+    },
+    {
+      "path": "/subsystems/3/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_OUTLET_BEARINGS_Outlet_side_fixed_cylindrical_roller_bearings.part_OUTLET_CYL_BEARING_Fixed_cylindrical_roller_bearing_at_each_shaf"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_AXIAL_BIAS_Spring_bias_devices"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_MIN_CLEARANCE"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_MIN_CLEARANCE"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_MIN_CLEARANCE"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/2",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_MIN_CLEARANCE"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_BIAS_CLEARANCE_Bias_rotors_to_maintain_outlet_clearance"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

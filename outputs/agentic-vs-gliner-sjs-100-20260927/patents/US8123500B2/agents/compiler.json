@@ -1,0 +1,305 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 7,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 10,
+    "Documentation": 59,
+    "EndFeatureMembership": 24,
+    "Feature": 52,
+    "FeatureChaining": 76,
+    "FeatureMembership": 60,
+    "FeatureReferenceExpression": 4,
+    "FeatureTyping": 34,
+    "FeatureValue": 4,
+    "ItemDefinition": 8,
+    "ItemUsage": 20,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 105,
+    "Package": 1,
+    "PartDefinition": 10,
+    "PartUsage": 11,
+    "PortUsage": 20,
+    "ReferenceSubsetting": 28,
+    "ReferenceUsage": 4,
+    "RequirementDefinition": 2,
+    "RequirementUsage": 2,
+    "SatisfyRequirementUsage": 4,
+    "Subclassification": 4,
+    "SubjectMembership": 4,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PUMP_HOUSING_Pump_housing_and_cylinder"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DRIVE_Adjusting_piston_and_rods"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DRIVE_Adjusting_piston_and_rods.port_PISTON_PRESSURE_A_Piston_pressure_space_A"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DRIVE_Adjusting_piston_and_rods.port_PISTON_PRESSURE_B_Piston_pressure_space_B"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DIAPHRAGMS_Paired_curved_diaphragms"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DIAPHRAGMS_Paired_curved_diaphragms.port_PUMP_SPACE_A_Pressure_space_A"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DIAPHRAGMS_Paired_curved_diaphragms.port_PUMP_SPACE_B_Pressure_space_B"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_REACTION_SPACES_Hydraulic_reaction_spaces_and_linkage"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_REACTION_SPACES_Hydraulic_reaction_spaces_and_linkage.port_REACTION_A_Reaction_space_A_hydraulic_connection"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_REACTION_SPACES_Hydraulic_reaction_spaces_and_linkage.port_REACTION_B_Reaction_space_B_hydraulic_connection"
+    },
+    {
+      "path": "/subsystems/3/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_REACTION_SPACES_Hydraulic_reaction_spaces_and_linkage.port_LINKAGE_A_Hydraulic_linkage_conduit_connection_A"
+    },
+    {
+      "path": "/subsystems/3/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_REACTION_SPACES_Hydraulic_reaction_spaces_and_linkage.port_LINKAGE_B_Hydraulic_linkage_conduit_connection_B"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BELLOWS_Reaction_space_bellows"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BELLOWS_Reaction_space_bellows.port_BELLOWS_VOLUME_A_Bellows_enclosed_space_A"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BELLOWS_Reaction_space_bellows.port_BELLOWS_VOLUME_B_Bellows_enclosed_space_B"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PUMPING_PORTS_Pumping_passages_and_check_valves"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PUMPING_PORTS_Pumping_passages_and_check_valves.port_SUCTION_IN_Suction_line"
+    },
+    {
+      "path": "/subsystems/5/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PUMPING_PORTS_Pumping_passages_and_check_valves.port_INLET_A_Inlet_valve_A"
+    },
+    {
+      "path": "/subsystems/5/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PUMPING_PORTS_Pumping_passages_and_check_valves.port_INLET_B_Inlet_valve_B"
+    },
+    {
+      "path": "/subsystems/5/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PUMPING_PORTS_Pumping_passages_and_check_valves.port_OUTLET_A_Outlet_valve_A"
+    },
+    {
+      "path": "/subsystems/5/ports/4",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PUMPING_PORTS_Pumping_passages_and_check_valves.port_OUTLET_B_Outlet_valve_B"
+    },
+    {
+      "path": "/subsystems/5/ports/5",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PUMPING_PORTS_Pumping_passages_and_check_valves.port_DISCHARGE_OUT_Pressure_line"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DRIVE_MEDIUM_Pressurized_medium_supply_context"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_FLUID_SOURCE_Pumped_fluid_source"
+    },
+    {
+      "path": "/subsystems/7/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FLUID_SOURCE_Pumped_fluid_source.port_SOURCE_OUT_Source_outlet"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_FLUID_SINK_Pumped_fluid_destination"
+    },
+    {
+      "path": "/subsystems/8/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FLUID_SINK_Pumped_fluid_destination.port_SINK_IN_Destination_inlet"
+    },
+    {
+      "path": "/subsystems/9",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_HYDRAULIC_LINKAGE_Hydraulic_linkage_conduit"
+    },
+    {
+      "path": "/subsystems/9/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_HYDRAULIC_LINKAGE_Hydraulic_linkage_conduit.port_LINK_FROM_A_Conduit_end_at_reaction_space_A"
+    },
+    {
+      "path": "/subsystems/9/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_HYDRAULIC_LINKAGE_Hydraulic_linkage_conduit.port_LINK_TO_B_Conduit_end_at_reaction_space_B"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_ACTUATION_PRESSURE_Alternating_pressurized_medium"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_LINKAGE_FLUID_Sealed_hydraulic_linkage_fluid"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_PUMPED_MEDIUM_Pumped_fluid"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_PISTON_MOTION_Reciprocating_piston_rod_motion"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_CURVATURE"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_CURVATURE"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_CURVATURE"
+    },
+    {
+      "path": "/requirements/1",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_SEAL"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_SEAL"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_SEAL"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_PUMP_STROKE_Reciprocate_and_displace_pumped_fluid"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_STABILIZE_DIAPHRAGMS_Hydraulically_support_diaphragm_curvature"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_BELLOWS_PISTON_A"
+    },
+    {
+      "path": "/subsystems/4/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_BELLOWS_PISTON_B"
+    },
+    {
+      "path": "/subsystems/5/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_SRC_SUCTION"
+    },
+    {
+      "path": "/subsystems/5/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IN_A"
+    },
+    {
+      "path": "/subsystems/5/interfaces/2",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IN_B"
+    },
+    {
+      "path": "/subsystems/5/interfaces/3",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_OUT_A"
+    },
+    {
+      "path": "/subsystems/5/interfaces/4",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_OUT_B"
+    },
+    {
+      "path": "/subsystems/5/interfaces/5",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_DISCHARGE_SINK"
+    },
+    {
+      "path": "/subsystems/9/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_REACTION_LINK_A"
+    },
+    {
+      "path": "/subsystems/9/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_REACTION_LINK_B"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

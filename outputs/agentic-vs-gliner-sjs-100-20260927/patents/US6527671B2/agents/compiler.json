@@ -1,0 +1,135 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 3,
+    "AllocationUsage": 1,
+    "ConnectionUsage": 3,
+    "Documentation": 24,
+    "EndFeatureMembership": 8,
+    "Feature": 16,
+    "FeatureChaining": 22,
+    "FeatureMembership": 22,
+    "FeatureTyping": 10,
+    "ItemDefinition": 3,
+    "ItemUsage": 5,
+    "LiteralInteger": 4,
+    "MultiplicityRange": 4,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 46,
+    "Package": 1,
+    "PartDefinition": 4,
+    "PartUsage": 9,
+    "PortUsage": 5,
+    "ReferenceSubsetting": 8,
+    "Subclassification": 2,
+    "SuccessionAsUsage": 1
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_transmission_Planetary_Gear_Train"
+    },
+    {
+      "path": "/subsystems/0/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_transmission_Planetary_Gear_Train.part_sun_gears_First_and_second_sun_gears_arranged_on_respec"
+    },
+    {
+      "path": "/subsystems/0/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_transmission_Planetary_Gear_Train.part_operating_shafts_First_and_second_operating_shafts_carrying_th"
+    },
+    {
+      "path": "/subsystems/0/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_transmission_Planetary_Gear_Train.part_paired_planet_gears_First_and_second_planetary_gears_forming_a_pa"
+    },
+    {
+      "path": "/subsystems/0/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_transmission_Planetary_Gear_Train.part_planetary_shafts_Shafts_rigidly_attaching_each_second_planetar"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_transmission_Planetary_Gear_Train.port_shaft_exchange_Operating_shaft_rotary_exchange"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_transmission_Planetary_Gear_Train.port_carrier_exchange_Carrier_rotary_exchange"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_carrier_Common_Planetary_Carrier"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_carrier_Common_Planetary_Carrier.port_carrier_rotation_Carrier_rotation_coupling"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_carrier_actuator_Carrier_Braking_and_Acceleration_Mechanism"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_carrier_actuator_Carrier_Braking_and_Acceleration_Mechanism.port_actuator_rotation_Carrier_mechanical_coupling"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_drive_source_Rotary_Drive_Source"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_drive_source_Rotary_Drive_Source.port_drive_power_Rotary_power_exchange"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_carrier_mechanical_Carrier_mechanical_rotation_torque"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_shaft_rotary_power_Operating_shaft_rotary_power"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_regulate_carrier_Regulate_carrier_rotation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_external_shaft_exchange"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_carrier_actuator_coupling"
+    },
+    {
+      "path": "/subsystems/1/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_carrier_train_exchange"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

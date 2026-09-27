@@ -1,0 +1,109 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Nut-Rotating Ball Screw with Retaining Pieces",
+    "system_id": "US7207234B2",
+    "description": "Inferred conceptual model of a nut-rotating ball screw. Opposed helical grooves and metal return tubes define closed circulation routes for load balls; interposed retaining pieces separate adjacent balls.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "Mechanical power transmission",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "shaft",
+      "subsystem_name": "Screw shaft",
+      "description": "Screw shaft with an outer-periphery helical ball rolling groove; in the described embodiment, the shaft is supported horizontally and fixed.",
+      "domain": "Mechanical"
+    },
+    {
+      "subsystem_id": "nut",
+      "subsystem_name": "Rotating nut and internal groove",
+      "description": "Nut fitted around the screw shaft with an inner-periphery helical groove; configured to rotate relative to the screw shaft.",
+      "domain": "Mechanical"
+    },
+    {
+      "subsystem_id": "rolling_path",
+      "subsystem_name": "Groove-defined ball rolling path",
+      "description": "Ball rolling route formed between mutually opposed helical grooves on the shaft and nut.",
+      "domain": "Mechanical"
+    },
+    {
+      "subsystem_id": "return_tubes",
+      "subsystem_name": "Metal tubular return paths",
+      "description": "Plural metal tubular paths disposed on the nut connect ends of ball rolling paths; their positions are multiple and phase-shifted in the nut peripheral direction.",
+      "domain": "Mechanical"
+    },
+    {
+      "subsystem_id": "load_balls",
+      "subsystem_name": "Load balls",
+      "description": "Load balls roll in the groove-defined portions and circulate within endless paths, applying power-transmission loads while in the rolling path.",
+      "domain": "Mechanical"
+    },
+    {
+      "subsystem_id": "retainers",
+      "subsystem_name": "Interposed retaining pieces",
+      "description": "Pieces positioned between adjacent load balls; disclosed dependent features include synthetic resin, substantially disk shape, smaller outside diameter, and spherical recesses at axial ends for sliding contact with adjacent balls.",
+      "domain": "Mechanical"
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "ball_circulation",
+      "name": "Load-ball circulation",
+      "flow_type": "mechanical_rolling",
+      "notes": "Closed route comprising groove-defined ball rolling path and return tube(s); no separate inter-subsystem connection is implied by this aggregate route."
+    },
+    {
+      "flow_id": "nut_rotation",
+      "name": "Nut rotation relative to shaft",
+      "flow_type": "mechanical_rotary",
+      "notes": "Claim 1 specifies a nut-rotation configuration; drive source details are not included in this model."
+    },
+    {
+      "flow_id": "ball_retention_contact",
+      "name": "Retaining-piece contact with adjacent load balls",
+      "flow_type": "mechanical_contact",
+      "notes": "Claim 5 describes spherical recesses receiving partial ball surfaces and sliding contact."
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "circulate_balls",
+        "name": "Circulate load balls and transmit load",
+        "owner": "load_balls",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Relative helical motion of nut and screw shaft causes load balls to roll along the groove-defined ball rolling path."
+          },
+          {
+            "step_no": 2,
+            "description": "Load balls move through return tubes connecting the rolling-path ends and continue around the endless circulation route."
+          },
+          {
+            "step_no": 3,
+            "description": "Load balls in the ball rolling path receive power-transmission loads."
+          }
+        ]
+      },
+      {
+        "action_id": "separate_adjacent_balls",
+        "name": "Separate adjacent load balls",
+        "owner": "retainers",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Place retaining pieces between mutually adjacent load balls in the endless circulation path."
+          },
+          {
+            "step_no": 2,
+            "description": "In the described embodiment, adjacent ball surface portions fit the retaining-piece recesses and slide against the pieces; the patent describes this arrangement as restricting mutual rubbing and side-by-side arrangement at the scoop-up portion."
+          }
+        ]
+      }
+    ]
+  }
+}

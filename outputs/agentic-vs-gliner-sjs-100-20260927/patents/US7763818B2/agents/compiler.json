@@ -1,0 +1,144 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 4,
+    "AllocationUsage": 1,
+    "ConnectionUsage": 1,
+    "Documentation": 27,
+    "EndFeatureMembership": 6,
+    "Feature": 10,
+    "FeatureChaining": 16,
+    "FeatureMembership": 29,
+    "FeatureTyping": 11,
+    "FlowEnd": 2,
+    "FlowUsage": 1,
+    "ItemDefinition": 4,
+    "ItemUsage": 6,
+    "LiteralInteger": 5,
+    "MultiplicityRange": 5,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 51,
+    "Package": 1,
+    "PartDefinition": 4,
+    "PartUsage": 10,
+    "PortUsage": 6,
+    "Redefinition": 2,
+    "ReferenceSubsetting": 6,
+    "ReferenceUsage": 2,
+    "Subclassification": 2,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PLANAR_Planar_bistable_compliant_member"
+    },
+    {
+      "path": "/subsystems/0/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_PLANAR_Planar_bistable_compliant_member.part_RIGID_MEMBERS_First_and_second_rigid_members_of_the_four_ba"
+    },
+    {
+      "path": "/subsystems/0/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_PLANAR_Planar_bistable_compliant_member.part_COMPLIANT_MEMBERS_First_and_second_compliant_members_of_the_fou"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PLANAR_Planar_bistable_compliant_member.port_PLANAR_IN_Actuation_input"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PLANAR_Planar_bistable_compliant_member.port_PLANAR_OUT_Motion_transmitting_output"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SPHERICAL_Spherical_slider_crank_mechanism"
+    },
+    {
+      "path": "/subsystems/1/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SPHERICAL_Spherical_slider_crank_mechanism.part_COUPLER_Coupler_link"
+    },
+    {
+      "path": "/subsystems/1/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SPHERICAL_Spherical_slider_crank_mechanism.part_OUTLINK_Output_link"
+    },
+    {
+      "path": "/subsystems/1/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SPHERICAL_Spherical_slider_crank_mechanism.part_UNION_Collapsible_union__optionally_a_compliant_tor"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SPHERICAL_Spherical_slider_crank_mechanism.port_SPH_IN_Coupler_input"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SPHERICAL_Spherical_slider_crank_mechanism.port_SPH_OUT_Output_link_motion"
+    },
+    {
+      "path": "/subsystems/1/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SPHERICAL_Spherical_slider_crank_mechanism.port_SPH_BASE_HINGE_Output_link_base_hinge"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BASE_Base_substrate"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BASE_Base_substrate.port_BASE_HINGE_Output_link_hinge_support"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_REFLECTOR_Reflective_surface"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_ROT_FLOW_Planar_output_motion_to_spherical_mechanism"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_HINGE_FLOW_Output_link_hinge_constraint"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_POSITION_Convert_planar_input_to_out_of_plane_position"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_PLANAR_TO_SPHERICAL"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_OUTPUT_TO_BASE_HINGE"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

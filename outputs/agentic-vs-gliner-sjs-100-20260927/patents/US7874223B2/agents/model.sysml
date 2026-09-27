@@ -1,0 +1,140 @@
+package Model__Adjustable_Compliant_Mechanism {
+    private import ScalarValues::*;
+    doc SJS_Source
+    /* SJS_JSON_V1
+     * {"$schema": "sjs/1.0", "model_meta": {"system_name": "Adjustable Compliant Mechanism", "system_id": "US7874223B2", "description": "Concept model of an adjustable compliant mechanism using two perpendicular sliders, resilient members, a pivoting link, and adjustment of resilient-member length to provide an adjustable substantially constant force.", "version": "1.0", "lifecycle_stage": "concept", "domain": "mechanical compliant mechanisms", "maturity": "draft", "date_modified": "2026-09-27"}, "subsystems": [{"subsystem_id": "SUPPORTS", "subsystem_name": "Perpendicular Slider Supports", "description": "Two support structures constrain respective sliders along perpendicular translational axes.", "domain": "mechanical", "functional_basis": ["guide sliders"]}, {"subsystem_id": "SLIDERS", "subsystem_name": "Slider Pair", "description": "First and second slidable structures translate along their respective support structures; applied force is received at the first slider.", "domain": "mechanical", "functional_basis": ["receive applied force", "translate along axes"], "ports": [{"port_id": "P_SLIDER_FORCE_IN", "name": "Applied force at first slider", "direction": "in", "flow_type": "mechanical_force"}, {"port_id": "P_OPPOSING_FORCE", "name": "Opposing-force output at mechanism boundary", "direction": "out", "flow_type": "mechanical_force"}], "interfaces": [{"interface_id": "I_APPLIED_FORCE", "mating_subsystem": "APPLIED_FORCE_BOUNDARY", "port_this": "P_SLIDER_FORCE_IN", "port_mate": "P_APPLIED_FORCE", "flow_ref": "F_INPUT", "interface_type": "mechanical force"}, {"interface_id": "I_OPPOSING_FORCE_BOUNDARY", "mating_subsystem": "FORCE_OUTPUT_BOUNDARY", "port_this": "P_OPPOSING_FORCE", "port_mate": "P_FORCE_RESPONSE", "flow_ref": "F_OUTPUT", "interface_type": "mechanical force"}]}, {"subsystem_id": "RESILIENT", "subsystem_name": "Resilient Members", "description": "Two equal-stiffness resilient members act on respective sliders; changing one member's length adjusts force output.", "domain": "mechanical", "functional_basis": ["apply restoring force"]}, {"subsystem_id": "LINK", "subsystem_name": "Pivoting Linkage", "description": "A link is pivotally coupled directly or indirectly to both sliders and transfers force between them.", "domain": "mechanical", "functional_basis": ["transfer force"]}, {"subsystem_id": "ADJUST", "subsystem_name": "Length Adjustment Mechanism", "description": "Mechanically coupled adjustment block or mechanism changes length of one resilient member; embodiments include threaded rod, movable head, or adjustment pin.", "domain": "mechanical", "functional_basis": ["adjust resilient-member length"]}, {"subsystem_id": "APPLIED_FORCE_BOUNDARY", "subsystem_name": "Applied-Force Source", "description": "External applied-force boundary, representing force applied to the first slider directly or optionally through a mechanical connector; user/connector are contextual embodiments, not required mechanism components.", "domain": "external", "ports": [{"port_id": "P_APPLIED_FORCE", "name": "Applied force boundary", "direction": "out", "flow_type": "mechanical_force"}]}, {"subsystem_id": "FORCE_OUTPUT_BOUNDARY", "subsystem_name": "Opposing-Force Boundary", "description": "Abstract boundary representing the mechanism's substantially constant acting force against applied force; no receiving load is asserted.", "domain": "external", "ports": [{"port_id": "P_FORCE_RESPONSE", "name": "Mechanism force response", "direction": "in", "flow_type": "mechanical_force"}]}], "item_flows": [{"flow_id": "F_INPUT", "name": "Applied force", "flow_type": "mechanical_force", "notes": "External force applied to first slider."}, {"flow_id": "F_OUTPUT", "name": "Opposing force", "flow_type": "mechanical_force", "notes": "Substantially constant acting force provided against the applied force; modeled at the mechanism boundary without asserting a separate receiving load."}], "requirements": [{"req_id": "R_CONST", "category": "performance", "priority": "high", "statement": "With equal-stiffness resilient members, provide a substantially constant acting force against applied force as sliders translate along the full respective support-axis lengths.", "rationale": "Claim 1; claim 7 states the corresponding behavior across translational axes.", "satisfied_by": ["RESILIENT", "LINK", "SLIDERS"]}], "behaviour": {"actions": [{"action_id": "A_ADJUST", "name": "Adjust force setting by changing resilient-member length", "owner": "ADJUST", "steps": [{"step_no": 1, "description": "Mechanically change the length of one resilient member using the adjustment mechanism."}, {"step_no": 2, "description": "The changed resilient-member equilibrium/length adjusts the mechanism's force output."}]}, {"action_id": "A_FORCE", "name": "Transmit applied force and provide opposing force", "owner": "LINK", "steps": [{"step_no": 1, "description": "Applied force moves the first slider and loads its resilient member."}, {"step_no": 2, "description": "The pivoting link transfers a portion of the applied force to the second slider, loading its resilient member."}, {"step_no": 3, "description": "The coupled mechanism provides a substantially constant opposing force over the stated slider travel."}]}]}}
+     */
+    doc
+    /* {"system_name": "Adjustable Compliant Mechanism", "system_id": "US7874223B2", "description": "Concept model of an adjustable compliant mechanism using two perpendicular sliders, resilient members, a pivoting link, and adjustment of resilient-member length to provide an adjustable substantially constant force.", "version": "1.0", "lifecycle_stage": "concept", "domain": "mechanical compliant mechanisms", "maturity": "draft", "date_modified": "2026-09-27"} */
+    item def FlowType__mechanical_force {
+        doc
+        /* {"flow_type": "mechanical_force"} */
+    }
+    part def Component_SUPPORTS_Perpendicular_Slider_Supports {
+        doc
+        /* {"subsystem_id": "SUPPORTS", "subsystem_name": "Perpendicular Slider Supports", "description": "Two support structures constrain respective sliders along perpendicular translational axes.", "domain": "mechanical", "functional_basis": ["guide sliders"]} */
+    }
+    part def Component_SLIDERS_Slider_Pair {
+        doc
+        /* {"subsystem_id": "SLIDERS", "subsystem_name": "Slider Pair", "description": "First and second slidable structures translate along their respective support structures; applied force is received at the first slider.", "domain": "mechanical", "functional_basis": ["receive applied force", "translate along axes"], "ports": [{"port_id": "P_SLIDER_FORCE_IN", "name": "Applied force at first slider", "direction": "in", "flow_type": "mechanical_force"}, {"port_id": "P_OPPOSING_FORCE", "name": "Opposing-force output at mechanism boundary", "direction": "out", "flow_type": "mechanical_force"}], "interfaces": [{"interface_id": "I_APPLIED_FORCE", "mating_subsystem": "APPLIED_FORCE_BOUNDARY", "port_this": "P_SLIDER_FORCE_IN", "port_mate": "P_APPLIED_FORCE", "flow_ref": "F_INPUT", "interface_type": "mechanical force"}, {"interface_id": "I_OPPOSING_FORCE_BOUNDARY", "mating_subsystem": "FORCE_OUTPUT_BOUNDARY", "port_this": "P_OPPOSING_FORCE", "port_mate": "P_FORCE_RESPONSE", "flow_ref": "F_OUTPUT", "interface_type": "mechanical force"}]} */
+        port port_P_SLIDER_FORCE_IN_Applied_force_at_first_slider {
+            doc
+            /* {"port_id": "P_SLIDER_FORCE_IN", "name": "Applied force at first slider", "direction": "in", "flow_type": "mechanical_force"} */
+            in item payload : FlowType__mechanical_force;
+        }
+        port port_P_OPPOSING_FORCE_Opposing_force_output_at_mechanism_boundary {
+            doc
+            /* {"port_id": "P_OPPOSING_FORCE", "name": "Opposing-force output at mechanism boundary", "direction": "out", "flow_type": "mechanical_force"} */
+            out item payload : FlowType__mechanical_force;
+        }
+    }
+    part def Component_RESILIENT_Resilient_Members {
+        doc
+        /* {"subsystem_id": "RESILIENT", "subsystem_name": "Resilient Members", "description": "Two equal-stiffness resilient members act on respective sliders; changing one member's length adjusts force output.", "domain": "mechanical", "functional_basis": ["apply restoring force"]} */
+    }
+    part def Component_LINK_Pivoting_Linkage {
+        doc
+        /* {"subsystem_id": "LINK", "subsystem_name": "Pivoting Linkage", "description": "A link is pivotally coupled directly or indirectly to both sliders and transfers force between them.", "domain": "mechanical", "functional_basis": ["transfer force"]} */
+    }
+    part def Component_ADJUST_Length_Adjustment_Mechanism {
+        doc
+        /* {"subsystem_id": "ADJUST", "subsystem_name": "Length Adjustment Mechanism", "description": "Mechanically coupled adjustment block or mechanism changes length of one resilient member; embodiments include threaded rod, movable head, or adjustment pin.", "domain": "mechanical", "functional_basis": ["adjust resilient-member length"]} */
+    }
+    part def Component_APPLIED_FORCE_BOUNDARY_Applied_Force_Source {
+        doc
+        /* {"subsystem_id": "APPLIED_FORCE_BOUNDARY", "subsystem_name": "Applied-Force Source", "description": "External applied-force boundary, representing force applied to the first slider directly or optionally through a mechanical connector; user/connector are contextual embodiments, not required mechanism components.", "domain": "external", "ports": [{"port_id": "P_APPLIED_FORCE", "name": "Applied force boundary", "direction": "out", "flow_type": "mechanical_force"}]} */
+        port port_P_APPLIED_FORCE_Applied_force_boundary {
+            doc
+            /* {"port_id": "P_APPLIED_FORCE", "name": "Applied force boundary", "direction": "out", "flow_type": "mechanical_force"} */
+            out item payload : FlowType__mechanical_force;
+        }
+    }
+    part def Component_FORCE_OUTPUT_BOUNDARY_Opposing_Force_Boundary {
+        doc
+        /* {"subsystem_id": "FORCE_OUTPUT_BOUNDARY", "subsystem_name": "Opposing-Force Boundary", "description": "Abstract boundary representing the mechanism's substantially constant acting force against applied force; no receiving load is asserted.", "domain": "external", "ports": [{"port_id": "P_FORCE_RESPONSE", "name": "Mechanism force response", "direction": "in", "flow_type": "mechanical_force"}]} */
+        port port_P_FORCE_RESPONSE_Mechanism_force_response {
+            doc
+            /* {"port_id": "P_FORCE_RESPONSE", "name": "Mechanism force response", "direction": "in", "flow_type": "mechanical_force"} */
+            in item payload : FlowType__mechanical_force;
+        }
+    }
+    item def Flow_F_INPUT_Applied_force :> FlowType__mechanical_force {
+        doc
+        /* {"flow_id": "F_INPUT", "name": "Applied force", "flow_type": "mechanical_force", "notes": "External force applied to first slider."} */
+    }
+    item def Flow_F_OUTPUT_Opposing_force :> FlowType__mechanical_force {
+        doc
+        /* {"flow_id": "F_OUTPUT", "name": "Opposing force", "flow_type": "mechanical_force", "notes": "Substantially constant acting force provided against the applied force; modeled at the mechanism boundary without asserting a separate receiving load."} */
+    }
+    requirement def Requirement_R_CONST {
+        doc
+        /* {"req_id": "R_CONST", "category": "performance", "priority": "high", "statement": "With equal-stiffness resilient members, provide a substantially constant acting force against applied force as sliders translate along the full respective support-axis lengths.", "rationale": "Claim 1; claim 7 states the corresponding behavior across translational axes.", "satisfied_by": ["RESILIENT", "LINK", "SLIDERS"]} */
+    }
+    requirement requirement_R_CONST : Requirement_R_CONST;
+    action def Action_A_ADJUST_Adjust_force_setting_by_changing_resilient_me {
+        doc
+        /* {"action_id": "A_ADJUST", "name": "Adjust force setting by changing resilient-member length", "owner": "ADJUST", "steps": [{"step_no": 1, "description": "Mechanically change the length of one resilient member using the adjustment mechanism."}, {"step_no": 2, "description": "The changed resilient-member equilibrium/length adjusts the mechanism's force output."}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "Mechanically change the length of one resilient member using the adjustment mechanism."} */
+        }
+        then action step_2 {
+            doc
+            /* {"step_no": 2, "description": "The changed resilient-member equilibrium/length adjusts the mechanism's force output."} */
+        }
+    }
+    action def Action_A_FORCE_Transmit_applied_force_and_provide_opposing_f {
+        doc
+        /* {"action_id": "A_FORCE", "name": "Transmit applied force and provide opposing force", "owner": "LINK", "steps": [{"step_no": 1, "description": "Applied force moves the first slider and loads its resilient member."}, {"step_no": 2, "description": "The pivoting link transfers a portion of the applied force to the second slider, loading its resilient member."}, {"step_no": 3, "description": "The coupled mechanism provides a substantially constant opposing force over the stated slider travel."}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "Applied force moves the first slider and loads its resilient member."} */
+        }
+        then action step_2 {
+            doc
+            /* {"step_no": 2, "description": "The pivoting link transfers a portion of the applied force to the second slider, loading its resilient member."} */
+        }
+        then action step_3 {
+            doc
+            /* {"step_no": 3, "description": "The coupled mechanism provides a substantially constant opposing force over the stated slider travel."} */
+        }
+    }
+    part systemModel {
+        part component_SUPPORTS_Perpendicular_Slider_Supports
+            : Component_SUPPORTS_Perpendicular_Slider_Supports;
+        part component_SLIDERS_Slider_Pair : Component_SLIDERS_Slider_Pair;
+        part component_RESILIENT_Resilient_Members : Component_RESILIENT_Resilient_Members;
+        part component_LINK_Pivoting_Linkage : Component_LINK_Pivoting_Linkage;
+        part component_ADJUST_Length_Adjustment_Mechanism
+            : Component_ADJUST_Length_Adjustment_Mechanism;
+        part component_APPLIED_FORCE_BOUNDARY_Applied_Force_Source
+            : Component_APPLIED_FORCE_BOUNDARY_Applied_Force_Source;
+        part component_FORCE_OUTPUT_BOUNDARY_Opposing_Force_Boundary
+            : Component_FORCE_OUTPUT_BOUNDARY_Opposing_Force_Boundary;
+        action action_A_ADJUST_Adjust_force_setting_by_changing_resilient_me
+            : Action_A_ADJUST_Adjust_force_setting_by_changing_resilient_me;
+        action action_A_FORCE_Transmit_applied_force_and_provide_opposing_f
+            : Action_A_FORCE_Transmit_applied_force_and_provide_opposing_f;
+    }
+    satisfy requirement_R_CONST by systemModel.component_RESILIENT_Resilient_Members;
+    satisfy requirement_R_CONST by systemModel.component_LINK_Pivoting_Linkage;
+    satisfy requirement_R_CONST by systemModel.component_SLIDERS_Slider_Pair;
+    allocate systemModel.action_A_ADJUST_Adjust_force_setting_by_changing_resilient_me
+        to systemModel.component_ADJUST_Length_Adjustment_Mechanism;
+    allocate systemModel.action_A_FORCE_Transmit_applied_force_and_provide_opposing_f
+        to systemModel.component_LINK_Pivoting_Linkage;
+    doc
+    /* {"interface_id": "I_APPLIED_FORCE", "mating_subsystem": "APPLIED_FORCE_BOUNDARY", "port_this": "P_SLIDER_FORCE_IN", "port_mate": "P_APPLIED_FORCE", "flow_ref": "F_INPUT", "interface_type": "mechanical force"} */
+    flow connection_I_APPLIED_FORCE
+        from systemModel.component_APPLIED_FORCE_BOUNDARY_Applied_Force_Source
+            .port_P_APPLIED_FORCE_Applied_force_boundary.payload
+        to systemModel.component_SLIDERS_Slider_Pair
+            .port_P_SLIDER_FORCE_IN_Applied_force_at_first_slider.payload;
+    doc
+    /* {"interface_id": "I_OPPOSING_FORCE_BOUNDARY", "mating_subsystem": "FORCE_OUTPUT_BOUNDARY", "port_this": "P_OPPOSING_FORCE", "port_mate": "P_FORCE_RESPONSE", "flow_ref": "F_OUTPUT", "interface_type": "mechanical force"} */
+    flow connection_I_OPPOSING_FORCE_BOUNDARY
+        from systemModel.component_SLIDERS_Slider_Pair
+            .port_P_OPPOSING_FORCE_Opposing_force_output_at_mechanism_boundary.payload
+        to systemModel.component_FORCE_OUTPUT_BOUNDARY_Opposing_Force_Boundary
+            .port_P_FORCE_RESPONSE_Mechanism_force_response.payload;
+} // package Model__Adjustable_Compliant_Mechanism

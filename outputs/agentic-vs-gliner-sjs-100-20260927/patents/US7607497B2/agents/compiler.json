@@ -1,0 +1,197 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 6,
+    "AllocationUsage": 2,
+    "Documentation": 42,
+    "EndFeatureMembership": 4,
+    "Feature": 8,
+    "FeatureChaining": 8,
+    "FeatureMembership": 49,
+    "FeatureTyping": 26,
+    "ItemDefinition": 10,
+    "ItemUsage": 17,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 65,
+    "Package": 1,
+    "PartDefinition": 7,
+    "PartUsage": 8,
+    "PortUsage": 17,
+    "ReferenceSubsetting": 4,
+    "Subclassification": 6,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BODY_Elongate_tractor_body"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BODY_Elongate_tractor_body.port_P_BODY_ADVANCE_Relative_body_advance_output"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BODY_Elongate_tractor_body.port_P_BODY_SLIDE_Actuation_assembly_relative_sliding_interface"
+    },
+    {
+      "path": "/subsystems/0/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BODY_Elongate_tractor_body.port_P_BODY_LINK_ANCHOR_Roller_link_first_end_anchor"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_FIRST_ACT_First_actuation_assembly"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FIRST_ACT_First_actuation_assembly.port_P_ACT_AXIAL_Axial_sliding_interface"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FIRST_ACT_First_actuation_assembly.port_P_HYD_IN_Hydraulic_fluid_input"
+    },
+    {
+      "path": "/subsystems/1/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FIRST_ACT_First_actuation_assembly.port_P_ACT_LINK_AXIAL_Longitudinal_roller_link_actuation_interface"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SECOND_ACT_Second_actuation_assembly"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SECOND_ACT_Second_actuation_assembly.port_P_TOGGLE_AXIAL_Toggle_actuation_interface"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SECOND_ACT_Second_actuation_assembly.port_P_TOGGLE_LINK_AXIAL_Longitudinal_toggle_link_actuation_interface"
+    },
+    {
+      "path": "/subsystems/2/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SECOND_ACT_Second_actuation_assembly.port_P_HYD_IN2_Second_cylinder_hydraulic_fluid_input"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_LINKAGE_Roller__toe__and_toggle_linkage"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LINKAGE_Roller__toe__and_toggle_linkage.port_P_LINK_CONTACT_Toe_link_contact_output"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LINKAGE_Roller__toe__and_toggle_linkage.port_P_LINK_ACT1_Roller_mechanism_engagement_input"
+    },
+    {
+      "path": "/subsystems/3/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LINKAGE_Roller__toe__and_toggle_linkage.port_P_LINK_ACT2_Toggle_link_actuation_input"
+    },
+    {
+      "path": "/subsystems/3/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LINKAGE_Roller__toe__and_toggle_linkage.port_P_LINK_RADIAL_Toe_link_radial_motion_output"
+    },
+    {
+      "path": "/subsystems/3/ports/4",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LINKAGE_Roller__toe__and_toggle_linkage.port_P_LINK_BODY_ANCHOR_Roller_link_first_end_body_coupling"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PROPULSION_Propulsion_assembly"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PROPULSION_Propulsion_assembly.port_P_PROP_ADVANCE_Body_advance_output"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PASSAGE_Passage_inner_wall"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PASSAGE_Passage_inner_wall.port_P_WALL_CONTACT_Passage_wall_contact_input"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_HYDRAULIC_Hydraulic_fluid_supply_interface"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_HYDRAULIC_Hydraulic_fluid_supply_interface.port_P_HYD_OUT_Hydraulic_fluid_output"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_HYD_Pressurized_hydraulic_fluid"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_AXIAL_Longitudinal_actuation_motion"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_RADIAL_Radial_toe_link_motion_and_force"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_CONTACT_Toe_link_passage_contact_force"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_ADVANCE_Body_advance_motion"
+    },
+    {
+      "path": "/item_flows/5",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_LINK_ANCHOR_Roller_link_first_end_body_coupling"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_EXPAND_Expand_gripper_linkage"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_ADVANCE_Advance_tractor_body"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

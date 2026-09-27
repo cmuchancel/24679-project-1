@@ -1,0 +1,101 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 7,
+    "AllocationUsage": 2,
+    "Documentation": 20,
+    "EndFeatureMembership": 4,
+    "Feature": 8,
+    "FeatureChaining": 8,
+    "FeatureMembership": 20,
+    "FeatureTyping": 6,
+    "LiteralInteger": 6,
+    "MultiplicityRange": 6,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 43,
+    "Package": 1,
+    "PartDefinition": 4,
+    "PartUsage": 11,
+    "ReferenceSubsetting": 4,
+    "RequirementDefinition": 1,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SLEEVE_Sleeve"
+    },
+    {
+      "path": "/subsystems/0/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SLEEVE_Sleeve.part_GROOVE_Receiving_groove_with_axially_extending_first"
+    },
+    {
+      "path": "/subsystems/0/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SLEEVE_Sleeve.part_RETAINER_Restricting_member_seated_on_annular_recessio"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DRIVER_Driving_member"
+    },
+    {
+      "path": "/subsystems/1/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_DRIVER_Driving_member.part_BALL_HEAD_Polygonal_ball_head_inserted_in_receiving_gro"
+    },
+    {
+      "path": "/subsystems/1/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_DRIVER_Driving_member.part_WORKING_PORTION_Working_portion_integrally_formed_with_drivin"
+    },
+    {
+      "path": "/subsystems/1/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_DRIVER_Driving_member.part_RADIAL_FLANGE_Integral_flange_between_working_portion_and_b"
+    },
+    {
+      "path": "/subsystems/1/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_DRIVER_Driving_member.part_DETENT_Optional_resilient_detent_variant__engaging_m"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BIAS_Elastic_bias_member"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ROTATABLE_TOOL_Rotatable_tool"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_CLAIM_GEOMETRY"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_SET_FIRST_Retain_non_swingable_position"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_MOVE_SECOND_Enable_swingable_position"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

@@ -1,0 +1,172 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 3,
+    "AllocationUsage": 1,
+    "Documentation": 21,
+    "EndFeatureMembership": 4,
+    "Feature": 15,
+    "FeatureChaining": 28,
+    "FeatureMembership": 15,
+    "FeatureReferenceExpression": 9,
+    "FeatureTyping": 14,
+    "FeatureValue": 9,
+    "FlowEnd": 2,
+    "FlowUsage": 1,
+    "ItemDefinition": 2,
+    "ItemUsage": 2,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 63,
+    "Package": 1,
+    "PartDefinition": 5,
+    "PartUsage": 6,
+    "PortUsage": 2,
+    "Redefinition": 2,
+    "ReferenceSubsetting": 13,
+    "ReferenceUsage": 11,
+    "RequirementDefinition": 6,
+    "RequirementUsage": 6,
+    "SatisfyRequirementUsage": 9,
+    "Subclassification": 1,
+    "SubjectMembership": 9,
+    "SuccessionAsUsage": 1
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_shaft_Rotating_shaft"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_crown_Runner_crown"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_blades_Runner_blades"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_blades_Runner_blades.port_water_in_Incoming_water_at_blade_leading_edges"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_band_Runner_band"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_water_Incoming_water"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_water_Incoming_water.port_water_out_Water_output_to_runner"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_water_in_Incoming_water"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_geometry_max"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_geometry_max"
+    },
+    {
+      "path": "/requirements/1",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_axial_location"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_axial_location"
+    },
+    {
+      "path": "/requirements/2",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_water_drive"
+    },
+    {
+      "path": "/requirements/2/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_water_drive"
+    },
+    {
+      "path": "/requirements/2/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_water_drive"
+    },
+    {
+      "path": "/requirements/2/satisfied_by/2",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_water_drive"
+    },
+    {
+      "path": "/requirements/2/satisfied_by/3",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_water_drive"
+    },
+    {
+      "path": "/requirements/3",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_leading_edge_local_minimum"
+    },
+    {
+      "path": "/requirements/3/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_leading_edge_local_minimum"
+    },
+    {
+      "path": "/requirements/4",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_projected_profile_shape"
+    },
+    {
+      "path": "/requirements/4/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_projected_profile_shape"
+    },
+    {
+      "path": "/requirements/5",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_blade_count_angular_bounds"
+    },
+    {
+      "path": "/requirements/5/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_blade_count_angular_bounds"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_drive_runner_Drive_runner_with_water"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_water_to_blades"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

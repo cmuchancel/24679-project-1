@@ -1,0 +1,34 @@
+{
+  "revision": 4,
+  "candidate_sha256": "67a794b170fcce1618d2d9aaef4e619f55de8ad589892cbb45dda9415aed117a",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 4 descriptions and behaviors are supported by cited claim 1 and abstract passages. It correctly distinguishes claim's generic urging means from abstract-supported disk spring and records both assumptions outside SJS. No unsupported numeric constraints or fabricated patent facts identified."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The principal claim components and relationships are retained, including the shaft/load sheave, pressed member and one-way ring force path, pressing member bosses and screw groove, rotation drive member and teeth, limiter, spring, and nut. Earlier omissions on directional overload behavior and limiter geometry are covered. Omitting a separate pair-of-friction-members component is a defensible abstraction for this claim-focused model, given the ring/pressing description."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "The two modeled item flows have compatible source/sink ports and referenced interfaces. The chain-wheel-to-drive-member flow and shaft-to-load-sheave flow are directionally coherent. Internal assembly/force-transfer relationships are prose/action descriptions rather than falsely represented as incompatible flow connections."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Claim content is traceable through citations on component descriptions, ports, interfaces, flows, and actions. Optional requirements are not mandatory; no unsupported obligations are invented. Abstract-specific chain wheel, disk spring, and overload non-transmission claims carry abstract citations."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "The two explicit external rotary connections and locking-tooth mesh are represented with existing compatible ports, once each. Revision 4 leaves fixed, threaded, one-way, spring seating, and nut-positioning assembly relations in descriptions rather than inventing ports/interfaces without a supported flow type. This is a reasonable SJS representation; the earlier demand to encode every mechanical assembly relation as a flow interface would risk ambiguity."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The boundary-flow guidance is applied to the patent-supported chain-wheel input and shaft/load-sheave transmission. Internal structures are modeled separately and no unsupported generic external component or user input has been added."
+    }
+  },
+  "findings": [],
+  "summary": "Independently reviewed saved revision 4 against actual cited patent passages and relevant textbook context/interface guidance. It addresses prior concerns by adding the claim-supported assembly relationships to descriptions, while appropriately avoiding speculative or ambiguous ports/interfaces for fixed, one-way, threaded, and positioning relationships. The supported boundary flows, interfaces, directional overload behavior, and citations are coherent. No remaining actionable findings.",
+  "saved_at": "2026-09-27T03:46:52.018785+00:00"
+}

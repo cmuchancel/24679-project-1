@@ -1,0 +1,242 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 4,
+    "AllocationUsage": 1,
+    "ConnectionUsage": 4,
+    "Documentation": 49,
+    "EndFeatureMembership": 18,
+    "Feature": 28,
+    "FeatureChaining": 52,
+    "FeatureMembership": 54,
+    "FeatureTyping": 25,
+    "FlowEnd": 8,
+    "FlowUsage": 4,
+    "ItemDefinition": 11,
+    "ItemUsage": 16,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 80,
+    "Package": 1,
+    "PartDefinition": 8,
+    "PartUsage": 9,
+    "PortUsage": 16,
+    "Redefinition": 8,
+    "ReferenceSubsetting": 18,
+    "ReferenceUsage": 8,
+    "Subclassification": 7,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_FRAME_Press_frame_and_counter_stopper"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FRAME_Press_frame_and_counter_stopper.port_FRAME_COUNTERSTOP_CONTACT_Counter_stopper_contact"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_FRAME_Press_frame_and_counter_stopper.port_FRAME_SHAFT_MOUNT_Rotatable_shaft_mounting_support"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DRIVE_Drive_unit"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DRIVE_Drive_unit.port_DRIVE_ROT_OUT_Shaft_rotation_output"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SHAFTCAM_Rotatable_shaft_and_eccentric_cam"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SHAFTCAM_Rotatable_shaft_and_eccentric_cam.port_SHAFT_ROT_IN_Drive_rotation_input"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SHAFTCAM_Rotatable_shaft_and_eccentric_cam.port_LINK_ROT_OUT_Linkage_motion_output"
+    },
+    {
+      "path": "/subsystems/2/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SHAFTCAM_Rotatable_shaft_and_eccentric_cam.port_SHAFT_COUPLING_Shaft_arm_bearing_coupling"
+    },
+    {
+      "path": "/subsystems/2/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SHAFTCAM_Rotatable_shaft_and_eccentric_cam.port_SHAFT_FRAME_MOUNT_Frame_mounting_support"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SPRINGCOUPLING_Spring_and_arm_coupling"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SPRINGCOUPLING_Spring_and_arm_coupling.port_COUPLING_SHAFT_SIDE_Shaft_mounted_arm_bearing_coupling"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SPRINGCOUPLING_Spring_and_arm_coupling.port_COUPLING_LEVER_SIDE_Second_lever_shoulder_bearing_coupling"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_LEVER2_Second_lever"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LEVER2_Second_lever.port_LEVER2_ROT_IN_Shaft_cam_motion_input"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LEVER2_Second_lever.port_LEVER2_TOGGLE_OUT_Toggle_motion_output"
+    },
+    {
+      "path": "/subsystems/4/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LEVER2_Second_lever.port_LEVER2_COUPLING_Shoulder_bearing_coupling"
+    },
+    {
+      "path": "/subsystems/4/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LEVER2_Second_lever.port_LEVER2_STOP_CONTACT_Lever_stopper_contact"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_LEVER1_First_lever"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LEVER1_First_lever.port_LEVER1_TOGGLE_IN_Toggle_motion_input"
+    },
+    {
+      "path": "/subsystems/5/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LEVER1_First_lever.port_LEVER1_TOOL_OUT_Tool_motion_output"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_TOOL_Pressing_tool"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_TOOL_Pressing_tool.port_TOOL_MOTION_IN_Lever_motion_input"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_COUNTERTOOL_Counter_tool"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_ROT_shaft_rotation"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_LINK_MOTION_toggle_linkage_motion"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_TOOL_MOTION_pressing_tool_travel_and_force"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_CAM_CONTACT_Eccentric_cam_engagement"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_SPRING_COUPLING_Spring_mediated_shaft_lever_coupling"
+    },
+    {
+      "path": "/item_flows/5",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_STOP_CONTACT_Stopper_contact"
+    },
+    {
+      "path": "/item_flows/6",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_SHAFT_FRAME_SUPPORT_Shaft_frame_mounting_support"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_PRESS_CYCLE_Execute_approach_and_eccentric_working_stroke"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_FRAME_LEVER_STOP_IF"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_FRAME_SHAFT_MOUNT_IF"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_DRIVE_SHAFT_IF"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_SHAFT_LEVER_IF"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_COUPLING_SHAFT_IF"
+    },
+    {
+      "path": "/subsystems/3/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_COUPLING_LEVER_IF"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_LEVER_JOINT_IF"
+    },
+    {
+      "path": "/subsystems/5/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_LEVER_TOOL_IF"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

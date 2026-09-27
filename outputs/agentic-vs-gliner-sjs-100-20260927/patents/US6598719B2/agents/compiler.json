@@ -1,0 +1,240 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 7,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 5,
+    "Documentation": 41,
+    "EndFeatureMembership": 16,
+    "Feature": 36,
+    "FeatureChaining": 56,
+    "FeatureMembership": 42,
+    "FeatureReferenceExpression": 6,
+    "FeatureTyping": 22,
+    "FeatureValue": 6,
+    "FlowEnd": 2,
+    "FlowUsage": 1,
+    "ItemDefinition": 5,
+    "ItemUsage": 11,
+    "LiteralInteger": 1,
+    "MultiplicityRange": 1,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 83,
+    "Package": 1,
+    "PartDefinition": 7,
+    "PartUsage": 9,
+    "PortUsage": 11,
+    "Redefinition": 2,
+    "ReferenceSubsetting": 22,
+    "ReferenceUsage": 8,
+    "RequirementDefinition": 2,
+    "RequirementUsage": 2,
+    "SatisfyRequirementUsage": 6,
+    "Subclassification": 3,
+    "SubjectMembership": 6,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ROT1_First_Rotation_Member__Flat_Pulley"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ROT1_First_Rotation_Member__Flat_Pulley.port_rot1_belt_Belt_interaction"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ROT2_Second_Rotation_Member__Case"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ROT2_Second_Rotation_Member__Case.port_rot2_shaft_Shaft_support_reaction"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BELT_Friction_Member__Belt"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BELT_Friction_Member__Belt.port_belt_surface_Belt_interaction"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ROCK_Rocking_Member__Rocking_Plate"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ROCK_Rocking_Member__Rocking_Plate.port_rock_belt_Belt_contact"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ROCK_Rocking_Member__Rocking_Plate.port_rock_shaft_Shaft_reaction"
+    },
+    {
+      "path": "/subsystems/3/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ROCK_Rocking_Member__Rocking_Plate.port_rock_bias_Spring_bias_interaction"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SHAFT_Rocking_Member_Shaft"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SHAFT_Rocking_Member_Shaft.port_shaft_rock_Rocking_support"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SHAFT_Rocking_Member_Shaft.port_shaft_bush_Shaft_end_support"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BUSH_Shaft_End_Support_Members"
+    },
+    {
+      "path": "/subsystems/5/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_BUSH_Shaft_End_Support_Members.part_bush_pair_Support_bushes_at_respective_shaft_ends"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BUSH_Shaft_End_Support_Members.port_bush_shaft_Shaft_support"
+    },
+    {
+      "path": "/subsystems/5/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BUSH_Shaft_End_Support_Members.port_bush_case_Bore_reaction"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SPRING_Biasing_Member__Leaf_Spring"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SPRING_Biasing_Member__Leaf_Spring.port_spring_rock_Bias_interaction"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_belt_tension_Belt_tension_and_friction_load"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_shaft_load_Rocking_member_shaft_reaction_load"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_spring_bias_Spring_bias_force"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_SUPPORT"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_SUPPORT"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_SUPPORT"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/2",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_SUPPORT"
+    },
+    {
+      "path": "/requirements/1",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_ONEWAY"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_ONEWAY"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_ONEWAY"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/2",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_ONEWAY"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_BIAS_Bias_belt_span"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_TRANSFER_Transmit_or_block_torque"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_belt_to_rot1"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_belt_to_rock"
+    },
+    {
+      "path": "/subsystems/3/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_rock_to_shaft"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_shaft_to_bush"
+    },
+    {
+      "path": "/subsystems/5/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_bush_to_case"
+    },
+    {
+      "path": "/subsystems/6/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_spring_to_rock"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

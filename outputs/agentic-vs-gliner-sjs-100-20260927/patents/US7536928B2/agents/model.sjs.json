@@ -1,0 +1,232 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Bridge-Type Ball Screw",
+    "system_id": "US7536928B2",
+    "description": "Inferred model of a bridge-type ball screw with opposed helical grooves, circulating balls, and a contact angle selected for compound-load durability.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "Mechanical power transmission",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "shaft",
+      "subsystem_name": "Screw Shaft",
+      "description": "Shaft with an outer circumferential helical screw groove forming one side of the ball rolling passage.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "shaft_groove_contact",
+          "name": "Shaft groove rolling contact",
+          "direction": "inout",
+          "flow_type": "mechanical_contact"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "shaft_ball_contact",
+          "mating_subsystem": "balls",
+          "port_this": "shaft_groove_contact",
+          "port_mate": "ball_race_contact",
+          "flow_ref": "groove_rolling_contact",
+          "interface_type": "rolling_contact"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "nut",
+      "subsystem_name": "Nut",
+      "description": "Mating nut with a corresponding inner circumferential helical screw groove; bridge members are fitted onto its barrel.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "nut_groove_contact",
+          "name": "Nut groove rolling contact",
+          "direction": "inout",
+          "flow_type": "mechanical_contact"
+        },
+        {
+          "port_id": "nut_bridge_mount",
+          "name": "Bridge member mounting",
+          "direction": "inout",
+          "flow_type": "mechanical_contact"
+        },
+        {
+          "port_id": "nut_bridge_passage",
+          "name": "Nut groove to bridge connecting-groove passage",
+          "direction": "inout",
+          "flow_type": "mechanical_motion"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "nut_ball_contact",
+          "mating_subsystem": "balls",
+          "port_this": "nut_groove_contact",
+          "port_mate": "ball_race_contact",
+          "flow_ref": "groove_rolling_contact",
+          "interface_type": "rolling_contact"
+        },
+        {
+          "interface_id": "nut_bridge_fit",
+          "mating_subsystem": "bridges",
+          "port_this": "nut_bridge_mount",
+          "port_mate": "bridge_nut_mount",
+          "flow_ref": "bridge_mount_contact",
+          "interface_type": "fitted_contact"
+        },
+        {
+          "interface_id": "nut_bridge_circulation",
+          "mating_subsystem": "bridges",
+          "port_this": "nut_bridge_passage",
+          "port_mate": "bridge_nut_passage",
+          "flow_ref": "ball_circulation",
+          "interface_type": "circulation_passage"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "balls",
+      "subsystem_name": "Rolling Balls",
+      "description": "Multiple balls rollably contained in the passage formed by the opposed shaft and nut grooves and circulate through bridge connecting grooves.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "ball_race_contact",
+          "name": "Rolling contact with opposed grooves",
+          "direction": "inout",
+          "flow_type": "mechanical_contact"
+        },
+        {
+          "port_id": "ball_bridge_path",
+          "name": "Ball passage through bridge groove",
+          "direction": "inout",
+          "flow_type": "mechanical_motion"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "balls_bridge_circulation",
+          "mating_subsystem": "bridges",
+          "port_this": "ball_bridge_path",
+          "port_mate": "bridge_ball_path",
+          "flow_ref": "ball_circulation",
+          "interface_type": "rolling_passage"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "bridges",
+      "subsystem_name": "Bridge Members",
+      "description": "Members fitted onto the nut barrel, with inner connecting grooves that connect nut grooves and provide the balls' circulation path.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "bridge_nut_mount",
+          "name": "Mounting on nut barrel",
+          "direction": "inout",
+          "flow_type": "mechanical_contact"
+        },
+        {
+          "port_id": "bridge_ball_path",
+          "name": "Connecting groove ball passage",
+          "direction": "inout",
+          "flow_type": "mechanical_motion"
+        },
+        {
+          "port_id": "bridge_nut_passage",
+          "name": "Connecting groove passage to nut screw grooves",
+          "direction": "inout",
+          "flow_type": "mechanical_motion"
+        }
+      ]
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "ball_circulation",
+      "name": "Rolling-ball circulation",
+      "flow_type": "mechanical_motion",
+      "notes": "Balls circulate through the bridge connecting grooves and opposed screw grooves."
+    },
+    {
+      "flow_id": "groove_rolling_contact",
+      "name": "Ball rolling contact with opposed grooves",
+      "flow_type": "mechanical_contact",
+      "notes": "Represents balls rollably contained in the passage formed by opposed shaft and nut grooves."
+    },
+    {
+      "flow_id": "bridge_mount_contact",
+      "name": "Bridge member mounting contact",
+      "flow_type": "mechanical_contact",
+      "notes": "Bridge members are fitted onto the nut barrel."
+    }
+  ],
+  "requirements": [
+    {
+      "req_id": "contact_angle",
+      "category": "design_constraint",
+      "priority": "high",
+      "statement": "Set the contact angle between a ball and one or both screw grooves within about 20–40 degrees.",
+      "rationale": "Claim 1; disclosed as promoting more uniform ball loading and reduced contact pressure under compound loading.",
+      "satisfied_by": [
+        "shaft",
+        "nut",
+        "balls"
+      ]
+    },
+    {
+      "req_id": "ball_diameter",
+      "category": "design_constraint",
+      "priority": "medium",
+      "statement": "In the dependent-claim embodiment, each ball outer diameter is 75–110% of ball-screw lead.",
+      "rationale": "Dependent claim 2.",
+      "satisfied_by": [
+        "balls"
+      ]
+    },
+    {
+      "req_id": "groove_depth",
+      "category": "design_constraint",
+      "priority": "medium",
+      "statement": "In the dependent-claim embodiment, screw-groove depth is no more than 35% of ball outer diameter.",
+      "rationale": "Dependent claim 3.",
+      "satisfied_by": [
+        "shaft",
+        "nut"
+      ]
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "convert_motion",
+        "name": "Convert rotation to axial translation",
+        "owner": "shaft",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Rotation of the screw shaft or nut produces axial translation through the ball screw mechanism."
+          }
+        ]
+      },
+      {
+        "action_id": "circulate_balls",
+        "name": "Circulate rolling balls",
+        "owner": "bridges",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Balls roll in the passage formed by the opposed shaft and nut grooves."
+          },
+          {
+            "step_no": 2,
+            "description": "Bridge-member connecting grooves connect nut grooves and allow balls to circulate endlessly."
+          }
+        ]
+      }
+    ]
+  }
+}

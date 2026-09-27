@@ -1,0 +1,68 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ConnectionUsage": 1,
+    "Documentation": 10,
+    "EndFeatureMembership": 2,
+    "Feature": 4,
+    "FeatureChaining": 6,
+    "FeatureMembership": 8,
+    "FeatureTyping": 6,
+    "ItemDefinition": 1,
+    "ItemUsage": 2,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 18,
+    "Package": 1,
+    "PartDefinition": 4,
+    "PartUsage": 5,
+    "PortUsage": 2,
+    "ReferenceSubsetting": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_VOLUTE_Pump_volute"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_REAR_WALL_Pump_rear_wall"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SHAFT_Pump_shaft"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SHAFT_Pump_shaft.port_SHAFT_MOUNT_Impeller_attachment"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_IMPELLER_Impeller_assembly"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_IMPELLER_Impeller_assembly.port_IMPELLER_MOUNT_Shaft_attachment_and_rotation"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_SHAFT_IMPELLER"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

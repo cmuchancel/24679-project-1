@@ -1,0 +1,34 @@
+{
+  "revision": 4,
+  "candidate_sha256": "f435505a7f8f00a473afa134481f978e81890efc4fdabd27067211c515b01ded",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Core train, paired gears, common carrier, alternative rotary exchange, carrier regulation and actuator alternatives align with claim passages read. Actuator description carefully treats bidirectionality as patent-disclosed alternatives rather than a simultaneously selected implementation. External boundary abstraction is identified as model scope, not asserted patent-specific prime mover."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "As an explicitly scoped claim-1 base model it captures the key components, paired-gear/shaft construction and carrier regulation. Optional energy recovery, coupling gear variants and dependent-claim extensions are reasonably excluded and explicitly noted."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Interfaces use registered mechanical_rotary flows and compatible inout ports; every endpoint resolves. Carrier-to-train and carrier-to-actuator relations and the operating-shaft/external exchange are represented without cross-domain connections."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "The prior contradictory warning is removed. Remaining warning accurately says the operating-shaft/external and carrier interfaces are shown while internal gear-meshing topology is not mapped. Citations are present for model meta, all SJS ID-bearing records including ports, parts, flows, interfaces and action/step."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "The external rotary source/sink is separately named, not generic EXTERNAL; shaft boundary and internal carrier interfaces are distinct, compatible and recorded once. Abstract boundary and non-exhaustive alternative paths are disclosed in assumptions/warning."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The model distinguishes boundary interactions from internal subsystem interactions and represents typed compatible energy interfaces. Textbook guidance is applied only to modeling approach, not used as evidence for patent facts."
+    }
+  },
+  "findings": [],
+  "summary": "Independently reviewed revision 4 SJS and supporting cited patent passages. Prior operating-shaft warning contradiction is resolved: remaining wording accurately acknowledges the modeled shaft/external interface and limits omission to detailed internal gear-meshing topology. Core claim-1 architecture and behavior are grounded; interface references and flow typing are consistent; model scope and optional alternatives are appropriately qualified. No unresolved findings.",
+  "saved_at": "2026-09-27T08:05:52.651043+00:00"
+}

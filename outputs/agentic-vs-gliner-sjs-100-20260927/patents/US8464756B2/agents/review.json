@@ -1,0 +1,34 @@
+{
+  "revision": 3,
+  "candidate_sha256": "08446b681aa15db8c19d6c69e93f1e19604926d05f07027f12a813321cd73a04",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 3's housing ports, spool profile/lands/return portions, and two routing actions correspond to cited patent disclosures. Removing unconnected spool fluid ports does not misstate patent facts. Assumptions and warnings are outside the SJS."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The malformed state-machine entries from revision 2 are now removed; state_machines is a valid empty array, appropriate because no transition trigger is supported. Both routing positions include supply selection and opposite load exhaust. Some return portion details are summarized rather than decomposed, but core behavior is represented and this omission is not sufficiently consequential to block."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Housing boundary directions are coherent: supply enters, exhaust leaves, and load ports are bidirectional. Position-specific actions correctly match cited passage 1f3848880ae7119850901d029d33ba3f. No incompatible interfaces are declared."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Actions cite text describing the two positional routing configurations. Housing and spool item facts have passage citations; no invented quantitative requirements or claim obligations appear."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Revision 3 removes the disconnected spool fluid ports, resolving the prior finding. Housing boundary ports and flows remain, with no unsupported internal connection asserted. Interface list is omitted rather than representing ungrounded mating interfaces."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Model distinguishes categorical routing behavior from performance thresholds and treats the boundary/unspecified actuator conservatively. Textbook guidance informs modeling only, not patent facts."
+    }
+  },
+  "findings": [],
+  "summary": "Reviewed current revision 3. The prior state-machine structural error is addressed: state_machines is empty rather than containing malformed entries. The disconnected internal spool port warning is addressed by removing those ports; no speculative mating interfaces were introduced. The SJS structure and cited invention facts reviewed are consistent, routing flows align with the patent, and no unsupported actuator, performance threshold, or requirement is asserted. No unresolved or newly introduced issue identified.",
+  "saved_at": "2026-09-27T08:21:43.726515+00:00"
+}

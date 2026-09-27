@@ -1,0 +1,138 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 3,
+    "ActionUsage": 9,
+    "AllocationUsage": 3,
+    "Documentation": 28,
+    "EndFeatureMembership": 10,
+    "Feature": 16,
+    "FeatureChaining": 24,
+    "FeatureMembership": 32,
+    "FeatureTyping": 11,
+    "FlowEnd": 4,
+    "FlowUsage": 2,
+    "ItemDefinition": 3,
+    "ItemUsage": 4,
+    "LiteralInteger": 4,
+    "MultiplicityRange": 4,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 53,
+    "Package": 1,
+    "PartDefinition": 4,
+    "PartUsage": 9,
+    "PortUsage": 4,
+    "Redefinition": 4,
+    "ReferenceSubsetting": 10,
+    "ReferenceUsage": 4,
+    "Subclassification": 2,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_STORAGE_DELIVERY_Storage_and_delivery_unit"
+    },
+    {
+      "path": "/subsystems/0/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_STORAGE_DELIVERY_Storage_and_delivery_unit.part_delivery_chute_Chute_terminating_at_a_release_edge__disclose"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_STORAGE_DELIVERY_Storage_and_delivery_unit.port_bar_delivery_out_Bars_at_release_edge"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ROTATING_TRANSPORT_Rotating_helical_transport_unit"
+    },
+    {
+      "path": "/subsystems/1/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_ROTATING_TRANSPORT_Rotating_helical_transport_unit.part_rotatable_rods_Parallel__rotatably_mounted_rods_with_helical"
+    },
+    {
+      "path": "/subsystems/1/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_ROTATING_TRANSPORT_Rotating_helical_transport_unit.part_helical_structures_Screw_like_wall_structures_or_helical_grooves"
+    },
+    {
+      "path": "/subsystems/1/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_ROTATING_TRANSPORT_Rotating_helical_transport_unit.part_abutment_sections_Radially_extending_abutment_screw_sections__s"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ROTATING_TRANSPORT_Rotating_helical_transport_unit.port_bar_in_Bar_entry_from_release_edge"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ROTATING_TRANSPORT_Rotating_helical_transport_unit.port_bar_out_Individually_transported_bars"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ROTATION_CONTROL_Rod_rotation_control_unit"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PROCESSING_SINK_Further_processing_machine"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PROCESSING_SINK_Further_processing_machine.port_bar_receipt_in_Bars_for_further_processing"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_BAR_TO_RELEASE_Longitudinal_bars_delivered_to_release_edge"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_BAR_TRANSPORTED_Individually_transported_longitudinal_bars"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_DELIVER_BAR_Deliver_bar_to_transport_unit"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_SEPARATE_TRANSPORT_Admit_and_transport_bars_individually"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_SYNCHRONIZE_RODS_Synchronize_rod_rotation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_DELIVERY_TO_TRANSPORT"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_TRANSPORT_TO_PROCESSING"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

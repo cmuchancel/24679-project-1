@@ -1,0 +1,171 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 4,
+    "AllocationUsage": 1,
+    "Documentation": 34,
+    "EndFeatureMembership": 8,
+    "Feature": 10,
+    "FeatureChaining": 22,
+    "FeatureMembership": 37,
+    "FeatureTyping": 19,
+    "FlowEnd": 6,
+    "FlowUsage": 3,
+    "ItemDefinition": 7,
+    "ItemUsage": 7,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 59,
+    "Package": 1,
+    "PartDefinition": 11,
+    "PartUsage": 12,
+    "PortUsage": 7,
+    "Redefinition": 6,
+    "ReferenceSubsetting": 8,
+    "ReferenceUsage": 6,
+    "Subclassification": 4,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_HOUSING_Differential_housing"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CARRIER_Differential_carrier"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_GEARSET_Differential_gear_set"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_GEARSET_Differential_gear_set.port_DRIVE_OUT_Drive_to_wheels"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CLUTCH_Differential_clutch"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CHAMBER_Clutch_pressure_chamber"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CHAMBER_Clutch_pressure_chamber.port_CHAMBER_FLUID_IN_Fluid_supply"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PUMP_External_fluid_pump"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PUMP_External_fluid_pump.port_PUMP_FLUID_OUT_Fluid_delivery"
+    },
+    {
+      "path": "/subsystems/5/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PUMP_External_fluid_pump.port_PUMP_ACTIVATION_IN_Pump_activation"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CONTROLLER_Pump_controller"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CONTROLLER_Pump_controller.port_PUMP_COMMAND_OUT_Pump_activation_command"
+    },
+    {
+      "path": "/subsystems/6/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CONTROLLER_Pump_controller.port_SLIP_INFO_IN_Detected_wheel_slip_information"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BEARINGS_Carrier_support_bearings"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PLENUM_Annular_fluid_plenum"
+    },
+    {
+      "path": "/subsystems/9",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DYNAMIC_SEAL_High_pressure_dynamic_seal"
+    },
+    {
+      "path": "/subsystems/10",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_WHEELS_Motor_vehicle_driven_wheels"
+    },
+    {
+      "path": "/subsystems/10/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_WHEELS_Motor_vehicle_driven_wheels.port_DRIVE_IN_Differential_drive_input"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_HYDRAULIC_FLUID_Pressurized_working_fluid"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_SLIP_DETECTION_Detected_wheel_slip_information"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_PUMP_COMMAND_Pump_activation_command"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_DRIVE_Differential_drive_to_wheels"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_LOCK_ON_SLIP_Hydraulically_engage_differential_clutch_upon"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_GEARSET_TO_WHEELS"
+    },
+    {
+      "path": "/subsystems/5/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_PUMP_TO_CHAMBER"
+    },
+    {
+      "path": "/subsystems/5/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_CONTROLLER_TO_PUMP"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

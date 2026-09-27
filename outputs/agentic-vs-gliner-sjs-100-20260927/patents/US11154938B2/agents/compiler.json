@@ -1,0 +1,183 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 3,
+    "ActionUsage": 9,
+    "AllocationUsage": 3,
+    "Documentation": 39,
+    "EndFeatureMembership": 14,
+    "Feature": 20,
+    "FeatureChaining": 36,
+    "FeatureMembership": 45,
+    "FeatureTyping": 17,
+    "FlowEnd": 8,
+    "FlowUsage": 4,
+    "ItemDefinition": 7,
+    "ItemUsage": 8,
+    "LiteralInteger": 3,
+    "MultiplicityRange": 3,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 70,
+    "Package": 1,
+    "PartDefinition": 6,
+    "PartUsage": 10,
+    "PortUsage": 8,
+    "Redefinition": 8,
+    "ReferenceSubsetting": 14,
+    "ReferenceUsage": 8,
+    "Subclassification": 4,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BODY_Chuck_body"
+    },
+    {
+      "path": "/subsystems/0/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_BODY_Chuck_body.part_BODY_1_Chuck_body"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PISTON_Drive_piston_and_helical_drive"
+    },
+    {
+      "path": "/subsystems/1/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_PISTON_Drive_piston_and_helical_drive.part_PISTON_1_Axially_movable_drive_piston_with_helical_gea"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PISTON_Drive_piston_and_helical_drive.port_P_HELICAL_Helical_drive_coupling"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PISTON_Drive_piston_and_helical_drive.port_P_ROCKER_PIVOT_Rocker_pivot_support"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_JAWS_Four_clamping_jaws"
+    },
+    {
+      "path": "/subsystems/2/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_JAWS_Four_clamping_jaws.part_JAW_SET_Radially_movable_clamping_jaws_arranged_in_pa"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_JAWS_Four_clamping_jaws.port_J_HELICAL_Helical_drive_engagement"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_JAWS_Four_clamping_jaws.port_J_PIN_Transmission_pin_support"
+    },
+    {
+      "path": "/subsystems/2/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_JAWS_Four_clamping_jaws.port_J_LEVER_Lever_force_coupling"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ROCKERS_Rocker_and_transmission_mechanism"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ROCKERS_Rocker_and_transmission_mechanism.port_R_PIVOT_Piston_supported_pivot"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ROCKERS_Rocker_and_transmission_mechanism.port_R_PIN_Guided_pin_coupling"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_WEIGHTS_Centrifugal_weight_and_lever_mechanisms"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_WEIGHTS_Centrifugal_weight_and_lever_mechanisms.port_W_LEVER_Lever_force_coupling"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_WORKPIECE_Workpiece"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_HELICAL_Helical_mechanical_drive_coupling"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_PIVOT_Piston_supported_rocker_pivot_coupling"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_PIN_Guided_transmission_pin_coupling"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_LEVER_Weight_to_jaw_lever_coupling"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_CLAMP_Drive_jaws_and_compensate_contact_differences"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_SPIN_Add_rotation_induced_jaw_clamping_force"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_RETRACT_Move_jaws_synchronously_away_from_the_workpie"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_I_PISTON_JAW_HELICAL"
+    },
+    {
+      "path": "/subsystems/1/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_I_PISTON_ROCKER_PIVOT"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_I_ROCKER_JAW_PINS"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_I_WEIGHT_JAW_LEVER"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

@@ -1,0 +1,34 @@
+{
+  "revision": 4,
+  "candidate_sha256": "83115d8930fd7ebbe685a1a0e36671b232af3550ccd33c82ad2c8b815318f08f",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 4 removes the reversed-flow passage from /subsystems/6. Its remaining citation a9a2bcafe58f69e40dde6be09341e95c explicitly states flow from the opening-member side only toward the main fluid chamber, matching the modeled direction. Other component and action descriptions are supported by their cited claim/embodiment passages. Assumptions are kept outside the SJS."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The model covers mounts, elastic element, both chambers, communicating orifice, reciprocating opening/closing member, one-way check valve, bias member, abutting contact, and guide. The vibration-reduction and chamber-volume effects are represented. No unsupported guide variant or operating state is selected. Repeated vibration-reduction actions are somewhat redundant but not substantively misleading."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "The inter-chamber item flow is correctly described as communication through the orifice without asserting unsupported net direction; cited embodiment text permits flow into or out. The distinct check-valve direction is explicitly one-way toward the main chamber, supported by a9a2bcafe58f69e40dde6be09341e95c. No incompatible typed connections are present."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Requirements are limited to expressly claimed one-way flow (claim 1), guide function (claims 4–8), and abutting contact/protrusion (claims 1–2); rationale preserves claim references and satisfied_by IDs exist. No unsupported quantitative/performance obligation is invented."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "No subsystem ports or connections are asserted. This conservatively avoids invented component-level topology; flow is represented descriptively and boundary assumptions remain external to the SJS. This is consistent with the cited context/interface guidance."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Textbook passages retrieved from the requested EPUB support distinguishing physical subsystems from verb-noun functions, traceability, and cautious boundary/interface modeling. They are used only to assess modeling approach, not as evidence for invention facts."
+    }
+  },
+  "findings": [],
+  "summary": "Reviewed saved revision 4. The corrected check-valve citation now directly supports the asserted direction (opening-member side toward main chamber), with the previously contradictory reverse-direction citation absent from that subsystem mapping. The full model remains conservatively grounded, functionally representative, flow-consistent, claim-traceable, and free of asserted incompatible interfaces. No unresolved or newly introduced issues found.",
+  "saved_at": "2026-09-27T03:33:26.525838+00:00"
+}

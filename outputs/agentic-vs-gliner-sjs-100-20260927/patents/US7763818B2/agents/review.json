@@ -1,0 +1,34 @@
+{
+  "revision": 3,
+  "candidate_sha256": "e25beadfe25d9110b1684b0b0b76f3c42afde779371bec115c76969b47b4d3ff",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 3 explicitly limits its model identity to prepared US7763818B2 and states that requested US10036408B2 is not represented because evidence for it is absent. The four-bar, pin-location-as-part prose, slider-crank links, union, base hinge, optional reflector, and motion conversion are supported by retrieved US7763818B2 claim/description passages. No facts for US10036408B2 are asserted."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The revision retains the supported planar member, its rigid/compliant four-bar members and pin-location detail, the coupler/output link and collapsible union, base substrate, and supported in-plane to out-of-plane function. Removing the pin-location flow port is a sound structural clarification; it does not omit a flow-bearing interface. No unsupported actuator/control/feedback behavior is added."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "PLANAR_IN no longer asserts an unsupported physical flow type, and the pin locations are no longer modeled as a mechanical-motion flow. The remaining mechanical_motion flows describe internal mechanical linkage motion at the planar-output/coupler and output-link/base-hinge interfaces, consistent with the cited description. The external actuation type remains unspecified."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Each modeled mechanism element/function has cited claim or description support, including the four-bar detail (claims 2-3), slider-crank and hinge elements (claims 6-9), reflector (claims 10-11), and illustrated motion sequence. No invented requirements or control claims are present. The patent identity boundary is candidly stated."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "The PLANAR_OUT-to-SPH_IN and SPH_BASE_HINGE-to-BASE_HINGE interfaces reference existing ports and flows with compatible mechanical-motion types and are recorded once. Removing the pin-location pseudo-port resolves the earlier semantic concern. Input has no asserted flow type or fabricated external mating component."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Textbook guidance supports distinguishing system boundary flows/interfaces and avoiding unsupported assumptions; it is used only as modeling-method guidance, not as evidence for invention facts. The candidate appropriately leaves actuation-source/type and optical routing unspecified. No structural error is present."
+    }
+  },
+  "findings": [],
+  "summary": "Independent review of saved SJS revision 3 finds the prior input-flow-type issue resolved: PLANAR_IN has no unsupported flow_type. The pin-location flow port has been removed while its supported location detail remains in the rigid-member part description. The two modeled mechanical interfaces connect existing compatible ports and flows; four-bar members and linkage behavior remain grounded in retrieved US7763818B2 passages. Scope is explicit and accurate for available evidence: US7763818B2 is modeled, while requested US10036408B2 is not represented. No remaining actionable issue found; no candidate edits were made.",
+  "saved_at": "2026-09-27T06:06:57.080808+00:00"
+}

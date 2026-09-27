@@ -1,0 +1,238 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Mechanical Scissor Lift",
+    "system_id": "US9617130B2",
+    "description": "Inferred architecture of a mechanically actuated scissor lift that translates a trolley to raise and lower a load platform.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "mechanical lifting equipment",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "CHASSIS",
+      "subsystem_name": "Chassis and tracks",
+      "description": "Paired L-beams provide roller-supporting web tracks, longitudinal web edges, flange travel slots, and structural support. A bearing rotatably interconnects the chassis and threaded shaft at their longitudinal ends (claim 9). Fixed pedestals and travel-slot ends resist scissor-leg extension (claims 14–16).",
+      "domain": "mechanical",
+      "ports": [
+        {
+          "port_id": "CHASSIS_GUIDE",
+          "name": "Track and edge guide",
+          "direction": "inout",
+          "flow_type": "mechanical_linear"
+        },
+        {
+          "port_id": "CHASSIS_SHAFT_SUPPORT",
+          "name": "Shaft bearing support",
+          "direction": "inout",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "CHASSIS_SCISSOR_STOP",
+          "name": "Scissor extension stop",
+          "direction": "inout",
+          "flow_type": "mechanical_linear"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_CHASSIS_TROLLEY_GUIDE",
+          "mating_subsystem": "TROLLEY",
+          "port_this": "CHASSIS_GUIDE",
+          "port_mate": "TROLLEY_GUIDE",
+          "flow_ref": "TROLLEY_TRAVEL",
+          "interface_type": "roller track and captured-edge guide"
+        },
+        {
+          "interface_id": "IF_CHASSIS_SCISSOR_STOP",
+          "mating_subsystem": "SCISSOR",
+          "port_this": "CHASSIS_SCISSOR_STOP",
+          "port_mate": "SCISSOR_STOP",
+          "flow_ref": "TROLLEY_TRAVEL",
+          "interface_type": "extension-limiting stop contact"
+        },
+        {
+          "interface_id": "IF_CHASSIS_DRIVE_SHAFT_SUPPORT",
+          "mating_subsystem": "DRIVE",
+          "port_this": "CHASSIS_SHAFT_SUPPORT",
+          "port_mate": "DRIVE_SHAFT_SUPPORT",
+          "flow_ref": "SHAFT_BEARING_SUPPORT",
+          "interface_type": "rotary bearing support of threaded shaft"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "DRIVE",
+      "subsystem_name": "Motor and jack screw drive",
+      "description": "Reversible turning means rotate the threaded shaft; threaded engagement translates the trolley.",
+      "domain": "mechanical",
+      "ports": [
+        {
+          "port_id": "DRIVE_ROTARY_OUT",
+          "name": "Rotary shaft drive",
+          "direction": "out",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "DRIVE_LINEAR_OUT",
+          "name": "Threaded trolley translation",
+          "direction": "out",
+          "flow_type": "mechanical_linear"
+        },
+        {
+          "port_id": "DRIVE_SHAFT_SUPPORT",
+          "name": "Threaded shaft bearing support",
+          "direction": "inout",
+          "flow_type": "mechanical_rotary"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_DRIVE_TROLLEY",
+          "mating_subsystem": "TROLLEY",
+          "port_this": "DRIVE_LINEAR_OUT",
+          "port_mate": "TROLLEY_DRIVE_IN",
+          "flow_ref": "TROLLEY_TRAVEL",
+          "interface_type": "threaded mechanical translation"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "TROLLEY",
+      "subsystem_name": "Guided trolley",
+      "description": "Trolley carries rollers, axles, threaded coupling nut and C-brackets. Its rollers ride on the chassis web tracks; the C-brackets receive longitudinal web edges, guiding motion and restricting pivot/lateral movement (claims 1, 7–8).",
+      "domain": "mechanical",
+      "ports": [
+        {
+          "port_id": "TROLLEY_DRIVE_IN",
+          "name": "Threaded drive input",
+          "direction": "in",
+          "flow_type": "mechanical_linear"
+        },
+        {
+          "port_id": "TROLLEY_GUIDE",
+          "name": "Roller and C-bracket guidance",
+          "direction": "inout",
+          "flow_type": "mechanical_linear"
+        },
+        {
+          "port_id": "TROLLEY_SCISSOR_OUT",
+          "name": "Scissor articulation input",
+          "direction": "out",
+          "flow_type": "mechanical_linear"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_TROLLEY_SCISSOR",
+          "mating_subsystem": "SCISSOR",
+          "port_this": "TROLLEY_SCISSOR_OUT",
+          "port_mate": "SCISSOR_TROLLEY_IN",
+          "flow_ref": "TROLLEY_TRAVEL",
+          "interface_type": "pivoting mechanical connection"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "SCISSOR",
+      "subsystem_name": "Scissor arm matrix",
+      "description": "Pivoting scissor arms convert reciprocating trolley travel into vertical platform movement.",
+      "domain": "mechanical",
+      "ports": [
+        {
+          "port_id": "SCISSOR_TROLLEY_IN",
+          "name": "Trolley articulation input",
+          "direction": "in",
+          "flow_type": "mechanical_linear"
+        },
+        {
+          "port_id": "SCISSOR_PLATFORM_OUT",
+          "name": "Platform lift motion",
+          "direction": "out",
+          "flow_type": "mechanical_linear"
+        },
+        {
+          "port_id": "SCISSOR_STOP",
+          "name": "Extension stop contact",
+          "direction": "inout",
+          "flow_type": "mechanical_linear"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_SCISSOR_PLATFORM",
+          "mating_subsystem": "PLATFORM",
+          "port_this": "SCISSOR_PLATFORM_OUT",
+          "port_mate": "PLATFORM_LIFT_IN",
+          "flow_ref": "LIFT_MOTION",
+          "interface_type": "vertical mechanical motion"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "PLATFORM",
+      "subsystem_name": "Load platform",
+      "description": "Platform attached to the upper end of the scissor arm matrix supports the load.",
+      "domain": "mechanical",
+      "ports": [
+        {
+          "port_id": "PLATFORM_LIFT_IN",
+          "name": "Lift motion input",
+          "direction": "in",
+          "flow_type": "mechanical_linear"
+        }
+      ]
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "ROTARY_DRIVE",
+      "name": "Rotary drive motion",
+      "flow_type": "mechanical_rotary",
+      "notes": "Motor output is coupled to the helically threaded shaft."
+    },
+    {
+      "flow_id": "TROLLEY_TRAVEL",
+      "name": "Trolley travel",
+      "flow_type": "mechanical_linear",
+      "notes": "Opposite longitudinal directions follow shaft rotation direction."
+    },
+    {
+      "flow_id": "LIFT_MOTION",
+      "name": "Platform vertical motion",
+      "flow_type": "mechanical_linear",
+      "notes": "Scissor articulation raises or lowers the platform."
+    },
+    {
+      "flow_id": "SHAFT_BEARING_SUPPORT",
+      "name": "Shaft bearing support interaction",
+      "flow_type": "mechanical_rotary",
+      "notes": "Structural bearing relationship by which the chassis bearing rotatably supports the threaded shaft at their longitudinal ends; distinct from motor output/rotary drive transmission (claim 9)."
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "ACTUATE_LIFT",
+        "name": "Translate trolley and actuate lift",
+        "owner": "DRIVE",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Turning means rotate the helically threaded shaft in a selected direction."
+          },
+          {
+            "step_no": 2,
+            "description": "Thread engagement drives or draws the trolley longitudinally along the chassis tracks."
+          },
+          {
+            "step_no": 3,
+            "description": "Trolley travel flexes or extends the scissor arm matrix, raising or lowering the platform."
+          }
+        ]
+      }
+    ]
+  }
+}

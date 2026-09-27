@@ -1,0 +1,255 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Four-jaw compensating chuck",
+    "system_id": "US11154938B2",
+    "description": "Inferred concept model of a machine-tool chuck that drives four jaws and uses pivoting rockers to compensate for differing workpiece contact positions.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "Machine-tool workholding",
+    "maturity": "draft",
+    "date_modified": "2026-09-26"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "BODY",
+      "subsystem_name": "Chuck body",
+      "description": "Supports the axially movable drive piston, radially movable jaws, and associated mechanisms.",
+      "domain": "Mechanical structure",
+      "parts": [
+        {
+          "part_id": "BODY-1",
+          "description": "Chuck body",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "subsystem_id": "PISTON",
+      "subsystem_name": "Drive piston and helical drive",
+      "description": "Axially movable drive piston coupled to the respective clamping jaws through interacting helical gearing; the gearing interaction converts axial piston movement into radial jaw feed.",
+      "domain": "Mechanical actuation",
+      "functional_basis": [
+        "convert axial feed",
+        "drive jaws"
+      ],
+      "parts": [
+        {
+          "part_id": "PISTON-1",
+          "description": "Axially movable drive piston with helical gearing",
+          "quantity": 1
+        }
+      ],
+      "ports": [
+        {
+          "port_id": "P_HELICAL",
+          "name": "Helical drive coupling",
+          "direction": "out",
+          "flow_type": "mechanical_rotary_linear"
+        },
+        {
+          "port_id": "P_ROCKER_PIVOT",
+          "name": "Rocker pivot support",
+          "direction": "out",
+          "flow_type": "mechanical_force_motion"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_PISTON_JAW_HELICAL",
+          "mating_subsystem": "JAWS",
+          "port_this": "P_HELICAL",
+          "port_mate": "J_HELICAL",
+          "flow_ref": "F_HELICAL",
+          "interface_type": "helical mechanical drive"
+        },
+        {
+          "interface_id": "I_PISTON_ROCKER_PIVOT",
+          "mating_subsystem": "ROCKERS",
+          "port_this": "P_ROCKER_PIVOT",
+          "port_mate": "R_PIVOT",
+          "flow_ref": "F_PIVOT",
+          "interface_type": "pivot support coupling"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "JAWS",
+      "subsystem_name": "Four clamping jaws",
+      "description": "Four radially movable jaws that engage and center the workpiece; jaw contours may be adapted to the workpiece.",
+      "domain": "Mechanical workholding",
+      "functional_basis": [
+        "clamp workpiece",
+        "center workpiece"
+      ],
+      "parts": [
+        {
+          "part_id": "JAW-SET",
+          "description": "Radially movable clamping jaws arranged in pairs",
+          "quantity": 4
+        }
+      ],
+      "ports": [
+        {
+          "port_id": "J_HELICAL",
+          "name": "Helical drive engagement",
+          "direction": "in",
+          "flow_type": "mechanical_rotary_linear"
+        },
+        {
+          "port_id": "J_PIN",
+          "name": "Transmission-pin support",
+          "direction": "in",
+          "flow_type": "mechanical_linear"
+        },
+        {
+          "port_id": "J_LEVER",
+          "name": "Lever force coupling",
+          "direction": "in",
+          "flow_type": "mechanical_force_motion"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "ROCKERS",
+      "subsystem_name": "Rocker and transmission mechanism",
+      "description": "Pivoting rockers on piston-supported bolts transmit piston movement through guided transmission pins to the jaws and compensate unequal contact/feed positions.",
+      "domain": "Mechanical transmission",
+      "functional_basis": [
+        "transmit motion",
+        "compensate feed"
+      ],
+      "parts": [],
+      "ports": [
+        {
+          "port_id": "R_PIVOT",
+          "name": "Piston-supported pivot",
+          "direction": "in",
+          "flow_type": "mechanical_force_motion"
+        },
+        {
+          "port_id": "R_PIN",
+          "name": "Guided pin coupling",
+          "direction": "out",
+          "flow_type": "mechanical_linear"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_ROCKER_JAW_PINS",
+          "mating_subsystem": "JAWS",
+          "port_this": "R_PIN",
+          "port_mate": "J_PIN",
+          "flow_ref": "F_PIN",
+          "interface_type": "guided transmission-pin coupling"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "WEIGHTS",
+      "subsystem_name": "Centrifugal weight and lever mechanisms",
+      "description": "Optional radially displaceable weights coupled through levers to jaws to add clamping force during chuck rotation.",
+      "domain": "Mechanical force augmentation",
+      "parts": [],
+      "ports": [
+        {
+          "port_id": "W_LEVER",
+          "name": "Lever force coupling",
+          "direction": "out",
+          "flow_type": "mechanical_force_motion"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_WEIGHT_JAW_LEVER",
+          "mating_subsystem": "JAWS",
+          "port_this": "W_LEVER",
+          "port_mate": "J_LEVER",
+          "flow_ref": "F_LEVER",
+          "interface_type": "lever coupling"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "WORKPIECE",
+      "subsystem_name": "Workpiece",
+      "description": "External workpiece held centered for machining; its contour is accommodated by adapted jaws.",
+      "domain": "Workpiece"
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "F_HELICAL",
+      "name": "Helical mechanical drive coupling",
+      "flow_type": "mechanical_rotary_linear",
+      "notes": "Interacting helical surfaces/gearing couple the axially movable piston to radial jaw movement; transformation occurs within the coupling."
+    },
+    {
+      "flow_id": "F_PIVOT",
+      "name": "Piston-supported rocker pivot coupling",
+      "flow_type": "mechanical_force_motion",
+      "notes": "Rocker is pivotably mounted about a bolt supported on the drive piston."
+    },
+    {
+      "flow_id": "F_PIN",
+      "name": "Guided transmission-pin coupling",
+      "flow_type": "mechanical_linear",
+      "notes": "Pins couple rocker guide grooves to supported jaws with slight linear movement."
+    },
+    {
+      "flow_id": "F_LEVER",
+      "name": "Weight-to-jaw lever coupling",
+      "flow_type": "mechanical_force_motion",
+      "notes": "Centrifugal weight is drivably coupled to a jaw through a lever."
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "A_CLAMP",
+        "name": "Drive jaws and compensate contact differences",
+        "owner": "ROCKERS",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Axial movement of the drive piston transmits force through its helical gearing and the rocker/bolt mechanism."
+          },
+          {
+            "step_no": 2,
+            "description": "Helical gearing converts axial piston feed into radial feed of the jaws toward the workpiece."
+          },
+          {
+            "step_no": 3,
+            "description": "When jaw contact positions differ, rocker deflection about its piston-supported bolt produces feed compensation; the transmission pins move linearly in the rocker guide grooves to transmit force while allowing relative movement."
+          }
+        ]
+      },
+      {
+        "action_id": "A_SPIN",
+        "name": "Add rotation-induced jaw clamping force",
+        "owner": "WEIGHTS",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Chuck rotation presses the centrifugal weights radially outward."
+          },
+          {
+            "step_no": 2,
+            "description": "The levers transmit weight displacement as additional radial clamping force to the respective jaws."
+          }
+        ]
+      },
+      {
+        "action_id": "A_RETRACT",
+        "name": "Move jaws synchronously away from the workpiece",
+        "owner": "PISTON",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "The helical coupling moves the four clamping jaws synchronously away from the workpiece."
+          }
+        ]
+      }
+    ]
+  }
+}

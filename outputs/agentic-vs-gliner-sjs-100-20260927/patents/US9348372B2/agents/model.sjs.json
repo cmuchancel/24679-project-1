@@ -1,0 +1,296 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Friction hinge with embedded counterbalance",
+    "system_id": "US9348372B2",
+    "description": "Concept model of a hinge assembly pivotally coupling an electronic-device base and lid, with embedded torsional counterbalance and frictional resistance.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "electronic-device mechanical hinge",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "BASE",
+      "subsystem_name": "Electronic-device base",
+      "description": "Bottom portion of device to which the hinge body is attached.",
+      "domain": "electronic device",
+      "ports": [
+        {
+          "port_id": "BASE_HINGE_MOUNT",
+          "name": "Base hinge mounting",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_BASE_BODY",
+          "mating_subsystem": "BODY",
+          "port_this": "BASE_HINGE_MOUNT",
+          "port_mate": "BODY_BASE_MOUNT",
+          "flow_ref": "TORQUE",
+          "interface_type": "mechanical attachment"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "LID",
+      "subsystem_name": "Electronic-device lid",
+      "description": "Top portion that pivots relative to the base and is coupled to the hinge shaft.",
+      "domain": "electronic device",
+      "ports": [
+        {
+          "port_id": "LID_SHAFT_COUPLING",
+          "name": "Lid-shaft rotational coupling",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_LID_SHAFT",
+          "mating_subsystem": "SHAFT",
+          "port_this": "LID_SHAFT_COUPLING",
+          "port_mate": "SHAFT_LID_COUPLING",
+          "flow_ref": "ROTATION",
+          "interface_type": "splined rotational coupling"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "BODY",
+      "subsystem_name": "Hinge body",
+      "description": "Hinge body with base-engagement and shaft-engagement portions; supports shaft rotation and carries the fixation member and friction interface.",
+      "domain": "mechanical hinge",
+      "functional_basis": [
+        "support shaft rotation",
+        "anchor spring end",
+        "resist relative rotation"
+      ],
+      "ports": [
+        {
+          "port_id": "BODY_BASE_MOUNT",
+          "name": "Body-base mounting",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "BODY_SHAFT_SUPPORT",
+          "name": "Body-shaft rotational support",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "BODY_FIX_ANCHOR",
+          "name": "Body fixation-member anchor",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "BODY_FRICTION_CONTACT",
+          "name": "Body-friction-member contact",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_BODY_SHAFT",
+          "mating_subsystem": "SHAFT",
+          "port_this": "BODY_SHAFT_SUPPORT",
+          "port_mate": "SHAFT_BODY_SUPPORT",
+          "flow_ref": "ROTATION",
+          "interface_type": "rotatable shaft support"
+        },
+        {
+          "interface_id": "I_BODY_FIX",
+          "mating_subsystem": "FIX",
+          "port_this": "BODY_FIX_ANCHOR",
+          "port_mate": "FIX_BODY_MOUNT",
+          "flow_ref": "TORQUE",
+          "interface_type": "fixation-member coupling"
+        },
+        {
+          "interface_id": "I_BODY_FRICTION",
+          "mating_subsystem": "FRICTION",
+          "port_this": "BODY_FRICTION_CONTACT",
+          "port_mate": "FRICTION_BODY_MOUNT",
+          "flow_ref": "TORQUE",
+          "interface_type": "friction-member coupling"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "SHAFT",
+      "subsystem_name": "Hinge shaft",
+      "description": "Rotatable shaft with a longitudinal cavity receiving the spring major portion and an outer engagement feature coupling it to the lid.",
+      "domain": "mechanical hinge",
+      "functional_basis": [
+        "transmit lid rotation",
+        "house spring major portion"
+      ],
+      "ports": [
+        {
+          "port_id": "SHAFT_LID_COUPLING",
+          "name": "Shaft-lid rotational coupling",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "SHAFT_BODY_SUPPORT",
+          "name": "Shaft-body rotational support",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "SHAFT_SPRING_ATTACHMENT",
+          "name": "Shaft-spring end attachment",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "SHAFT_FRICTION_CONTACT",
+          "name": "Shaft-friction contact",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_SHAFT_SPRING",
+          "mating_subsystem": "SPRING",
+          "port_this": "SHAFT_SPRING_ATTACHMENT",
+          "port_mate": "SPRING_SHAFT_END",
+          "flow_ref": "TORQUE",
+          "interface_type": "spring end attachment"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "SPRING",
+      "subsystem_name": "Embedded torsion spring",
+      "description": "Torsion bar major portion occupies the shaft cavity; first end is fixed to shaft and angled second end extends outward and remains restrained at the body.",
+      "domain": "mechanical hinge",
+      "functional_basis": [
+        "store torsional energy",
+        "assist or oppose lid movement"
+      ],
+      "ports": [
+        {
+          "port_id": "SPRING_SHAFT_END",
+          "name": "Spring first-end shaft attachment",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "SPRING_FIX_END",
+          "name": "Spring second-end fixation attachment",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "FIX",
+      "subsystem_name": "Spring fixation member",
+      "description": "Member coupled to the body that encloses or restrains the spring second end/angled portion.",
+      "domain": "mechanical hinge",
+      "ports": [
+        {
+          "port_id": "FIX_BODY_MOUNT",
+          "name": "Fixation-member body coupling",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "FIX_SPRING_END",
+          "name": "Fixation-member spring-end restraint",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_FIX_SPRING",
+          "mating_subsystem": "SPRING",
+          "port_this": "FIX_SPRING_END",
+          "port_mate": "SPRING_FIX_END",
+          "flow_ref": "TORQUE",
+          "interface_type": "spring end restraint"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "FRICTION",
+      "subsystem_name": "Friction member",
+      "description": "Friction member, exemplified as a clip in a body recess, frictionally engages the shaft while remaining substantially stationary relative to the body.",
+      "domain": "mechanical hinge",
+      "functional_basis": [
+        "resist shaft rotation"
+      ],
+      "ports": [
+        {
+          "port_id": "FRICTION_BODY_MOUNT",
+          "name": "Friction-member body coupling",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "FRICTION_SHAFT_CONTACT",
+          "name": "Friction-member shaft engagement",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_FRICTION_SHAFT",
+          "mating_subsystem": "SHAFT",
+          "port_this": "FRICTION_SHAFT_CONTACT",
+          "port_mate": "SHAFT_FRICTION_CONTACT",
+          "flow_ref": "TORQUE",
+          "interface_type": "frictional shaft engagement"
+        }
+      ]
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "ROTATION",
+      "name": "Lid/shaft pivot rotation",
+      "flow_type": "mechanical_rotational",
+      "notes": "Opening or closing rotation about the hinge axis is transmitted between lid and shaft; relative rotation occurs between shaft and body/base."
+    },
+    {
+      "flow_id": "TORQUE",
+      "name": "Hinge torque",
+      "flow_type": "mechanical_rotational",
+      "notes": "Spring torsion assists or opposes lid movement; friction resists relative rotation. Transformation/storage occurs within hinge components."
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "PIVOT",
+        "name": "Pivot lid relative to base",
+        "owner": "SHAFT",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Lid rotation drives the shaft through the lid-shaft engagement."
+          },
+          {
+            "step_no": 2,
+            "description": "Shaft and spring major portion rotate while the spring angled portion and fixation member remain substantially stationary relative to the body, torsionally loading the spring."
+          },
+          {
+            "step_no": 3,
+            "description": "Friction member resists shaft rotation relative to the body; spring torque assists or opposes movement."
+          }
+        ]
+      }
+    ]
+  }
+}

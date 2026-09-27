@@ -1,0 +1,34 @@
+{
+  "revision": 6,
+  "candidate_sha256": "8d34a11b60bb457b83a8da87e524f24c3a6efd6b2dab15bc805437bdd3fc9af1",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 6 removes the unsupported named-ring interface assignments and the outboard seal's misuse of the rolling-support port. Its additional inner-ring seal-contact port is supported at the generic level: claim 1 identifies the inner-ring outer-diameter sliding surface and requires seal contact with complementary one/other ring surfaces. Surface-seal contacts and rolling support remain supported by their cited passages. No new patent-fact assumption is evident."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The model retains housing, both rings, rolling elements, inboard/outboard nested seals, seal lubrication zone and geometry, optional surface seal, and the cited rotation, contamination-barrier, and lubricant-retention behaviors. No major supported function is omitted for this modeled scope."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "The single mechanical_contact flow is descriptive and is used for declared mechanical contact ports. Existing interface records connect compatible rolling-element and optional surface-seal contacts. Seal sliding-contact ports are not spuriously linked to a ring-specific endpoint."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Requirements and action steps cite the applicable claim/detailed-description passages. Claim 6 is explicitly presented as an alternate arrangement. Claims support the modeled contact relationship without claiming a specific named-ring mapping."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "The prior invalid outboard-seal-to-rolling-support interface is gone; the inner-ring seal-sliding-contact port is distinct. The two seal-to-ring interfaces are omitted rather than guessed, consistent with the unresolved specific assignment. Remaining interface records reference declared ports, existing subsystems, and the declared flow."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The model distinguishes physical components from verb-noun behavior, traces functions to requirements, and avoids fabricated external boundary flows. Textbook guidance is methodological only; invention facts are grounded in patent passages."
+    }
+  },
+  "findings": [],
+  "summary": "Independent review of saved SJS 1.0 revision 6: the two prior interface issues are resolved. The outboard seal no longer uses the rolling-support contact port, and seal-to-named-ring interfaces are removed where the claim evidence does not fix the specific mapping. The added inner-ring seal-contact port is a generic endpoint supported by claim 1's inner-ring sliding surface and complementary seal-contact relationships, not an asserted assignment of a particular seal to that ring. Retained interfaces and flows are coherent and supported; requirements/actions are traceable; no material completeness gap or new issue is apparent. Textbook guidance informs modeling choices, not patent facts. No structural findings were supplied in context; native SysML validation is not reported, so this review does not independently attest to such validation.",
+  "saved_at": "2026-09-27T06:04:07.400904+00:00"
+}

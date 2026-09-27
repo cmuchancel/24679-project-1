@@ -1,0 +1,192 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Feed-Rod Vibration-Prevention Support",
+    "system_id": "US8051755B2",
+    "description": "Conceptual system model of the claimed feed-rod support, guide, elastic attenuation elements, and communicating fluid reservoirs/path.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "material feeder / machine-tool support",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "GUIDE",
+      "subsystem_name": "Feed-rod guide assembly",
+      "description": "Support guide carrying spaced bushes and elastic materials; the bushes support the feed rod and the guide directs its travel toward the working machine.",
+      "domain": "mechanical",
+      "ports": [
+        {
+          "port_id": "GUIDE_ROD_IN",
+          "name": "Feed-rod passage",
+          "direction": "in",
+          "flow_type": "mechanical_linear"
+        },
+        {
+          "port_id": "GUIDE_FLUID_IN",
+          "name": "Fluid access to guide",
+          "direction": "in",
+          "flow_type": "hydraulic_fluid"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_GUIDE_ROD",
+          "mating_subsystem": "FEEDROD",
+          "port_this": "GUIDE_ROD_IN",
+          "port_mate": "ROD_OUT",
+          "flow_ref": "F_ROD",
+          "interface_type": "mechanical support and guidance"
+        },
+        {
+          "interface_id": "IF_GUIDE_FLUID",
+          "mating_subsystem": "FLUID",
+          "port_this": "GUIDE_FLUID_IN",
+          "port_mate": "FLUID_GUIDE_OUT",
+          "flow_ref": "F_FLUID",
+          "interface_type": "fluid transfer"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "BUSH",
+      "subsystem_name": "Spaced feed-rod bushes",
+      "description": "Plural spaced bushes supported on the support guide, with the feed rod placed on them; at least one bush has a flanged portion.",
+      "domain": "mechanical"
+    },
+    {
+      "subsystem_id": "ELASTIC",
+      "subsystem_name": "Bush-to-guide elastic materials",
+      "description": "Plural spaced elastic materials located between respective bushes and the support guide; contact surfaces define the claimed fluid-path hole with the support guide.",
+      "domain": "mechanical"
+    },
+    {
+      "subsystem_id": "BASE_ISO",
+      "subsystem_name": "Base and guide vibration isolation",
+      "description": "Base supporting the guide device, with a second elastic material between base and guide device as an optional claimed vibration attenuation provision.",
+      "domain": "mechanical"
+    },
+    {
+      "subsystem_id": "FLUID",
+      "subsystem_name": "Fluid supply and distribution",
+      "description": "Fluid supply system with reservoirs formed on the support guide between neighboring bushes and elastic materials, and a path interconnecting neighboring reservoirs.",
+      "domain": "fluid handling",
+      "ports": [
+        {
+          "port_id": "FLUID_GUIDE_OUT",
+          "name": "Fluid delivery to guide",
+          "direction": "out",
+          "flow_type": "hydraulic_fluid"
+        }
+      ],
+      "interfaces": []
+    },
+    {
+      "subsystem_id": "FEEDROD",
+      "subsystem_name": "Feed rod",
+      "description": "External moving rod supported by bushes and guided while feeding material to the working machine.",
+      "domain": "material handling",
+      "ports": [
+        {
+          "port_id": "ROD_OUT",
+          "name": "Moving rod to guide",
+          "direction": "out",
+          "flow_type": "mechanical_linear"
+        },
+        {
+          "port_id": "MATERIAL_OUT",
+          "name": "Material delivery",
+          "direction": "out",
+          "flow_type": "material"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_MATERIAL_MACHINE",
+          "mating_subsystem": "MACHINE",
+          "port_this": "MATERIAL_OUT",
+          "port_mate": "MATERIAL_IN",
+          "flow_ref": "F_MATERIAL",
+          "interface_type": "material transfer"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "MACHINE",
+      "subsystem_name": "Working machine",
+      "description": "External destination receiving material fed by the feed rod.",
+      "domain": "machine tool",
+      "ports": [
+        {
+          "port_id": "MATERIAL_IN",
+          "name": "Fed material receipt",
+          "direction": "in",
+          "flow_type": "material"
+        }
+      ],
+      "interfaces": []
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "F_ROD",
+      "name": "Moving feed rod",
+      "flow_type": "mechanical_linear",
+      "notes": "Feed rod is placed on spaced bushes and moves to feed material toward the working machine."
+    },
+    {
+      "flow_id": "F_FLUID",
+      "name": "Fluid through guide reservoirs",
+      "flow_type": "hydraulic_fluid",
+      "notes": "Fluid is supplied to the rod/guide device and passes between neighboring reservoirs through the claimed path."
+    },
+    {
+      "flow_id": "F_MATERIAL",
+      "name": "Fed material",
+      "flow_type": "material",
+      "notes": "Material is conveyed by feed rod to working machine."
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "A_GUIDE",
+        "name": "Guide moving feed rod",
+        "owner": "GUIDE",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Support the moving feed rod on spaced bushes and guide it toward the working machine."
+          }
+        ]
+      },
+      {
+        "action_id": "A_DISTRIBUTE",
+        "name": "Distribute fluid between reservoirs",
+        "owner": "FLUID",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Supply fluid to the guide device reservoirs."
+          },
+          {
+            "step_no": 2,
+            "description": "Allow fluid to flow between neighboring reservoirs through the path formed at the support-guide and elastic-material contact surfaces."
+          }
+        ]
+      },
+      {
+        "action_id": "A_ATTENUATE",
+        "name": "Attenuate feed-rod vibration",
+        "owner": "ELASTIC",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Use elastic material between bushes and guide to attenuate feed-rod vibration."
+          }
+        ]
+      }
+    ]
+  }
+}

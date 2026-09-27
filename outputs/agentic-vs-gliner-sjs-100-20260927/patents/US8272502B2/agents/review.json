@@ -1,0 +1,34 @@
+{
+  "revision": 6,
+  "candidate_sha256": "c616b75d914d0aa7522c66a3648339c9e6bee4b2fae8810a7f66afa9639fb949",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 6 component descriptions and major mechanism/material relationships align with cited claims/description. Reducer is properly described as optional/dependent-claim variant. No fabricated controller or downstream sink."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "Main chain from motor through gearbox, eccentric link, oscillating shaft, rocker/link assemblies, guided carriage and attached trays is represented; scrap source and press mounting are included. Unspecified controls appropriately omitted."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Connected endpoints have matching flow types and compatible directions, including material, rotary, oscillatory, linear, and structural interactions. Oscillation-to-linear transformation resides in rocker/link assembly."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Relevant descriptions/requirements and claim-specific gear properties, carriage guidance, progressive transfer, reducer variant and releasable saddle arrangement have patent passage citations. Revision 6 removed the stale warning from revision 5."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Previously missing press mounting, link-to-guide, carriage/shaker shaft/saddles, and saddle/tray connections remain encoded with resolvable compatible endpoints. No interface omission remains."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Model uses explicit internal interfaces and separates external press/material context, consistent with interface and context guidance. Textbook evidence is not used to establish invention facts."
+    }
+  },
+  "findings": [],
+  "summary": "Independently reviewed saved revision 6 against actual cited patent passages and relevant textbook interface/context guidance. Revision 5's sole finding—the stale warning claiming already-present interfaces were missing—is resolved: revision 6's warning now accurately limits itself to unspecified control logic and optional reducer/direct-drive alternative. Major component, function, flow and interface representations are supported; no remaining repair issue identified.",
+  "saved_at": "2026-09-27T09:31:19.210538+00:00"
+}

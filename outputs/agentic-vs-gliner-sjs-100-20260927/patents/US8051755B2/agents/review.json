@@ -1,0 +1,34 @@
+{
+  "revision": 3,
+  "candidate_sha256": "081147611edf33f753a0e28a772f6c851d4df5f60a5a963f882d1fff6d35bba1",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 3's modeled guide, spaced bushes, elastic materials, rod guidance, fluid reservoirs/path, flanged bush feature, base isolation, and material destination are supported by the inspected claim passages. It does not assert a pump, sensor, quantitative performance, or active regulation. External contextual rod and working machine are grounded in claim 1."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The model captures the principal rod-guidance function, fluid supply/communication between reservoirs, and vibration attenuation, along with the claimed physical constituents and optional base isolation. The reservoir/path geometry is described without inventing separate tank components. Omission of unspecified fluid-source details is appropriately acknowledged."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "The three represented links use compatible paired ports and descriptive flow types: mechanical_linear rod, hydraulic_fluid, and material. Port directions are consistent with the stated direction of interaction. The fluid path within the claimed reservoir arrangement is described in the fluid action rather than represented as a fabricated external connection."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "The candidate's citation map assigns patent passages to each modeled subsystem, flow, action, port, and retained interface, and the inspected claim passages support those assertions. The revision-3 topology contains one record per physical connection, eliminating the reciprocal duplicates previously flagged."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "The retained interfaces reference existing subsystems and compatible, correctly typed ports; each connection is recorded once (GUIDE–FEEDROD rod, GUIDE–FLUID fluid, FEEDROD–MACHINE material). No dangling references or duplicate reciprocal interfaces are present."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The inspected textbook guidance is general systems-engineering context, not evidence for invention facts. The model's physical subsystem decomposition and descriptive interfaces are reasonable; patent claims, not textbook text, ground its content."
+    }
+  },
+  "findings": [],
+  "summary": "Independent review of saved revision 3 finds no unresolved issue. The corrected single-interface-per-connection topology is valid: each interface has existing compatible endpoints and references an appropriate flow. The modeled components, functions, flows, and claims are grounded in the inspected patent passages; no unsupported control or quantitative constraints were introduced. SJS 1.0 required metadata and nonempty flat subsystems are present, and the interface references are structurally coherent. Textbook guidance is used only as modeling context. No repair recommended.",
+  "saved_at": "2026-09-27T05:56:08.216133+00:00"
+}

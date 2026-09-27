@@ -1,0 +1,258 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 5,
+    "AllocationUsage": 1,
+    "ConnectionUsage": 6,
+    "Documentation": 46,
+    "EndFeatureMembership": 16,
+    "Feature": 35,
+    "FeatureChaining": 56,
+    "FeatureMembership": 49,
+    "FeatureReferenceExpression": 5,
+    "FeatureTyping": 27,
+    "FeatureValue": 5,
+    "FlowEnd": 2,
+    "FlowUsage": 1,
+    "ItemDefinition": 6,
+    "ItemUsage": 15,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 86,
+    "Package": 1,
+    "PartDefinition": 9,
+    "PartUsage": 10,
+    "PortUsage": 15,
+    "Redefinition": 2,
+    "ReferenceSubsetting": 21,
+    "ReferenceUsage": 7,
+    "RequirementDefinition": 2,
+    "RequirementUsage": 2,
+    "SatisfyRequirementUsage": 5,
+    "Subclassification": 3,
+    "SubjectMembership": 5,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_press_connection_Press_Connection_Member"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_press_connection_Press_Connection_Member.port_member_bushing_Bushing_member_mechanical_interface"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_press_connection_Press_Connection_Member.port_member_bar_Alignment_bar_guide_engagement"
+    },
+    {
+      "path": "/subsystems/0/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_press_connection_Press_Connection_Member.port_slide_link_Press_slide_reciprocation_connection"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_eccentric_bushing_Eccentric_Bushing"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_eccentric_bushing_Eccentric_Bushing.port_bushing_member_Member_interface"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_eccentric_bushing_Eccentric_Bushing.port_bushing_eccentric_Second_eccentric_interface_and_communicating"
+    },
+    {
+      "path": "/subsystems/1/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_eccentric_bushing_Eccentric_Bushing.port_bushing_keyway_Alignment_keyway"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_second_eccentric_Second_Eccentric_Member"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_second_eccentric_Second_Eccentric_Member.port_eccentric_bushing_Bushing_interface"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_second_eccentric_Second_Eccentric_Member.port_shaft_Crankshaft"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_alignment_bar_Alignment_Bar"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_alignment_bar_Alignment_Bar.port_bar_keyway_Keyway_engagement"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_alignment_bar_Alignment_Bar.port_bar_cylinder_Cylinder_actuation_interface"
+    },
+    {
+      "path": "/subsystems/3/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_alignment_bar_Alignment_Bar.port_bar_member_guide_Press_connection_member_guide_mount_interface"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_alignment_cylinder_Double_Acting_Alignment_Cylinder"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_alignment_cylinder_Double_Acting_Alignment_Cylinder.port_cylinder_bar_Cylinder_actuation_of_bar"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_alignment_spring_Alignment_Return_Spring"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_alignment_sensor_Alignment_Position_Sensors"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_alignment_sensor_Alignment_Position_Sensors.port_bar_position_detection_Alignment_bar_position_detection"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_press_slide_Press_Slide"
+    },
+    {
+      "path": "/subsystems/7/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_press_slide_Press_Slide.port_connection_member_Connection_member_input_to_press_slide"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_crankshaft_Rotatable_Crankshaft"
+    },
+    {
+      "path": "/subsystems/8/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_crankshaft_Rotatable_Crankshaft.port_shaft_eccentric_Connection_to_second_eccentric"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_shaft_rotation_Crankshaft_rotation"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_slide_motion_Press_slide_reciprocation"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_bar_motion_Alignment_bar_movement"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_stroke_adjustment"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_stroke_adjustment"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_stroke_adjustment"
+    },
+    {
+      "path": "/requirements/1",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_positive_alignment"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_positive_alignment"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_positive_alignment"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/2",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_positive_alignment"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_adjust_stroke_Adjust_Press_Stroke"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_member_bushing_connection"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_member_slide_reciprocation"
+    },
+    {
+      "path": "/subsystems/0/interfaces/2",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_member_alignment_bar_guide"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_bushing_eccentric_connection"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_bar_keyway_lock"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_cylinder_bar_drive"
+    },
+    {
+      "path": "/subsystems/8/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_shaft_eccentric_connection"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

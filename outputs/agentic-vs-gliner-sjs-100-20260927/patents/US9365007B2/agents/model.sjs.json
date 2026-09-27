@@ -1,0 +1,162 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Four-Bar Press with Compression Counterbalance",
+    "system_id": "US9365007B2",
+    "description": "Concept model of the four-bar press linkage and actuator force mechanism described in the prepared US9365007B2 patent evidence.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "industrial mechanical press",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "crank",
+      "subsystem_name": "Crank Link",
+      "description": "Crank link pivotally connected to the drag link through the first pin.",
+      "domain": "mechanical linkage",
+      "ports": [
+        {
+          "port_id": "crank_joint",
+          "name": "First-pin joint",
+          "direction": "inout",
+          "flow_type": "mechanical_joint"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "crank_drag_first_pin",
+          "mating_subsystem": "drag",
+          "port_this": "crank_joint",
+          "port_mate": "drag_first",
+          "interface_type": "Pivotal connection at first pin"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "drag",
+      "subsystem_name": "Drag Link",
+      "description": "Drag link pivotally joins crank, lazy link, and slider link; the third-pin location lies between its first- and second-pin locations.",
+      "domain": "mechanical linkage",
+      "ports": [
+        {
+          "port_id": "drag_first",
+          "name": "First-pin joint",
+          "direction": "inout",
+          "flow_type": "mechanical_joint"
+        },
+        {
+          "port_id": "drag_second",
+          "name": "Second-pin joint",
+          "direction": "inout",
+          "flow_type": "mechanical_joint"
+        },
+        {
+          "port_id": "drag_third",
+          "name": "Third-pin joint",
+          "direction": "inout",
+          "flow_type": "mechanical_joint"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "drag_lazy_second_pin",
+          "mating_subsystem": "lazy",
+          "port_this": "drag_second",
+          "port_mate": "lazy_joint",
+          "interface_type": "Pivotal connection at second pin"
+        },
+        {
+          "interface_id": "drag_slider_third_pin",
+          "mating_subsystem": "slider",
+          "port_this": "drag_third",
+          "port_mate": "slider_joint",
+          "interface_type": "Pivotal connection at third pin"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "lazy",
+      "subsystem_name": "Lazy Link",
+      "description": "Lazy link pivotally connected to the drag link through the second pin.",
+      "domain": "mechanical linkage",
+      "ports": [
+        {
+          "port_id": "lazy_joint",
+          "name": "Second-pin joint",
+          "direction": "inout",
+          "flow_type": "mechanical_joint"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "slider",
+      "subsystem_name": "Slider Link",
+      "description": "Slider link pivotally connected to the drag link at the third pin and receives actuator force indirectly through the fourth pin.",
+      "domain": "mechanical linkage",
+      "ports": [
+        {
+          "port_id": "slider_joint",
+          "name": "Third-pin joint",
+          "direction": "inout",
+          "flow_type": "mechanical_joint"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "actuator",
+      "subsystem_name": "Counterbalancing Actuator(s)",
+      "description": "One or more actuators exert counterbalancing force on the slider link via an indirect pivotal coupling and fourth pin; actuator implementation and energy supply are unspecified in the claims.",
+      "domain": "mechanical actuation",
+      "ports": [
+        {
+          "port_id": "force_out",
+          "name": "Counterbalancing force output",
+          "direction": "out",
+          "flow_type": "mechanical_linear"
+        }
+      ],
+      "interfaces": []
+    }
+  ],
+  "item_flows": [],
+  "requirements": [
+    {
+      "req_id": "R_compression",
+      "category": "functional",
+      "priority": "high",
+      "statement": "The actuator force counterbalances inertial force that would otherwise place the slider link in tension, maintaining the slider link in compression during at least a portion of a press cycle.",
+      "rationale": "Claim 1.",
+      "satisfied_by": [
+        "actuator",
+        "slider"
+      ]
+    },
+    {
+      "req_id": "R_pins",
+      "category": "performance",
+      "priority": "medium",
+      "statement": "Actuator force essentially eliminates impulse loading at at least one pin through at least a portion of the press cycle.",
+      "rationale": "Claim 3; dependent claimed effect.",
+      "satisfied_by": [
+        "actuator"
+      ]
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "apply_counterforce",
+        "name": "Apply counterbalancing force",
+        "owner": "actuator",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Exert force on the slider link to counterbalance inertial force that would otherwise cause tension and maintain compression during at least part of the press cycle."
+          }
+        ]
+      }
+    ]
+  }
+}

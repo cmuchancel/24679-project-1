@@ -1,0 +1,34 @@
+{
+  "revision": 6,
+  "candidate_sha256": "de5d73915c03bed78cf17d87f30f968b6e7a67c378974941db642b55eb51283c",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 6’s described latch components, optional bearing/stop/hasp variants, qualitative latch/unlatch behavior, stop action, and externally applied handle force align with the inspected patent passages. The explicit statement that the manual/user input is outside the model boundary is a scope clarification, not an unsupported claim about the invention. No actuator is fabricated."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The handle, base, hinge/bearing, pivot/pins, hasp, hook, stop, latching and unlatching behavior capture the principal supported physical elements and operating functions for a latch-focused model. External first/second parts are identified in assumptions; their generic treatment is acceptable."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "The modeled rotary, force-coupling, and stop-contact interfaces use compatible port types and defined item flows. Each connection is represented once; pressure/force transformation is not misrepresented."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Claim-specific opposite thread handedness, hasp/pivot coupling, stop limitation, bearing benefit, optional pivot bearing, adjustable hasp, and shock-absorbing stop are reflected. No unsupported numerical requirement was added."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Revision 6 now explicitly says manual/user-applied force or rotation at the handle is an external initiating input outside the modeled latch boundary, and explicitly says no user interface or actuator is modeled. This directly resolves previous R5-1. Internal connections and external-unit assumptions are coherent for the stated boundary."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Boundary/context guidance is applied appropriately to distinguish the external initiating input and mating unit parts from modeled latch components. Functional/performance guidance is consistent with retaining qualitative durability benefit without inventing a target; textbook guidance is not used as invention evidence."
+    }
+  },
+  "findings": [],
+  "summary": "Independently reviewed revision 6 for US8240724B2 against the actual cited patent passages and relevant textbook guidance. The prior R5-1 boundary ambiguity is resolved: model_meta explicitly identifies manual/user-applied handle input as external to the latch-assembly boundary and states no actuator or user interface is modeled. The latch decomposition, behaviors, flows, connections, and claim-specific details are adequately supported and coherent. No unresolved or newly introduced material findings.",
+  "saved_at": "2026-09-27T07:49:06.850323+00:00"
+}

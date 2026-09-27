@@ -1,0 +1,34 @@
+{
+  "revision": 4,
+  "candidate_sha256": "e92dd02de84ea7aa5c4b9847c49bb3a1f3cc551f4ed826ba42a787d5a25acbfc",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Modeled architecture and claims 1–16-level relationships are corroborated by cited passages: motor turns threaded shaft, shaft drives trolley travel, rollers/tracks and C-brackets guide it, scissor matrix actuates platform, chassis bearing supports shaft, and stops resist extension. The new SHAFT_BEARING_SUPPORT flow explicitly describes structural rotational support and distinguishes motor drive transmission."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The model captures the supported major components and functional chain, including tracks/guides, threaded drive/trolley, articulated scissor arms, platform, bearing support, and extension stops. Not adding electrical supply, controller, load rating, or numeric limits is appropriate given absent evidence."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "The corrected bearing interface now references SHAFT_BEARING_SUPPORT, distinct from ROTARY_DRIVE. Bearing and drive support ports are compatible mechanical_rotary; linear travel/guidance/stop and lift motion are modeled as mechanical_linear interactions. Reversible shaft rotation producing trolley translation is explicitly supported."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Citation mapping covers model metadata, each subsystem, flow, behavior action, ports, and interfaces, including the added bearing flow and interface. Relevant claim numbers are included in descriptions/notes. No unsupported requirements or claims are asserted."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "The CHASSIS-to-DRIVE bearing support interface connects existing compatible ports and is recorded once. Other interfaces connect existing compatible ports and reference applicable flow types. Patent text specifies rotatable bearing support at shaft/chassis longitudinal ends."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The relevant interface guidance supports representing internal spatial/energy interactions and physical interfaces; it is applied as modeling rationale only. Patent passages, not textbook text, establish invention facts. The unrelated retrieved behavior passage does not warrant adding a controller or state machine."
+    }
+  },
+  "findings": [],
+  "summary": "Independent review of saved SJS revision 4 finds the prior bearing flow-semantics defect corrected: chassis-to-drive bearing support uses its distinct SHAFT_BEARING_SUPPORT flow rather than ROTARY_DRIVE. Interface ports, flow types, and cited patent relationships are coherent. The model remains appropriately grounded and covers the salient supported mechanism without inventing external supplies, controls, constraints, or requirements. No unresolved findings.",
+  "saved_at": "2026-09-27T08:29:40.604334+00:00"
+}

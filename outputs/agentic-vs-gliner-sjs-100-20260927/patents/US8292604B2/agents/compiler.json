@@ -1,0 +1,199 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 4,
+    "AllocationUsage": 1,
+    "ConnectionUsage": 7,
+    "Documentation": 38,
+    "EndFeatureMembership": 20,
+    "Feature": 36,
+    "FeatureChaining": 58,
+    "FeatureMembership": 40,
+    "FeatureTyping": 19,
+    "FlowEnd": 4,
+    "FlowUsage": 2,
+    "ItemDefinition": 4,
+    "ItemUsage": 11,
+    "LiteralInteger": 1,
+    "MultiplicityRange": 1,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 64,
+    "Package": 1,
+    "PartDefinition": 7,
+    "PartUsage": 9,
+    "PortUsage": 11,
+    "Redefinition": 4,
+    "ReferenceSubsetting": 20,
+    "ReferenceUsage": 4,
+    "Subclassification": 2,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_motor_Electric_Motor"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_motor_Electric_Motor.port_motor_rotary_out_Motor_rotary_output"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_worm_Worm_Gear"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_worm_Worm_Gear.port_worm_rotary_in_Worm_drive_input"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_worm_Worm_Gear.port_worm_rotary_out_Worm_gear_output"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_housing_Pump_Housing"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_housing_Pump_Housing.port_housing_mechanism_placement_Mechanism_placement_in_housing_compartment"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_pump_gear_Pump_Gear_and_Roller_Carriage"
+    },
+    {
+      "path": "/subsystems/3/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_pump_gear_Pump_Gear_and_Roller_Carriage.part_roller_axles_Pair_of_axles__one_for_each_cylindrical_rolle"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_pump_gear_Pump_Gear_and_Roller_Carriage.port_gear_rotary_in_Pump_gear_rotary_input"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_pump_gear_Pump_Gear_and_Roller_Carriage.port_gear_structure_placement_Pump_mechanism_placement_interface"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_support_Support_Plate"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_support_Support_Plate.port_support_gear_structure_Support_plate_relation_to_gear_and_roller_axl"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_support_Support_Plate.port_support_hub_mount_Support_plate_mounting_hub"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_tube_Transport_Tube"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_tube_Transport_Tube.port_tube_placement_Tube_placement_relation"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ribs_Support_Ribs"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ribs_Support_Ribs.port_ribs_gear_mount_Rib_mounting_at_first_gear"
+    },
+    {
+      "path": "/subsystems/6/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ribs_Support_Ribs.port_ribs_support_mount_Rib_mounting_at_support_plate"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_rotary_drive_Rotary_mechanical_drive"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_structural_placement_Housing_and_mechanism_placement_relation"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_pump_fluid_Pump_fluid_by_rotating_roller_carriage"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_motor_drive"
+    },
+    {
+      "path": "/subsystems/1/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_worm_gear_mesh"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_housing_pump_placement"
+    },
+    {
+      "path": "/subsystems/2/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_housing_tube_placement"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_gear_tube_occlusion_placement"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_support_gear_mount"
+    },
+    {
+      "path": "/subsystems/4/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_support_housing_hub_recess"
+    },
+    {
+      "path": "/subsystems/6/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_ribs_gear_interface"
+    },
+    {
+      "path": "/subsystems/6/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_ribs_support_interface"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

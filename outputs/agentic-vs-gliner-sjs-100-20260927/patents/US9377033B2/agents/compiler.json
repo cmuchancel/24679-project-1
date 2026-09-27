@@ -1,0 +1,219 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 5,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 4,
+    "Documentation": 42,
+    "EndFeatureMembership": 14,
+    "Feature": 26,
+    "FeatureChaining": 38,
+    "FeatureMembership": 47,
+    "FeatureTyping": 22,
+    "FlowEnd": 2,
+    "FlowUsage": 1,
+    "ItemDefinition": 5,
+    "ItemUsage": 14,
+    "LiteralInteger": 5,
+    "MultiplicityRange": 5,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 74,
+    "Package": 1,
+    "PartDefinition": 6,
+    "PartUsage": 12,
+    "PortUsage": 14,
+    "Redefinition": 2,
+    "ReferenceSubsetting": 14,
+    "ReferenceUsage": 2,
+    "Subclassification": 3,
+    "SuccessionAsUsage": 1
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_housing_Pump_housing"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_housing_Pump_housing.port_socket_1_First_supply_socket"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_housing_Pump_housing.port_socket_2_Second_supply_socket"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_rotor_set_Inner_rotor_and_radial_conduits"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_rotor_set_Inner_rotor_and_radial_conduits.port_high_path_High_pressure_passage"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_rotor_set_Inner_rotor_and_radial_conduits.port_low_path_Low_pressure_passage"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_shaft_cylinder_Eccentric_shaft_cylinder"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_shaft_cylinder_Eccentric_shaft_cylinder.port_cylinder_high_High_pressure_cylinder_opening"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_shaft_cylinder_Eccentric_shaft_cylinder.port_cylinder_low_Low_pressure_cylinder_opening"
+    },
+    {
+      "path": "/subsystems/2/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_shaft_cylinder_Eccentric_shaft_cylinder.port_shaft_rotary_Rotary_drive_from_central_shaft"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_supply_tube_Turnable_supply_tube"
+    },
+    {
+      "path": "/subsystems/3/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_supply_tube_Turnable_supply_tube.part_sealing_rings_Three_sealing_rings_forming_two_sealed_annula"
+    },
+    {
+      "path": "/subsystems/3/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_supply_tube_Turnable_supply_tube.part_annular_space_1_First_sealed_annular_space_between_supply_tub"
+    },
+    {
+      "path": "/subsystems/3/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_supply_tube_Turnable_supply_tube.part_annular_space_2_Second_sealed_annular_space_between_supply_tu"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_supply_tube_Turnable_supply_tube.port_line_1_First_supply_line_extending_to_first_feed_ope"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_supply_tube_Turnable_supply_tube.port_line_2_Second_supply_line_extending_to_second_feed_o"
+    },
+    {
+      "path": "/subsystems/3/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_supply_tube_Turnable_supply_tube.port_tube_feed_1_First_feeding_opening"
+    },
+    {
+      "path": "/subsystems/3/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_supply_tube_Turnable_supply_tube.port_tube_feed_2_Second_feeding_opening"
+    },
+    {
+      "path": "/subsystems/3/ports/4",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_supply_tube_Turnable_supply_tube.port_supply_opening_1_First_group_of_supply_openings_to_annular_spa"
+    },
+    {
+      "path": "/subsystems/3/ports/5",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_supply_tube_Turnable_supply_tube.port_supply_opening_2_Second_group_of_supply_openings_to_annular_sp"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_outer_rotor_Outer_rotor"
+    },
+    {
+      "path": "/subsystems/4/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_outer_rotor_Outer_rotor.part_first_flange_First_flange_rotating_with_outer_rotor_and_li"
+    },
+    {
+      "path": "/subsystems/4/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_outer_rotor_Outer_rotor.part_second_flange_Second_flange_rotating_with_outer_rotor_and_l"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_drive_shaft_Central_drive_shaft_input"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_drive_shaft_Central_drive_shaft_input.port_torque_out_Rotary_torque_output"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_high_fluid_High_pressure_fluid"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_low_fluid_Low_pressure_fluid"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_rotary_torque_Drive_torque"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_pump_fluid_Pump_pressure_medium"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_change_route_Change_socket_routing"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_cylinder_drive"
+    },
+    {
+      "path": "/subsystems/2/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_rotor_to_cylinder_high"
+    },
+    {
+      "path": "/subsystems/2/interfaces/2",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_rotor_to_cylinder_low"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_cylinder_to_supply_line1"
+    },
+    {
+      "path": "/subsystems/3/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_cylinder_to_supply_line2"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

@@ -1,0 +1,34 @@
+{
+  "revision": 4,
+  "candidate_sha256": "d4989b67b15be13307987bfb38887001a70e99ffd893a1976357ee1a2206718e",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 4 explicitly scopes the model to the prepared HTML/evidence for US7520200B2, and says it makes no claims about US10036408B2 or their relationship. The cited patent passages support the modeled bar-feeder system and component claims; the requested patent is not represented as fact."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The concept model represents rack, take-out mechanism and its key parts, guide rail, machining apparatus boundary, operator trigger, controller, normal loading and removal-clearance behavior. Omission of optional rail-lift and cam details is disclosed and reasonable for this abstraction."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Material flows connect rack→takeout→guide→machine with matching mechanical_material ports; manual/control signals connect operator/controller/takeout with compatible signal types and directions. Transformation is not improperly modeled as an interface."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Claim-derived entities and behaviors are tied to relevant supplied passages; the sequence and removal behavior are supported, with no quantified constraints or unsupported requirements."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Prior interface findings remain corrected: interface records reference existing ports and flow IDs with matching endpoint types and directions, and each connection is represented once. The TAKEOUT parts are modeled as owned parts, not fake external interfaces."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Functional-decomposition guidance supports separating system functions and interfaces but supplies no invention facts. Model decisions are supported by patent passages, and no unsupported sensors or feedback are introduced."
+    }
+  },
+  "findings": [],
+  "summary": "Revision 4 is supportable as a concept SJS model solely of prepared patent US7520200B2. Its metadata explicitly states that US10036408B2 was requested but is unverified, and that the model makes no claims about that patent or any relationship. The prior flow/interface and TAKEOUT structural modeling findings remain corrected: connections bind compatible existing ports and flows once, while parts are represented under TAKEOUT. No unresolved issue identified.",
+  "saved_at": "2026-09-27T07:08:36.166766+00:00"
+}

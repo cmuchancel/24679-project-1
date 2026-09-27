@@ -1,0 +1,4931 @@
+package Model__Clamping_apparatus {
+    private import ScalarValues::*;
+    doc SJS_Source
+    /* SJS_JSON_V1
+     * {"$schema": "sjs/1.0", "model_meta": {"system_name": "Clamping apparatus", "system_id": "US7621514B2_HTML", "description": "Candidate system model extracted from US7621514B2.html.", "version": "0.1.0", "lifecycle_stage": "concept", "domain": "systems", "maturity": "machine-extracted-candidate", "date_modified": "2026-09-27"}, "subsystems": [{"subsystem_id": "SS-001", "subsystem_name": "clamping apparatus", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: clamping apparatus", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "9", "part_id": "P-009", "description": "cylindrical piston member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "10", "part_id": "P-010", "description": "piston member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "11", "part_id": "P-011", "description": "output shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "7", "part_id": "P-007", "description": "cylinder block", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "18", "part_id": "P-018", "description": "clamping case", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "3", "part_id": "P-003", "description": "shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "19", "part_id": "P-019", "description": "first engaging member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "20", "part_id": "P-020", "description": "first elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "21", "part_id": "P-021", "description": "first retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "22", "part_id": "P-022", "description": "second engaging member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "23", "part_id": "P-023", "description": "second elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "24", "part_id": "P-024", "description": "second retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "25", "part_id": "P-025", "description": "arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "16", "part_id": "P-016", "description": "pallet", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "26", "part_id": "P-026", "description": "spiral groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "27", "part_id": "P-027", "description": "guide member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "28", "part_id": "P-028", "description": "first pushing member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "29", "part_id": "P-029", "description": "second pushing member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "30", "part_id": "P-030", "description": "first groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "32", "part_id": "P-032", "description": "first small-diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "33", "part_id": "P-033", "description": "small-diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "34", "part_id": "P-034", "description": "first unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "36", "part_id": "P-036", "description": "second small-diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "37", "part_id": "P-037", "description": "second unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "2", "part_id": "P-002", "description": "elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "58", "part_id": "P-058", "description": "flange", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "51", "part_id": "P-051", "description": "Belleville spring", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "59", "part_id": "P-059", "description": "small- diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "60", "part_id": "P-060", "description": "retainer 15", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "53", "part_id": "P-053", "description": "plunger 18", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "61", "part_id": "P-061", "description": "first operating balls 14", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "62", "part_id": "P-062", "description": "second operating balls 24", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "63", "part_id": "P-063", "description": "passing-through recess", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "65", "part_id": "P-065", "description": "small- diameter shaft segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "66", "part_id": "P-066", "description": "cylindrical segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "67", "part_id": "P-067", "description": "hollow-disk-shaped flange", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "69", "part_id": "P-069", "description": "second disengageable groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "70", "part_id": "P-070", "description": "disengageable groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "71", "part_id": "P-071", "description": "second operating ball", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "72", "part_id": "P-072", "description": "operating ball", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "73", "part_id": "P-073", "description": "shaft segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "74", "part_id": "P-074", "description": "first pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "76", "part_id": "P-076", "description": "second pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "79", "part_id": "P-079", "description": "pressing rod", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "46", "part_id": "P-046", "description": "coil spring", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "5", "part_id": "P-005", "description": "operating balls", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "57", "part_id": "P-057", "description": "clamping face", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "78", "part_id": "P-078", "description": "pressing bush", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "84", "part_id": "P-084", "description": "work", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "85", "part_id": "P-085", "description": "pushing member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "86", "part_id": "P-086", "description": "shaft 5", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "1", "part_id": "P-001", "description": "pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "81", "part_id": "P-081", "description": "clamping shaft 5", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "38", "part_id": "P-038", "description": "sleeve", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "48", "part_id": "P-048", "description": "sleeve 13", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "31", "part_id": "P-031", "description": "second groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "39", "part_id": "P-039", "description": "lower case", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "12", "part_id": "P-012", "description": "tough spring member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "13", "part_id": "P-013", "description": "spring member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "14", "part_id": "P-014", "description": "weak spring member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "15", "part_id": "P-015", "description": "locking mechanism", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "17", "part_id": "P-017", "description": "pallets", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "44", "part_id": "P-044", "description": "bearing 8", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "49", "part_id": "P-049", "description": "housing chamber", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "52", "part_id": "P-052", "description": "Belleville spring 17", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "55", "part_id": "P-055", "description": "upper case", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "56", "part_id": "P-056", "description": "large- diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "75", "part_id": "P-075", "description": "first pressing plate 27", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "77", "part_id": "P-077", "description": "second pressing plate 28", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "80", "part_id": "P-080", "description": "first operating balls", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "82", "part_id": "P-082", "description": "pressing rod 31", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "87", "part_id": "P-087", "description": "work 2", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "89", "part_id": "P-089", "description": "inserting/pressing-in segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "90", "part_id": "P-090", "description": "rod", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "91", "part_id": "P-091", "description": "circular protrusion", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}], "allocated_functions": ["ACT-001", "ACT-002", "ACT-003", "ACT-004", "ACT-005", "ACT-031", "ACT-032", "ACT-036", "ACT-037", "ACT-038", "ACT-023"]}, {"subsystem_id": "SS-002", "subsystem_name": "clamping case", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: clamping case", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "3", "part_id": "P-003", "description": "shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "34", "part_id": "P-034", "description": "first unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "22", "part_id": "P-022", "description": "second engaging member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "21", "part_id": "P-021", "description": "first retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "24", "part_id": "P-024", "description": "second retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "32", "part_id": "P-032", "description": "first small-diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "36", "part_id": "P-036", "description": "second small-diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "37", "part_id": "P-037", "description": "second unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "20", "part_id": "P-020", "description": "first elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "2", "part_id": "P-002", "description": "elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "42", "part_id": "P-042", "description": "upper case 4 a", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "47", "part_id": "P-047", "description": "coil spring 16", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "38", "part_id": "P-038", "description": "sleeve", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "48", "part_id": "P-048", "description": "sleeve 13", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "46", "part_id": "P-046", "description": "coil spring", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "50", "part_id": "P-050", "description": "Belleville", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "81", "part_id": "P-081", "description": "clamping shaft 5", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "88", "part_id": "P-088", "description": "clamping arm 6", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "74", "part_id": "P-074", "description": "first pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "26", "part_id": "P-026", "description": "spiral groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "5", "part_id": "P-005", "description": "operating balls", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "39", "part_id": "P-039", "description": "lower case", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}]}, {"subsystem_id": "SS-003", "subsystem_name": "cylinder block", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: cylinder block", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-005"]}, {"subsystem_id": "SS-004", "subsystem_name": "internal combustion engine", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: internal combustion engine", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "3", "part_id": "P-003", "description": "shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "7", "part_id": "P-007", "description": "cylinder block", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "8", "part_id": "P-008", "description": "processing machines", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "1", "part_id": "P-001", "description": "pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "2", "part_id": "P-002", "description": "elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "5", "part_id": "P-005", "description": "operating balls", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}]}, {"subsystem_id": "SS-005", "subsystem_name": "motor vehicle", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: motor vehicle", "domain": "systems", "maturity": "candidate"}, {"subsystem_id": "SS-006", "subsystem_name": "transfer line", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: transfer line", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "3", "part_id": "P-003", "description": "shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "7", "part_id": "P-007", "description": "cylinder block", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "8", "part_id": "P-008", "description": "processing machines", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}]}, {"subsystem_id": "SS-007", "subsystem_name": "processing machines", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: processing machines", "domain": "systems", "maturity": "candidate"}, {"subsystem_id": "SS-008", "subsystem_name": "fluid-pressure spring clamping", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: fluid-pressure spring clamping", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-006"]}, {"subsystem_id": "SS-009", "subsystem_name": "cylindrical piston member", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: cylindrical piston member", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-006", "ACT-007", "ACT-008", "ACT-009", "ACT-010"]}, {"subsystem_id": "SS-010", "subsystem_name": "piston member", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: piston member", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-006", "ACT-007", "ACT-008", "ACT-009", "ACT-010"]}, {"subsystem_id": "SS-011", "subsystem_name": "output shaft", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: output shaft", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-007", "ACT-008", "ACT-009", "ACT-010"]}, {"subsystem_id": "SS-012", "subsystem_name": "clamping arm", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: clamping arm", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "57", "part_id": "P-057", "description": "clamping face", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "16", "part_id": "P-016", "description": "pallet", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "45", "part_id": "P-045", "description": "guide pin", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "83", "part_id": "P-083", "description": "longitudinal groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "68", "part_id": "P-068", "description": "second operating balls", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "59", "part_id": "P-059", "description": "small- diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}], "allocated_functions": ["ACT-007", "ACT-008", "ACT-009", "ACT-010", "ACT-011", "ACT-012", "ACT-013", "ACT-014", "ACT-015", "ACT-042", "ACT-037", "ACT-048", "ACT-049", "ACT-051", "ACT-030", "ACT-052", "ACT-055"]}, {"subsystem_id": "SS-013", "subsystem_name": "locking mechanism", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: locking mechanism", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-008", "ACT-009", "ACT-010"]}, {"subsystem_id": "SS-014", "subsystem_name": "clamping body", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: clamping body", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "11", "part_id": "P-011", "description": "output shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}]}, {"subsystem_id": "SS-015", "subsystem_name": "clamping apparatuses", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: clamping apparatuses", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}]}, {"subsystem_id": "SS-016", "subsystem_name": "pallet", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: pallet", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-014"]}, {"subsystem_id": "SS-017", "subsystem_name": "shaft", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: shaft", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-014", "ACT-015", "ACT-019", "ACT-020", "ACT-021", "ACT-048", "ACT-049", "ACT-051", "ACT-052", "ACT-055"]}, {"subsystem_id": "SS-018", "subsystem_name": "first engaging member", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: first engaging member", "domain": "systems", "maturity": "candidate"}, {"subsystem_id": "SS-019", "subsystem_name": "first elastic member", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: first elastic member", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-028", "ACT-029", "ACT-030", "ACT-052"]}, {"subsystem_id": "SS-020", "subsystem_name": "first retainer", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: first retainer", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-027", "ACT-028", "ACT-029", "ACT-030", "ACT-052"]}, {"subsystem_id": "SS-021", "subsystem_name": "second engaging member", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: second engaging member", "domain": "systems", "maturity": "candidate"}, {"subsystem_id": "SS-022", "subsystem_name": "second elastic member", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: second elastic member", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-028", "ACT-029", "ACT-030", "ACT-052"]}, {"subsystem_id": "SS-023", "subsystem_name": "second retainer", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: second retainer", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-027", "ACT-028", "ACT-029", "ACT-030", "ACT-052", "ACT-055"]}, {"subsystem_id": "SS-024", "subsystem_name": "guide member", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: guide member", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-019", "ACT-020"]}, {"subsystem_id": "SS-025", "subsystem_name": "first pushing member", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: first pushing member", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-019", "ACT-020", "ACT-021"]}, {"subsystem_id": "SS-026", "subsystem_name": "second pushing member", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: second pushing member", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-019", "ACT-020", "ACT-021", "ACT-022"]}, {"subsystem_id": "SS-027", "subsystem_name": "first small-diameter segment", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: first small-diameter segment", "domain": "systems", "maturity": "candidate"}, {"subsystem_id": "SS-028", "subsystem_name": "first unlocking segment", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: first unlocking segment", "domain": "systems", "maturity": "candidate"}, {"subsystem_id": "SS-029", "subsystem_name": "second small-diameter segment", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: second small-diameter segment", "domain": "systems", "maturity": "candidate"}, {"subsystem_id": "SS-030", "subsystem_name": "second unlocking segment", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: second unlocking segment", "domain": "systems", "maturity": "candidate"}, {"subsystem_id": "SS-031", "subsystem_name": "sleeve", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: sleeve", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "21", "part_id": "P-021", "description": "first retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "58", "part_id": "P-058", "description": "flange", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "51", "part_id": "P-051", "description": "Belleville spring", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "54", "part_id": "P-054", "description": "washer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "59", "part_id": "P-059", "description": "small- diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "57", "part_id": "P-057", "description": "clamping face", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "16", "part_id": "P-016", "description": "pallet", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "45", "part_id": "P-045", "description": "guide pin", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "83", "part_id": "P-083", "description": "longitudinal groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "68", "part_id": "P-068", "description": "second operating balls", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}], "allocated_functions": ["ACT-027"]}, {"subsystem_id": "SS-032", "subsystem_name": "lower case", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: lower case", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "24", "part_id": "P-024", "description": "second retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "36", "part_id": "P-036", "description": "second small-diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "21", "part_id": "P-021", "description": "first retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "73", "part_id": "P-073", "description": "shaft segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "81", "part_id": "P-081", "description": "clamping shaft 5", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "88", "part_id": "P-088", "description": "clamping arm 6", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "32", "part_id": "P-032", "description": "first small-diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "34", "part_id": "P-034", "description": "first unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "37", "part_id": "P-037", "description": "second unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "20", "part_id": "P-020", "description": "first elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "23", "part_id": "P-023", "description": "second elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "3", "part_id": "P-003", "description": "shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}]}, {"subsystem_id": "SS-033", "subsystem_name": "elastic member", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: elastic member", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-028", "ACT-029", "ACT-030"]}, {"subsystem_id": "SS-034", "subsystem_name": "apparatus", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: apparatus", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-031", "ACT-032"]}, {"subsystem_id": "SS-035", "subsystem_name": "clamping shaft", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: clamping shaft", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "64", "part_id": "P-064", "description": "passing-though recess", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "65", "part_id": "P-065", "description": "small- diameter shaft segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "66", "part_id": "P-066", "description": "cylindrical segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}], "allocated_functions": ["ACT-037", "ACT-038", "ACT-046", "ACT-047"]}, {"subsystem_id": "SS-036", "subsystem_name": "clamping case 4", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: clamping case 4", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "42", "part_id": "P-042", "description": "upper case 4 a", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "43", "part_id": "P-043", "description": "bearing", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "45", "part_id": "P-045", "description": "guide pin", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "47", "part_id": "P-047", "description": "coil spring 16", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "38", "part_id": "P-038", "description": "sleeve", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "48", "part_id": "P-048", "description": "sleeve 13", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "46", "part_id": "P-046", "description": "coil spring", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "50", "part_id": "P-050", "description": "Belleville", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "81", "part_id": "P-081", "description": "clamping shaft 5", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "88", "part_id": "P-088", "description": "clamping arm 6", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "74", "part_id": "P-074", "description": "first pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "26", "part_id": "P-026", "description": "spiral groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "5", "part_id": "P-005", "description": "operating balls", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}]}, {"subsystem_id": "SS-037", "subsystem_name": "bearing", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: bearing", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-033", "ACT-034"]}, {"subsystem_id": "SS-038", "subsystem_name": "bearing 8", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: bearing 8", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-033", "ACT-034"]}, {"subsystem_id": "SS-039", "subsystem_name": "housing chamber", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: housing chamber", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "51", "part_id": "P-051", "description": "Belleville spring", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "53", "part_id": "P-053", "description": "plunger 18", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "54", "part_id": "P-054", "description": "washer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "43", "part_id": "P-043", "description": "bearing", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}]}, {"subsystem_id": "SS-040", "subsystem_name": "retainer", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: retainer", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-033", "ACT-034"]}, {"subsystem_id": "SS-041", "subsystem_name": "retainer 15", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: retainer 15", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-033", "ACT-034"]}, {"subsystem_id": "SS-042", "subsystem_name": "coil spring 16", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: coil spring 16", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-034"]}, {"subsystem_id": "SS-043", "subsystem_name": "housing chamber 12", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: housing chamber 12", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "51", "part_id": "P-051", "description": "Belleville spring", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "53", "part_id": "P-053", "description": "plunger 18", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "54", "part_id": "P-054", "description": "washer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "43", "part_id": "P-043", "description": "bearing", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}]}, {"subsystem_id": "SS-044", "subsystem_name": "Belleville spring", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: Belleville spring", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-037"]}, {"subsystem_id": "SS-045", "subsystem_name": "clamping apparatus 1", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: clamping apparatus 1", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "60", "part_id": "P-060", "description": "retainer 15", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "53", "part_id": "P-053", "description": "plunger 18", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "61", "part_id": "P-061", "description": "first operating balls 14", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "62", "part_id": "P-062", "description": "second operating balls 24", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "65", "part_id": "P-065", "description": "small- diameter shaft segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "66", "part_id": "P-066", "description": "cylindrical segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "67", "part_id": "P-067", "description": "hollow-disk-shaped flange", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "79", "part_id": "P-079", "description": "pressing rod", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "57", "part_id": "P-057", "description": "clamping face", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "16", "part_id": "P-016", "description": "pallet", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "78", "part_id": "P-078", "description": "pressing bush", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "28", "part_id": "P-028", "description": "first pushing member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "85", "part_id": "P-085", "description": "pushing member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "3", "part_id": "P-003", "description": "shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "86", "part_id": "P-086", "description": "shaft 5", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "29", "part_id": "P-029", "description": "second pushing member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "24", "part_id": "P-024", "description": "second retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "76", "part_id": "P-076", "description": "second pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "1", "part_id": "P-001", "description": "pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "74", "part_id": "P-074", "description": "first pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "81", "part_id": "P-081", "description": "clamping shaft 5", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}], "allocated_functions": ["ACT-037", "ACT-043"]}, {"subsystem_id": "SS-046", "subsystem_name": "clamping shaft 5", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: clamping shaft 5", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "64", "part_id": "P-064", "description": "passing-though recess", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "65", "part_id": "P-065", "description": "small- diameter shaft segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "66", "part_id": "P-066", "description": "cylindrical segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}]}, {"subsystem_id": "SS-047", "subsystem_name": "plunger", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: plunger", "domain": "systems", "maturity": "candidate"}, {"subsystem_id": "SS-048", "subsystem_name": "first pressing plate", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: first pressing plate", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-035"]}, {"subsystem_id": "SS-049", "subsystem_name": "first pressing plate 27", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: first pressing plate 27", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-035"]}, {"subsystem_id": "SS-050", "subsystem_name": "pressing plate", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: pressing plate", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-035"]}, {"subsystem_id": "SS-051", "subsystem_name": "second pressing plate", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: second pressing plate", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-035"]}, {"subsystem_id": "SS-052", "subsystem_name": "second pressing plate 28", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: second pressing plate 28", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-035"]}, {"subsystem_id": "SS-053", "subsystem_name": "pressing bush", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: pressing bush", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-035"]}, {"subsystem_id": "SS-054", "subsystem_name": "pressing rod", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: pressing rod", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-035"]}, {"subsystem_id": "SS-055", "subsystem_name": "pushing member", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: pushing member", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-037"]}, {"subsystem_id": "SS-056", "subsystem_name": "coil spring", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: coil spring", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}], "allocated_functions": ["ACT-037"]}, {"subsystem_id": "SS-057", "subsystem_name": "clamping arm 6", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: clamping arm 6", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "57", "part_id": "P-057", "description": "clamping face", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "16", "part_id": "P-016", "description": "pallet", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "45", "part_id": "P-045", "description": "guide pin", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "83", "part_id": "P-083", "description": "longitudinal groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "68", "part_id": "P-068", "description": "second operating balls", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "59", "part_id": "P-059", "description": "small- diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}], "allocated_functions": ["ACT-042", "ACT-037"]}, {"subsystem_id": "SS-058", "subsystem_name": "work", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: work", "domain": "systems", "maturity": "candidate"}, {"subsystem_id": "SS-059", "subsystem_name": "lower case 4", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: lower case 4", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "81", "part_id": "P-081", "description": "clamping shaft 5", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "88", "part_id": "P-088", "description": "clamping arm 6", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "74", "part_id": "P-074", "description": "first pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}]}, {"subsystem_id": "SS-060", "subsystem_name": "sleeve 13", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: sleeve 13", "domain": "systems", "maturity": "candidate"}, {"subsystem_id": "SS-061", "subsystem_name": "upper case", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: upper case", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "3", "part_id": "P-003", "description": "shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "19", "part_id": "P-019", "description": "first engaging member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "21", "part_id": "P-021", "description": "first retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "20", "part_id": "P-020", "description": "first elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "2", "part_id": "P-002", "description": "elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}]}, {"subsystem_id": "SS-062", "subsystem_name": "member", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: member", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-022"]}, {"subsystem_id": "SS-063", "subsystem_name": "spiral groove", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: spiral groove", "domain": "systems", "maturity": "candidate"}], "values": [{"value_id": "VAL-001", "name": "long stroke", "expression": "long stroke", "source": "patent extraction"}, {"value_id": "VAL-002", "name": "spring constant", "expression": "spring constant", "source": "patent extraction"}, {"value_id": "VAL-003", "name": "height direction", "expression": "height direction", "source": "patent extraction"}, {"value_id": "VAL-004", "name": "inner diameter", "expression": "inner diameter", "source": "patent extraction"}, {"value_id": "VAL-005", "name": "elastic force", "expression": "elastic force", "source": "patent extraction"}, {"value_id": "VAL-006", "name": "118 N", "expression": "118 N", "source": "patent extraction"}, {"value_id": "VAL-007", "name": "12 Kgf", "expression": "12 Kgf", "source": "patent extraction"}, {"value_id": "VAL-008", "name": "2452 N", "expression": "2452 N", "source": "patent extraction"}, {"value_id": "VAL-009", "name": "relatively weak elastic force", "expression": "relatively weak elastic force", "source": "patent extraction"}, {"value_id": "VAL-010", "name": "strong elastic force", "expression": "strong elastic force", "source": "patent extraction"}, {"value_id": "VAL-011", "name": "oil pressure", "expression": "oil pressure", "source": "patent extraction"}, {"value_id": "VAL-012", "name": "first spring constant", "expression": "first spring constant", "source": "patent extraction"}, {"value_id": "VAL-013", "name": "first elastic force", "expression": "first elastic force", "source": "patent extraction"}, {"value_id": "VAL-014", "name": "second spring constant", "expression": "second spring constant", "source": "patent extraction"}, {"value_id": "VAL-015", "name": "second elastic force", "expression": "second elastic force", "source": "patent extraction"}], "behaviour": {"actions": [{"action_id": "ACT-001", "name": "detachably clamps", "steps": [{"step_no": 1, "description": "detachably clamps"}]}, {"action_id": "ACT-002", "name": "clamps", "steps": [{"step_no": 1, "description": "clamps"}]}, {"action_id": "ACT-003", "name": "temporarily firmly holding", "steps": [{"step_no": 1, "description": "temporarily firmly holding"}]}, {"action_id": "ACT-004", "name": "easily releasing", "steps": [{"step_no": 1, "description": "easily releasing"}]}, {"action_id": "ACT-005", "name": "releasing", "steps": [{"step_no": 1, "description": "releasing"}]}, {"action_id": "ACT-006", "name": "detachably hold", "steps": [{"step_no": 1, "description": "detachably hold"}]}, {"action_id": "ACT-007", "name": "vertically moves", "steps": [{"step_no": 1, "description": "vertically moves"}]}, {"action_id": "ACT-008", "name": "clamp", "steps": [{"step_no": 1, "description": "clamp"}]}, {"action_id": "ACT-009", "name": "clamp the work", "steps": [{"step_no": 1, "description": "clamp the work"}]}, {"action_id": "ACT-010", "name": "locked", "steps": [{"step_no": 1, "description": "locked"}]}, {"action_id": "ACT-011", "name": "pivoted", "steps": [{"step_no": 1, "description": "pivoted"}]}, {"action_id": "ACT-012", "name": "release", "steps": [{"step_no": 1, "description": "release"}]}, {"action_id": "ACT-013", "name": "release of the work", "steps": [{"step_no": 1, "description": "release of the work"}]}, {"action_id": "ACT-014", "name": "replacement", "steps": [{"step_no": 1, "description": "replacement"}]}, {"action_id": "ACT-015", "name": "replacement of a work", "steps": [{"step_no": 1, "description": "replacement of a work"}]}, {"action_id": "ACT-016", "name": "first stroke", "steps": [{"step_no": 1, "description": "first stroke"}]}, {"action_id": "ACT-017", "name": "second stroke", "steps": [{"step_no": 1, "description": "second stroke"}]}, {"action_id": "ACT-018", "name": "clamping position", "steps": [{"step_no": 1, "description": "clamping position"}]}, {"action_id": "ACT-019", "name": "pushing", "steps": [{"step_no": 1, "description": "pushing"}]}, {"action_id": "ACT-020", "name": "pushing the shaft upward", "steps": [{"step_no": 1, "description": "pushing the shaft upward"}]}, {"action_id": "ACT-021", "name": "pushing the second retainer upward", "steps": [{"step_no": 1, "description": "pushing the second retainer upward"}]}, {"action_id": "ACT-022", "name": "pushes", "steps": [{"step_no": 1, "description": "pushes"}]}, {"action_id": "ACT-023", "name": "second position", "steps": [{"step_no": 1, "description": "second position"}]}, {"action_id": "ACT-024", "name": "third position", "steps": [{"step_no": 1, "description": "third position"}]}, {"action_id": "ACT-025", "name": "fourth position", "steps": [{"step_no": 1, "description": "fourth position"}]}, {"action_id": "ACT-026", "name": "releasing position", "steps": [{"step_no": 1, "description": "releasing position"}]}, {"action_id": "ACT-027", "name": "slidable", "steps": [{"step_no": 1, "description": "slidable"}]}, {"action_id": "ACT-028", "name": "slidably guided", "steps": [{"step_no": 1, "description": "slidably guided"}]}, {"action_id": "ACT-029", "name": "urges", "steps": [{"step_no": 1, "description": "urges"}]}, {"action_id": "ACT-030", "name": "urges the first retainer downward", "steps": [{"step_no": 1, "description": "urges the first retainer downward"}]}, {"action_id": "ACT-031", "name": "firmly holding", "steps": [{"step_no": 1, "description": "firmly holding"}]}, {"action_id": "ACT-032", "name": "holding", "steps": [{"step_no": 1, "description": "holding"}]}, {"action_id": "ACT-033", "name": "pivotally pivots", "steps": [{"step_no": 1, "description": "pivotally pivots"}]}, {"action_id": "ACT-034", "name": "pivotally retain", "steps": [{"step_no": 1, "description": "pivotally retain"}]}, {"action_id": "ACT-035", "name": "driving", "steps": [{"step_no": 1, "description": "driving"}]}, {"action_id": "ACT-036", "name": "operation", "steps": [{"step_no": 1, "description": "operation"}]}, {"action_id": "ACT-037", "name": "clamping", "steps": [{"step_no": 1, "description": "clamping"}]}, {"action_id": "ACT-038", "name": "unclamping", "steps": [{"step_no": 1, "description": "unclamping"}]}, {"action_id": "ACT-039", "name": "FIG. 3B", "steps": [{"step_no": 1, "description": "FIG. 3B"}]}, {"action_id": "ACT-040", "name": "FIG. 3C", "steps": [{"step_no": 1, "description": "FIG. 3C"}]}, {"action_id": "ACT-041", "name": "FIG. 3A", "steps": [{"step_no": 1, "description": "FIG. 3A"}]}, {"action_id": "ACT-042", "name": "clamped", "steps": [{"step_no": 1, "description": "clamped"}]}, {"action_id": "ACT-043", "name": "unclamped", "steps": [{"step_no": 1, "description": "unclamped"}]}, {"action_id": "ACT-044", "name": "removed", "steps": [{"step_no": 1, "description": "removed"}]}, {"action_id": "ACT-045", "name": "replacing", "steps": [{"step_no": 1, "description": "replacing"}]}, {"action_id": "ACT-046", "name": "pivots", "steps": [{"step_no": 1, "description": "pivots"}]}, {"action_id": "ACT-047", "name": "pivots clockwise", "steps": [{"step_no": 1, "description": "pivots clockwise"}]}, {"action_id": "ACT-048", "name": "sliding movement", "steps": [{"step_no": 1, "description": "sliding movement"}]}, {"action_id": "ACT-049", "name": "disengageably clamped", "steps": [{"step_no": 1, "description": "disengageably clamped"}]}, {"action_id": "ACT-050", "name": "first spring constant", "steps": [{"step_no": 1, "description": "first spring constant"}]}, {"action_id": "ACT-051", "name": "actuated", "steps": [{"step_no": 1, "description": "actuated"}]}, {"action_id": "ACT-052", "name": "transmitting", "steps": [{"step_no": 1, "description": "transmitting"}]}, {"action_id": "ACT-053", "name": "spring constant", "steps": [{"step_no": 1, "description": "spring constant"}]}, {"action_id": "ACT-054", "name": "providing a second elastic force", "steps": [{"step_no": 1, "description": "providing a second elastic force"}]}, {"action_id": "ACT-055", "name": "transmitting the second elastic force", "steps": [{"step_no": 1, "description": "transmitting the second elastic force"}]}]}, "relationships": [{"relationship_id": "REL-0001", "type": "parts", "source": "clamping case", "target": "shaft", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6718; review against graph evidence."}, {"relationship_id": "REL-0002", "type": "parts", "source": "internal combustion engine", "target": "shaft", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8870; review against graph evidence."}, {"relationship_id": "REL-0003", "type": "parts", "source": "internal combustion engine", "target": "clamping arm", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7419; review against graph evidence."}, {"relationship_id": "REL-0004", "type": "parts", "source": "internal combustion engine", "target": "cylinder block", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8704; review against graph evidence."}, {"relationship_id": "REL-0005", "type": "parts", "source": "internal combustion engine", "target": "processing machines", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7602; review against graph evidence."}, {"relationship_id": "REL-0006", "type": "parts", "source": "internal combustion engine", "target": "pressing plate", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6332; review against graph evidence."}, {"relationship_id": "REL-0007", "type": "parts", "source": "internal combustion engine", "target": "elastic member", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6015; review against graph evidence."}, {"relationship_id": "REL-0008", "type": "parts", "source": "internal combustion engine", "target": "retainer", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6224; review against graph evidence."}, {"relationship_id": "REL-0009", "type": "parts", "source": "internal combustion engine", "target": "operating balls", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6481; review against graph evidence."}, {"relationship_id": "REL-0010", "type": "parts", "source": "transfer line", "target": "shaft", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8022; review against graph evidence."}, {"relationship_id": "REL-0011", "type": "parts", "source": "transfer line", "target": "cylinder block", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7002; review against graph evidence."}, {"relationship_id": "REL-0012", "type": "parts", "source": "transfer line", "target": "processing machines", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8790; review against graph evidence."}, {"relationship_id": "REL-0013", "type": "parts", "source": "clamping apparatus", "target": "cylindrical piston member", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8915; review against graph evidence."}, {"relationship_id": "REL-0014", "type": "parts", "source": "clamping apparatus", "target": "piston member", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9223; review against graph evidence."}, {"relationship_id": "REL-0015", "type": "parts", "source": "clamping apparatus", "target": "output shaft", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9455; review against graph evidence."}, {"relationship_id": "REL-0016", "type": "parts", "source": "clamping apparatus", "target": "clamping arm", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9680; review against graph evidence."}, {"relationship_id": "REL-0017", "type": "parts", "source": "clamping body", "target": "output shaft", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6984; review against graph evidence."}, {"relationship_id": "REL-0018", "type": "parts", "source": "clamping body", "target": "clamping arm", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6454; review against graph evidence."}, {"relationship_id": "REL-0019", "type": "parts", "source": "clamping apparatus", "target": "cylinder block", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7483; review against graph evidence."}, {"relationship_id": "REL-0020", "type": "parts", "source": "clamping apparatuses", "target": "clamping arm", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6084; review against graph evidence."}, {"relationship_id": "REL-0021", "type": "parts", "source": "clamping apparatus", "target": "clamping case", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9333; review against graph evidence."}, {"relationship_id": "REL-0022", "type": "parts", "source": "clamping apparatus", "target": "shaft", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9692; review against graph evidence."}, {"relationship_id": "REL-0023", "type": "parts", "source": "clamping apparatus", "target": "first engaging member", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8966; review against graph evidence."}, {"relationship_id": "REL-0024", "type": "parts", "source": "clamping apparatus", "target": "first elastic member", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9129; review against graph evidence."}, {"relationship_id": "REL-0025", "type": "parts", "source": "clamping apparatus", "target": "first retainer", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9632; review against graph evidence."}, {"relationship_id": "REL-0026", "type": "parts", "source": "clamping apparatus", "target": "second engaging member", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8884; review against graph evidence."}, {"relationship_id": "REL-0027", "type": "parts", "source": "clamping apparatus", "target": "second elastic member", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8600; review against graph evidence."}, {"relationship_id": "REL-0028", "type": "parts", "source": "clamping apparatus", "target": "second retainer", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9690; review against graph evidence."}, {"relationship_id": "REL-0029", "type": "parts", "source": "clamping apparatus", "target": "arm", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7836; review against graph evidence."}, {"relationship_id": "REL-0030", "type": "parts", "source": "clamping apparatus", "target": "pallet", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8656; review against graph evidence."}, {"relationship_id": "REL-0031", "type": "parts", "source": "clamping apparatus", "target": "spiral groove", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8900; review against graph evidence."}, {"relationship_id": "REL-0032", "type": "parts", "source": "clamping apparatus", "target": "guide member", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9418; review against graph evidence."}, {"relationship_id": "REL-0033", "type": "parts", "source": "clamping apparatus", "target": "first pushing member", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8897; review against graph evidence."}, {"relationship_id": "REL-0034", "type": "parts", "source": "clamping apparatus", "target": "second pushing member", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8629; review against graph evidence."}, {"relationship_id": "REL-0035", "type": "parts", "source": "clamping apparatus", "target": "first groove", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8350; review against graph evidence."}, {"relationship_id": "REL-0036", "type": "parts", "source": "clamping apparatus", "target": "first small-diameter segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9202; review against graph evidence."}, {"relationship_id": "REL-0037", "type": "parts", "source": "clamping apparatus", "target": "small-diameter segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9225; review against graph evidence."}, {"relationship_id": "REL-0038", "type": "parts", "source": "clamping apparatus", "target": "first unlocking segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8999; review against graph evidence."}, {"relationship_id": "REL-0039", "type": "parts", "source": "clamping apparatus", "target": "unlocking segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9128; review against graph evidence."}, {"relationship_id": "REL-0040", "type": "parts", "source": "clamping apparatus", "target": "second small-diameter segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9400; review against graph evidence."}, {"relationship_id": "REL-0041", "type": "parts", "source": "clamping apparatus", "target": "second unlocking segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9429; review against graph evidence."}, {"relationship_id": "REL-0042", "type": "parts", "source": "clamping case", "target": "first unlocking segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7254; review against graph evidence."}, {"relationship_id": "REL-0043", "type": "parts", "source": "clamping case", "target": "second engaging member", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6379; review against graph evidence."}, {"relationship_id": "REL-0044", "type": "parts", "source": "clamping case", "target": "first retainer", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8283; review against graph evidence."}, {"relationship_id": "REL-0045", "type": "parts", "source": "clamping case", "target": "retainer", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8474; review against graph evidence."}, {"relationship_id": "REL-0046", "type": "parts", "source": "clamping case", "target": "second retainer", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8300; review against graph evidence."}, {"relationship_id": "REL-0047", "type": "parts", "source": "clamping case", "target": "first small-diameter segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7098; review against graph evidence."}, {"relationship_id": "REL-0048", "type": "parts", "source": "clamping case", "target": "second small-diameter segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7073; review against graph evidence."}, {"relationship_id": "REL-0049", "type": "parts", "source": "clamping case", "target": "second unlocking segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6291; review against graph evidence."}, {"relationship_id": "REL-0050", "type": "parts", "source": "clamping case", "target": "first elastic member", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6521; review against graph evidence."}, {"relationship_id": "REL-0051", "type": "parts", "source": "clamping case", "target": "elastic member", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6792; review against graph evidence."}, {"relationship_id": "REL-0052", "type": "parts", "source": "clamping case", "target": "plunger", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8476; review against graph evidence."}, {"relationship_id": "REL-0053", "type": "parts", "source": "sleeve", "target": "first retainer", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8214; review against graph evidence."}, {"relationship_id": "REL-0054", "type": "parts", "source": "lower case", "target": "retainer", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7659; review against graph evidence."}, {"relationship_id": "REL-0055", "type": "parts", "source": "lower case", "target": "second retainer", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8017; review against graph evidence."}, {"relationship_id": "REL-0056", "type": "parts", "source": "lower case", "target": "second small-diameter segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8625; review against graph evidence."}, {"relationship_id": "REL-0057", "type": "parts", "source": "lower case", "target": "first retainer", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8471; review against graph evidence."}, {"relationship_id": "REL-0058", "type": "parts", "source": "lower case", "target": "plunger", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7773; review against graph evidence."}, {"relationship_id": "REL-0059", "type": "parts", "source": "clamping apparatus", "target": "retainer", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9159; review against graph evidence."}, {"relationship_id": "REL-0060", "type": "parts", "source": "clamping apparatus", "target": "elastic member", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9101; review against graph evidence."}, {"relationship_id": "REL-0061", "type": "parts", "source": "clamping apparatus", "target": "plunger", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9356; review against graph evidence."}, {"relationship_id": "REL-0062", "type": "parts", "source": "clamping case", "target": "upper case 4 a", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7381; review against graph evidence."}, {"relationship_id": "REL-0063", "type": "parts", "source": "clamping case", "target": "coil spring 16", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6826; review against graph evidence."}, {"relationship_id": "REL-0064", "type": "parts", "source": "clamping case", "target": "sleeve", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8383; review against graph evidence."}, {"relationship_id": "REL-0065", "type": "parts", "source": "clamping case", "target": "sleeve 13", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6321; review against graph evidence."}, {"relationship_id": "REL-0066", "type": "parts", "source": "clamping case", "target": "coil spring", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6660; review against graph evidence."}, {"relationship_id": "REL-0067", "type": "parts", "source": "clamping case", "target": "Belleville", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6923; review against graph evidence."}, {"relationship_id": "REL-0068", "type": "parts", "source": "clamping case 4", "target": "upper case 4 a", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8041; review against graph evidence."}, {"relationship_id": "REL-0069", "type": "parts", "source": "clamping case 4", "target": "bearing", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6149; review against graph evidence."}, {"relationship_id": "REL-0070", "type": "parts", "source": "clamping case 4", "target": "guide pin", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6041; review against graph evidence."}, {"relationship_id": "REL-0071", "type": "parts", "source": "clamping case 4", "target": "coil spring 16", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7560; review against graph evidence."}, {"relationship_id": "REL-0072", "type": "parts", "source": "clamping case 4", "target": "sleeve", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7442; review against graph evidence."}, {"relationship_id": "REL-0073", "type": "parts", "source": "clamping case 4", "target": "sleeve 13", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7173; review against graph evidence."}, {"relationship_id": "REL-0074", "type": "parts", "source": "clamping case 4", "target": "retainer", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8234; review against graph evidence."}, {"relationship_id": "REL-0075", "type": "parts", "source": "clamping case 4", "target": "coil spring", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7374; review against graph evidence."}, {"relationship_id": "REL-0076", "type": "parts", "source": "clamping case 4", "target": "Belleville", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7599; review against graph evidence."}, {"relationship_id": "REL-0077", "type": "parts", "source": "housing chamber", "target": "Belleville spring", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9354; review against graph evidence."}, {"relationship_id": "REL-0078", "type": "parts", "source": "housing chamber", "target": "plunger", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9111; review against graph evidence."}, {"relationship_id": "REL-0079", "type": "parts", "source": "housing chamber", "target": "plunger 18", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9000; review against graph evidence."}, {"relationship_id": "REL-0080", "type": "parts", "source": "housing chamber", "target": "washer", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7556; review against graph evidence."}, {"relationship_id": "REL-0081", "type": "parts", "source": "housing chamber", "target": "clamping shaft", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7526; review against graph evidence."}, {"relationship_id": "REL-0082", "type": "parts", "source": "housing chamber", "target": "bearing", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7368; review against graph evidence."}, {"relationship_id": "REL-0083", "type": "parts", "source": "housing chamber 12", "target": "Belleville spring", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9324; review against graph evidence."}, {"relationship_id": "REL-0084", "type": "parts", "source": "housing chamber 12", "target": "plunger", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9002; review against graph evidence."}, {"relationship_id": "REL-0085", "type": "parts", "source": "housing chamber 12", "target": "plunger 18", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8884; review against graph evidence."}, {"relationship_id": "REL-0086", "type": "parts", "source": "housing chamber 12", "target": "washer", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7432; review against graph evidence."}, {"relationship_id": "REL-0087", "type": "parts", "source": "housing chamber 12", "target": "clamping shaft", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7541; review against graph evidence."}, {"relationship_id": "REL-0088", "type": "parts", "source": "housing chamber 12", "target": "bearing", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7115; review against graph evidence."}, {"relationship_id": "REL-0089", "type": "parts", "source": "sleeve", "target": "flange", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8588; review against graph evidence."}, {"relationship_id": "REL-0090", "type": "parts", "source": "sleeve", "target": "Belleville spring", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7756; review against graph evidence."}, {"relationship_id": "REL-0091", "type": "parts", "source": "sleeve", "target": "washer", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6762; review against graph evidence."}, {"relationship_id": "REL-0092", "type": "parts", "source": "sleeve", "target": "small- diameter segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8676; review against graph evidence."}, {"relationship_id": "REL-0093", "type": "parts", "source": "sleeve", "target": "unlocking segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8804; review against graph evidence."}, {"relationship_id": "REL-0094", "type": "parts", "source": "sleeve", "target": "retainer", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8095; review against graph evidence."}, {"relationship_id": "REL-0095", "type": "parts", "source": "sleeve", "target": "plunger", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8363; review against graph evidence."}, {"relationship_id": "REL-0096", "type": "parts", "source": "clamping apparatus", "target": "flange", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7137; review against graph evidence."}, {"relationship_id": "REL-0097", "type": "parts", "source": "clamping apparatus", "target": "Belleville spring", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8770; review against graph evidence."}, {"relationship_id": "REL-0098", "type": "parts", "source": "clamping apparatus", "target": "small- diameter segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6866; review against graph evidence."}, {"relationship_id": "REL-0099", "type": "parts", "source": "clamping apparatus", "target": "retainer 15", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9030; review against graph evidence."}, {"relationship_id": "REL-0100", "type": "parts", "source": "clamping apparatus", "target": "plunger 18", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8946; review against graph evidence."}, {"relationship_id": "REL-0101", "type": "parts", "source": "clamping apparatus", "target": "first operating balls 14", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9204; review against graph evidence."}, {"relationship_id": "REL-0102", "type": "parts", "source": "clamping apparatus", "target": "second operating balls 24", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9195; review against graph evidence."}, {"relationship_id": "REL-0103", "type": "parts", "source": "clamping apparatus", "target": "passing-through recess", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6486; review against graph evidence."}, {"relationship_id": "REL-0104", "type": "parts", "source": "clamping apparatus", "target": "small- diameter shaft segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8457; review against graph evidence."}, {"relationship_id": "REL-0105", "type": "parts", "source": "clamping apparatus", "target": "cylindrical segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8573; review against graph evidence."}, {"relationship_id": "REL-0106", "type": "parts", "source": "clamping apparatus", "target": "hollow-disk-shaped flange", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8221; review against graph evidence."}, {"relationship_id": "REL-0107", "type": "parts", "source": "clamping apparatus 1", "target": "retainer", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8791; review against graph evidence."}, {"relationship_id": "REL-0108", "type": "parts", "source": "clamping apparatus 1", "target": "retainer 15", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8645; review against graph evidence."}, {"relationship_id": "REL-0109", "type": "parts", "source": "clamping apparatus 1", "target": "plunger 18", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8659; review against graph evidence."}, {"relationship_id": "REL-0110", "type": "parts", "source": "clamping apparatus 1", "target": "first operating balls 14", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8793; review against graph evidence."}, {"relationship_id": "REL-0111", "type": "parts", "source": "clamping apparatus 1", "target": "second operating balls 24", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8834; review against graph evidence."}, {"relationship_id": "REL-0112", "type": "parts", "source": "clamping apparatus 1", "target": "small- diameter shaft segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7904; review against graph evidence."}, {"relationship_id": "REL-0113", "type": "parts", "source": "clamping apparatus 1", "target": "cylindrical segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8214; review against graph evidence."}, {"relationship_id": "REL-0114", "type": "parts", "source": "clamping apparatus 1", "target": "hollow-disk-shaped flange", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7641; review against graph evidence."}, {"relationship_id": "REL-0115", "type": "parts", "source": "clamping shaft", "target": "passing-though recess", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7094; review against graph evidence."}, {"relationship_id": "REL-0116", "type": "parts", "source": "clamping shaft", "target": "small- diameter shaft segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9523; review against graph evidence."}, {"relationship_id": "REL-0117", "type": "parts", "source": "clamping shaft", "target": "retainer", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7835; review against graph evidence."}, {"relationship_id": "REL-0118", "type": "parts", "source": "clamping shaft", "target": "cylindrical segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9305; review against graph evidence."}, {"relationship_id": "REL-0119", "type": "parts", "source": "clamping shaft", "target": "unlocking segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7941; review against graph evidence."}, {"relationship_id": "REL-0120", "type": "parts", "source": "clamping shaft 5", "target": "passing-though recess", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6621; review against graph evidence."}, {"relationship_id": "REL-0121", "type": "parts", "source": "clamping shaft 5", "target": "small- diameter shaft segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9442; review against graph evidence."}, {"relationship_id": "REL-0122", "type": "parts", "source": "clamping shaft 5", "target": "retainer", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7788; review against graph evidence."}, {"relationship_id": "REL-0123", "type": "parts", "source": "clamping shaft 5", "target": "cylindrical segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9253; review against graph evidence."}, {"relationship_id": "REL-0124", "type": "parts", "source": "clamping shaft 5", "target": "unlocking segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7879; review against graph evidence."}, {"relationship_id": "REL-0125", "type": "parts", "source": "lower case", "target": "unlocking segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6358; review against graph evidence."}, {"relationship_id": "REL-0126", "type": "parts", "source": "lower case", "target": "shaft segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6691; review against graph evidence."}, {"relationship_id": "REL-0127", "type": "parts", "source": "clamping apparatus", "target": "second disengageable groove", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7447; review against graph evidence."}, {"relationship_id": "REL-0128", "type": "parts", "source": "clamping apparatus", "target": "disengageable groove", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7498; review against graph evidence."}, {"relationship_id": "REL-0129", "type": "parts", "source": "clamping apparatus", "target": "second operating ball", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7159; review against graph evidence."}, {"relationship_id": "REL-0130", "type": "parts", "source": "clamping apparatus", "target": "operating ball", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7630; review against graph evidence."}, {"relationship_id": "REL-0131", "type": "parts", "source": "clamping apparatus", "target": "shaft segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6306; review against graph evidence."}, {"relationship_id": "REL-0132", "type": "parts", "source": "clamping apparatus", "target": "first pressing plate", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9332; review against graph evidence."}, {"relationship_id": "REL-0133", "type": "parts", "source": "clamping apparatus", "target": "second pressing plate", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9349; review against graph evidence."}, {"relationship_id": "REL-0134", "type": "parts", "source": "clamping apparatus", "target": "pressing rod", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7191; review against graph evidence."}, {"relationship_id": "REL-0135", "type": "parts", "source": "clamping apparatus", "target": "coil spring", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8357; review against graph evidence."}, {"relationship_id": "REL-0136", "type": "parts", "source": "coil spring", "target": "clamping arm", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7039; review against graph evidence."}, {"relationship_id": "REL-0137", "type": "parts", "source": "coil spring", "target": "clamping shaft", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8459; review against graph evidence."}, {"relationship_id": "REL-0138", "type": "parts", "source": "clamping apparatus", "target": "clamping shaft", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9756; review against graph evidence."}, {"relationship_id": "REL-0139", "type": "parts", "source": "clamping apparatus", "target": "operating balls", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6025; review against graph evidence."}, {"relationship_id": "REL-0140", "type": "parts", "source": "clamping apparatus", "target": "clamping face", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7461; review against graph evidence."}, {"relationship_id": "REL-0141", "type": "parts", "source": "clamping apparatus", "target": "pressing bush", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8543; review against graph evidence."}, {"relationship_id": "REL-0142", "type": "parts", "source": "clamping apparatus 1", "target": "clamping shaft", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9743; review against graph evidence."}, {"relationship_id": "REL-0143", "type": "parts", "source": "clamping apparatus 1", "target": "pressing rod", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6038; review against graph evidence."}, {"relationship_id": "REL-0144", "type": "parts", "source": "clamping apparatus 1", "target": "clamping face", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7172; review against graph evidence."}, {"relationship_id": "REL-0145", "type": "parts", "source": "clamping apparatus 1", "target": "pallet", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7128; review against graph evidence."}, {"relationship_id": "REL-0146", "type": "parts", "source": "clamping apparatus 1", "target": "plunger", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8308; review against graph evidence."}, {"relationship_id": "REL-0147", "type": "parts", "source": "clamping apparatus 1", "target": "pressing bush", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8451; review against graph evidence."}, {"relationship_id": "REL-0148", "type": "parts", "source": "clamping apparatus 1", "target": "unlocking segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8060; review against graph evidence."}, {"relationship_id": "REL-0149", "type": "parts", "source": "sleeve", "target": "clamping face", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7299; review against graph evidence."}, {"relationship_id": "REL-0150", "type": "parts", "source": "sleeve", "target": "pallet", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7834; review against graph evidence."}, {"relationship_id": "REL-0151", "type": "parts", "source": "sleeve", "target": "guide pin", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7111; review against graph evidence."}, {"relationship_id": "REL-0152", "type": "parts", "source": "sleeve", "target": "longitudinal groove", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6836; review against graph evidence."}, {"relationship_id": "REL-0153", "type": "parts", "source": "sleeve", "target": "second operating balls", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6947; review against graph evidence."}, {"relationship_id": "REL-0154", "type": "parts", "source": "clamping arm", "target": "plunger", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7248; review against graph evidence."}, {"relationship_id": "REL-0155", "type": "parts", "source": "clamping arm", "target": "unlocking segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8073; review against graph evidence."}, {"relationship_id": "REL-0156", "type": "parts", "source": "clamping arm", "target": "clamping face", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7861; review against graph evidence."}, {"relationship_id": "REL-0157", "type": "parts", "source": "clamping arm", "target": "pallet", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7732; review against graph evidence."}, {"relationship_id": "REL-0158", "type": "parts", "source": "clamping arm", "target": "guide pin", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8004; review against graph evidence."}, {"relationship_id": "REL-0159", "type": "parts", "source": "clamping arm", "target": "longitudinal groove", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8158; review against graph evidence."}, {"relationship_id": "REL-0160", "type": "parts", "source": "clamping arm", "target": "second operating balls", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8055; review against graph evidence."}, {"relationship_id": "REL-0161", "type": "parts", "source": "clamping arm", "target": "small- diameter segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8477; review against graph evidence."}, {"relationship_id": "REL-0162", "type": "parts", "source": "clamping arm 6", "target": "plunger", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7630; review against graph evidence."}, {"relationship_id": "REL-0163", "type": "parts", "source": "clamping arm 6", "target": "unlocking segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7534; review against graph evidence."}, {"relationship_id": "REL-0164", "type": "parts", "source": "clamping arm 6", "target": "clamping face", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7461; review against graph evidence."}, {"relationship_id": "REL-0165", "type": "parts", "source": "clamping arm 6", "target": "pallet", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7967; review against graph evidence."}, {"relationship_id": "REL-0166", "type": "parts", "source": "clamping arm 6", "target": "guide pin", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7412; review against graph evidence."}, {"relationship_id": "REL-0167", "type": "parts", "source": "clamping arm 6", "target": "longitudinal groove", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7492; review against graph evidence."}, {"relationship_id": "REL-0168", "type": "parts", "source": "clamping arm 6", "target": "second operating balls", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8091; review against graph evidence."}, {"relationship_id": "REL-0169", "type": "parts", "source": "clamping arm 6", "target": "small- diameter segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7855; review against graph evidence."}, {"relationship_id": "REL-0170", "type": "parts", "source": "clamping apparatus", "target": "work", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7064; review against graph evidence."}, {"relationship_id": "REL-0171", "type": "parts", "source": "clamping apparatus", "target": "pushing member", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8731; review against graph evidence."}, {"relationship_id": "REL-0172", "type": "parts", "source": "clamping apparatus", "target": "shaft 5", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9304; review against graph evidence."}, {"relationship_id": "REL-0173", "type": "parts", "source": "clamping apparatus", "target": "pressing plate", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9439; review against graph evidence."}, {"relationship_id": "REL-0174", "type": "parts", "source": "clamping apparatus", "target": "clamping shaft 5", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9736; review against graph evidence."}, {"relationship_id": "REL-0175", "type": "parts", "source": "clamping apparatus 1", "target": "first pushing member", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8257; review against graph evidence."}, {"relationship_id": "REL-0176", "type": "parts", "source": "clamping apparatus 1", "target": "pushing member", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8542; review against graph evidence."}, {"relationship_id": "REL-0177", "type": "parts", "source": "clamping apparatus 1", "target": "shaft", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9217; review against graph evidence."}, {"relationship_id": "REL-0178", "type": "parts", "source": "clamping apparatus 1", "target": "shaft 5", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9241; review against graph evidence."}, {"relationship_id": "REL-0179", "type": "parts", "source": "clamping apparatus 1", "target": "second pushing member", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7978; review against graph evidence."}, {"relationship_id": "REL-0180", "type": "parts", "source": "clamping apparatus 1", "target": "second retainer", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7697; review against graph evidence."}, {"relationship_id": "REL-0181", "type": "parts", "source": "clamping apparatus 1", "target": "second pressing plate", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9395; review against graph evidence."}, {"relationship_id": "REL-0182", "type": "parts", "source": "clamping apparatus 1", "target": "pressing plate", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9480; review against graph evidence."}, {"relationship_id": "REL-0183", "type": "parts", "source": "clamping apparatus 1", "target": "first pressing plate", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9364; review against graph evidence."}, {"relationship_id": "REL-0184", "type": "parts", "source": "clamping apparatus 1", "target": "clamping shaft 5", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9738; review against graph evidence."}, {"relationship_id": "REL-0185", "type": "parts", "source": "clamping apparatus 1", "target": "clamping arm", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9695; review against graph evidence."}, {"relationship_id": "REL-0186", "type": "parts", "source": "clamping case", "target": "clamping shaft", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9377; review against graph evidence."}, {"relationship_id": "REL-0187", "type": "parts", "source": "clamping case", "target": "clamping shaft 5", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8996; review against graph evidence."}, {"relationship_id": "REL-0188", "type": "parts", "source": "clamping case", "target": "clamping arm 6", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9385; review against graph evidence."}, {"relationship_id": "REL-0189", "type": "parts", "source": "clamping case", "target": "first pressing plate", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8895; review against graph evidence."}, {"relationship_id": "REL-0190", "type": "parts", "source": "clamping case", "target": "unlocking segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9184; review against graph evidence."}, {"relationship_id": "REL-0191", "type": "parts", "source": "clamping case", "target": "spiral groove", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7043; review against graph evidence."}, {"relationship_id": "REL-0192", "type": "parts", "source": "clamping case 4", "target": "clamping shaft", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9436; review against graph evidence."}, {"relationship_id": "REL-0193", "type": "parts", "source": "clamping case 4", "target": "clamping shaft 5", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9133; review against graph evidence."}, {"relationship_id": "REL-0194", "type": "parts", "source": "clamping case 4", "target": "clamping arm 6", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9481; review against graph evidence."}, {"relationship_id": "REL-0195", "type": "parts", "source": "clamping case 4", "target": "first pressing plate", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9010; review against graph evidence."}, {"relationship_id": "REL-0196", "type": "parts", "source": "clamping case 4", "target": "plunger", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8330; review against graph evidence."}, {"relationship_id": "REL-0197", "type": "parts", "source": "clamping case 4", "target": "unlocking segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9303; review against graph evidence."}, {"relationship_id": "REL-0198", "type": "parts", "source": "clamping case 4", "target": "spiral groove", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7875; review against graph evidence."}, {"relationship_id": "REL-0199", "type": "parts", "source": "lower case", "target": "clamping shaft", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8376; review against graph evidence."}, {"relationship_id": "REL-0200", "type": "parts", "source": "lower case", "target": "clamping shaft 5", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7838; review against graph evidence."}, {"relationship_id": "REL-0201", "type": "parts", "source": "lower case", "target": "clamping arm 6", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8273; review against graph evidence."}, {"relationship_id": "REL-0202", "type": "parts", "source": "lower case 4", "target": "clamping shaft", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8814; review against graph evidence."}, {"relationship_id": "REL-0203", "type": "parts", "source": "lower case 4", "target": "clamping shaft 5", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8272; review against graph evidence."}, {"relationship_id": "REL-0204", "type": "parts", "source": "lower case 4", "target": "clamping arm 6", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8785; review against graph evidence."}, {"relationship_id": "REL-0205", "type": "parts", "source": "lower case 4", "target": "first pressing plate", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6042; review against graph evidence."}, {"relationship_id": "REL-0206", "type": "parts", "source": "lower case 4", "target": "plunger", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7156; review against graph evidence."}, {"relationship_id": "REL-0207", "type": "parts", "source": "lower case 4", "target": "unlocking segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7208; review against graph evidence."}, {"relationship_id": "REL-0208", "type": "parts", "source": "lower case 4", "target": "retainer", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7390; review against graph evidence."}, {"relationship_id": "REL-0209", "type": "parts", "source": "clamping case", "target": "clamping arm", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9243; review against graph evidence."}, {"relationship_id": "REL-0210", "type": "parts", "source": "clamping case", "target": "operating balls", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8733; review against graph evidence."}, {"relationship_id": "REL-0211", "type": "parts", "source": "clamping case 4", "target": "clamping arm", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9312; review against graph evidence."}, {"relationship_id": "REL-0212", "type": "parts", "source": "clamping case 4", "target": "operating balls", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8944; review against graph evidence."}, {"relationship_id": "REL-0213", "type": "parts", "source": "sleeve", "target": "clamping shaft", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6612; review against graph evidence."}, {"relationship_id": "REL-0214", "type": "parts", "source": "upper case", "target": "shaft", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6421; review against graph evidence."}, {"relationship_id": "REL-0215", "type": "parts", "source": "upper case", "target": "clamping arm", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6364; review against graph evidence."}, {"relationship_id": "REL-0216", "type": "parts", "source": "upper case", "target": "first engaging member", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6823; review against graph evidence."}, {"relationship_id": "REL-0217", "type": "parts", "source": "upper case", "target": "first retainer", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7208; review against graph evidence."}, {"relationship_id": "REL-0218", "type": "parts", "source": "upper case", "target": "retainer", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7161; review against graph evidence."}, {"relationship_id": "REL-0219", "type": "parts", "source": "upper case", "target": "first elastic member", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6640; review against graph evidence."}, {"relationship_id": "REL-0220", "type": "parts", "source": "upper case", "target": "elastic member", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6938; review against graph evidence."}, {"relationship_id": "REL-0221", "type": "parts", "source": "clamping apparatus", "target": "sleeve", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9658; review against graph evidence."}, {"relationship_id": "REL-0222", "type": "parts", "source": "clamping apparatus", "target": "sleeve 13", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7838; review against graph evidence."}, {"relationship_id": "REL-0223", "type": "parts", "source": "clamping apparatus", "target": "second groove", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7488; review against graph evidence."}, {"relationship_id": "REL-0224", "type": "parts", "source": "clamping apparatus", "target": "lower case", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9715; review against graph evidence."}, {"relationship_id": "REL-0225", "type": "parts", "source": "clamping case", "target": "lower case", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8636; review against graph evidence."}, {"relationship_id": "REL-0226", "type": "parts", "source": "lower case", "target": "first small-diameter segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7984; review against graph evidence."}, {"relationship_id": "REL-0227", "type": "parts", "source": "lower case", "target": "first unlocking segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7144; review against graph evidence."}, {"relationship_id": "REL-0228", "type": "parts", "source": "lower case", "target": "second unlocking segment", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7867; review against graph evidence."}, {"relationship_id": "REL-0229", "type": "parts", "source": "lower case", "target": "first elastic member", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8742; review against graph evidence."}, {"relationship_id": "REL-0230", "type": "parts", "source": "lower case", "target": "second elastic member", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8731; review against graph evidence."}, {"relationship_id": "REL-0231", "type": "parts", "source": "lower case", "target": "clamping arm", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7160; review against graph evidence."}, {"relationship_id": "REL-0232", "type": "parts", "source": "lower case", "target": "shaft", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7062; review against graph evidence."}, {"relationship_id": "REL-0233", "type": "allocated_functions", "source": "clamping apparatus", "target": "detachably clamps", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9825; review against graph evidence."}, {"relationship_id": "REL-0234", "type": "allocated_functions", "source": "clamping apparatus", "target": "clamps", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9778; review against graph evidence."}, {"relationship_id": "REL-0235", "type": "allocated_functions", "source": "clamping apparatus", "target": "temporarily firmly holding", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9353; review against graph evidence."}, {"relationship_id": "REL-0236", "type": "allocated_functions", "source": "clamping apparatus", "target": "easily releasing", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9522; review against graph evidence."}, {"relationship_id": "REL-0237", "type": "allocated_functions", "source": "clamping apparatus", "target": "releasing", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9524; review against graph evidence."}, {"relationship_id": "REL-0238", "type": "allocated_functions", "source": "cylinder block", "target": "releasing", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6511; review against graph evidence."}, {"relationship_id": "REL-0239", "type": "allocated_functions", "source": "fluid-pressure spring clamping", "target": "detachably hold", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8680; review against graph evidence."}, {"relationship_id": "REL-0240", "type": "allocated_functions", "source": "cylindrical piston member", "target": "detachably hold", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6903; review against graph evidence."}, {"relationship_id": "REL-0241", "type": "allocated_functions", "source": "cylindrical piston member", "target": "vertically moves", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9198; review against graph evidence."}, {"relationship_id": "REL-0242", "type": "allocated_functions", "source": "cylindrical piston member", "target": "clamp", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8809; review against graph evidence."}, {"relationship_id": "REL-0243", "type": "allocated_functions", "source": "cylindrical piston member", "target": "clamp the work", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8766; review against graph evidence."}, {"relationship_id": "REL-0244", "type": "allocated_functions", "source": "cylindrical piston member", "target": "locked", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8232; review against graph evidence."}, {"relationship_id": "REL-0245", "type": "allocated_functions", "source": "piston member", "target": "detachably hold", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6713; review against graph evidence."}, {"relationship_id": "REL-0246", "type": "allocated_functions", "source": "piston member", "target": "vertically moves", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8844; review against graph evidence."}, {"relationship_id": "REL-0247", "type": "allocated_functions", "source": "piston member", "target": "clamp", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8995; review against graph evidence."}, {"relationship_id": "REL-0248", "type": "allocated_functions", "source": "piston member", "target": "clamp the work", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8892; review against graph evidence."}, {"relationship_id": "REL-0249", "type": "allocated_functions", "source": "piston member", "target": "locked", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8511; review against graph evidence."}, {"relationship_id": "REL-0250", "type": "allocated_functions", "source": "output shaft", "target": "vertically moves", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8617; review against graph evidence."}, {"relationship_id": "REL-0251", "type": "allocated_functions", "source": "output shaft", "target": "clamp", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9146; review against graph evidence."}, {"relationship_id": "REL-0252", "type": "allocated_functions", "source": "output shaft", "target": "clamp the work", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8987; review against graph evidence."}, {"relationship_id": "REL-0253", "type": "allocated_functions", "source": "output shaft", "target": "locked", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8685; review against graph evidence."}, {"relationship_id": "REL-0254", "type": "allocated_functions", "source": "clamping arm", "target": "vertically moves", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8149; review against graph evidence."}, {"relationship_id": "REL-0255", "type": "allocated_functions", "source": "clamping arm", "target": "clamp", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9338; review against graph evidence."}, {"relationship_id": "REL-0256", "type": "allocated_functions", "source": "clamping arm", "target": "clamp the work", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9173; review against graph evidence."}, {"relationship_id": "REL-0257", "type": "allocated_functions", "source": "clamping arm", "target": "locked", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8824; review against graph evidence."}, {"relationship_id": "REL-0258", "type": "allocated_functions", "source": "locking mechanism", "target": "clamp", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7342; review against graph evidence."}, {"relationship_id": "REL-0259", "type": "allocated_functions", "source": "locking mechanism", "target": "clamp the work", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7109; review against graph evidence."}, {"relationship_id": "REL-0260", "type": "allocated_functions", "source": "locking mechanism", "target": "locked", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6742; review against graph evidence."}, {"relationship_id": "REL-0261", "type": "allocated_functions", "source": "clamping arm", "target": "pivoted", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8845; review against graph evidence."}, {"relationship_id": "REL-0262", "type": "allocated_functions", "source": "clamping arm", "target": "release", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9485; review against graph evidence."}, {"relationship_id": "REL-0263", "type": "allocated_functions", "source": "clamping arm", "target": "release of the work", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9302; review against graph evidence."}, {"relationship_id": "REL-0264", "type": "allocated_functions", "source": "clamping arm", "target": "replacement", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8889; review against graph evidence."}, {"relationship_id": "REL-0265", "type": "allocated_functions", "source": "clamping arm", "target": "replacement of a work", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8773; review against graph evidence."}, {"relationship_id": "REL-0266", "type": "allocated_functions", "source": "pallet", "target": "replacement", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6015; review against graph evidence."}, {"relationship_id": "REL-0267", "type": "allocated_functions", "source": "shaft", "target": "replacement", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7136; review against graph evidence."}, {"relationship_id": "REL-0268", "type": "allocated_functions", "source": "shaft", "target": "replacement of a work", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6593; review against graph evidence."}, {"relationship_id": "REL-0269", "type": "allocated_functions", "source": "shaft", "target": "pushing", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8212; review against graph evidence."}, {"relationship_id": "REL-0270", "type": "allocated_functions", "source": "shaft", "target": "pushing the shaft upward", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7673; review against graph evidence."}, {"relationship_id": "REL-0271", "type": "allocated_functions", "source": "shaft", "target": "pushing the second retainer upward", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6884; review against graph evidence."}, {"relationship_id": "REL-0272", "type": "allocated_functions", "source": "guide member", "target": "pushing", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8459; review against graph evidence."}, {"relationship_id": "REL-0273", "type": "allocated_functions", "source": "guide member", "target": "pushing the shaft upward", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8247; review against graph evidence."}, {"relationship_id": "REL-0274", "type": "allocated_functions", "source": "first pushing member", "target": "pushing", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9441; review against graph evidence."}, {"relationship_id": "REL-0275", "type": "allocated_functions", "source": "first pushing member", "target": "pushing the shaft upward", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9586; review against graph evidence."}, {"relationship_id": "REL-0276", "type": "allocated_functions", "source": "first pushing member", "target": "pushing the second retainer upward", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9277; review against graph evidence."}, {"relationship_id": "REL-0277", "type": "allocated_functions", "source": "second pushing member", "target": "pushing", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9486; review against graph evidence."}, {"relationship_id": "REL-0278", "type": "allocated_functions", "source": "second pushing member", "target": "pushing the shaft upward", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8581; review against graph evidence."}, {"relationship_id": "REL-0279", "type": "allocated_functions", "source": "second pushing member", "target": "pushing the second retainer upward", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9328; review against graph evidence."}, {"relationship_id": "REL-0280", "type": "allocated_functions", "source": "second pushing member", "target": "pushes", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8144; review against graph evidence."}, {"relationship_id": "REL-0281", "type": "allocated_functions", "source": "first retainer", "target": "slidable", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8825; review against graph evidence."}, {"relationship_id": "REL-0282", "type": "allocated_functions", "source": "first retainer", "target": "slidably guided", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8188; review against graph evidence."}, {"relationship_id": "REL-0283", "type": "allocated_functions", "source": "first retainer", "target": "urges", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7858; review against graph evidence."}, {"relationship_id": "REL-0284", "type": "allocated_functions", "source": "first retainer", "target": "urges the first retainer downward", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8352; review against graph evidence."}, {"relationship_id": "REL-0285", "type": "allocated_functions", "source": "second retainer", "target": "slidable", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6108; review against graph evidence."}, {"relationship_id": "REL-0286", "type": "allocated_functions", "source": "second retainer", "target": "slidably guided", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8353; review against graph evidence."}, {"relationship_id": "REL-0287", "type": "allocated_functions", "source": "second retainer", "target": "urges", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8515; review against graph evidence."}, {"relationship_id": "REL-0288", "type": "allocated_functions", "source": "second retainer", "target": "urges the first retainer downward", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8981; review against graph evidence."}, {"relationship_id": "REL-0289", "type": "allocated_functions", "source": "first elastic member", "target": "slidably guided", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7013; review against graph evidence."}, {"relationship_id": "REL-0290", "type": "allocated_functions", "source": "first elastic member", "target": "urges", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8559; review against graph evidence."}, {"relationship_id": "REL-0291", "type": "allocated_functions", "source": "first elastic member", "target": "urges the first retainer downward", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8742; review against graph evidence."}, {"relationship_id": "REL-0292", "type": "allocated_functions", "source": "elastic member", "target": "slidably guided", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6493; review against graph evidence."}, {"relationship_id": "REL-0293", "type": "allocated_functions", "source": "elastic member", "target": "urges", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8494; review against graph evidence."}, {"relationship_id": "REL-0294", "type": "allocated_functions", "source": "elastic member", "target": "urges the first retainer downward", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8723; review against graph evidence."}, {"relationship_id": "REL-0295", "type": "allocated_functions", "source": "clamping apparatus", "target": "firmly holding", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9249; review against graph evidence."}, {"relationship_id": "REL-0296", "type": "allocated_functions", "source": "clamping apparatus", "target": "holding", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8997; review against graph evidence."}, {"relationship_id": "REL-0297", "type": "allocated_functions", "source": "apparatus", "target": "firmly holding", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8815; review against graph evidence."}, {"relationship_id": "REL-0298", "type": "allocated_functions", "source": "apparatus", "target": "holding", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8624; review against graph evidence."}, {"relationship_id": "REL-0299", "type": "allocated_functions", "source": "bearing", "target": "pivotally pivots", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9545; review against graph evidence."}, {"relationship_id": "REL-0300", "type": "allocated_functions", "source": "bearing", "target": "pivotally retain", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8982; review against graph evidence."}, {"relationship_id": "REL-0301", "type": "allocated_functions", "source": "bearing 8", "target": "pivotally pivots", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9701; review against graph evidence."}, {"relationship_id": "REL-0302", "type": "allocated_functions", "source": "bearing 8", "target": "pivotally retain", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9153; review against graph evidence."}, {"relationship_id": "REL-0303", "type": "allocated_functions", "source": "retainer", "target": "pivotally pivots", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6473; review against graph evidence."}, {"relationship_id": "REL-0304", "type": "allocated_functions", "source": "retainer", "target": "pivotally retain", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6894; review against graph evidence."}, {"relationship_id": "REL-0305", "type": "allocated_functions", "source": "retainer 15", "target": "pivotally pivots", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6570; review against graph evidence."}, {"relationship_id": "REL-0306", "type": "allocated_functions", "source": "retainer 15", "target": "pivotally retain", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6990; review against graph evidence."}, {"relationship_id": "REL-0307", "type": "allocated_functions", "source": "coil spring 16", "target": "pivotally retain", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6099; review against graph evidence."}, {"relationship_id": "REL-0308", "type": "allocated_functions", "source": "first pressing plate", "target": "driving", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8713; review against graph evidence."}, {"relationship_id": "REL-0309", "type": "allocated_functions", "source": "first pressing plate 27", "target": "driving", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8259; review against graph evidence."}, {"relationship_id": "REL-0310", "type": "allocated_functions", "source": "pressing plate", "target": "driving", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8657; review against graph evidence."}, {"relationship_id": "REL-0311", "type": "allocated_functions", "source": "second pressing plate", "target": "driving", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8550; review against graph evidence."}, {"relationship_id": "REL-0312", "type": "allocated_functions", "source": "second pressing plate 28", "target": "driving", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8477; review against graph evidence."}, {"relationship_id": "REL-0313", "type": "allocated_functions", "source": "pressing bush", "target": "driving", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7316; review against graph evidence."}, {"relationship_id": "REL-0314", "type": "allocated_functions", "source": "pressing rod", "target": "driving", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7276; review against graph evidence."}, {"relationship_id": "REL-0315", "type": "allocated_functions", "source": "pushing member", "target": "clamping", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6694; review against graph evidence."}, {"relationship_id": "REL-0316", "type": "allocated_functions", "source": "clamping shaft", "target": "clamping", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7212; review against graph evidence."}, {"relationship_id": "REL-0317", "type": "allocated_functions", "source": "clamping shaft", "target": "unclamping", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6806; review against graph evidence."}, {"relationship_id": "REL-0318", "type": "allocated_functions", "source": "coil spring", "target": "clamping", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6608; review against graph evidence."}, {"relationship_id": "REL-0319", "type": "allocated_functions", "source": "Belleville spring", "target": "clamping", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6283; review against graph evidence."}, {"relationship_id": "REL-0320", "type": "allocated_functions", "source": "clamping apparatus", "target": "operation", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6754; review against graph evidence."}, {"relationship_id": "REL-0321", "type": "allocated_functions", "source": "clamping apparatus", "target": "clamping", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8668; review against graph evidence."}, {"relationship_id": "REL-0322", "type": "allocated_functions", "source": "clamping apparatus", "target": "unclamping", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8087; review against graph evidence."}, {"relationship_id": "REL-0323", "type": "allocated_functions", "source": "clamping apparatus", "target": "second position", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6121; review against graph evidence."}, {"relationship_id": "REL-0324", "type": "allocated_functions", "source": "clamping apparatus 1", "target": "clamping", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6552; review against graph evidence."}, {"relationship_id": "REL-0325", "type": "allocated_functions", "source": "clamping apparatus 1", "target": "unclamped", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6033; review against graph evidence."}, {"relationship_id": "REL-0326", "type": "allocated_functions", "source": "clamping shaft", "target": "pivots", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8482; review against graph evidence."}, {"relationship_id": "REL-0327", "type": "allocated_functions", "source": "clamping shaft", "target": "pivots clockwise", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8633; review against graph evidence."}, {"relationship_id": "REL-0328", "type": "allocated_functions", "source": "clamping arm", "target": "clamped", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7488; review against graph evidence."}, {"relationship_id": "REL-0329", "type": "allocated_functions", "source": "clamping arm", "target": "clamping", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7325; review against graph evidence."}, {"relationship_id": "REL-0330", "type": "allocated_functions", "source": "clamping arm 6", "target": "clamped", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6583; review against graph evidence."}, {"relationship_id": "REL-0331", "type": "allocated_functions", "source": "clamping arm 6", "target": "clamping", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7243; review against graph evidence."}, {"relationship_id": "REL-0332", "type": "allocated_functions", "source": "shaft", "target": "sliding movement", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9289; review against graph evidence."}, {"relationship_id": "REL-0333", "type": "allocated_functions", "source": "shaft", "target": "disengageably clamped", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8408; review against graph evidence."}, {"relationship_id": "REL-0334", "type": "allocated_functions", "source": "clamping arm", "target": "sliding movement", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6661; review against graph evidence."}, {"relationship_id": "REL-0335", "type": "allocated_functions", "source": "clamping arm", "target": "disengageably clamped", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6141; review against graph evidence."}, {"relationship_id": "REL-0336", "type": "allocated_functions", "source": "shaft", "target": "actuated", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8233; review against graph evidence."}, {"relationship_id": "REL-0337", "type": "allocated_functions", "source": "clamping arm", "target": "actuated", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6272; review against graph evidence."}, {"relationship_id": "REL-0338", "type": "allocated_functions", "source": "member", "target": "pushes", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8985; review against graph evidence."}, {"relationship_id": "REL-0339", "type": "allocated_functions", "source": "sleeve", "target": "slidable", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6543; review against graph evidence."}, {"relationship_id": "REL-0340", "type": "allocated_functions", "source": "second retainer", "target": "transmitting", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9704; review against graph evidence."}, {"relationship_id": "REL-0341", "type": "allocated_functions", "source": "first elastic member", "target": "transmitting", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8703; review against graph evidence."}, {"relationship_id": "REL-0342", "type": "allocated_functions", "source": "second elastic member", "target": "slidably guided", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6269; review against graph evidence."}, {"relationship_id": "REL-0343", "type": "allocated_functions", "source": "second elastic member", "target": "urges", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7155; review against graph evidence."}, {"relationship_id": "REL-0344", "type": "allocated_functions", "source": "second elastic member", "target": "urges the first retainer downward", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8030; review against graph evidence."}, {"relationship_id": "REL-0345", "type": "allocated_functions", "source": "second elastic member", "target": "transmitting", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.7974; review against graph evidence."}, {"relationship_id": "REL-0346", "type": "allocated_functions", "source": "clamping arm", "target": "urges the first retainer downward", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6339; review against graph evidence."}, {"relationship_id": "REL-0347", "type": "allocated_functions", "source": "clamping arm", "target": "transmitting", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8401; review against graph evidence."}, {"relationship_id": "REL-0348", "type": "allocated_functions", "source": "first retainer", "target": "transmitting", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8450; review against graph evidence."}, {"relationship_id": "REL-0349", "type": "allocated_functions", "source": "second retainer", "target": "transmitting the second elastic force", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.9799; review against graph evidence."}, {"relationship_id": "REL-0350", "type": "allocated_functions", "source": "clamping arm", "target": "transmitting the second elastic force", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.8614; review against graph evidence."}, {"relationship_id": "REL-0351", "type": "allocated_functions", "source": "shaft", "target": "transmitting", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6240; review against graph evidence."}, {"relationship_id": "REL-0352", "type": "allocated_functions", "source": "shaft", "target": "transmitting the second elastic force", "context": "Subsystem", "source_file": "US7621514B2.html", "notes": "Model score 0.6430; review against graph evidence."}, {"relationship_id": "REL-0353", "type": "attributes", "source": "cylindrical piston member", "target": "long stroke", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.8103; review against graph evidence."}, {"relationship_id": "REL-0354", "type": "attributes", "source": "piston member", "target": "long stroke", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.8602; review against graph evidence."}, {"relationship_id": "REL-0355", "type": "attributes", "source": "output shaft", "target": "long stroke", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.9232; review against graph evidence."}, {"relationship_id": "REL-0356", "type": "attributes", "source": "clamping arm", "target": "long stroke", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.9264; review against graph evidence."}, {"relationship_id": "REL-0357", "type": "attributes", "source": "tough spring member", "target": "long stroke", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.9376; review against graph evidence."}, {"relationship_id": "REL-0358", "type": "attributes", "source": "spring member", "target": "long stroke", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.9519; review against graph evidence."}, {"relationship_id": "REL-0359", "type": "attributes", "source": "weak spring member", "target": "long stroke", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.9362; review against graph evidence."}, {"relationship_id": "REL-0360", "type": "attributes", "source": "locking mechanism", "target": "long stroke", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.6234; review against graph evidence."}, {"relationship_id": "REL-0361", "type": "attributes", "source": "first elastic member", "target": "spring constant", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.9627; review against graph evidence."}, {"relationship_id": "REL-0362", "type": "attributes", "source": "first retainer", "target": "spring constant", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.6268; review against graph evidence."}, {"relationship_id": "REL-0363", "type": "attributes", "source": "second engaging member", "target": "spring constant", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.7089; review against graph evidence."}, {"relationship_id": "REL-0364", "type": "attributes", "source": "second elastic member", "target": "spring constant", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.9522; review against graph evidence."}, {"relationship_id": "REL-0365", "type": "attributes", "source": "first engaging member", "target": "spring constant", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.6072; review against graph evidence."}, {"relationship_id": "REL-0366", "type": "attributes", "source": "shaft", "target": "inner diameter", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.8930; review against graph evidence."}, {"relationship_id": "REL-0367", "type": "attributes", "source": "second pushing member", "target": "inner diameter", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.6911; review against graph evidence."}, {"relationship_id": "REL-0368", "type": "attributes", "source": "first small-diameter segment", "target": "inner diameter", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.8833; review against graph evidence."}, {"relationship_id": "REL-0369", "type": "attributes", "source": "small-diameter segment", "target": "inner diameter", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.8155; review against graph evidence."}, {"relationship_id": "REL-0370", "type": "attributes", "source": "first unlocking segment", "target": "inner diameter", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.9213; review against graph evidence."}, {"relationship_id": "REL-0371", "type": "attributes", "source": "unlocking segment", "target": "inner diameter", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.9236; review against graph evidence."}, {"relationship_id": "REL-0372", "type": "attributes", "source": "second small-diameter segment", "target": "inner diameter", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.8792; review against graph evidence."}, {"relationship_id": "REL-0373", "type": "attributes", "source": "second unlocking segment", "target": "inner diameter", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.9315; review against graph evidence."}, {"relationship_id": "REL-0374", "type": "attributes", "source": "first engaging member", "target": "inner diameter", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.6743; review against graph evidence."}, {"relationship_id": "REL-0375", "type": "attributes", "source": "second engaging member", "target": "inner diameter", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.6605; review against graph evidence."}, {"relationship_id": "REL-0376", "type": "attributes", "source": "sleeve", "target": "inner diameter", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.8284; review against graph evidence."}, {"relationship_id": "REL-0377", "type": "attributes", "source": "first retainer", "target": "inner diameter", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.8738; review against graph evidence."}, {"relationship_id": "REL-0378", "type": "attributes", "source": "retainer", "target": "inner diameter", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.8938; review against graph evidence."}, {"relationship_id": "REL-0379", "type": "attributes", "source": "second retainer", "target": "inner diameter", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.7615; review against graph evidence."}, {"relationship_id": "REL-0380", "type": "attributes", "source": "coil spring", "target": "inner diameter", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.8945; review against graph evidence."}, {"relationship_id": "REL-0381", "type": "attributes", "source": "retainer 15", "target": "inner diameter", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.9008; review against graph evidence."}, {"relationship_id": "REL-0382", "type": "attributes", "source": "plunger", "target": "inner diameter", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.7910; review against graph evidence."}, {"relationship_id": "REL-0383", "type": "attributes", "source": "plunger 18", "target": "inner diameter", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.8465; review against graph evidence."}, {"relationship_id": "REL-0384", "type": "attributes", "source": "operating ball", "target": "elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.6203; review against graph evidence."}, {"relationship_id": "REL-0385", "type": "attributes", "source": "first pressing plate", "target": "elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.7452; review against graph evidence."}, {"relationship_id": "REL-0386", "type": "attributes", "source": "first pressing plate 27", "target": "elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.7222; review against graph evidence."}, {"relationship_id": "REL-0387", "type": "attributes", "source": "second pressing plate", "target": "elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.7660; review against graph evidence."}, {"relationship_id": "REL-0388", "type": "attributes", "source": "second pressing plate 28", "target": "elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.7579; review against graph evidence."}, {"relationship_id": "REL-0389", "type": "attributes", "source": "pressing bush", "target": "elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.6336; review against graph evidence."}, {"relationship_id": "REL-0390", "type": "attributes", "source": "pressing rod", "target": "elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.7238; review against graph evidence."}, {"relationship_id": "REL-0391", "type": "attributes", "source": "coil spring", "target": "elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.7870; review against graph evidence."}, {"relationship_id": "REL-0392", "type": "attributes", "source": "coil spring 16", "target": "elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.7756; review against graph evidence."}, {"relationship_id": "REL-0393", "type": "attributes", "source": "Belleville spring", "target": "elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.8037; review against graph evidence."}, {"relationship_id": "REL-0394", "type": "attributes", "source": "coil spring", "target": "long stroke", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.8713; review against graph evidence."}, {"relationship_id": "REL-0395", "type": "attributes", "source": "coil spring", "target": "relatively weak elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.8129; review against graph evidence."}, {"relationship_id": "REL-0396", "type": "attributes", "source": "coil spring 16", "target": "long stroke", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.8831; review against graph evidence."}, {"relationship_id": "REL-0397", "type": "attributes", "source": "coil spring 16", "target": "relatively weak elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.8125; review against graph evidence."}, {"relationship_id": "REL-0398", "type": "attributes", "source": "Belleville spring", "target": "long stroke", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.7603; review against graph evidence."}, {"relationship_id": "REL-0399", "type": "attributes", "source": "Belleville spring", "target": "relatively weak elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.7467; review against graph evidence."}, {"relationship_id": "REL-0400", "type": "attributes", "source": "Belleville spring 17", "target": "long stroke", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.7724; review against graph evidence."}, {"relationship_id": "REL-0401", "type": "attributes", "source": "Belleville spring 17", "target": "relatively weak elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.7380; review against graph evidence."}, {"relationship_id": "REL-0402", "type": "attributes", "source": "Belleville spring 17", "target": "elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.7504; review against graph evidence."}, {"relationship_id": "REL-0403", "type": "attributes", "source": "elastic member", "target": "long stroke", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.9506; review against graph evidence."}, {"relationship_id": "REL-0404", "type": "attributes", "source": "elastic member", "target": "relatively weak elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.9348; review against graph evidence."}, {"relationship_id": "REL-0405", "type": "attributes", "source": "elastic member", "target": "elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.9209; review against graph evidence."}, {"relationship_id": "REL-0406", "type": "attributes", "source": "elastic member", "target": "strong elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.9646; review against graph evidence."}, {"relationship_id": "REL-0407", "type": "attributes", "source": "coil spring", "target": "strong elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.6889; review against graph evidence."}, {"relationship_id": "REL-0408", "type": "attributes", "source": "coil spring 16", "target": "strong elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.6298; review against graph evidence."}, {"relationship_id": "REL-0409", "type": "attributes", "source": "Belleville spring", "target": "strong elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.8814; review against graph evidence."}, {"relationship_id": "REL-0410", "type": "attributes", "source": "Belleville spring 17", "target": "strong elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.8695; review against graph evidence."}, {"relationship_id": "REL-0411", "type": "attributes", "source": "clamping arm", "target": "strong elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.8061; review against graph evidence."}, {"relationship_id": "REL-0412", "type": "attributes", "source": "clamping shaft", "target": "strong elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.7352; review against graph evidence."}, {"relationship_id": "REL-0413", "type": "attributes", "source": "clamping shaft 5", "target": "strong elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.7432; review against graph evidence."}, {"relationship_id": "REL-0414", "type": "attributes", "source": "first elastic member", "target": "first spring constant", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.9548; review against graph evidence."}, {"relationship_id": "REL-0415", "type": "attributes", "source": "first elastic member", "target": "first elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.8801; review against graph evidence."}, {"relationship_id": "REL-0416", "type": "attributes", "source": "first elastic member", "target": "elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.8854; review against graph evidence."}, {"relationship_id": "REL-0417", "type": "attributes", "source": "first elastic member", "target": "second spring constant", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.9545; review against graph evidence."}, {"relationship_id": "REL-0418", "type": "attributes", "source": "first elastic member", "target": "second elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.8281; review against graph evidence."}, {"relationship_id": "REL-0419", "type": "attributes", "source": "elastic member", "target": "first spring constant", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.9362; review against graph evidence."}, {"relationship_id": "REL-0420", "type": "attributes", "source": "elastic member", "target": "spring constant", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.9533; review against graph evidence."}, {"relationship_id": "REL-0421", "type": "attributes", "source": "elastic member", "target": "first elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.8598; review against graph evidence."}, {"relationship_id": "REL-0422", "type": "attributes", "source": "elastic member", "target": "second spring constant", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.9595; review against graph evidence."}, {"relationship_id": "REL-0423", "type": "attributes", "source": "elastic member", "target": "second elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.8895; review against graph evidence."}, {"relationship_id": "REL-0424", "type": "attributes", "source": "second engaging member", "target": "second spring constant", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.6082; review against graph evidence."}, {"relationship_id": "REL-0425", "type": "attributes", "source": "second retainer", "target": "second spring constant", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.6603; review against graph evidence."}, {"relationship_id": "REL-0426", "type": "attributes", "source": "second elastic member", "target": "second spring constant", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.9431; review against graph evidence."}, {"relationship_id": "REL-0427", "type": "attributes", "source": "second elastic member", "target": "second elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.9007; review against graph evidence."}, {"relationship_id": "REL-0428", "type": "attributes", "source": "second elastic member", "target": "elastic force", "context": "Part", "source_file": "US7621514B2.html", "notes": "Model score 0.9016; review against graph evidence."}, {"relationship_id": "REL-0429", "type": "owner", "source": "first stroke", "target": "clamping arm", "context": "Action", "source_file": "US7621514B2.html", "notes": "Model score 0.8754; review against graph evidence."}, {"relationship_id": "REL-0430", "type": "owner", "source": "first stroke", "target": "first engaging member", "context": "Action", "source_file": "US7621514B2.html", "notes": "Model score 0.7293; review against graph evidence."}, {"relationship_id": "REL-0431", "type": "owner", "source": "first stroke", "target": "second engaging member", "context": "Action", "source_file": "US7621514B2.html", "notes": "Model score 0.6297; review against graph evidence."}, {"relationship_id": "REL-0432", "type": "owner", "source": "second stroke", "target": "second engaging member", "context": "Action", "source_file": "US7621514B2.html", "notes": "Model score 0.6199; review against graph evidence."}, {"relationship_id": "REL-0433", "type": "preconditions", "source": "first stroke", "target": "detached", "context": "Action", "source_file": "US7621514B2.html", "notes": "Model score 0.6519; review against graph evidence."}], "provenance": {"translator": "SJSKnowledgeGraph", "translator_version": "1.0", "schema_version": "sjs/1.0", "source_files": [{"path": "/Users/chancelavoie/.cache/patent2sysml/studies/gliner-sjs-100-20260927/inputs/US7621514B2.html", "name": "US7621514B2.html"}], "mapping_notes": ["All records are machine-extracted candidates.", "Graph evidence and scores remain authoritative for review.", "Unlinked part, port, and interface candidates are retained under the first system boundary."]}}
+     */
+    doc
+    /* {"system_name": "Clamping apparatus", "system_id": "US7621514B2_HTML", "description": "Candidate system model extracted from US7621514B2.html.", "version": "0.1.0", "lifecycle_stage": "concept", "domain": "systems", "maturity": "machine-extracted-candidate", "date_modified": "2026-09-27"} */
+    metadata def SJS_Relationship {
+        attribute relationId : ScalarValues::String;
+        attribute relationType : ScalarValues::String;
+        attribute sourceRef : ScalarValues::String;
+        attribute targetRef : ScalarValues::String;
+        attribute context : ScalarValues::String;
+    }
+    part def Component_SS_001_clamping_apparatus {
+        doc
+        /* {"subsystem_id": "SS-001", "subsystem_name": "clamping apparatus", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: clamping apparatus", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "9", "part_id": "P-009", "description": "cylindrical piston member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "10", "part_id": "P-010", "description": "piston member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "11", "part_id": "P-011", "description": "output shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "7", "part_id": "P-007", "description": "cylinder block", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "18", "part_id": "P-018", "description": "clamping case", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "3", "part_id": "P-003", "description": "shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "19", "part_id": "P-019", "description": "first engaging member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "20", "part_id": "P-020", "description": "first elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "21", "part_id": "P-021", "description": "first retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "22", "part_id": "P-022", "description": "second engaging member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "23", "part_id": "P-023", "description": "second elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "24", "part_id": "P-024", "description": "second retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "25", "part_id": "P-025", "description": "arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "16", "part_id": "P-016", "description": "pallet", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "26", "part_id": "P-026", "description": "spiral groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "27", "part_id": "P-027", "description": "guide member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "28", "part_id": "P-028", "description": "first pushing member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "29", "part_id": "P-029", "description": "second pushing member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "30", "part_id": "P-030", "description": "first groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "32", "part_id": "P-032", "description": "first small-diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "33", "part_id": "P-033", "description": "small-diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "34", "part_id": "P-034", "description": "first unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "36", "part_id": "P-036", "description": "second small-diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "37", "part_id": "P-037", "description": "second unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "2", "part_id": "P-002", "description": "elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "58", "part_id": "P-058", "description": "flange", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "51", "part_id": "P-051", "description": "Belleville spring", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "59", "part_id": "P-059", "description": "small- diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "60", "part_id": "P-060", "description": "retainer 15", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "53", "part_id": "P-053", "description": "plunger 18", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "61", "part_id": "P-061", "description": "first operating balls 14", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "62", "part_id": "P-062", "description": "second operating balls 24", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "63", "part_id": "P-063", "description": "passing-through recess", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "65", "part_id": "P-065", "description": "small- diameter shaft segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "66", "part_id": "P-066", "description": "cylindrical segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "67", "part_id": "P-067", "description": "hollow-disk-shaped flange", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "69", "part_id": "P-069", "description": "second disengageable groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "70", "part_id": "P-070", "description": "disengageable groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "71", "part_id": "P-071", "description": "second operating ball", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "72", "part_id": "P-072", "description": "operating ball", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "73", "part_id": "P-073", "description": "shaft segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "74", "part_id": "P-074", "description": "first pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "76", "part_id": "P-076", "description": "second pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "79", "part_id": "P-079", "description": "pressing rod", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "46", "part_id": "P-046", "description": "coil spring", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "5", "part_id": "P-005", "description": "operating balls", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "57", "part_id": "P-057", "description": "clamping face", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "78", "part_id": "P-078", "description": "pressing bush", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "84", "part_id": "P-084", "description": "work", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "85", "part_id": "P-085", "description": "pushing member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "86", "part_id": "P-086", "description": "shaft 5", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "1", "part_id": "P-001", "description": "pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "81", "part_id": "P-081", "description": "clamping shaft 5", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "38", "part_id": "P-038", "description": "sleeve", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "48", "part_id": "P-048", "description": "sleeve 13", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "31", "part_id": "P-031", "description": "second groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "39", "part_id": "P-039", "description": "lower case", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "12", "part_id": "P-012", "description": "tough spring member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "13", "part_id": "P-013", "description": "spring member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "14", "part_id": "P-014", "description": "weak spring member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "15", "part_id": "P-015", "description": "locking mechanism", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "17", "part_id": "P-017", "description": "pallets", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "44", "part_id": "P-044", "description": "bearing 8", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "49", "part_id": "P-049", "description": "housing chamber", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "52", "part_id": "P-052", "description": "Belleville spring 17", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "55", "part_id": "P-055", "description": "upper case", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "56", "part_id": "P-056", "description": "large- diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "75", "part_id": "P-075", "description": "first pressing plate 27", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "77", "part_id": "P-077", "description": "second pressing plate 28", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "80", "part_id": "P-080", "description": "first operating balls", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "82", "part_id": "P-082", "description": "pressing rod 31", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "87", "part_id": "P-087", "description": "work 2", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "89", "part_id": "P-089", "description": "inserting/pressing-in segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "90", "part_id": "P-090", "description": "rod", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "91", "part_id": "P-091", "description": "circular protrusion", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}], "allocated_functions": ["ACT-001", "ACT-002", "ACT-003", "ACT-004", "ACT-005", "ACT-031", "ACT-032", "ACT-036", "ACT-037", "ACT-038", "ACT-023"]} */
+        part part_P_009_cylindrical_piston_member [1] {
+            doc
+            /* {"item_no": "9", "part_id": "P-009", "description": "cylindrical piston member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_010_piston_member [1] {
+            doc
+            /* {"item_no": "10", "part_id": "P-010", "description": "piston member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_011_output_shaft [1] {
+            doc
+            /* {"item_no": "11", "part_id": "P-011", "description": "output shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_006_clamping_arm [1] {
+            doc
+            /* {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_007_cylinder_block [1] {
+            doc
+            /* {"item_no": "7", "part_id": "P-007", "description": "cylinder block", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_018_clamping_case [1] {
+            doc
+            /* {"item_no": "18", "part_id": "P-018", "description": "clamping case", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_003_shaft [1] {
+            doc
+            /* {"item_no": "3", "part_id": "P-003", "description": "shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_019_first_engaging_member [1] {
+            doc
+            /* {"item_no": "19", "part_id": "P-019", "description": "first engaging member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_020_first_elastic_member [1] {
+            doc
+            /* {"item_no": "20", "part_id": "P-020", "description": "first elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_021_first_retainer [1] {
+            doc
+            /* {"item_no": "21", "part_id": "P-021", "description": "first retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_022_second_engaging_member [1] {
+            doc
+            /* {"item_no": "22", "part_id": "P-022", "description": "second engaging member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_023_second_elastic_member [1] {
+            doc
+            /* {"item_no": "23", "part_id": "P-023", "description": "second elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_024_second_retainer [1] {
+            doc
+            /* {"item_no": "24", "part_id": "P-024", "description": "second retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_025_arm [1] {
+            doc
+            /* {"item_no": "25", "part_id": "P-025", "description": "arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_016_pallet [1] {
+            doc
+            /* {"item_no": "16", "part_id": "P-016", "description": "pallet", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_026_spiral_groove [1] {
+            doc
+            /* {"item_no": "26", "part_id": "P-026", "description": "spiral groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_027_guide_member [1] {
+            doc
+            /* {"item_no": "27", "part_id": "P-027", "description": "guide member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_028_first_pushing_member [1] {
+            doc
+            /* {"item_no": "28", "part_id": "P-028", "description": "first pushing member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_029_second_pushing_member [1] {
+            doc
+            /* {"item_no": "29", "part_id": "P-029", "description": "second pushing member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_030_first_groove [1] {
+            doc
+            /* {"item_no": "30", "part_id": "P-030", "description": "first groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_032_first_small_diameter_segment [1] {
+            doc
+            /* {"item_no": "32", "part_id": "P-032", "description": "first small-diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_033_small_diameter_segment [1] {
+            doc
+            /* {"item_no": "33", "part_id": "P-033", "description": "small-diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_034_first_unlocking_segment [1] {
+            doc
+            /* {"item_no": "34", "part_id": "P-034", "description": "first unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_035_unlocking_segment [1] {
+            doc
+            /* {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_036_second_small_diameter_segment [1] {
+            doc
+            /* {"item_no": "36", "part_id": "P-036", "description": "second small-diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_037_second_unlocking_segment [1] {
+            doc
+            /* {"item_no": "37", "part_id": "P-037", "description": "second unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_004_retainer [1] {
+            doc
+            /* {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_002_elastic_member [1] {
+            doc
+            /* {"item_no": "2", "part_id": "P-002", "description": "elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_040_plunger [1] {
+            doc
+            /* {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_058_flange [1] {
+            doc
+            /* {"item_no": "58", "part_id": "P-058", "description": "flange", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_051_Belleville_spring [1] {
+            doc
+            /* {"item_no": "51", "part_id": "P-051", "description": "Belleville spring", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_059_small__diameter_segment [1] {
+            doc
+            /* {"item_no": "59", "part_id": "P-059", "description": "small- diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_060_retainer_15 [1] {
+            doc
+            /* {"item_no": "60", "part_id": "P-060", "description": "retainer 15", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_053_plunger_18 [1] {
+            doc
+            /* {"item_no": "53", "part_id": "P-053", "description": "plunger 18", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_061_first_operating_balls_14 [1] {
+            doc
+            /* {"item_no": "61", "part_id": "P-061", "description": "first operating balls 14", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_062_second_operating_balls_24 [1] {
+            doc
+            /* {"item_no": "62", "part_id": "P-062", "description": "second operating balls 24", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_063_passing_through_recess [1] {
+            doc
+            /* {"item_no": "63", "part_id": "P-063", "description": "passing-through recess", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_065_small__diameter_shaft_segment [1] {
+            doc
+            /* {"item_no": "65", "part_id": "P-065", "description": "small- diameter shaft segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_066_cylindrical_segment [1] {
+            doc
+            /* {"item_no": "66", "part_id": "P-066", "description": "cylindrical segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_067_hollow_disk_shaped_flange [1] {
+            doc
+            /* {"item_no": "67", "part_id": "P-067", "description": "hollow-disk-shaped flange", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_069_second_disengageable_groove [1] {
+            doc
+            /* {"item_no": "69", "part_id": "P-069", "description": "second disengageable groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_070_disengageable_groove [1] {
+            doc
+            /* {"item_no": "70", "part_id": "P-070", "description": "disengageable groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_071_second_operating_ball [1] {
+            doc
+            /* {"item_no": "71", "part_id": "P-071", "description": "second operating ball", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_072_operating_ball [1] {
+            doc
+            /* {"item_no": "72", "part_id": "P-072", "description": "operating ball", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_073_shaft_segment [1] {
+            doc
+            /* {"item_no": "73", "part_id": "P-073", "description": "shaft segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_074_first_pressing_plate [1] {
+            doc
+            /* {"item_no": "74", "part_id": "P-074", "description": "first pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_076_second_pressing_plate [1] {
+            doc
+            /* {"item_no": "76", "part_id": "P-076", "description": "second pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_079_pressing_rod [1] {
+            doc
+            /* {"item_no": "79", "part_id": "P-079", "description": "pressing rod", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_046_coil_spring [1] {
+            doc
+            /* {"item_no": "46", "part_id": "P-046", "description": "coil spring", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_041_clamping_shaft [1] {
+            doc
+            /* {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_005_operating_balls [1] {
+            doc
+            /* {"item_no": "5", "part_id": "P-005", "description": "operating balls", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_057_clamping_face [1] {
+            doc
+            /* {"item_no": "57", "part_id": "P-057", "description": "clamping face", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_078_pressing_bush [1] {
+            doc
+            /* {"item_no": "78", "part_id": "P-078", "description": "pressing bush", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_084_work [1] {
+            doc
+            /* {"item_no": "84", "part_id": "P-084", "description": "work", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_085_pushing_member [1] {
+            doc
+            /* {"item_no": "85", "part_id": "P-085", "description": "pushing member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_086_shaft_5 [1] {
+            doc
+            /* {"item_no": "86", "part_id": "P-086", "description": "shaft 5", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_001_pressing_plate [1] {
+            doc
+            /* {"item_no": "1", "part_id": "P-001", "description": "pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_081_clamping_shaft_5 [1] {
+            doc
+            /* {"item_no": "81", "part_id": "P-081", "description": "clamping shaft 5", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_038_sleeve [1] {
+            doc
+            /* {"item_no": "38", "part_id": "P-038", "description": "sleeve", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_048_sleeve_13 [1] {
+            doc
+            /* {"item_no": "48", "part_id": "P-048", "description": "sleeve 13", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_031_second_groove [1] {
+            doc
+            /* {"item_no": "31", "part_id": "P-031", "description": "second groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_039_lower_case [1] {
+            doc
+            /* {"item_no": "39", "part_id": "P-039", "description": "lower case", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_012_tough_spring_member [1] {
+            doc
+            /* {"item_no": "12", "part_id": "P-012", "description": "tough spring member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_013_spring_member [1] {
+            doc
+            /* {"item_no": "13", "part_id": "P-013", "description": "spring member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_014_weak_spring_member [1] {
+            doc
+            /* {"item_no": "14", "part_id": "P-014", "description": "weak spring member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_015_locking_mechanism [1] {
+            doc
+            /* {"item_no": "15", "part_id": "P-015", "description": "locking mechanism", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_017_pallets [1] {
+            doc
+            /* {"item_no": "17", "part_id": "P-017", "description": "pallets", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_044_bearing_8 [1] {
+            doc
+            /* {"item_no": "44", "part_id": "P-044", "description": "bearing 8", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_049_housing_chamber [1] {
+            doc
+            /* {"item_no": "49", "part_id": "P-049", "description": "housing chamber", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_052_Belleville_spring_17 [1] {
+            doc
+            /* {"item_no": "52", "part_id": "P-052", "description": "Belleville spring 17", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_055_upper_case [1] {
+            doc
+            /* {"item_no": "55", "part_id": "P-055", "description": "upper case", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_056_large__diameter_segment [1] {
+            doc
+            /* {"item_no": "56", "part_id": "P-056", "description": "large- diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_075_first_pressing_plate_27 [1] {
+            doc
+            /* {"item_no": "75", "part_id": "P-075", "description": "first pressing plate 27", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_077_second_pressing_plate_28 [1] {
+            doc
+            /* {"item_no": "77", "part_id": "P-077", "description": "second pressing plate 28", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_080_first_operating_balls [1] {
+            doc
+            /* {"item_no": "80", "part_id": "P-080", "description": "first operating balls", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_082_pressing_rod_31 [1] {
+            doc
+            /* {"item_no": "82", "part_id": "P-082", "description": "pressing rod 31", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_087_work_2 [1] {
+            doc
+            /* {"item_no": "87", "part_id": "P-087", "description": "work 2", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_089_inserting_pressing_in_segment [1] {
+            doc
+            /* {"item_no": "89", "part_id": "P-089", "description": "inserting/pressing-in segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_090_rod [1] {
+            doc
+            /* {"item_no": "90", "part_id": "P-090", "description": "rod", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_091_circular_protrusion [1] {
+            doc
+            /* {"item_no": "91", "part_id": "P-091", "description": "circular protrusion", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+    }
+    part def Component_SS_002_clamping_case {
+        doc
+        /* {"subsystem_id": "SS-002", "subsystem_name": "clamping case", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: clamping case", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "3", "part_id": "P-003", "description": "shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "34", "part_id": "P-034", "description": "first unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "22", "part_id": "P-022", "description": "second engaging member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "21", "part_id": "P-021", "description": "first retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "24", "part_id": "P-024", "description": "second retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "32", "part_id": "P-032", "description": "first small-diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "36", "part_id": "P-036", "description": "second small-diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "37", "part_id": "P-037", "description": "second unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "20", "part_id": "P-020", "description": "first elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "2", "part_id": "P-002", "description": "elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "42", "part_id": "P-042", "description": "upper case 4 a", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "47", "part_id": "P-047", "description": "coil spring 16", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "38", "part_id": "P-038", "description": "sleeve", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "48", "part_id": "P-048", "description": "sleeve 13", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "46", "part_id": "P-046", "description": "coil spring", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "50", "part_id": "P-050", "description": "Belleville", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "81", "part_id": "P-081", "description": "clamping shaft 5", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "88", "part_id": "P-088", "description": "clamping arm 6", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "74", "part_id": "P-074", "description": "first pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "26", "part_id": "P-026", "description": "spiral groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "5", "part_id": "P-005", "description": "operating balls", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "39", "part_id": "P-039", "description": "lower case", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}]} */
+        part part_P_003_shaft_c0470ab3 [1] {
+            doc
+            /* {"item_no": "3", "part_id": "P-003", "description": "shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_034_first_unlocking_segment_4ff038f5 [1] {
+            doc
+            /* {"item_no": "34", "part_id": "P-034", "description": "first unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_022_second_engaging_member_28dc232c [1] {
+            doc
+            /* {"item_no": "22", "part_id": "P-022", "description": "second engaging member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_021_first_retainer_d32e895e [1] {
+            doc
+            /* {"item_no": "21", "part_id": "P-021", "description": "first retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_004_retainer_9e2686f3 [1] {
+            doc
+            /* {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_024_second_retainer_6704433f [1] {
+            doc
+            /* {"item_no": "24", "part_id": "P-024", "description": "second retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_032_first_small_diameter_segment_6dc13b6b [1] {
+            doc
+            /* {"item_no": "32", "part_id": "P-032", "description": "first small-diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_036_second_small_diameter_segment_195d7857 [1] {
+            doc
+            /* {"item_no": "36", "part_id": "P-036", "description": "second small-diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_037_second_unlocking_segment_72a0afad [1] {
+            doc
+            /* {"item_no": "37", "part_id": "P-037", "description": "second unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_020_first_elastic_member_47674e5c [1] {
+            doc
+            /* {"item_no": "20", "part_id": "P-020", "description": "first elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_002_elastic_member_7001efee [1] {
+            doc
+            /* {"item_no": "2", "part_id": "P-002", "description": "elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_040_plunger_7a1b841d [1] {
+            doc
+            /* {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_042_upper_case_4_a [1] {
+            doc
+            /* {"item_no": "42", "part_id": "P-042", "description": "upper case 4 a", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_047_coil_spring_16 [1] {
+            doc
+            /* {"item_no": "47", "part_id": "P-047", "description": "coil spring 16", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_038_sleeve_71c860e6 [1] {
+            doc
+            /* {"item_no": "38", "part_id": "P-038", "description": "sleeve", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_048_sleeve_13_2e2edf78 [1] {
+            doc
+            /* {"item_no": "48", "part_id": "P-048", "description": "sleeve 13", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_046_coil_spring_da2c94ba [1] {
+            doc
+            /* {"item_no": "46", "part_id": "P-046", "description": "coil spring", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_050_Belleville [1] {
+            doc
+            /* {"item_no": "50", "part_id": "P-050", "description": "Belleville", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_041_clamping_shaft_11a4dd89 [1] {
+            doc
+            /* {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_081_clamping_shaft_5_102565b1 [1] {
+            doc
+            /* {"item_no": "81", "part_id": "P-081", "description": "clamping shaft 5", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_088_clamping_arm_6 [1] {
+            doc
+            /* {"item_no": "88", "part_id": "P-088", "description": "clamping arm 6", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_074_first_pressing_plate_37007b68 [1] {
+            doc
+            /* {"item_no": "74", "part_id": "P-074", "description": "first pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_035_unlocking_segment_92f7647b [1] {
+            doc
+            /* {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_026_spiral_groove_a34a8e8c [1] {
+            doc
+            /* {"item_no": "26", "part_id": "P-026", "description": "spiral groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_006_clamping_arm_f3f1433a [1] {
+            doc
+            /* {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_005_operating_balls_45dabf2b [1] {
+            doc
+            /* {"item_no": "5", "part_id": "P-005", "description": "operating balls", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_039_lower_case_57f524fb [1] {
+            doc
+            /* {"item_no": "39", "part_id": "P-039", "description": "lower case", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+    }
+    part def Component_SS_003_cylinder_block {
+        doc
+        /* {"subsystem_id": "SS-003", "subsystem_name": "cylinder block", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: cylinder block", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-005"]} */
+    }
+    part def Component_SS_004_internal_combustion_engine {
+        doc
+        /* {"subsystem_id": "SS-004", "subsystem_name": "internal combustion engine", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: internal combustion engine", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "3", "part_id": "P-003", "description": "shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "7", "part_id": "P-007", "description": "cylinder block", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "8", "part_id": "P-008", "description": "processing machines", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "1", "part_id": "P-001", "description": "pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "2", "part_id": "P-002", "description": "elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "5", "part_id": "P-005", "description": "operating balls", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}]} */
+        part part_P_003_shaft_2da6f069 [1] {
+            doc
+            /* {"item_no": "3", "part_id": "P-003", "description": "shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_006_clamping_arm_97ffd0e3 [1] {
+            doc
+            /* {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_007_cylinder_block_6ab4451b [1] {
+            doc
+            /* {"item_no": "7", "part_id": "P-007", "description": "cylinder block", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_008_processing_machines [1] {
+            doc
+            /* {"item_no": "8", "part_id": "P-008", "description": "processing machines", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_001_pressing_plate_4521f271 [1] {
+            doc
+            /* {"item_no": "1", "part_id": "P-001", "description": "pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_002_elastic_member_921eba85 [1] {
+            doc
+            /* {"item_no": "2", "part_id": "P-002", "description": "elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_004_retainer_84f07d08 [1] {
+            doc
+            /* {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_005_operating_balls_08794635 [1] {
+            doc
+            /* {"item_no": "5", "part_id": "P-005", "description": "operating balls", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+    }
+    part def Component_SS_005_motor_vehicle {
+        doc
+        /* {"subsystem_id": "SS-005", "subsystem_name": "motor vehicle", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: motor vehicle", "domain": "systems", "maturity": "candidate"} */
+    }
+    part def Component_SS_006_transfer_line {
+        doc
+        /* {"subsystem_id": "SS-006", "subsystem_name": "transfer line", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: transfer line", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "3", "part_id": "P-003", "description": "shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "7", "part_id": "P-007", "description": "cylinder block", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "8", "part_id": "P-008", "description": "processing machines", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}]} */
+        part part_P_003_shaft_ae9a2745 [1] {
+            doc
+            /* {"item_no": "3", "part_id": "P-003", "description": "shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_007_cylinder_block_db625620 [1] {
+            doc
+            /* {"item_no": "7", "part_id": "P-007", "description": "cylinder block", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_008_processing_machines_2f5e9f8f [1] {
+            doc
+            /* {"item_no": "8", "part_id": "P-008", "description": "processing machines", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+    }
+    part def Component_SS_007_processing_machines {
+        doc
+        /* {"subsystem_id": "SS-007", "subsystem_name": "processing machines", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: processing machines", "domain": "systems", "maturity": "candidate"} */
+    }
+    part def Component_SS_008_fluid_pressure_spring_clamping {
+        doc
+        /* {"subsystem_id": "SS-008", "subsystem_name": "fluid-pressure spring clamping", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: fluid-pressure spring clamping", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-006"]} */
+    }
+    part def Component_SS_009_cylindrical_piston_member {
+        doc
+        /* {"subsystem_id": "SS-009", "subsystem_name": "cylindrical piston member", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: cylindrical piston member", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-006", "ACT-007", "ACT-008", "ACT-009", "ACT-010"]} */
+    }
+    part def Component_SS_010_piston_member {
+        doc
+        /* {"subsystem_id": "SS-010", "subsystem_name": "piston member", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: piston member", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-006", "ACT-007", "ACT-008", "ACT-009", "ACT-010"]} */
+    }
+    part def Component_SS_011_output_shaft {
+        doc
+        /* {"subsystem_id": "SS-011", "subsystem_name": "output shaft", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: output shaft", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-007", "ACT-008", "ACT-009", "ACT-010"]} */
+    }
+    part def Component_SS_012_clamping_arm {
+        doc
+        /* {"subsystem_id": "SS-012", "subsystem_name": "clamping arm", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: clamping arm", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "57", "part_id": "P-057", "description": "clamping face", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "16", "part_id": "P-016", "description": "pallet", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "45", "part_id": "P-045", "description": "guide pin", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "83", "part_id": "P-083", "description": "longitudinal groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "68", "part_id": "P-068", "description": "second operating balls", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "59", "part_id": "P-059", "description": "small- diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}], "allocated_functions": ["ACT-007", "ACT-008", "ACT-009", "ACT-010", "ACT-011", "ACT-012", "ACT-013", "ACT-014", "ACT-015", "ACT-042", "ACT-037", "ACT-048", "ACT-049", "ACT-051", "ACT-030", "ACT-052", "ACT-055"]} */
+        part part_P_040_plunger_8f59f3b9 [1] {
+            doc
+            /* {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_035_unlocking_segment_185d7743 [1] {
+            doc
+            /* {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_057_clamping_face_fc762f20 [1] {
+            doc
+            /* {"item_no": "57", "part_id": "P-057", "description": "clamping face", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_016_pallet_d6ab0582 [1] {
+            doc
+            /* {"item_no": "16", "part_id": "P-016", "description": "pallet", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_045_guide_pin [1] {
+            doc
+            /* {"item_no": "45", "part_id": "P-045", "description": "guide pin", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_083_longitudinal_groove [1] {
+            doc
+            /* {"item_no": "83", "part_id": "P-083", "description": "longitudinal groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_068_second_operating_balls [1] {
+            doc
+            /* {"item_no": "68", "part_id": "P-068", "description": "second operating balls", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_059_small__diameter_segment_f721fd51 [1] {
+            doc
+            /* {"item_no": "59", "part_id": "P-059", "description": "small- diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+    }
+    part def Component_SS_013_locking_mechanism {
+        doc
+        /* {"subsystem_id": "SS-013", "subsystem_name": "locking mechanism", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: locking mechanism", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-008", "ACT-009", "ACT-010"]} */
+    }
+    part def Component_SS_014_clamping_body {
+        doc
+        /* {"subsystem_id": "SS-014", "subsystem_name": "clamping body", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: clamping body", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "11", "part_id": "P-011", "description": "output shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}]} */
+        part part_P_011_output_shaft_0dc8836d [1] {
+            doc
+            /* {"item_no": "11", "part_id": "P-011", "description": "output shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_006_clamping_arm_c7a34035 [1] {
+            doc
+            /* {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+    }
+    part def Component_SS_015_clamping_apparatuses {
+        doc
+        /* {"subsystem_id": "SS-015", "subsystem_name": "clamping apparatuses", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: clamping apparatuses", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}]} */
+        part part_P_006_clamping_arm_f268a079 [1] {
+            doc
+            /* {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+    }
+    part def Component_SS_016_pallet {
+        doc
+        /* {"subsystem_id": "SS-016", "subsystem_name": "pallet", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: pallet", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-014"]} */
+    }
+    part def Component_SS_017_shaft {
+        doc
+        /* {"subsystem_id": "SS-017", "subsystem_name": "shaft", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: shaft", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-014", "ACT-015", "ACT-019", "ACT-020", "ACT-021", "ACT-048", "ACT-049", "ACT-051", "ACT-052", "ACT-055"]} */
+    }
+    part def Component_SS_018_first_engaging_member {
+        doc
+        /* {"subsystem_id": "SS-018", "subsystem_name": "first engaging member", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: first engaging member", "domain": "systems", "maturity": "candidate"} */
+    }
+    part def Component_SS_019_first_elastic_member {
+        doc
+        /* {"subsystem_id": "SS-019", "subsystem_name": "first elastic member", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: first elastic member", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-028", "ACT-029", "ACT-030", "ACT-052"]} */
+    }
+    part def Component_SS_020_first_retainer {
+        doc
+        /* {"subsystem_id": "SS-020", "subsystem_name": "first retainer", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: first retainer", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-027", "ACT-028", "ACT-029", "ACT-030", "ACT-052"]} */
+    }
+    part def Component_SS_021_second_engaging_member {
+        doc
+        /* {"subsystem_id": "SS-021", "subsystem_name": "second engaging member", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: second engaging member", "domain": "systems", "maturity": "candidate"} */
+    }
+    part def Component_SS_022_second_elastic_member {
+        doc
+        /* {"subsystem_id": "SS-022", "subsystem_name": "second elastic member", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: second elastic member", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-028", "ACT-029", "ACT-030", "ACT-052"]} */
+    }
+    part def Component_SS_023_second_retainer {
+        doc
+        /* {"subsystem_id": "SS-023", "subsystem_name": "second retainer", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: second retainer", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-027", "ACT-028", "ACT-029", "ACT-030", "ACT-052", "ACT-055"]} */
+    }
+    part def Component_SS_024_guide_member {
+        doc
+        /* {"subsystem_id": "SS-024", "subsystem_name": "guide member", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: guide member", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-019", "ACT-020"]} */
+    }
+    part def Component_SS_025_first_pushing_member {
+        doc
+        /* {"subsystem_id": "SS-025", "subsystem_name": "first pushing member", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: first pushing member", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-019", "ACT-020", "ACT-021"]} */
+    }
+    part def Component_SS_026_second_pushing_member {
+        doc
+        /* {"subsystem_id": "SS-026", "subsystem_name": "second pushing member", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: second pushing member", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-019", "ACT-020", "ACT-021", "ACT-022"]} */
+    }
+    part def Component_SS_027_first_small_diameter_segment {
+        doc
+        /* {"subsystem_id": "SS-027", "subsystem_name": "first small-diameter segment", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: first small-diameter segment", "domain": "systems", "maturity": "candidate"} */
+    }
+    part def Component_SS_028_first_unlocking_segment {
+        doc
+        /* {"subsystem_id": "SS-028", "subsystem_name": "first unlocking segment", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: first unlocking segment", "domain": "systems", "maturity": "candidate"} */
+    }
+    part def Component_SS_029_second_small_diameter_segment {
+        doc
+        /* {"subsystem_id": "SS-029", "subsystem_name": "second small-diameter segment", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: second small-diameter segment", "domain": "systems", "maturity": "candidate"} */
+    }
+    part def Component_SS_030_second_unlocking_segment {
+        doc
+        /* {"subsystem_id": "SS-030", "subsystem_name": "second unlocking segment", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: second unlocking segment", "domain": "systems", "maturity": "candidate"} */
+    }
+    part def Component_SS_031_sleeve {
+        doc
+        /* {"subsystem_id": "SS-031", "subsystem_name": "sleeve", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: sleeve", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "21", "part_id": "P-021", "description": "first retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "58", "part_id": "P-058", "description": "flange", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "51", "part_id": "P-051", "description": "Belleville spring", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "54", "part_id": "P-054", "description": "washer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "59", "part_id": "P-059", "description": "small- diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "57", "part_id": "P-057", "description": "clamping face", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "16", "part_id": "P-016", "description": "pallet", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "45", "part_id": "P-045", "description": "guide pin", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "83", "part_id": "P-083", "description": "longitudinal groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "68", "part_id": "P-068", "description": "second operating balls", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}], "allocated_functions": ["ACT-027"]} */
+        part part_P_021_first_retainer_88290e38 [1] {
+            doc
+            /* {"item_no": "21", "part_id": "P-021", "description": "first retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_058_flange_f5058fc3 [1] {
+            doc
+            /* {"item_no": "58", "part_id": "P-058", "description": "flange", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_051_Belleville_spring_ffb8b2b6 [1] {
+            doc
+            /* {"item_no": "51", "part_id": "P-051", "description": "Belleville spring", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_054_washer [1] {
+            doc
+            /* {"item_no": "54", "part_id": "P-054", "description": "washer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_059_small__diameter_segment_80e05e98 [1] {
+            doc
+            /* {"item_no": "59", "part_id": "P-059", "description": "small- diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_035_unlocking_segment_bc114fe5 [1] {
+            doc
+            /* {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_004_retainer_ee2a69f6 [1] {
+            doc
+            /* {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_040_plunger_2ea97749 [1] {
+            doc
+            /* {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_057_clamping_face_d13f2e69 [1] {
+            doc
+            /* {"item_no": "57", "part_id": "P-057", "description": "clamping face", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_016_pallet_7b3c716c [1] {
+            doc
+            /* {"item_no": "16", "part_id": "P-016", "description": "pallet", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_045_guide_pin_c5e99bb1 [1] {
+            doc
+            /* {"item_no": "45", "part_id": "P-045", "description": "guide pin", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_083_longitudinal_groove_266be452 [1] {
+            doc
+            /* {"item_no": "83", "part_id": "P-083", "description": "longitudinal groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_068_second_operating_balls_510ee56f [1] {
+            doc
+            /* {"item_no": "68", "part_id": "P-068", "description": "second operating balls", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_041_clamping_shaft_dbf9cb87 [1] {
+            doc
+            /* {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+    }
+    part def Component_SS_032_lower_case {
+        doc
+        /* {"subsystem_id": "SS-032", "subsystem_name": "lower case", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: lower case", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "24", "part_id": "P-024", "description": "second retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "36", "part_id": "P-036", "description": "second small-diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "21", "part_id": "P-021", "description": "first retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "73", "part_id": "P-073", "description": "shaft segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "81", "part_id": "P-081", "description": "clamping shaft 5", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "88", "part_id": "P-088", "description": "clamping arm 6", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "32", "part_id": "P-032", "description": "first small-diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "34", "part_id": "P-034", "description": "first unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "37", "part_id": "P-037", "description": "second unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "20", "part_id": "P-020", "description": "first elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "23", "part_id": "P-023", "description": "second elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "3", "part_id": "P-003", "description": "shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}]} */
+        part part_P_004_retainer_461a55ca [1] {
+            doc
+            /* {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_024_second_retainer_f2ac2cb0 [1] {
+            doc
+            /* {"item_no": "24", "part_id": "P-024", "description": "second retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_036_second_small_diameter_segment_428aee84 [1] {
+            doc
+            /* {"item_no": "36", "part_id": "P-036", "description": "second small-diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_021_first_retainer_4092ff70 [1] {
+            doc
+            /* {"item_no": "21", "part_id": "P-021", "description": "first retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_040_plunger_4d22757d [1] {
+            doc
+            /* {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_035_unlocking_segment_5ad0faf7 [1] {
+            doc
+            /* {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_073_shaft_segment_3ad28866 [1] {
+            doc
+            /* {"item_no": "73", "part_id": "P-073", "description": "shaft segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_041_clamping_shaft_7ae65a07 [1] {
+            doc
+            /* {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_081_clamping_shaft_5_dbfbc83e [1] {
+            doc
+            /* {"item_no": "81", "part_id": "P-081", "description": "clamping shaft 5", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_088_clamping_arm_6_f896ec76 [1] {
+            doc
+            /* {"item_no": "88", "part_id": "P-088", "description": "clamping arm 6", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_032_first_small_diameter_segment_d53e8a28 [1] {
+            doc
+            /* {"item_no": "32", "part_id": "P-032", "description": "first small-diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_034_first_unlocking_segment_be02141d [1] {
+            doc
+            /* {"item_no": "34", "part_id": "P-034", "description": "first unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_037_second_unlocking_segment_6ce90589 [1] {
+            doc
+            /* {"item_no": "37", "part_id": "P-037", "description": "second unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_020_first_elastic_member_19056ef6 [1] {
+            doc
+            /* {"item_no": "20", "part_id": "P-020", "description": "first elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_023_second_elastic_member_c397fc3d [1] {
+            doc
+            /* {"item_no": "23", "part_id": "P-023", "description": "second elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_006_clamping_arm_69e264c3 [1] {
+            doc
+            /* {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_003_shaft_d986a485 [1] {
+            doc
+            /* {"item_no": "3", "part_id": "P-003", "description": "shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+    }
+    part def Component_SS_033_elastic_member {
+        doc
+        /* {"subsystem_id": "SS-033", "subsystem_name": "elastic member", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: elastic member", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-028", "ACT-029", "ACT-030"]} */
+    }
+    part def Component_SS_034_apparatus {
+        doc
+        /* {"subsystem_id": "SS-034", "subsystem_name": "apparatus", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: apparatus", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-031", "ACT-032"]} */
+    }
+    part def Component_SS_035_clamping_shaft {
+        doc
+        /* {"subsystem_id": "SS-035", "subsystem_name": "clamping shaft", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: clamping shaft", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "64", "part_id": "P-064", "description": "passing-though recess", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "65", "part_id": "P-065", "description": "small- diameter shaft segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "66", "part_id": "P-066", "description": "cylindrical segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}], "allocated_functions": ["ACT-037", "ACT-038", "ACT-046", "ACT-047"]} */
+        part part_P_064_passing_though_recess [1] {
+            doc
+            /* {"item_no": "64", "part_id": "P-064", "description": "passing-though recess", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_065_small__diameter_shaft_segment_a3373a84 [1] {
+            doc
+            /* {"item_no": "65", "part_id": "P-065", "description": "small- diameter shaft segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_004_retainer_252cf417 [1] {
+            doc
+            /* {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_066_cylindrical_segment_d3cc242d [1] {
+            doc
+            /* {"item_no": "66", "part_id": "P-066", "description": "cylindrical segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_035_unlocking_segment_ef0c7c05 [1] {
+            doc
+            /* {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+    }
+    part def Component_SS_036_clamping_case_4 {
+        doc
+        /* {"subsystem_id": "SS-036", "subsystem_name": "clamping case 4", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: clamping case 4", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "42", "part_id": "P-042", "description": "upper case 4 a", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "43", "part_id": "P-043", "description": "bearing", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "45", "part_id": "P-045", "description": "guide pin", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "47", "part_id": "P-047", "description": "coil spring 16", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "38", "part_id": "P-038", "description": "sleeve", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "48", "part_id": "P-048", "description": "sleeve 13", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "46", "part_id": "P-046", "description": "coil spring", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "50", "part_id": "P-050", "description": "Belleville", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "81", "part_id": "P-081", "description": "clamping shaft 5", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "88", "part_id": "P-088", "description": "clamping arm 6", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "74", "part_id": "P-074", "description": "first pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "26", "part_id": "P-026", "description": "spiral groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "5", "part_id": "P-005", "description": "operating balls", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}]} */
+        part part_P_042_upper_case_4_a_6426918d [1] {
+            doc
+            /* {"item_no": "42", "part_id": "P-042", "description": "upper case 4 a", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_043_bearing [1] {
+            doc
+            /* {"item_no": "43", "part_id": "P-043", "description": "bearing", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_045_guide_pin_45dc01ca [1] {
+            doc
+            /* {"item_no": "45", "part_id": "P-045", "description": "guide pin", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_047_coil_spring_16_6a9d162c [1] {
+            doc
+            /* {"item_no": "47", "part_id": "P-047", "description": "coil spring 16", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_038_sleeve_b30b57d5 [1] {
+            doc
+            /* {"item_no": "38", "part_id": "P-038", "description": "sleeve", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_048_sleeve_13_31688915 [1] {
+            doc
+            /* {"item_no": "48", "part_id": "P-048", "description": "sleeve 13", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_004_retainer_f94dfab4 [1] {
+            doc
+            /* {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_046_coil_spring_756643d0 [1] {
+            doc
+            /* {"item_no": "46", "part_id": "P-046", "description": "coil spring", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_050_Belleville_6cd114f4 [1] {
+            doc
+            /* {"item_no": "50", "part_id": "P-050", "description": "Belleville", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_041_clamping_shaft_44d3ec36 [1] {
+            doc
+            /* {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_081_clamping_shaft_5_b35b684e [1] {
+            doc
+            /* {"item_no": "81", "part_id": "P-081", "description": "clamping shaft 5", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_088_clamping_arm_6_ff8b41f6 [1] {
+            doc
+            /* {"item_no": "88", "part_id": "P-088", "description": "clamping arm 6", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_074_first_pressing_plate_c7927272 [1] {
+            doc
+            /* {"item_no": "74", "part_id": "P-074", "description": "first pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_040_plunger_a898c12b [1] {
+            doc
+            /* {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_035_unlocking_segment_c1fb6ff3 [1] {
+            doc
+            /* {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_026_spiral_groove_6ec5819b [1] {
+            doc
+            /* {"item_no": "26", "part_id": "P-026", "description": "spiral groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_006_clamping_arm_3a2a63ba [1] {
+            doc
+            /* {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_005_operating_balls_38864c8a [1] {
+            doc
+            /* {"item_no": "5", "part_id": "P-005", "description": "operating balls", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+    }
+    part def Component_SS_037_bearing {
+        doc
+        /* {"subsystem_id": "SS-037", "subsystem_name": "bearing", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: bearing", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-033", "ACT-034"]} */
+    }
+    part def Component_SS_038_bearing_8 {
+        doc
+        /* {"subsystem_id": "SS-038", "subsystem_name": "bearing 8", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: bearing 8", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-033", "ACT-034"]} */
+    }
+    part def Component_SS_039_housing_chamber {
+        doc
+        /* {"subsystem_id": "SS-039", "subsystem_name": "housing chamber", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: housing chamber", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "51", "part_id": "P-051", "description": "Belleville spring", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "53", "part_id": "P-053", "description": "plunger 18", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "54", "part_id": "P-054", "description": "washer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "43", "part_id": "P-043", "description": "bearing", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}]} */
+        part part_P_051_Belleville_spring_21adb206 [1] {
+            doc
+            /* {"item_no": "51", "part_id": "P-051", "description": "Belleville spring", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_040_plunger_317846cb [1] {
+            doc
+            /* {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_053_plunger_18_4248576a [1] {
+            doc
+            /* {"item_no": "53", "part_id": "P-053", "description": "plunger 18", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_054_washer_232edfec [1] {
+            doc
+            /* {"item_no": "54", "part_id": "P-054", "description": "washer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_041_clamping_shaft_d5d3025b [1] {
+            doc
+            /* {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_043_bearing_1384e48b [1] {
+            doc
+            /* {"item_no": "43", "part_id": "P-043", "description": "bearing", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+    }
+    part def Component_SS_040_retainer {
+        doc
+        /* {"subsystem_id": "SS-040", "subsystem_name": "retainer", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: retainer", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-033", "ACT-034"]} */
+    }
+    part def Component_SS_041_retainer_15 {
+        doc
+        /* {"subsystem_id": "SS-041", "subsystem_name": "retainer 15", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: retainer 15", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-033", "ACT-034"]} */
+    }
+    part def Component_SS_042_coil_spring_16 {
+        doc
+        /* {"subsystem_id": "SS-042", "subsystem_name": "coil spring 16", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: coil spring 16", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-034"]} */
+    }
+    part def Component_SS_043_housing_chamber_12 {
+        doc
+        /* {"subsystem_id": "SS-043", "subsystem_name": "housing chamber 12", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: housing chamber 12", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "51", "part_id": "P-051", "description": "Belleville spring", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "53", "part_id": "P-053", "description": "plunger 18", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "54", "part_id": "P-054", "description": "washer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "43", "part_id": "P-043", "description": "bearing", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}]} */
+        part part_P_051_Belleville_spring_fe3ab2a4 [1] {
+            doc
+            /* {"item_no": "51", "part_id": "P-051", "description": "Belleville spring", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_040_plunger_4d42bba3 [1] {
+            doc
+            /* {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_053_plunger_18_08ec2744 [1] {
+            doc
+            /* {"item_no": "53", "part_id": "P-053", "description": "plunger 18", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_054_washer_61e0d157 [1] {
+            doc
+            /* {"item_no": "54", "part_id": "P-054", "description": "washer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_041_clamping_shaft_bc7827bc [1] {
+            doc
+            /* {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_043_bearing_c2d4f595 [1] {
+            doc
+            /* {"item_no": "43", "part_id": "P-043", "description": "bearing", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+    }
+    part def Component_SS_044_Belleville_spring {
+        doc
+        /* {"subsystem_id": "SS-044", "subsystem_name": "Belleville spring", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: Belleville spring", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-037"]} */
+    }
+    part def Component_SS_045_clamping_apparatus_1 {
+        doc
+        /* {"subsystem_id": "SS-045", "subsystem_name": "clamping apparatus 1", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: clamping apparatus 1", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "60", "part_id": "P-060", "description": "retainer 15", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "53", "part_id": "P-053", "description": "plunger 18", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "61", "part_id": "P-061", "description": "first operating balls 14", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "62", "part_id": "P-062", "description": "second operating balls 24", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "65", "part_id": "P-065", "description": "small- diameter shaft segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "66", "part_id": "P-066", "description": "cylindrical segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "67", "part_id": "P-067", "description": "hollow-disk-shaped flange", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "79", "part_id": "P-079", "description": "pressing rod", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "57", "part_id": "P-057", "description": "clamping face", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "16", "part_id": "P-016", "description": "pallet", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "78", "part_id": "P-078", "description": "pressing bush", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "28", "part_id": "P-028", "description": "first pushing member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "85", "part_id": "P-085", "description": "pushing member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "3", "part_id": "P-003", "description": "shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "86", "part_id": "P-086", "description": "shaft 5", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "29", "part_id": "P-029", "description": "second pushing member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "24", "part_id": "P-024", "description": "second retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "76", "part_id": "P-076", "description": "second pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "1", "part_id": "P-001", "description": "pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "74", "part_id": "P-074", "description": "first pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "81", "part_id": "P-081", "description": "clamping shaft 5", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}], "allocated_functions": ["ACT-037", "ACT-043"]} */
+        part part_P_004_retainer_0173e062 [1] {
+            doc
+            /* {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_060_retainer_15_92166ac7 [1] {
+            doc
+            /* {"item_no": "60", "part_id": "P-060", "description": "retainer 15", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_053_plunger_18_436eee4f [1] {
+            doc
+            /* {"item_no": "53", "part_id": "P-053", "description": "plunger 18", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_061_first_operating_balls_14_6cbe4ac3 [1] {
+            doc
+            /* {"item_no": "61", "part_id": "P-061", "description": "first operating balls 14", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_062_second_operating_balls_24_d9b39cf6 [1] {
+            doc
+            /* {"item_no": "62", "part_id": "P-062", "description": "second operating balls 24", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_065_small__diameter_shaft_segment_4ab0037d [1] {
+            doc
+            /* {"item_no": "65", "part_id": "P-065", "description": "small- diameter shaft segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_066_cylindrical_segment_782867c5 [1] {
+            doc
+            /* {"item_no": "66", "part_id": "P-066", "description": "cylindrical segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_067_hollow_disk_shaped_flange_462244b9 [1] {
+            doc
+            /* {"item_no": "67", "part_id": "P-067", "description": "hollow-disk-shaped flange", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_041_clamping_shaft_11bf41f4 [1] {
+            doc
+            /* {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_079_pressing_rod_8ac7c808 [1] {
+            doc
+            /* {"item_no": "79", "part_id": "P-079", "description": "pressing rod", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_057_clamping_face_ee6e7597 [1] {
+            doc
+            /* {"item_no": "57", "part_id": "P-057", "description": "clamping face", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_016_pallet_157789b6 [1] {
+            doc
+            /* {"item_no": "16", "part_id": "P-016", "description": "pallet", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_040_plunger_d706c69d [1] {
+            doc
+            /* {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_078_pressing_bush_bb424211 [1] {
+            doc
+            /* {"item_no": "78", "part_id": "P-078", "description": "pressing bush", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_035_unlocking_segment_65a323e2 [1] {
+            doc
+            /* {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_028_first_pushing_member_cacdc98c [1] {
+            doc
+            /* {"item_no": "28", "part_id": "P-028", "description": "first pushing member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_085_pushing_member_adbe59fe [1] {
+            doc
+            /* {"item_no": "85", "part_id": "P-085", "description": "pushing member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_003_shaft_fcc01c98 [1] {
+            doc
+            /* {"item_no": "3", "part_id": "P-003", "description": "shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_086_shaft_5_26531f2e [1] {
+            doc
+            /* {"item_no": "86", "part_id": "P-086", "description": "shaft 5", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_029_second_pushing_member_7b2ed1b0 [1] {
+            doc
+            /* {"item_no": "29", "part_id": "P-029", "description": "second pushing member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_024_second_retainer_29b261ab [1] {
+            doc
+            /* {"item_no": "24", "part_id": "P-024", "description": "second retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_076_second_pressing_plate_157539c3 [1] {
+            doc
+            /* {"item_no": "76", "part_id": "P-076", "description": "second pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_001_pressing_plate_6ac0ca61 [1] {
+            doc
+            /* {"item_no": "1", "part_id": "P-001", "description": "pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_074_first_pressing_plate_9026de51 [1] {
+            doc
+            /* {"item_no": "74", "part_id": "P-074", "description": "first pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_081_clamping_shaft_5_c1607181 [1] {
+            doc
+            /* {"item_no": "81", "part_id": "P-081", "description": "clamping shaft 5", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_006_clamping_arm_e9cbb8dd [1] {
+            doc
+            /* {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+    }
+    part def Component_SS_046_clamping_shaft_5 {
+        doc
+        /* {"subsystem_id": "SS-046", "subsystem_name": "clamping shaft 5", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: clamping shaft 5", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "64", "part_id": "P-064", "description": "passing-though recess", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "65", "part_id": "P-065", "description": "small- diameter shaft segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "66", "part_id": "P-066", "description": "cylindrical segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}]} */
+        part part_P_064_passing_though_recess_e3bafc5f [1] {
+            doc
+            /* {"item_no": "64", "part_id": "P-064", "description": "passing-though recess", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_065_small__diameter_shaft_segment_cce495e4 [1] {
+            doc
+            /* {"item_no": "65", "part_id": "P-065", "description": "small- diameter shaft segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_004_retainer_9eb864c0 [1] {
+            doc
+            /* {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_066_cylindrical_segment_1afa4988 [1] {
+            doc
+            /* {"item_no": "66", "part_id": "P-066", "description": "cylindrical segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_035_unlocking_segment_dd920280 [1] {
+            doc
+            /* {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+    }
+    part def Component_SS_047_plunger {
+        doc
+        /* {"subsystem_id": "SS-047", "subsystem_name": "plunger", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: plunger", "domain": "systems", "maturity": "candidate"} */
+    }
+    part def Component_SS_048_first_pressing_plate {
+        doc
+        /* {"subsystem_id": "SS-048", "subsystem_name": "first pressing plate", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: first pressing plate", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-035"]} */
+    }
+    part def Component_SS_049_first_pressing_plate_27 {
+        doc
+        /* {"subsystem_id": "SS-049", "subsystem_name": "first pressing plate 27", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: first pressing plate 27", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-035"]} */
+    }
+    part def Component_SS_050_pressing_plate {
+        doc
+        /* {"subsystem_id": "SS-050", "subsystem_name": "pressing plate", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: pressing plate", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-035"]} */
+    }
+    part def Component_SS_051_second_pressing_plate {
+        doc
+        /* {"subsystem_id": "SS-051", "subsystem_name": "second pressing plate", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: second pressing plate", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-035"]} */
+    }
+    part def Component_SS_052_second_pressing_plate_28 {
+        doc
+        /* {"subsystem_id": "SS-052", "subsystem_name": "second pressing plate 28", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: second pressing plate 28", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-035"]} */
+    }
+    part def Component_SS_053_pressing_bush {
+        doc
+        /* {"subsystem_id": "SS-053", "subsystem_name": "pressing bush", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: pressing bush", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-035"]} */
+    }
+    part def Component_SS_054_pressing_rod {
+        doc
+        /* {"subsystem_id": "SS-054", "subsystem_name": "pressing rod", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: pressing rod", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-035"]} */
+    }
+    part def Component_SS_055_pushing_member {
+        doc
+        /* {"subsystem_id": "SS-055", "subsystem_name": "pushing member", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: pushing member", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-037"]} */
+    }
+    part def Component_SS_056_coil_spring {
+        doc
+        /* {"subsystem_id": "SS-056", "subsystem_name": "coil spring", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: coil spring", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}], "allocated_functions": ["ACT-037"]} */
+        part part_P_006_clamping_arm_ad40a2ca [1] {
+            doc
+            /* {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_041_clamping_shaft_7f82f35b [1] {
+            doc
+            /* {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+    }
+    part def Component_SS_057_clamping_arm_6 {
+        doc
+        /* {"subsystem_id": "SS-057", "subsystem_name": "clamping arm 6", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: clamping arm 6", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "57", "part_id": "P-057", "description": "clamping face", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "16", "part_id": "P-016", "description": "pallet", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "45", "part_id": "P-045", "description": "guide pin", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "83", "part_id": "P-083", "description": "longitudinal groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "68", "part_id": "P-068", "description": "second operating balls", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "59", "part_id": "P-059", "description": "small- diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}], "allocated_functions": ["ACT-042", "ACT-037"]} */
+        part part_P_040_plunger_a6b17d00 [1] {
+            doc
+            /* {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_035_unlocking_segment_bdaa9c5c [1] {
+            doc
+            /* {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_057_clamping_face_519994f7 [1] {
+            doc
+            /* {"item_no": "57", "part_id": "P-057", "description": "clamping face", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_016_pallet_a29af2b7 [1] {
+            doc
+            /* {"item_no": "16", "part_id": "P-016", "description": "pallet", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_045_guide_pin_cfb03098 [1] {
+            doc
+            /* {"item_no": "45", "part_id": "P-045", "description": "guide pin", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_083_longitudinal_groove_803b41af [1] {
+            doc
+            /* {"item_no": "83", "part_id": "P-083", "description": "longitudinal groove", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_068_second_operating_balls_dae0d412 [1] {
+            doc
+            /* {"item_no": "68", "part_id": "P-068", "description": "second operating balls", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_059_small__diameter_segment_72a02037 [1] {
+            doc
+            /* {"item_no": "59", "part_id": "P-059", "description": "small- diameter segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+    }
+    part def Component_SS_058_work {
+        doc
+        /* {"subsystem_id": "SS-058", "subsystem_name": "work", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: work", "domain": "systems", "maturity": "candidate"} */
+    }
+    part def Component_SS_059_lower_case_4 {
+        doc
+        /* {"subsystem_id": "SS-059", "subsystem_name": "lower case 4", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: lower case 4", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "81", "part_id": "P-081", "description": "clamping shaft 5", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "88", "part_id": "P-088", "description": "clamping arm 6", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "74", "part_id": "P-074", "description": "first pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}]} */
+        part part_P_041_clamping_shaft_da0db604 [1] {
+            doc
+            /* {"item_no": "41", "part_id": "P-041", "description": "clamping shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_081_clamping_shaft_5_8ebb5cb3 [1] {
+            doc
+            /* {"item_no": "81", "part_id": "P-081", "description": "clamping shaft 5", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_088_clamping_arm_6_8425b74a [1] {
+            doc
+            /* {"item_no": "88", "part_id": "P-088", "description": "clamping arm 6", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_074_first_pressing_plate_b054dbb2 [1] {
+            doc
+            /* {"item_no": "74", "part_id": "P-074", "description": "first pressing plate", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_040_plunger_b29e20c2 [1] {
+            doc
+            /* {"item_no": "40", "part_id": "P-040", "description": "plunger", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_035_unlocking_segment_fcdb1c48 [1] {
+            doc
+            /* {"item_no": "35", "part_id": "P-035", "description": "unlocking segment", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_004_retainer_a45072aa [1] {
+            doc
+            /* {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+    }
+    part def Component_SS_060_sleeve_13 {
+        doc
+        /* {"subsystem_id": "SS-060", "subsystem_name": "sleeve 13", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: sleeve 13", "domain": "systems", "maturity": "candidate"} */
+    }
+    part def Component_SS_061_upper_case {
+        doc
+        /* {"subsystem_id": "SS-061", "subsystem_name": "upper case", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: upper case", "domain": "systems", "maturity": "candidate", "parts": [{"item_no": "3", "part_id": "P-003", "description": "shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "19", "part_id": "P-019", "description": "first engaging member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "21", "part_id": "P-021", "description": "first retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "20", "part_id": "P-020", "description": "first elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}, {"item_no": "2", "part_id": "P-002", "description": "elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."}]} */
+        part part_P_003_shaft_24a0774a [1] {
+            doc
+            /* {"item_no": "3", "part_id": "P-003", "description": "shaft", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_006_clamping_arm_4fc197f5 [1] {
+            doc
+            /* {"item_no": "6", "part_id": "P-006", "description": "clamping arm", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_019_first_engaging_member_b45ee3f3 [1] {
+            doc
+            /* {"item_no": "19", "part_id": "P-019", "description": "first engaging member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_021_first_retainer_347386c1 [1] {
+            doc
+            /* {"item_no": "21", "part_id": "P-021", "description": "first retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_004_retainer_2117c166 [1] {
+            doc
+            /* {"item_no": "4", "part_id": "P-004", "description": "retainer", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_020_first_elastic_member_a74537ef [1] {
+            doc
+            /* {"item_no": "20", "part_id": "P-020", "description": "first elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+        part part_P_002_elastic_member_2c30a289 [1] {
+            doc
+            /* {"item_no": "2", "part_id": "P-002", "description": "elastic member", "quantity": 1, "source": "patent extraction", "notes": "Model-extracted candidate."} */
+        }
+    }
+    part def Component_SS_062_member {
+        doc
+        /* {"subsystem_id": "SS-062", "subsystem_name": "member", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: member", "domain": "systems", "maturity": "candidate", "allocated_functions": ["ACT-022"]} */
+    }
+    part def Component_SS_063_spiral_groove {
+        doc
+        /* {"subsystem_id": "SS-063", "subsystem_name": "spiral groove", "sysml_equivalent": "part def", "description": "Model-extracted system candidate: spiral groove", "domain": "systems", "maturity": "candidate"} */
+    }
+    attribute Value_VAL_001_long_stroke {
+        doc
+        /* {"value_id": "VAL-001", "name": "long stroke", "expression": "long stroke", "source": "patent extraction"} */
+    }
+    attribute Value_VAL_002_spring_constant {
+        doc
+        /* {"value_id": "VAL-002", "name": "spring constant", "expression": "spring constant", "source": "patent extraction"} */
+    }
+    attribute Value_VAL_003_height_direction {
+        doc
+        /* {"value_id": "VAL-003", "name": "height direction", "expression": "height direction", "source": "patent extraction"} */
+    }
+    attribute Value_VAL_004_inner_diameter {
+        doc
+        /* {"value_id": "VAL-004", "name": "inner diameter", "expression": "inner diameter", "source": "patent extraction"} */
+    }
+    attribute Value_VAL_005_elastic_force {
+        doc
+        /* {"value_id": "VAL-005", "name": "elastic force", "expression": "elastic force", "source": "patent extraction"} */
+    }
+    attribute Value_VAL_006_118_N {
+        doc
+        /* {"value_id": "VAL-006", "name": "118 N", "expression": "118 N", "source": "patent extraction"} */
+    }
+    attribute Value_VAL_007_12_Kgf {
+        doc
+        /* {"value_id": "VAL-007", "name": "12 Kgf", "expression": "12 Kgf", "source": "patent extraction"} */
+    }
+    attribute Value_VAL_008_2452_N {
+        doc
+        /* {"value_id": "VAL-008", "name": "2452 N", "expression": "2452 N", "source": "patent extraction"} */
+    }
+    attribute Value_VAL_009_relatively_weak_elastic_force {
+        doc
+        /* {"value_id": "VAL-009", "name": "relatively weak elastic force", "expression": "relatively weak elastic force", "source": "patent extraction"} */
+    }
+    attribute Value_VAL_010_strong_elastic_force {
+        doc
+        /* {"value_id": "VAL-010", "name": "strong elastic force", "expression": "strong elastic force", "source": "patent extraction"} */
+    }
+    attribute Value_VAL_011_oil_pressure {
+        doc
+        /* {"value_id": "VAL-011", "name": "oil pressure", "expression": "oil pressure", "source": "patent extraction"} */
+    }
+    attribute Value_VAL_012_first_spring_constant {
+        doc
+        /* {"value_id": "VAL-012", "name": "first spring constant", "expression": "first spring constant", "source": "patent extraction"} */
+    }
+    attribute Value_VAL_013_first_elastic_force {
+        doc
+        /* {"value_id": "VAL-013", "name": "first elastic force", "expression": "first elastic force", "source": "patent extraction"} */
+    }
+    attribute Value_VAL_014_second_spring_constant {
+        doc
+        /* {"value_id": "VAL-014", "name": "second spring constant", "expression": "second spring constant", "source": "patent extraction"} */
+    }
+    attribute Value_VAL_015_second_elastic_force {
+        doc
+        /* {"value_id": "VAL-015", "name": "second elastic force", "expression": "second elastic force", "source": "patent extraction"} */
+    }
+    action def Action_ACT_001_detachably_clamps {
+        doc
+        /* {"action_id": "ACT-001", "name": "detachably clamps", "steps": [{"step_no": 1, "description": "detachably clamps"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "detachably clamps"} */
+        }
+    }
+    action def Action_ACT_002_clamps {
+        doc
+        /* {"action_id": "ACT-002", "name": "clamps", "steps": [{"step_no": 1, "description": "clamps"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "clamps"} */
+        }
+    }
+    action def Action_ACT_003_temporarily_firmly_holding {
+        doc
+        /* {"action_id": "ACT-003", "name": "temporarily firmly holding", "steps": [{"step_no": 1, "description": "temporarily firmly holding"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "temporarily firmly holding"} */
+        }
+    }
+    action def Action_ACT_004_easily_releasing {
+        doc
+        /* {"action_id": "ACT-004", "name": "easily releasing", "steps": [{"step_no": 1, "description": "easily releasing"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "easily releasing"} */
+        }
+    }
+    action def Action_ACT_005_releasing {
+        doc
+        /* {"action_id": "ACT-005", "name": "releasing", "steps": [{"step_no": 1, "description": "releasing"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "releasing"} */
+        }
+    }
+    action def Action_ACT_006_detachably_hold {
+        doc
+        /* {"action_id": "ACT-006", "name": "detachably hold", "steps": [{"step_no": 1, "description": "detachably hold"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "detachably hold"} */
+        }
+    }
+    action def Action_ACT_007_vertically_moves {
+        doc
+        /* {"action_id": "ACT-007", "name": "vertically moves", "steps": [{"step_no": 1, "description": "vertically moves"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "vertically moves"} */
+        }
+    }
+    action def Action_ACT_008_clamp {
+        doc
+        /* {"action_id": "ACT-008", "name": "clamp", "steps": [{"step_no": 1, "description": "clamp"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "clamp"} */
+        }
+    }
+    action def Action_ACT_009_clamp_the_work {
+        doc
+        /* {"action_id": "ACT-009", "name": "clamp the work", "steps": [{"step_no": 1, "description": "clamp the work"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "clamp the work"} */
+        }
+    }
+    action def Action_ACT_010_locked {
+        doc
+        /* {"action_id": "ACT-010", "name": "locked", "steps": [{"step_no": 1, "description": "locked"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "locked"} */
+        }
+    }
+    action def Action_ACT_011_pivoted {
+        doc
+        /* {"action_id": "ACT-011", "name": "pivoted", "steps": [{"step_no": 1, "description": "pivoted"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "pivoted"} */
+        }
+    }
+    action def Action_ACT_012_release {
+        doc
+        /* {"action_id": "ACT-012", "name": "release", "steps": [{"step_no": 1, "description": "release"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "release"} */
+        }
+    }
+    action def Action_ACT_013_release_of_the_work {
+        doc
+        /* {"action_id": "ACT-013", "name": "release of the work", "steps": [{"step_no": 1, "description": "release of the work"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "release of the work"} */
+        }
+    }
+    action def Action_ACT_014_replacement {
+        doc
+        /* {"action_id": "ACT-014", "name": "replacement", "steps": [{"step_no": 1, "description": "replacement"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "replacement"} */
+        }
+    }
+    action def Action_ACT_015_replacement_of_a_work {
+        doc
+        /* {"action_id": "ACT-015", "name": "replacement of a work", "steps": [{"step_no": 1, "description": "replacement of a work"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "replacement of a work"} */
+        }
+    }
+    action def Action_ACT_016_first_stroke {
+        doc
+        /* {"action_id": "ACT-016", "name": "first stroke", "steps": [{"step_no": 1, "description": "first stroke"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "first stroke"} */
+        }
+    }
+    action def Action_ACT_017_second_stroke {
+        doc
+        /* {"action_id": "ACT-017", "name": "second stroke", "steps": [{"step_no": 1, "description": "second stroke"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "second stroke"} */
+        }
+    }
+    action def Action_ACT_018_clamping_position {
+        doc
+        /* {"action_id": "ACT-018", "name": "clamping position", "steps": [{"step_no": 1, "description": "clamping position"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "clamping position"} */
+        }
+    }
+    action def Action_ACT_019_pushing {
+        doc
+        /* {"action_id": "ACT-019", "name": "pushing", "steps": [{"step_no": 1, "description": "pushing"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "pushing"} */
+        }
+    }
+    action def Action_ACT_020_pushing_the_shaft_upward {
+        doc
+        /* {"action_id": "ACT-020", "name": "pushing the shaft upward", "steps": [{"step_no": 1, "description": "pushing the shaft upward"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "pushing the shaft upward"} */
+        }
+    }
+    action def Action_ACT_021_pushing_the_second_retainer_upward {
+        doc
+        /* {"action_id": "ACT-021", "name": "pushing the second retainer upward", "steps": [{"step_no": 1, "description": "pushing the second retainer upward"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "pushing the second retainer upward"} */
+        }
+    }
+    action def Action_ACT_022_pushes {
+        doc
+        /* {"action_id": "ACT-022", "name": "pushes", "steps": [{"step_no": 1, "description": "pushes"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "pushes"} */
+        }
+    }
+    action def Action_ACT_023_second_position {
+        doc
+        /* {"action_id": "ACT-023", "name": "second position", "steps": [{"step_no": 1, "description": "second position"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "second position"} */
+        }
+    }
+    action def Action_ACT_024_third_position {
+        doc
+        /* {"action_id": "ACT-024", "name": "third position", "steps": [{"step_no": 1, "description": "third position"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "third position"} */
+        }
+    }
+    action def Action_ACT_025_fourth_position {
+        doc
+        /* {"action_id": "ACT-025", "name": "fourth position", "steps": [{"step_no": 1, "description": "fourth position"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "fourth position"} */
+        }
+    }
+    action def Action_ACT_026_releasing_position {
+        doc
+        /* {"action_id": "ACT-026", "name": "releasing position", "steps": [{"step_no": 1, "description": "releasing position"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "releasing position"} */
+        }
+    }
+    action def Action_ACT_027_slidable {
+        doc
+        /* {"action_id": "ACT-027", "name": "slidable", "steps": [{"step_no": 1, "description": "slidable"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "slidable"} */
+        }
+    }
+    action def Action_ACT_028_slidably_guided {
+        doc
+        /* {"action_id": "ACT-028", "name": "slidably guided", "steps": [{"step_no": 1, "description": "slidably guided"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "slidably guided"} */
+        }
+    }
+    action def Action_ACT_029_urges {
+        doc
+        /* {"action_id": "ACT-029", "name": "urges", "steps": [{"step_no": 1, "description": "urges"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "urges"} */
+        }
+    }
+    action def Action_ACT_030_urges_the_first_retainer_downward {
+        doc
+        /* {"action_id": "ACT-030", "name": "urges the first retainer downward", "steps": [{"step_no": 1, "description": "urges the first retainer downward"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "urges the first retainer downward"} */
+        }
+    }
+    action def Action_ACT_031_firmly_holding {
+        doc
+        /* {"action_id": "ACT-031", "name": "firmly holding", "steps": [{"step_no": 1, "description": "firmly holding"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "firmly holding"} */
+        }
+    }
+    action def Action_ACT_032_holding {
+        doc
+        /* {"action_id": "ACT-032", "name": "holding", "steps": [{"step_no": 1, "description": "holding"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "holding"} */
+        }
+    }
+    action def Action_ACT_033_pivotally_pivots {
+        doc
+        /* {"action_id": "ACT-033", "name": "pivotally pivots", "steps": [{"step_no": 1, "description": "pivotally pivots"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "pivotally pivots"} */
+        }
+    }
+    action def Action_ACT_034_pivotally_retain {
+        doc
+        /* {"action_id": "ACT-034", "name": "pivotally retain", "steps": [{"step_no": 1, "description": "pivotally retain"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "pivotally retain"} */
+        }
+    }
+    action def Action_ACT_035_driving {
+        doc
+        /* {"action_id": "ACT-035", "name": "driving", "steps": [{"step_no": 1, "description": "driving"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "driving"} */
+        }
+    }
+    action def Action_ACT_036_operation {
+        doc
+        /* {"action_id": "ACT-036", "name": "operation", "steps": [{"step_no": 1, "description": "operation"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "operation"} */
+        }
+    }
+    action def Action_ACT_037_clamping {
+        doc
+        /* {"action_id": "ACT-037", "name": "clamping", "steps": [{"step_no": 1, "description": "clamping"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "clamping"} */
+        }
+    }
+    action def Action_ACT_038_unclamping {
+        doc
+        /* {"action_id": "ACT-038", "name": "unclamping", "steps": [{"step_no": 1, "description": "unclamping"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "unclamping"} */
+        }
+    }
+    action def Action_ACT_039_FIG__3B {
+        doc
+        /* {"action_id": "ACT-039", "name": "FIG. 3B", "steps": [{"step_no": 1, "description": "FIG. 3B"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "FIG. 3B"} */
+        }
+    }
+    action def Action_ACT_040_FIG__3C {
+        doc
+        /* {"action_id": "ACT-040", "name": "FIG. 3C", "steps": [{"step_no": 1, "description": "FIG. 3C"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "FIG. 3C"} */
+        }
+    }
+    action def Action_ACT_041_FIG__3A {
+        doc
+        /* {"action_id": "ACT-041", "name": "FIG. 3A", "steps": [{"step_no": 1, "description": "FIG. 3A"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "FIG. 3A"} */
+        }
+    }
+    action def Action_ACT_042_clamped {
+        doc
+        /* {"action_id": "ACT-042", "name": "clamped", "steps": [{"step_no": 1, "description": "clamped"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "clamped"} */
+        }
+    }
+    action def Action_ACT_043_unclamped {
+        doc
+        /* {"action_id": "ACT-043", "name": "unclamped", "steps": [{"step_no": 1, "description": "unclamped"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "unclamped"} */
+        }
+    }
+    action def Action_ACT_044_removed {
+        doc
+        /* {"action_id": "ACT-044", "name": "removed", "steps": [{"step_no": 1, "description": "removed"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "removed"} */
+        }
+    }
+    action def Action_ACT_045_replacing {
+        doc
+        /* {"action_id": "ACT-045", "name": "replacing", "steps": [{"step_no": 1, "description": "replacing"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "replacing"} */
+        }
+    }
+    action def Action_ACT_046_pivots {
+        doc
+        /* {"action_id": "ACT-046", "name": "pivots", "steps": [{"step_no": 1, "description": "pivots"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "pivots"} */
+        }
+    }
+    action def Action_ACT_047_pivots_clockwise {
+        doc
+        /* {"action_id": "ACT-047", "name": "pivots clockwise", "steps": [{"step_no": 1, "description": "pivots clockwise"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "pivots clockwise"} */
+        }
+    }
+    action def Action_ACT_048_sliding_movement {
+        doc
+        /* {"action_id": "ACT-048", "name": "sliding movement", "steps": [{"step_no": 1, "description": "sliding movement"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "sliding movement"} */
+        }
+    }
+    action def Action_ACT_049_disengageably_clamped {
+        doc
+        /* {"action_id": "ACT-049", "name": "disengageably clamped", "steps": [{"step_no": 1, "description": "disengageably clamped"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "disengageably clamped"} */
+        }
+    }
+    action def Action_ACT_050_first_spring_constant {
+        doc
+        /* {"action_id": "ACT-050", "name": "first spring constant", "steps": [{"step_no": 1, "description": "first spring constant"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "first spring constant"} */
+        }
+    }
+    action def Action_ACT_051_actuated {
+        doc
+        /* {"action_id": "ACT-051", "name": "actuated", "steps": [{"step_no": 1, "description": "actuated"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "actuated"} */
+        }
+    }
+    action def Action_ACT_052_transmitting {
+        doc
+        /* {"action_id": "ACT-052", "name": "transmitting", "steps": [{"step_no": 1, "description": "transmitting"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "transmitting"} */
+        }
+    }
+    action def Action_ACT_053_spring_constant {
+        doc
+        /* {"action_id": "ACT-053", "name": "spring constant", "steps": [{"step_no": 1, "description": "spring constant"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "spring constant"} */
+        }
+    }
+    action def Action_ACT_054_providing_a_second_elastic_force {
+        doc
+        /* {"action_id": "ACT-054", "name": "providing a second elastic force", "steps": [{"step_no": 1, "description": "providing a second elastic force"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "providing a second elastic force"} */
+        }
+    }
+    action def Action_ACT_055_transmitting_the_second_elastic_force {
+        doc
+        /* {"action_id": "ACT-055", "name": "transmitting the second elastic force", "steps": [{"step_no": 1, "description": "transmitting the second elastic force"}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "transmitting the second elastic force"} */
+        }
+    }
+    part systemModel {
+        part component_SS_001_clamping_apparatus : Component_SS_001_clamping_apparatus;
+        part component_SS_002_clamping_case : Component_SS_002_clamping_case;
+        part component_SS_003_cylinder_block : Component_SS_003_cylinder_block;
+        part component_SS_004_internal_combustion_engine
+            : Component_SS_004_internal_combustion_engine;
+        part component_SS_005_motor_vehicle : Component_SS_005_motor_vehicle;
+        part component_SS_006_transfer_line : Component_SS_006_transfer_line;
+        part component_SS_007_processing_machines : Component_SS_007_processing_machines;
+        part component_SS_008_fluid_pressure_spring_clamping
+            : Component_SS_008_fluid_pressure_spring_clamping;
+        part component_SS_009_cylindrical_piston_member
+            : Component_SS_009_cylindrical_piston_member;
+        part component_SS_010_piston_member : Component_SS_010_piston_member;
+        part component_SS_011_output_shaft : Component_SS_011_output_shaft;
+        part component_SS_012_clamping_arm : Component_SS_012_clamping_arm;
+        part component_SS_013_locking_mechanism : Component_SS_013_locking_mechanism;
+        part component_SS_014_clamping_body : Component_SS_014_clamping_body;
+        part component_SS_015_clamping_apparatuses : Component_SS_015_clamping_apparatuses;
+        part component_SS_016_pallet : Component_SS_016_pallet;
+        part component_SS_017_shaft : Component_SS_017_shaft;
+        part component_SS_018_first_engaging_member : Component_SS_018_first_engaging_member;
+        part component_SS_019_first_elastic_member : Component_SS_019_first_elastic_member;
+        part component_SS_020_first_retainer : Component_SS_020_first_retainer;
+        part component_SS_021_second_engaging_member : Component_SS_021_second_engaging_member;
+        part component_SS_022_second_elastic_member : Component_SS_022_second_elastic_member;
+        part component_SS_023_second_retainer : Component_SS_023_second_retainer;
+        part component_SS_024_guide_member : Component_SS_024_guide_member;
+        part component_SS_025_first_pushing_member : Component_SS_025_first_pushing_member;
+        part component_SS_026_second_pushing_member : Component_SS_026_second_pushing_member;
+        part component_SS_027_first_small_diameter_segment
+            : Component_SS_027_first_small_diameter_segment;
+        part component_SS_028_first_unlocking_segment : Component_SS_028_first_unlocking_segment;
+        part component_SS_029_second_small_diameter_segment
+            : Component_SS_029_second_small_diameter_segment;
+        part component_SS_030_second_unlocking_segment : Component_SS_030_second_unlocking_segment;
+        part component_SS_031_sleeve : Component_SS_031_sleeve;
+        part component_SS_032_lower_case : Component_SS_032_lower_case;
+        part component_SS_033_elastic_member : Component_SS_033_elastic_member;
+        part component_SS_034_apparatus : Component_SS_034_apparatus;
+        part component_SS_035_clamping_shaft : Component_SS_035_clamping_shaft;
+        part component_SS_036_clamping_case_4 : Component_SS_036_clamping_case_4;
+        part component_SS_037_bearing : Component_SS_037_bearing;
+        part component_SS_038_bearing_8 : Component_SS_038_bearing_8;
+        part component_SS_039_housing_chamber : Component_SS_039_housing_chamber;
+        part component_SS_040_retainer : Component_SS_040_retainer;
+        part component_SS_041_retainer_15 : Component_SS_041_retainer_15;
+        part component_SS_042_coil_spring_16 : Component_SS_042_coil_spring_16;
+        part component_SS_043_housing_chamber_12 : Component_SS_043_housing_chamber_12;
+        part component_SS_044_Belleville_spring : Component_SS_044_Belleville_spring;
+        part component_SS_045_clamping_apparatus_1 : Component_SS_045_clamping_apparatus_1;
+        part component_SS_046_clamping_shaft_5 : Component_SS_046_clamping_shaft_5;
+        part component_SS_047_plunger : Component_SS_047_plunger;
+        part component_SS_048_first_pressing_plate : Component_SS_048_first_pressing_plate;
+        part component_SS_049_first_pressing_plate_27 : Component_SS_049_first_pressing_plate_27;
+        part component_SS_050_pressing_plate : Component_SS_050_pressing_plate;
+        part component_SS_051_second_pressing_plate : Component_SS_051_second_pressing_plate;
+        part component_SS_052_second_pressing_plate_28 : Component_SS_052_second_pressing_plate_28;
+        part component_SS_053_pressing_bush : Component_SS_053_pressing_bush;
+        part component_SS_054_pressing_rod : Component_SS_054_pressing_rod;
+        part component_SS_055_pushing_member : Component_SS_055_pushing_member;
+        part component_SS_056_coil_spring : Component_SS_056_coil_spring;
+        part component_SS_057_clamping_arm_6 : Component_SS_057_clamping_arm_6;
+        part component_SS_058_work : Component_SS_058_work;
+        part component_SS_059_lower_case_4 : Component_SS_059_lower_case_4;
+        part component_SS_060_sleeve_13 : Component_SS_060_sleeve_13;
+        part component_SS_061_upper_case : Component_SS_061_upper_case;
+        part component_SS_062_member : Component_SS_062_member;
+        part component_SS_063_spiral_groove : Component_SS_063_spiral_groove;
+        action action_ACT_001_detachably_clamps : Action_ACT_001_detachably_clamps;
+        action action_ACT_002_clamps : Action_ACT_002_clamps;
+        action action_ACT_003_temporarily_firmly_holding
+            : Action_ACT_003_temporarily_firmly_holding;
+        action action_ACT_004_easily_releasing : Action_ACT_004_easily_releasing;
+        action action_ACT_005_releasing : Action_ACT_005_releasing;
+        action action_ACT_006_detachably_hold : Action_ACT_006_detachably_hold;
+        action action_ACT_007_vertically_moves : Action_ACT_007_vertically_moves;
+        action action_ACT_008_clamp : Action_ACT_008_clamp;
+        action action_ACT_009_clamp_the_work : Action_ACT_009_clamp_the_work;
+        action action_ACT_010_locked : Action_ACT_010_locked;
+        action action_ACT_011_pivoted : Action_ACT_011_pivoted;
+        action action_ACT_012_release : Action_ACT_012_release;
+        action action_ACT_013_release_of_the_work : Action_ACT_013_release_of_the_work;
+        action action_ACT_014_replacement : Action_ACT_014_replacement;
+        action action_ACT_015_replacement_of_a_work : Action_ACT_015_replacement_of_a_work;
+        action action_ACT_016_first_stroke : Action_ACT_016_first_stroke;
+        action action_ACT_017_second_stroke : Action_ACT_017_second_stroke;
+        action action_ACT_018_clamping_position : Action_ACT_018_clamping_position;
+        action action_ACT_019_pushing : Action_ACT_019_pushing;
+        action action_ACT_020_pushing_the_shaft_upward : Action_ACT_020_pushing_the_shaft_upward;
+        action action_ACT_021_pushing_the_second_retainer_upward
+            : Action_ACT_021_pushing_the_second_retainer_upward;
+        action action_ACT_022_pushes : Action_ACT_022_pushes;
+        action action_ACT_023_second_position : Action_ACT_023_second_position;
+        action action_ACT_024_third_position : Action_ACT_024_third_position;
+        action action_ACT_025_fourth_position : Action_ACT_025_fourth_position;
+        action action_ACT_026_releasing_position : Action_ACT_026_releasing_position;
+        action action_ACT_027_slidable : Action_ACT_027_slidable;
+        action action_ACT_028_slidably_guided : Action_ACT_028_slidably_guided;
+        action action_ACT_029_urges : Action_ACT_029_urges;
+        action action_ACT_030_urges_the_first_retainer_downward
+            : Action_ACT_030_urges_the_first_retainer_downward;
+        action action_ACT_031_firmly_holding : Action_ACT_031_firmly_holding;
+        action action_ACT_032_holding : Action_ACT_032_holding;
+        action action_ACT_033_pivotally_pivots : Action_ACT_033_pivotally_pivots;
+        action action_ACT_034_pivotally_retain : Action_ACT_034_pivotally_retain;
+        action action_ACT_035_driving : Action_ACT_035_driving;
+        action action_ACT_036_operation : Action_ACT_036_operation;
+        action action_ACT_037_clamping : Action_ACT_037_clamping;
+        action action_ACT_038_unclamping : Action_ACT_038_unclamping;
+        action action_ACT_039_FIG__3B : Action_ACT_039_FIG__3B;
+        action action_ACT_040_FIG__3C : Action_ACT_040_FIG__3C;
+        action action_ACT_041_FIG__3A : Action_ACT_041_FIG__3A;
+        action action_ACT_042_clamped : Action_ACT_042_clamped;
+        action action_ACT_043_unclamped : Action_ACT_043_unclamped;
+        action action_ACT_044_removed : Action_ACT_044_removed;
+        action action_ACT_045_replacing : Action_ACT_045_replacing;
+        action action_ACT_046_pivots : Action_ACT_046_pivots;
+        action action_ACT_047_pivots_clockwise : Action_ACT_047_pivots_clockwise;
+        action action_ACT_048_sliding_movement : Action_ACT_048_sliding_movement;
+        action action_ACT_049_disengageably_clamped : Action_ACT_049_disengageably_clamped;
+        action action_ACT_050_first_spring_constant : Action_ACT_050_first_spring_constant;
+        action action_ACT_051_actuated : Action_ACT_051_actuated;
+        action action_ACT_052_transmitting : Action_ACT_052_transmitting;
+        action action_ACT_053_spring_constant : Action_ACT_053_spring_constant;
+        action action_ACT_054_providing_a_second_elastic_force
+            : Action_ACT_054_providing_a_second_elastic_force;
+        action action_ACT_055_transmitting_the_second_elastic_force
+            : Action_ACT_055_transmitting_the_second_elastic_force;
+    }
+    @SJS_Relationship {
+        relationId = "REL-0001";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "shaft";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0002";
+        relationType = "parts";
+        sourceRef = "internal combustion engine";
+        targetRef = "shaft";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0003";
+        relationType = "parts";
+        sourceRef = "internal combustion engine";
+        targetRef = "clamping arm";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0004";
+        relationType = "parts";
+        sourceRef = "internal combustion engine";
+        targetRef = "cylinder block";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0005";
+        relationType = "parts";
+        sourceRef = "internal combustion engine";
+        targetRef = "processing machines";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0006";
+        relationType = "parts";
+        sourceRef = "internal combustion engine";
+        targetRef = "pressing plate";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0007";
+        relationType = "parts";
+        sourceRef = "internal combustion engine";
+        targetRef = "elastic member";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0008";
+        relationType = "parts";
+        sourceRef = "internal combustion engine";
+        targetRef = "retainer";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0009";
+        relationType = "parts";
+        sourceRef = "internal combustion engine";
+        targetRef = "operating balls";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0010";
+        relationType = "parts";
+        sourceRef = "transfer line";
+        targetRef = "shaft";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0011";
+        relationType = "parts";
+        sourceRef = "transfer line";
+        targetRef = "cylinder block";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0012";
+        relationType = "parts";
+        sourceRef = "transfer line";
+        targetRef = "processing machines";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0013";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "cylindrical piston member";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0014";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "piston member";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0015";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "output shaft";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0016";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "clamping arm";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0017";
+        relationType = "parts";
+        sourceRef = "clamping body";
+        targetRef = "output shaft";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0018";
+        relationType = "parts";
+        sourceRef = "clamping body";
+        targetRef = "clamping arm";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0019";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "cylinder block";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0020";
+        relationType = "parts";
+        sourceRef = "clamping apparatuses";
+        targetRef = "clamping arm";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0021";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "clamping case";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0022";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "shaft";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0023";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "first engaging member";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0024";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "first elastic member";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0025";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "first retainer";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0026";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "second engaging member";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0027";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "second elastic member";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0028";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "second retainer";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0029";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "arm";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0030";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "pallet";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0031";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "spiral groove";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0032";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "guide member";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0033";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "first pushing member";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0034";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "second pushing member";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0035";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "first groove";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0036";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "first small-diameter segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0037";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "small-diameter segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0038";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "first unlocking segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0039";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "unlocking segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0040";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "second small-diameter segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0041";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "second unlocking segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0042";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "first unlocking segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0043";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "second engaging member";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0044";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "first retainer";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0045";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "retainer";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0046";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "second retainer";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0047";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "first small-diameter segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0048";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "second small-diameter segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0049";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "second unlocking segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0050";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "first elastic member";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0051";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "elastic member";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0052";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "plunger";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0053";
+        relationType = "parts";
+        sourceRef = "sleeve";
+        targetRef = "first retainer";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0054";
+        relationType = "parts";
+        sourceRef = "lower case";
+        targetRef = "retainer";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0055";
+        relationType = "parts";
+        sourceRef = "lower case";
+        targetRef = "second retainer";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0056";
+        relationType = "parts";
+        sourceRef = "lower case";
+        targetRef = "second small-diameter segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0057";
+        relationType = "parts";
+        sourceRef = "lower case";
+        targetRef = "first retainer";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0058";
+        relationType = "parts";
+        sourceRef = "lower case";
+        targetRef = "plunger";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0059";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "retainer";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0060";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "elastic member";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0061";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "plunger";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0062";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "upper case 4 a";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0063";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "coil spring 16";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0064";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "sleeve";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0065";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "sleeve 13";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0066";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "coil spring";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0067";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "Belleville";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0068";
+        relationType = "parts";
+        sourceRef = "clamping case 4";
+        targetRef = "upper case 4 a";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0069";
+        relationType = "parts";
+        sourceRef = "clamping case 4";
+        targetRef = "bearing";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0070";
+        relationType = "parts";
+        sourceRef = "clamping case 4";
+        targetRef = "guide pin";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0071";
+        relationType = "parts";
+        sourceRef = "clamping case 4";
+        targetRef = "coil spring 16";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0072";
+        relationType = "parts";
+        sourceRef = "clamping case 4";
+        targetRef = "sleeve";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0073";
+        relationType = "parts";
+        sourceRef = "clamping case 4";
+        targetRef = "sleeve 13";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0074";
+        relationType = "parts";
+        sourceRef = "clamping case 4";
+        targetRef = "retainer";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0075";
+        relationType = "parts";
+        sourceRef = "clamping case 4";
+        targetRef = "coil spring";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0076";
+        relationType = "parts";
+        sourceRef = "clamping case 4";
+        targetRef = "Belleville";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0077";
+        relationType = "parts";
+        sourceRef = "housing chamber";
+        targetRef = "Belleville spring";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0078";
+        relationType = "parts";
+        sourceRef = "housing chamber";
+        targetRef = "plunger";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0079";
+        relationType = "parts";
+        sourceRef = "housing chamber";
+        targetRef = "plunger 18";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0080";
+        relationType = "parts";
+        sourceRef = "housing chamber";
+        targetRef = "washer";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0081";
+        relationType = "parts";
+        sourceRef = "housing chamber";
+        targetRef = "clamping shaft";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0082";
+        relationType = "parts";
+        sourceRef = "housing chamber";
+        targetRef = "bearing";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0083";
+        relationType = "parts";
+        sourceRef = "housing chamber 12";
+        targetRef = "Belleville spring";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0084";
+        relationType = "parts";
+        sourceRef = "housing chamber 12";
+        targetRef = "plunger";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0085";
+        relationType = "parts";
+        sourceRef = "housing chamber 12";
+        targetRef = "plunger 18";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0086";
+        relationType = "parts";
+        sourceRef = "housing chamber 12";
+        targetRef = "washer";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0087";
+        relationType = "parts";
+        sourceRef = "housing chamber 12";
+        targetRef = "clamping shaft";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0088";
+        relationType = "parts";
+        sourceRef = "housing chamber 12";
+        targetRef = "bearing";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0089";
+        relationType = "parts";
+        sourceRef = "sleeve";
+        targetRef = "flange";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0090";
+        relationType = "parts";
+        sourceRef = "sleeve";
+        targetRef = "Belleville spring";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0091";
+        relationType = "parts";
+        sourceRef = "sleeve";
+        targetRef = "washer";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0092";
+        relationType = "parts";
+        sourceRef = "sleeve";
+        targetRef = "small- diameter segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0093";
+        relationType = "parts";
+        sourceRef = "sleeve";
+        targetRef = "unlocking segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0094";
+        relationType = "parts";
+        sourceRef = "sleeve";
+        targetRef = "retainer";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0095";
+        relationType = "parts";
+        sourceRef = "sleeve";
+        targetRef = "plunger";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0096";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "flange";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0097";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "Belleville spring";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0098";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "small- diameter segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0099";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "retainer 15";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0100";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "plunger 18";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0101";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "first operating balls 14";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0102";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "second operating balls 24";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0103";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "passing-through recess";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0104";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "small- diameter shaft segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0105";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "cylindrical segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0106";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "hollow-disk-shaped flange";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0107";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "retainer";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0108";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "retainer 15";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0109";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "plunger 18";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0110";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "first operating balls 14";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0111";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "second operating balls 24";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0112";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "small- diameter shaft segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0113";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "cylindrical segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0114";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "hollow-disk-shaped flange";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0115";
+        relationType = "parts";
+        sourceRef = "clamping shaft";
+        targetRef = "passing-though recess";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0116";
+        relationType = "parts";
+        sourceRef = "clamping shaft";
+        targetRef = "small- diameter shaft segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0117";
+        relationType = "parts";
+        sourceRef = "clamping shaft";
+        targetRef = "retainer";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0118";
+        relationType = "parts";
+        sourceRef = "clamping shaft";
+        targetRef = "cylindrical segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0119";
+        relationType = "parts";
+        sourceRef = "clamping shaft";
+        targetRef = "unlocking segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0120";
+        relationType = "parts";
+        sourceRef = "clamping shaft 5";
+        targetRef = "passing-though recess";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0121";
+        relationType = "parts";
+        sourceRef = "clamping shaft 5";
+        targetRef = "small- diameter shaft segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0122";
+        relationType = "parts";
+        sourceRef = "clamping shaft 5";
+        targetRef = "retainer";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0123";
+        relationType = "parts";
+        sourceRef = "clamping shaft 5";
+        targetRef = "cylindrical segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0124";
+        relationType = "parts";
+        sourceRef = "clamping shaft 5";
+        targetRef = "unlocking segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0125";
+        relationType = "parts";
+        sourceRef = "lower case";
+        targetRef = "unlocking segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0126";
+        relationType = "parts";
+        sourceRef = "lower case";
+        targetRef = "shaft segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0127";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "second disengageable groove";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0128";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "disengageable groove";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0129";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "second operating ball";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0130";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "operating ball";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0131";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "shaft segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0132";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "first pressing plate";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0133";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "second pressing plate";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0134";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "pressing rod";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0135";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "coil spring";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0136";
+        relationType = "parts";
+        sourceRef = "coil spring";
+        targetRef = "clamping arm";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0137";
+        relationType = "parts";
+        sourceRef = "coil spring";
+        targetRef = "clamping shaft";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0138";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "clamping shaft";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0139";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "operating balls";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0140";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "clamping face";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0141";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "pressing bush";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0142";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "clamping shaft";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0143";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "pressing rod";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0144";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "clamping face";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0145";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "pallet";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0146";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "plunger";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0147";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "pressing bush";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0148";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "unlocking segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0149";
+        relationType = "parts";
+        sourceRef = "sleeve";
+        targetRef = "clamping face";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0150";
+        relationType = "parts";
+        sourceRef = "sleeve";
+        targetRef = "pallet";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0151";
+        relationType = "parts";
+        sourceRef = "sleeve";
+        targetRef = "guide pin";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0152";
+        relationType = "parts";
+        sourceRef = "sleeve";
+        targetRef = "longitudinal groove";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0153";
+        relationType = "parts";
+        sourceRef = "sleeve";
+        targetRef = "second operating balls";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0154";
+        relationType = "parts";
+        sourceRef = "clamping arm";
+        targetRef = "plunger";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0155";
+        relationType = "parts";
+        sourceRef = "clamping arm";
+        targetRef = "unlocking segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0156";
+        relationType = "parts";
+        sourceRef = "clamping arm";
+        targetRef = "clamping face";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0157";
+        relationType = "parts";
+        sourceRef = "clamping arm";
+        targetRef = "pallet";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0158";
+        relationType = "parts";
+        sourceRef = "clamping arm";
+        targetRef = "guide pin";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0159";
+        relationType = "parts";
+        sourceRef = "clamping arm";
+        targetRef = "longitudinal groove";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0160";
+        relationType = "parts";
+        sourceRef = "clamping arm";
+        targetRef = "second operating balls";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0161";
+        relationType = "parts";
+        sourceRef = "clamping arm";
+        targetRef = "small- diameter segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0162";
+        relationType = "parts";
+        sourceRef = "clamping arm 6";
+        targetRef = "plunger";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0163";
+        relationType = "parts";
+        sourceRef = "clamping arm 6";
+        targetRef = "unlocking segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0164";
+        relationType = "parts";
+        sourceRef = "clamping arm 6";
+        targetRef = "clamping face";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0165";
+        relationType = "parts";
+        sourceRef = "clamping arm 6";
+        targetRef = "pallet";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0166";
+        relationType = "parts";
+        sourceRef = "clamping arm 6";
+        targetRef = "guide pin";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0167";
+        relationType = "parts";
+        sourceRef = "clamping arm 6";
+        targetRef = "longitudinal groove";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0168";
+        relationType = "parts";
+        sourceRef = "clamping arm 6";
+        targetRef = "second operating balls";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0169";
+        relationType = "parts";
+        sourceRef = "clamping arm 6";
+        targetRef = "small- diameter segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0170";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "work";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0171";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "pushing member";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0172";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "shaft 5";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0173";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "pressing plate";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0174";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "clamping shaft 5";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0175";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "first pushing member";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0176";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "pushing member";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0177";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "shaft";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0178";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "shaft 5";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0179";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "second pushing member";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0180";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "second retainer";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0181";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "second pressing plate";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0182";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "pressing plate";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0183";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "first pressing plate";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0184";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "clamping shaft 5";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0185";
+        relationType = "parts";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "clamping arm";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0186";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "clamping shaft";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0187";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "clamping shaft 5";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0188";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "clamping arm 6";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0189";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "first pressing plate";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0190";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "unlocking segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0191";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "spiral groove";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0192";
+        relationType = "parts";
+        sourceRef = "clamping case 4";
+        targetRef = "clamping shaft";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0193";
+        relationType = "parts";
+        sourceRef = "clamping case 4";
+        targetRef = "clamping shaft 5";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0194";
+        relationType = "parts";
+        sourceRef = "clamping case 4";
+        targetRef = "clamping arm 6";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0195";
+        relationType = "parts";
+        sourceRef = "clamping case 4";
+        targetRef = "first pressing plate";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0196";
+        relationType = "parts";
+        sourceRef = "clamping case 4";
+        targetRef = "plunger";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0197";
+        relationType = "parts";
+        sourceRef = "clamping case 4";
+        targetRef = "unlocking segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0198";
+        relationType = "parts";
+        sourceRef = "clamping case 4";
+        targetRef = "spiral groove";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0199";
+        relationType = "parts";
+        sourceRef = "lower case";
+        targetRef = "clamping shaft";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0200";
+        relationType = "parts";
+        sourceRef = "lower case";
+        targetRef = "clamping shaft 5";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0201";
+        relationType = "parts";
+        sourceRef = "lower case";
+        targetRef = "clamping arm 6";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0202";
+        relationType = "parts";
+        sourceRef = "lower case 4";
+        targetRef = "clamping shaft";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0203";
+        relationType = "parts";
+        sourceRef = "lower case 4";
+        targetRef = "clamping shaft 5";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0204";
+        relationType = "parts";
+        sourceRef = "lower case 4";
+        targetRef = "clamping arm 6";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0205";
+        relationType = "parts";
+        sourceRef = "lower case 4";
+        targetRef = "first pressing plate";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0206";
+        relationType = "parts";
+        sourceRef = "lower case 4";
+        targetRef = "plunger";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0207";
+        relationType = "parts";
+        sourceRef = "lower case 4";
+        targetRef = "unlocking segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0208";
+        relationType = "parts";
+        sourceRef = "lower case 4";
+        targetRef = "retainer";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0209";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "clamping arm";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0210";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "operating balls";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0211";
+        relationType = "parts";
+        sourceRef = "clamping case 4";
+        targetRef = "clamping arm";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0212";
+        relationType = "parts";
+        sourceRef = "clamping case 4";
+        targetRef = "operating balls";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0213";
+        relationType = "parts";
+        sourceRef = "sleeve";
+        targetRef = "clamping shaft";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0214";
+        relationType = "parts";
+        sourceRef = "upper case";
+        targetRef = "shaft";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0215";
+        relationType = "parts";
+        sourceRef = "upper case";
+        targetRef = "clamping arm";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0216";
+        relationType = "parts";
+        sourceRef = "upper case";
+        targetRef = "first engaging member";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0217";
+        relationType = "parts";
+        sourceRef = "upper case";
+        targetRef = "first retainer";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0218";
+        relationType = "parts";
+        sourceRef = "upper case";
+        targetRef = "retainer";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0219";
+        relationType = "parts";
+        sourceRef = "upper case";
+        targetRef = "first elastic member";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0220";
+        relationType = "parts";
+        sourceRef = "upper case";
+        targetRef = "elastic member";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0221";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "sleeve";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0222";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "sleeve 13";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0223";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "second groove";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0224";
+        relationType = "parts";
+        sourceRef = "clamping apparatus";
+        targetRef = "lower case";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0225";
+        relationType = "parts";
+        sourceRef = "clamping case";
+        targetRef = "lower case";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0226";
+        relationType = "parts";
+        sourceRef = "lower case";
+        targetRef = "first small-diameter segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0227";
+        relationType = "parts";
+        sourceRef = "lower case";
+        targetRef = "first unlocking segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0228";
+        relationType = "parts";
+        sourceRef = "lower case";
+        targetRef = "second unlocking segment";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0229";
+        relationType = "parts";
+        sourceRef = "lower case";
+        targetRef = "first elastic member";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0230";
+        relationType = "parts";
+        sourceRef = "lower case";
+        targetRef = "second elastic member";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0231";
+        relationType = "parts";
+        sourceRef = "lower case";
+        targetRef = "clamping arm";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0232";
+        relationType = "parts";
+        sourceRef = "lower case";
+        targetRef = "shaft";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0233";
+        relationType = "allocated_functions";
+        sourceRef = "clamping apparatus";
+        targetRef = "detachably clamps";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0234";
+        relationType = "allocated_functions";
+        sourceRef = "clamping apparatus";
+        targetRef = "clamps";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0235";
+        relationType = "allocated_functions";
+        sourceRef = "clamping apparatus";
+        targetRef = "temporarily firmly holding";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0236";
+        relationType = "allocated_functions";
+        sourceRef = "clamping apparatus";
+        targetRef = "easily releasing";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0237";
+        relationType = "allocated_functions";
+        sourceRef = "clamping apparatus";
+        targetRef = "releasing";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0238";
+        relationType = "allocated_functions";
+        sourceRef = "cylinder block";
+        targetRef = "releasing";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0239";
+        relationType = "allocated_functions";
+        sourceRef = "fluid-pressure spring clamping";
+        targetRef = "detachably hold";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0240";
+        relationType = "allocated_functions";
+        sourceRef = "cylindrical piston member";
+        targetRef = "detachably hold";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0241";
+        relationType = "allocated_functions";
+        sourceRef = "cylindrical piston member";
+        targetRef = "vertically moves";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0242";
+        relationType = "allocated_functions";
+        sourceRef = "cylindrical piston member";
+        targetRef = "clamp";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0243";
+        relationType = "allocated_functions";
+        sourceRef = "cylindrical piston member";
+        targetRef = "clamp the work";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0244";
+        relationType = "allocated_functions";
+        sourceRef = "cylindrical piston member";
+        targetRef = "locked";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0245";
+        relationType = "allocated_functions";
+        sourceRef = "piston member";
+        targetRef = "detachably hold";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0246";
+        relationType = "allocated_functions";
+        sourceRef = "piston member";
+        targetRef = "vertically moves";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0247";
+        relationType = "allocated_functions";
+        sourceRef = "piston member";
+        targetRef = "clamp";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0248";
+        relationType = "allocated_functions";
+        sourceRef = "piston member";
+        targetRef = "clamp the work";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0249";
+        relationType = "allocated_functions";
+        sourceRef = "piston member";
+        targetRef = "locked";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0250";
+        relationType = "allocated_functions";
+        sourceRef = "output shaft";
+        targetRef = "vertically moves";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0251";
+        relationType = "allocated_functions";
+        sourceRef = "output shaft";
+        targetRef = "clamp";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0252";
+        relationType = "allocated_functions";
+        sourceRef = "output shaft";
+        targetRef = "clamp the work";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0253";
+        relationType = "allocated_functions";
+        sourceRef = "output shaft";
+        targetRef = "locked";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0254";
+        relationType = "allocated_functions";
+        sourceRef = "clamping arm";
+        targetRef = "vertically moves";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0255";
+        relationType = "allocated_functions";
+        sourceRef = "clamping arm";
+        targetRef = "clamp";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0256";
+        relationType = "allocated_functions";
+        sourceRef = "clamping arm";
+        targetRef = "clamp the work";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0257";
+        relationType = "allocated_functions";
+        sourceRef = "clamping arm";
+        targetRef = "locked";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0258";
+        relationType = "allocated_functions";
+        sourceRef = "locking mechanism";
+        targetRef = "clamp";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0259";
+        relationType = "allocated_functions";
+        sourceRef = "locking mechanism";
+        targetRef = "clamp the work";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0260";
+        relationType = "allocated_functions";
+        sourceRef = "locking mechanism";
+        targetRef = "locked";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0261";
+        relationType = "allocated_functions";
+        sourceRef = "clamping arm";
+        targetRef = "pivoted";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0262";
+        relationType = "allocated_functions";
+        sourceRef = "clamping arm";
+        targetRef = "release";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0263";
+        relationType = "allocated_functions";
+        sourceRef = "clamping arm";
+        targetRef = "release of the work";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0264";
+        relationType = "allocated_functions";
+        sourceRef = "clamping arm";
+        targetRef = "replacement";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0265";
+        relationType = "allocated_functions";
+        sourceRef = "clamping arm";
+        targetRef = "replacement of a work";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0266";
+        relationType = "allocated_functions";
+        sourceRef = "pallet";
+        targetRef = "replacement";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0267";
+        relationType = "allocated_functions";
+        sourceRef = "shaft";
+        targetRef = "replacement";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0268";
+        relationType = "allocated_functions";
+        sourceRef = "shaft";
+        targetRef = "replacement of a work";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0269";
+        relationType = "allocated_functions";
+        sourceRef = "shaft";
+        targetRef = "pushing";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0270";
+        relationType = "allocated_functions";
+        sourceRef = "shaft";
+        targetRef = "pushing the shaft upward";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0271";
+        relationType = "allocated_functions";
+        sourceRef = "shaft";
+        targetRef = "pushing the second retainer upward";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0272";
+        relationType = "allocated_functions";
+        sourceRef = "guide member";
+        targetRef = "pushing";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0273";
+        relationType = "allocated_functions";
+        sourceRef = "guide member";
+        targetRef = "pushing the shaft upward";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0274";
+        relationType = "allocated_functions";
+        sourceRef = "first pushing member";
+        targetRef = "pushing";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0275";
+        relationType = "allocated_functions";
+        sourceRef = "first pushing member";
+        targetRef = "pushing the shaft upward";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0276";
+        relationType = "allocated_functions";
+        sourceRef = "first pushing member";
+        targetRef = "pushing the second retainer upward";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0277";
+        relationType = "allocated_functions";
+        sourceRef = "second pushing member";
+        targetRef = "pushing";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0278";
+        relationType = "allocated_functions";
+        sourceRef = "second pushing member";
+        targetRef = "pushing the shaft upward";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0279";
+        relationType = "allocated_functions";
+        sourceRef = "second pushing member";
+        targetRef = "pushing the second retainer upward";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0280";
+        relationType = "allocated_functions";
+        sourceRef = "second pushing member";
+        targetRef = "pushes";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0281";
+        relationType = "allocated_functions";
+        sourceRef = "first retainer";
+        targetRef = "slidable";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0282";
+        relationType = "allocated_functions";
+        sourceRef = "first retainer";
+        targetRef = "slidably guided";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0283";
+        relationType = "allocated_functions";
+        sourceRef = "first retainer";
+        targetRef = "urges";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0284";
+        relationType = "allocated_functions";
+        sourceRef = "first retainer";
+        targetRef = "urges the first retainer downward";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0285";
+        relationType = "allocated_functions";
+        sourceRef = "second retainer";
+        targetRef = "slidable";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0286";
+        relationType = "allocated_functions";
+        sourceRef = "second retainer";
+        targetRef = "slidably guided";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0287";
+        relationType = "allocated_functions";
+        sourceRef = "second retainer";
+        targetRef = "urges";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0288";
+        relationType = "allocated_functions";
+        sourceRef = "second retainer";
+        targetRef = "urges the first retainer downward";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0289";
+        relationType = "allocated_functions";
+        sourceRef = "first elastic member";
+        targetRef = "slidably guided";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0290";
+        relationType = "allocated_functions";
+        sourceRef = "first elastic member";
+        targetRef = "urges";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0291";
+        relationType = "allocated_functions";
+        sourceRef = "first elastic member";
+        targetRef = "urges the first retainer downward";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0292";
+        relationType = "allocated_functions";
+        sourceRef = "elastic member";
+        targetRef = "slidably guided";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0293";
+        relationType = "allocated_functions";
+        sourceRef = "elastic member";
+        targetRef = "urges";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0294";
+        relationType = "allocated_functions";
+        sourceRef = "elastic member";
+        targetRef = "urges the first retainer downward";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0295";
+        relationType = "allocated_functions";
+        sourceRef = "clamping apparatus";
+        targetRef = "firmly holding";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0296";
+        relationType = "allocated_functions";
+        sourceRef = "clamping apparatus";
+        targetRef = "holding";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0297";
+        relationType = "allocated_functions";
+        sourceRef = "apparatus";
+        targetRef = "firmly holding";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0298";
+        relationType = "allocated_functions";
+        sourceRef = "apparatus";
+        targetRef = "holding";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0299";
+        relationType = "allocated_functions";
+        sourceRef = "bearing";
+        targetRef = "pivotally pivots";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0300";
+        relationType = "allocated_functions";
+        sourceRef = "bearing";
+        targetRef = "pivotally retain";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0301";
+        relationType = "allocated_functions";
+        sourceRef = "bearing 8";
+        targetRef = "pivotally pivots";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0302";
+        relationType = "allocated_functions";
+        sourceRef = "bearing 8";
+        targetRef = "pivotally retain";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0303";
+        relationType = "allocated_functions";
+        sourceRef = "retainer";
+        targetRef = "pivotally pivots";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0304";
+        relationType = "allocated_functions";
+        sourceRef = "retainer";
+        targetRef = "pivotally retain";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0305";
+        relationType = "allocated_functions";
+        sourceRef = "retainer 15";
+        targetRef = "pivotally pivots";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0306";
+        relationType = "allocated_functions";
+        sourceRef = "retainer 15";
+        targetRef = "pivotally retain";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0307";
+        relationType = "allocated_functions";
+        sourceRef = "coil spring 16";
+        targetRef = "pivotally retain";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0308";
+        relationType = "allocated_functions";
+        sourceRef = "first pressing plate";
+        targetRef = "driving";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0309";
+        relationType = "allocated_functions";
+        sourceRef = "first pressing plate 27";
+        targetRef = "driving";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0310";
+        relationType = "allocated_functions";
+        sourceRef = "pressing plate";
+        targetRef = "driving";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0311";
+        relationType = "allocated_functions";
+        sourceRef = "second pressing plate";
+        targetRef = "driving";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0312";
+        relationType = "allocated_functions";
+        sourceRef = "second pressing plate 28";
+        targetRef = "driving";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0313";
+        relationType = "allocated_functions";
+        sourceRef = "pressing bush";
+        targetRef = "driving";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0314";
+        relationType = "allocated_functions";
+        sourceRef = "pressing rod";
+        targetRef = "driving";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0315";
+        relationType = "allocated_functions";
+        sourceRef = "pushing member";
+        targetRef = "clamping";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0316";
+        relationType = "allocated_functions";
+        sourceRef = "clamping shaft";
+        targetRef = "clamping";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0317";
+        relationType = "allocated_functions";
+        sourceRef = "clamping shaft";
+        targetRef = "unclamping";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0318";
+        relationType = "allocated_functions";
+        sourceRef = "coil spring";
+        targetRef = "clamping";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0319";
+        relationType = "allocated_functions";
+        sourceRef = "Belleville spring";
+        targetRef = "clamping";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0320";
+        relationType = "allocated_functions";
+        sourceRef = "clamping apparatus";
+        targetRef = "operation";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0321";
+        relationType = "allocated_functions";
+        sourceRef = "clamping apparatus";
+        targetRef = "clamping";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0322";
+        relationType = "allocated_functions";
+        sourceRef = "clamping apparatus";
+        targetRef = "unclamping";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0323";
+        relationType = "allocated_functions";
+        sourceRef = "clamping apparatus";
+        targetRef = "second position";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0324";
+        relationType = "allocated_functions";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "clamping";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0325";
+        relationType = "allocated_functions";
+        sourceRef = "clamping apparatus 1";
+        targetRef = "unclamped";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0326";
+        relationType = "allocated_functions";
+        sourceRef = "clamping shaft";
+        targetRef = "pivots";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0327";
+        relationType = "allocated_functions";
+        sourceRef = "clamping shaft";
+        targetRef = "pivots clockwise";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0328";
+        relationType = "allocated_functions";
+        sourceRef = "clamping arm";
+        targetRef = "clamped";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0329";
+        relationType = "allocated_functions";
+        sourceRef = "clamping arm";
+        targetRef = "clamping";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0330";
+        relationType = "allocated_functions";
+        sourceRef = "clamping arm 6";
+        targetRef = "clamped";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0331";
+        relationType = "allocated_functions";
+        sourceRef = "clamping arm 6";
+        targetRef = "clamping";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0332";
+        relationType = "allocated_functions";
+        sourceRef = "shaft";
+        targetRef = "sliding movement";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0333";
+        relationType = "allocated_functions";
+        sourceRef = "shaft";
+        targetRef = "disengageably clamped";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0334";
+        relationType = "allocated_functions";
+        sourceRef = "clamping arm";
+        targetRef = "sliding movement";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0335";
+        relationType = "allocated_functions";
+        sourceRef = "clamping arm";
+        targetRef = "disengageably clamped";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0336";
+        relationType = "allocated_functions";
+        sourceRef = "shaft";
+        targetRef = "actuated";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0337";
+        relationType = "allocated_functions";
+        sourceRef = "clamping arm";
+        targetRef = "actuated";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0338";
+        relationType = "allocated_functions";
+        sourceRef = "member";
+        targetRef = "pushes";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0339";
+        relationType = "allocated_functions";
+        sourceRef = "sleeve";
+        targetRef = "slidable";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0340";
+        relationType = "allocated_functions";
+        sourceRef = "second retainer";
+        targetRef = "transmitting";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0341";
+        relationType = "allocated_functions";
+        sourceRef = "first elastic member";
+        targetRef = "transmitting";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0342";
+        relationType = "allocated_functions";
+        sourceRef = "second elastic member";
+        targetRef = "slidably guided";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0343";
+        relationType = "allocated_functions";
+        sourceRef = "second elastic member";
+        targetRef = "urges";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0344";
+        relationType = "allocated_functions";
+        sourceRef = "second elastic member";
+        targetRef = "urges the first retainer downward";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0345";
+        relationType = "allocated_functions";
+        sourceRef = "second elastic member";
+        targetRef = "transmitting";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0346";
+        relationType = "allocated_functions";
+        sourceRef = "clamping arm";
+        targetRef = "urges the first retainer downward";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0347";
+        relationType = "allocated_functions";
+        sourceRef = "clamping arm";
+        targetRef = "transmitting";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0348";
+        relationType = "allocated_functions";
+        sourceRef = "first retainer";
+        targetRef = "transmitting";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0349";
+        relationType = "allocated_functions";
+        sourceRef = "second retainer";
+        targetRef = "transmitting the second elastic force";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0350";
+        relationType = "allocated_functions";
+        sourceRef = "clamping arm";
+        targetRef = "transmitting the second elastic force";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0351";
+        relationType = "allocated_functions";
+        sourceRef = "shaft";
+        targetRef = "transmitting";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0352";
+        relationType = "allocated_functions";
+        sourceRef = "shaft";
+        targetRef = "transmitting the second elastic force";
+        context = "Subsystem";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0353";
+        relationType = "attributes";
+        sourceRef = "cylindrical piston member";
+        targetRef = "long stroke";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0354";
+        relationType = "attributes";
+        sourceRef = "piston member";
+        targetRef = "long stroke";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0355";
+        relationType = "attributes";
+        sourceRef = "output shaft";
+        targetRef = "long stroke";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0356";
+        relationType = "attributes";
+        sourceRef = "clamping arm";
+        targetRef = "long stroke";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0357";
+        relationType = "attributes";
+        sourceRef = "tough spring member";
+        targetRef = "long stroke";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0358";
+        relationType = "attributes";
+        sourceRef = "spring member";
+        targetRef = "long stroke";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0359";
+        relationType = "attributes";
+        sourceRef = "weak spring member";
+        targetRef = "long stroke";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0360";
+        relationType = "attributes";
+        sourceRef = "locking mechanism";
+        targetRef = "long stroke";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0361";
+        relationType = "attributes";
+        sourceRef = "first elastic member";
+        targetRef = "spring constant";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0362";
+        relationType = "attributes";
+        sourceRef = "first retainer";
+        targetRef = "spring constant";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0363";
+        relationType = "attributes";
+        sourceRef = "second engaging member";
+        targetRef = "spring constant";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0364";
+        relationType = "attributes";
+        sourceRef = "second elastic member";
+        targetRef = "spring constant";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0365";
+        relationType = "attributes";
+        sourceRef = "first engaging member";
+        targetRef = "spring constant";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0366";
+        relationType = "attributes";
+        sourceRef = "shaft";
+        targetRef = "inner diameter";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0367";
+        relationType = "attributes";
+        sourceRef = "second pushing member";
+        targetRef = "inner diameter";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0368";
+        relationType = "attributes";
+        sourceRef = "first small-diameter segment";
+        targetRef = "inner diameter";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0369";
+        relationType = "attributes";
+        sourceRef = "small-diameter segment";
+        targetRef = "inner diameter";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0370";
+        relationType = "attributes";
+        sourceRef = "first unlocking segment";
+        targetRef = "inner diameter";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0371";
+        relationType = "attributes";
+        sourceRef = "unlocking segment";
+        targetRef = "inner diameter";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0372";
+        relationType = "attributes";
+        sourceRef = "second small-diameter segment";
+        targetRef = "inner diameter";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0373";
+        relationType = "attributes";
+        sourceRef = "second unlocking segment";
+        targetRef = "inner diameter";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0374";
+        relationType = "attributes";
+        sourceRef = "first engaging member";
+        targetRef = "inner diameter";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0375";
+        relationType = "attributes";
+        sourceRef = "second engaging member";
+        targetRef = "inner diameter";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0376";
+        relationType = "attributes";
+        sourceRef = "sleeve";
+        targetRef = "inner diameter";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0377";
+        relationType = "attributes";
+        sourceRef = "first retainer";
+        targetRef = "inner diameter";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0378";
+        relationType = "attributes";
+        sourceRef = "retainer";
+        targetRef = "inner diameter";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0379";
+        relationType = "attributes";
+        sourceRef = "second retainer";
+        targetRef = "inner diameter";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0380";
+        relationType = "attributes";
+        sourceRef = "coil spring";
+        targetRef = "inner diameter";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0381";
+        relationType = "attributes";
+        sourceRef = "retainer 15";
+        targetRef = "inner diameter";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0382";
+        relationType = "attributes";
+        sourceRef = "plunger";
+        targetRef = "inner diameter";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0383";
+        relationType = "attributes";
+        sourceRef = "plunger 18";
+        targetRef = "inner diameter";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0384";
+        relationType = "attributes";
+        sourceRef = "operating ball";
+        targetRef = "elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0385";
+        relationType = "attributes";
+        sourceRef = "first pressing plate";
+        targetRef = "elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0386";
+        relationType = "attributes";
+        sourceRef = "first pressing plate 27";
+        targetRef = "elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0387";
+        relationType = "attributes";
+        sourceRef = "second pressing plate";
+        targetRef = "elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0388";
+        relationType = "attributes";
+        sourceRef = "second pressing plate 28";
+        targetRef = "elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0389";
+        relationType = "attributes";
+        sourceRef = "pressing bush";
+        targetRef = "elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0390";
+        relationType = "attributes";
+        sourceRef = "pressing rod";
+        targetRef = "elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0391";
+        relationType = "attributes";
+        sourceRef = "coil spring";
+        targetRef = "elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0392";
+        relationType = "attributes";
+        sourceRef = "coil spring 16";
+        targetRef = "elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0393";
+        relationType = "attributes";
+        sourceRef = "Belleville spring";
+        targetRef = "elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0394";
+        relationType = "attributes";
+        sourceRef = "coil spring";
+        targetRef = "long stroke";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0395";
+        relationType = "attributes";
+        sourceRef = "coil spring";
+        targetRef = "relatively weak elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0396";
+        relationType = "attributes";
+        sourceRef = "coil spring 16";
+        targetRef = "long stroke";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0397";
+        relationType = "attributes";
+        sourceRef = "coil spring 16";
+        targetRef = "relatively weak elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0398";
+        relationType = "attributes";
+        sourceRef = "Belleville spring";
+        targetRef = "long stroke";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0399";
+        relationType = "attributes";
+        sourceRef = "Belleville spring";
+        targetRef = "relatively weak elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0400";
+        relationType = "attributes";
+        sourceRef = "Belleville spring 17";
+        targetRef = "long stroke";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0401";
+        relationType = "attributes";
+        sourceRef = "Belleville spring 17";
+        targetRef = "relatively weak elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0402";
+        relationType = "attributes";
+        sourceRef = "Belleville spring 17";
+        targetRef = "elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0403";
+        relationType = "attributes";
+        sourceRef = "elastic member";
+        targetRef = "long stroke";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0404";
+        relationType = "attributes";
+        sourceRef = "elastic member";
+        targetRef = "relatively weak elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0405";
+        relationType = "attributes";
+        sourceRef = "elastic member";
+        targetRef = "elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0406";
+        relationType = "attributes";
+        sourceRef = "elastic member";
+        targetRef = "strong elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0407";
+        relationType = "attributes";
+        sourceRef = "coil spring";
+        targetRef = "strong elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0408";
+        relationType = "attributes";
+        sourceRef = "coil spring 16";
+        targetRef = "strong elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0409";
+        relationType = "attributes";
+        sourceRef = "Belleville spring";
+        targetRef = "strong elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0410";
+        relationType = "attributes";
+        sourceRef = "Belleville spring 17";
+        targetRef = "strong elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0411";
+        relationType = "attributes";
+        sourceRef = "clamping arm";
+        targetRef = "strong elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0412";
+        relationType = "attributes";
+        sourceRef = "clamping shaft";
+        targetRef = "strong elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0413";
+        relationType = "attributes";
+        sourceRef = "clamping shaft 5";
+        targetRef = "strong elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0414";
+        relationType = "attributes";
+        sourceRef = "first elastic member";
+        targetRef = "first spring constant";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0415";
+        relationType = "attributes";
+        sourceRef = "first elastic member";
+        targetRef = "first elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0416";
+        relationType = "attributes";
+        sourceRef = "first elastic member";
+        targetRef = "elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0417";
+        relationType = "attributes";
+        sourceRef = "first elastic member";
+        targetRef = "second spring constant";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0418";
+        relationType = "attributes";
+        sourceRef = "first elastic member";
+        targetRef = "second elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0419";
+        relationType = "attributes";
+        sourceRef = "elastic member";
+        targetRef = "first spring constant";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0420";
+        relationType = "attributes";
+        sourceRef = "elastic member";
+        targetRef = "spring constant";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0421";
+        relationType = "attributes";
+        sourceRef = "elastic member";
+        targetRef = "first elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0422";
+        relationType = "attributes";
+        sourceRef = "elastic member";
+        targetRef = "second spring constant";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0423";
+        relationType = "attributes";
+        sourceRef = "elastic member";
+        targetRef = "second elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0424";
+        relationType = "attributes";
+        sourceRef = "second engaging member";
+        targetRef = "second spring constant";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0425";
+        relationType = "attributes";
+        sourceRef = "second retainer";
+        targetRef = "second spring constant";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0426";
+        relationType = "attributes";
+        sourceRef = "second elastic member";
+        targetRef = "second spring constant";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0427";
+        relationType = "attributes";
+        sourceRef = "second elastic member";
+        targetRef = "second elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0428";
+        relationType = "attributes";
+        sourceRef = "second elastic member";
+        targetRef = "elastic force";
+        context = "Part";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0429";
+        relationType = "owner";
+        sourceRef = "first stroke";
+        targetRef = "clamping arm";
+        context = "Action";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0430";
+        relationType = "owner";
+        sourceRef = "first stroke";
+        targetRef = "first engaging member";
+        context = "Action";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0431";
+        relationType = "owner";
+        sourceRef = "first stroke";
+        targetRef = "second engaging member";
+        context = "Action";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0432";
+        relationType = "owner";
+        sourceRef = "second stroke";
+        targetRef = "second engaging member";
+        context = "Action";
+    }
+    @SJS_Relationship {
+        relationId = "REL-0433";
+        relationType = "preconditions";
+        sourceRef = "first stroke";
+        targetRef = "detached";
+        context = "Action";
+    }
+    doc SJS_Unresolved
+    /* [{"path": "/values/0", "reason": "Value has no literal; prose expression is retained without inventing a numeric value.", "retained": "SJS_Source documentation"}, {"path": "/values/1", "reason": "Value has no literal; prose expression is retained without inventing a numeric value.", "retained": "SJS_Source documentation"}, {"path": "/values/2", "reason": "Value has no literal; prose expression is retained without inventing a numeric value.", "retained": "SJS_Source documentation"}, {"path": "/values/3", "reason": "Value has no literal; prose expression is retained without inventing a numeric value.", "retained": "SJS_Source documentation"}, {"path": "/values/4", "reason": "Value has no literal; prose expression is retained without inventing a numeric value.", "retained": "SJS_Source documentation"}, {"path": "/values/5", "reason": "Value has no literal; prose expression is retained without inventing a numeric value.", "retained": "SJS_Source documentation"}, {"path": "/values/6", "reason": "Value has no literal; prose expression is retained without inventing a numeric value.", "retained": "SJS_Source documentation"}, {"path": "/values/7", "reason": "Value has no literal; prose expression is retained without inventing a numeric value.", "retained": "SJS_Source documentation"}, {"path": "/values/8", "reason": "Value has no literal; prose expression is retained without inventing a numeric value.", "retained": "SJS_Source documentation"}, {"path": "/values/9", "reason": "Value has no literal; prose expression is retained without inventing a numeric value.", "retained": "SJS_Source documentation"}, {"path": "/values/10", "reason": "Value has no literal; prose expression is retained without inventing a numeric value.", "retained": "SJS_Source documentation"}, {"path": "/values/11", "reason": "Value has no literal; prose expression is retained without inventing a numeric value.", "retained": "SJS_Source documentation"}, {"path": "/values/12", "reason": "Value has no literal; prose expression is retained without inventing a numeric value.", "retained": "SJS_Source documentation"}, {"path": "/values/13", "reason": "Value has no literal; prose expression is retained without inventing a numeric value.", "retained": "SJS_Source documentation"}, {"path": "/values/14", "reason": "Value has no literal; prose expression is retained without inventing a numeric value.", "retained": "SJS_Source documentation"}, {"path": "/relationships/232", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/233", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/234", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/235", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/236", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/237", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/238", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/239", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/240", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/241", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/242", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/243", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/244", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/245", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/246", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/247", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/248", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/249", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/250", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/251", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/252", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/253", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/254", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/255", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/256", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/257", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/258", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/259", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/260", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/261", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/262", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/263", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/264", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/265", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/266", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/267", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/268", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/269", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/270", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/271", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/272", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/273", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/274", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/275", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/276", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/277", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/278", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/279", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/280", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/281", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/282", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/283", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/284", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/285", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/286", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/287", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/288", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/289", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/290", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/291", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/292", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/293", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/294", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/295", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/296", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/297", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/298", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/299", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/300", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/301", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/302", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/303", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/304", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/305", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/306", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/307", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/308", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/309", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/310", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/311", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/312", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/313", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/314", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/315", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/316", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/317", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/318", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/319", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/320", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/321", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/322", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/323", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/324", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/325", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/326", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/327", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/328", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/329", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/330", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/331", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/332", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/333", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/334", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/335", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/336", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/337", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/338", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/339", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/340", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/341", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/342", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/343", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/344", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/345", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/346", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/347", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/348", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/349", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/350", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/351", "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/352", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/353", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/354", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/355", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/356", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/357", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/358", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/359", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/360", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/361", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/362", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/363", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/364", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/365", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/366", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/367", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/368", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/369", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/370", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/371", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/372", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/373", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/374", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/375", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/376", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/377", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/378", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/379", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/380", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/381", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/382", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/383", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/384", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/385", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/386", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/387", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/388", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/389", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/390", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/391", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/392", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/393", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/394", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/395", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/396", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/397", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/398", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/399", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/400", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/401", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/402", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/403", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/404", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/405", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/406", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/407", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/408", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/409", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/410", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/411", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/412", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/413", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/414", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/415", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/416", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/417", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/418", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/419", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/420", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/421", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/422", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/423", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/424", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/425", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/426", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/427", "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/428", "reason": "Relationship type 'owner' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/429", "reason": "Relationship type 'owner' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/430", "reason": "Relationship type 'owner' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/431", "reason": "Relationship type 'owner' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}, {"path": "/relationships/432", "reason": "Relationship type 'preconditions' is preserved as typed metadata; no additional connection semantics were invented.", "retained": "SJS_Source documentation"}] */
+} // package Model__Clamping_apparatus

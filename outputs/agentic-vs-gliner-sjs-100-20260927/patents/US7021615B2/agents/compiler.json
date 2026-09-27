@@ -1,0 +1,116 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 8,
+    "AllocationUsage": 2,
+    "Documentation": 24,
+    "EndFeatureMembership": 6,
+    "Feature": 10,
+    "FeatureChaining": 14,
+    "FeatureMembership": 27,
+    "FeatureTyping": 13,
+    "FlowEnd": 2,
+    "FlowUsage": 1,
+    "ItemDefinition": 2,
+    "ItemUsage": 2,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 42,
+    "Package": 1,
+    "PartDefinition": 9,
+    "PartUsage": 10,
+    "PortUsage": 2,
+    "Redefinition": 2,
+    "ReferenceSubsetting": 6,
+    "ReferenceUsage": 2,
+    "Subclassification": 1,
+    "SuccessionAsUsage": 4
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BUSH_Engaging_bush"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_HOLDER_Holding_body"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BALLS_Steel_ball_set"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_OUTPUT_Axial_clamp_output_member"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SPRINGS_Disc_spring_set"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CYLINDER_Hydraulic_release_cylinder"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CYLINDER_Hydraulic_release_cylinder.port_CYL_HYD_IN_Oil_chamber_hydraulic_supply"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_OBJECT_Clamped_work_object"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BASE_Base_body"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_HYD_SUPPLY_External_hydraulic_pressure_supply_device"
+    },
+    {
+      "path": "/subsystems/8/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_HYD_SUPPLY_External_hydraulic_pressure_supply_device.port_SUPPLY_OUT_Hydraulic_pressure_supply_discharge"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_HYD_Hydraulic_pressure"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_CLAMP_Engage_clamp"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_RELEASE_Release_clamp"
+    },
+    {
+      "path": "/subsystems/5/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_HYD_SUPPLY_CONNECTION"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

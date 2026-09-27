@@ -1,0 +1,34 @@
+{
+  "revision": 5,
+  "candidate_sha256": "8459f03b4f94d80c7ae4613d65d3690cd4c866104a09edbe687ae09204b6f8f3",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Inspected cited patent passages support the modeled piston/rod and diaphragm assembly, pumped-medium suction/discharge route, bellows-enclosed spaces and cylinder-opening communication, reaction-space hydraulic linkage, curvature behavior, and claim-derived requirements/notes. Drive-medium supply is explicitly described as unmodeled rather than asserted as an implemented connection."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The model includes pump housing/cylinder, drive, paired diaphragms, reaction spaces, bellows, pumping passages/valves, linkage conduit, and pumped-medium source and destination. It preserves the two distinct media systems and represents the reciprocating and hydraulic-support actions. No unsupported controller is added."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "All remaining interfaces join distinct subsystems with compatible descriptive flow types: pumped fluid across suction/discharge and diaphragm pressure spaces, pressurized medium between bellows spaces and piston pressure spaces, and hydraulic fluid between reaction spaces and the linkage conduit. The four previously self-mated pumping interfaces are absent. ACTUATION_PRESSURE lacks an external source connection, but the model explicitly marks that supply as unmodeled."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Requirements and flow notes retain claim references and reflect supported curvature and sealing obligations; claim 2's pressure condition is confined to hydraulic linkage fluid. The pulsation statement is appropriately limited to the flow notes."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Revision 5 removes the four self-mated interfaces formerly at /subsystems/5/interfaces/6 through /subsystems/5/interfaces/9. Remaining interfaces mate different existing subsystems and refer to existing compatible ports/flows; each connection is represented once."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "External pumped-fluid source/sink are separately modeled, distinct flows/media are maintained, and physical decomposition/action allocation is used as modeling guidance rather than patent evidence. The unmodeled actuation source is transparently qualified."
+    }
+  },
+  "findings": [],
+  "summary": "Revision 5 resolves the prior self-mated-interface defect: the four invalid PUMPING_PORTS self-connections have been removed while the external source/sink and diaphragm-connected legs remain. Independent inspection found no unresolved patent-grounding, completeness, flow, claim-traceability, interface, or textbook-application issue. No new finding is raised.",
+  "saved_at": "2026-09-27T06:14:09.905087+00:00"
+}

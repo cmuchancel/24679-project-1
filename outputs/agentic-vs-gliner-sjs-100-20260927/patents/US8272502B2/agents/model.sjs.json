@@ -1,0 +1,455 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Elliptical-Gear Shaker Conveyor",
+    "system_id": "US8272502B2",
+    "description": "Press-mounted conveyor that uses an electric drive and elliptical gear/rocker mechanism to reciprocate trays for progressive scrap transfer.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "mechanical material handling",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "PRESS",
+      "subsystem_name": "Mechanical Press",
+      "description": "External host mechanical press on which the conveyor is adapted to be mounted and supported; source context for scrap pieces.",
+      "domain": "industrial machinery",
+      "ports": [
+        {
+          "port_id": "press_mount",
+          "name": "Conveyor mounting/support",
+          "direction": "out",
+          "flow_type": "mechanical_structural"
+        },
+        {
+          "port_id": "scrap_source",
+          "name": "Scrap material source",
+          "direction": "out",
+          "flow_type": "solid_material"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_PRESS_SCRAP",
+          "mating_subsystem": "SCRAP",
+          "port_this": "scrap_source",
+          "port_mate": "scrap_in",
+          "flow_ref": "scrap_transfer",
+          "interface_type": "material_source"
+        },
+        {
+          "interface_id": "IF_PRESS_GUIDE_MOUNT",
+          "mating_subsystem": "GUIDE",
+          "port_this": "press_mount",
+          "port_mate": "press_support",
+          "flow_ref": "structural_support",
+          "interface_type": "press_mounting"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "MOTOR",
+      "subsystem_name": "Electric Motor",
+      "description": "Supplies rotary motion through its motor shaft to the drive train.",
+      "domain": "electromechanical",
+      "ports": [
+        {
+          "port_id": "motor_rot",
+          "name": "Motor shaft rotation",
+          "direction": "out",
+          "flow_type": "mechanical_rotational"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_MOTOR_REDUCER",
+          "mating_subsystem": "REDUCER",
+          "port_this": "motor_rot",
+          "port_mate": "red_in",
+          "flow_ref": "rotary_motor",
+          "interface_type": "reducer_input_coupling"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "REDUCER",
+      "subsystem_name": "Gear Reducer",
+      "description": "Optional reducer coupled between motor and the first gearbox input.",
+      "domain": "mechanical power transmission",
+      "ports": [
+        {
+          "port_id": "red_in",
+          "name": "Reducer rotary input",
+          "direction": "in",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "red_out",
+          "name": "Reducer rotary output",
+          "direction": "out",
+          "flow_type": "mechanical_rotational"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_REDUCER_GEARBOX",
+          "mating_subsystem": "GEARBOX",
+          "port_this": "red_out",
+          "port_mate": "gear_in",
+          "flow_ref": "rotary_gearbox",
+          "interface_type": "rotary_shaft_coupling"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "GEARBOX",
+      "subsystem_name": "Elliptical Gearbox",
+      "description": "Gearbox with input and output shafts and continuously meshed eccentric-axis elliptical input and output gears having the same elliptical pitch circle and same number of teeth (claims 2–3, 7–8).",
+      "domain": "mechanical power transmission",
+      "ports": [
+        {
+          "port_id": "gear_in",
+          "name": "Gearbox rotary input",
+          "direction": "in",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "gear_out",
+          "name": "Gearbox rotary output",
+          "direction": "out",
+          "flow_type": "mechanical_rotational"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_GEARBOX_ECC",
+          "mating_subsystem": "ECCLINK",
+          "port_this": "gear_out",
+          "port_mate": "ecc_in",
+          "flow_ref": "gear_output",
+          "interface_type": "eccentric_linkage"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "ECCLINK",
+      "subsystem_name": "Eccentric Output Link and Rocker",
+      "description": "Link eccentrically connected to gearbox output and pivotally connected to a rocker arm on the drive shaft, converting output rotation into shaft oscillation.",
+      "domain": "mechanical motion conversion",
+      "ports": [
+        {
+          "port_id": "ecc_in",
+          "name": "Rotary drive input",
+          "direction": "in",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "ecc_out",
+          "name": "Oscillatory shaft drive",
+          "direction": "out",
+          "flow_type": "mechanical_oscillatory"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_ECC_SHAFT",
+          "mating_subsystem": "DRIVESHAFT",
+          "port_this": "ecc_out",
+          "port_mate": "shaft_in",
+          "flow_ref": "oscillation",
+          "interface_type": "shaft_drive"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "DRIVESHAFT",
+      "subsystem_name": "Oscillating Drive Shaft",
+      "description": "Elongated shaft parallel to carriage, supported for rotation and oscillated by the eccentric output linkage.",
+      "domain": "mechanical transmission",
+      "ports": [
+        {
+          "port_id": "shaft_in",
+          "name": "Oscillatory input",
+          "direction": "in",
+          "flow_type": "mechanical_oscillatory"
+        },
+        {
+          "port_id": "shaft_out",
+          "name": "Oscillating shaft output",
+          "direction": "out",
+          "flow_type": "mechanical_oscillatory"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_SHAFT_LINKS",
+          "mating_subsystem": "CARRIAGE_LINKS",
+          "port_this": "shaft_out",
+          "port_mate": "links_in",
+          "flow_ref": "oscillation",
+          "interface_type": "rocker_link_coupling"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "CARRIAGE_LINKS",
+      "subsystem_name": "Carriage Rocker and Link Assemblies",
+      "description": "Rocker/link assemblies couple the oscillating drive shaft to carriage support members.",
+      "domain": "mechanical motion transmission",
+      "ports": [
+        {
+          "port_id": "links_in",
+          "name": "Shaft oscillation input",
+          "direction": "in",
+          "flow_type": "mechanical_oscillatory"
+        },
+        {
+          "port_id": "links_out",
+          "name": "Carriage reciprocation",
+          "direction": "out",
+          "flow_type": "mechanical_linear"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_LINK_GUIDE",
+          "mating_subsystem": "GUIDE",
+          "port_this": "links_out",
+          "port_mate": "link_input",
+          "flow_ref": "linear_motion",
+          "interface_type": "carriage_actuation"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "GUIDE",
+      "subsystem_name": "Carriage Supports and Linear Guides",
+      "description": "Spaced carriage support members on linear bearing and rail units guide horizontal reciprocating motion.",
+      "domain": "mechanical support",
+      "ports": [
+        {
+          "port_id": "guide_motion",
+          "name": "Guided carriage motion",
+          "direction": "inout",
+          "flow_type": "mechanical_linear"
+        },
+        {
+          "port_id": "link_input",
+          "name": "Rocker/link carriage motion input",
+          "direction": "in",
+          "flow_type": "mechanical_linear"
+        },
+        {
+          "port_id": "press_support",
+          "name": "Press mounting support",
+          "direction": "in",
+          "flow_type": "mechanical_structural"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "CARRIAGE",
+      "subsystem_name": "Elongated Carriage and Shaker Shaft",
+      "description": "Carriage carries a parallel shaker shaft and moves longitudinally with the tray assembly.",
+      "domain": "mechanical structure",
+      "ports": [
+        {
+          "port_id": "carriage_motion",
+          "name": "Carriage reciprocation",
+          "direction": "inout",
+          "flow_type": "mechanical_linear"
+        },
+        {
+          "port_id": "shaker_attach",
+          "name": "Shaker shaft attachment",
+          "direction": "out",
+          "flow_type": "mechanical_structural"
+        },
+        {
+          "port_id": "shaft_attach",
+          "name": "Shaker shaft attachment",
+          "direction": "in",
+          "flow_type": "mechanical_structural"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_CARRIAGE_GUIDE",
+          "mating_subsystem": "GUIDE",
+          "port_this": "carriage_motion",
+          "port_mate": "guide_motion",
+          "flow_ref": "linear_motion",
+          "interface_type": "linear_guidance"
+        },
+        {
+          "interface_id": "IF_CARRIAGE_TRAYS",
+          "mating_subsystem": "TRAYS",
+          "port_this": "carriage_motion",
+          "port_mate": "tray_motion",
+          "flow_ref": "linear_motion",
+          "interface_type": "attached_reciprocating_motion"
+        },
+        {
+          "interface_id": "IF_CARRIAGE_SADDLES",
+          "mating_subsystem": "SADDLES",
+          "port_this": "shaker_attach",
+          "port_mate": "saddle_shaft",
+          "flow_ref": "structural_support",
+          "interface_type": "releasable_shaft_attachment"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "TRAYS",
+      "subsystem_name": "Shaker Trays",
+      "description": "Parallel spaced elongated trays receive scrap and reciprocate with the carriage to progressively convey it.",
+      "domain": "material handling",
+      "ports": [
+        {
+          "port_id": "tray_motion",
+          "name": "Tray reciprocation",
+          "direction": "inout",
+          "flow_type": "mechanical_linear"
+        },
+        {
+          "port_id": "tray_attach",
+          "name": "Saddle bracket attachment",
+          "direction": "in",
+          "flow_type": "mechanical_structural"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "SCRAP",
+      "subsystem_name": "Scrap Material",
+      "description": "External solid material received from the press and progressively transferred along the trays.",
+      "domain": "work material",
+      "ports": [
+        {
+          "port_id": "scrap_in",
+          "name": "Scrap material",
+          "direction": "in",
+          "flow_type": "solid_material"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "SADDLES",
+      "subsystem_name": "Detachable Tray Saddle Brackets",
+      "description": "Inverted U-shaped saddle brackets included with each tray and releasably attached to the shaker shaft secured to the carriage (claims 4, 9).",
+      "domain": "mechanical attachment",
+      "ports": [
+        {
+          "port_id": "saddle_shaft",
+          "name": "Releasable shaft attachment",
+          "direction": "in",
+          "flow_type": "mechanical_structural"
+        },
+        {
+          "port_id": "saddle_tray",
+          "name": "Tray bracket attachment",
+          "direction": "out",
+          "flow_type": "mechanical_structural"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_SADDLES_TRAYS",
+          "mating_subsystem": "TRAYS",
+          "port_this": "saddle_tray",
+          "port_mate": "tray_attach",
+          "flow_ref": "structural_support",
+          "interface_type": "releasable_tray_attachment"
+        }
+      ]
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "rotary_motor",
+      "name": "Motor shaft rotation",
+      "flow_type": "mechanical_rotational",
+      "notes": "Motor shaft rotation is the direct input to the first gearbox in claim 1; in the reducing-gearbox variant of claims 6–7 and 11, it is the input to the reducer."
+    },
+    {
+      "flow_id": "rotary_gearbox",
+      "name": "Reducer output / gearbox input rotation",
+      "flow_type": "mechanical_rotational",
+      "notes": "In claims 6–7 and 11, reducer output shaft forms the first gearbox input. This is distinct from motor-to-reducer rotation; claim 1 also supports direct motor-shaft-to-first-gearbox input without a reducer."
+    },
+    {
+      "flow_id": "gear_output",
+      "name": "Gearbox output rotation",
+      "flow_type": "mechanical_rotational",
+      "notes": "Output rotation drives eccentric link."
+    },
+    {
+      "flow_id": "oscillation",
+      "name": "Drive shaft oscillation",
+      "flow_type": "mechanical_oscillatory",
+      "notes": "Eccentric linkage oscillates elongated drive shaft."
+    },
+    {
+      "flow_id": "linear_motion",
+      "name": "Reciprocating carriage motion",
+      "flow_type": "mechanical_linear",
+      "notes": "Rocker/link assemblies reciprocate supported carriage."
+    },
+    {
+      "flow_id": "scrap_transfer",
+      "name": "Scrap metal pieces",
+      "flow_type": "solid_material",
+      "notes": "Received from press and moved progressively on trays."
+    },
+    {
+      "flow_id": "structural_support",
+      "name": "Structural support or attachment",
+      "flow_type": "mechanical_structural",
+      "notes": "Structural mounting and attachment relationships supported by claims."
+    }
+  ],
+  "requirements": [
+    {
+      "req_id": "REQ_TRANSFER",
+      "category": "functional",
+      "priority": "high",
+      "statement": "The conveyor transfers material such as scrap metal pieces progressively from the mechanical press using reciprocating trays.",
+      "rationale": "Claim 1 specifies progressive transfer of material from the press by trays positioned for longitudinal reciprocating movement.",
+      "satisfied_by": [
+        "TRAYS",
+        "CARRIAGE"
+      ]
+    },
+    {
+      "req_id": "REQ_GUIDANCE",
+      "category": "interface",
+      "priority": "medium",
+      "statement": "Carriage support members are supported by linear bearing and rail units for horizontal reciprocating movement parallel to the trays.",
+      "rationale": "Claim 1 specifies the support members and linear bearing/rail units.",
+      "satisfied_by": [
+        "GUIDE"
+      ]
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "A_DRIVE",
+        "name": "Transmit motor rotation through elliptical gears",
+        "owner": "GEARBOX",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "The motor rotates the gearbox input shaft, optionally through a gear reducer."
+          },
+          {
+            "step_no": 2,
+            "description": "Continuously meshed eccentric-axis elliptical gears drive the gearbox output shaft."
+          }
+        ]
+      }
+    ]
+  }
+}

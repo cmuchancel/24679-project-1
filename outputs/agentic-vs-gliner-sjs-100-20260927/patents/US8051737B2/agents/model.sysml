@@ -1,0 +1,292 @@
+package Model__Worm_Gear_Drive_with_Recessed_Thrust_Contact {
+    private import ScalarValues::*;
+    doc SJS_Source
+    /* SJS_JSON_V1
+     * {"$schema": "sjs/1.0", "model_meta": {"system_name": "Worm Gear Drive with Recessed Thrust Contact", "system_id": "US8051737B2", "description": "Conceptual physical model of the claimed worm gear drive, emphasizing shaft axial restraint by a rounded shaft end engaging a recessed thrust-bearing face.", "version": "1.0", "lifecycle_stage": "concept", "domain": "mechanical power transmission", "maturity": "draft", "date_modified": "2026-09-27"}, "subsystems": [{"subsystem_id": "shaft_worm", "subsystem_name": "Worm-carrying shaft", "description": "Rotating shaft supporting the worm; in the motor embodiment this is the motor shaft. Its axial ends engage thrust-bearing faces.", "domain": "mechanical", "ports": [{"port_id": "shaft_rot_out", "name": "Shaft rotational transmission", "direction": "out", "flow_type": "mechanical_rotational"}, {"port_id": "shaft_support", "name": "Shaft support and thrust contact", "direction": "inout", "flow_type": "mechanical_support_contact"}], "interfaces": [{"interface_id": "shaft_worm_mesh", "mating_subsystem": "worm_wheel", "port_this": "shaft_rot_out", "port_mate": "wheel_rot_in", "flow_ref": "shaft_rotation", "interface_type": "worm gear mesh"}, {"interface_id": "shaft_thrust_contact_1", "mating_subsystem": "thrust_bearing_1", "port_this": "shaft_support", "port_mate": "thrust_contact", "flow_ref": "mechanical_support", "interface_type": "shaft-end thrust-face contact"}, {"interface_id": "shaft_thrust_contact_2", "mating_subsystem": "thrust_bearing_2", "port_this": "shaft_support", "port_mate": "thrust_contact", "flow_ref": "mechanical_support", "interface_type": "opposite shaft-end thrust-face contact"}]}, {"subsystem_id": "worm_wheel", "subsystem_name": "Worm wheel", "description": "Wheel meshed with the shaft-mounted worm and driven by it.", "domain": "mechanical", "ports": [{"port_id": "wheel_rot_in", "name": "Worm-driven rotation", "direction": "in", "flow_type": "mechanical_rotational"}, {"port_id": "wheel_rot_out", "name": "Wheel output rotation", "direction": "out", "flow_type": "mechanical_rotational"}, {"port_id": "wheel_axle_mount", "name": "Rotatable mounting on stub axle", "direction": "inout", "flow_type": "mechanical_support_contact"}], "interfaces": [{"interface_id": "wheel_shock_coupling", "mating_subsystem": "shock_absorbing_interface", "port_this": "wheel_rot_out", "port_mate": "shock_in", "flow_ref": "output_rotation", "interface_type": "shock-absorbing rotational coupling"}]}, {"subsystem_id": "output", "subsystem_name": "Drive output", "description": "Output associated with and driven by the worm wheel; dependent embodiment connects it through a shock-absorbing interface.", "domain": "mechanical", "ports": [{"port_id": "output_rot_in", "name": "Driven output rotation", "direction": "in", "flow_type": "mechanical_rotational"}, {"port_id": "output_axle_mount", "name": "Rotatable mounting on stub axle", "direction": "inout", "flow_type": "mechanical_support_contact"}]}, {"subsystem_id": "rotary_bearings", "subsystem_name": "Rotary shaft bearings", "description": "Bearings rotatably support the shaft.", "domain": "mechanical", "ports": [{"port_id": "bearing_support", "name": "Shaft rotational support", "direction": "inout", "flow_type": "mechanical_support_contact"}], "interfaces": [{"interface_id": "shaft_rotary_bearing_support", "mating_subsystem": "shaft_worm", "port_this": "bearing_support", "port_mate": "shaft_support", "flow_ref": "mechanical_support", "interface_type": "rotary bearing support of shaft"}]}, {"subsystem_id": "thrust_bearing_1", "subsystem_name": "First recessed thrust bearing", "description": "Thrust bearing with an axial thrust face having a recess whose opening is smaller than the shaft diameter; convexly rounded shaft end contacts the edge away from the axis, described as a circular line contact in an embodiment.", "domain": "mechanical", "functional_basis": [{"verb": "limit", "noun": "axial movement"}, {"verb": "increase", "noun": "frictional contact"}], "ports": [{"port_id": "thrust_contact", "name": "Shaft-end thrust contact", "direction": "inout", "flow_type": "mechanical_support_contact"}, {"port_id": "bearing_housing_support", "name": "Housing support contact", "direction": "inout", "flow_type": "mechanical_support_contact"}]}, {"subsystem_id": "thrust_bearing_2", "subsystem_name": "Second thrust bearing", "description": "Second thrust bearing contacts the opposite shaft end to limit axial movement; a substantially similar recessed-face configuration is described as an embodiment.", "domain": "mechanical", "ports": [{"port_id": "thrust_contact", "name": "Opposite shaft-end thrust contact", "direction": "inout", "flow_type": "mechanical_support_contact"}, {"port_id": "bearing_housing_support", "name": "Housing support contact", "direction": "inout", "flow_type": "mechanical_support_contact"}]}, {"subsystem_id": "motor_gearbox_housing", "subsystem_name": "Motor and gearbox housing supports", "description": "Motor housing and connected gearbox housing support the thrust bearings; the gearbox housing supports the worm-wheel/output stub axle in the dependent embodiment.", "domain": "mechanical", "ports": [{"port_id": "housing_support", "name": "Housing support contact", "direction": "inout", "flow_type": "mechanical_support_contact"}], "interfaces": [{"interface_id": "housing_axle_support", "mating_subsystem": "stub_axle", "port_this": "housing_support", "port_mate": "axle_support_mount", "flow_ref": "mechanical_support", "interface_type": "gearbox housing supports stub axle"}, {"interface_id": "housing_thrust_bearing_1_support", "mating_subsystem": "thrust_bearing_1", "port_this": "housing_support", "port_mate": "bearing_housing_support", "flow_ref": "mechanical_support", "interface_type": "motor housing supports first thrust bearing"}, {"interface_id": "housing_thrust_bearing_2_support", "mating_subsystem": "thrust_bearing_2", "port_this": "housing_support", "port_mate": "bearing_housing_support", "flow_ref": "mechanical_support", "interface_type": "gearbox housing supports second thrust bearing"}]}, {"subsystem_id": "stub_axle", "subsystem_name": "Gearbox-supported stub axle", "description": "Gearbox-supported stub axle on which the worm wheel and output are rotatably mounted (claim 9 embodiment).", "domain": "mechanical", "ports": [{"port_id": "axle_support", "name": "Rotatable mounting support", "direction": "inout", "flow_type": "mechanical_support_contact"}, {"port_id": "axle_support_mount", "name": "Stub axle support contact", "direction": "inout", "flow_type": "mechanical_support_contact"}], "interfaces": [{"interface_id": "stub_axle_wheel_mount", "mating_subsystem": "worm_wheel", "port_this": "axle_support", "port_mate": "wheel_axle_mount", "flow_ref": "mechanical_support", "interface_type": "worm wheel rotatably mounted on stub axle"}, {"interface_id": "stub_axle_output_mount", "mating_subsystem": "output", "port_this": "axle_support", "port_mate": "output_axle_mount", "flow_ref": "mechanical_support", "interface_type": "output rotatably mounted on stub axle"}]}, {"subsystem_id": "shock_absorbing_interface", "subsystem_name": "Shock-absorbing interface", "description": "Shock-absorbing interface connecting the worm wheel and output (claim 9 embodiment).", "domain": "mechanical", "ports": [{"port_id": "shock_in", "name": "Wheel-side rotation", "direction": "in", "flow_type": "mechanical_rotational"}, {"port_id": "shock_out", "name": "Output-side rotation", "direction": "out", "flow_type": "mechanical_rotational"}], "interfaces": [{"interface_id": "shock_output_coupling", "mating_subsystem": "output", "port_this": "shock_out", "port_mate": "output_rot_in", "flow_ref": "output_rotation", "interface_type": "shock-absorbing rotational coupling"}]}], "item_flows": [{"flow_id": "shaft_rotation", "name": "Shaft rotation", "flow_type": "mechanical_rotational", "notes": "Shaft-mounted worm transmits rotation to the meshed worm wheel."}, {"flow_id": "output_rotation", "name": "Driven output rotation", "flow_type": "mechanical_rotational", "notes": "Worm wheel drives the associated output; optional shock-absorbing interface is described in claim 9."}, {"flow_id": "mechanical_support", "name": "Mechanical support/contact", "flow_type": "mechanical_support_contact", "notes": "Mechanical support and contact relationships; distinct from rotational transmission."}], "requirements": [{"req_id": "REQ_AXIAL_LIMIT", "category": "functional", "priority": "high", "statement": "The first and second thrust bearings contact respective shaft ends to limit axial movement of the shaft.", "rationale": "Claim 1 expressly assigns axial movement limitation to the pair of thrust bearings.", "satisfied_by": ["thrust_bearing_1", "thrust_bearing_2"]}, {"req_id": "REQ_OFFSET_CONTACT", "category": "structural", "priority": "high", "statement": "The first thrust-bearing face has a recess opening smaller than the shaft diameter, and the convexly rounded first shaft end contacts the face at the recess edge at locations removed from the shaft axis.", "rationale": "Independent claim 1; claim 10 further describes a circular contact line.", "satisfied_by": ["thrust_bearing_1", "shaft_worm"]}], "behaviour": {"actions": [{"action_id": "ACT_TRANSMIT_ROTATION", "name": "Transmit rotation through worm gearing", "owner": "worm_wheel", "steps": [{"step_no": 1, "description": "The shaft-mounted worm rotates with the shaft and meshes with the worm wheel."}, {"step_no": 2, "description": "The worm drives the worm wheel, which drives the associated output."}]}, {"action_id": "ACT_RESTRAIN_AXIAL_SHAFT", "name": "Restrain shaft axial movement at thrust faces", "owner": "thrust_bearing_1", "steps": [{"step_no": 1, "description": "Background operating context: reaction forces associated with the worm and worm wheel may load a respective shaft end against a thrust bearing; this is not asserted as a defining operation of the claimed arrangement."}, {"step_no": 2, "description": "The thrust-bearing faces contact the shaft ends and limit axial movement; at the first bearing, the rounded shaft end contacts the recessed face edge away from the axis."}]}]}}
+     */
+    doc
+    /* {"system_name": "Worm Gear Drive with Recessed Thrust Contact", "system_id": "US8051737B2", "description": "Conceptual physical model of the claimed worm gear drive, emphasizing shaft axial restraint by a rounded shaft end engaging a recessed thrust-bearing face.", "version": "1.0", "lifecycle_stage": "concept", "domain": "mechanical power transmission", "maturity": "draft", "date_modified": "2026-09-27"} */
+    item def FlowType__mechanical_rotational {
+        doc
+        /* {"flow_type": "mechanical_rotational"} */
+    }
+    item def FlowType__mechanical_support_contact {
+        doc
+        /* {"flow_type": "mechanical_support_contact"} */
+    }
+    part def Component_shaft_worm_Worm_carrying_shaft {
+        doc
+        /* {"subsystem_id": "shaft_worm", "subsystem_name": "Worm-carrying shaft", "description": "Rotating shaft supporting the worm; in the motor embodiment this is the motor shaft. Its axial ends engage thrust-bearing faces.", "domain": "mechanical", "ports": [{"port_id": "shaft_rot_out", "name": "Shaft rotational transmission", "direction": "out", "flow_type": "mechanical_rotational"}, {"port_id": "shaft_support", "name": "Shaft support and thrust contact", "direction": "inout", "flow_type": "mechanical_support_contact"}], "interfaces": [{"interface_id": "shaft_worm_mesh", "mating_subsystem": "worm_wheel", "port_this": "shaft_rot_out", "port_mate": "wheel_rot_in", "flow_ref": "shaft_rotation", "interface_type": "worm gear mesh"}, {"interface_id": "shaft_thrust_contact_1", "mating_subsystem": "thrust_bearing_1", "port_this": "shaft_support", "port_mate": "thrust_contact", "flow_ref": "mechanical_support", "interface_type": "shaft-end thrust-face contact"}, {"interface_id": "shaft_thrust_contact_2", "mating_subsystem": "thrust_bearing_2", "port_this": "shaft_support", "port_mate": "thrust_contact", "flow_ref": "mechanical_support", "interface_type": "opposite shaft-end thrust-face contact"}]} */
+        port port_shaft_rot_out_Shaft_rotational_transmission {
+            doc
+            /* {"port_id": "shaft_rot_out", "name": "Shaft rotational transmission", "direction": "out", "flow_type": "mechanical_rotational"} */
+            out item payload : FlowType__mechanical_rotational;
+        }
+        port port_shaft_support_Shaft_support_and_thrust_contact {
+            doc
+            /* {"port_id": "shaft_support", "name": "Shaft support and thrust contact", "direction": "inout", "flow_type": "mechanical_support_contact"} */
+            inout item payload : FlowType__mechanical_support_contact;
+        }
+    }
+    part def Component_worm_wheel_Worm_wheel {
+        doc
+        /* {"subsystem_id": "worm_wheel", "subsystem_name": "Worm wheel", "description": "Wheel meshed with the shaft-mounted worm and driven by it.", "domain": "mechanical", "ports": [{"port_id": "wheel_rot_in", "name": "Worm-driven rotation", "direction": "in", "flow_type": "mechanical_rotational"}, {"port_id": "wheel_rot_out", "name": "Wheel output rotation", "direction": "out", "flow_type": "mechanical_rotational"}, {"port_id": "wheel_axle_mount", "name": "Rotatable mounting on stub axle", "direction": "inout", "flow_type": "mechanical_support_contact"}], "interfaces": [{"interface_id": "wheel_shock_coupling", "mating_subsystem": "shock_absorbing_interface", "port_this": "wheel_rot_out", "port_mate": "shock_in", "flow_ref": "output_rotation", "interface_type": "shock-absorbing rotational coupling"}]} */
+        port port_wheel_rot_in_Worm_driven_rotation {
+            doc
+            /* {"port_id": "wheel_rot_in", "name": "Worm-driven rotation", "direction": "in", "flow_type": "mechanical_rotational"} */
+            in item payload : FlowType__mechanical_rotational;
+        }
+        port port_wheel_rot_out_Wheel_output_rotation {
+            doc
+            /* {"port_id": "wheel_rot_out", "name": "Wheel output rotation", "direction": "out", "flow_type": "mechanical_rotational"} */
+            out item payload : FlowType__mechanical_rotational;
+        }
+        port port_wheel_axle_mount_Rotatable_mounting_on_stub_axle {
+            doc
+            /* {"port_id": "wheel_axle_mount", "name": "Rotatable mounting on stub axle", "direction": "inout", "flow_type": "mechanical_support_contact"} */
+            inout item payload : FlowType__mechanical_support_contact;
+        }
+    }
+    part def Component_output_Drive_output {
+        doc
+        /* {"subsystem_id": "output", "subsystem_name": "Drive output", "description": "Output associated with and driven by the worm wheel; dependent embodiment connects it through a shock-absorbing interface.", "domain": "mechanical", "ports": [{"port_id": "output_rot_in", "name": "Driven output rotation", "direction": "in", "flow_type": "mechanical_rotational"}, {"port_id": "output_axle_mount", "name": "Rotatable mounting on stub axle", "direction": "inout", "flow_type": "mechanical_support_contact"}]} */
+        port port_output_rot_in_Driven_output_rotation {
+            doc
+            /* {"port_id": "output_rot_in", "name": "Driven output rotation", "direction": "in", "flow_type": "mechanical_rotational"} */
+            in item payload : FlowType__mechanical_rotational;
+        }
+        port port_output_axle_mount_Rotatable_mounting_on_stub_axle {
+            doc
+            /* {"port_id": "output_axle_mount", "name": "Rotatable mounting on stub axle", "direction": "inout", "flow_type": "mechanical_support_contact"} */
+            inout item payload : FlowType__mechanical_support_contact;
+        }
+    }
+    part def Component_rotary_bearings_Rotary_shaft_bearings {
+        doc
+        /* {"subsystem_id": "rotary_bearings", "subsystem_name": "Rotary shaft bearings", "description": "Bearings rotatably support the shaft.", "domain": "mechanical", "ports": [{"port_id": "bearing_support", "name": "Shaft rotational support", "direction": "inout", "flow_type": "mechanical_support_contact"}], "interfaces": [{"interface_id": "shaft_rotary_bearing_support", "mating_subsystem": "shaft_worm", "port_this": "bearing_support", "port_mate": "shaft_support", "flow_ref": "mechanical_support", "interface_type": "rotary bearing support of shaft"}]} */
+        port port_bearing_support_Shaft_rotational_support {
+            doc
+            /* {"port_id": "bearing_support", "name": "Shaft rotational support", "direction": "inout", "flow_type": "mechanical_support_contact"} */
+            inout item payload : FlowType__mechanical_support_contact;
+        }
+    }
+    part def Component_thrust_bearing_1_First_recessed_thrust_bearing {
+        doc
+        /* {"subsystem_id": "thrust_bearing_1", "subsystem_name": "First recessed thrust bearing", "description": "Thrust bearing with an axial thrust face having a recess whose opening is smaller than the shaft diameter; convexly rounded shaft end contacts the edge away from the axis, described as a circular line contact in an embodiment.", "domain": "mechanical", "functional_basis": [{"verb": "limit", "noun": "axial movement"}, {"verb": "increase", "noun": "frictional contact"}], "ports": [{"port_id": "thrust_contact", "name": "Shaft-end thrust contact", "direction": "inout", "flow_type": "mechanical_support_contact"}, {"port_id": "bearing_housing_support", "name": "Housing support contact", "direction": "inout", "flow_type": "mechanical_support_contact"}]} */
+        port port_thrust_contact_Shaft_end_thrust_contact {
+            doc
+            /* {"port_id": "thrust_contact", "name": "Shaft-end thrust contact", "direction": "inout", "flow_type": "mechanical_support_contact"} */
+            inout item payload : FlowType__mechanical_support_contact;
+        }
+        port port_bearing_housing_support_Housing_support_contact {
+            doc
+            /* {"port_id": "bearing_housing_support", "name": "Housing support contact", "direction": "inout", "flow_type": "mechanical_support_contact"} */
+            inout item payload : FlowType__mechanical_support_contact;
+        }
+    }
+    part def Component_thrust_bearing_2_Second_thrust_bearing {
+        doc
+        /* {"subsystem_id": "thrust_bearing_2", "subsystem_name": "Second thrust bearing", "description": "Second thrust bearing contacts the opposite shaft end to limit axial movement; a substantially similar recessed-face configuration is described as an embodiment.", "domain": "mechanical", "ports": [{"port_id": "thrust_contact", "name": "Opposite shaft-end thrust contact", "direction": "inout", "flow_type": "mechanical_support_contact"}, {"port_id": "bearing_housing_support", "name": "Housing support contact", "direction": "inout", "flow_type": "mechanical_support_contact"}]} */
+        port port_thrust_contact_Opposite_shaft_end_thrust_contact {
+            doc
+            /* {"port_id": "thrust_contact", "name": "Opposite shaft-end thrust contact", "direction": "inout", "flow_type": "mechanical_support_contact"} */
+            inout item payload : FlowType__mechanical_support_contact;
+        }
+        port port_bearing_housing_support_Housing_support_contact_9a62c9e8 {
+            doc
+            /* {"port_id": "bearing_housing_support", "name": "Housing support contact", "direction": "inout", "flow_type": "mechanical_support_contact"} */
+            inout item payload : FlowType__mechanical_support_contact;
+        }
+    }
+    part def Component_motor_gearbox_housing_Motor_and_gearbox_housing_supports {
+        doc
+        /* {"subsystem_id": "motor_gearbox_housing", "subsystem_name": "Motor and gearbox housing supports", "description": "Motor housing and connected gearbox housing support the thrust bearings; the gearbox housing supports the worm-wheel/output stub axle in the dependent embodiment.", "domain": "mechanical", "ports": [{"port_id": "housing_support", "name": "Housing support contact", "direction": "inout", "flow_type": "mechanical_support_contact"}], "interfaces": [{"interface_id": "housing_axle_support", "mating_subsystem": "stub_axle", "port_this": "housing_support", "port_mate": "axle_support_mount", "flow_ref": "mechanical_support", "interface_type": "gearbox housing supports stub axle"}, {"interface_id": "housing_thrust_bearing_1_support", "mating_subsystem": "thrust_bearing_1", "port_this": "housing_support", "port_mate": "bearing_housing_support", "flow_ref": "mechanical_support", "interface_type": "motor housing supports first thrust bearing"}, {"interface_id": "housing_thrust_bearing_2_support", "mating_subsystem": "thrust_bearing_2", "port_this": "housing_support", "port_mate": "bearing_housing_support", "flow_ref": "mechanical_support", "interface_type": "gearbox housing supports second thrust bearing"}]} */
+        port port_housing_support_Housing_support_contact {
+            doc
+            /* {"port_id": "housing_support", "name": "Housing support contact", "direction": "inout", "flow_type": "mechanical_support_contact"} */
+            inout item payload : FlowType__mechanical_support_contact;
+        }
+    }
+    part def Component_stub_axle_Gearbox_supported_stub_axle {
+        doc
+        /* {"subsystem_id": "stub_axle", "subsystem_name": "Gearbox-supported stub axle", "description": "Gearbox-supported stub axle on which the worm wheel and output are rotatably mounted (claim 9 embodiment).", "domain": "mechanical", "ports": [{"port_id": "axle_support", "name": "Rotatable mounting support", "direction": "inout", "flow_type": "mechanical_support_contact"}, {"port_id": "axle_support_mount", "name": "Stub axle support contact", "direction": "inout", "flow_type": "mechanical_support_contact"}], "interfaces": [{"interface_id": "stub_axle_wheel_mount", "mating_subsystem": "worm_wheel", "port_this": "axle_support", "port_mate": "wheel_axle_mount", "flow_ref": "mechanical_support", "interface_type": "worm wheel rotatably mounted on stub axle"}, {"interface_id": "stub_axle_output_mount", "mating_subsystem": "output", "port_this": "axle_support", "port_mate": "output_axle_mount", "flow_ref": "mechanical_support", "interface_type": "output rotatably mounted on stub axle"}]} */
+        port port_axle_support_Rotatable_mounting_support {
+            doc
+            /* {"port_id": "axle_support", "name": "Rotatable mounting support", "direction": "inout", "flow_type": "mechanical_support_contact"} */
+            inout item payload : FlowType__mechanical_support_contact;
+        }
+        port port_axle_support_mount_Stub_axle_support_contact {
+            doc
+            /* {"port_id": "axle_support_mount", "name": "Stub axle support contact", "direction": "inout", "flow_type": "mechanical_support_contact"} */
+            inout item payload : FlowType__mechanical_support_contact;
+        }
+    }
+    part def Component_shock_absorbing_interface_Shock_absorbing_interface {
+        doc
+        /* {"subsystem_id": "shock_absorbing_interface", "subsystem_name": "Shock-absorbing interface", "description": "Shock-absorbing interface connecting the worm wheel and output (claim 9 embodiment).", "domain": "mechanical", "ports": [{"port_id": "shock_in", "name": "Wheel-side rotation", "direction": "in", "flow_type": "mechanical_rotational"}, {"port_id": "shock_out", "name": "Output-side rotation", "direction": "out", "flow_type": "mechanical_rotational"}], "interfaces": [{"interface_id": "shock_output_coupling", "mating_subsystem": "output", "port_this": "shock_out", "port_mate": "output_rot_in", "flow_ref": "output_rotation", "interface_type": "shock-absorbing rotational coupling"}]} */
+        port port_shock_in_Wheel_side_rotation {
+            doc
+            /* {"port_id": "shock_in", "name": "Wheel-side rotation", "direction": "in", "flow_type": "mechanical_rotational"} */
+            in item payload : FlowType__mechanical_rotational;
+        }
+        port port_shock_out_Output_side_rotation {
+            doc
+            /* {"port_id": "shock_out", "name": "Output-side rotation", "direction": "out", "flow_type": "mechanical_rotational"} */
+            out item payload : FlowType__mechanical_rotational;
+        }
+    }
+    item def Flow_shaft_rotation_Shaft_rotation :> FlowType__mechanical_rotational {
+        doc
+        /* {"flow_id": "shaft_rotation", "name": "Shaft rotation", "flow_type": "mechanical_rotational", "notes": "Shaft-mounted worm transmits rotation to the meshed worm wheel."} */
+    }
+    item def Flow_output_rotation_Driven_output_rotation :> FlowType__mechanical_rotational {
+        doc
+        /* {"flow_id": "output_rotation", "name": "Driven output rotation", "flow_type": "mechanical_rotational", "notes": "Worm wheel drives the associated output; optional shock-absorbing interface is described in claim 9."} */
+    }
+    item def Flow_mechanical_support_Mechanical_support_contact
+        :> FlowType__mechanical_support_contact {
+        doc
+        /* {"flow_id": "mechanical_support", "name": "Mechanical support/contact", "flow_type": "mechanical_support_contact", "notes": "Mechanical support and contact relationships; distinct from rotational transmission."} */
+    }
+    requirement def Requirement_REQ_AXIAL_LIMIT {
+        doc
+        /* {"req_id": "REQ_AXIAL_LIMIT", "category": "functional", "priority": "high", "statement": "The first and second thrust bearings contact respective shaft ends to limit axial movement of the shaft.", "rationale": "Claim 1 expressly assigns axial movement limitation to the pair of thrust bearings.", "satisfied_by": ["thrust_bearing_1", "thrust_bearing_2"]} */
+    }
+    requirement requirement_REQ_AXIAL_LIMIT : Requirement_REQ_AXIAL_LIMIT;
+    requirement def Requirement_REQ_OFFSET_CONTACT {
+        doc
+        /* {"req_id": "REQ_OFFSET_CONTACT", "category": "structural", "priority": "high", "statement": "The first thrust-bearing face has a recess opening smaller than the shaft diameter, and the convexly rounded first shaft end contacts the face at the recess edge at locations removed from the shaft axis.", "rationale": "Independent claim 1; claim 10 further describes a circular contact line.", "satisfied_by": ["thrust_bearing_1", "shaft_worm"]} */
+    }
+    requirement requirement_REQ_OFFSET_CONTACT : Requirement_REQ_OFFSET_CONTACT;
+    action def Action_ACT_TRANSMIT_ROTATION_Transmit_rotation_through_worm_gearing {
+        doc
+        /* {"action_id": "ACT_TRANSMIT_ROTATION", "name": "Transmit rotation through worm gearing", "owner": "worm_wheel", "steps": [{"step_no": 1, "description": "The shaft-mounted worm rotates with the shaft and meshes with the worm wheel."}, {"step_no": 2, "description": "The worm drives the worm wheel, which drives the associated output."}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "The shaft-mounted worm rotates with the shaft and meshes with the worm wheel."} */
+        }
+        then action step_2 {
+            doc
+            /* {"step_no": 2, "description": "The worm drives the worm wheel, which drives the associated output."} */
+        }
+    }
+    action def Action_ACT_RESTRAIN_AXIAL_SHAFT_Restrain_shaft_axial_movement_at_thrust_faces {
+        doc
+        /* {"action_id": "ACT_RESTRAIN_AXIAL_SHAFT", "name": "Restrain shaft axial movement at thrust faces", "owner": "thrust_bearing_1", "steps": [{"step_no": 1, "description": "Background operating context: reaction forces associated with the worm and worm wheel may load a respective shaft end against a thrust bearing; this is not asserted as a defining operation of the claimed arrangement."}, {"step_no": 2, "description": "The thrust-bearing faces contact the shaft ends and limit axial movement; at the first bearing, the rounded shaft end contacts the recessed face edge away from the axis."}]} */
+        action step_1 {
+            doc
+            /* {"step_no": 1, "description": "Background operating context: reaction forces associated with the worm and worm wheel may load a respective shaft end against a thrust bearing; this is not asserted as a defining operation of the claimed arrangement."} */
+        }
+        then action step_2 {
+            doc
+            /* {"step_no": 2, "description": "The thrust-bearing faces contact the shaft ends and limit axial movement; at the first bearing, the rounded shaft end contacts the recessed face edge away from the axis."} */
+        }
+    }
+    part systemModel {
+        part component_shaft_worm_Worm_carrying_shaft : Component_shaft_worm_Worm_carrying_shaft;
+        part component_worm_wheel_Worm_wheel : Component_worm_wheel_Worm_wheel;
+        part component_output_Drive_output : Component_output_Drive_output;
+        part component_rotary_bearings_Rotary_shaft_bearings
+            : Component_rotary_bearings_Rotary_shaft_bearings;
+        part component_thrust_bearing_1_First_recessed_thrust_bearing
+            : Component_thrust_bearing_1_First_recessed_thrust_bearing;
+        part component_thrust_bearing_2_Second_thrust_bearing
+            : Component_thrust_bearing_2_Second_thrust_bearing;
+        part component_motor_gearbox_housing_Motor_and_gearbox_housing_supports
+            : Component_motor_gearbox_housing_Motor_and_gearbox_housing_supports;
+        part component_stub_axle_Gearbox_supported_stub_axle
+            : Component_stub_axle_Gearbox_supported_stub_axle;
+        part component_shock_absorbing_interface_Shock_absorbing_interface
+            : Component_shock_absorbing_interface_Shock_absorbing_interface;
+        action action_ACT_TRANSMIT_ROTATION_Transmit_rotation_through_worm_gearing
+            : Action_ACT_TRANSMIT_ROTATION_Transmit_rotation_through_worm_gearing;
+        action action_ACT_RESTRAIN_AXIAL_SHAFT_Restrain_shaft_axial_movement_at_thrust_faces
+            : Action_ACT_RESTRAIN_AXIAL_SHAFT_Restrain_shaft_axial_movement_at_thrust_faces;
+    }
+    satisfy requirement_REQ_AXIAL_LIMIT
+        by systemModel.component_thrust_bearing_1_First_recessed_thrust_bearing;
+    satisfy requirement_REQ_AXIAL_LIMIT
+        by systemModel.component_thrust_bearing_2_Second_thrust_bearing;
+    satisfy requirement_REQ_OFFSET_CONTACT
+        by systemModel.component_thrust_bearing_1_First_recessed_thrust_bearing;
+    satisfy requirement_REQ_OFFSET_CONTACT by systemModel.component_shaft_worm_Worm_carrying_shaft;
+    allocate systemModel.action_ACT_TRANSMIT_ROTATION_Transmit_rotation_through_worm_gearing
+        to systemModel.component_worm_wheel_Worm_wheel;
+    allocate systemModel
+                    .action_ACT_RESTRAIN_AXIAL_SHAFT_Restrain_shaft_axial_movement_at_thrust_faces
+        to systemModel.component_thrust_bearing_1_First_recessed_thrust_bearing;
+    doc
+    /* {"interface_id": "shaft_worm_mesh", "mating_subsystem": "worm_wheel", "port_this": "shaft_rot_out", "port_mate": "wheel_rot_in", "flow_ref": "shaft_rotation", "interface_type": "worm gear mesh"} */
+    flow connection_shaft_worm_mesh
+        from systemModel.component_shaft_worm_Worm_carrying_shaft
+            .port_shaft_rot_out_Shaft_rotational_transmission.payload
+        to systemModel.component_worm_wheel_Worm_wheel.port_wheel_rot_in_Worm_driven_rotation.payload;
+    doc
+    /* {"interface_id": "shaft_thrust_contact_1", "mating_subsystem": "thrust_bearing_1", "port_this": "shaft_support", "port_mate": "thrust_contact", "flow_ref": "mechanical_support", "interface_type": "shaft-end thrust-face contact"} */
+    connection connection_shaft_thrust_contact_1
+        connect systemModel.component_shaft_worm_Worm_carrying_shaft
+                    .port_shaft_support_Shaft_support_and_thrust_contact
+        to systemModel.component_thrust_bearing_1_First_recessed_thrust_bearing
+                    .port_thrust_contact_Shaft_end_thrust_contact;
+    doc
+    /* {"interface_id": "shaft_thrust_contact_2", "mating_subsystem": "thrust_bearing_2", "port_this": "shaft_support", "port_mate": "thrust_contact", "flow_ref": "mechanical_support", "interface_type": "opposite shaft-end thrust-face contact"} */
+    connection connection_shaft_thrust_contact_2
+        connect systemModel.component_shaft_worm_Worm_carrying_shaft
+                    .port_shaft_support_Shaft_support_and_thrust_contact
+        to systemModel.component_thrust_bearing_2_Second_thrust_bearing
+                    .port_thrust_contact_Opposite_shaft_end_thrust_contact;
+    doc
+    /* {"interface_id": "wheel_shock_coupling", "mating_subsystem": "shock_absorbing_interface", "port_this": "wheel_rot_out", "port_mate": "shock_in", "flow_ref": "output_rotation", "interface_type": "shock-absorbing rotational coupling"} */
+    flow connection_wheel_shock_coupling
+        from systemModel.component_worm_wheel_Worm_wheel.port_wheel_rot_out_Wheel_output_rotation.payload
+        to systemModel.component_shock_absorbing_interface_Shock_absorbing_interface
+            .port_shock_in_Wheel_side_rotation.payload;
+    doc
+    /* {"interface_id": "shaft_rotary_bearing_support", "mating_subsystem": "shaft_worm", "port_this": "bearing_support", "port_mate": "shaft_support", "flow_ref": "mechanical_support", "interface_type": "rotary bearing support of shaft"} */
+    connection connection_shaft_rotary_bearing_support
+        connect systemModel.component_rotary_bearings_Rotary_shaft_bearings
+                    .port_bearing_support_Shaft_rotational_support
+        to systemModel.component_shaft_worm_Worm_carrying_shaft
+                    .port_shaft_support_Shaft_support_and_thrust_contact;
+    doc
+    /* {"interface_id": "housing_axle_support", "mating_subsystem": "stub_axle", "port_this": "housing_support", "port_mate": "axle_support_mount", "flow_ref": "mechanical_support", "interface_type": "gearbox housing supports stub axle"} */
+    connection connection_housing_axle_support
+        connect systemModel.component_motor_gearbox_housing_Motor_and_gearbox_housing_supports
+                    .port_housing_support_Housing_support_contact
+        to systemModel.component_stub_axle_Gearbox_supported_stub_axle
+                    .port_axle_support_mount_Stub_axle_support_contact;
+    doc
+    /* {"interface_id": "housing_thrust_bearing_1_support", "mating_subsystem": "thrust_bearing_1", "port_this": "housing_support", "port_mate": "bearing_housing_support", "flow_ref": "mechanical_support", "interface_type": "motor housing supports first thrust bearing"} */
+    connection connection_housing_thrust_bearing_1_support
+        connect systemModel.component_motor_gearbox_housing_Motor_and_gearbox_housing_supports
+                    .port_housing_support_Housing_support_contact
+        to systemModel.component_thrust_bearing_1_First_recessed_thrust_bearing
+                    .port_bearing_housing_support_Housing_support_contact;
+    doc
+    /* {"interface_id": "housing_thrust_bearing_2_support", "mating_subsystem": "thrust_bearing_2", "port_this": "housing_support", "port_mate": "bearing_housing_support", "flow_ref": "mechanical_support", "interface_type": "gearbox housing supports second thrust bearing"} */
+    connection connection_housing_thrust_bearing_2_support
+        connect systemModel.component_motor_gearbox_housing_Motor_and_gearbox_housing_supports
+                    .port_housing_support_Housing_support_contact
+        to systemModel.component_thrust_bearing_2_Second_thrust_bearing
+                    .port_bearing_housing_support_Housing_support_contact_9a62c9e8;
+    doc
+    /* {"interface_id": "stub_axle_wheel_mount", "mating_subsystem": "worm_wheel", "port_this": "axle_support", "port_mate": "wheel_axle_mount", "flow_ref": "mechanical_support", "interface_type": "worm wheel rotatably mounted on stub axle"} */
+    connection connection_stub_axle_wheel_mount
+        connect systemModel.component_stub_axle_Gearbox_supported_stub_axle
+                    .port_axle_support_Rotatable_mounting_support
+        to systemModel.component_worm_wheel_Worm_wheel
+                    .port_wheel_axle_mount_Rotatable_mounting_on_stub_axle;
+    doc
+    /* {"interface_id": "stub_axle_output_mount", "mating_subsystem": "output", "port_this": "axle_support", "port_mate": "output_axle_mount", "flow_ref": "mechanical_support", "interface_type": "output rotatably mounted on stub axle"} */
+    connection connection_stub_axle_output_mount
+        connect systemModel.component_stub_axle_Gearbox_supported_stub_axle
+                    .port_axle_support_Rotatable_mounting_support
+        to systemModel.component_output_Drive_output
+                    .port_output_axle_mount_Rotatable_mounting_on_stub_axle;
+    doc
+    /* {"interface_id": "shock_output_coupling", "mating_subsystem": "output", "port_this": "shock_out", "port_mate": "output_rot_in", "flow_ref": "output_rotation", "interface_type": "shock-absorbing rotational coupling"} */
+    flow connection_shock_output_coupling
+        from systemModel.component_shock_absorbing_interface_Shock_absorbing_interface
+            .port_shock_out_Output_side_rotation.payload
+        to systemModel.component_output_Drive_output.port_output_rot_in_Driven_output_rotation.payload;
+} // package Model__Worm_Gear_Drive_with_Recessed_Thrust_Contact

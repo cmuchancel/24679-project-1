@@ -1,0 +1,196 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 4,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 4,
+    "Documentation": 36,
+    "EndFeatureMembership": 16,
+    "Feature": 28,
+    "FeatureChaining": 44,
+    "FeatureMembership": 38,
+    "FeatureTyping": 20,
+    "FlowEnd": 4,
+    "FlowUsage": 2,
+    "ItemDefinition": 6,
+    "ItemUsage": 12,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 60,
+    "Package": 1,
+    "PartDefinition": 6,
+    "PartUsage": 7,
+    "PortUsage": 12,
+    "Redefinition": 4,
+    "ReferenceSubsetting": 16,
+    "ReferenceUsage": 4,
+    "Subclassification": 5
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DIVE_Dive_suspension_assembly"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DIVE_Dive_suspension_assembly.port_DIVE_ROLL_Push_rod_connection_from_roll_bell_crank"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DIVE_Dive_suspension_assembly.port_DIVE_CONTACT_Wheel_or_ski_attachment"
+    },
+    {
+      "path": "/subsystems/0/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DIVE_Dive_suspension_assembly.port_DIVE_BODY_LINK_Upper_lower_suspension_linkage_connection_at"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ROLL_Roll_suspension_mechanism"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ROLL_Roll_suspension_mechanism.port_ROLL_DIVE_Push_rod_connection_to_dive_assembly"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ROLL_Roll_suspension_mechanism.port_ROLL_LOCK_Locking_linkage_attachment"
+    },
+    {
+      "path": "/subsystems/1/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ROLL_Roll_suspension_mechanism.port_ROLL_BODY_Bell_crank_pivot_and_roll_dampener_attachment"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_LOCK_Inter_side_locking_linkage"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LOCK_Inter_side_locking_linkage.port_LOCK_ROLL_First_roll_mechanism_end"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LOCK_Inter_side_locking_linkage.port_LOCK_ADJ_Opposite_locking_linkage_end_to_adjacent_roll"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BODY_Vehicle_body"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BODY_Vehicle_body.port_BODY_ROLL_Roll_bell_crank_pivot_and_dampener_attachment"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BODY_Vehicle_body.port_BODY_DIVE_LINK_Body_side_suspension_linkage_attachment"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CONTACT_Wheel_or_ski_contact_member"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CONTACT_Wheel_or_ski_contact_member.port_CONTACT_DIVE_Dive_suspension_attachment"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ROLL_ADJ_Adjacent_roll_suspension_mechanism"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ROLL_ADJ_Adjacent_roll_suspension_mechanism.port_ADJ_LOCK_Adjacent_locking_linkage_attachment"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_DIVE_ROLL_Mechanical_motion_load_coupling"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_ADJ_ROLL_Adjacent_roll_motion"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_DIVE_CONTACT_Wheel_ski_suspension_motion"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_ROLL_BODY_Roll_pivot_and_dampener_mechanical_coupling"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_DIVE_BODY_LINK_Body_to_dive_suspension_linkage_motion"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_DIVE_ISOLATE_Isolate_roll_response_in_dive"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_ROLL_TANDEM_Enable_tandem_roll_response"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_DIVE_CONTACT"
+    },
+    {
+      "path": "/subsystems/0/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_DIVE_BODY_LINK"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_ROLL_DIVE"
+    },
+    {
+      "path": "/subsystems/1/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_ROLL_BODY"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_LOCK_ROLL"
+    },
+    {
+      "path": "/subsystems/2/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_LOCK_ADJ"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

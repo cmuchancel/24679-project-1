@@ -1,0 +1,195 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Unequal-Tooth Gear Pump",
+    "system_id": "US8087913B2",
+    "description": "Conceptual model of a gear pump using a drive gear with more teeth than its meshing driven gear, with asymmetric gear tooth profiles.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "mechanical fluid pump",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "drive_source",
+      "subsystem_name": "Drive Source",
+      "description": "External source of drive that rotates the first gear; its specific implementation is not defined by the claims.",
+      "domain": "mechanical power source",
+      "ports": [
+        {
+          "port_id": "drive_out",
+          "name": "Drive output",
+          "direction": "out",
+          "flow_type": "mechanical_rotary"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "drive_to_gear",
+          "mating_subsystem": "drive_gear",
+          "port_this": "drive_out",
+          "port_mate": "drive_in",
+          "flow_ref": "drive_rotation",
+          "interface_type": "rotary mechanical drive"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "drive_gear",
+      "subsystem_name": "First (Drive) Gear",
+      "description": "First gear receives drive and transmits rotation through contact of its teeth with the second gear. It has more teeth than the second gear.",
+      "domain": "mechanical gearing",
+      "functional_basis": [
+        "transmit rotation"
+      ],
+      "ports": [
+        {
+          "port_id": "drive_in",
+          "name": "Drive input",
+          "direction": "in",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "mesh_out",
+          "name": "Rotation transfer to driven gear",
+          "direction": "out",
+          "flow_type": "mechanical_rotary"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "gear_mesh",
+          "mating_subsystem": "driven_gear",
+          "port_this": "mesh_out",
+          "port_mate": "mesh_in",
+          "flow_ref": "gear_mesh_rotation",
+          "interface_type": "meshing gear contact"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "driven_gear",
+      "subsystem_name": "Second (Driven) Gear",
+      "description": "Second gear rotates through contact with the first gear. Its tooth faces are asymmetric about the stated radial centerline; contact and non-contact faces are involutes, with greater curvature radius on the contact face, designed to provide an effectively thicker apex. Circumferential gaps extend inward beyond the non-contact curvature circle, while the contact-face curvature circle lies inward of the innermost gap portion. Claims 2 and 7 additionally specify a smaller outer diameter than the first gear.",
+      "domain": "mechanical gearing",
+      "functional_basis": [
+        "receive rotation",
+        "drive associated component"
+      ],
+      "ports": [
+        {
+          "port_id": "mesh_in",
+          "name": "Rotation from drive gear",
+          "direction": "in",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "component_out",
+          "name": "Drive to associated component",
+          "direction": "out",
+          "flow_type": "mechanical_rotary"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "gear_to_component",
+          "mating_subsystem": "associated_component",
+          "port_this": "component_out",
+          "port_mate": "component_in",
+          "flow_ref": "component_drive",
+          "interface_type": "rotary mechanical drive"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "associated_component",
+      "subsystem_name": "Driven-Gear Associated Component",
+      "description": "Component associated with the second gear to create power when driven. The description identifies a generator or centrifugal pump as alternative examples; neither is required by the claim.",
+      "domain": "power-generating or fluid-pumping component",
+      "ports": [
+        {
+          "port_id": "component_in",
+          "name": "Driven input",
+          "direction": "in",
+          "flow_type": "mechanical_rotary"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "housing",
+      "subsystem_name": "Pump Housing",
+      "description": "Housing mounts the drive gear and driven gear; fluid travels from inlet to outlet through spaces between the teeth as the gears rotate.",
+      "domain": "mechanical structure",
+      "ports": [
+        {
+          "port_id": "inlet",
+          "name": "Fluid inlet",
+          "direction": "in",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "outlet",
+          "name": "Fluid outlet",
+          "direction": "out",
+          "flow_type": "hydraulic_fluid"
+        }
+      ],
+      "interfaces": []
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "drive_rotation",
+      "name": "Drive rotation",
+      "flow_type": "mechanical_rotary",
+      "notes": "Mechanical drive supplied to the first gear."
+    },
+    {
+      "flow_id": "gear_mesh_rotation",
+      "name": "Gear-mesh rotation transfer",
+      "flow_type": "mechanical_rotary",
+      "notes": "Tooth contact transfers rotation from the first gear to the second gear."
+    },
+    {
+      "flow_id": "component_drive",
+      "name": "Driven-gear component drive",
+      "flow_type": "mechanical_rotary",
+      "notes": "The driven gear drives its associated component."
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "transfer_rotation",
+        "name": "Transfer rotation from first gear",
+        "owner": "drive_gear",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "The first gear is connected to a source of drive and receives rotation."
+          },
+          {
+            "step_no": 2,
+            "description": "First-gear teeth contact the contact faces of the second-gear teeth, causing the second gear to rotate."
+          },
+          {
+            "step_no": 3,
+            "description": "The first gear transfers rotation to the second gear through tooth contact."
+          }
+        ]
+      },
+      {
+        "action_id": "transport_fluid",
+        "name": "Transport fluid from inlet to outlet",
+        "owner": "housing",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "As the gears rotate, spaces between the teeth move hydraulic fluid from the housing inlet toward the housing outlet."
+          }
+        ]
+      }
+    ]
+  }
+}

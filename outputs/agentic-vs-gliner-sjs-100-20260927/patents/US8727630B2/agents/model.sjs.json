@@ -1,0 +1,202 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Self-aligning miniature ball bearing assembly",
+    "system_id": "US8727630B2",
+    "description": "Concept-level representation of a miniature ball bearing assembly that permits shaft alignment through limited spherical movement of the bearing outer race while the inner race rotates.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "Mechanical bearing assembly",
+    "maturity": "draft",
+    "date_modified": "2026-09-26"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "RET",
+      "subsystem_name": "Annular retainer",
+      "description": "Retainer with conical inner bearing seat and outer mounting wall; supports the bearing and provides an installation interface.",
+      "domain": "Mechanical structure",
+      "functional_basis": [
+        "support bearing",
+        "retain assembly in substrate opening"
+      ],
+      "ports": [
+        {
+          "port_id": "RET_SEAT",
+          "name": "Bearing-seat pivot support",
+          "direction": "inout",
+          "flow_type": "mechanical_angular"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_RET_BRG_PIVOT",
+          "mating_subsystem": "BRG",
+          "port_this": "RET_SEAT",
+          "port_mate": "BRG_SEAT",
+          "flow_ref": "F_BRG_PIVOT",
+          "interface_type": "spherical bearing-seat support"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "BRG",
+      "subsystem_name": "Ball bearing",
+      "description": "Ball bearing with inner and outer races; the outer race has an arcuate, generally spherical outside wall and can pivot relative to the retainer.",
+      "domain": "Rotating machinery",
+      "functional_basis": [
+        "support shaft rotation",
+        "self-align bearing axis"
+      ],
+      "ports": [
+        {
+          "port_id": "BRG_SHAFT",
+          "name": "Inner-race shaft coupling",
+          "direction": "inout",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "BRG_SEAT",
+          "name": "Outer-race spherical support",
+          "direction": "inout",
+          "flow_type": "mechanical_angular"
+        },
+        {
+          "port_id": "BRG_BIAS",
+          "name": "Outer-race bias contact",
+          "direction": "in",
+          "flow_type": "mechanical_force"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF_BRG_RING_BIAS",
+          "mating_subsystem": "RING",
+          "port_this": "BRG_BIAS",
+          "port_mate": "RING_FORCE",
+          "flow_ref": "F_RING_FORCE",
+          "interface_type": "Compression-ring force contact at outer race, permitting spherical movement with less resistance than rotational movement and thereby restraining outer-race rotation."
+        },
+        {
+          "interface_id": "IF_BRG_SHAFT",
+          "mating_subsystem": "SHAFT",
+          "port_this": "BRG_SHAFT",
+          "port_mate": "SHAFT_ROT",
+          "flow_ref": "F_SHAFT",
+          "interface_type": "shaft through inner-race rotational coupling"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "RING",
+      "subsystem_name": "Elastomeric compression ring",
+      "description": "Elastomeric ring applies force to the outer race, maintaining engagement with the bearing seat while accommodating spherical motion and resisting outer-race rotation.",
+      "domain": "Mechanical compliant element",
+      "functional_basis": [
+        "bias outer race against seat",
+        "restrain outer-race rotation"
+      ],
+      "ports": [
+        {
+          "port_id": "RING_FORCE",
+          "name": "Bias force at outer race",
+          "direction": "out",
+          "flow_type": "mechanical_force"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "SHAFT",
+      "subsystem_name": "Rotating shaft",
+      "description": "External shaft received through the inner race and rotated while supported by the bearing assembly.",
+      "domain": "Mechanical input",
+      "ports": [
+        {
+          "port_id": "SHAFT_ROT",
+          "name": "Shaft rotation coupling",
+          "direction": "inout",
+          "flow_type": "mechanical_rotary"
+        }
+      ]
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "F_SHAFT",
+      "name": "Shaft rotation and alignment interaction",
+      "flow_type": "mechanical_rotary",
+      "notes": "Shaft passes through inner race; shaft misalignment can cause bearing pivoting, and shaft rotation is accommodated by inner race rotation."
+    },
+    {
+      "flow_id": "F_RING_FORCE",
+      "name": "Compression-ring bias force",
+      "flow_type": "mechanical_force",
+      "notes": "Ring force holds the outer race against the retainer bearing seat; at this contact the compression ring offers less resistance to spherical motion than to rotational motion, preventing outer-race rotation while permitting self-alignment."
+    },
+    {
+      "flow_id": "F_BRG_PIVOT",
+      "name": "Bearing spherical/pivot motion",
+      "flow_type": "mechanical_angular",
+      "notes": "Outer race and bearing pivot within retainer to align with shaft; an embodiment describes about 5-degree cone half-angle (claims 4–5)."
+    }
+  ],
+  "requirements": [
+    {
+      "req_id": "REQ_ALIGN",
+      "category": "functional",
+      "priority": "high",
+      "statement": "The bearing shall permit spherical movement of the outer race within the retainer to provide self-alignment with a shaft.",
+      "rationale": "Claim 1; claims 4–5 describe about 5-degree alignment travel.",
+      "satisfied_by": [
+        "BRG",
+        "RET",
+        "RING"
+      ]
+    },
+    {
+      "req_id": "REQ_ROT",
+      "category": "functional",
+      "priority": "high",
+      "statement": "The compression-ring interaction shall prevent rotational movement of the outer race as the inner race rotates in response to shaft rotation.",
+      "rationale": "Claim 1.",
+      "satisfied_by": [
+        "RING",
+        "BRG",
+        "RET"
+      ]
+    },
+    {
+      "req_id": "REQ_MOUNT",
+      "category": "interface",
+      "priority": "medium",
+      "statement": "The retainer shall be press-installable in a receiving opening using a disclosed clinching or friction-fit embodiment.",
+      "rationale": "Claims 6 and 9–11 disclose self-clinching and friction-fit alternatives.",
+      "satisfied_by": [
+        "RET"
+      ]
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "ACT_ALIGN_ROTATE",
+        "name": "Align bearing and support shaft rotation",
+        "owner": "BRG",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Receive the shaft through the inner race."
+          },
+          {
+            "step_no": 2,
+            "description": "Allow the bearing outer race to pivot within the retainer so the bearing axis aligns with the shaft, with the compression ring maintaining force against the bearing seat."
+          },
+          {
+            "step_no": 3,
+            "description": "Permit the inner race to rotate with the shaft while the outer race remains rotationally restrained."
+          }
+        ]
+      }
+    ]
+  }
+}

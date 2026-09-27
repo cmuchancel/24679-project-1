@@ -1,0 +1,34 @@
+{
+  "revision": 8,
+  "candidate_sha256": "4a187246a354a461d1ffe6ac2b4150a51cbe00d68170ba9132e3b87c542f3f1d",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 8's tube supply-opening ports mate cylinder high/low openings, which matches the patent's express corresponding opening contact. Three sealing rings form two annular spaces, and the tube description/action state the corresponding groups route through the respective spaces. No fixed socket/feed interfaces are asserted; routing alternatives are accurately descriptive."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The revision now identifies the two supply-opening groups and separately represents both sealed annular spaces and the three sealing rings. It retains both hydraulic paths and the selectable routing action. Representing annular spaces as internal parts rather than external interface nodes is an acceptable component-level abstraction because the internal path is stated in the tube description and action."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Both supply-opening-to-cylinder connections are hydraulic-fluid interfaces and map high to high and low to low. The action traces fluid via corresponding openings/lines to selected feeding openings and sockets, while selectable corresponding, crossed, and interconnected configurations remain narrative rather than misleading fixed edges."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Claim 1's corresponding openings, separated spaces and supply lines, claim 2 flanges, and claim 3's three tube positions are represented. No unsupported routing-control actuator or state machine was added."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "The revised interfaces connect the tube's distinct supply-opening groups to their respective cylinder openings, consistent with the patent's statement that corresponding openings have contact. No static socket-to-feeding-opening pairings constrain the three selectable configurations; their alternatives remain stated in the action and tube description."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The retrieved textbook passage concerns use-case scenarios, not physical fluid-interface topology. The model appropriately relies on patent evidence for interface facts and avoids an unsupported control mechanism; textbook evidence is not used to assert invention facts."
+    }
+  },
+  "findings": [],
+  "summary": "Revision 8 addresses the prior fidelity concerns: it adds separate tube supply-opening ports at the cylinder interface and models the three sealing rings plus two mutually sealed annular spaces. The direct corresponding high/low interfaces are supported by the patent's explicit opening-contact disclosure, and the action/description retain the annular spaces as intermediate communication paths. Selectable corresponding, crossed, and direct-feed configurations remain descriptive, without fixed socket/feed edges that would contradict routing alternatives. No unresolved findings.",
+  "saved_at": "2026-09-27T07:18:36.908800+00:00"
+}

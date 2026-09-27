@@ -1,0 +1,176 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Folding Latching Mechanism",
+    "system_id": "US7292457B2",
+    "description": "Concept-level model of a two-axis folding latch for securing a carrier-board frame to a chassis frame member.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "mechanical latching and carrier-board integration",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "latch",
+      "subsystem_name": "Latching Member",
+      "description": "Pivoting member carrying a claw-shaped clasp and first-axis pivot feature; rotates to engage a frame member.",
+      "domain": "mechanical",
+      "ports": [
+        {
+          "port_id": "latch_lever_joint",
+          "name": "Lever pivot and actuation interface",
+          "direction": "inout",
+          "flow_type": "mechanical_rotation"
+        },
+        {
+          "port_id": "latch_frame_engagement",
+          "name": "Clasp-frame engagement interface",
+          "direction": "inout",
+          "flow_type": "mechanical_contact"
+        },
+        {
+          "port_id": "latch_carrier_pivot",
+          "name": "Carrier-frame pivot interface",
+          "direction": "inout",
+          "flow_type": "mechanical_rotation"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "lever_latch_actuation",
+          "mating_subsystem": "lever",
+          "port_this": "latch_lever_joint",
+          "port_mate": "lever_latch_joint",
+          "flow_ref": "lever_motion",
+          "interface_type": "pivoting mechanical coupling"
+        },
+        {
+          "interface_id": "latch_frame_coupling",
+          "mating_subsystem": "chassis",
+          "port_this": "latch_frame_engagement",
+          "port_mate": "frame_latch_engagement",
+          "flow_ref": "frame_contact",
+          "interface_type": "clasp-to-frame engagement"
+        },
+        {
+          "interface_id": "carrier_latch_pivot_mount",
+          "mating_subsystem": "carrier",
+          "port_this": "latch_carrier_pivot",
+          "port_mate": "carrier_latch_pivot",
+          "flow_ref": "carrier_pivot_coupling",
+          "interface_type": "pivot mounting coupling"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "lever",
+      "subsystem_name": "Folding Lever Arm",
+      "description": "Lever coupled to the latching member about a substantially perpendicular fold axis; used extended to rotate the latch and folded afterward.",
+      "domain": "mechanical",
+      "ports": [
+        {
+          "port_id": "lever_latch_joint",
+          "name": "Latch pivot and actuation interface",
+          "direction": "inout",
+          "flow_type": "mechanical_rotation"
+        }
+      ],
+      "interfaces": []
+    },
+    {
+      "subsystem_id": "carrier",
+      "subsystem_name": "Carrier Board Frame and Faceplate",
+      "description": "Frame supporting the latch pivots and providing the faceplate installation context.",
+      "domain": "mechanical",
+      "ports": [
+        {
+          "port_id": "carrier_latch_pivot",
+          "name": "Latch pivot support interface",
+          "direction": "inout",
+          "flow_type": "mechanical_rotation"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "chassis",
+      "subsystem_name": "Chassis Frame Member",
+      "description": "External frame/flange engaged by the latching member clasp.",
+      "domain": "mechanical",
+      "ports": [
+        {
+          "port_id": "frame_latch_engagement",
+          "name": "Frame member engagement interface",
+          "direction": "inout",
+          "flow_type": "mechanical_contact"
+        }
+      ]
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "lever_motion",
+      "name": "Lever actuation motion",
+      "flow_type": "mechanical_rotation",
+      "notes": "Lever motion is applied while extended to rotate the latching member."
+    },
+    {
+      "flow_id": "latch_motion",
+      "name": "Latching member rotation",
+      "flow_type": "mechanical_rotation",
+      "notes": "Internal rotation about the first pivot axis brings the clasp into engagement with the frame member."
+    },
+    {
+      "flow_id": "fold_motion",
+      "name": "Lever folding motion",
+      "flow_type": "mechanical_rotation",
+      "notes": "Lever pivots about second axis and is secured folded after latching."
+    },
+    {
+      "flow_id": "frame_contact",
+      "name": "Clasp-frame engagement contact",
+      "flow_type": "mechanical_contact",
+      "notes": "Mechanical engagement between the claw-shaped clasp and frame member."
+    },
+    {
+      "flow_id": "carrier_pivot_coupling",
+      "name": "Carrier-frame latch pivot coupling",
+      "flow_type": "mechanical_rotation",
+      "notes": "Pivot coupling supports rotation of the latching member relative to the carrier board frame."
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "engage_latch",
+        "name": "Engage frame member",
+        "owner": "latch",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Position the claw-shaped clasp to engage the frame member."
+          },
+          {
+            "step_no": 2,
+            "description": "Rotate the latching member about its first pivot axis using the lever arm in its extended position."
+          }
+        ]
+      },
+      {
+        "action_id": "fold_lever",
+        "name": "Fold lever after latching",
+        "owner": "lever",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "After the latching member is coupled to the frame member, rotate the lever arm about its fold axis."
+          },
+          {
+            "step_no": 2,
+            "description": "Secure the lever arm in the folded position."
+          }
+        ]
+      }
+    ]
+  }
+}

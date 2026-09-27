@@ -1,0 +1,369 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Cam mechanism",
+    "system_id": "US6601470B2",
+    "description": "Cam-based mechanism that converts input-shaft rotation into bidirectional output rotation and reciprocating axial motion.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "mechanical power transmission",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "input_drive",
+      "subsystem_name": "Input shaft and roller gear cam",
+      "description": "Input shaft fixed to roller gear cam; the cam carries tapered ribs and a recessed channel cam.",
+      "domain": "mechanical transmission",
+      "functional_basis": [
+        "transmit input rotation",
+        "drive turret",
+        "drive swing arm"
+      ],
+      "ports": [
+        {
+          "port_id": "drive_input",
+          "name": "Input shaft torque and rotation",
+          "direction": "in",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "rib_contact_output",
+          "name": "Tapered rib contact",
+          "direction": "out",
+          "flow_type": "mechanical_contact"
+        },
+        {
+          "port_id": "channel_contact_output",
+          "name": "Channel cam contact",
+          "direction": "out",
+          "flow_type": "mechanical_contact"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "cam_turret_engagement",
+          "mating_subsystem": "turret",
+          "port_this": "rib_contact_output",
+          "port_mate": "rib_motion_input",
+          "flow_ref": "cam_engagement",
+          "interface_type": "tapered ribs and followers"
+        },
+        {
+          "interface_id": "cam_arm_engagement",
+          "mating_subsystem": "swing_arm",
+          "port_this": "channel_contact_output",
+          "port_mate": "channel_cam_input",
+          "flow_ref": "channel_engagement",
+          "interface_type": "recessed channel and follower"
+        },
+        {
+          "interface_id": "input_drive_boundary",
+          "mating_subsystem": "rotary_drive_source",
+          "port_this": "drive_input",
+          "port_mate": "drive_output",
+          "flow_ref": "input_rotation",
+          "interface_type": "rotary drive"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "turret",
+      "subsystem_name": "Turret and cam followers",
+      "description": "Turret cam followers engage the roller gear cam ribs; the turret transfers rotation through an axially sliding spline.",
+      "domain": "mechanical transmission",
+      "functional_basis": [
+        "convert cam rotation to turret rotation",
+        "transmit rotation while permitting axial sliding"
+      ],
+      "ports": [
+        {
+          "port_id": "rib_motion_input",
+          "name": "Tapered-rib cam engagement",
+          "direction": "in",
+          "flow_type": "mechanical_contact"
+        },
+        {
+          "port_id": "turret_rotation_output",
+          "name": "Turret rotation",
+          "direction": "out",
+          "flow_type": "mechanical_rotary"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "turret_shaft_spline",
+          "mating_subsystem": "output_shaft",
+          "port_this": "turret_rotation_output",
+          "port_mate": "spline_rotation_input",
+          "flow_ref": "turret_rotation",
+          "interface_type": "sliding spline"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "swing_arm",
+      "subsystem_name": "Reciprocating swing arm",
+      "description": "Housing-pivoted swing arm follower tracks the recessed channel cam; another follower engages the slider.",
+      "domain": "mechanical transmission",
+      "functional_basis": [
+        "follow channel cam",
+        "produce reciprocating swing"
+      ],
+      "ports": [
+        {
+          "port_id": "channel_cam_input",
+          "name": "Channel cam follower motion",
+          "direction": "in",
+          "flow_type": "mechanical_contact"
+        },
+        {
+          "port_id": "swing_output",
+          "name": "Reciprocating swing at slider connection",
+          "direction": "out",
+          "flow_type": "mechanical_angular"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "arm_slider",
+          "mating_subsystem": "slider",
+          "port_this": "swing_output",
+          "port_mate": "arm_motion_input",
+          "flow_ref": "arm_swing",
+          "interface_type": "mechanical motion"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "slider",
+      "subsystem_name": "Axial slider",
+      "description": "Movable slider couples the swing arm to the flanged output-shaft joint and moves in the shaft axial direction.",
+      "domain": "mechanical transmission",
+      "functional_basis": [
+        "convert swing to axial motion",
+        "transfer axial movement"
+      ],
+      "ports": [
+        {
+          "port_id": "arm_motion_input",
+          "name": "Swing-arm follower motion",
+          "direction": "in",
+          "flow_type": "mechanical_angular"
+        },
+        {
+          "port_id": "axial_motion_output",
+          "name": "Reciprocating axial movement",
+          "direction": "out",
+          "flow_type": "mechanical_linear"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "slider_shaft_axial",
+          "mating_subsystem": "output_shaft",
+          "port_this": "axial_motion_output",
+          "port_mate": "slider_axial_input",
+          "flow_ref": "slider_motion",
+          "interface_type": "movable joint"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "output_shaft",
+      "subsystem_name": "Output shaft and flanged joint",
+      "description": "Shaft is rotationally driven by the turret through a sliding spline and axially driven by the slider; its end transfers compound motion outside the housing.",
+      "domain": "mechanical transmission",
+      "functional_basis": [
+        "combine rotation and axial reciprocation",
+        "deliver output motion"
+      ],
+      "ports": [
+        {
+          "port_id": "spline_rotation_input",
+          "name": "Turret rotation through spline",
+          "direction": "in",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "slider_axial_input",
+          "name": "Slider axial drive at flange",
+          "direction": "in",
+          "flow_type": "mechanical_linear"
+        },
+        {
+          "port_id": "rotary_motion_output",
+          "name": "Bidirectional output-shaft rotation",
+          "direction": "out",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "axial_motion_output",
+          "name": "Reciprocating output-shaft axial movement",
+          "direction": "out",
+          "flow_type": "mechanical_linear"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "external_rotary_output",
+          "mating_subsystem": "driven_mechanism",
+          "port_this": "rotary_motion_output",
+          "port_mate": "rotary_motion_input",
+          "flow_ref": "turret_rotation",
+          "interface_type": "output shaft rotational transfer"
+        },
+        {
+          "interface_id": "external_axial_output",
+          "mating_subsystem": "driven_mechanism",
+          "port_this": "axial_motion_output",
+          "port_mate": "axial_motion_input",
+          "flow_ref": "output_axial_motion",
+          "interface_type": "output shaft axial transfer"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "housing",
+      "subsystem_name": "Mechanism housing",
+      "description": "Encloses the mechanism and supports the input shaft, turret, pivoting swing arm, and output shaft.",
+      "domain": "mechanical structure"
+    },
+    {
+      "subsystem_id": "rotary_drive_source",
+      "subsystem_name": "External rotary drive source",
+      "description": "External source providing rotational drive at the input shaft; implementation unspecified.",
+      "domain": "mechanical power source",
+      "ports": [
+        {
+          "port_id": "drive_output",
+          "name": "Rotational drive",
+          "direction": "out",
+          "flow_type": "mechanical_rotary"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "driven_mechanism",
+      "subsystem_name": "External driven mechanism",
+      "description": "Unspecified external mechanism receiving rotational and axial movement at the protruding output shaft end.",
+      "domain": "mechanical context",
+      "ports": [
+        {
+          "port_id": "rotary_motion_input",
+          "name": "Rotational movement received",
+          "direction": "in",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "axial_motion_input",
+          "name": "Axial reciprocating movement received",
+          "direction": "in",
+          "flow_type": "mechanical_linear"
+        }
+      ]
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "input_rotation",
+      "name": "Input shaft torque and rotation",
+      "flow_type": "mechanical_rotary"
+    },
+    {
+      "flow_id": "cam_engagement",
+      "name": "Cam-to-turret rib/follower motion",
+      "flow_type": "mechanical_contact"
+    },
+    {
+      "flow_id": "channel_engagement",
+      "name": "Channel-cam follower motion",
+      "flow_type": "mechanical_contact"
+    },
+    {
+      "flow_id": "arm_swing",
+      "name": "Swing-arm reciprocation",
+      "flow_type": "mechanical_angular"
+    },
+    {
+      "flow_id": "slider_motion",
+      "name": "Slider axial reciprocation",
+      "flow_type": "mechanical_linear"
+    },
+    {
+      "flow_id": "turret_rotation",
+      "name": "Turret rotation through sliding spline",
+      "flow_type": "mechanical_rotary"
+    },
+    {
+      "flow_id": "output_axial_motion",
+      "name": "Reciprocating output-shaft axial movement",
+      "flow_type": "mechanical_linear"
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "transmit_input_rotation",
+        "name": "Turn roller gear cam from input shaft rotation",
+        "owner": "input_drive",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Input shaft rotation turns the fixed roller gear cam."
+          },
+          {
+            "step_no": 2,
+            "description": "Tapered ribs on the roller gear cam engage the turret followers."
+          },
+          {
+            "step_no": 3,
+            "description": "The recessed channel cam engages the swing-arm follower."
+          }
+        ]
+      },
+      {
+        "action_id": "drive_turret_rotation",
+        "name": "Drive turret rotation and transmit through sliding spline",
+        "owner": "turret",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Tapered ribs engage the turret cam followers to drive bidirectional turret rotation."
+          },
+          {
+            "step_no": 2,
+            "description": "The turret transfers rotation to the output shaft through the axially sliding spline."
+          }
+        ]
+      },
+      {
+        "action_id": "drive_swing_arm",
+        "name": "Drive reciprocating swing-arm movement from channel cam",
+        "owner": "swing_arm",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "The recessed channel cam drives reciprocating movement of the swing arm."
+          },
+          {
+            "step_no": 2,
+            "description": "The swing arm follower transfers its reciprocating swing to the slider."
+          }
+        ]
+      },
+      {
+        "action_id": "convert_swing_to_axial_motion",
+        "name": "Convert swing-arm reciprocation to axial output",
+        "owner": "slider",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "The slider receives swinging reciprocation from the swing arm and converts it into reciprocating axial movement of the output shaft."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 5,
+    "AllocationUsage": 1,
+    "Documentation": 30,
+    "EndFeatureMembership": 4,
+    "Feature": 9,
+    "FeatureChaining": 16,
+    "FeatureMembership": 28,
+    "FeatureReferenceExpression": 3,
+    "FeatureTyping": 16,
+    "FeatureValue": 3,
+    "FlowEnd": 2,
+    "FlowUsage": 1,
+    "ItemDefinition": 7,
+    "ItemUsage": 6,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 60,
+    "Package": 1,
+    "PartDefinition": 6,
+    "PartUsage": 7,
+    "PortUsage": 6,
+    "Redefinition": 2,
+    "ReferenceSubsetting": 7,
+    "ReferenceUsage": 5,
+    "RequirementDefinition": 3,
+    "RequirementUsage": 3,
+    "SatisfyRequirementUsage": 3,
+    "Subclassification": 5,
+    "SubjectMembership": 3,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SPOOL_Spool_and_pressure_plate_assembly"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_VALVE_HOUSING_Spool_valve_housing_and_connections"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_VALVE_HOUSING_Spool_valve_housing_and_connections.port_P_SUPPLY_Pressure_supply_connection"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_VALVE_HOUSING_Spool_valve_housing_and_connections.port_P_RES_RETURN_Reservoir_return_connection"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_HYDRAULIC_SUPPLY_Pump_and_pressure_line"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_HYDRAULIC_SUPPLY_Pump_and_pressure_line.port_P_OUT_Pressurized_fluid_outlet"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_HYDRAULIC_CYLINDER_Hydraulic_cylinder"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_HYDRAULIC_CYLINDER_Hydraulic_cylinder.port_P_PRESS_Pressure_side_hydraulic_connection"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_HYDRAULIC_CYLINDER_Hydraulic_cylinder.port_P_RETURN_Return_side_hydraulic_connection"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_RESERVOIR_Hydraulic_reservoir"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_RESERVOIR_Hydraulic_reservoir.port_P_IN_Reservoir_return_inlet"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DRIVE_LEVER_Drive_lever_and_mechanism"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_PRESSURE_Pressurized_hydraulic_fluid"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_CYLINDER_Cylinder_hydraulic_flow"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_RETURN_Return_hydraulic_fluid"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_LEVER_Drive_lever_motion_and_contact_force"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_SLOT_PATH_Pressure_chamber_fluid_to_actuator_slot"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_R_PRESSURE_LINK"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_R_PRESSURE_LINK"
+    },
+    {
+      "path": "/requirements/1",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_R_CONTACT"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_R_CONTACT"
+    },
+    {
+      "path": "/requirements/2",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_R_DRAIN"
+    },
+    {
+      "path": "/requirements/2/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_R_DRAIN"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_PRESSURE_PRELOAD_Apply_hydraulic_preload_to_drive_lever"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_I_SUPPLY"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

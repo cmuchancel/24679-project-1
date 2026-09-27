@@ -1,0 +1,364 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Torque-limiting coupling",
+    "system_id": "US7559870B2",
+    "description": "Inferred concept model of the disclosed coupling, emphasizing the oil-pump and pressure-relief implementation. Alternate clutch embodiments are noted but not represented as co-installed.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "Mechanical power transmission",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "DRIVE",
+      "subsystem_name": "Driving machine interface",
+      "description": "External driving machine supplying rotary input through the input half coupling.",
+      "domain": "Mechanical power source",
+      "ports": [
+        {
+          "port_id": "drive_out",
+          "name": "Rotary input",
+          "direction": "out",
+          "flow_type": "mechanical_rotary"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF1",
+          "mating_subsystem": "IN",
+          "port_this": "drive_out",
+          "port_mate": "input_shaft",
+          "flow_ref": "F1",
+          "interface_type": "rotary mechanical coupling"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "IN",
+      "subsystem_name": "Input half coupling and annular gear",
+      "description": "Receives input rotation and torque and drives the epicyclic gear train through its input annular gear.",
+      "domain": "Mechanical transmission",
+      "functional_basis": [
+        "receive rotary power",
+        "drive input gear"
+      ],
+      "ports": [
+        {
+          "port_id": "input_shaft",
+          "name": "Input rotation and torque",
+          "direction": "in",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "gear_drive",
+          "name": "Gear engagement to planet gears",
+          "direction": "out",
+          "flow_type": "mechanical_rotary"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF2",
+          "mating_subsystem": "PLANET",
+          "port_this": "gear_drive",
+          "port_mate": "input_mesh",
+          "flow_ref": "F2",
+          "interface_type": "gear mesh"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "PLANET",
+      "subsystem_name": "Epicyclic planet gear train",
+      "description": "Intermediate planet gearing meshes with input and output annular gears and drives the pump gears carried by its carrier.",
+      "domain": "Mechanical transmission",
+      "functional_basis": [
+        "transmit rotation",
+        "drive pump gears"
+      ],
+      "ports": [
+        {
+          "port_id": "input_mesh",
+          "name": "Input annulus mesh",
+          "direction": "in",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "output_mesh",
+          "name": "Output annulus mesh",
+          "direction": "out",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "pump_drive",
+          "name": "Pump gear drive",
+          "direction": "out",
+          "flow_type": "mechanical_rotary"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF3",
+          "mating_subsystem": "OUT",
+          "port_this": "output_mesh",
+          "port_mate": "gear_input",
+          "flow_ref": "F2",
+          "interface_type": "gear mesh"
+        },
+        {
+          "interface_id": "IF4",
+          "mating_subsystem": "PUMP",
+          "port_this": "pump_drive",
+          "port_mate": "rotary_in",
+          "flow_ref": "F3",
+          "interface_type": "mechanical drive"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "OUT",
+      "subsystem_name": "Output annular gear and half coupling",
+      "description": "Receives transmission through the output annular gear and delivers rotary power to the driven machine.",
+      "domain": "Mechanical transmission",
+      "ports": [
+        {
+          "port_id": "gear_input",
+          "name": "Output annulus mesh",
+          "direction": "in",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "shaft_out",
+          "name": "Output rotation and torque",
+          "direction": "out",
+          "flow_type": "mechanical_rotary"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF7",
+          "mating_subsystem": "LOAD",
+          "port_this": "shaft_out",
+          "port_mate": "load_in",
+          "flow_ref": "F6",
+          "interface_type": "rotary mechanical coupling"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "PUMP",
+      "subsystem_name": "Carrier-mounted gear pump assembly",
+      "description": "Carrier-mounted gear pump assembly: the carrier houses a corresponding number of gear pumps, each formed by a pair of gears driven by a planet gear, and has a central chamber receiving their pumped oil. Claim 3 states that below the pressure-relief-valve-determined chamber pressure, the gear pump and consequently gear train are locked; it does not assign a separate locking cause to the pump or chamber.",
+      "domain": "Hydraulic and mechanical transmission",
+      "functional_basis": [
+        "pump oil",
+        "restrain gear train"
+      ],
+      "ports": [
+        {
+          "port_id": "rotary_in",
+          "name": "Pump drive",
+          "direction": "in",
+          "flow_type": "mechanical_rotary"
+        },
+        {
+          "port_id": "oil_out",
+          "name": "Pumped oil",
+          "direction": "out",
+          "flow_type": "hydraulic_fluid"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF5",
+          "mating_subsystem": "CHAMBER",
+          "port_this": "oil_out",
+          "port_mate": "oil_in",
+          "flow_ref": "F4",
+          "interface_type": "hydraulic conduit"
+        }
+      ],
+      "parts": [
+        {
+          "part_id": "carrier",
+          "description": "Carrier housing the planet gears and a corresponding number of gear pumps; it has a central chamber receiving pump-delivered oil.",
+          "quantity": 1
+        },
+        {
+          "part_id": "pump_gear_pair",
+          "description": "Pair of gears in each gear pump, driven by its corresponding planet gear.",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "subsystem_id": "CHAMBER",
+      "subsystem_name": "Pressurized oil chamber",
+      "description": "Receives oil delivered by the gear pump and is closed by a pressure relief valve; the valve-determined pressure threshold governs the stated pump and gear-train locked/unlocked behavior.",
+      "domain": "Hydraulic transmission",
+      "ports": [
+        {
+          "port_id": "oil_in",
+          "name": "Pumped oil inlet",
+          "direction": "in",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "relief_out",
+          "name": "Relieved oil path",
+          "direction": "out",
+          "flow_type": "hydraulic_fluid"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "IF6",
+          "mating_subsystem": "RELIEF",
+          "port_this": "relief_out",
+          "port_mate": "pressure_in",
+          "flow_ref": "F5",
+          "interface_type": "pressure-relief passage"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "RELIEF",
+      "subsystem_name": "Pressure relief valve",
+      "description": "Opens at the predetermined chamber pressure, allowing pump rotation and consequent relative rotation in the gear train.",
+      "domain": "Hydraulic control",
+      "ports": [
+        {
+          "port_id": "pressure_in",
+          "name": "Chamber pressure and oil",
+          "direction": "in",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "oil_release",
+          "name": "Relief discharge",
+          "direction": "out",
+          "flow_type": "hydraulic_fluid"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "LOAD",
+      "subsystem_name": "Driven machine interface",
+      "description": "External driven machinery receiving rotary output from the output half coupling.",
+      "domain": "Mechanical load",
+      "ports": [
+        {
+          "port_id": "load_in",
+          "name": "Rotary power input",
+          "direction": "in",
+          "flow_type": "mechanical_rotary"
+        }
+      ]
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "F1",
+      "name": "Input rotary power",
+      "flow_type": "mechanical_rotary",
+      "notes": "Input rotation/torque from driving machine."
+    },
+    {
+      "flow_id": "F2",
+      "name": "Epicyclic gear transmission",
+      "flow_type": "mechanical_rotary",
+      "notes": "Rotary transmission among annular and planet gears."
+    },
+    {
+      "flow_id": "F3",
+      "name": "Pump drive rotation",
+      "flow_type": "mechanical_rotary",
+      "notes": "Intermediate gearing drives carrier-mounted pump gears."
+    },
+    {
+      "flow_id": "F4",
+      "name": "Pumped oil",
+      "flow_type": "hydraulic_fluid",
+      "notes": "Gear pumps deliver oil to the chamber."
+    },
+    {
+      "flow_id": "F5",
+      "name": "Relief flow",
+      "flow_type": "hydraulic_fluid",
+      "notes": "Oil passes the relief valve when it opens."
+    },
+    {
+      "flow_id": "F6",
+      "name": "Output rotary power",
+      "flow_type": "mechanical_rotary",
+      "notes": "Rotary output to driven machinery."
+    }
+  ],
+  "requirements": [
+    {
+      "req_id": "R1",
+      "category": "Functional",
+      "priority": "claim-derived",
+      "statement": "Below a predetermined input torque, retain the gear train to provide a 1:1 input/output ratio.",
+      "rationale": "Claim 1 supplies the below-threshold 1:1 behavior; this model allocates it to the selected hydraulic embodiment of dependent claim 3 (which depends through claim 2). The specific pump/chamber implementation is not asserted as a limitation of claim 1 alone.",
+      "satisfied_by": [
+        "PLANET",
+        "PUMP",
+        "CHAMBER"
+      ]
+    },
+    {
+      "req_id": "R2",
+      "category": "Functional",
+      "priority": "claim-derived",
+      "statement": "At or above the predetermined torque threshold, permit relative rotation between input and output gears to limit transmitted torque.",
+      "rationale": "Claim 1 supports the general release and relative-rotation behavior; in this selected dependent claim-3 embodiment (depending through claim 2), opening of the pressure relief valve allows the pump and hence gear train to rotate, permitting relative rotation. The embodiment-specific hydraulic implementation is not asserted as a limitation of claim 1 alone.",
+      "satisfied_by": [
+        "PLANET",
+        "PUMP",
+        "CHAMBER",
+        "RELIEF"
+      ]
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "A1",
+        "name": "Transmit torque below threshold",
+        "owner": "PLANET",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Input annular gear drives the epicyclic gear train and output annular gear."
+          },
+          {
+            "step_no": 2,
+            "description": "Below the pressure-relief-valve-determined chamber pressure, the gear pump and consequently the gear train are locked, supporting 1:1 input/output rotation; no additional physical cause of the lock is asserted."
+          }
+        ]
+      },
+      {
+        "action_id": "A2",
+        "name": "Relieve excess torque",
+        "owner": "RELIEF",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Gear pumps pressurize the chamber as driven by the intermediate gearing."
+          },
+          {
+            "step_no": 2,
+            "description": "At the predetermined pressure the relief valve opens."
+          },
+          {
+            "step_no": 3,
+            "description": "The pump and gear train can rotate, permitting relative rotation between the input and output gears."
+          }
+        ]
+      }
+    ]
+  }
+}

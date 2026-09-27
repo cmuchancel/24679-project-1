@@ -1,0 +1,34 @@
+{
+  "revision": 4,
+  "candidate_sha256": "799a2a4f497eacedfda564a2c2deac214b55d5d0334e126ac5aaaade373acbd5",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 4's internal FLOW_CHANNEL passage and openings are directly supported by the claim's channel extending between two openings (96260742461c5b9bedfd7ecb78dba606). The contact interface is grounded in claim 1's first and second sealing surfaces contacting when closed (271f9c4785a74d986bfffedf371ffd8e), with the bidirectional flow-prevention consequence supported by the description (1734eaed445c683ec7c39de8665a6a1f). The neutral name removes the prior unsupported outcome characterization. Embodiment-specific seal and shaft remain explicitly qualified."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The model represents the channel path, rotatable closure, sealing contact, flow prevention, and claim-specific geometric requirements without introducing an actuator or unsupported control mechanism. No further material supported function omission is evident."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Opening ports connect by fluid-passage interfaces to the two compatible ends of the internal channel passage, and the flow remains bidirectional/unspecified in direction. The separate seal-contact flow uses mechanical_contact ports and is not conflated with fluid flow. The channel component represents the internal route; no unsupported external source or sink is invented."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "The requirements explicitly reference claims 1–2 and claim 5 as applicable, including axis offsets, offset-apex non-conical/asymmetric surface, the three parallel sections with offset centers, and a rounded location. Citation paths also cover the added flow/contact elements."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Both opening-to-channel connections use existing compatible fluid ports and reference FLUID_FLOW. A distinct SEAL-to-CLOSURE contact interface connects existing mechanical_contact ports and references SEAL_CONTACT, modeling the expressly claimed closed-position surface contact."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The model distinguishes physical components from functional_basis entries, uses boundary/interface relationships to represent supported flows, and does not turn geometric prose into invented numeric constraints. Textbook guidance is used methodologically, not as evidence for patent facts."
+    }
+  },
+  "findings": [],
+  "summary": "Revision 4 repairs the prior concerns: internal channel passage is supported by the patent's channel extending between first and second openings; the seal/closure contact interface is supported by claim 1's closed-position contact; and neutral naming resolves the earlier citation mismatch. The added interfaces connect compatible ports and preserve separate fluid and mechanical-contact flows. I found no further repair required.",
+  "saved_at": "2026-09-27T05:03:46.618304+00:00"
+}

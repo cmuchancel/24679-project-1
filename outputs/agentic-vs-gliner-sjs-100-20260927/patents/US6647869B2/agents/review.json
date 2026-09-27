@@ -1,0 +1,34 @@
+{
+  "revision": 6,
+  "candidate_sha256": "83b952026ecd61eb061867788bad6623f02af26da13fb7e39c98b59e710bfa8e",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 6's new press_connection.member_alignment_bar_guide interface is directly supported: claim 1 says the alignment means is mounted in the press connection member, while the embodiment identifies it as alignment bar 30. Its selective bushing-keyway engagement remains separately modeled. Other component and operation descriptions reviewed are substantially supported by the cited excerpts."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "Core stroke adjustment, bar mounting and selective keyway locking, cylinder actuation, slide motion, position sensing, and spring retention are represented. The newly explicit guide relationship resolves the prior disconnected member-bar relation. No further absent component relationship is sufficiently grounded to require addition."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "The new interface connects matching mechanical_linear ports. Existing shaft rotation, slide reciprocation, bar actuation, and selective lock relations use appropriate mechanical flow descriptions; pressure/oil is not misrepresented as a connected fluid path."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "Requirements trace claim 1 and the positive-lock first movement limit, while supporting component descriptions and behavior are tied to the cited claims or embodiment passages. Claim 5 prior press fit is represented in the bushing description."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "The R5 bar-guide gap is resolved by interface at /subsystems/0/interfaces/2 to alignment_bar.bar_member_guide, with matching mechanical-linear ports and direct support for mounted alignment means. Existing separate interfaces capture bushing/member, bar/keyway, cylinder/bar, shaft/eccentric, and slide connection. Sensor destination remains unspecified, appropriately."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Textbook retrievals do not provide relevant component/interface detail and are not used to establish patent facts. The candidate avoids unsupported controller, sensor destination, and hydraulic routing claims; no modeling choice conflicts with relevant guidance."
+    }
+  },
+  "findings": [],
+  "summary": "Revision 6 resolves the prior alignment-bar/guide-port issue: a compatible interface now connects the press connection member's member_bar guide port to the alignment bar's bar_member_guide port, consistent with claim 1 mounting the alignment means in the member and the embodiment identifying a bar. The separate selective bar-to-bushing keyway engagement is preserved. Overall, cited component relations, adjustment sequence, and flow descriptions are adequately supported, with no remaining actionable issue identified.",
+  "saved_at": "2026-09-27T06:01:57.574203+00:00"
+}

@@ -1,0 +1,394 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Two-arm belt tensioner",
+    "system_id": "US7468013B2",
+    "description": "Conceptual physical architecture of a two-arm belt tensioner that uses coaxial torsional elasticity and paired idle wheels to maintain contact with separate belt branches.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "automotive mechanical systems",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "SUPPORT",
+      "subsystem_name": "Tubular supporting portion",
+      "description": "Tubular supporting portion fixed to the external fixed supporting structure; provides the common hinge-axis support for both arms.",
+      "domain": "mechanical",
+      "ports": [
+        {
+          "port_id": "hinge",
+          "name": "Common hinge support",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "mount",
+          "name": "Fixed attachment",
+          "direction": "inout",
+          "flow_type": "mechanical_structural"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_FIXED",
+          "mating_subsystem": "FIXED",
+          "port_this": "mount",
+          "port_mate": "mount",
+          "flow_ref": "FIXED_ATTACHMENT",
+          "interface_type": "fixed_attachment"
+        },
+        {
+          "interface_id": "I_ARM1",
+          "mating_subsystem": "ARM1",
+          "port_this": "hinge",
+          "port_mate": "pivot",
+          "flow_ref": "ROTATIONAL_JOINT",
+          "interface_type": "rotational_joint"
+        },
+        {
+          "interface_id": "I_ARM2",
+          "mating_subsystem": "ARM2",
+          "port_this": "hinge",
+          "port_mate": "pivot",
+          "flow_ref": "ROTATIONAL_JOINT",
+          "interface_type": "rotational_joint"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "ARM1",
+      "subsystem_name": "First tensioner arm",
+      "description": "First arm rotatably supported about the common hinge axis and carrying the first idle wheel.",
+      "domain": "mechanical",
+      "functional_basis": [
+        "position first idle wheel",
+        "transmit belt reaction"
+      ],
+      "ports": [
+        {
+          "port_id": "pivot",
+          "name": "Arm pivot",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "wheel",
+          "name": "Wheel mount",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "cap",
+          "name": "First cap angular connection",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_WHEEL1",
+          "mating_subsystem": "WHEEL1",
+          "port_this": "wheel",
+          "port_mate": "mount",
+          "flow_ref": "ROTATIONAL_JOINT",
+          "interface_type": "rotatable_mount"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "ARM2",
+      "subsystem_name": "Second tensioner arm",
+      "description": "Second arm rotatably supported about the common hinge axis and carrying the second idle wheel.",
+      "domain": "mechanical",
+      "functional_basis": [
+        "position second idle wheel",
+        "transmit belt reaction"
+      ],
+      "ports": [
+        {
+          "port_id": "pivot",
+          "name": "Arm pivot",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "wheel",
+          "name": "Wheel mount",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "cap",
+          "name": "Second cap direct fitting",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_WHEEL2",
+          "mating_subsystem": "WHEEL2",
+          "port_this": "wheel",
+          "port_mate": "mount",
+          "flow_ref": "ROTATIONAL_JOINT",
+          "interface_type": "rotatable_mount"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "WHEEL1",
+      "subsystem_name": "First idle wheel",
+      "description": "Rotatable idle wheel mounted at the end fork of the first arm and contacting a respective belt branch.",
+      "domain": "mechanical",
+      "ports": [
+        {
+          "port_id": "mount",
+          "name": "Rotatable wheel mount",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "contact",
+          "name": "Belt contact",
+          "direction": "inout",
+          "flow_type": "mechanical_contact"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_BELT1",
+          "mating_subsystem": "BELT",
+          "port_this": "contact",
+          "port_mate": "branch1",
+          "flow_ref": "BELT_CONTACT1",
+          "interface_type": "belt_contact"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "WHEEL2",
+      "subsystem_name": "Second idle wheel",
+      "description": "Rotatable idle wheel mounted at the end fork of the second arm and contacting a respective belt branch.",
+      "domain": "mechanical",
+      "ports": [
+        {
+          "port_id": "mount",
+          "name": "Rotatable wheel mount",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "contact",
+          "name": "Belt contact",
+          "direction": "inout",
+          "flow_type": "mechanical_contact"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_BELT2",
+          "mating_subsystem": "BELT",
+          "port_this": "contact",
+          "port_mate": "branch2",
+          "flow_ref": "BELT_CONTACT2",
+          "interface_type": "belt_contact"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "SPRING",
+      "subsystem_name": "Elongated torsionally elastic member",
+      "description": "Coaxial elongated torsionally elastic member extending through the tubular support with projecting ends angularly fixed to respective end caps; supplies passive elastic forcing of the arms toward one another.",
+      "domain": "mechanical",
+      "functional_basis": [
+        "store torsional strain",
+        "force arms together"
+      ],
+      "ports": [
+        {
+          "port_id": "cap1",
+          "name": "Angular connection to first cap",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "cap2",
+          "name": "Angular connection to second cap",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_SPRING_CAP1",
+          "mating_subsystem": "CAP1",
+          "port_this": "cap1",
+          "port_mate": "spring",
+          "flow_ref": "TORSION",
+          "interface_type": "angularly_fixed_connection"
+        },
+        {
+          "interface_id": "I_SPRING_CAP2",
+          "mating_subsystem": "CAP2",
+          "port_this": "cap2",
+          "port_mate": "spring",
+          "flow_ref": "TORSION",
+          "interface_type": "angularly_fixed_connection"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "CAP1",
+      "subsystem_name": "First end cap",
+      "description": "End cap fixed angularly to one projecting end of the elastic member and associated with the first arm's angular coupling.",
+      "domain": "mechanical",
+      "ports": [
+        {
+          "port_id": "spring",
+          "name": "Elastic-member end connection",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "arm1",
+          "name": "First-arm angular coupling",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_CAP1_ARM1",
+          "mating_subsystem": "ARM1",
+          "port_this": "arm1",
+          "port_mate": "cap",
+          "flow_ref": "TORSION",
+          "interface_type": "angular_coupling"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "CAP2",
+      "subsystem_name": "Second end cap",
+      "description": "End cap fixed angularly to the other projecting end of the elastic member, directly associated with the second arm, and providing a passage for the first arm.",
+      "domain": "mechanical",
+      "ports": [
+        {
+          "port_id": "spring",
+          "name": "Elastic-member end connection",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        },
+        {
+          "port_id": "arm2",
+          "name": "Second-arm fitting",
+          "direction": "inout",
+          "flow_type": "mechanical_rotational"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_CAP2_ARM2",
+          "mating_subsystem": "ARM2",
+          "port_this": "arm2",
+          "port_mate": "cap",
+          "flow_ref": "DIRECT_FITTING",
+          "interface_type": "direct_fitting"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "BELT",
+      "subsystem_name": "Drive belt",
+      "description": "External endless drive belt with separate branches contacted by the respective idle wheels.",
+      "domain": "mechanical",
+      "ports": [
+        {
+          "port_id": "branch1",
+          "name": "First branch contact",
+          "direction": "inout",
+          "flow_type": "mechanical_contact"
+        },
+        {
+          "port_id": "branch2",
+          "name": "Second branch contact",
+          "direction": "inout",
+          "flow_type": "mechanical_contact"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "FIXED",
+      "subsystem_name": "Fixed supporting structure",
+      "description": "External fixed structure to which the tubular supporting portion is fixed.",
+      "domain": "mechanical",
+      "ports": [
+        {
+          "port_id": "mount",
+          "name": "Fixed structure attachment",
+          "direction": "inout",
+          "flow_type": "mechanical_structural"
+        }
+      ]
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "BELT_CONTACT1",
+      "name": "First idle-wheel belt contact",
+      "flow_type": "mechanical_contact",
+      "notes": "Contact with one respective branch of the drive belt (claim 1)."
+    },
+    {
+      "flow_id": "BELT_CONTACT2",
+      "name": "Second idle-wheel belt contact",
+      "flow_type": "mechanical_contact",
+      "notes": "Contact with the other respective branch of the drive belt (claim 1)."
+    },
+    {
+      "flow_id": "TORSION",
+      "name": "Torsional elastic action",
+      "flow_type": "mechanical_rotational",
+      "notes": "Passive torsional elastic action through the elongated member and its angularly fixed end-cap connections; does not characterize the direct second-cap/second-arm fitting (claim 1)."
+    },
+    {
+      "flow_id": "FIXED_ATTACHMENT",
+      "name": "Tubular support attachment",
+      "flow_type": "mechanical_structural",
+      "notes": "Tubular supporting portion fixed to the fixed supporting structure."
+    },
+    {
+      "flow_id": "ROTATIONAL_JOINT",
+      "name": "Rotational joint relation",
+      "flow_type": "mechanical_rotational",
+      "notes": "Rotational support or mounting relation, distinct from the elastic-member torsional load path."
+    },
+    {
+      "flow_id": "DIRECT_FITTING",
+      "name": "Direct cap-to-arm fitting relation",
+      "flow_type": "mechanical_rotational",
+      "notes": "Direct fitting of the second end cap with one end of the second arm (claim 1); this relation does not assert elastic behavior at the fitting."
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "ACT_FORCE",
+        "name": "Passively force arms toward one another",
+        "owner": "SPRING",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "The torsionally elastic member acts through its end-cap connections to urge the first and second arms toward one another."
+          },
+          {
+            "step_no": 2,
+            "description": "The arms position their respective idle wheels to maintain contact with respective belt branches."
+          }
+        ]
+      }
+    ]
+  }
+}

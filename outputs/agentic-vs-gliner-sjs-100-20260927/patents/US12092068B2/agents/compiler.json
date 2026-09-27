@@ -1,0 +1,296 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 9,
+    "AllocationUsage": 2,
+    "Documentation": 55,
+    "EndFeatureMembership": 4,
+    "Feature": 16,
+    "FeatureChaining": 24,
+    "FeatureMembership": 63,
+    "FeatureReferenceExpression": 8,
+    "FeatureTyping": 34,
+    "FeatureValue": 8,
+    "ItemDefinition": 11,
+    "ItemUsage": 19,
+    "LiteralInteger": 1,
+    "MultiplicityRange": 1,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 106,
+    "Package": 1,
+    "PartDefinition": 10,
+    "PartUsage": 12,
+    "PortUsage": 19,
+    "ReferenceSubsetting": 12,
+    "ReferenceUsage": 8,
+    "RequirementDefinition": 3,
+    "RequirementUsage": 3,
+    "SatisfyRequirementUsage": 8,
+    "Subclassification": 7,
+    "SubjectMembership": 8,
+    "SuccessionAsUsage": 5
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SUPPLY_Water_supply_reservoir"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SUPPLY_Water_supply_reservoir.port_water_out_Water_supply_outlet"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SUPPLY_Water_supply_reservoir.port_return_in_Returned_water_inlet"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_INJECTOR_Variable_flow_water_injector"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_INJECTOR_Variable_flow_water_injector.port_water_in_Pressurized_water_inlet"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_INJECTOR_Variable_flow_water_injector.port_jet_out_Directed_water_jet"
+    },
+    {
+      "path": "/subsystems/1/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_INJECTOR_Variable_flow_water_injector.port_control_in_Outlet_and_jet_axis_adjustment_command"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_TURBINE_Pelton_turbine_wheel_and_body"
+    },
+    {
+      "path": "/subsystems/2/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_TURBINE_Pelton_turbine_wheel_and_body.part_bucket_series_Regular_series_of_buckets__each_having_two_ha"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_TURBINE_Pelton_turbine_wheel_and_body.port_jet_in_Water_jet_input"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_TURBINE_Pelton_turbine_wheel_and_body.port_shaft_out_Rotating_shaft_output"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_DRIVE_Kinematic_coupling"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DRIVE_Kinematic_coupling.port_rotary_in_Turbine_shaft_input"
+    },
+    {
+      "path": "/subsystems/3/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_DRIVE_Kinematic_coupling.port_rotary_out_Alternator_shaft_output"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ALTERNATOR_Alternator"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ALTERNATOR_Alternator.port_shaft_in_Driving_shaft_input"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ALTERNATOR_Alternator.port_electric_out_Electrical_output"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CTRL_Turbine_sensing_and_control_device"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CTRL_Turbine_sensing_and_control_device.port_sensor_in_Sensor_parameters"
+    },
+    {
+      "path": "/subsystems/5/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CTRL_Turbine_sensing_and_control_device.port_adjust_out_Injector_adjustment_command"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SENSORS_Turbine_sensors"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SENSORS_Turbine_sensors.port_measurement_out_Sensor_parameter"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_COLLECT_Collecting_reservoir"
+    },
+    {
+      "path": "/subsystems/7/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_COLLECT_Collecting_reservoir.port_water_in_Collected_spent_water_inlet"
+    },
+    {
+      "path": "/subsystems/7/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_COLLECT_Collecting_reservoir.port_water_out_Water_return_outlet"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PUMP_Water_return_pump"
+    },
+    {
+      "path": "/subsystems/8/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PUMP_Water_return_pump.port_water_in_Collected_water_input"
+    },
+    {
+      "path": "/subsystems/8/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PUMP_Water_return_pump.port_water_out_Returned_water_output"
+    },
+    {
+      "path": "/subsystems/9",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_LOAD_Electrical_consuming_installation"
+    },
+    {
+      "path": "/subsystems/9/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LOAD_Electrical_consuming_installation.port_power_in_Electrical_supply_input"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_f_water_Pressurized_supply_water"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_f_jet_Directed_water_jet"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_f_shaft_Rotational_shaft_power"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_f_electric_Electrical_energy"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_f_signal_Sensor_measurements"
+    },
+    {
+      "path": "/item_flows/5",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_f_command_Injector_adjustment_command"
+    },
+    {
+      "path": "/item_flows/6",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_f_return_Pumped_return_water"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_RANGE_1"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_RANGE_1"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_RANGE_1"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/2",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_RANGE_1"
+    },
+    {
+      "path": "/requirements/1",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_WHEEL_DIA"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_WHEEL_DIA"
+    },
+    {
+      "path": "/requirements/2",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_EFF_CTRL"
+    },
+    {
+      "path": "/requirements/2/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_EFF_CTRL"
+    },
+    {
+      "path": "/requirements/2/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_EFF_CTRL"
+    },
+    {
+      "path": "/requirements/2/satisfied_by/2",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_EFF_CTRL"
+    },
+    {
+      "path": "/requirements/2/satisfied_by/3",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_EFF_CTRL"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_CONVERT_Convert_hydraulic_jet_energy_to_electrical_ou"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_REGULATE_Adjust_injector_operating_geometry"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

@@ -1,0 +1,46 @@
+{
+  "revision": 2,
+  "candidate_sha256": "5c80deb9867f7a088fdbcfd8db921c20d3f7ed6ce35e5af8acc9b4d1508028ae",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "The physical subsystems, bearing arrangement, movable inlet bearing outer ring, and spring bias are supported by the cited patent text. ROTORS designation as driving male/driven female is directly described. Its compress gas functional_basis is supported by the compressor operation passage. The general spring-device wording retains claim 1's one-or-both alternative and does not assert claim 10's two-spring variant."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The model is explicitly scoped to the claimed rotor/bearing/axial-bias arrangement. It includes the relevant components, the clearance outcome, and bearing/spring support behavior. Drive train and detailed gas interfaces are disclosed elsewhere but reasonably omitted under stated focused scope; their omission is identified in warnings."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "Revision 2 removed AXIAL_FORCE, so there is no longer a disconnected declared flow. The spring behavior is captured in an action rather than an unsupported flow/interface topology. Its force path description is broadly compatible with the patent's spring between housing and rotor, optionally via bearing outer ring."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "REQ_MIN_CLEARANCE cites claim 1, expresses the claimed minimum axial clearance outcome without an invented numerical limit, and is allocated to axial bias, rotors, and housing. Action citations align with the spring/clearance description."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "No unused flow or fabricated port/interface remains. Omitting detailed compressor boundary flows is a defensible focused scope choice because the model warning acknowledges those omitted aspects; no incompatible connections are asserted."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The model separates physical components from verb-noun functional_basis, avoids unsupported interface/constraint elaboration, and preserves configuration alternatives rather than selecting an unjustified variant. Textbook guidance is applied only to modeling choices, not invention facts."
+    }
+  },
+  "findings": [
+    {
+      "id": "R2-INFO-1",
+      "severity": "info",
+      "path": "/sjs/behaviour/actions/0/steps/0/description",
+      "description": "The action says spring force is transmitted 'from the rotor housing'. The patent describes a spring extending between housing and rotor bodies (optionally pushing indirectly through an inlet-bearing outer ring); it does not characterize the housing itself as the force-generating source. This wording is not a material disconnected-flow defect, but could be more precise.",
+      "evidence_ids": [
+        "37346641d10800b7104c38c580d84522",
+        "d22eb8107f2100afd08219be28c8ee87"
+      ],
+      "recommendation": "For precision, describe spring force as originating in the spring device and acting between housing and rotor body, optionally via the inlet-bearing outer ring. Do not add a force interface/path topology unless the model intends to represent it."
+    }
+  ],
+  "summary": "Revision 2 resolves the prior disconnected AXIAL_FORCE issue by removing the unused item flow; no compatible ports/interfaces need be fabricated for the focused model. The overall SJS is well-grounded and claim-traceable, and the omitted drive/gas interfaces are transparently treated as scope omissions. All six review categories pass. One nonblocking informational wording refinement is recorded for action step 0: the spring rather than the housing is the force-generating device. No structural findings were supplied; native SysML execution was not independently verified.",
+  "saved_at": "2026-09-27T07:15:16.389878+00:00"
+}

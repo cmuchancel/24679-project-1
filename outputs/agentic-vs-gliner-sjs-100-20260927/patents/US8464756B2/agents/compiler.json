@@ -1,0 +1,96 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 4,
+    "AllocationUsage": 2,
+    "Documentation": 17,
+    "EndFeatureMembership": 4,
+    "Feature": 8,
+    "FeatureChaining": 8,
+    "FeatureMembership": 14,
+    "FeatureTyping": 8,
+    "ItemDefinition": 5,
+    "ItemUsage": 4,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 30,
+    "Package": 1,
+    "PartDefinition": 2,
+    "PartUsage": 3,
+    "PortUsage": 4,
+    "ReferenceSubsetting": 4,
+    "Subclassification": 4
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_housing_Valve_housing"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_housing_Valve_housing.port_supply_Hydraulic_supply_port"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_housing_Valve_housing.port_load1_First_load_port"
+    },
+    {
+      "path": "/subsystems/0/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_housing_Valve_housing.port_load2_Second_load_port"
+    },
+    {
+      "path": "/subsystems/0/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_housing_Valve_housing.port_exhaust_Exhaust_port_s"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_spool_Profiled_spool"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_hf_supply_Hydraulic_fluid_supplied_to_valve_bore"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_hf_load1_Hydraulic_fluid_to_from_first_load_path"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_hf_load2_Hydraulic_fluid_to_from_second_load_path"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_hf_exhaust_Hydraulic_fluid_exhausted_from_valve"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_select_first_path_Select_first_load_path"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_select_second_path_Select_second_load_path"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

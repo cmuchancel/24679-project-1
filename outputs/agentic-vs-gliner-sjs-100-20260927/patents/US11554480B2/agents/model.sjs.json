@@ -1,0 +1,290 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Miniaturized Cycloidal Gear System",
+    "system_id": "US11554480B2",
+    "description": "Inferred operational model of the claimed cycloidal gear assembly and its supported command-to-rotation boundary.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "Mechanical power transmission",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "drive_shaft",
+      "subsystem_name": "Eccentric Drive Shaft",
+      "description": "Receives driving commands and couples to the cartridge bearing.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "command_in",
+          "name": "Driving command input",
+          "direction": "in",
+          "flow_type": "signal"
+        },
+        {
+          "port_id": "shaft_bearing",
+          "name": "Cartridge-bearing coupling",
+          "direction": "inout",
+          "flow_type": "mechanical_structural"
+        }
+      ],
+      "interfaces": []
+    },
+    {
+      "subsystem_id": "cartridge_bearing",
+      "subsystem_name": "Cartridge Bearing",
+      "description": "Couples the eccentric shaft with the cycloidal gears; gear lips couple to it.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "bearing_shaft",
+          "name": "Eccentric-shaft coupling",
+          "direction": "inout",
+          "flow_type": "mechanical_structural"
+        },
+        {
+          "port_id": "bearing_gear_a",
+          "name": "First-gear coupling",
+          "direction": "inout",
+          "flow_type": "mechanical_structural"
+        },
+        {
+          "port_id": "bearing_gear_b",
+          "name": "Second-gear coupling",
+          "direction": "inout",
+          "flow_type": "mechanical_structural"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "bearing_to_shaft",
+          "mating_subsystem": "drive_shaft",
+          "port_this": "bearing_shaft",
+          "port_mate": "shaft_bearing",
+          "flow_ref": "f_mech_coupling",
+          "interface_type": "mechanical_structural"
+        },
+        {
+          "interface_id": "bearing_to_gear_a",
+          "mating_subsystem": "gear_a",
+          "port_this": "bearing_gear_a",
+          "port_mate": "gear_bearing",
+          "flow_ref": "f_mech_coupling",
+          "interface_type": "mechanical_structural"
+        },
+        {
+          "interface_id": "bearing_to_gear_b",
+          "mating_subsystem": "gear_b",
+          "port_this": "bearing_gear_b",
+          "port_mate": "gear_bearing",
+          "flow_ref": "f_mech_coupling",
+          "interface_type": "mechanical_structural"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "gear_a",
+      "subsystem_name": "First Cycloidal Gear",
+      "description": "One cycloidal gear with bearing pockets, a lip coupled to the cartridge bearing that prevents movement in the first dimension, and drive-pin holes.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "gear_bearing",
+          "name": "Cartridge-bearing coupling",
+          "direction": "inout",
+          "flow_type": "mechanical_structural"
+        },
+        {
+          "port_id": "gear_ball_bearings",
+          "name": "Pocket engagement with ball bearings",
+          "direction": "inout",
+          "flow_type": "mechanical_structural"
+        },
+        {
+          "port_id": "gear_drive_pins",
+          "name": "Drive-pin passage through holes",
+          "direction": "inout",
+          "flow_type": "mechanical_structural"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "gear_to_drive_pins",
+          "mating_subsystem": "drive_pins",
+          "port_this": "gear_drive_pins",
+          "port_mate": "pin_gear_a",
+          "flow_ref": "f_mech_coupling",
+          "interface_type": "mechanical_structural"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "gear_b",
+      "subsystem_name": "Second Cycloidal Gear",
+      "description": "One of two cycloidal gears with substantially aligned bearing pockets, a lip coupled to the cartridge bearing that prevents movement in the first dimension, and drive-pin holes.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "gear_bearing",
+          "name": "Cartridge-bearing coupling",
+          "direction": "inout",
+          "flow_type": "mechanical_structural"
+        },
+        {
+          "port_id": "gear_ball_bearings",
+          "name": "Pocket engagement with ball bearings",
+          "direction": "inout",
+          "flow_type": "mechanical_structural"
+        },
+        {
+          "port_id": "gear_drive_pins",
+          "name": "Drive-pin passage through holes",
+          "direction": "inout",
+          "flow_type": "mechanical_structural"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "gear_to_drive_pins",
+          "mating_subsystem": "drive_pins",
+          "port_this": "gear_drive_pins",
+          "port_mate": "pin_gear_b",
+          "flow_ref": "f_mech_coupling",
+          "interface_type": "mechanical_structural"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "ball_bearings",
+      "subsystem_name": "Ball Bearings",
+      "description": "Occupy aligned gear pockets, maintain spacing and flush positioning, and restrict relative movement.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "bearing_gear_a",
+          "name": "Engagement with first gear pockets",
+          "direction": "inout",
+          "flow_type": "mechanical_structural"
+        },
+        {
+          "port_id": "bearing_gear_b",
+          "name": "Engagement with second gear pockets",
+          "direction": "inout",
+          "flow_type": "mechanical_structural"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "ball_bearings_to_gear_a_pockets",
+          "mating_subsystem": "gear_a",
+          "port_this": "bearing_gear_a",
+          "port_mate": "gear_ball_bearings",
+          "flow_ref": "f_mech_coupling",
+          "interface_type": "mechanical_structural"
+        },
+        {
+          "interface_id": "ball_bearings_to_gear_b_pockets",
+          "mating_subsystem": "gear_b",
+          "port_this": "bearing_gear_b",
+          "port_mate": "gear_ball_bearings",
+          "flow_ref": "f_mech_coupling",
+          "interface_type": "mechanical_structural"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "drive_pins",
+      "subsystem_name": "Drive Pins",
+      "description": "Pass through corresponding drive-pin holes in both cycloidal gears; each pin lies between adjacent pockets in angular direction, and the radius of each pin lies in a plane parallel to the radius of its corresponding hole.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "pin_gear_a",
+          "name": "Passage through first-gear holes",
+          "direction": "inout",
+          "flow_type": "mechanical_structural"
+        },
+        {
+          "port_id": "pin_gear_b",
+          "name": "Passage through second-gear holes",
+          "direction": "inout",
+          "flow_type": "mechanical_structural"
+        }
+      ],
+      "interfaces": []
+    },
+    {
+      "subsystem_id": "command_source",
+      "subsystem_name": "Driving Command Source",
+      "description": "External robotic-system source sending one or more driving commands to the eccentric drive shaft; internal implementation unspecified.",
+      "domain": "External system",
+      "ports": [
+        {
+          "port_id": "command_out",
+          "name": "Driving command output",
+          "direction": "out",
+          "flow_type": "signal"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "command_boundary",
+          "mating_subsystem": "drive_shaft",
+          "port_this": "command_out",
+          "port_mate": "command_in",
+          "flow_ref": "f_command",
+          "interface_type": "signal"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "coupled_component",
+      "subsystem_name": "Coupled Rotating Component",
+      "description": "External component coupled to the gear system that rotates in response to driving commands; may be a robotic limb.",
+      "domain": "External system",
+      "ports": [
+        {
+          "port_id": "rotation_in",
+          "name": "Rotational input",
+          "direction": "in",
+          "flow_type": "mechanical_rotational"
+        }
+      ]
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "f_command",
+      "name": "Driving command",
+      "flow_type": "signal",
+      "notes": "One or more driving commands are sent to the eccentric drive shaft (claim 14)."
+    },
+    {
+      "flow_id": "f_mech_coupling",
+      "name": "Mechanical coupling relationship",
+      "flow_type": "mechanical_structural",
+      "notes": "Represents only expressly recited coupling/placement relationships; it does not assert torque transfer or a physical output route."
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "act_drive",
+        "name": "Command gear system to rotate coupled component",
+        "owner": "drive_shaft",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Receive one or more driving commands at the eccentric drive shaft."
+          },
+          {
+            "step_no": 2,
+            "description": "In response to the commands, cause a component coupled to the gear system to rotate."
+          }
+        ]
+      }
+    ]
+  }
+}

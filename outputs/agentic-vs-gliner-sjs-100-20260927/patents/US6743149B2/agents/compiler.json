@@ -1,0 +1,149 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 7,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 1,
+    "Documentation": 30,
+    "EndFeatureMembership": 8,
+    "Feature": 14,
+    "FeatureChaining": 20,
+    "FeatureMembership": 31,
+    "FeatureTyping": 11,
+    "FlowEnd": 2,
+    "FlowUsage": 1,
+    "ItemDefinition": 4,
+    "ItemUsage": 4,
+    "LiteralInteger": 6,
+    "MultiplicityRange": 6,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 59,
+    "Package": 1,
+    "PartDefinition": 5,
+    "PartUsage": 12,
+    "PortUsage": 4,
+    "Redefinition": 2,
+    "ReferenceSubsetting": 8,
+    "ReferenceUsage": 2,
+    "Subclassification": 2,
+    "SuccessionAsUsage": 3
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_shaft_discs_Input_shaft_and_toroidal_discs"
+    },
+    {
+      "path": "/subsystems/0/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_shaft_discs_Input_shaft_and_toroidal_discs.part_input_shaft_Input_shaft_coaxially_connected_to_first_and"
+    },
+    {
+      "path": "/subsystems/0/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_shaft_discs_Input_shaft_and_toroidal_discs.part_input_discs_First_and_second_coaxial_input_discs"
+    },
+    {
+      "path": "/subsystems/0/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_shaft_discs_Input_shaft_and_toroidal_discs.part_output_discs_First_and_second_output_discs_coaxially_dispo"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_shaft_discs_Input_shaft_and_toroidal_discs.port_axial_force_in_Axial_pressing_force_input"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_roller_supports_Power_rollers_and_supporting_members"
+    },
+    {
+      "path": "/subsystems/1/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_roller_supports_Power_rollers_and_supporting_members.part_power_rollers_Power_rollers__two_between_each_corresponding"
+    },
+    {
+      "path": "/subsystems/1/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_roller_supports_Power_rollers_and_supporting_members.part_support_members_Power_roller_supporting_members_supporting_re"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_roller_supports_Power_rollers_and_supporting_members.port_support_wire_coupling_Supporting_member_wire_coupling"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_wire_sync_Gyration_synchronization_wires"
+    },
+    {
+      "path": "/subsystems/2/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_wire_sync_Gyration_synchronization_wires.part_sync_wires_First__second__and_third_synchronization_wire"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_wire_sync_Gyration_synchronization_wires.port_wire_support_coupling_Wire_coupling_to_supporting_members"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_wire_guides_Third_wire_guide_walls"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_axial_press_Axial_pressing_means"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_axial_press_Axial_pressing_means.port_axial_force_out_Axial_pressing_force_output"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_axial_force_Axial_pressing_force"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_wire_motion_Mechanical_coupling_through_synchronization_w"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_bend_third_wire_Guide_third_wire_toward_output_discs"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_synchronize_rollers_Synchronize_roller_gyration_angles"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_wires_to_supports"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_press_to_discs"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

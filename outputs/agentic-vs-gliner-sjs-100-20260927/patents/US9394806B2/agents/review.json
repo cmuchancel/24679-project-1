@@ -1,0 +1,34 @@
+{
+  "revision": 6,
+  "candidate_sha256": "05c15ce8b878fc3d808609b15479705509cad1e52812b18254bd3ce575d3fcda",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "The added VANE–LEVER coupling is directly supported: claim 1 places each lever at the corresponding vane pivot axis and states it turns the vane, while the description says vane axes are secured via the guide-vane lever and vanes are adjusted via their axes by turning the ring. The linkage, threshold rupture, first-arm survival, and post-fracture holding/load relief are also supported by cited passages. No unsupported actuator/controller is asserted."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The model captures the patent-supported vane, lever, link, common adjusting element, selective overload rupture, load relief, and post-break holding path. Optional ring and bolt construction are appropriately qualified as a disclosed configuration/illustrative embodiment rather than mandatory universal features."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "The VANE–LEVER interface uses mechanical_rotational ports and a distinct rotational flow; the link-to-lever and link-to-adjuster couplings use mechanical_linear flows. No incompatible transformation is represented by a direct connection."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "The central assembly and threshold rupture requirement trace to claim 1; illustrated bolt fracture and post-break holding/load relief trace to detailed-description chunks 9ae440fb872f37136a499a50da5672fd and 84de2d5fff965ca14dc473593f2b1b92. The new pivot coupling is traceable to claim 1 and description."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Revision 6 resolves the prior disconnected VANE–LEVER relation with compatible rotational ports and a single interface. The two link couplings use compatible ports/flow and each connection is represented once. External drive is not fabricated."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "Textbook guidance on system boundary and interfaces is used as modeling method to avoid assuming an undisclosed external drive, not as evidence for invention facts."
+    }
+  },
+  "findings": [],
+  "summary": "Revision 6 resolves the prior VANE–LEVER interface gap. The new pivot coupling is supported by the patent’s lever-at-vane-pivot and vane-turning disclosure, and its mechanical_rotational flow is appropriately distinct from the link_motion mechanical_linear flow. The overall SJS is grounded, functionally coherent, claim-traceable, and avoids inventing an external actuator or control system. No actionable unresolved issues found.",
+  "saved_at": "2026-09-27T08:13:09.956839+00:00"
+}

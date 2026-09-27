@@ -1,0 +1,34 @@
+{
+  "revision": 7,
+  "candidate_sha256": "0200e49aab06ca360ee397261d6bb8a36a156d3218fd8e65b2aa24696b74afad",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "The explicit ORIFICE_PLATE component is supported by claim 9 in passage 9647f57f5ad92074eb351c95be46c0b3: the auxiliary tank connects to the pneumatic spring via an orifice plate. The model appropriately avoids detailed flow claims."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "Revision 7 retains the previously reviewed linkage, spring, pneumatic source, tank and controls, and adds the missing explicit orifice component."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "The model now connects AUX_TANK.tank_air to ORIFICE_PLATE.tank_side, then ORIFICE_PLATE.spring_side to SPRING.air_inlet. Both interfaces carry compatible pneumatic_air; there is no direct tank-to-spring bypass."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "The orifice subsystem, its ports and both interfaces cite claim 9 passage 9647f57f5ad92074eb351c95be46c0b3. Exhaust flow citation at /item_flows/4 remains. The supplied citation list includes entries for all ID-bearing objects."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Both interfaces reference existing subsystems and ports, use matching pneumatic flow types and model the distinct sides of the intervening orifice. Each connection is recorded once."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The retrieved textbook excerpt concerns decision-analysis simulation and does not support patent facts or physical flow topology. The model does not rely on it for invention claims and avoids unsupported orifice dynamics."
+    }
+  },
+  "findings": [],
+  "summary": "Revision 7 resolves the prior auxiliary tank/orifice flow and interface issue: ORIFICE_PLATE is explicitly modeled between AUX_TANK and SPRING with separate compatible interfaces and claim 9 citations. Prior findings are resolved; no new issues found. Supplied candidate has no structural findings and conforms to the requested SJS 1.0 object shape and required metadata; no schema issue is evident.",
+  "saved_at": "2026-09-27T07:11:44.846830+00:00"
+}

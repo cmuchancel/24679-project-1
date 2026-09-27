@@ -1,0 +1,107 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 8,
+    "AllocationUsage": 2,
+    "Documentation": 24,
+    "EndFeatureMembership": 4,
+    "Feature": 8,
+    "FeatureChaining": 8,
+    "FeatureMembership": 22,
+    "FeatureTyping": 6,
+    "ItemDefinition": 4,
+    "LiteralInteger": 6,
+    "MultiplicityRange": 6,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 50,
+    "Package": 1,
+    "PartDefinition": 4,
+    "PartUsage": 11,
+    "ReferenceSubsetting": 4,
+    "Subclassification": 2,
+    "SuccessionAsUsage": 4
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_WORM_Worm_assembly"
+    },
+    {
+      "path": "/subsystems/0/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_WORM_Worm_assembly.part_WORM_PART_Worm_part_carrying_the_helical_path_and_recir"
+    },
+    {
+      "path": "/subsystems/0/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_WORM_Worm_assembly.part_PEG_PART_Peg_part_coupled_concentrically_to_the_worm_p"
+    },
+    {
+      "path": "/subsystems/0/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_WORM_Worm_assembly.part_DEFLECTION_BOSS_Boss_at_the_recirculation_port_that_stops_bal"
+    },
+    {
+      "path": "/subsystems/0/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_WORM_Worm_assembly.part_OBLIQUE_HOLE_Hole_in_the_worm_part_receiving_balls_from_th"
+    },
+    {
+      "path": "/subsystems/0/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_WORM_Worm_assembly.part_PORT_FILLET_Fillet_at_the_recirculation_port_that_smoothe"
+    },
+    {
+      "path": "/subsystems/0/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_WORM_Worm_assembly.part_PEG_U_CHANNEL_U_shaped_helical_channel_in_the_peg_part__con"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_GEAR_Gear"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BALLS_Spherical_balls"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_RACE_Outer_ball_race"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_BALL_CIRCULATION_Spherical_ball_circulation"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_ROTARY_MOTION_Rotary_motion_transfer"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_TRANSFER_Transfer_rotary_motion_through_rolling_balls"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_A_PROFILE_Accommodate_ball_travel_at_gear_teeth"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

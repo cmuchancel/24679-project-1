@@ -1,0 +1,239 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Trailing-offset disk brake",
+    "system_id": "US7461725B2",
+    "description": "Disk brake arrangement with opposed pads and a trailing circumferential offset between their centers of gravity.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "Vehicle braking",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "DISK",
+      "subsystem_name": "Brake disk",
+      "description": "Rotating brake disk with a preferred rotational direction and opposed friction faces.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "P_DISK_PAD1",
+          "name": "First-side friction surface",
+          "direction": "inout",
+          "flow_type": "mechanical_contact"
+        },
+        {
+          "port_id": "P_DISK_PAD2",
+          "name": "Second-side friction surface",
+          "direction": "inout",
+          "flow_type": "mechanical_contact"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "PAD1",
+      "subsystem_name": "First brake pad",
+      "description": "Pad on the first side of the disk; its center of gravity lies on the clamping-device center axis.",
+      "domain": "Mechanical",
+      "functional_basis": [
+        "receive clamping force",
+        "frictionally engage disk"
+      ],
+      "ports": [
+        {
+          "port_id": "P_PAD1_FORCE",
+          "name": "First pad normal-force input",
+          "direction": "in",
+          "flow_type": "mechanical_force"
+        },
+        {
+          "port_id": "P_PAD1_CONTACT",
+          "name": "First pad-disk friction contact",
+          "direction": "inout",
+          "flow_type": "mechanical_contact"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_PAD1_DISK",
+          "mating_subsystem": "DISK",
+          "port_this": "P_PAD1_CONTACT",
+          "port_mate": "P_DISK_PAD1",
+          "flow_ref": "F_CONTACT",
+          "interface_type": "frictional_contact"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "PAD2",
+      "subsystem_name": "Second brake pad",
+      "description": "Pad on the second side of the disk; its center of gravity is circumferentially offset toward the trailing side relative to the first pad center of gravity.",
+      "domain": "Mechanical",
+      "functional_basis": [
+        "frictionally engage disk",
+        "produce braking force"
+      ],
+      "ports": [
+        {
+          "port_id": "P_PAD2_CAL",
+          "name": "Second pad braking-force transfer",
+          "direction": "out",
+          "flow_type": "mechanical_force"
+        },
+        {
+          "port_id": "P_PAD2_CONTACT",
+          "name": "Second pad-disk friction contact",
+          "direction": "inout",
+          "flow_type": "mechanical_contact"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_PAD2_DISK",
+          "mating_subsystem": "DISK",
+          "port_this": "P_PAD2_CONTACT",
+          "port_mate": "P_DISK_PAD2",
+          "flow_ref": "F_CONTACT",
+          "interface_type": "frictional_contact"
+        },
+        {
+          "interface_id": "I_PAD2_CAL",
+          "mating_subsystem": "CAL",
+          "port_this": "P_PAD2_CAL",
+          "port_mate": "P_CAL_PAD2",
+          "flow_ref": "F_BRAKE",
+          "interface_type": "mechanical_force_transfer"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "CAL",
+      "subsystem_name": "Brake caliper",
+      "description": "Caliper spans the disk and transmits braking force generated at the second pad to the first side; an embodiment has an opening across the disk region.",
+      "domain": "Mechanical",
+      "functional_basis": [
+        "transmit braking force"
+      ],
+      "ports": [
+        {
+          "port_id": "P_CAL_PAD2",
+          "name": "Second-pad force input",
+          "direction": "in",
+          "flow_type": "mechanical_force"
+        },
+        {
+          "port_id": "P_CAL_PAD1",
+          "name": "First-side force output",
+          "direction": "out",
+          "flow_type": "mechanical_force"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_CAL_PAD1",
+          "mating_subsystem": "PAD1",
+          "port_this": "P_CAL_PAD1",
+          "port_mate": "P_PAD1_FORCE",
+          "flow_ref": "F_BRAKE",
+          "interface_type": "mechanical_force_transfer"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "CLAMP",
+      "subsystem_name": "Clamping device",
+      "description": "Device pushing the first pad against the disk with a center axis perpendicular to the disk plane and through the first pad center of gravity.",
+      "domain": "Mechanical",
+      "functional_basis": [
+        "push first pad"
+      ],
+      "ports": [
+        {
+          "port_id": "P_CLAMP_OUT",
+          "name": "Clamp force output",
+          "direction": "out",
+          "flow_type": "mechanical_force"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "I_CLAMP_PAD1",
+          "mating_subsystem": "PAD1",
+          "port_this": "P_CLAMP_OUT",
+          "port_mate": "P_PAD1_FORCE",
+          "flow_ref": "F_CLAMP",
+          "interface_type": "mechanical_force_transfer"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "BRACKET",
+      "subsystem_name": "Bracket part",
+      "description": "Plate-shaped bracket part supporting the caliper; disclosed as optionally integral with an axle part.",
+      "domain": "Mechanical"
+    },
+    {
+      "subsystem_id": "AXLE",
+      "subsystem_name": "Axle part",
+      "description": "Vehicle axle part to which the bracket/caliper support can be connected.",
+      "domain": "Mechanical"
+    },
+    {
+      "subsystem_id": "VEHICLE",
+      "subsystem_name": "Vehicle structure",
+      "description": "External vehicle structure receiving brake support reaction loads.",
+      "domain": "Mechanical"
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "F_CLAMP",
+      "name": "Clamping force",
+      "flow_type": "mechanical_force",
+      "notes": "Clamping device applies force to first pad along the disk-normal axis."
+    },
+    {
+      "flow_id": "F_BRAKE",
+      "name": "Braking force",
+      "flow_type": "mechanical_force",
+      "notes": "Braking force from second pad is transmitted by caliper to the first side of the disk."
+    },
+    {
+      "flow_id": "F_CONTACT",
+      "name": "Pad-disk frictional contact",
+      "flow_type": "mechanical_contact",
+      "notes": "Frictional engagement of each pad with its respective disk side."
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "A_APPLY",
+        "name": "Apply first pad",
+        "owner": "CLAMP",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Push the first brake pad against the brake disk along the clamping-device center axis."
+          }
+        ]
+      },
+      {
+        "action_id": "A_BRAKE_CONTACT",
+        "name": "Engage opposed pads with disk",
+        "owner": "CAL",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "The first and second brake pads frictionally engage their respective sides of the brake disk during braking."
+          },
+          {
+            "step_no": 2,
+            "description": "The caliper transmits braking forces produced by the second pad to the first side of the disk."
+          }
+        ]
+      }
+    ]
+  }
+}

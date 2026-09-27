@@ -1,0 +1,472 @@
+{
+  "$schema": "sjs/1.0",
+  "model_meta": {
+    "system_name": "Variable Displacement Axial Piston Pump with Two-Direction Swashplate",
+    "system_id": "US6655255B2",
+    "description": "Conceptual model of the disclosed axial-piston pump and two-member swashplate arrangement.",
+    "version": "1.0",
+    "lifecycle_stage": "concept",
+    "domain": "Hydraulic pumping",
+    "maturity": "draft",
+    "date_modified": "2026-09-27"
+  },
+  "subsystems": [
+    {
+      "subsystem_id": "pump_housing",
+      "subsystem_name": "Pump Housing and Port Plate",
+      "description": "Body and head portions house pump elements; head passages route inlet and outlet fluid through porting.",
+      "domain": "Hydraulic structure",
+      "ports": [
+        {
+          "port_id": "pump_in",
+          "name": "Pump inlet",
+          "direction": "in",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "pump_out",
+          "name": "Pump outlet",
+          "direction": "out",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "rotating_group_hydraulic_in",
+          "name": "Hydraulic communication to rotating group",
+          "direction": "out",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "rotating_group_hydraulic_out",
+          "name": "Hydraulic communication from rotating group",
+          "direction": "in",
+          "flow_type": "hydraulic_fluid"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "tank_pump_inlet",
+          "mating_subsystem": "tank",
+          "port_this": "pump_in",
+          "port_mate": "tank_out",
+          "flow_ref": "inlet_fluid",
+          "interface_type": "hydraulic_fluid"
+        },
+        {
+          "interface_id": "pump_valve_supply",
+          "mating_subsystem": "fluid_control_valve",
+          "port_this": "pump_out",
+          "port_mate": "valve_supply_in",
+          "flow_ref": "pressurized_outlet",
+          "interface_type": "hydraulic_fluid"
+        },
+        {
+          "interface_id": "housing_rotating_group_inlet",
+          "mating_subsystem": "rotating_group",
+          "port_this": "rotating_group_hydraulic_in",
+          "port_mate": "hydraulic_in",
+          "flow_ref": "inlet_fluid",
+          "interface_type": "hydraulic_fluid"
+        },
+        {
+          "interface_id": "rotating_group_housing_outlet",
+          "mating_subsystem": "rotating_group",
+          "port_this": "rotating_group_hydraulic_out",
+          "port_mate": "hydraulic_out",
+          "flow_ref": "pressurized_outlet",
+          "interface_type": "hydraulic_fluid"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "rotating_group",
+      "subsystem_name": "Rotating Group",
+      "description": "Rotating barrel, cylinder bores, pistons and pivoting shoes; bore chambers communicate with inlet and outlet passages.",
+      "domain": "Hydraulic-mechanical",
+      "ports": [
+        {
+          "port_id": "shoe_contact",
+          "name": "Piston shoe contact surface",
+          "direction": "out",
+          "flow_type": "mechanical_contact"
+        },
+        {
+          "port_id": "hydraulic_in",
+          "name": "Hydraulic fluid from housing inlet passage",
+          "direction": "in",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "hydraulic_out",
+          "name": "Hydraulic fluid to housing outlet passage",
+          "direction": "out",
+          "flow_type": "hydraulic_fluid"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "shoe_secondary_surface_contact",
+          "mating_subsystem": "secondary_swashplate",
+          "port_this": "shoe_contact",
+          "port_mate": "shoe_mating_surface",
+          "flow_ref": "shoe_surface_contact",
+          "interface_type": "mechanical_contact"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "primary_swashplate",
+      "subsystem_name": "Primary Swashplate Member",
+      "description": "Member pivoting in a first arcuate direction relative to rotating-group axis; supports secondary member.",
+      "domain": "Mechanical"
+    },
+    {
+      "subsystem_id": "secondary_swashplate",
+      "subsystem_name": "Secondary Swashplate Member",
+      "description": "Member pivotable relative to primary in a second arcuate direction, with flat surface sliding against piston shoes.",
+      "domain": "Mechanical",
+      "ports": [
+        {
+          "port_id": "shoe_mating_surface",
+          "name": "Shoe mating surface",
+          "direction": "in",
+          "flow_type": "mechanical_contact"
+        }
+      ],
+      "interfaces": []
+    },
+    {
+      "subsystem_id": "actuating_mechanism",
+      "subsystem_name": "Actuating Mechanism and Link",
+      "description": "Link and reaction member transmit actuation between the members; a remote actuator output can act on the link through a force member.",
+      "domain": "Mechanical actuation",
+      "ports": [
+        {
+          "port_id": "link_force_in",
+          "name": "Force-member input at link",
+          "direction": "in",
+          "flow_type": "mechanical_force"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "tank",
+      "subsystem_name": "Tank",
+      "description": "Fluid source supplying the pump through tank conduit.",
+      "domain": "Hydraulic system",
+      "ports": [
+        {
+          "port_id": "tank_out",
+          "name": "Tank conduit outlet",
+          "direction": "out",
+          "flow_type": "hydraulic_fluid"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "controller",
+      "subsystem_name": "Controller",
+      "description": "Receives pressure and pump position signals and supplies signal to remote actuating mechanism.",
+      "domain": "Control",
+      "ports": [
+        {
+          "port_id": "controller_inlet_pressure_in",
+          "name": "Inlet pressure signal input",
+          "direction": "in",
+          "flow_type": "signal_electrical"
+        },
+        {
+          "port_id": "controller_command_out",
+          "name": "Remote actuator command output",
+          "direction": "out",
+          "flow_type": "signal_electrical"
+        },
+        {
+          "port_id": "controller_outlet_pressure_in",
+          "name": "Outlet pressure signal input",
+          "direction": "in",
+          "flow_type": "signal_electrical"
+        },
+        {
+          "port_id": "controller_position_in",
+          "name": "Primary-member position signal input",
+          "direction": "in",
+          "flow_type": "signal_electrical"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "controller_remote_actuator_command",
+          "mating_subsystem": "remote_actuator",
+          "port_this": "controller_command_out",
+          "port_mate": "remote_command_in",
+          "flow_ref": "controller_actuation",
+          "interface_type": "signal_electrical"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "remote_actuator",
+      "subsystem_name": "Remote Controlled Actuating Mechanism",
+      "description": "Receives controller signal and applies output through a force member to the link.",
+      "domain": "Mechanical actuation",
+      "ports": [
+        {
+          "port_id": "remote_command_in",
+          "name": "Controller command input",
+          "direction": "in",
+          "flow_type": "signal_electrical"
+        },
+        {
+          "port_id": "force_out",
+          "name": "Mechanical force output",
+          "direction": "out",
+          "flow_type": "mechanical_force"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "remote_actuator_link_force",
+          "mating_subsystem": "actuating_mechanism",
+          "port_this": "force_out",
+          "port_mate": "link_force_in",
+          "flow_ref": "mechanical_actuation",
+          "interface_type": "mechanical_force"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "fluid_control_valve",
+      "subsystem_name": "Fluid Control Valve",
+      "description": "Routes pump supply fluid selectively through work conduits to fluid actuator.",
+      "domain": "Hydraulic system",
+      "ports": [
+        {
+          "port_id": "valve_supply_in",
+          "name": "Pump supply inlet",
+          "direction": "in",
+          "flow_type": "hydraulic_fluid"
+        },
+        {
+          "port_id": "valve_work_out",
+          "name": "Work-fluid outlet",
+          "direction": "out",
+          "flow_type": "hydraulic_fluid"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "valve_actuator_work",
+          "mating_subsystem": "fluid_actuator",
+          "port_this": "valve_work_out",
+          "port_mate": "actuator_fluid_in",
+          "flow_ref": "pressurized_outlet",
+          "interface_type": "hydraulic_fluid"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "fluid_actuator",
+      "subsystem_name": "Fluid Actuator",
+      "description": "Actuated by fluid routed through the control valve.",
+      "domain": "Hydraulic system",
+      "ports": [
+        {
+          "port_id": "actuator_fluid_in",
+          "name": "Fluid inlet",
+          "direction": "in",
+          "flow_type": "hydraulic_fluid"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "pressure_sensor_inlet",
+      "subsystem_name": "Inlet Pressure Sensor",
+      "description": "Senses inlet passage pressure and provides a representative signal.",
+      "domain": "Sensing",
+      "ports": [
+        {
+          "port_id": "inlet_pressure_signal",
+          "name": "Inlet pressure signal",
+          "direction": "out",
+          "flow_type": "signal_electrical"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "inlet_sensor_controller",
+          "mating_subsystem": "controller",
+          "port_this": "inlet_pressure_signal",
+          "port_mate": "controller_inlet_pressure_in",
+          "flow_ref": "inlet_pressure_signal_flow",
+          "interface_type": "signal_electrical"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "pressure_sensor_outlet",
+      "subsystem_name": "Outlet Pressure Sensor",
+      "description": "Senses outlet passage pressure and provides a representative signal.",
+      "domain": "Sensing",
+      "ports": [
+        {
+          "port_id": "outlet_pressure_signal",
+          "name": "Outlet pressure signal",
+          "direction": "out",
+          "flow_type": "signal_electrical"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "outlet_sensor_controller",
+          "mating_subsystem": "controller",
+          "port_this": "outlet_pressure_signal",
+          "port_mate": "controller_outlet_pressure_in",
+          "flow_ref": "outlet_pressure_signal_flow",
+          "interface_type": "signal_electrical"
+        }
+      ]
+    },
+    {
+      "subsystem_id": "position_sensor",
+      "subsystem_name": "Primary Member Position Sensor",
+      "description": "Senses primary member position and provides a representative signal.",
+      "domain": "Sensing",
+      "ports": [
+        {
+          "port_id": "position_signal",
+          "name": "Position signal",
+          "direction": "out",
+          "flow_type": "signal_electrical"
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_id": "position_sensor_controller",
+          "mating_subsystem": "controller",
+          "port_this": "position_signal",
+          "port_mate": "controller_position_in",
+          "flow_ref": "primary_position_signal_flow",
+          "interface_type": "signal_electrical"
+        }
+      ]
+    }
+  ],
+  "item_flows": [
+    {
+      "flow_id": "inlet_fluid",
+      "name": "Tank fluid to pump inlet",
+      "flow_type": "hydraulic_fluid",
+      "notes": "Received from tank via inlet conduit."
+    },
+    {
+      "flow_id": "pressurized_outlet",
+      "name": "Pressurized pump delivery",
+      "flow_type": "hydraulic_fluid",
+      "notes": "Delivered through control valve to actuator."
+    },
+    {
+      "flow_id": "parameter_signals",
+      "name": "Pressure and position sensor signals",
+      "flow_type": "signal_electrical",
+      "notes": "Separate pressure sensors and a position sensor provide representative signals to the controller; signal encoding is unspecified."
+    },
+    {
+      "flow_id": "controller_actuation",
+      "name": "Controller signal to remote actuator",
+      "flow_type": "signal_electrical",
+      "notes": "Controller signal travels via signal line to remotely controlled actuating mechanism."
+    },
+    {
+      "flow_id": "mechanical_actuation",
+      "name": "Remote actuator force to link",
+      "flow_type": "mechanical_force",
+      "notes": "Remote actuator output acts through force member on the link."
+    },
+    {
+      "flow_id": "shoe_surface_contact",
+      "name": "Piston shoe to secondary swashplate contact",
+      "flow_type": "mechanical_contact",
+      "notes": "Mating sliding contact between piston assembly shoes and the secondary member flat surface (claim 9)."
+    },
+    {
+      "flow_id": "inlet_pressure_signal_flow",
+      "name": "Inlet pressure sensor signal",
+      "flow_type": "signal_electrical",
+      "notes": "Representative inlet pressure signal to controller; encoding unspecified."
+    },
+    {
+      "flow_id": "outlet_pressure_signal_flow",
+      "name": "Outlet pressure sensor signal",
+      "flow_type": "signal_electrical",
+      "notes": "Representative outlet pressure signal to controller; encoding unspecified."
+    },
+    {
+      "flow_id": "primary_position_signal_flow",
+      "name": "Primary-member position sensor signal",
+      "flow_type": "signal_electrical",
+      "notes": "Representative position signal to controller; encoding unspecified."
+    }
+  ],
+  "requirements": [
+    {
+      "req_id": "REQ_PIVOT_ORIENTATION",
+      "category": "geometric constraint",
+      "priority": "claim limitation",
+      "statement": "The primary and secondary pivot directions are positioned at an angle about the rotating-group axis; dependent claims disclose 80–100 degrees and a 90-degree unidirectional embodiment.",
+      "rationale": "Claims 3–5 and 18–19; describes claim-specific configurations rather than universal operating limits.",
+      "satisfied_by": [
+        "primary_swashplate",
+        "secondary_swashplate"
+      ]
+    }
+  ],
+  "behaviour": {
+    "actions": [
+      {
+        "action_id": "ACT_PUMP_FLUID",
+        "name": "Pump fluid through rotating group",
+        "owner": "rotating_group",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Barrel rotation carries cylinder bores into communication with inlet and outlet passages through the port plate."
+          },
+          {
+            "step_no": 2,
+            "description": "Pistons slide in bores as their shoes follow the secondary member, receiving and discharging fluid."
+          }
+        ]
+      },
+      {
+        "action_id": "ACT_MODULATE_TRANSITION",
+        "name": "Adjust pressure transition using secondary member",
+        "owner": "secondary_swashplate",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Inlet/outlet differential pressure and primary-member angular position inform the desired secondary-member position."
+          },
+          {
+            "step_no": 2,
+            "description": "The secondary member pivots in the second arcuate direction to control pressure transitions as bores pass trapped-volume regions."
+          }
+        ]
+      },
+      {
+        "action_id": "ACT_TRANSMIT_MOTION",
+        "name": "Transmit actuator motion through link",
+        "owner": "actuating_mechanism",
+        "steps": [
+          {
+            "step_no": 1,
+            "description": "Remote actuator output acts through a force member on a link in the primary member."
+          },
+          {
+            "step_no": 2,
+            "description": "The link engages a reaction member in the secondary-member slot and moves the secondary member."
+          }
+        ]
+      }
+    ]
+  }
+}

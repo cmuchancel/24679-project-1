@@ -1,0 +1,5612 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": false,
+  "native_element_counts": {
+    "ActionDefinition": 42,
+    "ActionUsage": 84,
+    "AttributeUsage": 8,
+    "Documentation": 411,
+    "FeatureMembership": 2275,
+    "FeatureTyping": 505,
+    "FeatureValue": 1865,
+    "LiteralInteger": 236,
+    "LiteralString": 1865,
+    "MetadataDefinition": 1,
+    "MetadataUsage": 373,
+    "MultiplicityRange": 236,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 1389,
+    "Package": 1,
+    "PartDefinition": 85,
+    "PartUsage": 322,
+    "Redefinition": 1865,
+    "ReferenceUsage": 1865
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_001_chassis"
+    },
+    {
+      "path": "/subsystems/0/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_002_body"
+    },
+    {
+      "path": "/subsystems/0/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_003_wheels"
+    },
+    {
+      "path": "/subsystems/0/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_004_steering_wheels"
+    },
+    {
+      "path": "/subsystems/0/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_008_deployable_safety_guard_mechanism"
+    },
+    {
+      "path": "/subsystems/0/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_009_safety_guard_mechanism"
+    },
+    {
+      "path": "/subsystems/0/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_006_linkset_assembly"
+    },
+    {
+      "path": "/subsystems/0/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_012_pair_of_wheels"
+    },
+    {
+      "path": "/subsystems/0/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_013_deployable_pothole_protection_safety_guard"
+    },
+    {
+      "path": "/subsystems/0/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_014_pothole_protection_safety_guard"
+    },
+    {
+      "path": "/subsystems/0/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_025_linkset_assembly_200"
+    },
+    {
+      "path": "/subsystems/0/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_060_steering_cylinder"
+    },
+    {
+      "path": "/subsystems/0/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_084_follower_wheels"
+    },
+    {
+      "path": "/subsystems/0/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_005_lifting_linkset_assembly"
+    },
+    {
+      "path": "/subsystems/0/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_007_steering_system"
+    },
+    {
+      "path": "/subsystems/0/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_016_collar"
+    },
+    {
+      "path": "/subsystems/0/parts/15",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_018_helical_screw_system"
+    },
+    {
+      "path": "/subsystems/0/parts/16",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_024_chassis_100"
+    },
+    {
+      "path": "/subsystems/0/parts/17",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_042_collar_410"
+    },
+    {
+      "path": "/subsystems/0/parts/18",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_047_locking_collar_410"
+    },
+    {
+      "path": "/subsystems/0/parts/19",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_055_rod"
+    },
+    {
+      "path": "/subsystems/0/parts/20",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_083_platform_P"
+    },
+    {
+      "path": "/subsystems/0/parts/21",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_085_pivot_extensions"
+    },
+    {
+      "path": "/subsystems/0/parts/22",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_086_hydraulic_actuator"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_002_wheels"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_003_steering_wheels"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_004_lifting_linkset_assembly"
+    },
+    {
+      "path": "/subsystems/3/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_004_lifting_linkset_assembly.part_P_004_steering_wheels_2da6f069"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly"
+    },
+    {
+      "path": "/subsystems/4/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_032_outer_support_arms"
+    },
+    {
+      "path": "/subsystems/4/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_033_inner_lifting_arms"
+    },
+    {
+      "path": "/subsystems/4/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_034_inner_support_arms"
+    },
+    {
+      "path": "/subsystems/4/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_035_Pivot_extensions"
+    },
+    {
+      "path": "/subsystems/4/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_036_pivot_pins"
+    },
+    {
+      "path": "/subsystems/4/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_037_hydraulic_motor"
+    },
+    {
+      "path": "/subsystems/4/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_045_pivot_mount"
+    },
+    {
+      "path": "/subsystems/4/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_046_pivot_mount_420"
+    },
+    {
+      "path": "/subsystems/4/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_048_cylinder_barrel"
+    },
+    {
+      "path": "/subsystems/4/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_049_pivotable_collar"
+    },
+    {
+      "path": "/subsystems/4/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_050_pivot_mounts"
+    },
+    {
+      "path": "/subsystems/4/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_069_male_helical_screw_portion"
+    },
+    {
+      "path": "/subsystems/4/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_070_guard_drive_member"
+    },
+    {
+      "path": "/subsystems/4/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_071_guard_drive_bar"
+    },
+    {
+      "path": "/subsystems/4/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_067_drive_rod"
+    },
+    {
+      "path": "/subsystems/4/parts/15",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_072_driven_bars"
+    },
+    {
+      "path": "/subsystems/4/parts/16",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_073_lower_rack"
+    },
+    {
+      "path": "/subsystems/4/parts/17",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_074_driving_member"
+    },
+    {
+      "path": "/subsystems/4/parts/18",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_078_channeled_rails"
+    },
+    {
+      "path": "/subsystems/4/parts/19",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_079_follower_ends"
+    },
+    {
+      "path": "/subsystems/4/parts/20",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_080_helical_slot"
+    },
+    {
+      "path": "/subsystems/4/parts/21",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_081_safety_guard"
+    },
+    {
+      "path": "/subsystems/4/parts/22",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_082_driven_bar"
+    },
+    {
+      "path": "/subsystems/4/parts/23",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_075_slider"
+    },
+    {
+      "path": "/subsystems/4/parts/24",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_004_steering_wheels_ea76579b"
+    },
+    {
+      "path": "/subsystems/4/parts/25",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_031_inner_lifting_frame"
+    },
+    {
+      "path": "/subsystems/4/parts/26",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_010_platform"
+    },
+    {
+      "path": "/subsystems/4/parts/27",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_038_pivotable_locking_collar"
+    },
+    {
+      "path": "/subsystems/4/parts/28",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_087_hydraulic_cylinder"
+    },
+    {
+      "path": "/subsystems/4/parts/29",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_088_cylinder_body"
+    },
+    {
+      "path": "/subsystems/4/parts/30",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_089_piston_rod"
+    },
+    {
+      "path": "/subsystems/4/parts/31",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_077_upper_rack"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_006_steering_system"
+    },
+    {
+      "path": "/subsystems/5/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_048_cylinder_barrel_ae9a2745"
+    },
+    {
+      "path": "/subsystems/5/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_049_pivotable_collar_db625620"
+    },
+    {
+      "path": "/subsystems/5/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_050_pivot_mounts_2f5e9f8f"
+    },
+    {
+      "path": "/subsystems/5/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_051_steering_rod"
+    },
+    {
+      "path": "/subsystems/5/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_056_extension_connectors"
+    },
+    {
+      "path": "/subsystems/5/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_063_slots"
+    },
+    {
+      "path": "/subsystems/5/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_052_extension_connector"
+    },
+    {
+      "path": "/subsystems/5/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_065_side_panel"
+    },
+    {
+      "path": "/subsystems/5/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_059_clearance_slot"
+    },
+    {
+      "path": "/subsystems/5/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_057_tie_links"
+    },
+    {
+      "path": "/subsystems/5/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_058_steering_arms"
+    },
+    {
+      "path": "/subsystems/5/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_019_safety_mechanism"
+    },
+    {
+      "path": "/subsystems/5/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_066_cast_female_helical_screw"
+    },
+    {
+      "path": "/subsystems/5/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_067_drive_rod_b6eb448d"
+    },
+    {
+      "path": "/subsystems/5/parts/14",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_087_hydraulic_cylinder_d1942cdf"
+    },
+    {
+      "path": "/subsystems/5/parts/15",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_060_steering_cylinder_f0714f35"
+    },
+    {
+      "path": "/subsystems/5/parts/16",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_053_steering_tie_link"
+    },
+    {
+      "path": "/subsystems/5/parts/17",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_054_steering_arm"
+    },
+    {
+      "path": "/subsystems/5/parts/18",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_090_elongate_slots"
+    },
+    {
+      "path": "/subsystems/5/parts/19",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_062_rectangular_rail"
+    },
+    {
+      "path": "/subsystems/5/parts/20",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_091_T_shaped_slider"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_007_linkset_assembly__and_a_deployable_safety_gua"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_008_deployable_safety_guard_mechanism"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_009_safety_guard_mechanism"
+    },
+    {
+      "path": "/subsystems/8/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_009_safety_guard_mechanism.part_P_094_female_helical_screw"
+    },
+    {
+      "path": "/subsystems/8/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_009_safety_guard_mechanism.part_P_017_helical_screw"
+    },
+    {
+      "path": "/subsystems/8/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_009_safety_guard_mechanism.part_P_095_safety_guard_drive_rod"
+    },
+    {
+      "path": "/subsystems/8/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_009_safety_guard_mechanism.part_P_081_safety_guard_43763fbf"
+    },
+    {
+      "path": "/subsystems/8/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_009_safety_guard_mechanism.part_P_096_elongate_guard_drive_bar"
+    },
+    {
+      "path": "/subsystems/8/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_009_safety_guard_mechanism.part_P_071_guard_drive_bar_d9f3d537"
+    },
+    {
+      "path": "/subsystems/8/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_009_safety_guard_mechanism.part_P_097_follower"
+    },
+    {
+      "path": "/subsystems/9",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_010_compact_scissor_lift"
+    },
+    {
+      "path": "/subsystems/9/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_compact_scissor_lift.part_P_019_safety_mechanism_046b9475"
+    },
+    {
+      "path": "/subsystems/9/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_compact_scissor_lift.part_P_066_cast_female_helical_screw_c24d8549"
+    },
+    {
+      "path": "/subsystems/9/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_010_compact_scissor_lift.part_P_067_drive_rod_34f20547"
+    },
+    {
+      "path": "/subsystems/10",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_011_steering_mechanism"
+    },
+    {
+      "path": "/subsystems/11",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_012_platform"
+    },
+    {
+      "path": "/subsystems/12",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_013_system_of_linksets"
+    },
+    {
+      "path": "/subsystems/13",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_014_linksets"
+    },
+    {
+      "path": "/subsystems/14",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_015_deployable_pothole_protection_safety_guard"
+    },
+    {
+      "path": "/subsystems/15",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_016_pothole_protection_safety_guard"
+    },
+    {
+      "path": "/subsystems/16",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_017_compact_scissors_lift"
+    },
+    {
+      "path": "/subsystems/16/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_compact_scissors_lift.part_P_011_linksets"
+    },
+    {
+      "path": "/subsystems/16/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_compact_scissors_lift.part_P_015_main_lift_cylinder"
+    },
+    {
+      "path": "/subsystems/16/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_compact_scissors_lift.part_P_017_helical_screw_2ade33ee"
+    },
+    {
+      "path": "/subsystems/16/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_017_compact_scissors_lift.part_P_019_safety_mechanism_c2fcaad4"
+    },
+    {
+      "path": "/subsystems/17",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_018_main_lift_cylinder"
+    },
+    {
+      "path": "/subsystems/17/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_main_lift_cylinder.part_P_038_pivotable_locking_collar_a9946de7"
+    },
+    {
+      "path": "/subsystems/17/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_main_lift_cylinder.part_P_039_pivotable_locking_collar_410"
+    },
+    {
+      "path": "/subsystems/17/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_main_lift_cylinder.part_P_040_locking_collar"
+    },
+    {
+      "path": "/subsystems/17/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_main_lift_cylinder.part_P_041_cylinder_mount"
+    },
+    {
+      "path": "/subsystems/17/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_main_lift_cylinder.part_P_043_ring_seat"
+    },
+    {
+      "path": "/subsystems/17/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_main_lift_cylinder.part_P_044_ring_seat_412"
+    },
+    {
+      "path": "/subsystems/17/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_main_lift_cylinder.part_P_045_pivot_mount_2028aed8"
+    },
+    {
+      "path": "/subsystems/17/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_018_main_lift_cylinder.part_P_046_pivot_mount_420_36fecf34"
+    },
+    {
+      "path": "/subsystems/18",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_019_lift_cylinder"
+    },
+    {
+      "path": "/subsystems/19",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_020_collar"
+    },
+    {
+      "path": "/subsystems/20",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_021_helical_screw"
+    },
+    {
+      "path": "/subsystems/21",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_022_automatic_safety_guard_mechanism"
+    },
+    {
+      "path": "/subsystems/22",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_023_assembled_helical_screw_system"
+    },
+    {
+      "path": "/subsystems/23",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_024_helical_screw_system"
+    },
+    {
+      "path": "/subsystems/24",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_025_safety_mechanism"
+    },
+    {
+      "path": "/subsystems/24/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_safety_mechanism.part_P_070_guard_drive_member_82e6f28b"
+    },
+    {
+      "path": "/subsystems/24/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_safety_mechanism.part_P_071_guard_drive_bar_718c9d86"
+    },
+    {
+      "path": "/subsystems/24/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_safety_mechanism.part_P_067_drive_rod_7bda652e"
+    },
+    {
+      "path": "/subsystems/24/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_safety_mechanism.part_P_072_driven_bars_4bfcca27"
+    },
+    {
+      "path": "/subsystems/24/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_safety_mechanism.part_P_073_lower_rack_3b966e10"
+    },
+    {
+      "path": "/subsystems/24/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_025_safety_mechanism.part_P_074_driving_member_df3c7a68"
+    },
+    {
+      "path": "/subsystems/25",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_026_compact_scissor_lift_10"
+    },
+    {
+      "path": "/subsystems/25/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_compact_scissor_lift_10.part_P_001_chassis"
+    },
+    {
+      "path": "/subsystems/25/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_compact_scissor_lift_10.part_P_020_chassis_A"
+    },
+    {
+      "path": "/subsystems/25/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_compact_scissor_lift_10.part_P_006_linkset_assembly_e73d16a7"
+    },
+    {
+      "path": "/subsystems/25/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_compact_scissor_lift_10.part_P_021_linkset_assembly_B"
+    },
+    {
+      "path": "/subsystems/25/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_compact_scissor_lift_10.part_P_022_lift_platform"
+    },
+    {
+      "path": "/subsystems/25/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_compact_scissor_lift_10.part_P_023_lift_platform_C"
+    },
+    {
+      "path": "/subsystems/25/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_compact_scissor_lift_10.part_P_025_linkset_assembly_200_c99880ca"
+    },
+    {
+      "path": "/subsystems/25/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_compact_scissor_lift_10.part_P_026_lift_platform_P"
+    },
+    {
+      "path": "/subsystems/25/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_compact_scissor_lift_10.part_P_019_safety_mechanism_998473d9"
+    },
+    {
+      "path": "/subsystems/25/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_compact_scissor_lift_10.part_P_066_cast_female_helical_screw_18988ed5"
+    },
+    {
+      "path": "/subsystems/25/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_026_compact_scissor_lift_10.part_P_067_drive_rod_45dd41d8"
+    },
+    {
+      "path": "/subsystems/26",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_027_chassis_A"
+    },
+    {
+      "path": "/subsystems/27",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_028_linkset_assembly_B"
+    },
+    {
+      "path": "/subsystems/28",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_029_lift_platform"
+    },
+    {
+      "path": "/subsystems/29",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_030_lift_platform_C"
+    },
+    {
+      "path": "/subsystems/30",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_031_chassis_100"
+    },
+    {
+      "path": "/subsystems/30/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_chassis_100.part_P_006_linkset_assembly_88290e38"
+    },
+    {
+      "path": "/subsystems/30/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_chassis_100.part_P_025_linkset_assembly_200_f5058fc3"
+    },
+    {
+      "path": "/subsystems/30/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_chassis_100.part_P_027_paneling"
+    },
+    {
+      "path": "/subsystems/30/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_chassis_100.part_P_028_fixed_axis_wheels"
+    },
+    {
+      "path": "/subsystems/30/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_chassis_100.part_P_004_steering_wheels_80e05e98"
+    },
+    {
+      "path": "/subsystems/30/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_chassis_100.part_P_029_Frame_members"
+    },
+    {
+      "path": "/subsystems/30/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_chassis_100.part_P_030_outer_lift_support_frame"
+    },
+    {
+      "path": "/subsystems/30/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_031_chassis_100.part_P_031_inner_lifting_frame_2ea97749"
+    },
+    {
+      "path": "/subsystems/31",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200"
+    },
+    {
+      "path": "/subsystems/31/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_034_inner_support_arms_461a55ca"
+    },
+    {
+      "path": "/subsystems/31/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_035_Pivot_extensions_f2ac2cb0"
+    },
+    {
+      "path": "/subsystems/31/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_036_pivot_pins_428aee84"
+    },
+    {
+      "path": "/subsystems/31/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_037_hydraulic_motor_4092ff70"
+    },
+    {
+      "path": "/subsystems/31/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_048_cylinder_barrel_4d22757d"
+    },
+    {
+      "path": "/subsystems/31/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_049_pivotable_collar_5ad0faf7"
+    },
+    {
+      "path": "/subsystems/31/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_050_pivot_mounts_3ad28866"
+    },
+    {
+      "path": "/subsystems/31/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_078_channeled_rails_7ae65a07"
+    },
+    {
+      "path": "/subsystems/31/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_072_driven_bars_dbfbc83e"
+    },
+    {
+      "path": "/subsystems/31/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_079_follower_ends_f896ec76"
+    },
+    {
+      "path": "/subsystems/31/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_080_helical_slot_d53e8a28"
+    },
+    {
+      "path": "/subsystems/31/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_081_safety_guard_be02141d"
+    },
+    {
+      "path": "/subsystems/31/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_082_driven_bar_6ce90589"
+    },
+    {
+      "path": "/subsystems/31/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_075_slider_19056ef6"
+    },
+    {
+      "path": "/subsystems/32",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_033_lift_platform_P"
+    },
+    {
+      "path": "/subsystems/33",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_034_mobile_chassis_100"
+    },
+    {
+      "path": "/subsystems/34",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_035_Frame_members"
+    },
+    {
+      "path": "/subsystems/35",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_036_Frame_members_106"
+    },
+    {
+      "path": "/subsystems/36",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_037_linkset"
+    },
+    {
+      "path": "/subsystems/36/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_037_linkset.part_P_032_outer_support_arms_18e9fe4f"
+    },
+    {
+      "path": "/subsystems/36/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_037_linkset.part_P_033_inner_lifting_arms_3fce408b"
+    },
+    {
+      "path": "/subsystems/36/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_037_linkset.part_P_034_inner_support_arms_87a11540"
+    },
+    {
+      "path": "/subsystems/36/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_037_linkset.part_P_035_Pivot_extensions_06139d56"
+    },
+    {
+      "path": "/subsystems/36/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_037_linkset.part_P_036_pivot_pins_382e0201"
+    },
+    {
+      "path": "/subsystems/36/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_037_linkset.part_P_037_hydraulic_motor_2ce8b238"
+    },
+    {
+      "path": "/subsystems/37",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_038_lift_arm_assemblies"
+    },
+    {
+      "path": "/subsystems/38",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_039_steering_wheels_104"
+    },
+    {
+      "path": "/subsystems/39",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_040_linkset_210"
+    },
+    {
+      "path": "/subsystems/39/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_linkset_210.part_P_032_outer_support_arms_cfd66d79"
+    },
+    {
+      "path": "/subsystems/39/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_linkset_210.part_P_033_inner_lifting_arms_8f5271fb"
+    },
+    {
+      "path": "/subsystems/39/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_linkset_210.part_P_034_inner_support_arms_7ed6b5d4"
+    },
+    {
+      "path": "/subsystems/39/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_linkset_210.part_P_035_Pivot_extensions_b2afe934"
+    },
+    {
+      "path": "/subsystems/39/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_040_linkset_210.part_P_036_pivot_pins_878ba110"
+    },
+    {
+      "path": "/subsystems/40",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_041_outer_lift_support_frame"
+    },
+    {
+      "path": "/subsystems/41",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_042_inner_lifting_frame"
+    },
+    {
+      "path": "/subsystems/41/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_042_inner_lifting_frame.part_P_032_outer_support_arms_34982dd2"
+    },
+    {
+      "path": "/subsystems/41/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_042_inner_lifting_frame.part_P_033_inner_lifting_arms_5a303676"
+    },
+    {
+      "path": "/subsystems/41/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_042_inner_lifting_frame.part_P_034_inner_support_arms_92d8183d"
+    },
+    {
+      "path": "/subsystems/41/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_042_inner_lifting_frame.part_P_035_Pivot_extensions_71aad634"
+    },
+    {
+      "path": "/subsystems/41/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_042_inner_lifting_frame.part_P_036_pivot_pins_cd367cb3"
+    },
+    {
+      "path": "/subsystems/42",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_043_Pivot_extensions"
+    },
+    {
+      "path": "/subsystems/43",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_044_linksets_210"
+    },
+    {
+      "path": "/subsystems/44",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_045_frames"
+    },
+    {
+      "path": "/subsystems/45",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_046_hydraulic_motor"
+    },
+    {
+      "path": "/subsystems/46",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_047_main_lift_cylinder_400"
+    },
+    {
+      "path": "/subsystems/46/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_047_main_lift_cylinder_400.part_P_038_pivotable_locking_collar_fca6a596"
+    },
+    {
+      "path": "/subsystems/46/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_047_main_lift_cylinder_400.part_P_039_pivotable_locking_collar_410_d7babafe"
+    },
+    {
+      "path": "/subsystems/46/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_047_main_lift_cylinder_400.part_P_040_locking_collar_9c100053"
+    },
+    {
+      "path": "/subsystems/46/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_047_main_lift_cylinder_400.part_P_041_cylinder_mount_9f655ec3"
+    },
+    {
+      "path": "/subsystems/46/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_047_main_lift_cylinder_400.part_P_043_ring_seat_337f4a62"
+    },
+    {
+      "path": "/subsystems/46/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_047_main_lift_cylinder_400.part_P_044_ring_seat_412_8dd55531"
+    },
+    {
+      "path": "/subsystems/46/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_047_main_lift_cylinder_400.part_P_045_pivot_mount_815a96f5"
+    },
+    {
+      "path": "/subsystems/46/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_047_main_lift_cylinder_400.part_P_046_pivot_mount_420_79179180"
+    },
+    {
+      "path": "/subsystems/47",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_048_lift_10"
+    },
+    {
+      "path": "/subsystems/48",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_049_main_cylinder_400"
+    },
+    {
+      "path": "/subsystems/48/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_049_main_cylinder_400.part_P_045_pivot_mount_4ecbe20b"
+    },
+    {
+      "path": "/subsystems/48/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_049_main_cylinder_400.part_P_046_pivot_mount_420_631ceb4d"
+    },
+    {
+      "path": "/subsystems/48/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_049_main_cylinder_400.part_P_043_ring_seat_58270b68"
+    },
+    {
+      "path": "/subsystems/49",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_050_traditional_main_lift_cylinder"
+    },
+    {
+      "path": "/subsystems/50",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_051_scissor_lift_frame"
+    },
+    {
+      "path": "/subsystems/51",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_052_traditional_linkset_assembly"
+    },
+    {
+      "path": "/subsystems/52",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_053_steering_system_300"
+    },
+    {
+      "path": "/subsystems/52/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_053_steering_system_300.part_P_048_cylinder_barrel_5f8c31f1"
+    },
+    {
+      "path": "/subsystems/52/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_053_steering_system_300.part_P_049_pivotable_collar_3d5fb4d0"
+    },
+    {
+      "path": "/subsystems/52/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_053_steering_system_300.part_P_050_pivot_mounts_ac63cb15"
+    },
+    {
+      "path": "/subsystems/52/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_053_steering_system_300.part_P_051_steering_rod_7ae58ced"
+    },
+    {
+      "path": "/subsystems/53",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_054_side_panels"
+    },
+    {
+      "path": "/subsystems/53/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_054_side_panels.part_P_060_steering_cylinder_d2afbf97"
+    },
+    {
+      "path": "/subsystems/54",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_055_steering_cylinder"
+    },
+    {
+      "path": "/subsystems/55",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_056_steering_chassis_frame"
+    },
+    {
+      "path": "/subsystems/55/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_056_steering_chassis_frame.part_P_056_extension_connectors_ad40a2ca"
+    },
+    {
+      "path": "/subsystems/55/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_056_steering_chassis_frame.part_P_052_extension_connector_7f82f35b"
+    },
+    {
+      "path": "/subsystems/55/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_056_steering_chassis_frame.part_P_060_steering_cylinder_7fccea61"
+    },
+    {
+      "path": "/subsystems/55/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_056_steering_chassis_frame.part_P_061_extending_slots"
+    },
+    {
+      "path": "/subsystems/55/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_056_steering_chassis_frame.part_P_062_rectangular_rail_c1da8516"
+    },
+    {
+      "path": "/subsystems/56",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_057_steering_chassis_frame_320"
+    },
+    {
+      "path": "/subsystems/56/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_057_steering_chassis_frame_320.part_P_056_extension_connectors_a6b17d00"
+    },
+    {
+      "path": "/subsystems/56/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_057_steering_chassis_frame_320.part_P_059_clearance_slot_bdaa9c5c"
+    },
+    {
+      "path": "/subsystems/56/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_057_steering_chassis_frame_320.part_P_052_extension_connector_519994f7"
+    },
+    {
+      "path": "/subsystems/56/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_057_steering_chassis_frame_320.part_P_060_steering_cylinder_a29af2b7"
+    },
+    {
+      "path": "/subsystems/56/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_057_steering_chassis_frame_320.part_P_061_extending_slots_cfb03098"
+    },
+    {
+      "path": "/subsystems/56/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_057_steering_chassis_frame_320.part_P_062_rectangular_rail_803b41af"
+    },
+    {
+      "path": "/subsystems/57",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_058_safety_mechanism_500"
+    },
+    {
+      "path": "/subsystems/58",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_059_helical_drive_mechanism"
+    },
+    {
+      "path": "/subsystems/58/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_059_helical_drive_mechanism.part_P_019_safety_mechanism_da0db604"
+    },
+    {
+      "path": "/subsystems/58/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_059_helical_drive_mechanism.part_P_066_cast_female_helical_screw_8ebb5cb3"
+    },
+    {
+      "path": "/subsystems/58/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_059_helical_drive_mechanism.part_P_067_drive_rod_8425b74a"
+    },
+    {
+      "path": "/subsystems/58/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_059_helical_drive_mechanism.part_P_068_thrust_bearings"
+    },
+    {
+      "path": "/subsystems/58/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_059_helical_drive_mechanism.part_P_069_male_helical_screw_portion_b29e20c2"
+    },
+    {
+      "path": "/subsystems/58/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_059_helical_drive_mechanism.part_P_070_guard_drive_member_fcdb1c48"
+    },
+    {
+      "path": "/subsystems/58/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_059_helical_drive_mechanism.part_P_071_guard_drive_bar_a45072aa"
+    },
+    {
+      "path": "/subsystems/58/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_059_helical_drive_mechanism.part_P_072_driven_bars_94e246e6"
+    },
+    {
+      "path": "/subsystems/58/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_059_helical_drive_mechanism.part_P_073_lower_rack_5daeaa44"
+    },
+    {
+      "path": "/subsystems/58/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_059_helical_drive_mechanism.part_P_074_driving_member_9000e654"
+    },
+    {
+      "path": "/subsystems/59",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_060_drive_mechanism"
+    },
+    {
+      "path": "/subsystems/59/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_068_thrust_bearings_e3cee8a8"
+    },
+    {
+      "path": "/subsystems/59/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_069_male_helical_screw_portion_533aab2a"
+    },
+    {
+      "path": "/subsystems/59/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_070_guard_drive_member_21a25f72"
+    },
+    {
+      "path": "/subsystems/59/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_071_guard_drive_bar_368a4bef"
+    },
+    {
+      "path": "/subsystems/59/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_067_drive_rod_f4fdeaf5"
+    },
+    {
+      "path": "/subsystems/59/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_072_driven_bars_e0135c22"
+    },
+    {
+      "path": "/subsystems/59/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_073_lower_rack_4277bf81"
+    },
+    {
+      "path": "/subsystems/59/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_074_driving_member_0c5a3f41"
+    },
+    {
+      "path": "/subsystems/59/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_075_slider_7bfc453c"
+    },
+    {
+      "path": "/subsystems/59/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_076_slider_650"
+    },
+    {
+      "path": "/subsystems/59/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_077_upper_rack_5554f33e"
+    },
+    {
+      "path": "/subsystems/59/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_096_elongate_guard_drive_bar_cff2f4cb"
+    },
+    {
+      "path": "/subsystems/59/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_097_follower_62869f40"
+    },
+    {
+      "path": "/subsystems/60",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_061_automatic_safety_guard"
+    },
+    {
+      "path": "/subsystems/61",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_062_safety_guard"
+    },
+    {
+      "path": "/subsystems/62",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system"
+    },
+    {
+      "path": "/subsystems/62/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_071_guard_drive_bar_21470d4d"
+    },
+    {
+      "path": "/subsystems/62/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_072_driven_bars_8b67124b"
+    },
+    {
+      "path": "/subsystems/62/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_073_lower_rack_629a2b17"
+    },
+    {
+      "path": "/subsystems/62/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_098_reciprocating_driver"
+    },
+    {
+      "path": "/subsystems/62/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_099_driver"
+    },
+    {
+      "path": "/subsystems/62/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_077_upper_rack_d3276125"
+    },
+    {
+      "path": "/subsystems/62/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_100_fixed_pinion_gear"
+    },
+    {
+      "path": "/subsystems/62/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_101_pinion_gear"
+    },
+    {
+      "path": "/subsystems/62/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_102_L_shaped_slider"
+    },
+    {
+      "path": "/subsystems/62/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_075_slider_1669321a"
+    },
+    {
+      "path": "/subsystems/62/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_103_bore"
+    },
+    {
+      "path": "/subsystems/62/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_104_shaped__channel_rail"
+    },
+    {
+      "path": "/subsystems/62/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_105_channel_rail"
+    },
+    {
+      "path": "/subsystems/62/parts/13",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_064_rail"
+    },
+    {
+      "path": "/subsystems/63",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_064_driving_member"
+    },
+    {
+      "path": "/subsystems/64",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_065_driven_bars_640"
+    },
+    {
+      "path": "/subsystems/65",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_066_guard_drive_bar"
+    },
+    {
+      "path": "/subsystems/66",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_067_guard_drive_bar_602"
+    },
+    {
+      "path": "/subsystems/67",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_068_platform_P"
+    },
+    {
+      "path": "/subsystems/67/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_068_platform_P.part_P_082_driven_bar_81ed20ee"
+    },
+    {
+      "path": "/subsystems/67/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_068_platform_P.part_P_075_slider_66adb82a"
+    },
+    {
+      "path": "/subsystems/68",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_069_follower_wheels"
+    },
+    {
+      "path": "/subsystems/69",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_070_pivot_extensions"
+    },
+    {
+      "path": "/subsystems/70",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_071_assembly"
+    },
+    {
+      "path": "/subsystems/71",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_072_hydraulic_actuator"
+    },
+    {
+      "path": "/subsystems/71/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_072_hydraulic_actuator.part_P_087_hydraulic_cylinder_d06ca7bf"
+    },
+    {
+      "path": "/subsystems/71/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_072_hydraulic_actuator.part_P_088_cylinder_body_ac9d642b"
+    },
+    {
+      "path": "/subsystems/71/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_072_hydraulic_actuator.part_P_089_piston_rod_c1a765fe"
+    },
+    {
+      "path": "/subsystems/72",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_073_chassis_body"
+    },
+    {
+      "path": "/subsystems/73",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_074_pivotable_locking_collar"
+    },
+    {
+      "path": "/subsystems/74",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_075_slidable_extension_connector"
+    },
+    {
+      "path": "/subsystems/75",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_076_extension_connector"
+    },
+    {
+      "path": "/subsystems/76",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_077_steering_tie_link"
+    },
+    {
+      "path": "/subsystems/77",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_078_steering_arm"
+    },
+    {
+      "path": "/subsystems/78",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_079_rail_system"
+    },
+    {
+      "path": "/subsystems/78/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_052_extension_connector_3c42ff63"
+    },
+    {
+      "path": "/subsystems/78/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_090_elongate_slots_1664b8bc"
+    },
+    {
+      "path": "/subsystems/78/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_062_rectangular_rail_d043baba"
+    },
+    {
+      "path": "/subsystems/78/parts/3",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_091_T_shaped_slider_80896ee6"
+    },
+    {
+      "path": "/subsystems/78/parts/4",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_092_L_shape_rail_bars"
+    },
+    {
+      "path": "/subsystems/78/parts/5",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_093_rail_bars"
+    },
+    {
+      "path": "/subsystems/78/parts/6",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_094_female_helical_screw_ebfcff18"
+    },
+    {
+      "path": "/subsystems/78/parts/7",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_017_helical_screw_6bf2fd7e"
+    },
+    {
+      "path": "/subsystems/78/parts/8",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_095_safety_guard_drive_rod_6183604b"
+    },
+    {
+      "path": "/subsystems/78/parts/9",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_081_safety_guard_52e90c15"
+    },
+    {
+      "path": "/subsystems/78/parts/10",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_096_elongate_guard_drive_bar_4759ffe6"
+    },
+    {
+      "path": "/subsystems/78/parts/11",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_071_guard_drive_bar_dc065587"
+    },
+    {
+      "path": "/subsystems/78/parts/12",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_097_follower_f769cdc3"
+    },
+    {
+      "path": "/subsystems/79",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_080_rectangular_rail"
+    },
+    {
+      "path": "/subsystems/80",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_081_T_shaped_slider"
+    },
+    {
+      "path": "/subsystems/81",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_082_L_shape_rail_bars"
+    },
+    {
+      "path": "/subsystems/82",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_083_female_helical_screw"
+    },
+    {
+      "path": "/subsystems/83",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_084_fixed_pinion_gear"
+    },
+    {
+      "path": "/subsystems/84",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SS_085_upper_rack"
+    },
+    {
+      "path": "/values/0",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_001_height"
+    },
+    {
+      "path": "/values/1",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_002_tilt_angle"
+    },
+    {
+      "path": "/values/2",
+      "kind": "AttributeUsage (unspecified value)",
+      "symbol": "Value_VAL_003_reduced_stow_height"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_001_lifting"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_002_lifting_personnel"
+    },
+    {
+      "path": "/behaviour/actions/2",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_003_raising"
+    },
+    {
+      "path": "/behaviour/actions/3",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_004_raising_and_lowering"
+    },
+    {
+      "path": "/behaviour/actions/4",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_005_increase_the_work_locale_versatility"
+    },
+    {
+      "path": "/behaviour/actions/5",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_006_reduce_physical_strain"
+    },
+    {
+      "path": "/behaviour/actions/6",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_007_increase_the_stability_of_the_lift_during_lif"
+    },
+    {
+      "path": "/behaviour/actions/7",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_008_lifting_operations"
+    },
+    {
+      "path": "/behaviour/actions/8",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_009_installation"
+    },
+    {
+      "path": "/behaviour/actions/9",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_010_reduces"
+    },
+    {
+      "path": "/behaviour/actions/10",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_011_reduces_the_overall_height"
+    },
+    {
+      "path": "/behaviour/actions/11",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_012_decrease_physical_expenditure_on_the_user"
+    },
+    {
+      "path": "/behaviour/actions/12",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_013_increase_stable_steering"
+    },
+    {
+      "path": "/behaviour/actions/13",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_014_operatively_disposed"
+    },
+    {
+      "path": "/behaviour/actions/14",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_015_steer"
+    },
+    {
+      "path": "/behaviour/actions/15",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_016_pivotable"
+    },
+    {
+      "path": "/behaviour/actions/16",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_017_operative_connection"
+    },
+    {
+      "path": "/behaviour/actions/17",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_018_operation"
+    },
+    {
+      "path": "/behaviour/actions/18",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_019_pivot"
+    },
+    {
+      "path": "/behaviour/actions/19",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_020_raise"
+    },
+    {
+      "path": "/behaviour/actions/20",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_021_raise_or_lower"
+    },
+    {
+      "path": "/behaviour/actions/21",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_022_raise_or_lower_structure"
+    },
+    {
+      "path": "/behaviour/actions/22",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_023_raising_or_lowering"
+    },
+    {
+      "path": "/behaviour/actions/23",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_024_double_acting"
+    },
+    {
+      "path": "/behaviour/actions/24",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_025_reciprocation"
+    },
+    {
+      "path": "/behaviour/actions/25",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_026_working_operation"
+    },
+    {
+      "path": "/behaviour/actions/26",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_027_functions"
+    },
+    {
+      "path": "/behaviour/actions/27",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_028_automatically"
+    },
+    {
+      "path": "/behaviour/actions/28",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_029_automatically_deploys"
+    },
+    {
+      "path": "/behaviour/actions/29",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_030_automatically_deploys_a_guard"
+    },
+    {
+      "path": "/behaviour/actions/30",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_031_stabilize"
+    },
+    {
+      "path": "/behaviour/actions/31",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_032_reciprocating"
+    },
+    {
+      "path": "/behaviour/actions/32",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_033_reciprocate"
+    },
+    {
+      "path": "/behaviour/actions/33",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_034_transfer_motive_forces"
+    },
+    {
+      "path": "/behaviour/actions/34",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_035_rotate"
+    },
+    {
+      "path": "/behaviour/actions/35",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_036_selectively_raising"
+    },
+    {
+      "path": "/behaviour/actions/36",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_037_selectively_raising_and_lowering"
+    },
+    {
+      "path": "/behaviour/actions/37",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_038_transfer_steering_input"
+    },
+    {
+      "path": "/behaviour/actions/38",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_039_counterbalance_bending_forces"
+    },
+    {
+      "path": "/behaviour/actions/39",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_040_selective_rotation"
+    },
+    {
+      "path": "/behaviour/actions/40",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_041_selective_deployment"
+    },
+    {
+      "path": "/behaviour/actions/41",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_042_driving"
+    },
+    {
+      "path": "/relationships/0",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[0]"
+    },
+    {
+      "path": "/relationships/0",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_002_body"
+    },
+    {
+      "path": "/relationships/1",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[1]"
+    },
+    {
+      "path": "/relationships/1",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_003_wheels"
+    },
+    {
+      "path": "/relationships/2",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[2]"
+    },
+    {
+      "path": "/relationships/2",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_004_steering_wheels"
+    },
+    {
+      "path": "/relationships/3",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[3]"
+    },
+    {
+      "path": "/relationships/3",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_008_deployable_safety_guard_mechanism"
+    },
+    {
+      "path": "/relationships/4",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[4]"
+    },
+    {
+      "path": "/relationships/4",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_009_safety_guard_mechanism"
+    },
+    {
+      "path": "/relationships/5",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[5]"
+    },
+    {
+      "path": "/relationships/5",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_006_linkset_assembly"
+    },
+    {
+      "path": "/relationships/6",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[6]"
+    },
+    {
+      "path": "/relationships/6",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_012_pair_of_wheels"
+    },
+    {
+      "path": "/relationships/7",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[7]"
+    },
+    {
+      "path": "/relationships/7",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_013_deployable_pothole_protection_safety_guard"
+    },
+    {
+      "path": "/relationships/8",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[8]"
+    },
+    {
+      "path": "/relationships/8",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_014_pothole_protection_safety_guard"
+    },
+    {
+      "path": "/relationships/9",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[9]"
+    },
+    {
+      "path": "/relationships/9",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_compact_scissors_lift.part_P_011_linksets"
+    },
+    {
+      "path": "/relationships/10",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[10]"
+    },
+    {
+      "path": "/relationships/10",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_compact_scissors_lift.part_P_015_main_lift_cylinder"
+    },
+    {
+      "path": "/relationships/11",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[11]"
+    },
+    {
+      "path": "/relationships/11",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_compact_scissors_lift.part_P_017_helical_screw_2ade33ee"
+    },
+    {
+      "path": "/relationships/12",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[12]"
+    },
+    {
+      "path": "/relationships/12",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_017_compact_scissors_lift.part_P_019_safety_mechanism_c2fcaad4"
+    },
+    {
+      "path": "/relationships/13",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[13]"
+    },
+    {
+      "path": "/relationships/13",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_compact_scissor_lift_10.part_P_001_chassis"
+    },
+    {
+      "path": "/relationships/14",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[14]"
+    },
+    {
+      "path": "/relationships/14",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_compact_scissor_lift_10.part_P_020_chassis_A"
+    },
+    {
+      "path": "/relationships/15",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[15]"
+    },
+    {
+      "path": "/relationships/15",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_compact_scissor_lift_10.part_P_006_linkset_assembly_e73d16a7"
+    },
+    {
+      "path": "/relationships/16",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[16]"
+    },
+    {
+      "path": "/relationships/16",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_compact_scissor_lift_10.part_P_021_linkset_assembly_B"
+    },
+    {
+      "path": "/relationships/17",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[17]"
+    },
+    {
+      "path": "/relationships/17",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_compact_scissor_lift_10.part_P_022_lift_platform"
+    },
+    {
+      "path": "/relationships/18",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[18]"
+    },
+    {
+      "path": "/relationships/18",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_compact_scissor_lift_10.part_P_023_lift_platform_C"
+    },
+    {
+      "path": "/relationships/19",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[19]"
+    },
+    {
+      "path": "/relationships/19",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_compact_scissor_lift_10.part_P_025_linkset_assembly_200_c99880ca"
+    },
+    {
+      "path": "/relationships/20",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[20]"
+    },
+    {
+      "path": "/relationships/20",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_compact_scissor_lift_10.part_P_026_lift_platform_P"
+    },
+    {
+      "path": "/relationships/21",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[21]"
+    },
+    {
+      "path": "/relationships/21",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_025_linkset_assembly_200"
+    },
+    {
+      "path": "/relationships/22",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[22]"
+    },
+    {
+      "path": "/relationships/22",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_chassis_100.part_P_006_linkset_assembly_88290e38"
+    },
+    {
+      "path": "/relationships/23",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[23]"
+    },
+    {
+      "path": "/relationships/23",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_chassis_100.part_P_025_linkset_assembly_200_f5058fc3"
+    },
+    {
+      "path": "/relationships/24",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[24]"
+    },
+    {
+      "path": "/relationships/24",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_chassis_100.part_P_027_paneling"
+    },
+    {
+      "path": "/relationships/25",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[25]"
+    },
+    {
+      "path": "/relationships/25",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_chassis_100.part_P_028_fixed_axis_wheels"
+    },
+    {
+      "path": "/relationships/26",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[26]"
+    },
+    {
+      "path": "/relationships/26",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_chassis_100.part_P_004_steering_wheels_80e05e98"
+    },
+    {
+      "path": "/relationships/27",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[27]"
+    },
+    {
+      "path": "/relationships/27",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_chassis_100.part_P_029_Frame_members"
+    },
+    {
+      "path": "/relationships/28",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[28]"
+    },
+    {
+      "path": "/relationships/28",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_chassis_100.part_P_030_outer_lift_support_frame"
+    },
+    {
+      "path": "/relationships/29",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[29]"
+    },
+    {
+      "path": "/relationships/29",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_031_chassis_100.part_P_031_inner_lifting_frame_2ea97749"
+    },
+    {
+      "path": "/relationships/30",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[30]"
+    },
+    {
+      "path": "/relationships/30",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_042_inner_lifting_frame.part_P_032_outer_support_arms_34982dd2"
+    },
+    {
+      "path": "/relationships/31",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[31]"
+    },
+    {
+      "path": "/relationships/31",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_042_inner_lifting_frame.part_P_033_inner_lifting_arms_5a303676"
+    },
+    {
+      "path": "/relationships/32",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[32]"
+    },
+    {
+      "path": "/relationships/32",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_042_inner_lifting_frame.part_P_034_inner_support_arms_92d8183d"
+    },
+    {
+      "path": "/relationships/33",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[33]"
+    },
+    {
+      "path": "/relationships/33",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_042_inner_lifting_frame.part_P_035_Pivot_extensions_71aad634"
+    },
+    {
+      "path": "/relationships/34",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[34]"
+    },
+    {
+      "path": "/relationships/34",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_042_inner_lifting_frame.part_P_036_pivot_pins_cd367cb3"
+    },
+    {
+      "path": "/relationships/35",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[35]"
+    },
+    {
+      "path": "/relationships/35",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_037_linkset.part_P_032_outer_support_arms_18e9fe4f"
+    },
+    {
+      "path": "/relationships/36",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[36]"
+    },
+    {
+      "path": "/relationships/36",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_037_linkset.part_P_033_inner_lifting_arms_3fce408b"
+    },
+    {
+      "path": "/relationships/37",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[37]"
+    },
+    {
+      "path": "/relationships/37",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_037_linkset.part_P_034_inner_support_arms_87a11540"
+    },
+    {
+      "path": "/relationships/38",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[38]"
+    },
+    {
+      "path": "/relationships/38",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_037_linkset.part_P_035_Pivot_extensions_06139d56"
+    },
+    {
+      "path": "/relationships/39",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[39]"
+    },
+    {
+      "path": "/relationships/39",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_037_linkset.part_P_036_pivot_pins_382e0201"
+    },
+    {
+      "path": "/relationships/40",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[40]"
+    },
+    {
+      "path": "/relationships/40",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_037_linkset.part_P_037_hydraulic_motor_2ce8b238"
+    },
+    {
+      "path": "/relationships/41",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[41]"
+    },
+    {
+      "path": "/relationships/41",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_linkset_210.part_P_032_outer_support_arms_cfd66d79"
+    },
+    {
+      "path": "/relationships/42",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[42]"
+    },
+    {
+      "path": "/relationships/42",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_linkset_210.part_P_033_inner_lifting_arms_8f5271fb"
+    },
+    {
+      "path": "/relationships/43",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[43]"
+    },
+    {
+      "path": "/relationships/43",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_linkset_210.part_P_034_inner_support_arms_7ed6b5d4"
+    },
+    {
+      "path": "/relationships/44",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[44]"
+    },
+    {
+      "path": "/relationships/44",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_linkset_210.part_P_035_Pivot_extensions_b2afe934"
+    },
+    {
+      "path": "/relationships/45",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[45]"
+    },
+    {
+      "path": "/relationships/45",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_040_linkset_210.part_P_036_pivot_pins_878ba110"
+    },
+    {
+      "path": "/relationships/46",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[46]"
+    },
+    {
+      "path": "/relationships/46",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_032_outer_support_arms"
+    },
+    {
+      "path": "/relationships/47",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[47]"
+    },
+    {
+      "path": "/relationships/47",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_033_inner_lifting_arms"
+    },
+    {
+      "path": "/relationships/48",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[48]"
+    },
+    {
+      "path": "/relationships/48",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_034_inner_support_arms"
+    },
+    {
+      "path": "/relationships/49",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[49]"
+    },
+    {
+      "path": "/relationships/49",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_035_Pivot_extensions"
+    },
+    {
+      "path": "/relationships/50",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[50]"
+    },
+    {
+      "path": "/relationships/50",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_036_pivot_pins"
+    },
+    {
+      "path": "/relationships/51",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[51]"
+    },
+    {
+      "path": "/relationships/51",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_037_hydraulic_motor"
+    },
+    {
+      "path": "/relationships/52",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[52]"
+    },
+    {
+      "path": "/relationships/52",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_034_inner_support_arms_461a55ca"
+    },
+    {
+      "path": "/relationships/53",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[53]"
+    },
+    {
+      "path": "/relationships/53",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_035_Pivot_extensions_f2ac2cb0"
+    },
+    {
+      "path": "/relationships/54",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[54]"
+    },
+    {
+      "path": "/relationships/54",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_036_pivot_pins_428aee84"
+    },
+    {
+      "path": "/relationships/55",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[55]"
+    },
+    {
+      "path": "/relationships/55",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_037_hydraulic_motor_4092ff70"
+    },
+    {
+      "path": "/relationships/56",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[56]"
+    },
+    {
+      "path": "/relationships/56",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_main_lift_cylinder.part_P_038_pivotable_locking_collar_a9946de7"
+    },
+    {
+      "path": "/relationships/57",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[57]"
+    },
+    {
+      "path": "/relationships/57",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_main_lift_cylinder.part_P_039_pivotable_locking_collar_410"
+    },
+    {
+      "path": "/relationships/58",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[58]"
+    },
+    {
+      "path": "/relationships/58",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_main_lift_cylinder.part_P_040_locking_collar"
+    },
+    {
+      "path": "/relationships/59",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[59]"
+    },
+    {
+      "path": "/relationships/59",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_main_lift_cylinder.part_P_041_cylinder_mount"
+    },
+    {
+      "path": "/relationships/60",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[60]"
+    },
+    {
+      "path": "/relationships/60",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_main_lift_cylinder.part_P_043_ring_seat"
+    },
+    {
+      "path": "/relationships/61",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[61]"
+    },
+    {
+      "path": "/relationships/61",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_main_lift_cylinder.part_P_044_ring_seat_412"
+    },
+    {
+      "path": "/relationships/62",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[62]"
+    },
+    {
+      "path": "/relationships/62",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_main_lift_cylinder.part_P_045_pivot_mount_2028aed8"
+    },
+    {
+      "path": "/relationships/63",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[63]"
+    },
+    {
+      "path": "/relationships/63",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_018_main_lift_cylinder.part_P_046_pivot_mount_420_36fecf34"
+    },
+    {
+      "path": "/relationships/64",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[64]"
+    },
+    {
+      "path": "/relationships/64",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_047_main_lift_cylinder_400.part_P_038_pivotable_locking_collar_fca6a596"
+    },
+    {
+      "path": "/relationships/65",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[65]"
+    },
+    {
+      "path": "/relationships/65",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_047_main_lift_cylinder_400.part_P_039_pivotable_locking_collar_410_d7babafe"
+    },
+    {
+      "path": "/relationships/66",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[66]"
+    },
+    {
+      "path": "/relationships/66",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_047_main_lift_cylinder_400.part_P_040_locking_collar_9c100053"
+    },
+    {
+      "path": "/relationships/67",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[67]"
+    },
+    {
+      "path": "/relationships/67",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_047_main_lift_cylinder_400.part_P_041_cylinder_mount_9f655ec3"
+    },
+    {
+      "path": "/relationships/68",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[68]"
+    },
+    {
+      "path": "/relationships/68",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_047_main_lift_cylinder_400.part_P_043_ring_seat_337f4a62"
+    },
+    {
+      "path": "/relationships/69",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[69]"
+    },
+    {
+      "path": "/relationships/69",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_047_main_lift_cylinder_400.part_P_044_ring_seat_412_8dd55531"
+    },
+    {
+      "path": "/relationships/70",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[70]"
+    },
+    {
+      "path": "/relationships/70",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_047_main_lift_cylinder_400.part_P_045_pivot_mount_815a96f5"
+    },
+    {
+      "path": "/relationships/71",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[71]"
+    },
+    {
+      "path": "/relationships/71",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_047_main_lift_cylinder_400.part_P_046_pivot_mount_420_79179180"
+    },
+    {
+      "path": "/relationships/72",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[72]"
+    },
+    {
+      "path": "/relationships/72",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_049_main_cylinder_400.part_P_045_pivot_mount_4ecbe20b"
+    },
+    {
+      "path": "/relationships/73",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[73]"
+    },
+    {
+      "path": "/relationships/73",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_049_main_cylinder_400.part_P_046_pivot_mount_420_631ceb4d"
+    },
+    {
+      "path": "/relationships/74",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[74]"
+    },
+    {
+      "path": "/relationships/74",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_049_main_cylinder_400.part_P_043_ring_seat_58270b68"
+    },
+    {
+      "path": "/relationships/75",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[75]"
+    },
+    {
+      "path": "/relationships/75",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_045_pivot_mount"
+    },
+    {
+      "path": "/relationships/76",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[76]"
+    },
+    {
+      "path": "/relationships/76",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_046_pivot_mount_420"
+    },
+    {
+      "path": "/relationships/77",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[77]"
+    },
+    {
+      "path": "/relationships/77",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_048_cylinder_barrel"
+    },
+    {
+      "path": "/relationships/78",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[78]"
+    },
+    {
+      "path": "/relationships/78",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_049_pivotable_collar"
+    },
+    {
+      "path": "/relationships/79",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[79]"
+    },
+    {
+      "path": "/relationships/79",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_050_pivot_mounts"
+    },
+    {
+      "path": "/relationships/80",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[80]"
+    },
+    {
+      "path": "/relationships/80",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_048_cylinder_barrel_4d22757d"
+    },
+    {
+      "path": "/relationships/81",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[81]"
+    },
+    {
+      "path": "/relationships/81",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_049_pivotable_collar_5ad0faf7"
+    },
+    {
+      "path": "/relationships/82",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[82]"
+    },
+    {
+      "path": "/relationships/82",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_050_pivot_mounts_3ad28866"
+    },
+    {
+      "path": "/relationships/83",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[83]"
+    },
+    {
+      "path": "/relationships/83",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_048_cylinder_barrel_ae9a2745"
+    },
+    {
+      "path": "/relationships/84",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[84]"
+    },
+    {
+      "path": "/relationships/84",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_049_pivotable_collar_db625620"
+    },
+    {
+      "path": "/relationships/85",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[85]"
+    },
+    {
+      "path": "/relationships/85",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_050_pivot_mounts_2f5e9f8f"
+    },
+    {
+      "path": "/relationships/86",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[86]"
+    },
+    {
+      "path": "/relationships/86",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_051_steering_rod"
+    },
+    {
+      "path": "/relationships/87",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[87]"
+    },
+    {
+      "path": "/relationships/87",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_053_steering_system_300.part_P_048_cylinder_barrel_5f8c31f1"
+    },
+    {
+      "path": "/relationships/88",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[88]"
+    },
+    {
+      "path": "/relationships/88",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_053_steering_system_300.part_P_049_pivotable_collar_3d5fb4d0"
+    },
+    {
+      "path": "/relationships/89",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[89]"
+    },
+    {
+      "path": "/relationships/89",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_053_steering_system_300.part_P_050_pivot_mounts_ac63cb15"
+    },
+    {
+      "path": "/relationships/90",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[90]"
+    },
+    {
+      "path": "/relationships/90",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_053_steering_system_300.part_P_051_steering_rod_7ae58ced"
+    },
+    {
+      "path": "/relationships/91",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[91]"
+    },
+    {
+      "path": "/relationships/91",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_054_side_panels.part_P_060_steering_cylinder_d2afbf97"
+    },
+    {
+      "path": "/relationships/92",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[92]"
+    },
+    {
+      "path": "/relationships/92",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_060_steering_cylinder"
+    },
+    {
+      "path": "/relationships/93",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[93]"
+    },
+    {
+      "path": "/relationships/93",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_056_steering_chassis_frame.part_P_056_extension_connectors_ad40a2ca"
+    },
+    {
+      "path": "/relationships/94",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[94]"
+    },
+    {
+      "path": "/relationships/94",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_056_steering_chassis_frame.part_P_052_extension_connector_7f82f35b"
+    },
+    {
+      "path": "/relationships/95",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[95]"
+    },
+    {
+      "path": "/relationships/95",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_056_steering_chassis_frame.part_P_060_steering_cylinder_7fccea61"
+    },
+    {
+      "path": "/relationships/96",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[96]"
+    },
+    {
+      "path": "/relationships/96",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_056_steering_chassis_frame.part_P_061_extending_slots"
+    },
+    {
+      "path": "/relationships/97",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[97]"
+    },
+    {
+      "path": "/relationships/97",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_056_steering_chassis_frame.part_P_062_rectangular_rail_c1da8516"
+    },
+    {
+      "path": "/relationships/98",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[98]"
+    },
+    {
+      "path": "/relationships/98",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_057_steering_chassis_frame_320.part_P_056_extension_connectors_a6b17d00"
+    },
+    {
+      "path": "/relationships/99",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[99]"
+    },
+    {
+      "path": "/relationships/99",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_057_steering_chassis_frame_320.part_P_059_clearance_slot_bdaa9c5c"
+    },
+    {
+      "path": "/relationships/100",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[100]"
+    },
+    {
+      "path": "/relationships/100",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_057_steering_chassis_frame_320.part_P_052_extension_connector_519994f7"
+    },
+    {
+      "path": "/relationships/101",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[101]"
+    },
+    {
+      "path": "/relationships/101",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_057_steering_chassis_frame_320.part_P_060_steering_cylinder_a29af2b7"
+    },
+    {
+      "path": "/relationships/102",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[102]"
+    },
+    {
+      "path": "/relationships/102",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_057_steering_chassis_frame_320.part_P_061_extending_slots_cfb03098"
+    },
+    {
+      "path": "/relationships/103",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[103]"
+    },
+    {
+      "path": "/relationships/103",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_057_steering_chassis_frame_320.part_P_062_rectangular_rail_803b41af"
+    },
+    {
+      "path": "/relationships/104",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[104]"
+    },
+    {
+      "path": "/relationships/104",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_056_extension_connectors"
+    },
+    {
+      "path": "/relationships/105",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[105]"
+    },
+    {
+      "path": "/relationships/105",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_063_slots"
+    },
+    {
+      "path": "/relationships/106",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[106]"
+    },
+    {
+      "path": "/relationships/106",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_052_extension_connector"
+    },
+    {
+      "path": "/relationships/107",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[107]"
+    },
+    {
+      "path": "/relationships/107",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_065_side_panel"
+    },
+    {
+      "path": "/relationships/108",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[108]"
+    },
+    {
+      "path": "/relationships/108",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_059_clearance_slot"
+    },
+    {
+      "path": "/relationships/109",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[109]"
+    },
+    {
+      "path": "/relationships/109",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_057_tie_links"
+    },
+    {
+      "path": "/relationships/110",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[110]"
+    },
+    {
+      "path": "/relationships/110",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_058_steering_arms"
+    },
+    {
+      "path": "/relationships/111",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[111]"
+    },
+    {
+      "path": "/relationships/111",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_019_safety_mechanism"
+    },
+    {
+      "path": "/relationships/112",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[112]"
+    },
+    {
+      "path": "/relationships/112",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_066_cast_female_helical_screw"
+    },
+    {
+      "path": "/relationships/113",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[113]"
+    },
+    {
+      "path": "/relationships/113",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_067_drive_rod_b6eb448d"
+    },
+    {
+      "path": "/relationships/114",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[114]"
+    },
+    {
+      "path": "/relationships/114",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_compact_scissor_lift.part_P_019_safety_mechanism_046b9475"
+    },
+    {
+      "path": "/relationships/115",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[115]"
+    },
+    {
+      "path": "/relationships/115",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_compact_scissor_lift.part_P_066_cast_female_helical_screw_c24d8549"
+    },
+    {
+      "path": "/relationships/116",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[116]"
+    },
+    {
+      "path": "/relationships/116",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_010_compact_scissor_lift.part_P_067_drive_rod_34f20547"
+    },
+    {
+      "path": "/relationships/117",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[117]"
+    },
+    {
+      "path": "/relationships/117",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_compact_scissor_lift_10.part_P_019_safety_mechanism_998473d9"
+    },
+    {
+      "path": "/relationships/118",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[118]"
+    },
+    {
+      "path": "/relationships/118",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_compact_scissor_lift_10.part_P_066_cast_female_helical_screw_18988ed5"
+    },
+    {
+      "path": "/relationships/119",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[119]"
+    },
+    {
+      "path": "/relationships/119",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_026_compact_scissor_lift_10.part_P_067_drive_rod_45dd41d8"
+    },
+    {
+      "path": "/relationships/120",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[120]"
+    },
+    {
+      "path": "/relationships/120",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_059_helical_drive_mechanism.part_P_019_safety_mechanism_da0db604"
+    },
+    {
+      "path": "/relationships/121",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[121]"
+    },
+    {
+      "path": "/relationships/121",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_059_helical_drive_mechanism.part_P_066_cast_female_helical_screw_8ebb5cb3"
+    },
+    {
+      "path": "/relationships/122",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[122]"
+    },
+    {
+      "path": "/relationships/122",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_059_helical_drive_mechanism.part_P_067_drive_rod_8425b74a"
+    },
+    {
+      "path": "/relationships/123",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[123]"
+    },
+    {
+      "path": "/relationships/123",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_059_helical_drive_mechanism.part_P_068_thrust_bearings"
+    },
+    {
+      "path": "/relationships/124",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[124]"
+    },
+    {
+      "path": "/relationships/124",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_059_helical_drive_mechanism.part_P_069_male_helical_screw_portion_b29e20c2"
+    },
+    {
+      "path": "/relationships/125",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[125]"
+    },
+    {
+      "path": "/relationships/125",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_059_helical_drive_mechanism.part_P_070_guard_drive_member_fcdb1c48"
+    },
+    {
+      "path": "/relationships/126",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[126]"
+    },
+    {
+      "path": "/relationships/126",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_059_helical_drive_mechanism.part_P_071_guard_drive_bar_a45072aa"
+    },
+    {
+      "path": "/relationships/127",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[127]"
+    },
+    {
+      "path": "/relationships/127",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_059_helical_drive_mechanism.part_P_072_driven_bars_94e246e6"
+    },
+    {
+      "path": "/relationships/128",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[128]"
+    },
+    {
+      "path": "/relationships/128",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_059_helical_drive_mechanism.part_P_073_lower_rack_5daeaa44"
+    },
+    {
+      "path": "/relationships/129",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[129]"
+    },
+    {
+      "path": "/relationships/129",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_059_helical_drive_mechanism.part_P_074_driving_member_9000e654"
+    },
+    {
+      "path": "/relationships/130",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[130]"
+    },
+    {
+      "path": "/relationships/130",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_068_thrust_bearings_e3cee8a8"
+    },
+    {
+      "path": "/relationships/131",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[131]"
+    },
+    {
+      "path": "/relationships/131",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_069_male_helical_screw_portion_533aab2a"
+    },
+    {
+      "path": "/relationships/132",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[132]"
+    },
+    {
+      "path": "/relationships/132",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_070_guard_drive_member_21a25f72"
+    },
+    {
+      "path": "/relationships/133",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[133]"
+    },
+    {
+      "path": "/relationships/133",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_071_guard_drive_bar_368a4bef"
+    },
+    {
+      "path": "/relationships/134",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[134]"
+    },
+    {
+      "path": "/relationships/134",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_067_drive_rod_f4fdeaf5"
+    },
+    {
+      "path": "/relationships/135",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[135]"
+    },
+    {
+      "path": "/relationships/135",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_072_driven_bars_e0135c22"
+    },
+    {
+      "path": "/relationships/136",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[136]"
+    },
+    {
+      "path": "/relationships/136",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_073_lower_rack_4277bf81"
+    },
+    {
+      "path": "/relationships/137",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[137]"
+    },
+    {
+      "path": "/relationships/137",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_074_driving_member_0c5a3f41"
+    },
+    {
+      "path": "/relationships/138",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[138]"
+    },
+    {
+      "path": "/relationships/138",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_safety_mechanism.part_P_070_guard_drive_member_82e6f28b"
+    },
+    {
+      "path": "/relationships/139",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[139]"
+    },
+    {
+      "path": "/relationships/139",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_safety_mechanism.part_P_071_guard_drive_bar_718c9d86"
+    },
+    {
+      "path": "/relationships/140",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[140]"
+    },
+    {
+      "path": "/relationships/140",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_safety_mechanism.part_P_067_drive_rod_7bda652e"
+    },
+    {
+      "path": "/relationships/141",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[141]"
+    },
+    {
+      "path": "/relationships/141",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_safety_mechanism.part_P_072_driven_bars_4bfcca27"
+    },
+    {
+      "path": "/relationships/142",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[142]"
+    },
+    {
+      "path": "/relationships/142",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_safety_mechanism.part_P_073_lower_rack_3b966e10"
+    },
+    {
+      "path": "/relationships/143",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[143]"
+    },
+    {
+      "path": "/relationships/143",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_025_safety_mechanism.part_P_074_driving_member_df3c7a68"
+    },
+    {
+      "path": "/relationships/144",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[144]"
+    },
+    {
+      "path": "/relationships/144",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_069_male_helical_screw_portion"
+    },
+    {
+      "path": "/relationships/145",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[145]"
+    },
+    {
+      "path": "/relationships/145",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_070_guard_drive_member"
+    },
+    {
+      "path": "/relationships/146",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[146]"
+    },
+    {
+      "path": "/relationships/146",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_071_guard_drive_bar"
+    },
+    {
+      "path": "/relationships/147",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[147]"
+    },
+    {
+      "path": "/relationships/147",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_067_drive_rod"
+    },
+    {
+      "path": "/relationships/148",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[148]"
+    },
+    {
+      "path": "/relationships/148",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_072_driven_bars"
+    },
+    {
+      "path": "/relationships/149",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[149]"
+    },
+    {
+      "path": "/relationships/149",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_073_lower_rack"
+    },
+    {
+      "path": "/relationships/150",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[150]"
+    },
+    {
+      "path": "/relationships/150",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_074_driving_member"
+    },
+    {
+      "path": "/relationships/151",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[151]"
+    },
+    {
+      "path": "/relationships/151",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_075_slider_7bfc453c"
+    },
+    {
+      "path": "/relationships/152",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[152]"
+    },
+    {
+      "path": "/relationships/152",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_076_slider_650"
+    },
+    {
+      "path": "/relationships/153",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[153]"
+    },
+    {
+      "path": "/relationships/153",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_077_upper_rack_5554f33e"
+    },
+    {
+      "path": "/relationships/154",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[154]"
+    },
+    {
+      "path": "/relationships/154",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_068_platform_P.part_P_082_driven_bar_81ed20ee"
+    },
+    {
+      "path": "/relationships/155",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[155]"
+    },
+    {
+      "path": "/relationships/155",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_068_platform_P.part_P_075_slider_66adb82a"
+    },
+    {
+      "path": "/relationships/156",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[156]"
+    },
+    {
+      "path": "/relationships/156",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_078_channeled_rails"
+    },
+    {
+      "path": "/relationships/157",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[157]"
+    },
+    {
+      "path": "/relationships/157",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_079_follower_ends"
+    },
+    {
+      "path": "/relationships/158",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[158]"
+    },
+    {
+      "path": "/relationships/158",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_080_helical_slot"
+    },
+    {
+      "path": "/relationships/159",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[159]"
+    },
+    {
+      "path": "/relationships/159",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_081_safety_guard"
+    },
+    {
+      "path": "/relationships/160",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[160]"
+    },
+    {
+      "path": "/relationships/160",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_082_driven_bar"
+    },
+    {
+      "path": "/relationships/161",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[161]"
+    },
+    {
+      "path": "/relationships/161",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_075_slider"
+    },
+    {
+      "path": "/relationships/162",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[162]"
+    },
+    {
+      "path": "/relationships/162",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_078_channeled_rails_7ae65a07"
+    },
+    {
+      "path": "/relationships/163",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[163]"
+    },
+    {
+      "path": "/relationships/163",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_072_driven_bars_dbfbc83e"
+    },
+    {
+      "path": "/relationships/164",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[164]"
+    },
+    {
+      "path": "/relationships/164",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_079_follower_ends_f896ec76"
+    },
+    {
+      "path": "/relationships/165",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[165]"
+    },
+    {
+      "path": "/relationships/165",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_080_helical_slot_d53e8a28"
+    },
+    {
+      "path": "/relationships/166",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[166]"
+    },
+    {
+      "path": "/relationships/166",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_081_safety_guard_be02141d"
+    },
+    {
+      "path": "/relationships/167",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[167]"
+    },
+    {
+      "path": "/relationships/167",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_082_driven_bar_6ce90589"
+    },
+    {
+      "path": "/relationships/168",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[168]"
+    },
+    {
+      "path": "/relationships/168",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_032_linkset_assembly_200.part_P_075_slider_19056ef6"
+    },
+    {
+      "path": "/relationships/169",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[169]"
+    },
+    {
+      "path": "/relationships/169",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_001_chassis.part_P_084_follower_wheels"
+    },
+    {
+      "path": "/relationships/170",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[170]"
+    },
+    {
+      "path": "/relationships/170",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_004_lifting_linkset_assembly.part_P_004_steering_wheels_2da6f069"
+    },
+    {
+      "path": "/relationships/171",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[171]"
+    },
+    {
+      "path": "/relationships/171",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_004_steering_wheels_ea76579b"
+    },
+    {
+      "path": "/relationships/172",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[172]"
+    },
+    {
+      "path": "/relationships/172",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_031_inner_lifting_frame"
+    },
+    {
+      "path": "/relationships/173",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[173]"
+    },
+    {
+      "path": "/relationships/173",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_010_platform"
+    },
+    {
+      "path": "/relationships/174",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[174]"
+    },
+    {
+      "path": "/relationships/174",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_038_pivotable_locking_collar"
+    },
+    {
+      "path": "/relationships/175",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[175]"
+    },
+    {
+      "path": "/relationships/175",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_087_hydraulic_cylinder"
+    },
+    {
+      "path": "/relationships/176",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[176]"
+    },
+    {
+      "path": "/relationships/176",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_088_cylinder_body"
+    },
+    {
+      "path": "/relationships/177",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[177]"
+    },
+    {
+      "path": "/relationships/177",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_089_piston_rod"
+    },
+    {
+      "path": "/relationships/178",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[178]"
+    },
+    {
+      "path": "/relationships/178",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_072_hydraulic_actuator.part_P_087_hydraulic_cylinder_d06ca7bf"
+    },
+    {
+      "path": "/relationships/179",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[179]"
+    },
+    {
+      "path": "/relationships/179",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_072_hydraulic_actuator.part_P_088_cylinder_body_ac9d642b"
+    },
+    {
+      "path": "/relationships/180",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[180]"
+    },
+    {
+      "path": "/relationships/180",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_072_hydraulic_actuator.part_P_089_piston_rod_c1a765fe"
+    },
+    {
+      "path": "/relationships/181",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[181]"
+    },
+    {
+      "path": "/relationships/181",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_087_hydraulic_cylinder_d1942cdf"
+    },
+    {
+      "path": "/relationships/182",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[182]"
+    },
+    {
+      "path": "/relationships/182",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_060_steering_cylinder_f0714f35"
+    },
+    {
+      "path": "/relationships/183",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[183]"
+    },
+    {
+      "path": "/relationships/183",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_053_steering_tie_link"
+    },
+    {
+      "path": "/relationships/184",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[184]"
+    },
+    {
+      "path": "/relationships/184",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_054_steering_arm"
+    },
+    {
+      "path": "/relationships/185",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[185]"
+    },
+    {
+      "path": "/relationships/185",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_090_elongate_slots"
+    },
+    {
+      "path": "/relationships/186",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[186]"
+    },
+    {
+      "path": "/relationships/186",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_062_rectangular_rail"
+    },
+    {
+      "path": "/relationships/187",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[187]"
+    },
+    {
+      "path": "/relationships/187",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_006_steering_system.part_P_091_T_shaped_slider"
+    },
+    {
+      "path": "/relationships/188",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[188]"
+    },
+    {
+      "path": "/relationships/188",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_052_extension_connector_3c42ff63"
+    },
+    {
+      "path": "/relationships/189",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[189]"
+    },
+    {
+      "path": "/relationships/189",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_090_elongate_slots_1664b8bc"
+    },
+    {
+      "path": "/relationships/190",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[190]"
+    },
+    {
+      "path": "/relationships/190",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_062_rectangular_rail_d043baba"
+    },
+    {
+      "path": "/relationships/191",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[191]"
+    },
+    {
+      "path": "/relationships/191",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_091_T_shaped_slider_80896ee6"
+    },
+    {
+      "path": "/relationships/192",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[192]"
+    },
+    {
+      "path": "/relationships/192",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_092_L_shape_rail_bars"
+    },
+    {
+      "path": "/relationships/193",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[193]"
+    },
+    {
+      "path": "/relationships/193",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_093_rail_bars"
+    },
+    {
+      "path": "/relationships/194",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[194]"
+    },
+    {
+      "path": "/relationships/194",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_094_female_helical_screw_ebfcff18"
+    },
+    {
+      "path": "/relationships/195",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[195]"
+    },
+    {
+      "path": "/relationships/195",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_017_helical_screw_6bf2fd7e"
+    },
+    {
+      "path": "/relationships/196",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[196]"
+    },
+    {
+      "path": "/relationships/196",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_095_safety_guard_drive_rod_6183604b"
+    },
+    {
+      "path": "/relationships/197",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[197]"
+    },
+    {
+      "path": "/relationships/197",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_081_safety_guard_52e90c15"
+    },
+    {
+      "path": "/relationships/198",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[198]"
+    },
+    {
+      "path": "/relationships/198",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_096_elongate_guard_drive_bar_4759ffe6"
+    },
+    {
+      "path": "/relationships/199",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[199]"
+    },
+    {
+      "path": "/relationships/199",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_071_guard_drive_bar_dc065587"
+    },
+    {
+      "path": "/relationships/200",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[200]"
+    },
+    {
+      "path": "/relationships/200",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_079_rail_system.part_P_097_follower_f769cdc3"
+    },
+    {
+      "path": "/relationships/201",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[201]"
+    },
+    {
+      "path": "/relationships/201",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_009_safety_guard_mechanism.part_P_094_female_helical_screw"
+    },
+    {
+      "path": "/relationships/202",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[202]"
+    },
+    {
+      "path": "/relationships/202",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_009_safety_guard_mechanism.part_P_017_helical_screw"
+    },
+    {
+      "path": "/relationships/203",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[203]"
+    },
+    {
+      "path": "/relationships/203",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_009_safety_guard_mechanism.part_P_095_safety_guard_drive_rod"
+    },
+    {
+      "path": "/relationships/204",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[204]"
+    },
+    {
+      "path": "/relationships/204",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_009_safety_guard_mechanism.part_P_081_safety_guard_43763fbf"
+    },
+    {
+      "path": "/relationships/205",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[205]"
+    },
+    {
+      "path": "/relationships/205",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_009_safety_guard_mechanism.part_P_096_elongate_guard_drive_bar"
+    },
+    {
+      "path": "/relationships/206",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[206]"
+    },
+    {
+      "path": "/relationships/206",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_009_safety_guard_mechanism.part_P_071_guard_drive_bar_d9f3d537"
+    },
+    {
+      "path": "/relationships/207",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[207]"
+    },
+    {
+      "path": "/relationships/207",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_009_safety_guard_mechanism.part_P_097_follower"
+    },
+    {
+      "path": "/relationships/208",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[208]"
+    },
+    {
+      "path": "/relationships/208",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_096_elongate_guard_drive_bar_cff2f4cb"
+    },
+    {
+      "path": "/relationships/209",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[209]"
+    },
+    {
+      "path": "/relationships/209",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_060_drive_mechanism.part_P_097_follower_62869f40"
+    },
+    {
+      "path": "/relationships/210",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[210]"
+    },
+    {
+      "path": "/relationships/210",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_071_guard_drive_bar_21470d4d"
+    },
+    {
+      "path": "/relationships/211",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[211]"
+    },
+    {
+      "path": "/relationships/211",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_072_driven_bars_8b67124b"
+    },
+    {
+      "path": "/relationships/212",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[212]"
+    },
+    {
+      "path": "/relationships/212",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_073_lower_rack_629a2b17"
+    },
+    {
+      "path": "/relationships/213",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[213]"
+    },
+    {
+      "path": "/relationships/213",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_098_reciprocating_driver"
+    },
+    {
+      "path": "/relationships/214",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[214]"
+    },
+    {
+      "path": "/relationships/214",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_099_driver"
+    },
+    {
+      "path": "/relationships/215",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[215]"
+    },
+    {
+      "path": "/relationships/215",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_077_upper_rack_d3276125"
+    },
+    {
+      "path": "/relationships/216",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[216]"
+    },
+    {
+      "path": "/relationships/216",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_100_fixed_pinion_gear"
+    },
+    {
+      "path": "/relationships/217",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[217]"
+    },
+    {
+      "path": "/relationships/217",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_101_pinion_gear"
+    },
+    {
+      "path": "/relationships/218",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[218]"
+    },
+    {
+      "path": "/relationships/218",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_102_L_shaped_slider"
+    },
+    {
+      "path": "/relationships/219",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[219]"
+    },
+    {
+      "path": "/relationships/219",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_075_slider_1669321a"
+    },
+    {
+      "path": "/relationships/220",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[220]"
+    },
+    {
+      "path": "/relationships/220",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_103_bore"
+    },
+    {
+      "path": "/relationships/221",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[221]"
+    },
+    {
+      "path": "/relationships/221",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_104_shaped__channel_rail"
+    },
+    {
+      "path": "/relationships/222",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[222]"
+    },
+    {
+      "path": "/relationships/222",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_105_channel_rail"
+    },
+    {
+      "path": "/relationships/223",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[223]"
+    },
+    {
+      "path": "/relationships/223",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_063_rack_and_pinion_system.part_P_064_rail"
+    },
+    {
+      "path": "/relationships/224",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[224]"
+    },
+    {
+      "path": "/relationships/224",
+      "kind": "Existing owned feature",
+      "symbol": "systemModel.component_SS_005_linkset_assembly.part_P_077_upper_rack"
+    },
+    {
+      "path": "/relationships/225",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[225]"
+    },
+    {
+      "path": "/relationships/226",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[226]"
+    },
+    {
+      "path": "/relationships/227",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[227]"
+    },
+    {
+      "path": "/relationships/228",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[228]"
+    },
+    {
+      "path": "/relationships/229",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[229]"
+    },
+    {
+      "path": "/relationships/230",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[230]"
+    },
+    {
+      "path": "/relationships/231",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[231]"
+    },
+    {
+      "path": "/relationships/232",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[232]"
+    },
+    {
+      "path": "/relationships/233",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[233]"
+    },
+    {
+      "path": "/relationships/234",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[234]"
+    },
+    {
+      "path": "/relationships/235",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[235]"
+    },
+    {
+      "path": "/relationships/236",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[236]"
+    },
+    {
+      "path": "/relationships/237",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[237]"
+    },
+    {
+      "path": "/relationships/238",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[238]"
+    },
+    {
+      "path": "/relationships/239",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[239]"
+    },
+    {
+      "path": "/relationships/240",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[240]"
+    },
+    {
+      "path": "/relationships/241",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[241]"
+    },
+    {
+      "path": "/relationships/242",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[242]"
+    },
+    {
+      "path": "/relationships/243",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[243]"
+    },
+    {
+      "path": "/relationships/244",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[244]"
+    },
+    {
+      "path": "/relationships/245",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[245]"
+    },
+    {
+      "path": "/relationships/246",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[246]"
+    },
+    {
+      "path": "/relationships/247",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[247]"
+    },
+    {
+      "path": "/relationships/248",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[248]"
+    },
+    {
+      "path": "/relationships/249",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[249]"
+    },
+    {
+      "path": "/relationships/250",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[250]"
+    },
+    {
+      "path": "/relationships/251",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[251]"
+    },
+    {
+      "path": "/relationships/252",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[252]"
+    },
+    {
+      "path": "/relationships/253",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[253]"
+    },
+    {
+      "path": "/relationships/254",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[254]"
+    },
+    {
+      "path": "/relationships/255",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[255]"
+    },
+    {
+      "path": "/relationships/256",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[256]"
+    },
+    {
+      "path": "/relationships/257",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[257]"
+    },
+    {
+      "path": "/relationships/258",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[258]"
+    },
+    {
+      "path": "/relationships/259",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[259]"
+    },
+    {
+      "path": "/relationships/260",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[260]"
+    },
+    {
+      "path": "/relationships/261",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[261]"
+    },
+    {
+      "path": "/relationships/262",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[262]"
+    },
+    {
+      "path": "/relationships/263",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[263]"
+    },
+    {
+      "path": "/relationships/264",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[264]"
+    },
+    {
+      "path": "/relationships/265",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[265]"
+    },
+    {
+      "path": "/relationships/266",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[266]"
+    },
+    {
+      "path": "/relationships/267",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[267]"
+    },
+    {
+      "path": "/relationships/268",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[268]"
+    },
+    {
+      "path": "/relationships/269",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[269]"
+    },
+    {
+      "path": "/relationships/270",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[270]"
+    },
+    {
+      "path": "/relationships/271",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[271]"
+    },
+    {
+      "path": "/relationships/272",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[272]"
+    },
+    {
+      "path": "/relationships/273",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[273]"
+    },
+    {
+      "path": "/relationships/274",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[274]"
+    },
+    {
+      "path": "/relationships/275",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[275]"
+    },
+    {
+      "path": "/relationships/276",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[276]"
+    },
+    {
+      "path": "/relationships/277",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[277]"
+    },
+    {
+      "path": "/relationships/278",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[278]"
+    },
+    {
+      "path": "/relationships/279",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[279]"
+    },
+    {
+      "path": "/relationships/280",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[280]"
+    },
+    {
+      "path": "/relationships/281",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[281]"
+    },
+    {
+      "path": "/relationships/282",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[282]"
+    },
+    {
+      "path": "/relationships/283",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[283]"
+    },
+    {
+      "path": "/relationships/284",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[284]"
+    },
+    {
+      "path": "/relationships/285",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[285]"
+    },
+    {
+      "path": "/relationships/286",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[286]"
+    },
+    {
+      "path": "/relationships/287",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[287]"
+    },
+    {
+      "path": "/relationships/288",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[288]"
+    },
+    {
+      "path": "/relationships/289",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[289]"
+    },
+    {
+      "path": "/relationships/290",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[290]"
+    },
+    {
+      "path": "/relationships/291",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[291]"
+    },
+    {
+      "path": "/relationships/292",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[292]"
+    },
+    {
+      "path": "/relationships/293",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[293]"
+    },
+    {
+      "path": "/relationships/294",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[294]"
+    },
+    {
+      "path": "/relationships/295",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[295]"
+    },
+    {
+      "path": "/relationships/296",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[296]"
+    },
+    {
+      "path": "/relationships/297",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[297]"
+    },
+    {
+      "path": "/relationships/298",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[298]"
+    },
+    {
+      "path": "/relationships/299",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[299]"
+    },
+    {
+      "path": "/relationships/300",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[300]"
+    },
+    {
+      "path": "/relationships/301",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[301]"
+    },
+    {
+      "path": "/relationships/302",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[302]"
+    },
+    {
+      "path": "/relationships/303",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[303]"
+    },
+    {
+      "path": "/relationships/304",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[304]"
+    },
+    {
+      "path": "/relationships/305",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[305]"
+    },
+    {
+      "path": "/relationships/306",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[306]"
+    },
+    {
+      "path": "/relationships/307",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[307]"
+    },
+    {
+      "path": "/relationships/308",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[308]"
+    },
+    {
+      "path": "/relationships/309",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[309]"
+    },
+    {
+      "path": "/relationships/310",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[310]"
+    },
+    {
+      "path": "/relationships/311",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[311]"
+    },
+    {
+      "path": "/relationships/312",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[312]"
+    },
+    {
+      "path": "/relationships/313",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[313]"
+    },
+    {
+      "path": "/relationships/314",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[314]"
+    },
+    {
+      "path": "/relationships/315",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[315]"
+    },
+    {
+      "path": "/relationships/316",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[316]"
+    },
+    {
+      "path": "/relationships/317",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[317]"
+    },
+    {
+      "path": "/relationships/318",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[318]"
+    },
+    {
+      "path": "/relationships/319",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[319]"
+    },
+    {
+      "path": "/relationships/320",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[320]"
+    },
+    {
+      "path": "/relationships/321",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[321]"
+    },
+    {
+      "path": "/relationships/322",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[322]"
+    },
+    {
+      "path": "/relationships/323",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[323]"
+    },
+    {
+      "path": "/relationships/324",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[324]"
+    },
+    {
+      "path": "/relationships/325",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[325]"
+    },
+    {
+      "path": "/relationships/326",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[326]"
+    },
+    {
+      "path": "/relationships/327",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[327]"
+    },
+    {
+      "path": "/relationships/328",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[328]"
+    },
+    {
+      "path": "/relationships/329",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[329]"
+    },
+    {
+      "path": "/relationships/330",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[330]"
+    },
+    {
+      "path": "/relationships/331",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[331]"
+    },
+    {
+      "path": "/relationships/332",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[332]"
+    },
+    {
+      "path": "/relationships/333",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[333]"
+    },
+    {
+      "path": "/relationships/334",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[334]"
+    },
+    {
+      "path": "/relationships/335",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[335]"
+    },
+    {
+      "path": "/relationships/336",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[336]"
+    },
+    {
+      "path": "/relationships/337",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[337]"
+    },
+    {
+      "path": "/relationships/338",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[338]"
+    },
+    {
+      "path": "/relationships/339",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[339]"
+    },
+    {
+      "path": "/relationships/340",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[340]"
+    },
+    {
+      "path": "/relationships/341",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[341]"
+    },
+    {
+      "path": "/relationships/342",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[342]"
+    },
+    {
+      "path": "/relationships/343",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[343]"
+    },
+    {
+      "path": "/relationships/344",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[344]"
+    },
+    {
+      "path": "/relationships/345",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[345]"
+    },
+    {
+      "path": "/relationships/346",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[346]"
+    },
+    {
+      "path": "/relationships/347",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[347]"
+    },
+    {
+      "path": "/relationships/348",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[348]"
+    },
+    {
+      "path": "/relationships/349",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[349]"
+    },
+    {
+      "path": "/relationships/350",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[350]"
+    },
+    {
+      "path": "/relationships/351",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[351]"
+    },
+    {
+      "path": "/relationships/352",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[352]"
+    },
+    {
+      "path": "/relationships/353",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[353]"
+    },
+    {
+      "path": "/relationships/354",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[354]"
+    },
+    {
+      "path": "/relationships/355",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[355]"
+    },
+    {
+      "path": "/relationships/356",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[356]"
+    },
+    {
+      "path": "/relationships/357",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[357]"
+    },
+    {
+      "path": "/relationships/358",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[358]"
+    },
+    {
+      "path": "/relationships/359",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[359]"
+    },
+    {
+      "path": "/relationships/360",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[360]"
+    },
+    {
+      "path": "/relationships/361",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[361]"
+    },
+    {
+      "path": "/relationships/362",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[362]"
+    },
+    {
+      "path": "/relationships/363",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[363]"
+    },
+    {
+      "path": "/relationships/364",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[364]"
+    },
+    {
+      "path": "/relationships/365",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[365]"
+    },
+    {
+      "path": "/relationships/366",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[366]"
+    },
+    {
+      "path": "/relationships/367",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[367]"
+    },
+    {
+      "path": "/relationships/368",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[368]"
+    },
+    {
+      "path": "/relationships/369",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[369]"
+    },
+    {
+      "path": "/relationships/370",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[370]"
+    },
+    {
+      "path": "/relationships/371",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[371]"
+    },
+    {
+      "path": "/relationships/372",
+      "kind": "MetadataUsage",
+      "symbol": "SJS_Relationship[372]"
+    }
+  ],
+  "unresolved": [
+    {
+      "path": "/values/0",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/1",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/values/2",
+      "reason": "Value has no literal; prose expression is retained without inventing a numeric value.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/225",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/226",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/227",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/228",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/229",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/230",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/231",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/232",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/233",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/234",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/235",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/236",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/237",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/238",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/239",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/240",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/241",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/242",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/243",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/244",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/245",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/246",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/247",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/248",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/249",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/250",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/251",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/252",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/253",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/254",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/255",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/256",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/257",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/258",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/259",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/260",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/261",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/262",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/263",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/264",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/265",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/266",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/267",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/268",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/269",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/270",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/271",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/272",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/273",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/274",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/275",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/276",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/277",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/278",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/279",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/280",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/281",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/282",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/283",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/284",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/285",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/286",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/287",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/288",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/289",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/290",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/291",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/292",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/293",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/294",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/295",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/296",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/297",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/298",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/299",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/300",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/301",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/302",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/303",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/304",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/305",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/306",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/307",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/308",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/309",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/310",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/311",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/312",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/313",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/314",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/315",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/316",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/317",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/318",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/319",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/320",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/321",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/322",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/323",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/324",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/325",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/326",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/327",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/328",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/329",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/330",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/331",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/332",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/333",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/334",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/335",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/336",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/337",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/338",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/339",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/340",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/341",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/342",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/343",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/344",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/345",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/346",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/347",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/348",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/349",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/350",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/351",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/352",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/353",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/354",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/355",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/356",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/357",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/358",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/359",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/360",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/361",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/362",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/363",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/364",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/365",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/366",
+      "reason": "Relationship type 'allocated_functions' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/367",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/368",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/369",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/370",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/371",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    },
+    {
+      "path": "/relationships/372",
+      "reason": "Relationship type 'attributes' is preserved as typed metadata; no additional connection semantics were invented.",
+      "retained": "SJS_Source documentation"
+    }
+  ],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

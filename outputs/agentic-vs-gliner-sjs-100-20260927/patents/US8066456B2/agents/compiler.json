@@ -1,0 +1,149 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 6,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 2,
+    "Documentation": 29,
+    "EndFeatureMembership": 10,
+    "Feature": 18,
+    "FeatureChaining": 26,
+    "FeatureMembership": 30,
+    "FeatureTyping": 13,
+    "FlowEnd": 2,
+    "FlowUsage": 1,
+    "ItemDefinition": 4,
+    "ItemUsage": 6,
+    "LiteralInteger": 3,
+    "MultiplicityRange": 3,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 53,
+    "Package": 1,
+    "PartDefinition": 5,
+    "PartUsage": 9,
+    "PortUsage": 6,
+    "Redefinition": 2,
+    "ReferenceSubsetting": 10,
+    "ReferenceUsage": 2,
+    "Subclassification": 2,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_RECV_Receiving_Part"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PINC_Pincer_Clamp_Assembly"
+    },
+    {
+      "path": "/subsystems/1/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_PINC_Pincer_Clamp_Assembly.part_pinchers_Concentrically_arranged_pincer_elements"
+    },
+    {
+      "path": "/subsystems/1/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_PINC_Pincer_Clamp_Assembly.part_spring_Annular_tension_spring_biasing_pincer_rear_en"
+    },
+    {
+      "path": "/subsystems/1/parts/2",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_PINC_Pincer_Clamp_Assembly.part_washer_Inner_split_lock_washer_forcing_pincer_front"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PINC_Pincer_Clamp_Assembly.port_tool_grip_Tool_grip_interface"
+    },
+    {
+      "path": "/subsystems/1/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PINC_Pincer_Clamp_Assembly.port_closing_contact_Closing_element_contact"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_CLOSE_Closing_Element_Assembly"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CLOSE_Closing_Element_Assembly.port_pincer_contact_Pincer_contact"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_CLOSE_Closing_Element_Assembly.port_axial_motion_Axial_motion"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_LOOSEN_Loosening_Mechanism"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LOOSEN_Loosening_Mechanism.port_pull_out_Pull_rod_motion"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_TOOL_Tool_or_Tool_Fixture"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_TOOL_Tool_or_Tool_Fixture.port_grip_Grip_interface"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_motion_pull_Pull_rod_retraction"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_grip_force_Pincer_grip_on_tool"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_CLAMP_Clamp_tool"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_RELEASE_Disengage_closing_element_claws"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_PINC_TOOL"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_CLOSE_PINC"
+    },
+    {
+      "path": "/subsystems/2/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_LOOSEN_CLOSE"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

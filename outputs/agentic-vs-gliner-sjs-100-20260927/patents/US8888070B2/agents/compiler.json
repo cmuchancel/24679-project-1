@@ -1,0 +1,194 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 1,
+    "ActionUsage": 4,
+    "AllocationUsage": 1,
+    "ConnectionUsage": 2,
+    "Documentation": 37,
+    "EndFeatureMembership": 14,
+    "Feature": 20,
+    "FeatureChaining": 40,
+    "FeatureMembership": 44,
+    "FeatureTyping": 18,
+    "FlowEnd": 8,
+    "FlowUsage": 4,
+    "ItemDefinition": 6,
+    "ItemUsage": 11,
+    "LiteralInteger": 2,
+    "MultiplicityRange": 2,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 63,
+    "Package": 1,
+    "PartDefinition": 6,
+    "PartUsage": 9,
+    "PortUsage": 11,
+    "Redefinition": 8,
+    "ReferenceSubsetting": 14,
+    "ReferenceUsage": 8,
+    "Subclassification": 4,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_bottom_frame_Bottom_Frame"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_bottom_frame_Bottom_Frame.port_lift_input_Scissor_driven_displacement"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_bottom_frame_Bottom_Frame.port_tilt_arm_input_Tilt_arm_rotatable_joint_connection"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_top_frame_Top_Frame"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_top_frame_Top_Frame.port_lift_input_Scissor_driven_displacement_abce67a6"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_scissor_mechanism_Scissor_Mechanism"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_scissor_mechanism_Scissor_Mechanism.port_lever_input_Lever_driven_motion_input"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_scissor_mechanism_Scissor_Mechanism.port_frame_output_Frame_displacement_output"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_linear_actuator_Linear_Actuator"
+    },
+    {
+      "path": "/subsystems/3/parts/0",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_linear_actuator_Linear_Actuator.part_electric_motor_Electrical_motor_driving_the_actuator_spindle"
+    },
+    {
+      "path": "/subsystems/3/parts/1",
+      "kind": "PartUsage",
+      "symbol": "systemModel.component_linear_actuator_Linear_Actuator.part_spindle_drive_Spindle_driven_by_the_electrical_motor_in_the"
+    },
+    {
+      "path": "/subsystems/3/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_linear_actuator_Linear_Actuator.port_actuator_output_Actuator_linear_output"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_lever_gearing_Lever_Gearing"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_lever_gearing_Lever_Gearing.port_lever_input_Actuator_force_input"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_lever_gearing_Lever_Gearing.port_lever_scissor_output_Lever_driven_scissor_motion"
+    },
+    {
+      "path": "/subsystems/4/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_lever_gearing_Lever_Gearing.port_tilt_linkage_Tilt_arm_linkage_connection"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_tilt_arm_Tilt_Arm"
+    },
+    {
+      "path": "/subsystems/5/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_tilt_arm_Tilt_Arm.port_lever_connection_Lever_arm_endpoint_connection"
+    },
+    {
+      "path": "/subsystems/5/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_tilt_arm_Tilt_Arm.port_frame_connection_Bottom_frame_rotatable_joint_connection"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_actuator_force_Actuator_force_and_linear_motion"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_scissor_motion_Lever_driven_scissor_motion"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_frame_displacement_Relative_frame_displacement"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_tilt_linkage_motion_Tilt_arm_linkage_motion"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_lift_frames_Lift_frames_through_lever_driven_scissor_moti"
+    },
+    {
+      "path": "/subsystems/2/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_scissor_to_top_frame"
+    },
+    {
+      "path": "/subsystems/2/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_scissor_to_bottom_frame"
+    },
+    {
+      "path": "/subsystems/3/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_actuator_to_lever"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_lever_to_scissor"
+    },
+    {
+      "path": "/subsystems/4/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_lever_to_tilt_arm"
+    },
+    {
+      "path": "/subsystems/5/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_tilt_arm_to_bottom_frame"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}

@@ -1,0 +1,34 @@
+{
+  "revision": 8,
+  "candidate_sha256": "841499f9e6b34b1a7dc644fb88cfbdb69c3b13cb5190a5460a252e012bd0d028",
+  "verdict": "approved",
+  "checks": {
+    "patent_grounding": {
+      "verdict": "pass",
+      "rationale": "Revision 8's key behavior claims are supported by the passages read. The patent describes input-attached roller gear cam with tapered ribs and recessed endless channel, swing arm followers engaging that channel and slider (350aa316599abea7f6a58433d4569571; 48b4d585e0f896db208b5d586cfb39dc), turret rotation and axially sliding spline transmission (531250aaa9a3b98336e81ab232c20da8), and swing-to-axial conversion by slider (2ee15fd1623ad4c3edfd6c2b975d9b7a). External drive implementation is explicitly unspecified rather than asserted as patent fact."
+    },
+    "functional_completeness": {
+      "verdict": "pass",
+      "rationale": "The principal dual output mechanism and its component responsibilities are modeled: input cam, turret rotational path, recessed-channel/swing-arm path, slider conversion, output shaft, external source and sink. Revision 8 separates swing-arm drive from slider-owned axial conversion. Housing support is represented structurally; no supported critical function appears omitted for the stated scope."
+    },
+    "flow_consistency": {
+      "verdict": "pass",
+      "rationale": "All modeled interfaces connect existing ports with matching direction and flow type. Contact flow types are used for cam/follower engagements; rotary and angular motion flows match across the respective connections; axial linear motion flows match through slider and output boundary. No disconnected modeled energy/motion path is apparent. The housing is an unported structural support, not a required transfer edge."
+    },
+    "claim_traceability": {
+      "verdict": "pass",
+      "rationale": "The action-step citations are now well matched: cam-to-turret and spline steps cite the turret passage; channel/follower and swing-arm action steps cite passages that describe the channel and swing-arm followers; slider conversion cites the direct slider-conversion passage. The model omits optional claim 2/3/4 details rather than asserting unsupported details. All key flows/interfaces and boundary entities have cited evidence."
+    },
+    "interfaces": {
+      "verdict": "pass",
+      "rationale": "Each interface joins compatible existing ports once, and the input/output boundary connections use distinct external source and sink components. Contact interfaces accurately represent the cam/follower engagements without treating them as incompatible rotary-flow connections. The spline represents rotary transfer while allowing axial sliding; axial actuation is separately represented through the slider."
+    },
+    "textbook_application": {
+      "verdict": "pass",
+      "rationale": "The model distinguishes physical subsystems from their functional_basis and represents relevant external entities and directed boundary flows. This is consistent with textbook modeling guidance; textbook evidence is not used to establish invention facts."
+    }
+  },
+  "findings": [],
+  "summary": "Independent review of saved revision 8 finds the targeted channel-cam/follower citation and swing-arm action ownership corrections resolved. The channel cam and arm follower drive are assigned to swing_arm and supported by the patent passages; the slider owns the distinct swing-to-axial conversion supported by the slider passage. The rotational and axial paths are connected, interfaces and flow types are consistent, external source/sink are modeled separately, and no unsupported claims requiring repair were found. No unresolved or newly introduced issues identified.",
+  "saved_at": "2026-09-27T07:37:47.564214+00:00"
+}

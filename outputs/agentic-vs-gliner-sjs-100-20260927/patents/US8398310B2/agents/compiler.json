@@ -1,0 +1,313 @@
+{
+  "source_schema": "sjs/1.0",
+  "compiler": "Syside Automator",
+  "compiler_version": "0.10.3",
+  "compiler_status": "passed",
+  "source_preserved": true,
+  "source_mutated": false,
+  "semantic_mapping_complete": true,
+  "native_element_counts": {
+    "ActionDefinition": 2,
+    "ActionUsage": 6,
+    "AllocationUsage": 2,
+    "ConnectionUsage": 5,
+    "Documentation": 57,
+    "EndFeatureMembership": 22,
+    "Feature": 42,
+    "FeatureChaining": 74,
+    "FeatureMembership": 62,
+    "FeatureReferenceExpression": 6,
+    "FeatureTyping": 32,
+    "FeatureValue": 6,
+    "FlowEnd": 8,
+    "FlowUsage": 4,
+    "ItemDefinition": 10,
+    "ItemUsage": 18,
+    "Namespace": 1,
+    "NamespaceImport": 1,
+    "OwningMembership": 108,
+    "Package": 1,
+    "PartDefinition": 10,
+    "PartUsage": 11,
+    "PortUsage": 18,
+    "Redefinition": 8,
+    "ReferenceSubsetting": 28,
+    "ReferenceUsage": 14,
+    "RequirementDefinition": 2,
+    "RequirementUsage": 2,
+    "SatisfyRequirementUsage": 6,
+    "Subclassification": 6,
+    "SubjectMembership": 6,
+    "SuccessionAsUsage": 2
+  },
+  "compiler_warnings": [],
+  "mappings": [
+    {
+      "path": "/subsystems/0",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_HOUSING_Bearing_housing"
+    },
+    {
+      "path": "/subsystems/0/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_HOUSING_Bearing_housing.port_mount_surface_Mounting_surface_interface"
+    },
+    {
+      "path": "/subsystems/0/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_HOUSING_Bearing_housing.port_pivot_seat_Curved_pivot_seat"
+    },
+    {
+      "path": "/subsystems/1",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_PIVOT_Pivot_assembly"
+    },
+    {
+      "path": "/subsystems/1/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_PIVOT_Pivot_assembly.port_seat_contact_Housing_seat_contact"
+    },
+    {
+      "path": "/subsystems/2",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BEARING_Bearing_unit"
+    },
+    {
+      "path": "/subsystems/2/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BEARING_Bearing_unit.port_outer_support_Outer_race_support"
+    },
+    {
+      "path": "/subsystems/2/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BEARING_Bearing_unit.port_inner_rot_Inner_race_rotation"
+    },
+    {
+      "path": "/subsystems/2/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BEARING_Bearing_unit.port_lub_path_Lubricant_inlet_to_bearing"
+    },
+    {
+      "path": "/subsystems/2/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BEARING_Bearing_unit.port_lub_out_Lubricant_outlet_from_bearing"
+    },
+    {
+      "path": "/subsystems/3",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SEALS_Bearing_and_housing_seals"
+    },
+    {
+      "path": "/subsystems/4",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_SLEEVE_Shaft_sleeve_and_retainer"
+    },
+    {
+      "path": "/subsystems/4/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SLEEVE_Shaft_sleeve_and_retainer.port_shaft_bore_Rotatable_shaft_interface"
+    },
+    {
+      "path": "/subsystems/4/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_SLEEVE_Shaft_sleeve_and_retainer.port_bearing_inner_Bearing_inner_race_interface"
+    },
+    {
+      "path": "/subsystems/5",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_WASHER_Wave_washer"
+    },
+    {
+      "path": "/subsystems/6",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_LUBE_SOURCE_Lubricant_supply_and_receiving_environment"
+    },
+    {
+      "path": "/subsystems/6/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LUBE_SOURCE_Lubricant_supply_and_receiving_environment.port_supply_out_Lubricant_supply"
+    },
+    {
+      "path": "/subsystems/6/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_LUBE_SOURCE_Lubricant_supply_and_receiving_environment.port_return_in_Vented_lubricant"
+    },
+    {
+      "path": "/subsystems/7",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_ROT_SHAFT_Rotatable_shaft"
+    },
+    {
+      "path": "/subsystems/7/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_ROT_SHAFT_Rotatable_shaft.port_shaft_end_Shaft_interface"
+    },
+    {
+      "path": "/subsystems/8",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_MOUNT_Mounting_surface"
+    },
+    {
+      "path": "/subsystems/8/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_MOUNT_Mounting_surface.port_surface_interface_Assembly_mounting_interface"
+    },
+    {
+      "path": "/subsystems/9",
+      "kind": "PartDefinition + PartUsage",
+      "symbol": "systemModel.component_BEARING_HOLDER_Bearing_holder"
+    },
+    {
+      "path": "/subsystems/9/ports/0",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BEARING_HOLDER_Bearing_holder.port_bearing_support_Bearing_outer_race_support"
+    },
+    {
+      "path": "/subsystems/9/ports/1",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BEARING_HOLDER_Bearing_holder.port_lub_in_Lubrication_inlet"
+    },
+    {
+      "path": "/subsystems/9/ports/2",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BEARING_HOLDER_Bearing_holder.port_lub_out_Drain_outlet"
+    },
+    {
+      "path": "/subsystems/9/ports/3",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BEARING_HOLDER_Bearing_holder.port_bearing_lube_out_Lubricant_passage_to_bearing"
+    },
+    {
+      "path": "/subsystems/9/ports/4",
+      "kind": "PortUsage",
+      "symbol": "systemModel.component_BEARING_HOLDER_Bearing_holder.port_bearing_drain_in_Lubricant_return_from_bearing"
+    },
+    {
+      "path": "/item_flows/0",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_MOUNT_Housing_attachment"
+    },
+    {
+      "path": "/item_flows/1",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_PIVOT_Pivot_seat_contact_and_motion"
+    },
+    {
+      "path": "/item_flows/2",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_BEARING_Outer_race_support"
+    },
+    {
+      "path": "/item_flows/3",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_ROT_Shaft_and_inner_race_rotation"
+    },
+    {
+      "path": "/item_flows/4",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_LUBE_IN_Lubricant_supply"
+    },
+    {
+      "path": "/item_flows/5",
+      "kind": "ItemDefinition",
+      "symbol": "Flow_F_LUBE_OUT_Vented_lubricant"
+    },
+    {
+      "path": "/requirements/0",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_ALIGN"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_ALIGN"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_ALIGN"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/2",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_ALIGN"
+    },
+    {
+      "path": "/requirements/0/satisfied_by/3",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_ALIGN"
+    },
+    {
+      "path": "/requirements/1",
+      "kind": "RequirementDefinition",
+      "symbol": "Requirement_REQ_LOCK"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/0",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_LOCK"
+    },
+    {
+      "path": "/requirements/1/satisfied_by/1",
+      "kind": "SatisfyRequirementUsage",
+      "symbol": "requirement_REQ_LOCK"
+    },
+    {
+      "path": "/behaviour/actions/0",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_ALIGN_Accommodate_angular_misalignment"
+    },
+    {
+      "path": "/behaviour/actions/1",
+      "kind": "ActionDefinition + ActionUsage",
+      "symbol": "systemModel.action_ACT_LUB_Lubricate_bearing_unit"
+    },
+    {
+      "path": "/subsystems/0/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_MOUNT"
+    },
+    {
+      "path": "/subsystems/1/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_PIVOT"
+    },
+    {
+      "path": "/subsystems/4/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_SHAFT"
+    },
+    {
+      "path": "/subsystems/4/interfaces/1",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_INNER"
+    },
+    {
+      "path": "/subsystems/9/interfaces/0",
+      "kind": "ConnectionUsage",
+      "symbol": "connection_IF_SUPPORT"
+    },
+    {
+      "path": "/subsystems/9/interfaces/1",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_BEARING_IN"
+    },
+    {
+      "path": "/subsystems/9/interfaces/2",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_BEARING_OUT"
+    },
+    {
+      "path": "/subsystems/9/interfaces/3",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_LUBE_SUPPLY"
+    },
+    {
+      "path": "/subsystems/9/interfaces/4",
+      "kind": "FlowConnectionUsage",
+      "symbol": "connection_IF_LUBE_DRAIN"
+    }
+  ],
+  "unresolved": [],
+  "note": "Retained SJS is an original-source snapshot, not a reconstruction of subsequent native SysML edits."
+}
