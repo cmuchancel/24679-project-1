@@ -1,0 +1,159 @@
+[
+ {
+  "task_id": "entity_identity/SS-001+SS-008",
+  "kind": "entity_identity",
+  "subject": "SS-001+SS-008",
+  "agent": "judge-overlap",
+  "question": "Do these differently named model elements denote the same physical/logical entity?",
+  "allowed_verdicts": [
+   "SAME_ENTITY",
+   "OVERLAPPING",
+   "DISTINCT",
+   "UNCERTAIN"
+  ],
+  "guidance": [
+   "Patent reference numerals (e.g. 'Turret 14') normally identify one component; different numerals may still denote different embodiments."
+  ],
+  "prompt_version": "8683abb23ed7",
+  "payload_sha": "e2fafc1cd895",
+  "payload": {
+   "system": "Ball screw",
+   "members": [
+    {
+     "id": "SS-001",
+     "name": "ball screw",
+     "description": "Model-extracted system candidate: ball screw",
+     "parts": [
+      "screw shaft",
+      "nut",
+      "helical screw groove",
+      "Bridge members",
+      "connecting groove",
+      "bridge members",
+      "ball",
+      "ball 4",
+      "return tube",
+      "screw groove",
+      "circulation rows",
+      "balls"
+     ],
+     "behaviours": [
+      "improves its durability",
+      "mate",
+      "rolling"
+     ]
+    },
+    {
+     "id": "SS-008",
+     "name": "ball screw 51",
+     "description": "Model-extracted system candidate: ball screw 51",
+     "parts": [],
+     "behaviours": []
+    }
+   ]
+  }
+ },
+ {
+  "task_id": "entity_identity/SS-011+SS-012",
+  "kind": "entity_identity",
+  "subject": "SS-011+SS-012",
+  "agent": "judge-overlap",
+  "question": "Do these differently named model elements denote the same physical/logical entity?",
+  "allowed_verdicts": [
+   "SAME_ENTITY",
+   "OVERLAPPING",
+   "DISTINCT",
+   "UNCERTAIN"
+  ],
+  "guidance": [
+   "Patent reference numerals (e.g. 'Turret 14') normally identify one component; different numerals may still denote different embodiments."
+  ],
+  "prompt_version": "8683abb23ed7",
+  "payload_sha": "584f69ee4efe",
+  "payload": {
+   "system": "Ball screw",
+   "members": [
+    {
+     "id": "SS-011",
+     "name": "bridge member",
+     "description": "Model-extracted system candidate: bridge member",
+     "parts": [],
+     "behaviours": []
+    },
+    {
+     "id": "SS-012",
+     "name": "bridge member 5",
+     "description": "Model-extracted system candidate: bridge member 5",
+     "parts": [],
+     "behaviours": []
+    }
+   ]
+  }
+ },
+ {
+  "task_id": "scope/SS-001",
+  "kind": "scope",
+  "subject": "SS-001",
+  "agent": "judge-scope",
+  "question": "What is this element's correct role in a model of the stated system?",
+  "allowed_verdicts": [
+   "INTERNAL_COMPONENT",
+   "EXTERNAL_ACTOR",
+   "STRUCTURAL_SUPPORT",
+   "SYSTEM_ITSELF",
+   "PRIOR_ART_OR_BACKGROUND",
+   "NOT_A_COMPONENT"
+  ],
+  "guidance": [
+   "Score is computed by comparing your verdict with the role the model assigns."
+  ],
+  "prompt_version": "dd249779cad2",
+  "payload_sha": "636ec08d7b05",
+  "payload": {
+   "system": {
+    "name": "Ball screw",
+    "description": "Candidate system model extracted from US7536928B2.html."
+   },
+   "element": {
+    "name": "ball screw",
+    "description": "Model-extracted system candidate: ball screw",
+    "domain": "systems"
+   },
+   "assigned_role": "system_root",
+   "flag": "inferred role system_root: name equals system name"
+  }
+ },
+ {
+  "task_id": "scope/SS-008",
+  "kind": "scope",
+  "subject": "SS-008",
+  "agent": "judge-scope",
+  "question": "What is this element's correct role in a model of the stated system?",
+  "allowed_verdicts": [
+   "INTERNAL_COMPONENT",
+   "EXTERNAL_ACTOR",
+   "STRUCTURAL_SUPPORT",
+   "SYSTEM_ITSELF",
+   "PRIOR_ART_OR_BACKGROUND",
+   "NOT_A_COMPONENT"
+  ],
+  "guidance": [
+   "Score is computed by comparing your verdict with the role the model assigns."
+  ],
+  "prompt_version": "dd249779cad2",
+  "payload_sha": "9e1ff9522666",
+  "payload": {
+   "system": {
+    "name": "Ball screw",
+    "description": "Candidate system model extracted from US7536928B2.html."
+   },
+   "element": {
+    "name": "ball screw 51",
+    "description": "Model-extracted system candidate: ball screw 51",
+    "domain": "systems"
+   },
+   "assigned_role": "system_root",
+   "flag": "inferred role system_root: name equals system name"
+  }
+ }
+]

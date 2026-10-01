@@ -1,0 +1,1778 @@
+{
+ "status": "EVALUATED",
+ "gates": [
+  {
+   "gate": "schema_valid",
+   "passed": true
+  },
+  {
+   "gate": "critical_references_resolve",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "identifiers_unique",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "relationship_vocabulary_conforms",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "relationship_signatures_valid",
+   "passed": true,
+   "failures": 0
+  }
+ ],
+ "summary": {
+  "model_key": "us7544037b2-c24f139057",
+  "system_id": "US7544037B2",
+  "system_name": "Pallet Clamping Device",
+  "dialect": "interface_rich",
+  "counts": {
+   "subsystems": 13,
+   "functions": 0,
+   "ports": 32,
+   "flows": 6,
+   "interfaces": 16,
+   "actions": 3,
+   "parts": 1,
+   "relationships": 0,
+   "requirements": 0
+  },
+  "roles": {
+   "internal": 9,
+   "structural": 1,
+   "external": 3
+  },
+  "ingest_notes": []
+ },
+ "profile": {
+  "entities": {
+   "entity_duplication": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.8,
+    "checked": 14,
+    "violations": 0,
+    "status": "heuristic"
+   }
+  },
+  "semantic_candidates": {
+   "statement_duplication": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.5,
+    "checked": 3,
+    "violations": 0,
+    "status": "heuristic"
+   },
+   "statement_form": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.5,
+    "checked": 3,
+    "violations": 0,
+    "status": "heuristic"
+   }
+  },
+  "closure": {
+   "explanatory_closure": {
+    "score": 0.9533,
+    "applicable": true,
+    "confidence": 0.7,
+    "checked": 54,
+    "violations": 3,
+    "status": "proposed"
+   }
+  },
+  "integrity": {
+   "reference_integrity": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 67,
+    "violations": 0,
+    "status": "established"
+   },
+   "identifier_uniqueness": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 71,
+    "violations": 0,
+    "status": "established"
+   }
+  },
+  "interface": {
+   "interface_direction": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 16,
+    "violations": 0,
+    "status": "established"
+   },
+   "flow_type_consistency": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 48,
+    "violations": 0,
+    "status": "established"
+   },
+   "port_direction_naming": {
+    "score": 0.0,
+    "applicable": true,
+    "confidence": 0.7,
+    "checked": 3,
+    "violations": 3,
+    "status": "heuristic"
+   }
+  },
+  "topology": {
+   "causal_path_coverage": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.25,
+    "checked": 2,
+    "violations": 0,
+    "mode": "relaxed",
+    "status": "proposed"
+   },
+   "connectivity": {
+    "score": 0.75,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 12,
+    "violations": 1,
+    "status": "established"
+   }
+  },
+  "traceability": {
+   "function_allocation_coverage": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 3,
+    "violations": 0,
+    "status": "established"
+   },
+   "component_purpose_coverage": {
+    "score": 0.3333,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 9,
+    "violations": 6,
+    "status": "proposed"
+   }
+  },
+  "architecture": {
+   "boundary_completeness": {
+    "score": 0.75,
+    "applicable": true,
+    "confidence": 0.75,
+    "checked": 4,
+    "violations": 1,
+    "status": "proposed"
+   }
+  },
+  "provenance": {
+   "provenance_completeness": {
+    "score": 0.25,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 4,
+    "violations": 3,
+    "status": "proposed"
+   }
+  },
+  "readiness": {
+   "model_profile_completeness": {
+    "score": 0.9,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 10,
+    "violations": 1,
+    "status": "proposed"
+   }
+  },
+  "usability": {
+   "competency_question_answerability": {
+    "score": 0.8333,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 6,
+    "violations": 1,
+    "status": "proposed"
+   }
+  }
+ },
+ "diagnostics": {
+  "scope_candidates": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 13,
+   "violations": 0,
+   "family": "entities",
+   "metadata": {
+    "candidates": 4
+   }
+  },
+  "partition_strength": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 9,
+   "violations": 0,
+   "family": "architecture",
+   "metadata": {
+    "modularity": 0.1805,
+    "cross_partition_coupling": 0.3846,
+    "graph_density": 0.3333,
+    "communities": 3,
+    "interpretation": "structural partition strength; not a correctness measure"
+   }
+  },
+  "flow_structure": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 2,
+   "violations": 0,
+   "family": "architecture",
+   "metadata": {
+    "feedback_loops": [],
+    "is_dag": true
+   }
+  },
+  "flow_reuse": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 6,
+   "violations": 6,
+   "family": "interface",
+   "metadata": {
+    "reused": {
+     "MECH_SUPPORT": [
+      "CLAMP::IF_CLAMP_FORKS",
+      "FRAME::IF_FRAME_SUPPORT"
+     ],
+     "MECH_JAW_FRAME": [
+      "JAW1::IF_J1_FRAME",
+      "JAW2::IF_J2_FRAME"
+     ],
+     "MECH_JAW_LINK": [
+      "JAW1::IF_J1_LINK",
+      "JAW2::IF_J2_LINK",
+      "LINK::IF_LINK_FRAME1",
+      "LINK::IF_LINK_FRAME2"
+     ],
+     "MECH_SPRING": [
+      "JAW1::IF_SPR_J1",
+      "JAW2::IF_SPR_J2",
+      "SPR::IF_SPR_FRAME"
+     ],
+     "LOAD_GRIP": [
+      "JAW1::IF_J1_PALLET",
+      "JAW2::IF_J2_PALLET"
+     ],
+     "MECH_OPER": [
+      "OPER::IF_OPER_J1",
+      "OPER::IF_OPER_J2",
+      "OPERATOR::IF_OPERATOR_PEDAL"
+     ]
+    },
+    "unused": []
+   }
+  },
+  "port_fan_out": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 32,
+   "violations": 0,
+   "family": "interface",
+   "metadata": {}
+  }
+ },
+ "not_applicable": {
+  "relationship_resolution": "model has no relationships list",
+  "representation_consistency": "no resolved relationships to compare",
+  "vocabulary_conformance": "model has no explicit relationships list",
+  "relation_signature_validity": "no resolved relationships have a vocabulary signature",
+  "requirement_satisfaction_coverage": "model declares no requirements",
+  "requirement_verification_coverage": "model declares no requirements",
+  "end_to_end_traceability": "model declares no requirements",
+  "internal_function_support": "'realization' tasks not built yet: run build_judge_tasks",
+  "behavior_claim_coverage": "'unclaimed_behavior' tasks not built yet: run build_judge_tasks",
+  "internal_transformation_coherence": "'transformation' tasks not built yet: run build_judge_tasks",
+  "statement_distinction": "'overlap' tasks not built yet: run build_judge_tasks",
+  "entity_distinctness": "'entity_identity' tasks not built yet: run build_judge_tasks",
+  "flow_semantic_fit": "'flow_semantics' tasks not built yet: run build_judge_tasks",
+  "role_assignment_coherence": "'scope' tasks not built yet: run build_judge_tasks"
+ },
+ "findings": [
+  {
+   "metric": "boundary_completeness",
+   "ref": "output_identified",
+   "kind": "missing_boundary_capability",
+   "severity": "major",
+   "message": "output identified"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "boundary_inputs_and_outputs",
+   "kind": "competency_question_incomplete",
+   "severity": "major",
+   "message": "answerability 0.00"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "CLAMP",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Pallet Clamp Assembly' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "JAW1",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'First Jaw' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "JAW2",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Second Jaw' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "FRAME",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Support Frame' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "FORKS",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Vehicle Forks' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "CL_SUPPORT",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Clamp Support' has no function or action"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "VEHICLE::OPERATOR_PEDAL",
+   "kind": "orphan:port_used",
+   "severity": "major",
+   "message": "port 'Foot actuation input' is in no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "VEHICLE",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'Material Handling Vehicle' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "model_profile_completeness",
+   "ref": "output_boundary",
+   "kind": "missing_profile_capability",
+   "severity": "major",
+   "message": "functional profile requires output boundary"
+  },
+  {
+   "metric": "port_direction_naming",
+   "ref": "JAW1::SPR_J1",
+   "kind": "direction_underdeclared",
+   "severity": "major",
+   "message": "'Spring receiving end' reads as 'in' but is declared inout"
+  },
+  {
+   "metric": "port_direction_naming",
+   "ref": "JAW2::SPR_J2",
+   "kind": "direction_underdeclared",
+   "severity": "major",
+   "message": "'Spring receiving end' reads as 'in' but is declared inout"
+  },
+  {
+   "metric": "port_direction_naming",
+   "ref": "VEHICLE::OPERATOR_PEDAL",
+   "kind": "direction_contradicts_name",
+   "severity": "major",
+   "message": "'Foot actuation input' reads as 'in' but is declared out"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "VEHICLE",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'Material Handling Vehicle' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "HOIST",
+   "kind": "orphan:structural_subsystem_linked",
+   "severity": "minor",
+   "message": "structural 'Vehicle Hoisting Device' has no declared support/containment relation"
+  },
+  {
+   "metric": "provenance_completeness",
+   "ref": "source",
+   "kind": "missing_provenance",
+   "severity": "minor",
+   "message": "model does not record source"
+  },
+  {
+   "metric": "provenance_completeness",
+   "ref": "generator",
+   "kind": "missing_provenance",
+   "severity": "minor",
+   "message": "model does not record generator"
+  },
+  {
+   "metric": "provenance_completeness",
+   "ref": "generator_version",
+   "kind": "missing_provenance",
+   "severity": "minor",
+   "message": "model does not record generator version"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "MECH_SUPPORT",
+   "kind": "flow_reused_across_pairs",
+   "severity": "info",
+   "message": "'Frame pivot mounting' used by ['CLAMP::IF_CLAMP_FORKS', 'FRAME::IF_FRAME_SUPPORT']"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "MECH_JAW_FRAME",
+   "kind": "flow_reused_across_pairs",
+   "severity": "info",
+   "message": "'Jaw mounting mechanical interaction' used by ['JAW1::IF_J1_FRAME', 'JAW2::IF_J2_FRAME']"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "MECH_JAW_LINK",
+   "kind": "flow_reused_across_pairs",
+   "severity": "info",
+   "message": "'Jaw and pivot-link interaction' used by ['JAW1::IF_J1_LINK', 'JAW2::IF_J2_LINK', 'LINK::IF_LINK_FRAME1', 'LINK::IF_LINK_FRAME2']"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "MECH_SPRING",
+   "kind": "flow_reused_across_pairs",
+   "severity": "info",
+   "message": "'Spring force transfer' used by ['JAW1::IF_SPR_J1', 'JAW2::IF_SPR_J2', 'SPR::IF_SPR_FRAME']"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "LOAD_GRIP",
+   "kind": "flow_reused_across_pairs",
+   "severity": "info",
+   "message": "'Jaw-stringer engagement' used by ['JAW1::IF_J1_PALLET', 'JAW2::IF_J2_PALLET']"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "MECH_OPER",
+   "kind": "flow_reused_across_pairs",
+   "severity": "info",
+   "message": "'Operating linkage motion' used by ['OPER::IF_OPER_J1', 'OPER::IF_OPER_J2', 'OPERATOR::IF_OPERATOR_PEDAL']"
+  }
+ ],
+ "metrics": [
+  {
+   "metric_id": "entity_duplication",
+   "version": "0.1.0",
+   "family": "entities",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.8,
+   "checked": 14,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "subsystem_groups": [],
+    "part_groups": 0,
+    "names_with_reference_numerals": 0
+   }
+  },
+  {
+   "metric_id": "statement_duplication",
+   "version": "0.1.0",
+   "family": "semantic_candidates",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.5,
+   "checked": 3,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "threshold": 0.72,
+    "retriever": "tfidf-word+char-v1",
+    "candidate_pairs": []
+   }
+  },
+  {
+   "metric_id": "relationship_resolution",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model has no relationships list",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "representation_consistency",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no resolved relationships to compare",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "statement_form",
+   "version": "0.1.0",
+   "family": "semantic_candidates",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.5,
+   "checked": 3,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "scope_candidates",
+   "version": "0.1.0",
+   "family": "entities",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 13,
+   "evidence": [
+    {
+     "ref": "HOIST",
+     "detail": "inferred role structural: no ports/functions/interfaces + structural keywords",
+     "data": {
+      "name": "Vehicle Hoisting Device",
+      "confidence": 0.7
+     }
+    },
+    {
+     "ref": "PALLET",
+     "detail": "inferred role external: external/context keywords",
+     "data": {
+      "name": "Pallet Center Stringer",
+      "confidence": 0.75
+     }
+    },
+    {
+     "ref": "OPERATOR",
+     "detail": "inferred role external: external/context keywords",
+     "data": {
+      "name": "Vehicle Operator",
+      "confidence": 0.75
+     }
+    },
+    {
+     "ref": "VEHICLE",
+     "detail": "inferred role external: external/context keywords",
+     "data": {
+      "name": "Material Handling Vehicle",
+      "confidence": 0.75
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "candidates": 4
+   }
+  },
+  {
+   "metric_id": "partition_strength",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "diagnostic",
+   "status": "established",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 9,
+   "evidence": [
+    {
+     "ref": "community_0",
+     "detail": "",
+     "data": {
+      "members": [
+       "JAW1",
+       "JAW2",
+       "OPER",
+       "SPR"
+      ],
+      "density": 0.6667
+     }
+    },
+    {
+     "ref": "community_1",
+     "detail": "",
+     "data": {
+      "members": [
+       "CL_SUPPORT",
+       "FRAME",
+       "LINK"
+      ],
+      "density": 0.6667
+     }
+    },
+    {
+     "ref": "community_2",
+     "detail": "",
+     "data": {
+      "members": [
+       "CLAMP",
+       "FORKS"
+      ],
+      "density": 1.0
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "modularity": 0.1805,
+    "cross_partition_coupling": 0.3846,
+    "graph_density": 0.3333,
+    "communities": 3,
+    "interpretation": "structural partition strength; not a correctness measure"
+   }
+  },
+  {
+   "metric_id": "flow_structure",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "diagnostic",
+   "status": "established",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 2,
+   "evidence": [
+    {
+     "ref": "OPER",
+     "detail": "",
+     "data": {
+      "fan_in": 1,
+      "fan_out": 0
+     }
+    },
+    {
+     "ref": "OPERATOR",
+     "detail": "",
+     "data": {
+      "fan_in": 0,
+      "fan_out": 1
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "feedback_loops": [],
+    "is_dag": true
+   }
+  },
+  {
+   "metric_id": "explanatory_closure",
+   "version": "0.1.0",
+   "family": "closure",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.9532710280373832,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.7,
+   "checked": 54,
+   "evidence": [
+    {
+     "ref": "action_owned_or_allocated",
+     "detail": "3/3 supported",
+     "data": {
+      "checked": 3,
+      "supported": 3,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "flow_used",
+     "detail": "6/6 supported",
+     "data": {
+      "checked": 6,
+      "supported": 6,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "port_used",
+     "detail": "31/32 supported",
+     "data": {
+      "checked": 32,
+      "supported": 31,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "structural_subsystem_linked",
+     "detail": "0/1 supported",
+     "data": {
+      "checked": 1,
+      "supported": 0,
+      "weight": 0.5
+     }
+    },
+    {
+     "ref": "subsystem_participates",
+     "detail": "11/12 supported",
+     "data": {
+      "checked": 12,
+      "supported": 11,
+      "weight": 1.0
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "VEHICLE::OPERATOR_PEDAL",
+     "kind": "orphan:port_used",
+     "severity": "major",
+     "message": "port 'Foot actuation input' is in no interface"
+    },
+    {
+     "ref": "HOIST",
+     "kind": "orphan:structural_subsystem_linked",
+     "severity": "minor",
+     "message": "structural 'Vehicle Hoisting Device' has no declared support/containment relation"
+    },
+    {
+     "ref": "VEHICLE",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'Material Handling Vehicle' has no interface, relationship, function or behaviour"
+    }
+   ],
+   "metadata": {
+    "support_threshold": 0.12,
+    "retriever": "tfidf-word+char-v1",
+    "function_classes": {}
+   }
+  },
+  {
+   "metric_id": "reference_integrity",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 67,
+   "evidence": [
+    {
+     "ref": "action.owner",
+     "detail": "3/3 resolved",
+     "data": {
+      "checked": 3,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.flow_ref",
+     "detail": "16/16 resolved",
+     "data": {
+      "checked": 16,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.mating_subsystem",
+     "detail": "16/16 resolved",
+     "data": {
+      "checked": 16,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.port_mate",
+     "detail": "16/16 resolved",
+     "data": {
+      "checked": 16,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.port_this",
+     "detail": "16/16 resolved",
+     "data": {
+      "checked": 16,
+      "violations": 0
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "critical_violations": 0
+   }
+  },
+  {
+   "metric_id": "identifier_uniqueness",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 71,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "interface_direction",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 16,
+   "evidence": [
+    {
+     "ref": "orientation_counts",
+     "detail": "",
+     "data": {
+      "bidirectional": 15,
+      "forward": 1
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "direction_indeterminate_share": 0.9375
+   }
+  },
+  {
+   "metric_id": "flow_type_consistency",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 48,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_reuse",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 6,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "MECH_SUPPORT",
+     "kind": "flow_reused_across_pairs",
+     "severity": "info",
+     "message": "'Frame pivot mounting' used by ['CLAMP::IF_CLAMP_FORKS', 'FRAME::IF_FRAME_SUPPORT']"
+    },
+    {
+     "ref": "MECH_JAW_FRAME",
+     "kind": "flow_reused_across_pairs",
+     "severity": "info",
+     "message": "'Jaw mounting mechanical interaction' used by ['JAW1::IF_J1_FRAME', 'JAW2::IF_J2_FRAME']"
+    },
+    {
+     "ref": "MECH_JAW_LINK",
+     "kind": "flow_reused_across_pairs",
+     "severity": "info",
+     "message": "'Jaw and pivot-link interaction' used by ['JAW1::IF_J1_LINK', 'JAW2::IF_J2_LINK', 'LINK::IF_LINK_FRAME1', 'LINK::IF_LINK_FRAME2']"
+    },
+    {
+     "ref": "MECH_SPRING",
+     "kind": "flow_reused_across_pairs",
+     "severity": "info",
+     "message": "'Spring force transfer' used by ['JAW1::IF_SPR_J1', 'JAW2::IF_SPR_J2', 'SPR::IF_SPR_FRAME']"
+    },
+    {
+     "ref": "LOAD_GRIP",
+     "kind": "flow_reused_across_pairs",
+     "severity": "info",
+     "message": "'Jaw-stringer engagement' used by ['JAW1::IF_J1_PALLET', 'JAW2::IF_J2_PALLET']"
+    },
+    {
+     "ref": "MECH_OPER",
+     "kind": "flow_reused_across_pairs",
+     "severity": "info",
+     "message": "'Operating linkage motion' used by ['OPER::IF_OPER_J1', 'OPER::IF_OPER_J2', 'OPERATOR::IF_OPERATOR_PEDAL']"
+    }
+   ],
+   "metadata": {
+    "reused": {
+     "MECH_SUPPORT": [
+      "CLAMP::IF_CLAMP_FORKS",
+      "FRAME::IF_FRAME_SUPPORT"
+     ],
+     "MECH_JAW_FRAME": [
+      "JAW1::IF_J1_FRAME",
+      "JAW2::IF_J2_FRAME"
+     ],
+     "MECH_JAW_LINK": [
+      "JAW1::IF_J1_LINK",
+      "JAW2::IF_J2_LINK",
+      "LINK::IF_LINK_FRAME1",
+      "LINK::IF_LINK_FRAME2"
+     ],
+     "MECH_SPRING": [
+      "JAW1::IF_SPR_J1",
+      "JAW2::IF_SPR_J2",
+      "SPR::IF_SPR_FRAME"
+     ],
+     "LOAD_GRIP": [
+      "JAW1::IF_J1_PALLET",
+      "JAW2::IF_J2_PALLET"
+     ],
+     "MECH_OPER": [
+      "OPER::IF_OPER_J1",
+      "OPER::IF_OPER_J2",
+      "OPERATOR::IF_OPERATOR_PEDAL"
+     ]
+    },
+    "unused": []
+   }
+  },
+  {
+   "metric_id": "port_fan_out",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 32,
+   "evidence": [
+    {
+     "ref": "PALLET::PALLET_GRIP",
+     "detail": "2 interfaces",
+     "data": {
+      "interfaces": [
+       "JAW1::IF_J1_PALLET",
+       "JAW2::IF_J2_PALLET"
+      ]
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "port_direction_naming",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 0.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.7,
+   "checked": 3,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "JAW1::SPR_J1",
+     "kind": "direction_underdeclared",
+     "severity": "major",
+     "message": "'Spring receiving end' reads as 'in' but is declared inout"
+    },
+    {
+     "ref": "JAW2::SPR_J2",
+     "kind": "direction_underdeclared",
+     "severity": "major",
+     "message": "'Spring receiving end' reads as 'in' but is declared inout"
+    },
+    {
+     "ref": "VEHICLE::OPERATOR_PEDAL",
+     "kind": "direction_contradicts_name",
+     "severity": "major",
+     "message": "'Foot actuation input' reads as 'in' but is declared out"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "causal_path_coverage",
+   "version": "0.1.0",
+   "family": "topology",
+   "kind": "score",
+   "status": "proposed",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.25,
+   "checked": 2,
+   "evidence": [
+    {
+     "ref": "assumed-output:JAW1::IF_J1_PALLET",
+     "detail": "OPERATOR::IF_OPERATOR_PEDAL -> OPER -> JAW1 -> assumed-output:JAW1::IF_J1_PALLET",
+     "data": {
+      "edges": 1,
+      "direction_determinate_edges": 0
+     }
+    },
+    {
+     "ref": "assumed-output:JAW2::IF_J2_PALLET",
+     "detail": "OPERATOR::IF_OPERATOR_PEDAL -> OPER -> JAW2 -> assumed-output:JAW2::IF_J2_PALLET",
+     "data": {
+      "edges": 1,
+      "direction_determinate_edges": 0
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "mode": "relaxed",
+    "granularity": "subsystem",
+    "boundary_inputs": [
+     "OPERATOR::IF_OPERATOR_PEDAL"
+    ],
+    "boundary_outputs": [
+     "assumed-output:JAW1::IF_J1_PALLET",
+     "assumed-output:JAW2::IF_J2_PALLET"
+    ],
+    "implicit_boundaries": 0,
+    "assumption": "inout boundary interfaces treated as the missing input/output side; inout internal edges traversable"
+   }
+  },
+  {
+   "metric_id": "connectivity",
+   "version": "0.1.0",
+   "family": "topology",
+   "kind": "score",
+   "status": "established",
+   "score": 0.75,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 12,
+   "evidence": [
+    {
+     "ref": "component_0",
+     "detail": "",
+     "data": {
+      "size": 9,
+      "members": [
+       "CL_SUPPORT",
+       "FRAME",
+       "JAW1",
+       "JAW2",
+       "LINK",
+       "OPER",
+       "OPERATOR",
+       "PALLET",
+       "SPR"
+      ]
+     }
+    },
+    {
+     "ref": "component_1",
+     "detail": "",
+     "data": {
+      "size": 2,
+      "members": [
+       "CLAMP",
+       "FORKS"
+      ]
+     }
+    },
+    {
+     "ref": "component_2",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "VEHICLE"
+      ]
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "VEHICLE",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'Material Handling Vehicle' has no interface, relationship or shared action"
+    }
+   ],
+   "metadata": {
+    "components": 3,
+    "excluded_structural": [
+     "HOIST"
+    ]
+   }
+  },
+  {
+   "metric_id": "vocabulary_conformance",
+   "version": "0.1.0",
+   "family": "conformance",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model has no explicit relationships list",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "relation_signature_validity",
+   "version": "0.1.0",
+   "family": "conformance",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no resolved relationships have a vocabulary signature",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "function_allocation_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 3,
+   "evidence": [
+    {
+     "ref": "allocation",
+     "detail": "3/3 allocated",
+     "data": {}
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "component_purpose_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.3333333333333333,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 9,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "CLAMP",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Pallet Clamp Assembly' has no function or action"
+    },
+    {
+     "ref": "JAW1",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'First Jaw' has no function or action"
+    },
+    {
+     "ref": "JAW2",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Second Jaw' has no function or action"
+    },
+    {
+     "ref": "FRAME",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Support Frame' has no function or action"
+    },
+    {
+     "ref": "FORKS",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Vehicle Forks' has no function or action"
+    },
+    {
+     "ref": "CL_SUPPORT",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Clamp Support' has no function or action"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "boundary_completeness",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.75,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.75,
+   "checked": 4,
+   "evidence": [
+    {
+     "ref": "boundary_declared",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "input_identified",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "output_identified",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "boundary_exchange_typed",
+     "detail": "present",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "output_identified",
+     "kind": "missing_boundary_capability",
+     "severity": "major",
+     "message": "output identified"
+    }
+   ],
+   "metadata": {
+    "external": [
+     "OPERATOR",
+     "PALLET",
+     "VEHICLE"
+    ],
+    "crossings": [
+     "JAW1::IF_J1_PALLET",
+     "JAW2::IF_J2_PALLET",
+     "OPERATOR::IF_OPERATOR_PEDAL"
+    ],
+    "inputs": [
+     "OPERATOR::IF_OPERATOR_PEDAL"
+    ],
+    "outputs": [],
+    "typed": [
+     "JAW1::IF_J1_PALLET",
+     "JAW2::IF_J2_PALLET",
+     "OPERATOR::IF_OPERATOR_PEDAL"
+    ]
+   }
+  },
+  {
+   "metric_id": "requirement_satisfaction_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model declares no requirements",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "requirement_verification_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model declares no requirements",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "end_to_end_traceability",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model declares no requirements",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "provenance_completeness",
+   "version": "0.1.0",
+   "family": "provenance",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.25,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 4,
+   "evidence": [
+    {
+     "ref": "source",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "generator",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "generator_version",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "schema_version",
+     "detail": "present",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "source",
+     "kind": "missing_provenance",
+     "severity": "minor",
+     "message": "model does not record source"
+    },
+    {
+     "ref": "generator",
+     "kind": "missing_provenance",
+     "severity": "minor",
+     "message": "model does not record generator"
+    },
+    {
+     "ref": "generator_version",
+     "kind": "missing_provenance",
+     "severity": "minor",
+     "message": "model does not record generator version"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "model_profile_completeness",
+   "version": "0.1.0",
+   "family": "readiness",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.9,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 10,
+   "evidence": [
+    {
+     "ref": "system_identity",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "subsystems",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "structure",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "functions_or_actions",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "function_allocation",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "ports",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "interfaces",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "item_flows",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "input_boundary",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "output_boundary",
+     "detail": "missing",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "output_boundary",
+     "kind": "missing_profile_capability",
+     "severity": "major",
+     "message": "functional profile requires output boundary"
+    }
+   ],
+   "metadata": {
+    "profile": "functional"
+   }
+  },
+  {
+   "metric_id": "competency_question_answerability",
+   "version": "0.1.0",
+   "family": "usability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.8333333333333334,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 6,
+   "evidence": [
+    {
+     "ref": "component_inventory",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "function_allocation_map",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "resolved_interface_map",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "typed_flow_map",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "boundary_inputs_and_outputs",
+     "detail": "",
+     "data": {
+      "answerability": 0.0
+     }
+    },
+    {
+     "ref": "input_to_output_paths",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "boundary_inputs_and_outputs",
+     "kind": "competency_question_incomplete",
+     "severity": "major",
+     "message": "answerability 0.00"
+    }
+   ],
+   "metadata": {
+    "questions": {
+     "component_inventory": 1.0,
+     "function_allocation_map": 1.0,
+     "resolved_interface_map": 1.0,
+     "typed_flow_map": 1.0,
+     "boundary_inputs_and_outputs": 0.0,
+     "input_to_output_paths": 1.0
+    },
+    "profile": "functional"
+   }
+  },
+  {
+   "metric_id": "internal_function_support",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'realization' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "behavior_claim_coverage",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'unclaimed_behavior' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "internal_transformation_coherence",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'transformation' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "statement_distinction",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'overlap' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "entity_distinctness",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'entity_identity' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_semantic_fit",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'flow_semantics' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "role_assignment_coherence",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'scope' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  }
+ ],
+ "manifest": {
+  "framework_version": "0.2.1",
+  "git_sha": null,
+  "python": "3.13.5",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "packages": {
+   "pydantic": "2.13.5",
+   "networkx": "3.7",
+   "numpy": "2.5.3",
+   "scipy": "1.18.1",
+   "scikit-learn": "1.9.1",
+   "mcp": "2.2.0"
+  },
+  "input_path": "C:\\Users\\Eladio\\Downloads\\functional-quality\\inputs\\US7544037B2\\agents\\model.sjs.json",
+  "input_sha256": "c24f1390578a0905e89126c0777b223cfd832883f242338ddc173fdf6d18d108",
+  "model_key": "us7544037b2-c24f139057",
+  "metric_versions": {
+   "entity_duplication": "0.1.0",
+   "statement_duplication": "0.1.0",
+   "relationship_resolution": "0.1.0",
+   "representation_consistency": "0.1.0",
+   "statement_form": "0.1.0",
+   "scope_candidates": "0.1.0",
+   "partition_strength": "0.1.0",
+   "flow_structure": "0.1.0",
+   "explanatory_closure": "0.1.0",
+   "reference_integrity": "0.1.0",
+   "identifier_uniqueness": "0.1.0",
+   "interface_direction": "0.1.0",
+   "flow_type_consistency": "0.1.0",
+   "flow_reuse": "0.1.0",
+   "port_fan_out": "0.1.0",
+   "port_direction_naming": "0.1.0",
+   "causal_path_coverage": "0.1.0",
+   "connectivity": "0.1.0",
+   "vocabulary_conformance": "0.1.0",
+   "relation_signature_validity": "0.1.0",
+   "function_allocation_coverage": "0.1.0",
+   "component_purpose_coverage": "0.1.0",
+   "boundary_completeness": "0.1.0",
+   "requirement_satisfaction_coverage": "0.1.0",
+   "requirement_verification_coverage": "0.1.0",
+   "end_to_end_traceability": "0.1.0",
+   "provenance_completeness": "0.1.0",
+   "model_profile_completeness": "0.1.0",
+   "competency_question_answerability": "0.1.0",
+   "internal_function_support": "0.1.0",
+   "behavior_claim_coverage": "0.1.0",
+   "internal_transformation_coherence": "0.1.0",
+   "statement_distinction": "0.1.0",
+   "entity_distinctness": "0.1.0",
+   "flow_semantic_fit": "0.1.0",
+   "role_assignment_coherence": "0.1.0"
+  },
+  "retriever": "tfidf-word+char-v1",
+  "config": {
+   "results_dir": "results",
+   "closure.support_threshold": 0.12,
+   "duplication.similarity_threshold": 0.72,
+   "architecture.min_nodes": 6,
+   "architecture.min_edges": 5,
+   "tasks.max_per_kind": 200,
+   "mbse.profile": "functional",
+   "mbse.vocabulary_path": "sjs.kg.schema.json"
+  },
+  "config_sha256": "db444ef9e4ce9b88",
+  "judge_prompt_versions": {
+   "realization": "0e5a5e8444aa",
+   "unclaimed_behavior": "03be253ac935",
+   "transformation": "ec4f9d66cea9",
+   "overlap": "a1c3966dabf7",
+   "entity_identity": "8683abb23ed7",
+   "flow_semantics": "4bed83f6bc0d",
+   "scope": "dd249779cad2"
+  },
+  "judges": [],
+  "mutation": null,
+  "timestamp": "2026-10-01T15:48:40+00:00"
+ },
+ "errors": []
+}
