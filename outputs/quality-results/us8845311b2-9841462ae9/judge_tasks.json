@@ -1,0 +1,521 @@
+[
+ {
+  "task_id": "flow_semantics/SCREW_ROTOR::IF_GROOVE_FIRST_PORT",
+  "kind": "flow_semantics",
+  "subject": "SCREW_ROTOR::IF_GROOVE_FIRST_PORT",
+  "agent": "judge-interface",
+  "question": "Does the item flow's name and type fit what actually passes between these two ports?",
+  "allowed_verdicts": [
+   "FITS",
+   "QUESTIONABLE",
+   "MISFIT",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "A flow named for one stage (e.g. 'turret rotation') reused for a later stage is QUESTIONABLE unless the quantity is genuinely identical."
+  ],
+  "prompt_version": "4bed83f6bc0d",
+  "payload_sha": "5fb68979a2d9",
+  "payload": {
+   "system": "Partitioned-discharge screw compressor",
+   "interface_type": "gas communication",
+   "ends": [
+    {
+     "subsystem": {
+      "id": "SCREW_ROTOR",
+      "name": "Screw rotor",
+      "description": "Rotor having helical grooves that cooperate with gates to compress gas.",
+      "role": "internal"
+     },
+     "port": "Gas from first adjacent helical groove",
+     "direction": "out",
+     "flow_type": "gas"
+    },
+    {
+     "subsystem": {
+      "id": "SLIDE_VALVE",
+      "name": "Partitioned discharge slide valve",
+      "description": "Defines part of the discharge port and carries the first partition wall dividing it into first and second ports.",
+      "role": "internal"
+     },
+     "port": "First discharge port",
+     "direction": "in",
+     "flow_type": "gas"
+    }
+   ],
+   "flow": {
+    "id": "GAS_FIRST",
+    "name": "Gas from first port through first discharge passage",
+    "flow_type": "gas",
+    "notes": "First port communicates with the first discharge passage and high-pressure space; the optional claim-2 partition is not required by this model."
+   },
+   "flow_also_used_by": [
+    "SLIDE_VALVE::IF_FIRST_DISCHARGE"
+   ]
+  }
+ },
+ {
+  "task_id": "flow_semantics/SCREW_ROTOR::IF_GROOVE_SECOND_PORT",
+  "kind": "flow_semantics",
+  "subject": "SCREW_ROTOR::IF_GROOVE_SECOND_PORT",
+  "agent": "judge-interface",
+  "question": "Does the item flow's name and type fit what actually passes between these two ports?",
+  "allowed_verdicts": [
+   "FITS",
+   "QUESTIONABLE",
+   "MISFIT",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "A flow named for one stage (e.g. 'turret rotation') reused for a later stage is QUESTIONABLE unless the quantity is genuinely identical."
+  ],
+  "prompt_version": "4bed83f6bc0d",
+  "payload_sha": "71c0d6c9a2bd",
+  "payload": {
+   "system": "Partitioned-discharge screw compressor",
+   "interface_type": "gas communication",
+   "ends": [
+    {
+     "subsystem": {
+      "id": "SCREW_ROTOR",
+      "name": "Screw rotor",
+      "description": "Rotor having helical grooves that cooperate with gates to compress gas.",
+      "role": "internal"
+     },
+     "port": "Gas from second adjacent helical groove",
+     "direction": "out",
+     "flow_type": "gas"
+    },
+    {
+     "subsystem": {
+      "id": "SLIDE_VALVE",
+      "name": "Partitioned discharge slide valve",
+      "description": "Defines part of the discharge port and carries the first partition wall dividing it into first and second ports.",
+      "role": "internal"
+     },
+     "port": "Second discharge port",
+     "direction": "in",
+     "flow_type": "gas"
+    }
+   ],
+   "flow": {
+    "id": "GAS_SECOND",
+    "name": "Gas from second port through second discharge passage",
+    "flow_type": "gas",
+    "notes": "Second port communicates with the second discharge passage and high-pressure space; the optional claim-2 partition is not required by this model."
+   },
+   "flow_also_used_by": [
+    "SLIDE_VALVE::IF_SECOND_DISCHARGE"
+   ]
+  }
+ },
+ {
+  "task_id": "flow_semantics/SLIDE_VALVE::IF_FIRST_DISCHARGE",
+  "kind": "flow_semantics",
+  "subject": "SLIDE_VALVE::IF_FIRST_DISCHARGE",
+  "agent": "judge-interface",
+  "question": "Does the item flow's name and type fit what actually passes between these two ports?",
+  "allowed_verdicts": [
+   "FITS",
+   "QUESTIONABLE",
+   "MISFIT",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "A flow named for one stage (e.g. 'turret rotation') reused for a later stage is QUESTIONABLE unless the quantity is genuinely identical."
+  ],
+  "prompt_version": "4bed83f6bc0d",
+  "payload_sha": "b775791b903b",
+  "payload": {
+   "system": "Partitioned-discharge screw compressor",
+   "interface_type": "gas passage",
+   "ends": [
+    {
+     "subsystem": {
+      "id": "SLIDE_VALVE",
+      "name": "Partitioned discharge slide valve",
+      "description": "Defines part of the discharge port and carries the first partition wall dividing it into first and second ports.",
+      "role": "internal"
+     },
+     "port": "First downstream discharge passage",
+     "direction": "out",
+     "flow_type": "gas"
+    },
+    {
+     "subsystem": {
+      "id": "CASING",
+      "name": "Casing",
+      "description": "Contains screw rotor and helps define compression chambers and downstream discharge passage.",
+      "role": "internal"
+     },
+     "port": "First downstream discharge passage",
+     "direction": "in",
+     "flow_type": "gas"
+    }
+   ],
+   "flow": {
+    "id": "GAS_FIRST",
+    "name": "Gas from first port through first discharge passage",
+    "flow_type": "gas",
+    "notes": "First port communicates with the first discharge passage and high-pressure space; the optional claim-2 partition is not required by this model."
+   },
+   "flow_also_used_by": [
+    "SCREW_ROTOR::IF_GROOVE_FIRST_PORT"
+   ]
+  }
+ },
+ {
+  "task_id": "flow_semantics/SLIDE_VALVE::IF_SECOND_DISCHARGE",
+  "kind": "flow_semantics",
+  "subject": "SLIDE_VALVE::IF_SECOND_DISCHARGE",
+  "agent": "judge-interface",
+  "question": "Does the item flow's name and type fit what actually passes between these two ports?",
+  "allowed_verdicts": [
+   "FITS",
+   "QUESTIONABLE",
+   "MISFIT",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "A flow named for one stage (e.g. 'turret rotation') reused for a later stage is QUESTIONABLE unless the quantity is genuinely identical."
+  ],
+  "prompt_version": "4bed83f6bc0d",
+  "payload_sha": "fa166c29e9f7",
+  "payload": {
+   "system": "Partitioned-discharge screw compressor",
+   "interface_type": "gas passage",
+   "ends": [
+    {
+     "subsystem": {
+      "id": "SLIDE_VALVE",
+      "name": "Partitioned discharge slide valve",
+      "description": "Defines part of the discharge port and carries the first partition wall dividing it into first and second ports.",
+      "role": "internal"
+     },
+     "port": "Second downstream discharge passage",
+     "direction": "out",
+     "flow_type": "gas"
+    },
+    {
+     "subsystem": {
+      "id": "CASING",
+      "name": "Casing",
+      "description": "Contains screw rotor and helps define compression chambers and downstream discharge passage.",
+      "role": "internal"
+     },
+     "port": "Second downstream discharge passage",
+     "direction": "in",
+     "flow_type": "gas"
+    }
+   ],
+   "flow": {
+    "id": "GAS_SECOND",
+    "name": "Gas from second port through second discharge passage",
+    "flow_type": "gas",
+    "notes": "Second port communicates with the second discharge passage and high-pressure space; the optional claim-2 partition is not required by this model."
+   },
+   "flow_also_used_by": [
+    "SCREW_ROTOR::IF_GROOVE_SECOND_PORT"
+   ]
+  }
+ },
+ {
+  "task_id": "realization/GATE_ROTOR::mesh_gates",
+  "kind": "realization",
+  "subject": "GATE_ROTOR::mesh_gates",
+  "agent": "judge-realization",
+  "question": "Does the supplied behavioural or interface evidence materially support realization of the stated function, at the stated abstraction level?",
+  "allowed_verdicts": [
+   "SUPPORTED",
+   "PARTIALLY_SUPPORTED",
+   "UNSUPPORTED",
+   "CONTRADICTED",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "Judge only against the evidence listed; do not use outside knowledge of the device.",
+   "Evidence from a neighbouring subsystem counts if it plausibly realizes the function.",
+   "SUPPORTED requires at least one cited evidence ref."
+  ],
+  "prompt_version": "0e5a5e8444aa",
+  "payload_sha": "abebf5db2aad",
+  "payload": {
+   "system": "Partitioned-discharge screw compressor",
+   "function": "mesh gates",
+   "owner": {
+    "id": "GATE_ROTOR",
+    "name": "Gate rotor",
+    "description": "Rotor with gates meshing with the screw rotor helical grooves.",
+    "role": "internal"
+   },
+   "function_class": "transforming",
+   "function_class_reason": "leading verb 'mesh' is not structural",
+   "evidence": [],
+   "note": "Evidence was shortlisted by lexical retrieval; similarity is NOT a verdict."
+  }
+ },
+ {
+  "task_id": "realization/SCREW_ROTOR::form_compression_chambers",
+  "kind": "realization",
+  "subject": "SCREW_ROTOR::form_compression_chambers",
+  "agent": "judge-realization",
+  "question": "Does the supplied behavioural or interface evidence materially support realization of the stated function, at the stated abstraction level?",
+  "allowed_verdicts": [
+   "SUPPORTED",
+   "PARTIALLY_SUPPORTED",
+   "UNSUPPORTED",
+   "CONTRADICTED",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "Judge only against the evidence listed; do not use outside knowledge of the device.",
+   "Evidence from a neighbouring subsystem counts if it plausibly realizes the function.",
+   "SUPPORTED requires at least one cited evidence ref."
+  ],
+  "prompt_version": "0e5a5e8444aa",
+  "payload_sha": "7b856d49c50a",
+  "payload": {
+   "system": "Partitioned-discharge screw compressor",
+   "function": "form compression chambers",
+   "owner": {
+    "id": "SCREW_ROTOR",
+    "name": "Screw rotor",
+    "description": "Rotor having helical grooves that cooperate with gates to compress gas.",
+    "role": "internal"
+   },
+   "function_class": "transforming",
+   "function_class_reason": "leading verb 'form' is not structural",
+   "evidence": [
+    {
+     "ref": "action:COMPRESS_AND_DISCHARGE",
+     "kind": "action",
+     "owner": "SCREW_ROTOR",
+     "scope": "self",
+     "text": "Compress and discharge gas Rotation moves meshing gates along helical grooves and forms compression chambers. Gas is compressed in the chambers. When adjacent grooves open to the discharge port, the slide-valve partition separates communication into first and second ports. Gas passes into downstream discharge passage(s) communicating with the respective ports.",
+     "retrieval_similarity": 0.251
+    },
+    {
+     "ref": "interface:SCREW_ROTOR::IF_GROOVE_FIRST_PORT",
+     "kind": "interface",
+     "owner": "SCREW_ROTOR",
+     "scope": "self",
+     "text": "gas communication; flow: Gas from first port through first discharge passage (gas); SCREW_ROTOR.Gas from first adjacent helical groove [out]; SLIDE_VALVE.First discharge port [in]",
+     "retrieval_similarity": 0.007
+    },
+    {
+     "ref": "interface:SCREW_ROTOR::IF_GROOVE_SECOND_PORT",
+     "kind": "interface",
+     "owner": "SCREW_ROTOR",
+     "scope": "self",
+     "text": "gas communication; flow: Gas from second port through second discharge passage (gas); SCREW_ROTOR.Gas from second adjacent helical groove [out]; SLIDE_VALVE.Second discharge port [in]",
+     "retrieval_similarity": 0.007
+    }
+   ],
+   "note": "Evidence was shortlisted by lexical retrieval; similarity is NOT a verdict."
+  }
+ },
+ {
+  "task_id": "realization/SCREW_ROTOR::rotate_rotor",
+  "kind": "realization",
+  "subject": "SCREW_ROTOR::rotate_rotor",
+  "agent": "judge-realization",
+  "question": "Does the supplied behavioural or interface evidence materially support realization of the stated function, at the stated abstraction level?",
+  "allowed_verdicts": [
+   "SUPPORTED",
+   "PARTIALLY_SUPPORTED",
+   "UNSUPPORTED",
+   "CONTRADICTED",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "Judge only against the evidence listed; do not use outside knowledge of the device.",
+   "Evidence from a neighbouring subsystem counts if it plausibly realizes the function.",
+   "SUPPORTED requires at least one cited evidence ref."
+  ],
+  "prompt_version": "0e5a5e8444aa",
+  "payload_sha": "bcf60df074df",
+  "payload": {
+   "system": "Partitioned-discharge screw compressor",
+   "function": "rotate rotor",
+   "owner": {
+    "id": "SCREW_ROTOR",
+    "name": "Screw rotor",
+    "description": "Rotor having helical grooves that cooperate with gates to compress gas.",
+    "role": "internal"
+   },
+   "function_class": "transforming",
+   "function_class_reason": "leading verb 'rotate' is not structural",
+   "evidence": [
+    {
+     "ref": "action:COMPRESS_AND_DISCHARGE",
+     "kind": "action",
+     "owner": "SCREW_ROTOR",
+     "scope": "self",
+     "text": "Compress and discharge gas Rotation moves meshing gates along helical grooves and forms compression chambers. Gas is compressed in the chambers. When adjacent grooves open to the discharge port, the slide-valve partition separates communication into first and second ports. Gas passes into downstream discharge passage(s) communicating with the respective ports.",
+     "retrieval_similarity": 0.025
+    },
+    {
+     "ref": "interface:SCREW_ROTOR::IF_GROOVE_FIRST_PORT",
+     "kind": "interface",
+     "owner": "SCREW_ROTOR",
+     "scope": "self",
+     "text": "gas communication; flow: Gas from first port through first discharge passage (gas); SCREW_ROTOR.Gas from first adjacent helical groove [out]; SLIDE_VALVE.First discharge port [in]",
+     "retrieval_similarity": 0.015
+    },
+    {
+     "ref": "interface:SCREW_ROTOR::IF_GROOVE_SECOND_PORT",
+     "kind": "interface",
+     "owner": "SCREW_ROTOR",
+     "scope": "self",
+     "text": "gas communication; flow: Gas from second port through second discharge passage (gas); SCREW_ROTOR.Gas from second adjacent helical groove [out]; SLIDE_VALVE.Second discharge port [in]",
+     "retrieval_similarity": 0.014
+    }
+   ],
+   "note": "Evidence was shortlisted by lexical retrieval; similarity is NOT a verdict."
+  }
+ },
+ {
+  "task_id": "transformation/SLIDE_VALVE",
+  "kind": "transformation",
+  "subject": "SLIDE_VALVE",
+  "agent": "judge-transformation",
+  "question": "Taken together, do the subsystem's declared functions plausibly explain how its input flows become its output flows at the stated abstraction level?",
+  "allowed_verdicts": [
+   "EXPLICIT",
+   "STRONG",
+   "PARTIAL",
+   "WEAK",
+   "UNEXPLAINED",
+   "CONTRADICTORY",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "Consider every output: is there a function explaining where it comes from?",
+   "Exchanges are direction-indeterminate (inout) interfaces: treat each as a possible input or output and judge whether the functions explain what is exchanged."
+  ],
+  "prompt_version": "ec4f9d66cea9",
+  "payload_sha": "735de374e775",
+  "payload": {
+   "system": "Partitioned-discharge screw compressor",
+   "subsystem": {
+    "id": "SLIDE_VALVE",
+    "name": "Partitioned discharge slide valve",
+    "description": "Defines part of the discharge port and carries the first partition wall dividing it into first and second ports.",
+    "role": "internal"
+   },
+   "functions": [],
+   "inputs": [
+    {
+     "ref": "interface:SCREW_ROTOR::IF_GROOVE_FIRST_PORT",
+     "text": "gas communication; flow: Gas from first port through first discharge passage (gas); SCREW_ROTOR.Gas from first adjacent helical groove [out]; SLIDE_VALVE.First discharge port [in]",
+     "flow": "Gas from first port through first discharge passage",
+     "flow_type": "gas",
+     "from": "SCREW_ROTOR"
+    },
+    {
+     "ref": "interface:SCREW_ROTOR::IF_GROOVE_SECOND_PORT",
+     "text": "gas communication; flow: Gas from second port through second discharge passage (gas); SCREW_ROTOR.Gas from second adjacent helical groove [out]; SLIDE_VALVE.Second discharge port [in]",
+     "flow": "Gas from second port through second discharge passage",
+     "flow_type": "gas",
+     "from": "SCREW_ROTOR"
+    }
+   ],
+   "outputs": [
+    {
+     "ref": "interface:SLIDE_VALVE::IF_FIRST_DISCHARGE",
+     "text": "gas passage; flow: Gas from first port through first discharge passage (gas); SLIDE_VALVE.First downstream discharge passage [out]; CASING.First downstream discharge passage [in]",
+     "flow": "Gas from first port through first discharge passage",
+     "flow_type": "gas",
+     "to": "CASING"
+    },
+    {
+     "ref": "interface:SLIDE_VALVE::IF_SECOND_DISCHARGE",
+     "text": "gas passage; flow: Gas from second port through second discharge passage (gas); SLIDE_VALVE.Second downstream discharge passage [out]; CASING.Second downstream discharge passage [in]",
+     "flow": "Gas from second port through second discharge passage",
+     "flow_type": "gas",
+     "to": "CASING"
+    }
+   ],
+   "exchanges": [],
+   "direction_indeterminate": false,
+   "evidence": [
+    {
+     "ref": "interface:SCREW_ROTOR::IF_GROOVE_FIRST_PORT",
+     "text": "gas communication; flow: Gas from first port through first discharge passage (gas); SCREW_ROTOR.Gas from first adjacent helical groove [out]; SLIDE_VALVE.First discharge port [in]",
+     "flow": "Gas from first port through first discharge passage",
+     "flow_type": "gas",
+     "from": "SCREW_ROTOR"
+    },
+    {
+     "ref": "interface:SCREW_ROTOR::IF_GROOVE_SECOND_PORT",
+     "text": "gas communication; flow: Gas from second port through second discharge passage (gas); SCREW_ROTOR.Gas from second adjacent helical groove [out]; SLIDE_VALVE.Second discharge port [in]",
+     "flow": "Gas from second port through second discharge passage",
+     "flow_type": "gas",
+     "from": "SCREW_ROTOR"
+    },
+    {
+     "ref": "interface:SLIDE_VALVE::IF_FIRST_DISCHARGE",
+     "text": "gas passage; flow: Gas from first port through first discharge passage (gas); SLIDE_VALVE.First downstream discharge passage [out]; CASING.First downstream discharge passage [in]",
+     "flow": "Gas from first port through first discharge passage",
+     "flow_type": "gas",
+     "to": "CASING"
+    },
+    {
+     "ref": "interface:SLIDE_VALVE::IF_SECOND_DISCHARGE",
+     "text": "gas passage; flow: Gas from second port through second discharge passage (gas); SLIDE_VALVE.Second downstream discharge passage [out]; CASING.Second downstream discharge passage [in]",
+     "flow": "Gas from second port through second discharge passage",
+     "flow_type": "gas",
+     "to": "CASING"
+    }
+   ]
+  }
+ },
+ {
+  "task_id": "unclaimed_behavior/COMPRESS_AND_DISCHARGE",
+  "kind": "unclaimed_behavior",
+  "subject": "COMPRESS_AND_DISCHARGE",
+  "agent": "judge-realization",
+  "question": "Is this behaviour accounted for by at least one of the candidate declared functions?",
+  "allowed_verdicts": [
+   "COVERED",
+   "PARTIALLY_COVERED",
+   "UNCLAIMED",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "UNCLAIMED means the model performs something no function declares."
+  ],
+  "prompt_version": "03be253ac935",
+  "payload_sha": "5411bde8b15d",
+  "payload": {
+   "system": "Partitioned-discharge screw compressor",
+   "behaviour": {
+    "name": "Compress and discharge gas",
+    "steps": [
+     "Rotation moves meshing gates along helical grooves and forms compression chambers.",
+     "Gas is compressed in the chambers.",
+     "When adjacent grooves open to the discharge port, the slide-valve partition separates communication into first and second ports.",
+     "Gas passes into downstream discharge passage(s) communicating with the respective ports."
+    ]
+   },
+   "owner": {
+    "id": "SCREW_ROTOR",
+    "name": "Screw rotor",
+    "description": "Rotor having helical grooves that cooperate with gates to compress gas.",
+    "role": "internal"
+   },
+   "evidence": [
+    {
+     "ref": "function:SCREW_ROTOR::form_compression_chambers",
+     "owner": "SCREW_ROTOR",
+     "text": "form compression chambers"
+    },
+    {
+     "ref": "function:SCREW_ROTOR::rotate_rotor",
+     "owner": "SCREW_ROTOR",
+     "text": "rotate rotor"
+    }
+   ]
+  }
+ }
+]
