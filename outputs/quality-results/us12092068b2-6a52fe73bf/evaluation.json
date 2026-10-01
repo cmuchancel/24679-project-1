@@ -1,0 +1,2380 @@
+{
+ "status": "EVALUATED",
+ "gates": [
+  {
+   "gate": "schema_valid",
+   "passed": true
+  },
+  {
+   "gate": "critical_references_resolve",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "identifiers_unique",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "relationship_vocabulary_conforms",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "relationship_signatures_valid",
+   "passed": true,
+   "failures": 0
+  }
+ ],
+ "summary": {
+  "model_key": "us12092068b2-6a52fe73bf",
+  "system_id": "US12092068B2",
+  "system_name": "Variable-flow Pelton turbine unit",
+  "dialect": "interface_rich",
+  "counts": {
+   "subsystems": 10,
+   "functions": 0,
+   "ports": 19,
+   "flows": 7,
+   "interfaces": 0,
+   "actions": 2,
+   "parts": 1,
+   "relationships": 0,
+   "requirements": 3
+  },
+  "roles": {
+   "internal": 9,
+   "external": 1
+  },
+  "ingest_notes": [
+   "port id 'water_out' is reused in subsystems ['COLLECT', 'PUMP', 'SUPPLY']; qualified as <subsystem>::water_out",
+   "port id 'water_in' is reused in subsystems ['COLLECT', 'INJECTOR', 'PUMP']; qualified as <subsystem>::water_in"
+  ]
+ },
+ "profile": {
+  "entities": {
+   "entity_duplication": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.8,
+    "checked": 11,
+    "violations": 0,
+    "status": "heuristic"
+   }
+  },
+  "semantic_candidates": {
+   "statement_duplication": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.5,
+    "checked": 2,
+    "violations": 0,
+    "status": "heuristic"
+   },
+   "statement_form": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.5,
+    "checked": 2,
+    "violations": 0,
+    "status": "heuristic"
+   }
+  },
+  "closure": {
+   "explanatory_closure": {
+    "score": 0.1053,
+    "applicable": true,
+    "confidence": 0.7,
+    "checked": 38,
+    "violations": 34,
+    "status": "proposed"
+   }
+  },
+  "integrity": {
+   "reference_integrity": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 2,
+    "violations": 0,
+    "status": "established"
+   },
+   "identifier_uniqueness": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 39,
+    "violations": 0,
+    "status": "established"
+   }
+  },
+  "interface": {
+   "port_direction_naming": {
+    "score": 0.9333,
+    "applicable": true,
+    "confidence": 0.7,
+    "checked": 15,
+    "violations": 1,
+    "status": "heuristic"
+   }
+  },
+  "topology": {
+   "connectivity": {
+    "score": 0.1,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 10,
+    "violations": 10,
+    "status": "established"
+   }
+  },
+  "traceability": {
+   "function_allocation_coverage": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 2,
+    "violations": 0,
+    "status": "established"
+   },
+   "component_purpose_coverage": {
+    "score": 0.2222,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 9,
+    "violations": 7,
+    "status": "proposed"
+   },
+   "requirement_satisfaction_coverage": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 3,
+    "violations": 0,
+    "status": "established"
+   },
+   "requirement_verification_coverage": {
+    "score": 0.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 3,
+    "violations": 3,
+    "status": "established"
+   },
+   "end_to_end_traceability": {
+    "score": 0.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 3,
+    "violations": 3,
+    "status": "proposed"
+   }
+  },
+  "architecture": {
+   "boundary_completeness": {
+    "score": 0.75,
+    "applicable": true,
+    "confidence": 0.75,
+    "checked": 4,
+    "violations": 1,
+    "status": "proposed"
+   }
+  },
+  "provenance": {
+   "provenance_completeness": {
+    "score": 0.25,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 4,
+    "violations": 3,
+    "status": "proposed"
+   }
+  },
+  "readiness": {
+   "model_profile_completeness": {
+    "score": 0.9,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 10,
+    "violations": 1,
+    "status": "proposed"
+   }
+  },
+  "usability": {
+   "competency_question_answerability": {
+    "score": 0.5,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 6,
+    "violations": 3,
+    "status": "proposed"
+   }
+  }
+ },
+ "diagnostics": {
+  "scope_candidates": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 10,
+   "violations": 0,
+   "family": "entities",
+   "metadata": {
+    "candidates": 1
+   }
+  },
+  "flow_reuse": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 7,
+   "violations": 7,
+   "family": "interface",
+   "metadata": {
+    "reused": {},
+    "unused": [
+     "f_command",
+     "f_electric",
+     "f_jet",
+     "f_return",
+     "f_shaft",
+     "f_signal",
+     "f_water"
+    ]
+   }
+  },
+  "port_fan_out": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 19,
+   "violations": 0,
+   "family": "interface",
+   "metadata": {}
+  }
+ },
+ "not_applicable": {
+  "relationship_resolution": "model has no relationships list",
+  "representation_consistency": "no resolved relationships to compare",
+  "partition_strength": "internal dependency graph too small (9 nodes, 0 edges; need >= 6/5)",
+  "flow_structure": "no oriented interfaces",
+  "interface_direction": "no interfaces with two resolved, directed ports",
+  "flow_type_consistency": "no comparable typed port/flow pairs",
+  "causal_path_coverage": "model declares no interfaces",
+  "vocabulary_conformance": "model has no explicit relationships list",
+  "relation_signature_validity": "no resolved relationships have a vocabulary signature",
+  "internal_function_support": "'realization' tasks not built yet: run build_judge_tasks",
+  "behavior_claim_coverage": "'unclaimed_behavior' tasks not built yet: run build_judge_tasks",
+  "internal_transformation_coherence": "'transformation' tasks not built yet: run build_judge_tasks",
+  "statement_distinction": "'overlap' tasks not built yet: run build_judge_tasks",
+  "entity_distinctness": "'entity_identity' tasks not built yet: run build_judge_tasks",
+  "flow_semantic_fit": "'flow_semantics' tasks not built yet: run build_judge_tasks",
+  "role_assignment_coherence": "'scope' tasks not built yet: run build_judge_tasks"
+ },
+ "findings": [
+  {
+   "metric": "boundary_completeness",
+   "ref": "boundary_exchange_typed",
+   "kind": "missing_boundary_capability",
+   "severity": "major",
+   "message": "boundary exchange typed"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "resolved_interface_map",
+   "kind": "competency_question_incomplete",
+   "severity": "major",
+   "message": "answerability 0.00"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "typed_flow_map",
+   "kind": "competency_question_incomplete",
+   "severity": "major",
+   "message": "answerability 0.00"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "input_to_output_paths",
+   "kind": "competency_question_incomplete",
+   "severity": "major",
+   "message": "answerability 0.00"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SUPPLY",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Water supply reservoir' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "INJECTOR",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Variable-flow water injector' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "DRIVE",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Kinematic coupling' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "ALTERNATOR",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Alternator' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SENSORS",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Turbine sensors' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "COLLECT",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Collecting reservoir' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "PUMP",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Water return pump' has no function or action"
+  },
+  {
+   "metric": "end_to_end_traceability",
+   "ref": "RANGE_1",
+   "kind": "incomplete_requirement_trace",
+   "severity": "major",
+   "message": "requirement lacks satisfaction and/or verification trace"
+  },
+  {
+   "metric": "end_to_end_traceability",
+   "ref": "WHEEL_DIA",
+   "kind": "incomplete_requirement_trace",
+   "severity": "major",
+   "message": "requirement lacks satisfaction and/or verification trace"
+  },
+  {
+   "metric": "end_to_end_traceability",
+   "ref": "EFF_CTRL",
+   "kind": "incomplete_requirement_trace",
+   "severity": "major",
+   "message": "requirement lacks satisfaction and/or verification trace"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "SUPPLY::water_out",
+   "kind": "orphan:port_used",
+   "severity": "major",
+   "message": "port 'Water supply outlet' is in no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "SUPPLY::return_in",
+   "kind": "orphan:port_used",
+   "severity": "major",
+   "message": "port 'Returned water inlet' is in no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "INJECTOR::water_in",
+   "kind": "orphan:port_used",
+   "severity": "major",
+   "message": "port 'Pressurized water inlet' is in no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "INJECTOR::jet_out",
+   "kind": "orphan:port_used",
+   "severity": "major",
+   "message": "port 'Directed water jet' is in no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "INJECTOR::control_in",
+   "kind": "orphan:port_used",
+   "severity": "major",
+   "message": "port 'Outlet and jet-axis adjustment command' is in no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "TURBINE::jet_in",
+   "kind": "orphan:port_used",
+   "severity": "major",
+   "message": "port 'Water jet input' is in no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "TURBINE::shaft_out",
+   "kind": "orphan:port_used",
+   "severity": "major",
+   "message": "port 'Rotating shaft output' is in no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "DRIVE::rotary_in",
+   "kind": "orphan:port_used",
+   "severity": "major",
+   "message": "port 'Turbine shaft input' is in no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "DRIVE::rotary_out",
+   "kind": "orphan:port_used",
+   "severity": "major",
+   "message": "port 'Alternator shaft output' is in no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "ALTERNATOR::shaft_in",
+   "kind": "orphan:port_used",
+   "severity": "major",
+   "message": "port 'Driving shaft input' is in no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "ALTERNATOR::electric_out",
+   "kind": "orphan:port_used",
+   "severity": "major",
+   "message": "port 'Electrical output' is in no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "CTRL::sensor_in",
+   "kind": "orphan:port_used",
+   "severity": "major",
+   "message": "port 'Sensor parameters' is in no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "CTRL::adjust_out",
+   "kind": "orphan:port_used",
+   "severity": "major",
+   "message": "port 'Injector adjustment command' is in no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "SENSORS::measurement_out",
+   "kind": "orphan:port_used",
+   "severity": "major",
+   "message": "port 'Sensor parameter' is in no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "COLLECT::water_in",
+   "kind": "orphan:port_used",
+   "severity": "major",
+   "message": "port 'Collected spent water inlet' is in no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "COLLECT::water_out",
+   "kind": "orphan:port_used",
+   "severity": "major",
+   "message": "port 'Water return outlet' is in no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "PUMP::water_in",
+   "kind": "orphan:port_used",
+   "severity": "major",
+   "message": "port 'Collected water input' is in no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "PUMP::water_out",
+   "kind": "orphan:port_used",
+   "severity": "major",
+   "message": "port 'Returned water output' is in no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "LOAD::power_in",
+   "kind": "orphan:port_used",
+   "severity": "major",
+   "message": "port 'Electrical supply input' is in no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "f_water",
+   "kind": "orphan:flow_used",
+   "severity": "major",
+   "message": "flow 'Pressurized supply water' is carried by no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "f_jet",
+   "kind": "orphan:flow_used",
+   "severity": "major",
+   "message": "flow 'Directed water jet' is carried by no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "f_shaft",
+   "kind": "orphan:flow_used",
+   "severity": "major",
+   "message": "flow 'Rotational shaft power' is carried by no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "f_electric",
+   "kind": "orphan:flow_used",
+   "severity": "major",
+   "message": "flow 'Electrical energy' is carried by no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "f_signal",
+   "kind": "orphan:flow_used",
+   "severity": "major",
+   "message": "flow 'Sensor measurements' is carried by no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "f_command",
+   "kind": "orphan:flow_used",
+   "severity": "major",
+   "message": "flow 'Injector adjustment command' is carried by no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "f_return",
+   "kind": "orphan:flow_used",
+   "severity": "major",
+   "message": "flow 'Pumped return water' is carried by no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "SUPPLY",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'Water supply reservoir' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "INJECTOR",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'Variable-flow water injector' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "DRIVE",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'Kinematic coupling' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "ALTERNATOR",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'Alternator' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "SENSORS",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'Turbine sensors' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "COLLECT",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'Collecting reservoir' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "PUMP",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'Water return pump' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "LOAD",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'Electrical consuming installation' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "model_profile_completeness",
+   "ref": "interfaces",
+   "kind": "missing_profile_capability",
+   "severity": "major",
+   "message": "functional profile requires interfaces"
+  },
+  {
+   "metric": "port_direction_naming",
+   "ref": "INJECTOR::control_in",
+   "kind": "direction_contradicts_name",
+   "severity": "major",
+   "message": "'Outlet and jet-axis adjustment command' reads as 'out' but is declared in"
+  },
+  {
+   "metric": "requirement_verification_coverage",
+   "ref": "RANGE_1",
+   "kind": "requirement_not_verified",
+   "severity": "major",
+   "message": "requirement has no valid verified trace"
+  },
+  {
+   "metric": "requirement_verification_coverage",
+   "ref": "WHEEL_DIA",
+   "kind": "requirement_not_verified",
+   "severity": "major",
+   "message": "requirement has no valid verified trace"
+  },
+  {
+   "metric": "requirement_verification_coverage",
+   "ref": "EFF_CTRL",
+   "kind": "requirement_not_verified",
+   "severity": "major",
+   "message": "requirement has no valid verified trace"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "ALTERNATOR",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'Alternator' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "COLLECT",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'Collecting reservoir' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "CTRL",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'Turbine sensing and control device' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "DRIVE",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'Kinematic coupling' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "INJECTOR",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'Variable-flow water injector' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "LOAD",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'Electrical consuming installation' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "PUMP",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'Water return pump' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SENSORS",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'Turbine sensors' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SUPPLY",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'Water supply reservoir' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "TURBINE",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'Pelton turbine wheel and body' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "f_command",
+   "kind": "flow_unused",
+   "severity": "minor",
+   "message": "'Injector adjustment command' is not carried by any interface"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "f_electric",
+   "kind": "flow_unused",
+   "severity": "minor",
+   "message": "'Electrical energy' is not carried by any interface"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "f_jet",
+   "kind": "flow_unused",
+   "severity": "minor",
+   "message": "'Directed water jet' is not carried by any interface"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "f_return",
+   "kind": "flow_unused",
+   "severity": "minor",
+   "message": "'Pumped return water' is not carried by any interface"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "f_shaft",
+   "kind": "flow_unused",
+   "severity": "minor",
+   "message": "'Rotational shaft power' is not carried by any interface"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "f_signal",
+   "kind": "flow_unused",
+   "severity": "minor",
+   "message": "'Sensor measurements' is not carried by any interface"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "f_water",
+   "kind": "flow_unused",
+   "severity": "minor",
+   "message": "'Pressurized supply water' is not carried by any interface"
+  },
+  {
+   "metric": "provenance_completeness",
+   "ref": "source",
+   "kind": "missing_provenance",
+   "severity": "minor",
+   "message": "model does not record source"
+  },
+  {
+   "metric": "provenance_completeness",
+   "ref": "generator",
+   "kind": "missing_provenance",
+   "severity": "minor",
+   "message": "model does not record generator"
+  },
+  {
+   "metric": "provenance_completeness",
+   "ref": "generator_version",
+   "kind": "missing_provenance",
+   "severity": "minor",
+   "message": "model does not record generator version"
+  }
+ ],
+ "metrics": [
+  {
+   "metric_id": "entity_duplication",
+   "version": "0.1.0",
+   "family": "entities",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.8,
+   "checked": 11,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "subsystem_groups": [],
+    "part_groups": 0,
+    "names_with_reference_numerals": 0
+   }
+  },
+  {
+   "metric_id": "statement_duplication",
+   "version": "0.1.0",
+   "family": "semantic_candidates",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.5,
+   "checked": 2,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "threshold": 0.72,
+    "retriever": "tfidf-word+char-v1",
+    "candidate_pairs": []
+   }
+  },
+  {
+   "metric_id": "relationship_resolution",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model has no relationships list",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "representation_consistency",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no resolved relationships to compare",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "statement_form",
+   "version": "0.1.0",
+   "family": "semantic_candidates",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.5,
+   "checked": 2,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "scope_candidates",
+   "version": "0.1.0",
+   "family": "entities",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 10,
+   "evidence": [
+    {
+     "ref": "LOAD",
+     "detail": "inferred role external: external/context keywords",
+     "data": {
+      "name": "Electrical consuming installation",
+      "confidence": 0.75
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "candidates": 1
+   }
+  },
+  {
+   "metric_id": "partition_strength",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "diagnostic",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "internal dependency graph too small (9 nodes, 0 edges; need >= 6/5)",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_structure",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "diagnostic",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no oriented interfaces",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "explanatory_closure",
+   "version": "0.1.0",
+   "family": "closure",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.10526315789473684,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.7,
+   "checked": 38,
+   "evidence": [
+    {
+     "ref": "action_owned_or_allocated",
+     "detail": "2/2 supported",
+     "data": {
+      "checked": 2,
+      "supported": 2,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "flow_used",
+     "detail": "0/7 supported",
+     "data": {
+      "checked": 7,
+      "supported": 0,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "port_used",
+     "detail": "0/19 supported",
+     "data": {
+      "checked": 19,
+      "supported": 0,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "subsystem_participates",
+     "detail": "2/10 supported",
+     "data": {
+      "checked": 10,
+      "supported": 2,
+      "weight": 1.0
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "SUPPLY::water_out",
+     "kind": "orphan:port_used",
+     "severity": "major",
+     "message": "port 'Water supply outlet' is in no interface"
+    },
+    {
+     "ref": "SUPPLY::return_in",
+     "kind": "orphan:port_used",
+     "severity": "major",
+     "message": "port 'Returned water inlet' is in no interface"
+    },
+    {
+     "ref": "INJECTOR::water_in",
+     "kind": "orphan:port_used",
+     "severity": "major",
+     "message": "port 'Pressurized water inlet' is in no interface"
+    },
+    {
+     "ref": "INJECTOR::jet_out",
+     "kind": "orphan:port_used",
+     "severity": "major",
+     "message": "port 'Directed water jet' is in no interface"
+    },
+    {
+     "ref": "INJECTOR::control_in",
+     "kind": "orphan:port_used",
+     "severity": "major",
+     "message": "port 'Outlet and jet-axis adjustment command' is in no interface"
+    },
+    {
+     "ref": "TURBINE::jet_in",
+     "kind": "orphan:port_used",
+     "severity": "major",
+     "message": "port 'Water jet input' is in no interface"
+    },
+    {
+     "ref": "TURBINE::shaft_out",
+     "kind": "orphan:port_used",
+     "severity": "major",
+     "message": "port 'Rotating shaft output' is in no interface"
+    },
+    {
+     "ref": "DRIVE::rotary_in",
+     "kind": "orphan:port_used",
+     "severity": "major",
+     "message": "port 'Turbine shaft input' is in no interface"
+    },
+    {
+     "ref": "DRIVE::rotary_out",
+     "kind": "orphan:port_used",
+     "severity": "major",
+     "message": "port 'Alternator shaft output' is in no interface"
+    },
+    {
+     "ref": "ALTERNATOR::shaft_in",
+     "kind": "orphan:port_used",
+     "severity": "major",
+     "message": "port 'Driving shaft input' is in no interface"
+    },
+    {
+     "ref": "ALTERNATOR::electric_out",
+     "kind": "orphan:port_used",
+     "severity": "major",
+     "message": "port 'Electrical output' is in no interface"
+    },
+    {
+     "ref": "CTRL::sensor_in",
+     "kind": "orphan:port_used",
+     "severity": "major",
+     "message": "port 'Sensor parameters' is in no interface"
+    },
+    {
+     "ref": "CTRL::adjust_out",
+     "kind": "orphan:port_used",
+     "severity": "major",
+     "message": "port 'Injector adjustment command' is in no interface"
+    },
+    {
+     "ref": "SENSORS::measurement_out",
+     "kind": "orphan:port_used",
+     "severity": "major",
+     "message": "port 'Sensor parameter' is in no interface"
+    },
+    {
+     "ref": "COLLECT::water_in",
+     "kind": "orphan:port_used",
+     "severity": "major",
+     "message": "port 'Collected spent water inlet' is in no interface"
+    },
+    {
+     "ref": "COLLECT::water_out",
+     "kind": "orphan:port_used",
+     "severity": "major",
+     "message": "port 'Water return outlet' is in no interface"
+    },
+    {
+     "ref": "PUMP::water_in",
+     "kind": "orphan:port_used",
+     "severity": "major",
+     "message": "port 'Collected water input' is in no interface"
+    },
+    {
+     "ref": "PUMP::water_out",
+     "kind": "orphan:port_used",
+     "severity": "major",
+     "message": "port 'Returned water output' is in no interface"
+    },
+    {
+     "ref": "LOAD::power_in",
+     "kind": "orphan:port_used",
+     "severity": "major",
+     "message": "port 'Electrical supply input' is in no interface"
+    },
+    {
+     "ref": "f_water",
+     "kind": "orphan:flow_used",
+     "severity": "major",
+     "message": "flow 'Pressurized supply water' is carried by no interface"
+    },
+    {
+     "ref": "f_jet",
+     "kind": "orphan:flow_used",
+     "severity": "major",
+     "message": "flow 'Directed water jet' is carried by no interface"
+    },
+    {
+     "ref": "f_shaft",
+     "kind": "orphan:flow_used",
+     "severity": "major",
+     "message": "flow 'Rotational shaft power' is carried by no interface"
+    },
+    {
+     "ref": "f_electric",
+     "kind": "orphan:flow_used",
+     "severity": "major",
+     "message": "flow 'Electrical energy' is carried by no interface"
+    },
+    {
+     "ref": "f_signal",
+     "kind": "orphan:flow_used",
+     "severity": "major",
+     "message": "flow 'Sensor measurements' is carried by no interface"
+    },
+    {
+     "ref": "f_command",
+     "kind": "orphan:flow_used",
+     "severity": "major",
+     "message": "flow 'Injector adjustment command' is carried by no interface"
+    },
+    {
+     "ref": "f_return",
+     "kind": "orphan:flow_used",
+     "severity": "major",
+     "message": "flow 'Pumped return water' is carried by no interface"
+    },
+    {
+     "ref": "SUPPLY",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'Water supply reservoir' has no interface, relationship, function or behaviour"
+    },
+    {
+     "ref": "INJECTOR",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'Variable-flow water injector' has no interface, relationship, function or behaviour"
+    },
+    {
+     "ref": "DRIVE",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'Kinematic coupling' has no interface, relationship, function or behaviour"
+    },
+    {
+     "ref": "ALTERNATOR",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'Alternator' has no interface, relationship, function or behaviour"
+    },
+    {
+     "ref": "SENSORS",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'Turbine sensors' has no interface, relationship, function or behaviour"
+    },
+    {
+     "ref": "COLLECT",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'Collecting reservoir' has no interface, relationship, function or behaviour"
+    },
+    {
+     "ref": "PUMP",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'Water return pump' has no interface, relationship, function or behaviour"
+    },
+    {
+     "ref": "LOAD",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'Electrical consuming installation' has no interface, relationship, function or behaviour"
+    }
+   ],
+   "metadata": {
+    "support_threshold": 0.12,
+    "retriever": "tfidf-word+char-v1",
+    "function_classes": {}
+   }
+  },
+  {
+   "metric_id": "reference_integrity",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 2,
+   "evidence": [
+    {
+     "ref": "action.owner",
+     "detail": "2/2 resolved",
+     "data": {
+      "checked": 2,
+      "violations": 0
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "critical_violations": 0
+   }
+  },
+  {
+   "metric_id": "identifier_uniqueness",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 39,
+   "evidence": [
+    {
+     "ref": "note",
+     "detail": "port id 'water_out' is reused in subsystems ['COLLECT', 'PUMP', 'SUPPLY']; qualified as <subsystem>::water_out",
+     "data": {}
+    },
+    {
+     "ref": "note",
+     "detail": "port id 'water_in' is reused in subsystems ['COLLECT', 'INJECTOR', 'PUMP']; qualified as <subsystem>::water_in",
+     "data": {}
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "interface_direction",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no interfaces with two resolved, directed ports",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_type_consistency",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no comparable typed port/flow pairs",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [
+    {
+     "ref": "unknown_types",
+     "detail": "",
+     "data": {
+      "pairs": []
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_reuse",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 7,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "f_command",
+     "kind": "flow_unused",
+     "severity": "minor",
+     "message": "'Injector adjustment command' is not carried by any interface"
+    },
+    {
+     "ref": "f_electric",
+     "kind": "flow_unused",
+     "severity": "minor",
+     "message": "'Electrical energy' is not carried by any interface"
+    },
+    {
+     "ref": "f_jet",
+     "kind": "flow_unused",
+     "severity": "minor",
+     "message": "'Directed water jet' is not carried by any interface"
+    },
+    {
+     "ref": "f_return",
+     "kind": "flow_unused",
+     "severity": "minor",
+     "message": "'Pumped return water' is not carried by any interface"
+    },
+    {
+     "ref": "f_shaft",
+     "kind": "flow_unused",
+     "severity": "minor",
+     "message": "'Rotational shaft power' is not carried by any interface"
+    },
+    {
+     "ref": "f_signal",
+     "kind": "flow_unused",
+     "severity": "minor",
+     "message": "'Sensor measurements' is not carried by any interface"
+    },
+    {
+     "ref": "f_water",
+     "kind": "flow_unused",
+     "severity": "minor",
+     "message": "'Pressurized supply water' is not carried by any interface"
+    }
+   ],
+   "metadata": {
+    "reused": {},
+    "unused": [
+     "f_command",
+     "f_electric",
+     "f_jet",
+     "f_return",
+     "f_shaft",
+     "f_signal",
+     "f_water"
+    ]
+   }
+  },
+  {
+   "metric_id": "port_fan_out",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 19,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "port_direction_naming",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 0.9333333333333333,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.7,
+   "checked": 15,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "INJECTOR::control_in",
+     "kind": "direction_contradicts_name",
+     "severity": "major",
+     "message": "'Outlet and jet-axis adjustment command' reads as 'out' but is declared in"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "causal_path_coverage",
+   "version": "0.1.0",
+   "family": "topology",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model declares no interfaces",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "connectivity",
+   "version": "0.1.0",
+   "family": "topology",
+   "kind": "score",
+   "status": "established",
+   "score": 0.1,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 10,
+   "evidence": [
+    {
+     "ref": "component_0",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "SUPPLY"
+      ]
+     }
+    },
+    {
+     "ref": "component_1",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "INJECTOR"
+      ]
+     }
+    },
+    {
+     "ref": "component_2",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "TURBINE"
+      ]
+     }
+    },
+    {
+     "ref": "component_3",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "DRIVE"
+      ]
+     }
+    },
+    {
+     "ref": "component_4",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "ALTERNATOR"
+      ]
+     }
+    },
+    {
+     "ref": "component_5",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "CTRL"
+      ]
+     }
+    },
+    {
+     "ref": "component_6",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "SENSORS"
+      ]
+     }
+    },
+    {
+     "ref": "component_7",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "COLLECT"
+      ]
+     }
+    },
+    {
+     "ref": "component_8",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "PUMP"
+      ]
+     }
+    },
+    {
+     "ref": "component_9",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "LOAD"
+      ]
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "ALTERNATOR",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'Alternator' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "COLLECT",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'Collecting reservoir' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "CTRL",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'Turbine sensing and control device' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "DRIVE",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'Kinematic coupling' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "INJECTOR",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'Variable-flow water injector' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "LOAD",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'Electrical consuming installation' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "PUMP",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'Water return pump' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SENSORS",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'Turbine sensors' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SUPPLY",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'Water supply reservoir' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "TURBINE",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'Pelton turbine wheel and body' has no interface, relationship or shared action"
+    }
+   ],
+   "metadata": {
+    "components": 10,
+    "excluded_structural": []
+   }
+  },
+  {
+   "metric_id": "vocabulary_conformance",
+   "version": "0.1.0",
+   "family": "conformance",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model has no explicit relationships list",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "relation_signature_validity",
+   "version": "0.1.0",
+   "family": "conformance",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no resolved relationships have a vocabulary signature",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "function_allocation_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 2,
+   "evidence": [
+    {
+     "ref": "allocation",
+     "detail": "2/2 allocated",
+     "data": {}
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "component_purpose_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.2222222222222222,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 9,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "SUPPLY",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Water supply reservoir' has no function or action"
+    },
+    {
+     "ref": "INJECTOR",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Variable-flow water injector' has no function or action"
+    },
+    {
+     "ref": "DRIVE",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Kinematic coupling' has no function or action"
+    },
+    {
+     "ref": "ALTERNATOR",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Alternator' has no function or action"
+    },
+    {
+     "ref": "SENSORS",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Turbine sensors' has no function or action"
+    },
+    {
+     "ref": "COLLECT",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Collecting reservoir' has no function or action"
+    },
+    {
+     "ref": "PUMP",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Water return pump' has no function or action"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "boundary_completeness",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.75,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.75,
+   "checked": 4,
+   "evidence": [
+    {
+     "ref": "boundary_declared",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "input_identified",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "output_identified",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "boundary_exchange_typed",
+     "detail": "missing",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "boundary_exchange_typed",
+     "kind": "missing_boundary_capability",
+     "severity": "major",
+     "message": "boundary exchange typed"
+    }
+   ],
+   "metadata": {
+    "external": [
+     "LOAD"
+    ],
+    "crossings": [],
+    "inputs": [
+     "SUPPLY::return_in",
+     "INJECTOR::water_in",
+     "INJECTOR::control_in",
+     "TURBINE::jet_in",
+     "DRIVE::rotary_in",
+     "ALTERNATOR::shaft_in",
+     "CTRL::sensor_in",
+     "COLLECT::water_in",
+     "PUMP::water_in"
+    ],
+    "outputs": [
+     "SUPPLY::water_out",
+     "INJECTOR::jet_out",
+     "TURBINE::shaft_out",
+     "DRIVE::rotary_out",
+     "ALTERNATOR::electric_out",
+     "CTRL::adjust_out",
+     "SENSORS::measurement_out",
+     "COLLECT::water_out",
+     "PUMP::water_out"
+    ],
+    "typed": []
+   }
+  },
+  {
+   "metric_id": "requirement_satisfaction_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 3,
+   "evidence": [
+    {
+     "ref": "RANGE_1",
+     "detail": "",
+     "data": {
+      "id": "RANGE_1",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "TURBINE",
+       "INJECTOR",
+       "ALTERNATOR"
+      ],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "WHEEL_DIA",
+     "detail": "",
+     "data": {
+      "id": "WHEEL_DIA",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "TURBINE"
+      ],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "EFF_CTRL",
+     "detail": "",
+     "data": {
+      "id": "EFF_CTRL",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "CTRL",
+       "SENSORS",
+       "INJECTOR",
+       "TURBINE"
+      ],
+      "verified_by": []
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "requirement_verification_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": 0.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 3,
+   "evidence": [
+    {
+     "ref": "RANGE_1",
+     "detail": "",
+     "data": {
+      "id": "RANGE_1",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "TURBINE",
+       "INJECTOR",
+       "ALTERNATOR"
+      ],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "WHEEL_DIA",
+     "detail": "",
+     "data": {
+      "id": "WHEEL_DIA",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "TURBINE"
+      ],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "EFF_CTRL",
+     "detail": "",
+     "data": {
+      "id": "EFF_CTRL",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "CTRL",
+       "SENSORS",
+       "INJECTOR",
+       "TURBINE"
+      ],
+      "verified_by": []
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "RANGE_1",
+     "kind": "requirement_not_verified",
+     "severity": "major",
+     "message": "requirement has no valid verified trace"
+    },
+    {
+     "ref": "WHEEL_DIA",
+     "kind": "requirement_not_verified",
+     "severity": "major",
+     "message": "requirement has no valid verified trace"
+    },
+    {
+     "ref": "EFF_CTRL",
+     "kind": "requirement_not_verified",
+     "severity": "major",
+     "message": "requirement has no valid verified trace"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "end_to_end_traceability",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 3,
+   "evidence": [
+    {
+     "ref": "RANGE_1",
+     "detail": "",
+     "data": {
+      "id": "RANGE_1",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "TURBINE",
+       "INJECTOR",
+       "ALTERNATOR"
+      ],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "WHEEL_DIA",
+     "detail": "",
+     "data": {
+      "id": "WHEEL_DIA",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "TURBINE"
+      ],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "EFF_CTRL",
+     "detail": "",
+     "data": {
+      "id": "EFF_CTRL",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "CTRL",
+       "SENSORS",
+       "INJECTOR",
+       "TURBINE"
+      ],
+      "verified_by": []
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "RANGE_1",
+     "kind": "incomplete_requirement_trace",
+     "severity": "major",
+     "message": "requirement lacks satisfaction and/or verification trace"
+    },
+    {
+     "ref": "WHEEL_DIA",
+     "kind": "incomplete_requirement_trace",
+     "severity": "major",
+     "message": "requirement lacks satisfaction and/or verification trace"
+    },
+    {
+     "ref": "EFF_CTRL",
+     "kind": "incomplete_requirement_trace",
+     "severity": "major",
+     "message": "requirement lacks satisfaction and/or verification trace"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "provenance_completeness",
+   "version": "0.1.0",
+   "family": "provenance",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.25,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 4,
+   "evidence": [
+    {
+     "ref": "source",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "generator",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "generator_version",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "schema_version",
+     "detail": "present",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "source",
+     "kind": "missing_provenance",
+     "severity": "minor",
+     "message": "model does not record source"
+    },
+    {
+     "ref": "generator",
+     "kind": "missing_provenance",
+     "severity": "minor",
+     "message": "model does not record generator"
+    },
+    {
+     "ref": "generator_version",
+     "kind": "missing_provenance",
+     "severity": "minor",
+     "message": "model does not record generator version"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "model_profile_completeness",
+   "version": "0.1.0",
+   "family": "readiness",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.9,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 10,
+   "evidence": [
+    {
+     "ref": "system_identity",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "subsystems",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "structure",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "functions_or_actions",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "function_allocation",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "ports",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "interfaces",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "item_flows",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "input_boundary",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "output_boundary",
+     "detail": "present",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "interfaces",
+     "kind": "missing_profile_capability",
+     "severity": "major",
+     "message": "functional profile requires interfaces"
+    }
+   ],
+   "metadata": {
+    "profile": "functional"
+   }
+  },
+  {
+   "metric_id": "competency_question_answerability",
+   "version": "0.1.0",
+   "family": "usability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.5,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 6,
+   "evidence": [
+    {
+     "ref": "component_inventory",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "function_allocation_map",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "resolved_interface_map",
+     "detail": "",
+     "data": {
+      "answerability": 0.0
+     }
+    },
+    {
+     "ref": "typed_flow_map",
+     "detail": "",
+     "data": {
+      "answerability": 0.0
+     }
+    },
+    {
+     "ref": "boundary_inputs_and_outputs",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "input_to_output_paths",
+     "detail": "",
+     "data": {
+      "answerability": 0.0
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "resolved_interface_map",
+     "kind": "competency_question_incomplete",
+     "severity": "major",
+     "message": "answerability 0.00"
+    },
+    {
+     "ref": "typed_flow_map",
+     "kind": "competency_question_incomplete",
+     "severity": "major",
+     "message": "answerability 0.00"
+    },
+    {
+     "ref": "input_to_output_paths",
+     "kind": "competency_question_incomplete",
+     "severity": "major",
+     "message": "answerability 0.00"
+    }
+   ],
+   "metadata": {
+    "questions": {
+     "component_inventory": 1.0,
+     "function_allocation_map": 1.0,
+     "resolved_interface_map": 0.0,
+     "typed_flow_map": 0.0,
+     "boundary_inputs_and_outputs": 1.0,
+     "input_to_output_paths": 0.0
+    },
+    "profile": "functional"
+   }
+  },
+  {
+   "metric_id": "internal_function_support",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'realization' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "behavior_claim_coverage",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'unclaimed_behavior' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "internal_transformation_coherence",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'transformation' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "statement_distinction",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'overlap' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "entity_distinctness",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'entity_identity' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_semantic_fit",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'flow_semantics' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "role_assignment_coherence",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'scope' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  }
+ ],
+ "manifest": {
+  "framework_version": "0.2.1",
+  "git_sha": null,
+  "python": "3.13.5",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "packages": {
+   "pydantic": "2.13.5",
+   "networkx": "3.7",
+   "numpy": "2.5.3",
+   "scipy": "1.18.1",
+   "scikit-learn": "1.9.1",
+   "mcp": "2.2.0"
+  },
+  "input_path": "C:\\Users\\Eladio\\Downloads\\functional-quality\\inputs\\US12092068B2\\agents\\model.sjs.json",
+  "input_sha256": "6a52fe73bf3148fa20b72b9cd3fcd53eac037781d1a6df4a7f7ba067ca60b8c9",
+  "model_key": "us12092068b2-6a52fe73bf",
+  "metric_versions": {
+   "entity_duplication": "0.1.0",
+   "statement_duplication": "0.1.0",
+   "relationship_resolution": "0.1.0",
+   "representation_consistency": "0.1.0",
+   "statement_form": "0.1.0",
+   "scope_candidates": "0.1.0",
+   "partition_strength": "0.1.0",
+   "flow_structure": "0.1.0",
+   "explanatory_closure": "0.1.0",
+   "reference_integrity": "0.1.0",
+   "identifier_uniqueness": "0.1.0",
+   "interface_direction": "0.1.0",
+   "flow_type_consistency": "0.1.0",
+   "flow_reuse": "0.1.0",
+   "port_fan_out": "0.1.0",
+   "port_direction_naming": "0.1.0",
+   "causal_path_coverage": "0.1.0",
+   "connectivity": "0.1.0",
+   "vocabulary_conformance": "0.1.0",
+   "relation_signature_validity": "0.1.0",
+   "function_allocation_coverage": "0.1.0",
+   "component_purpose_coverage": "0.1.0",
+   "boundary_completeness": "0.1.0",
+   "requirement_satisfaction_coverage": "0.1.0",
+   "requirement_verification_coverage": "0.1.0",
+   "end_to_end_traceability": "0.1.0",
+   "provenance_completeness": "0.1.0",
+   "model_profile_completeness": "0.1.0",
+   "competency_question_answerability": "0.1.0",
+   "internal_function_support": "0.1.0",
+   "behavior_claim_coverage": "0.1.0",
+   "internal_transformation_coherence": "0.1.0",
+   "statement_distinction": "0.1.0",
+   "entity_distinctness": "0.1.0",
+   "flow_semantic_fit": "0.1.0",
+   "role_assignment_coherence": "0.1.0"
+  },
+  "retriever": "tfidf-word+char-v1",
+  "config": {
+   "results_dir": "results",
+   "closure.support_threshold": 0.12,
+   "duplication.similarity_threshold": 0.72,
+   "architecture.min_nodes": 6,
+   "architecture.min_edges": 5,
+   "tasks.max_per_kind": 200,
+   "mbse.profile": "functional",
+   "mbse.vocabulary_path": "sjs.kg.schema.json"
+  },
+  "config_sha256": "db444ef9e4ce9b88",
+  "judge_prompt_versions": {
+   "realization": "0e5a5e8444aa",
+   "unclaimed_behavior": "03be253ac935",
+   "transformation": "ec4f9d66cea9",
+   "overlap": "a1c3966dabf7",
+   "entity_identity": "8683abb23ed7",
+   "flow_semantics": "4bed83f6bc0d",
+   "scope": "dd249779cad2"
+  },
+  "judges": [],
+  "mutation": null,
+  "timestamp": "2026-10-01T15:25:35+00:00"
+ },
+ "errors": []
+}
