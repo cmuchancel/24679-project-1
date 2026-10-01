@@ -1,0 +1,1541 @@
+{
+ "status": "EVALUATED",
+ "gates": [
+  {
+   "gate": "schema_valid",
+   "passed": true
+  },
+  {
+   "gate": "critical_references_resolve",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "identifiers_unique",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "relationship_vocabulary_conforms",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "relationship_signatures_valid",
+   "passed": true,
+   "failures": 0
+  }
+ ],
+ "summary": {
+  "model_key": "us9970429b2-dd9e67ec57",
+  "system_id": "US9970429B2",
+  "system_name": "Diaphragm Pump with Contact-Retained Bypass Support",
+  "dialect": "interface_rich",
+  "counts": {
+   "subsystems": 8,
+   "functions": 0,
+   "ports": 17,
+   "flows": 6,
+   "interfaces": 8,
+   "actions": 3,
+   "parts": 0,
+   "relationships": 0,
+   "requirements": 0
+  },
+  "roles": {
+   "external": 5,
+   "internal": 3
+  },
+  "ingest_notes": []
+ },
+ "profile": {
+  "entities": {
+   "entity_duplication": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.8,
+    "checked": 8,
+    "violations": 0,
+    "status": "heuristic"
+   }
+  },
+  "semantic_candidates": {
+   "statement_duplication": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.5,
+    "checked": 3,
+    "violations": 0,
+    "status": "heuristic"
+   },
+   "statement_form": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.5,
+    "checked": 3,
+    "violations": 0,
+    "status": "heuristic"
+   }
+  },
+  "closure": {
+   "explanatory_closure": {
+    "score": 0.9412,
+    "applicable": true,
+    "confidence": 0.7,
+    "checked": 34,
+    "violations": 2,
+    "status": "proposed"
+   }
+  },
+  "integrity": {
+   "reference_integrity": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 35,
+    "violations": 0,
+    "status": "established"
+   },
+   "identifier_uniqueness": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 42,
+    "violations": 0,
+    "status": "established"
+   }
+  },
+  "interface": {
+   "interface_direction": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 8,
+    "violations": 0,
+    "status": "established"
+   },
+   "flow_type_consistency": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 24,
+    "violations": 0,
+    "status": "established"
+   },
+   "port_direction_naming": {
+    "score": 0.8889,
+    "applicable": true,
+    "confidence": 0.7,
+    "checked": 9,
+    "violations": 1,
+    "status": "heuristic"
+   }
+  },
+  "topology": {
+   "causal_path_coverage": {
+    "score": 0.5,
+    "applicable": true,
+    "confidence": 0.75,
+    "checked": 2,
+    "violations": 1,
+    "mode": "strict",
+    "status": "proposed"
+   },
+   "connectivity": {
+    "score": 0.875,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 8,
+    "violations": 1,
+    "status": "established"
+   }
+  },
+  "traceability": {
+   "function_allocation_coverage": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 3,
+    "violations": 0,
+    "status": "established"
+   },
+   "component_purpose_coverage": {
+    "score": 0.3333,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 3,
+    "violations": 2,
+    "status": "proposed"
+   }
+  },
+  "architecture": {
+   "boundary_completeness": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.75,
+    "checked": 4,
+    "violations": 0,
+    "status": "proposed"
+   }
+  },
+  "provenance": {
+   "provenance_completeness": {
+    "score": 0.25,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 4,
+    "violations": 3,
+    "status": "proposed"
+   }
+  },
+  "readiness": {
+   "model_profile_completeness": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 10,
+    "violations": 0,
+    "status": "proposed"
+   }
+  },
+  "usability": {
+   "competency_question_answerability": {
+    "score": 0.9167,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 6,
+    "violations": 1,
+    "status": "proposed"
+   }
+  }
+ },
+ "diagnostics": {
+  "scope_candidates": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 8,
+   "violations": 0,
+   "family": "entities",
+   "metadata": {
+    "candidates": 5
+   }
+  },
+  "flow_structure": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 7,
+   "violations": 0,
+   "family": "architecture",
+   "metadata": {
+    "feedback_loops": [
+     [
+      "bypass",
+      "housing",
+      "valves"
+     ]
+    ],
+    "is_dag": false
+   }
+  },
+  "flow_reuse": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 6,
+   "violations": 2,
+   "family": "interface",
+   "metadata": {
+    "reused": {
+     "springforce": [
+      "bypass::insert_spring_force",
+      "bypass::spring_to_bypass_valve_pressing"
+     ]
+    },
+    "unused": [
+     "motion"
+    ]
+   }
+  },
+  "port_fan_out": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 17,
+   "violations": 0,
+   "family": "interface",
+   "metadata": {}
+  }
+ },
+ "not_applicable": {
+  "relationship_resolution": "model has no relationships list",
+  "representation_consistency": "no resolved relationships to compare",
+  "partition_strength": "internal dependency graph too small (3 nodes, 0 edges; need >= 6/5)",
+  "vocabulary_conformance": "model has no explicit relationships list",
+  "relation_signature_validity": "no resolved relationships have a vocabulary signature",
+  "requirement_satisfaction_coverage": "model declares no requirements",
+  "requirement_verification_coverage": "model declares no requirements",
+  "end_to_end_traceability": "model declares no requirements",
+  "internal_function_support": "'realization' tasks not built yet: run build_judge_tasks",
+  "behavior_claim_coverage": "'unclaimed_behavior' tasks not built yet: run build_judge_tasks",
+  "internal_transformation_coherence": "'transformation' tasks not built yet: run build_judge_tasks",
+  "statement_distinction": "'overlap' tasks not built yet: run build_judge_tasks",
+  "entity_distinctness": "'entity_identity' tasks not built yet: run build_judge_tasks",
+  "flow_semantic_fit": "'flow_semantics' tasks not built yet: run build_judge_tasks",
+  "role_assignment_coherence": "'scope' tasks not built yet: run build_judge_tasks"
+ },
+ "findings": [
+  {
+   "metric": "causal_path_coverage",
+   "ref": "unconnected-port:diaphragm::diaphragm_motion",
+   "kind": "unreachable_output",
+   "severity": "major",
+   "message": "no path from any boundary input to 'diaphragm'"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "valves",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Valve support and inlet/outlet valves' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "insert",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Support insert' has no function or action"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "diaphragm::diaphragm_motion",
+   "kind": "orphan:port_used",
+   "severity": "major",
+   "message": "port 'Pumping-zone volume-changing displacement' is in no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "motion",
+   "kind": "orphan:flow_used",
+   "severity": "major",
+   "message": "flow 'Diaphragm volume-changing motion' is carried by no interface"
+  },
+  {
+   "metric": "port_direction_naming",
+   "ref": "bypass::bypass_out",
+   "kind": "direction_contradicts_name",
+   "severity": "major",
+   "message": "'Bypass inlet-region return' reads as 'in' but is declared out"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "input_to_output_paths",
+   "kind": "competency_question_incomplete",
+   "severity": "minor",
+   "message": "answerability 0.50"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "diaphragm",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'Flexible diaphragm and pumping zone' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "motion",
+   "kind": "flow_unused",
+   "severity": "minor",
+   "message": "'Diaphragm volume-changing motion' is not carried by any interface"
+  },
+  {
+   "metric": "provenance_completeness",
+   "ref": "source",
+   "kind": "missing_provenance",
+   "severity": "minor",
+   "message": "model does not record source"
+  },
+  {
+   "metric": "provenance_completeness",
+   "ref": "generator",
+   "kind": "missing_provenance",
+   "severity": "minor",
+   "message": "model does not record generator"
+  },
+  {
+   "metric": "provenance_completeness",
+   "ref": "generator_version",
+   "kind": "missing_provenance",
+   "severity": "minor",
+   "message": "model does not record generator version"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "springforce",
+   "kind": "flow_reused_across_pairs",
+   "severity": "info",
+   "message": "'Bypass spring force' used by ['bypass::insert_spring_force', 'bypass::spring_to_bypass_valve_pressing']"
+  }
+ ],
+ "metrics": [
+  {
+   "metric_id": "entity_duplication",
+   "version": "0.1.0",
+   "family": "entities",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.8,
+   "checked": 8,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "subsystem_groups": [],
+    "part_groups": 0,
+    "names_with_reference_numerals": 0
+   }
+  },
+  {
+   "metric_id": "statement_duplication",
+   "version": "0.1.0",
+   "family": "semantic_candidates",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.5,
+   "checked": 3,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "threshold": 0.72,
+    "retriever": "tfidf-word+char-v1",
+    "candidate_pairs": []
+   }
+  },
+  {
+   "metric_id": "relationship_resolution",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model has no relationships list",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "representation_consistency",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no resolved relationships to compare",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "statement_form",
+   "version": "0.1.0",
+   "family": "semantic_candidates",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.5,
+   "checked": 3,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "scope_candidates",
+   "version": "0.1.0",
+   "family": "entities",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 8,
+   "evidence": [
+    {
+     "ref": "housing",
+     "detail": "inferred role external: external/context keywords",
+     "data": {
+      "name": "Pump housing and fluid regions",
+      "confidence": 0.75
+     }
+    },
+    {
+     "ref": "bypass",
+     "detail": "inferred role external: external/context keywords",
+     "data": {
+      "name": "Bypass valve and spring",
+      "confidence": 0.75
+     }
+    },
+    {
+     "ref": "process_source",
+     "detail": "inferred role external: external/context keywords",
+     "data": {
+      "name": "Process-fluid supply",
+      "confidence": 0.75
+     }
+    },
+    {
+     "ref": "process_sink",
+     "detail": "inferred role external: external/context keywords",
+     "data": {
+      "name": "Process-fluid discharge",
+      "confidence": 0.75
+     }
+    },
+    {
+     "ref": "bypass_valve",
+     "detail": "inferred role external: external/context keywords",
+     "data": {
+      "name": "Bypass valve",
+      "confidence": 0.75
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "candidates": 5
+   }
+  },
+  {
+   "metric_id": "partition_strength",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "diagnostic",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "internal dependency graph too small (3 nodes, 0 edges; need >= 6/5)",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_structure",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "diagnostic",
+   "status": "established",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 7,
+   "evidence": [
+    {
+     "ref": "bypass",
+     "detail": "",
+     "data": {
+      "fan_in": 2,
+      "fan_out": 2
+     }
+    },
+    {
+     "ref": "bypass_valve",
+     "detail": "",
+     "data": {
+      "fan_in": 0,
+      "fan_out": 1
+     }
+    },
+    {
+     "ref": "housing",
+     "detail": "",
+     "data": {
+      "fan_in": 3,
+      "fan_out": 3
+     }
+    },
+    {
+     "ref": "insert",
+     "detail": "",
+     "data": {
+      "fan_in": 1,
+      "fan_out": 0
+     }
+    },
+    {
+     "ref": "process_sink",
+     "detail": "",
+     "data": {
+      "fan_in": 1,
+      "fan_out": 0
+     }
+    },
+    {
+     "ref": "process_source",
+     "detail": "",
+     "data": {
+      "fan_in": 0,
+      "fan_out": 1
+     }
+    },
+    {
+     "ref": "valves",
+     "detail": "",
+     "data": {
+      "fan_in": 1,
+      "fan_out": 1
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "feedback_loops": [
+     [
+      "bypass",
+      "housing",
+      "valves"
+     ]
+    ],
+    "is_dag": false
+   }
+  },
+  {
+   "metric_id": "explanatory_closure",
+   "version": "0.1.0",
+   "family": "closure",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.9411764705882353,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.7,
+   "checked": 34,
+   "evidence": [
+    {
+     "ref": "action_owned_or_allocated",
+     "detail": "3/3 supported",
+     "data": {
+      "checked": 3,
+      "supported": 3,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "flow_used",
+     "detail": "5/6 supported",
+     "data": {
+      "checked": 6,
+      "supported": 5,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "port_used",
+     "detail": "16/17 supported",
+     "data": {
+      "checked": 17,
+      "supported": 16,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "subsystem_participates",
+     "detail": "8/8 supported",
+     "data": {
+      "checked": 8,
+      "supported": 8,
+      "weight": 1.0
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "diaphragm::diaphragm_motion",
+     "kind": "orphan:port_used",
+     "severity": "major",
+     "message": "port 'Pumping-zone volume-changing displacement' is in no interface"
+    },
+    {
+     "ref": "motion",
+     "kind": "orphan:flow_used",
+     "severity": "major",
+     "message": "flow 'Diaphragm volume-changing motion' is carried by no interface"
+    }
+   ],
+   "metadata": {
+    "support_threshold": 0.12,
+    "retriever": "tfidf-word+char-v1",
+    "function_classes": {}
+   }
+  },
+  {
+   "metric_id": "reference_integrity",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 35,
+   "evidence": [
+    {
+     "ref": "action.owner",
+     "detail": "3/3 resolved",
+     "data": {
+      "checked": 3,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.flow_ref",
+     "detail": "8/8 resolved",
+     "data": {
+      "checked": 8,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.mating_subsystem",
+     "detail": "8/8 resolved",
+     "data": {
+      "checked": 8,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.port_mate",
+     "detail": "8/8 resolved",
+     "data": {
+      "checked": 8,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.port_this",
+     "detail": "8/8 resolved",
+     "data": {
+      "checked": 8,
+      "violations": 0
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "critical_violations": 0
+   }
+  },
+  {
+   "metric_id": "identifier_uniqueness",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 42,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "interface_direction",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 8,
+   "evidence": [
+    {
+     "ref": "orientation_counts",
+     "detail": "",
+     "data": {
+      "forward": 8
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "direction_indeterminate_share": 0.0
+   }
+  },
+  {
+   "metric_id": "flow_type_consistency",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 24,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_reuse",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 6,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "springforce",
+     "kind": "flow_reused_across_pairs",
+     "severity": "info",
+     "message": "'Bypass spring force' used by ['bypass::insert_spring_force', 'bypass::spring_to_bypass_valve_pressing']"
+    },
+    {
+     "ref": "motion",
+     "kind": "flow_unused",
+     "severity": "minor",
+     "message": "'Diaphragm volume-changing motion' is not carried by any interface"
+    }
+   ],
+   "metadata": {
+    "reused": {
+     "springforce": [
+      "bypass::insert_spring_force",
+      "bypass::spring_to_bypass_valve_pressing"
+     ]
+    },
+    "unused": [
+     "motion"
+    ]
+   }
+  },
+  {
+   "metric_id": "port_fan_out",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 17,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "port_direction_naming",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 0.8888888888888888,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.7,
+   "checked": 9,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "bypass::bypass_out",
+     "kind": "direction_contradicts_name",
+     "severity": "major",
+     "message": "'Bypass inlet-region return' reads as 'in' but is declared out"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "causal_path_coverage",
+   "version": "0.1.0",
+   "family": "topology",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.5,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.75,
+   "checked": 2,
+   "evidence": [
+    {
+     "ref": "valves::valves_to_pumping_region",
+     "detail": "housing::inlet_region_to_inlet_valve -> valves -> valves::valves_to_pumping_region",
+     "data": {
+      "edges": 0,
+      "direction_determinate_edges": 0
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "unconnected-port:diaphragm::diaphragm_motion",
+     "kind": "unreachable_output",
+     "severity": "major",
+     "message": "no path from any boundary input to 'diaphragm'"
+    }
+   ],
+   "metadata": {
+    "mode": "strict",
+    "granularity": "subsystem",
+    "boundary_inputs": [
+     "bypass::insert_spring_force",
+     "housing::inlet_region_to_inlet_valve"
+    ],
+    "boundary_outputs": [
+     "unconnected-port:diaphragm::diaphragm_motion",
+     "valves::valves_to_pumping_region"
+    ],
+    "implicit_boundaries": 1
+   }
+  },
+  {
+   "metric_id": "connectivity",
+   "version": "0.1.0",
+   "family": "topology",
+   "kind": "score",
+   "status": "established",
+   "score": 0.875,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 8,
+   "evidence": [
+    {
+     "ref": "component_0",
+     "detail": "",
+     "data": {
+      "size": 7,
+      "members": [
+       "bypass",
+       "bypass_valve",
+       "housing",
+       "insert",
+       "process_sink",
+       "process_source",
+       "valves"
+      ]
+     }
+    },
+    {
+     "ref": "component_1",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "diaphragm"
+      ]
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "diaphragm",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'Flexible diaphragm and pumping zone' has no interface, relationship or shared action"
+    }
+   ],
+   "metadata": {
+    "components": 2,
+    "excluded_structural": []
+   }
+  },
+  {
+   "metric_id": "vocabulary_conformance",
+   "version": "0.1.0",
+   "family": "conformance",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model has no explicit relationships list",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "relation_signature_validity",
+   "version": "0.1.0",
+   "family": "conformance",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no resolved relationships have a vocabulary signature",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "function_allocation_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 3,
+   "evidence": [
+    {
+     "ref": "allocation",
+     "detail": "3/3 allocated",
+     "data": {}
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "component_purpose_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.3333333333333333,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 3,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "valves",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Valve support and inlet/outlet valves' has no function or action"
+    },
+    {
+     "ref": "insert",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Support insert' has no function or action"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "boundary_completeness",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "score",
+   "status": "proposed",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.75,
+   "checked": 4,
+   "evidence": [
+    {
+     "ref": "boundary_declared",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "input_identified",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "output_identified",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "boundary_exchange_typed",
+     "detail": "present",
+     "data": {}
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "external": [
+     "bypass",
+     "bypass_valve",
+     "housing",
+     "process_sink",
+     "process_source"
+    ],
+    "crossings": [
+     "housing::inlet_region_to_inlet_valve",
+     "valves::valves_to_pumping_region",
+     "bypass::insert_spring_force"
+    ],
+    "inputs": [
+     "housing::inlet_region_to_inlet_valve",
+     "bypass::insert_spring_force"
+    ],
+    "outputs": [
+     "valves::valves_to_pumping_region",
+     "diaphragm::diaphragm_motion"
+    ],
+    "typed": [
+     "housing::inlet_region_to_inlet_valve",
+     "valves::valves_to_pumping_region",
+     "bypass::insert_spring_force"
+    ]
+   }
+  },
+  {
+   "metric_id": "requirement_satisfaction_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model declares no requirements",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "requirement_verification_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model declares no requirements",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "end_to_end_traceability",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model declares no requirements",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "provenance_completeness",
+   "version": "0.1.0",
+   "family": "provenance",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.25,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 4,
+   "evidence": [
+    {
+     "ref": "source",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "generator",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "generator_version",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "schema_version",
+     "detail": "present",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "source",
+     "kind": "missing_provenance",
+     "severity": "minor",
+     "message": "model does not record source"
+    },
+    {
+     "ref": "generator",
+     "kind": "missing_provenance",
+     "severity": "minor",
+     "message": "model does not record generator"
+    },
+    {
+     "ref": "generator_version",
+     "kind": "missing_provenance",
+     "severity": "minor",
+     "message": "model does not record generator version"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "model_profile_completeness",
+   "version": "0.1.0",
+   "family": "readiness",
+   "kind": "score",
+   "status": "proposed",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 10,
+   "evidence": [
+    {
+     "ref": "system_identity",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "subsystems",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "structure",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "functions_or_actions",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "function_allocation",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "ports",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "interfaces",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "item_flows",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "input_boundary",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "output_boundary",
+     "detail": "present",
+     "data": {}
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "profile": "functional"
+   }
+  },
+  {
+   "metric_id": "competency_question_answerability",
+   "version": "0.1.0",
+   "family": "usability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.9166666666666666,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 6,
+   "evidence": [
+    {
+     "ref": "component_inventory",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "function_allocation_map",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "resolved_interface_map",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "typed_flow_map",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "boundary_inputs_and_outputs",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "input_to_output_paths",
+     "detail": "",
+     "data": {
+      "answerability": 0.5
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "input_to_output_paths",
+     "kind": "competency_question_incomplete",
+     "severity": "minor",
+     "message": "answerability 0.50"
+    }
+   ],
+   "metadata": {
+    "questions": {
+     "component_inventory": 1.0,
+     "function_allocation_map": 1.0,
+     "resolved_interface_map": 1.0,
+     "typed_flow_map": 1.0,
+     "boundary_inputs_and_outputs": 1.0,
+     "input_to_output_paths": 0.5
+    },
+    "profile": "functional"
+   }
+  },
+  {
+   "metric_id": "internal_function_support",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'realization' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "behavior_claim_coverage",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'unclaimed_behavior' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "internal_transformation_coherence",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'transformation' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "statement_distinction",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'overlap' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "entity_distinctness",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'entity_identity' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_semantic_fit",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'flow_semantics' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "role_assignment_coherence",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'scope' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  }
+ ],
+ "manifest": {
+  "framework_version": "0.2.1",
+  "git_sha": null,
+  "python": "3.13.5",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "packages": {
+   "pydantic": "2.13.5",
+   "networkx": "3.7",
+   "numpy": "2.5.3",
+   "scipy": "1.18.1",
+   "scikit-learn": "1.9.1",
+   "mcp": "2.2.0"
+  },
+  "input_path": "C:\\Users\\Eladio\\Downloads\\functional-quality\\inputs\\US9970429B2\\agents\\model.sjs.json",
+  "input_sha256": "dd9e67ec576497d143c297a7a3623e2a4d447cb4775a5764c1f7404ca4b7ac3b",
+  "model_key": "us9970429b2-dd9e67ec57",
+  "metric_versions": {
+   "entity_duplication": "0.1.0",
+   "statement_duplication": "0.1.0",
+   "relationship_resolution": "0.1.0",
+   "representation_consistency": "0.1.0",
+   "statement_form": "0.1.0",
+   "scope_candidates": "0.1.0",
+   "partition_strength": "0.1.0",
+   "flow_structure": "0.1.0",
+   "explanatory_closure": "0.1.0",
+   "reference_integrity": "0.1.0",
+   "identifier_uniqueness": "0.1.0",
+   "interface_direction": "0.1.0",
+   "flow_type_consistency": "0.1.0",
+   "flow_reuse": "0.1.0",
+   "port_fan_out": "0.1.0",
+   "port_direction_naming": "0.1.0",
+   "causal_path_coverage": "0.1.0",
+   "connectivity": "0.1.0",
+   "vocabulary_conformance": "0.1.0",
+   "relation_signature_validity": "0.1.0",
+   "function_allocation_coverage": "0.1.0",
+   "component_purpose_coverage": "0.1.0",
+   "boundary_completeness": "0.1.0",
+   "requirement_satisfaction_coverage": "0.1.0",
+   "requirement_verification_coverage": "0.1.0",
+   "end_to_end_traceability": "0.1.0",
+   "provenance_completeness": "0.1.0",
+   "model_profile_completeness": "0.1.0",
+   "competency_question_answerability": "0.1.0",
+   "internal_function_support": "0.1.0",
+   "behavior_claim_coverage": "0.1.0",
+   "internal_transformation_coherence": "0.1.0",
+   "statement_distinction": "0.1.0",
+   "entity_distinctness": "0.1.0",
+   "flow_semantic_fit": "0.1.0",
+   "role_assignment_coherence": "0.1.0"
+  },
+  "retriever": "tfidf-word+char-v1",
+  "config": {
+   "results_dir": "results",
+   "closure.support_threshold": 0.12,
+   "duplication.similarity_threshold": 0.72,
+   "architecture.min_nodes": 6,
+   "architecture.min_edges": 5,
+   "tasks.max_per_kind": 200,
+   "mbse.profile": "functional",
+   "mbse.vocabulary_path": "sjs.kg.schema.json"
+  },
+  "config_sha256": "db444ef9e4ce9b88",
+  "judge_prompt_versions": {
+   "realization": "0e5a5e8444aa",
+   "unclaimed_behavior": "03be253ac935",
+   "transformation": "ec4f9d66cea9",
+   "overlap": "a1c3966dabf7",
+   "entity_identity": "8683abb23ed7",
+   "flow_semantics": "4bed83f6bc0d",
+   "scope": "dd249779cad2"
+  },
+  "judges": [],
+  "mutation": null,
+  "timestamp": "2026-10-01T16:25:51+00:00"
+ },
+ "errors": []
+}

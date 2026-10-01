@@ -1,0 +1,176 @@
+[
+ {
+  "task_id": "realization/CAGE::deform_under_load",
+  "kind": "realization",
+  "subject": "CAGE::deform_under_load",
+  "agent": "judge-realization",
+  "question": "Does the supplied behavioural or interface evidence materially support realization of the stated function, at the stated abstraction level?",
+  "allowed_verdicts": [
+   "SUPPORTED",
+   "PARTIALLY_SUPPORTED",
+   "UNSUPPORTED",
+   "CONTRADICTED",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "Judge only against the evidence listed; do not use outside knowledge of the device.",
+   "Evidence from a neighbouring subsystem counts if it plausibly realizes the function.",
+   "SUPPORTED requires at least one cited evidence ref."
+  ],
+  "prompt_version": "0e5a5e8444aa",
+  "payload_sha": "301b93d1e257",
+  "payload": {
+   "system": "Segmented-cage rolling-element bearing",
+   "function": "deform under load",
+   "owner": {
+    "id": "CAGE",
+    "name": "Segmented cage",
+    "description": "Multiple separate cage segments with lateral boundary walls defining rolling-element receiving pockets and first and second running surfaces configured to guide the pocketed rolling element (claims 2\u20133). Disclosed alternatives include rolling-element-, raceway-, flange-, or shoulder-guided segments; one-piece plastic molded segments; and cylindrical or tapered rolling elements (claims 4\u201311), without selecting a single variant.",
+    "role": "external"
+   },
+   "function_class": "transforming",
+   "function_class_reason": "leading verb 'deform' is not structural",
+   "evidence": [
+    {
+     "ref": "action:ACT_LOAD_CLAMP",
+     "kind": "action",
+     "owner": "CAGE",
+     "scope": "self",
+     "text": "Deform cage and clamp pocket roller under elevated adjacent load A load from an adjacent rolling element located outside the cage acts on the cage; represent this as a stated load condition, not as a modeled connection from the pocketed rolling elements. When the load exceeds the predetermined amount, deform the cage so the rolling element within the pocket is clamped.",
+     "retrieval_similarity": 0.218
+    }
+   ],
+   "note": "Evidence was shortlisted by lexical retrieval; similarity is NOT a verdict."
+  }
+ },
+ {
+  "task_id": "realization/CAGE::guide_rolling_elements",
+  "kind": "realization",
+  "subject": "CAGE::guide_rolling_elements",
+  "agent": "judge-realization",
+  "question": "Does the supplied behavioural or interface evidence materially support realization of the stated function, at the stated abstraction level?",
+  "allowed_verdicts": [
+   "SUPPORTED",
+   "PARTIALLY_SUPPORTED",
+   "UNSUPPORTED",
+   "CONTRADICTED",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "Judge only against the evidence listed; do not use outside knowledge of the device.",
+   "Evidence from a neighbouring subsystem counts if it plausibly realizes the function.",
+   "SUPPORTED requires at least one cited evidence ref."
+  ],
+  "prompt_version": "0e5a5e8444aa",
+  "payload_sha": "505bc0263143",
+  "payload": {
+   "system": "Segmented-cage rolling-element bearing",
+   "function": "guide rolling elements",
+   "owner": {
+    "id": "CAGE",
+    "name": "Segmented cage",
+    "description": "Multiple separate cage segments with lateral boundary walls defining rolling-element receiving pockets and first and second running surfaces configured to guide the pocketed rolling element (claims 2\u20133). Disclosed alternatives include rolling-element-, raceway-, flange-, or shoulder-guided segments; one-piece plastic molded segments; and cylindrical or tapered rolling elements (claims 4\u201311), without selecting a single variant.",
+    "role": "external"
+   },
+   "function_class": "structural",
+   "function_class_reason": "leading verb 'guide'",
+   "evidence": [
+    {
+     "ref": "action:ACT_LOAD_CLAMP",
+     "kind": "action",
+     "owner": "CAGE",
+     "scope": "self",
+     "text": "Deform cage and clamp pocket roller under elevated adjacent load A load from an adjacent rolling element located outside the cage acts on the cage; represent this as a stated load condition, not as a modeled connection from the pocketed rolling elements. When the load exceeds the predetermined amount, deform the cage so the rolling element within the pocket is clamped.",
+     "retrieval_similarity": 0.195
+    },
+    {
+     "ref": "description:CAGE",
+     "kind": "description",
+     "owner": "CAGE",
+     "scope": "self",
+     "text": "Multiple separate cage segments with lateral boundary walls defining rolling-element receiving pockets and first and second running surfaces configured to guide the pocketed rolling element (claims 2\u20133). Disclosed alternatives include rolling-element-, raceway-, flange-, or shoulder-guided segments; one-piece plastic molded segments; and cylindrical or tapered rolling elements (claims 4\u201311), without selecting a single variant."
+    }
+   ],
+   "note": "Evidence was shortlisted by lexical retrieval; similarity is NOT a verdict. STRUCTURAL function: flows/behaviour rarely realize it. Description/part evidence may support it, but that is self-consistency within the model, not behavioural realization; prefer PARTIALLY_SUPPORTED unless the description/parts state the function explicitly."
+  }
+ },
+ {
+  "task_id": "scope/CAGE",
+  "kind": "scope",
+  "subject": "CAGE",
+  "agent": "judge-scope",
+  "question": "What is this element's correct role in a model of the stated system?",
+  "allowed_verdicts": [
+   "INTERNAL_COMPONENT",
+   "EXTERNAL_ACTOR",
+   "STRUCTURAL_SUPPORT",
+   "SYSTEM_ITSELF",
+   "PRIOR_ART_OR_BACKGROUND",
+   "NOT_A_COMPONENT"
+  ],
+  "guidance": [
+   "Score is computed by comparing your verdict with the role the model assigns."
+  ],
+  "prompt_version": "dd249779cad2",
+  "payload_sha": "5b0dd5b79b4b",
+  "payload": {
+   "system": {
+    "name": "Segmented-cage rolling-element bearing",
+    "description": "Conceptual structural and behavioral model of the bearing and segmented cage arrangement described in the patent."
+   },
+   "element": {
+    "name": "Segmented cage",
+    "description": "Multiple separate cage segments with lateral boundary walls defining rolling-element receiving pockets and first and second running surfaces configured to guide the pocketed rolling element (claims 2\u20133). Disclosed alternatives include rolling-element-, raceway-, flange-, or shoulder-guided segments; one-piece plastic molded segments; and cylindrical or tapered rolling elements (claims 4\u201311), without selecting a single variant.",
+    "domain": "Mechanical"
+   },
+   "assigned_role": "external",
+   "flag": "inferred role external: external/context keywords"
+  }
+ },
+ {
+  "task_id": "unclaimed_behavior/ACT_LOAD_CLAMP",
+  "kind": "unclaimed_behavior",
+  "subject": "ACT_LOAD_CLAMP",
+  "agent": "judge-realization",
+  "question": "Is this behaviour accounted for by at least one of the candidate declared functions?",
+  "allowed_verdicts": [
+   "COVERED",
+   "PARTIALLY_COVERED",
+   "UNCLAIMED",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "UNCLAIMED means the model performs something no function declares."
+  ],
+  "prompt_version": "03be253ac935",
+  "payload_sha": "f4afb5a51b4b",
+  "payload": {
+   "system": "Segmented-cage rolling-element bearing",
+   "behaviour": {
+    "name": "Deform cage and clamp pocket roller under elevated adjacent load",
+    "steps": [
+     "A load from an adjacent rolling element located outside the cage acts on the cage; represent this as a stated load condition, not as a modeled connection from the pocketed rolling elements.",
+     "When the load exceeds the predetermined amount, deform the cage so the rolling element within the pocket is clamped."
+    ]
+   },
+   "owner": {
+    "id": "CAGE",
+    "name": "Segmented cage",
+    "description": "Multiple separate cage segments with lateral boundary walls defining rolling-element receiving pockets and first and second running surfaces configured to guide the pocketed rolling element (claims 2\u20133). Disclosed alternatives include rolling-element-, raceway-, flange-, or shoulder-guided segments; one-piece plastic molded segments; and cylindrical or tapered rolling elements (claims 4\u201311), without selecting a single variant.",
+    "role": "external"
+   },
+   "evidence": [
+    {
+     "ref": "function:CAGE::deform_under_load",
+     "owner": "CAGE",
+     "text": "deform under load"
+    },
+    {
+     "ref": "function:CAGE::guide_rolling_elements",
+     "owner": "CAGE",
+     "text": "guide rolling elements"
+    }
+   ]
+  }
+ }
+]
