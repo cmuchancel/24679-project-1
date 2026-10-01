@@ -1,0 +1,123 @@
+[
+ {
+  "task_id": "realization/IMPELLER::provide_balancing_hole_flow_path",
+  "kind": "realization",
+  "subject": "IMPELLER::provide_balancing_hole_flow_path",
+  "agent": "judge-realization",
+  "question": "Does the supplied behavioural or interface evidence materially support realization of the stated function, at the stated abstraction level?",
+  "allowed_verdicts": [
+   "SUPPORTED",
+   "PARTIALLY_SUPPORTED",
+   "UNSUPPORTED",
+   "CONTRADICTED",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "Judge only against the evidence listed; do not use outside knowledge of the device.",
+   "Evidence from a neighbouring subsystem counts if it plausibly realizes the function.",
+   "SUPPORTED requires at least one cited evidence ref."
+  ],
+  "prompt_version": "0e5a5e8444aa",
+  "payload_sha": "28d5fc426fea",
+  "payload": {
+   "system": "Centrifugal Pump with Inclined Balancing-Hole Impeller",
+   "function": "provide balancing-hole flow path",
+   "owner": {
+    "id": "IMPELLER",
+    "name": "Impeller assembly",
+    "description": "Rotating impeller assembly including a shroud and front-surface working vanes. Balancing holes extend through the shroud; each front-face opening is ahead of its corresponding rear-face opening in the rotational direction and closer to the pump axis. The holes provide a path for liquid flow through the shroud toward the rear-vane area.",
+    "role": "internal"
+   },
+   "function_class": "transforming",
+   "function_class_reason": "'provide' + flow noun",
+   "evidence": [
+    {
+     "ref": "interface:SHAFT::SHAFT_IMPELLER",
+     "kind": "interface",
+     "owner": "IMPELLER",
+     "scope": "self",
+     "text": "mechanical attachment and rotation; SHAFT.Impeller attachment [inout]; IMPELLER.Shaft attachment and rotation [inout]",
+     "retrieval_similarity": 0.0
+    }
+   ],
+   "note": "Evidence was shortlisted by lexical retrieval; similarity is NOT a verdict."
+  }
+ },
+ {
+  "task_id": "realization/IMPELLER::rotate_impeller",
+  "kind": "realization",
+  "subject": "IMPELLER::rotate_impeller",
+  "agent": "judge-realization",
+  "question": "Does the supplied behavioural or interface evidence materially support realization of the stated function, at the stated abstraction level?",
+  "allowed_verdicts": [
+   "SUPPORTED",
+   "PARTIALLY_SUPPORTED",
+   "UNSUPPORTED",
+   "CONTRADICTED",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "Judge only against the evidence listed; do not use outside knowledge of the device.",
+   "Evidence from a neighbouring subsystem counts if it plausibly realizes the function.",
+   "SUPPORTED requires at least one cited evidence ref."
+  ],
+  "prompt_version": "0e5a5e8444aa",
+  "payload_sha": "7fe118a5926f",
+  "payload": {
+   "system": "Centrifugal Pump with Inclined Balancing-Hole Impeller",
+   "function": "rotate impeller",
+   "owner": {
+    "id": "IMPELLER",
+    "name": "Impeller assembly",
+    "description": "Rotating impeller assembly including a shroud and front-surface working vanes. Balancing holes extend through the shroud; each front-face opening is ahead of its corresponding rear-face opening in the rotational direction and closer to the pump axis. The holes provide a path for liquid flow through the shroud toward the rear-vane area.",
+    "role": "internal"
+   },
+   "function_class": "transforming",
+   "function_class_reason": "leading verb 'rotate' is not structural",
+   "evidence": [
+    {
+     "ref": "interface:SHAFT::SHAFT_IMPELLER",
+     "kind": "interface",
+     "owner": "IMPELLER",
+     "scope": "self",
+     "text": "mechanical attachment and rotation; SHAFT.Impeller attachment [inout]; IMPELLER.Shaft attachment and rotation [inout]",
+     "retrieval_similarity": 0.184
+    }
+   ],
+   "note": "Evidence was shortlisted by lexical retrieval; similarity is NOT a verdict."
+  }
+ },
+ {
+  "task_id": "scope/VOLUTE",
+  "kind": "scope",
+  "subject": "VOLUTE",
+  "agent": "judge-scope",
+  "question": "What is this element's correct role in a model of the stated system?",
+  "allowed_verdicts": [
+   "INTERNAL_COMPONENT",
+   "EXTERNAL_ACTOR",
+   "STRUCTURAL_SUPPORT",
+   "SYSTEM_ITSELF",
+   "PRIOR_ART_OR_BACKGROUND",
+   "NOT_A_COMPONENT"
+  ],
+  "guidance": [
+   "Score is computed by comparing your verdict with the role the model assigns."
+  ],
+  "prompt_version": "dd249779cad2",
+  "payload_sha": "b28a16282890",
+  "payload": {
+   "system": {
+    "name": "Centrifugal Pump with Inclined Balancing-Hole Impeller",
+    "description": "Inferred concept model of a centrifugal pump and its impeller, emphasizing through-shroud balancing holes whose front-face openings are forward in rotation and radially nearer the pump axis than the rear-face openings."
+   },
+   "element": {
+    "name": "Pump volute",
+    "description": "Pump casing volute surrounding the rotating impeller.",
+    "domain": "fluid machinery"
+   },
+   "assigned_role": "structural",
+   "flag": "inferred role structural: no ports/functions/interfaces + structural keywords"
+  }
+ }
+]

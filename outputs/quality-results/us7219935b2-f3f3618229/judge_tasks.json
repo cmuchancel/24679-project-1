@@ -1,0 +1,468 @@
+[
+ {
+  "task_id": "flow_semantics/OVER_CENTER::I_OVERCENTER_LEVER",
+  "kind": "flow_semantics",
+  "subject": "OVER_CENTER::I_OVERCENTER_LEVER",
+  "agent": "judge-interface",
+  "question": "Does the item flow's name and type fit what actually passes between these two ports?",
+  "allowed_verdicts": [
+   "FITS",
+   "QUESTIONABLE",
+   "MISFIT",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "A flow named for one stage (e.g. 'turret rotation') reused for a later stage is QUESTIONABLE unless the quantity is genuinely identical."
+  ],
+  "prompt_version": "4bed83f6bc0d",
+  "payload_sha": "7ae66d7610da",
+  "payload": {
+   "system": "Position-selective latch assembly",
+   "interface_type": "mechanical coupling",
+   "ends": [
+    {
+     "subsystem": {
+      "id": "OVER_CENTER",
+      "name": "Over-center positioning device",
+      "description": "Alternative, embodiment-dependent over-center positioning arrangement (not necessarily combined with the rotatable-element arrangement). It moves the lever between locked and unlocked positions across an unstable center position, with at least two stable positions on either side.",
+      "role": "internal"
+     },
+     "port": "Lever positioning output",
+     "direction": "out",
+     "flow_type": "mechanical_motion"
+    },
+    {
+     "subsystem": {
+      "id": "LEVER",
+      "name": "Control lever",
+      "description": "Moves between positions relative to the pawl and pivots; in the release-enabled position it transfers force to the pawl, while in the other position actuation cannot release the ratchet.",
+      "role": "internal"
+     },
+     "port": "Positioning motion input",
+     "direction": "in",
+     "flow_type": "mechanical_motion"
+    }
+   ],
+   "flow": {
+    "id": "F_POSITION",
+    "name": "Lever positioning motion",
+    "flow_type": "mechanical_motion",
+    "notes": "Movement of the lever relative to the pawl, driven by a rotatable element or, in an alternative embodiment, an over-center device."
+   },
+   "flow_also_used_by": [
+    "ROTATOR::I_ROTATOR_LEVER"
+   ]
+  }
+ },
+ {
+  "task_id": "flow_semantics/PAWL::I_LEVER_PAWL",
+  "kind": "flow_semantics",
+  "subject": "PAWL::I_LEVER_PAWL",
+  "agent": "judge-interface",
+  "question": "Does the item flow's name and type fit what actually passes between these two ports?",
+  "allowed_verdicts": [
+   "FITS",
+   "QUESTIONABLE",
+   "MISFIT",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "A flow named for one stage (e.g. 'turret rotation') reused for a later stage is QUESTIONABLE unless the quantity is genuinely identical."
+  ],
+  "prompt_version": "4bed83f6bc0d",
+  "payload_sha": "d2a570b5e392",
+  "payload": {
+   "system": "Position-selective latch assembly",
+   "interface_type": "Pawl post received in lever aperture; lost motion is permitted, with force transfer when the aperture surface contacts the post during release.",
+   "ends": [
+    {
+     "subsystem": {
+      "id": "PAWL",
+      "name": "Pawl",
+      "description": "Releasably engages the ratchet and is moved by lever action to permit ratchet disengagement.",
+      "role": "internal"
+     },
+     "port": "Pawl post / lever aperture coupling",
+     "direction": "in",
+     "flow_type": "mechanical_contact"
+    },
+    {
+     "subsystem": {
+      "id": "LEVER",
+      "name": "Control lever",
+      "description": "Moves between positions relative to the pawl and pivots; in the release-enabled position it transfers force to the pawl, while in the other position actuation cannot release the ratchet.",
+      "role": "internal"
+     },
+     "port": "Pawl post/aperture coupling",
+     "direction": "out",
+     "flow_type": "mechanical_contact"
+    }
+   ],
+   "flow": {
+    "id": "F_PAWL",
+    "name": "Lever-to-pawl force and motion",
+    "flow_type": "mechanical_contact",
+    "notes": "Transferred through lever/pawl engagement; aperture receives pawl post and permits lost motion."
+   },
+   "flow_also_used_by": []
+  }
+ },
+ {
+  "task_id": "flow_semantics/RATCHET::I_RATCHET_PAWL",
+  "kind": "flow_semantics",
+  "subject": "RATCHET::I_RATCHET_PAWL",
+  "agent": "judge-interface",
+  "question": "Does the item flow's name and type fit what actually passes between these two ports?",
+  "allowed_verdicts": [
+   "FITS",
+   "QUESTIONABLE",
+   "MISFIT",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "A flow named for one stage (e.g. 'turret rotation') reused for a later stage is QUESTIONABLE unless the quantity is genuinely identical."
+  ],
+  "prompt_version": "4bed83f6bc0d",
+  "payload_sha": "26274132caf0",
+  "payload": {
+   "system": "Position-selective latch assembly",
+   "interface_type": "releasable mechanical engagement",
+   "ends": [
+    {
+     "subsystem": {
+      "id": "RATCHET",
+      "name": "Ratchet",
+      "description": "Retains a latched position through releasable engagement with the pawl; may move to an unlatched position when disengaged.",
+      "role": "internal"
+     },
+     "port": "Releasable pawl engagement",
+     "direction": "inout",
+     "flow_type": "mechanical_contact"
+    },
+    {
+     "subsystem": {
+      "id": "PAWL",
+      "name": "Pawl",
+      "description": "Releasably engages the ratchet and is moved by lever action to permit ratchet disengagement.",
+      "role": "internal"
+     },
+     "port": "Releasable ratchet engagement",
+     "direction": "inout",
+     "flow_type": "mechanical_contact"
+    }
+   ],
+   "flow": {
+    "id": "F_ENGAGEMENT",
+    "name": "Ratchet-pawl engagement",
+    "flow_type": "mechanical_contact",
+    "notes": "Releasable engagement retains the ratchet in its latched position; disengagement permits release."
+   },
+   "flow_also_used_by": []
+  }
+ },
+ {
+  "task_id": "flow_semantics/ROTATOR::I_ROTATOR_LEVER",
+  "kind": "flow_semantics",
+  "subject": "ROTATOR::I_ROTATOR_LEVER",
+  "agent": "judge-interface",
+  "question": "Does the item flow's name and type fit what actually passes between these two ports?",
+  "allowed_verdicts": [
+   "FITS",
+   "QUESTIONABLE",
+   "MISFIT",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "A flow named for one stage (e.g. 'turret rotation') reused for a later stage is QUESTIONABLE unless the quantity is genuinely identical."
+  ],
+  "prompt_version": "4bed83f6bc0d",
+  "payload_sha": "33d34993b333",
+  "payload": {
+   "system": "Position-selective latch assembly",
+   "interface_type": "mechanical coupling",
+   "ends": [
+    {
+     "subsystem": {
+      "id": "ROTATOR",
+      "name": "Rotatable positioning element",
+      "description": "One alternative, embodiment-dependent positioning arrangement: a rotatable element coupled to the lever, whose rotation moves the lever between positions relative to the pawl.",
+      "role": "internal"
+     },
+     "port": "Lever positioning output",
+     "direction": "out",
+     "flow_type": "mechanical_motion"
+    },
+    {
+     "subsystem": {
+      "id": "LEVER",
+      "name": "Control lever",
+      "description": "Moves between positions relative to the pawl and pivots; in the release-enabled position it transfers force to the pawl, while in the other position actuation cannot release the ratchet.",
+      "role": "internal"
+     },
+     "port": "Positioning motion input",
+     "direction": "in",
+     "flow_type": "mechanical_motion"
+    }
+   ],
+   "flow": {
+    "id": "F_POSITION",
+    "name": "Lever positioning motion",
+    "flow_type": "mechanical_motion",
+    "notes": "Movement of the lever relative to the pawl, driven by a rotatable element or, in an alternative embodiment, an over-center device."
+   },
+   "flow_also_used_by": [
+    "OVER_CENTER::I_OVERCENTER_LEVER"
+   ]
+  }
+ },
+ {
+  "task_id": "flow_semantics/USER_INPUT::I_USER_LEVER",
+  "kind": "flow_semantics",
+  "subject": "USER_INPUT::I_USER_LEVER",
+  "agent": "judge-interface",
+  "question": "Does the item flow's name and type fit what actually passes between these two ports?",
+  "allowed_verdicts": [
+   "FITS",
+   "QUESTIONABLE",
+   "MISFIT",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "A flow named for one stage (e.g. 'turret rotation') reused for a later stage is QUESTIONABLE unless the quantity is genuinely identical."
+  ],
+  "prompt_version": "4bed83f6bc0d",
+  "payload_sha": "423805426f07",
+  "payload": {
+   "system": "Position-selective latch assembly",
+   "interface_type": "User-manipulatable latch-release input; specific coupling kinematics unspecified",
+   "ends": [
+    {
+     "subsystem": {
+      "id": "USER_INPUT",
+      "name": "User-manipulatable release input",
+      "description": "External user-manipulatable device serving as a source of a latch-release input; the patent does not specify its particular output kinematics or coupling.",
+      "role": "external"
+     },
+     "port": "Release actuation output",
+     "direction": "out",
+     "flow_type": "mechanical_actuation"
+    },
+    {
+     "subsystem": {
+      "id": "LEVER",
+      "name": "Control lever",
+      "description": "Moves between positions relative to the pawl and pivots; in the release-enabled position it transfers force to the pawl, while in the other position actuation cannot release the ratchet.",
+      "role": "internal"
+     },
+     "port": "User lever actuation",
+     "direction": "in",
+     "flow_type": "mechanical_actuation"
+    }
+   ],
+   "flow": {
+    "id": "F_HANDLE",
+    "name": "Lever actuation",
+    "flow_type": "mechanical_actuation",
+    "notes": "User-manipulatable input for generating latch release; specific input-device output kinematics are not specified."
+   },
+   "flow_also_used_by": []
+  }
+ },
+ {
+  "task_id": "scope/USER_INPUT",
+  "kind": "scope",
+  "subject": "USER_INPUT",
+  "agent": "judge-scope",
+  "question": "What is this element's correct role in a model of the stated system?",
+  "allowed_verdicts": [
+   "INTERNAL_COMPONENT",
+   "EXTERNAL_ACTOR",
+   "STRUCTURAL_SUPPORT",
+   "SYSTEM_ITSELF",
+   "PRIOR_ART_OR_BACKGROUND",
+   "NOT_A_COMPONENT"
+  ],
+  "guidance": [
+   "Score is computed by comparing your verdict with the role the model assigns."
+  ],
+  "prompt_version": "dd249779cad2",
+  "payload_sha": "3d72b8509284",
+  "payload": {
+   "system": {
+    "name": "Position-selective latch assembly",
+    "description": "Inferred concept model of a latch in which lever position relative to a pawl determines whether lever actuation releases a ratchet."
+   },
+   "element": {
+    "name": "User-manipulatable release input",
+    "description": "External user-manipulatable device serving as a source of a latch-release input; the patent does not specify its particular output kinematics or coupling.",
+    "domain": "Mechanical"
+   },
+   "assigned_role": "external",
+   "flag": "inferred role external: external/context keywords"
+  }
+ },
+ {
+  "task_id": "transformation/LEVER",
+  "kind": "transformation",
+  "subject": "LEVER",
+  "agent": "judge-transformation",
+  "question": "Taken together, do the subsystem's declared functions plausibly explain how its input flows become its output flows at the stated abstraction level?",
+  "allowed_verdicts": [
+   "EXPLICIT",
+   "STRONG",
+   "PARTIAL",
+   "WEAK",
+   "UNEXPLAINED",
+   "CONTRADICTORY",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "Consider every output: is there a function explaining where it comes from?",
+   "Exchanges are direction-indeterminate (inout) interfaces: treat each as a possible input or output and judge whether the functions explain what is exchanged."
+  ],
+  "prompt_version": "ec4f9d66cea9",
+  "payload_sha": "4b610485a988",
+  "payload": {
+   "system": "Position-selective latch assembly",
+   "subsystem": {
+    "id": "LEVER",
+    "name": "Control lever",
+    "description": "Moves between positions relative to the pawl and pivots; in the release-enabled position it transfers force to the pawl, while in the other position actuation cannot release the ratchet.",
+    "role": "internal"
+   },
+   "functions": [],
+   "inputs": [
+    {
+     "ref": "interface:ROTATOR::I_ROTATOR_LEVER",
+     "text": "mechanical coupling; flow: Lever positioning motion (mechanical_motion); ROTATOR.Lever positioning output [out]; LEVER.Positioning motion input [in]",
+     "flow": "Lever positioning motion",
+     "flow_type": "mechanical_motion",
+     "from": "ROTATOR"
+    },
+    {
+     "ref": "interface:OVER_CENTER::I_OVERCENTER_LEVER",
+     "text": "mechanical coupling; flow: Lever positioning motion (mechanical_motion); OVER_CENTER.Lever positioning output [out]; LEVER.Positioning motion input [in]",
+     "flow": "Lever positioning motion",
+     "flow_type": "mechanical_motion",
+     "from": "OVER_CENTER"
+    },
+    {
+     "ref": "interface:USER_INPUT::I_USER_LEVER",
+     "text": "User-manipulatable latch-release input; specific coupling kinematics unspecified; flow: Lever actuation (mechanical_actuation); USER_INPUT.Release actuation output [out]; LEVER.User lever actuation [in]",
+     "flow": "Lever actuation",
+     "flow_type": "mechanical_actuation",
+     "from": "USER_INPUT"
+    }
+   ],
+   "outputs": [
+    {
+     "ref": "interface:PAWL::I_LEVER_PAWL",
+     "text": "Pawl post received in lever aperture; lost motion is permitted, with force transfer when the aperture surface contacts the post during release.; flow: Lever-to-pawl force and motion (mechanical_contact); PAWL.Pawl post / lever aperture coupling [in]; LEVER.Pawl post/aperture coupling [out]",
+     "flow": "Lever-to-pawl force and motion",
+     "flow_type": "mechanical_contact",
+     "to": "PAWL"
+    }
+   ],
+   "exchanges": [],
+   "direction_indeterminate": false,
+   "evidence": [
+    {
+     "ref": "interface:ROTATOR::I_ROTATOR_LEVER",
+     "text": "mechanical coupling; flow: Lever positioning motion (mechanical_motion); ROTATOR.Lever positioning output [out]; LEVER.Positioning motion input [in]",
+     "flow": "Lever positioning motion",
+     "flow_type": "mechanical_motion",
+     "from": "ROTATOR"
+    },
+    {
+     "ref": "interface:OVER_CENTER::I_OVERCENTER_LEVER",
+     "text": "mechanical coupling; flow: Lever positioning motion (mechanical_motion); OVER_CENTER.Lever positioning output [out]; LEVER.Positioning motion input [in]",
+     "flow": "Lever positioning motion",
+     "flow_type": "mechanical_motion",
+     "from": "OVER_CENTER"
+    },
+    {
+     "ref": "interface:USER_INPUT::I_USER_LEVER",
+     "text": "User-manipulatable latch-release input; specific coupling kinematics unspecified; flow: Lever actuation (mechanical_actuation); USER_INPUT.Release actuation output [out]; LEVER.User lever actuation [in]",
+     "flow": "Lever actuation",
+     "flow_type": "mechanical_actuation",
+     "from": "USER_INPUT"
+    },
+    {
+     "ref": "interface:PAWL::I_LEVER_PAWL",
+     "text": "Pawl post received in lever aperture; lost motion is permitted, with force transfer when the aperture surface contacts the post during release.; flow: Lever-to-pawl force and motion (mechanical_contact); PAWL.Pawl post / lever aperture coupling [in]; LEVER.Pawl post/aperture coupling [out]",
+     "flow": "Lever-to-pawl force and motion",
+     "flow_type": "mechanical_contact",
+     "to": "PAWL"
+    }
+   ]
+  }
+ },
+ {
+  "task_id": "transformation/PAWL",
+  "kind": "transformation",
+  "subject": "PAWL",
+  "agent": "judge-transformation",
+  "question": "Taken together, do the subsystem's declared functions plausibly explain how its input flows become its output flows at the stated abstraction level?",
+  "allowed_verdicts": [
+   "EXPLICIT",
+   "STRONG",
+   "PARTIAL",
+   "WEAK",
+   "UNEXPLAINED",
+   "CONTRADICTORY",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "Consider every output: is there a function explaining where it comes from?",
+   "Exchanges are direction-indeterminate (inout) interfaces: treat each as a possible input or output and judge whether the functions explain what is exchanged."
+  ],
+  "prompt_version": "ec4f9d66cea9",
+  "payload_sha": "aa97efbe8328",
+  "payload": {
+   "system": "Position-selective latch assembly",
+   "subsystem": {
+    "id": "PAWL",
+    "name": "Pawl",
+    "description": "Releasably engages the ratchet and is moved by lever action to permit ratchet disengagement.",
+    "role": "internal"
+   },
+   "functions": [],
+   "inputs": [
+    {
+     "ref": "interface:PAWL::I_LEVER_PAWL",
+     "text": "Pawl post received in lever aperture; lost motion is permitted, with force transfer when the aperture surface contacts the post during release.; flow: Lever-to-pawl force and motion (mechanical_contact); PAWL.Pawl post / lever aperture coupling [in]; LEVER.Pawl post/aperture coupling [out]",
+     "flow": "Lever-to-pawl force and motion",
+     "flow_type": "mechanical_contact",
+     "from": "LEVER"
+    }
+   ],
+   "outputs": [],
+   "exchanges": [
+    {
+     "ref": "interface:RATCHET::I_RATCHET_PAWL",
+     "text": "releasable mechanical engagement; flow: Ratchet-pawl engagement (mechanical_contact); RATCHET.Releasable pawl engagement [inout]; PAWL.Releasable ratchet engagement [inout]",
+     "flow": "Ratchet-pawl engagement",
+     "flow_type": "mechanical_contact",
+     "with": "RATCHET"
+    }
+   ],
+   "direction_indeterminate": true,
+   "evidence": [
+    {
+     "ref": "interface:PAWL::I_LEVER_PAWL",
+     "text": "Pawl post received in lever aperture; lost motion is permitted, with force transfer when the aperture surface contacts the post during release.; flow: Lever-to-pawl force and motion (mechanical_contact); PAWL.Pawl post / lever aperture coupling [in]; LEVER.Pawl post/aperture coupling [out]",
+     "flow": "Lever-to-pawl force and motion",
+     "flow_type": "mechanical_contact",
+     "from": "LEVER"
+    },
+    {
+     "ref": "interface:RATCHET::I_RATCHET_PAWL",
+     "text": "releasable mechanical engagement; flow: Ratchet-pawl engagement (mechanical_contact); RATCHET.Releasable pawl engagement [inout]; PAWL.Releasable ratchet engagement [inout]",
+     "flow": "Ratchet-pawl engagement",
+     "flow_type": "mechanical_contact",
+     "with": "RATCHET"
+    }
+   ]
+  }
+ }
+]
