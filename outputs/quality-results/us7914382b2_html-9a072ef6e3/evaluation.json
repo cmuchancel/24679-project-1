@@ -1,0 +1,7051 @@
+{
+ "status": "STRUCTURALLY_INVALID",
+ "gates": [
+  {
+   "gate": "schema_valid",
+   "passed": true
+  },
+  {
+   "gate": "critical_references_resolve",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "identifiers_unique",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "relationship_vocabulary_conforms",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "relationship_signatures_valid",
+   "passed": false,
+   "failures": 1
+  }
+ ],
+ "summary": {
+  "model_key": "us7914382b2_html-9a072ef6e3",
+  "system_id": "US7914382B2_HTML",
+  "system_name": "Dual type constant velocity universal joint",
+  "dialect": "extraction",
+  "counts": {
+   "subsystems": 33,
+   "functions": 0,
+   "ports": 0,
+   "flows": 0,
+   "interfaces": 0,
+   "actions": 12,
+   "parts": 137,
+   "relationships": 281,
+   "requirements": 8
+  },
+  "roles": {
+   "system_root": 1,
+   "internal": 32
+  },
+  "ingest_notes": []
+ },
+ "profile": {
+  "entities": {
+   "entity_duplication": {
+    "score": 0.8882,
+    "applicable": true,
+    "confidence": 0.8,
+    "checked": 170,
+    "violations": 19,
+    "status": "heuristic"
+   }
+  },
+  "semantic_candidates": {
+   "statement_duplication": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.5,
+    "checked": 12,
+    "violations": 0,
+    "status": "heuristic"
+   },
+   "statement_form": {
+    "score": 0.5,
+    "applicable": true,
+    "confidence": 0.5,
+    "checked": 12,
+    "violations": 6,
+    "status": "heuristic"
+   }
+  },
+  "integrity": {
+   "relationship_resolution": {
+    "score": 0.7989,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 281,
+    "violations": 113,
+    "status": "established"
+   },
+   "representation_consistency": {
+    "score": 0.8358,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 168,
+    "violations": 45,
+    "status": "proposed"
+   },
+   "reference_integrity": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 43,
+    "violations": 0,
+    "status": "established"
+   },
+   "identifier_uniqueness": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 182,
+    "violations": 0,
+    "status": "established"
+   }
+  },
+  "closure": {
+   "explanatory_closure": {
+    "score": 0.9556,
+    "applicable": true,
+    "confidence": 0.7,
+    "checked": 45,
+    "violations": 2,
+    "status": "proposed"
+   }
+  },
+  "topology": {
+   "connectivity": {
+    "score": 0.6667,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 33,
+    "violations": 9,
+    "status": "established"
+   }
+  },
+  "conformance": {
+   "vocabulary_conformance": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 281,
+    "violations": 0,
+    "status": "established"
+   },
+   "relation_signature_validity": {
+    "score": 0.994,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 168,
+    "violations": 1,
+    "status": "established"
+   }
+  },
+  "traceability": {
+   "function_allocation_coverage": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 12,
+    "violations": 0,
+    "status": "established"
+   },
+   "component_purpose_coverage": {
+    "score": 0.7273,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 33,
+    "violations": 9,
+    "status": "proposed"
+   },
+   "requirement_satisfaction_coverage": {
+    "score": 0.25,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 8,
+    "violations": 6,
+    "status": "established"
+   },
+   "requirement_verification_coverage": {
+    "score": 0.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 8,
+    "violations": 8,
+    "status": "established"
+   },
+   "end_to_end_traceability": {
+    "score": 0.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 8,
+    "violations": 8,
+    "status": "proposed"
+   }
+  },
+  "architecture": {
+   "boundary_completeness": {
+    "score": 0.0,
+    "applicable": true,
+    "confidence": 0.6,
+    "checked": 4,
+    "violations": 4,
+    "status": "proposed"
+   }
+  },
+  "provenance": {
+   "provenance_completeness": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 4,
+    "violations": 0,
+    "status": "proposed"
+   }
+  },
+  "readiness": {
+   "model_profile_completeness": {
+    "score": 0.5,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 10,
+    "violations": 5,
+    "status": "proposed"
+   }
+  },
+  "usability": {
+   "competency_question_answerability": {
+    "score": 0.3333,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 6,
+    "violations": 4,
+    "status": "proposed"
+   }
+  }
+ },
+ "diagnostics": {
+  "scope_candidates": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 33,
+   "violations": 0,
+   "family": "entities",
+   "metadata": {
+    "candidates": 1
+   }
+  }
+ },
+ "not_applicable": {
+  "partition_strength": "internal dependency graph too small (32 nodes, 0 edges; need >= 6/5)",
+  "flow_structure": "no oriented interfaces",
+  "interface_direction": "no interfaces with two resolved, directed ports",
+  "flow_type_consistency": "no comparable typed port/flow pairs",
+  "flow_reuse": "no item flows",
+  "port_fan_out": "no ports",
+  "port_direction_naming": "no port name implies a direction (input/output/inlet/outlet/received ...)",
+  "causal_path_coverage": "model declares no interfaces",
+  "internal_function_support": "'realization' tasks not built yet: run build_judge_tasks",
+  "behavior_claim_coverage": "'unclaimed_behavior' tasks not built yet: run build_judge_tasks",
+  "internal_transformation_coherence": "'transformation' tasks not built yet: run build_judge_tasks",
+  "statement_distinction": "'overlap' tasks not built yet: run build_judge_tasks",
+  "entity_distinctness": "'entity_identity' tasks not built yet: run build_judge_tasks",
+  "flow_semantic_fit": "'flow_semantics' tasks not built yet: run build_judge_tasks",
+  "role_assignment_coherence": "'scope' tasks not built yet: run build_judge_tasks"
+ },
+ "findings": [
+  {
+   "metric": "boundary_completeness",
+   "ref": "boundary_declared",
+   "kind": "missing_boundary_capability",
+   "severity": "major",
+   "message": "boundary declared"
+  },
+  {
+   "metric": "boundary_completeness",
+   "ref": "input_identified",
+   "kind": "missing_boundary_capability",
+   "severity": "major",
+   "message": "input identified"
+  },
+  {
+   "metric": "boundary_completeness",
+   "ref": "output_identified",
+   "kind": "missing_boundary_capability",
+   "severity": "major",
+   "message": "output identified"
+  },
+  {
+   "metric": "boundary_completeness",
+   "ref": "boundary_exchange_typed",
+   "kind": "missing_boundary_capability",
+   "severity": "major",
+   "message": "boundary exchange typed"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "resolved_interface_map",
+   "kind": "competency_question_incomplete",
+   "severity": "major",
+   "message": "answerability 0.00"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "typed_flow_map",
+   "kind": "competency_question_incomplete",
+   "severity": "major",
+   "message": "answerability 0.00"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "boundary_inputs_and_outputs",
+   "kind": "competency_question_incomplete",
+   "severity": "major",
+   "message": "answerability 0.00"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "input_to_output_paths",
+   "kind": "competency_question_incomplete",
+   "severity": "major",
+   "message": "answerability 0.00"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SS-011",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'drive axles' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SS-012",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'differential gear output shaft' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SS-017",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'wheel bearing' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SS-023",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'joint' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SS-027",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'BJs' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SS-028",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'disc-type constant velocity universal joint' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SS-029",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'transmission component' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SS-032",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'boot 8' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SS-033",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'metal ring 16' has no function or action"
+  },
+  {
+   "metric": "end_to_end_traceability",
+   "ref": "REQ-001",
+   "kind": "incomplete_requirement_trace",
+   "severity": "major",
+   "message": "requirement lacks satisfaction and/or verification trace"
+  },
+  {
+   "metric": "end_to_end_traceability",
+   "ref": "REQ-002",
+   "kind": "incomplete_requirement_trace",
+   "severity": "major",
+   "message": "requirement lacks satisfaction and/or verification trace"
+  },
+  {
+   "metric": "end_to_end_traceability",
+   "ref": "REQ-003",
+   "kind": "incomplete_requirement_trace",
+   "severity": "major",
+   "message": "requirement lacks satisfaction and/or verification trace"
+  },
+  {
+   "metric": "end_to_end_traceability",
+   "ref": "REQ-004",
+   "kind": "incomplete_requirement_trace",
+   "severity": "major",
+   "message": "requirement lacks satisfaction and/or verification trace"
+  },
+  {
+   "metric": "end_to_end_traceability",
+   "ref": "REQ-005",
+   "kind": "incomplete_requirement_trace",
+   "severity": "major",
+   "message": "requirement lacks satisfaction and/or verification trace"
+  },
+  {
+   "metric": "end_to_end_traceability",
+   "ref": "REQ-006",
+   "kind": "incomplete_requirement_trace",
+   "severity": "major",
+   "message": "requirement lacks satisfaction and/or verification trace"
+  },
+  {
+   "metric": "end_to_end_traceability",
+   "ref": "REQ-007",
+   "kind": "incomplete_requirement_trace",
+   "severity": "major",
+   "message": "requirement lacks satisfaction and/or verification trace"
+  },
+  {
+   "metric": "end_to_end_traceability",
+   "ref": "REQ-008",
+   "kind": "incomplete_requirement_trace",
+   "severity": "major",
+   "message": "requirement lacks satisfaction and/or verification trace"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-008,SS-009",
+   "kind": "duplicate_subsystem_candidate",
+   "severity": "major",
+   "message": "cage | cage 5"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-026,SS-032",
+   "kind": "duplicate_subsystem_candidate",
+   "severity": "major",
+   "message": "boot | boot 8"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-030,SS-031",
+   "kind": "duplicate_subsystem_candidate",
+   "severity": "major",
+   "message": "adapter flange | adapter flange 11"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "SS-012",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'differential gear output shaft' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "SS-017",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'wheel bearing' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "model_profile_completeness",
+   "ref": "ports",
+   "kind": "missing_profile_capability",
+   "severity": "major",
+   "message": "functional profile requires ports"
+  },
+  {
+   "metric": "model_profile_completeness",
+   "ref": "interfaces",
+   "kind": "missing_profile_capability",
+   "severity": "major",
+   "message": "functional profile requires interfaces"
+  },
+  {
+   "metric": "model_profile_completeness",
+   "ref": "item_flows",
+   "kind": "missing_profile_capability",
+   "severity": "major",
+   "message": "functional profile requires item flows"
+  },
+  {
+   "metric": "model_profile_completeness",
+   "ref": "input_boundary",
+   "kind": "missing_profile_capability",
+   "severity": "major",
+   "message": "functional profile requires input boundary"
+  },
+  {
+   "metric": "model_profile_completeness",
+   "ref": "output_boundary",
+   "kind": "missing_profile_capability",
+   "severity": "major",
+   "message": "functional profile requires output boundary"
+  },
+  {
+   "metric": "relation_signature_validity",
+   "ref": "REL-0281",
+   "kind": "invalid_relation_signature",
+   "severity": "major",
+   "message": "Value --source--> Value; expected ['ItemFlow', 'Value'] -> ['Subsystem']"
+  },
+  {
+   "metric": "requirement_satisfaction_coverage",
+   "ref": "REQ-003",
+   "kind": "requirement_not_satisfied",
+   "severity": "major",
+   "message": "requirement has no valid satisfied trace"
+  },
+  {
+   "metric": "requirement_satisfaction_coverage",
+   "ref": "REQ-004",
+   "kind": "requirement_not_satisfied",
+   "severity": "major",
+   "message": "requirement has no valid satisfied trace"
+  },
+  {
+   "metric": "requirement_satisfaction_coverage",
+   "ref": "REQ-005",
+   "kind": "requirement_not_satisfied",
+   "severity": "major",
+   "message": "requirement has no valid satisfied trace"
+  },
+  {
+   "metric": "requirement_satisfaction_coverage",
+   "ref": "REQ-006",
+   "kind": "requirement_not_satisfied",
+   "severity": "major",
+   "message": "requirement has no valid satisfied trace"
+  },
+  {
+   "metric": "requirement_satisfaction_coverage",
+   "ref": "REQ-007",
+   "kind": "requirement_not_satisfied",
+   "severity": "major",
+   "message": "requirement has no valid satisfied trace"
+  },
+  {
+   "metric": "requirement_satisfaction_coverage",
+   "ref": "REQ-008",
+   "kind": "requirement_not_satisfied",
+   "severity": "major",
+   "message": "requirement has no valid satisfied trace"
+  },
+  {
+   "metric": "requirement_verification_coverage",
+   "ref": "REQ-001",
+   "kind": "requirement_not_verified",
+   "severity": "major",
+   "message": "requirement has no valid verified trace"
+  },
+  {
+   "metric": "requirement_verification_coverage",
+   "ref": "REQ-002",
+   "kind": "requirement_not_verified",
+   "severity": "major",
+   "message": "requirement has no valid verified trace"
+  },
+  {
+   "metric": "requirement_verification_coverage",
+   "ref": "REQ-003",
+   "kind": "requirement_not_verified",
+   "severity": "major",
+   "message": "requirement has no valid verified trace"
+  },
+  {
+   "metric": "requirement_verification_coverage",
+   "ref": "REQ-004",
+   "kind": "requirement_not_verified",
+   "severity": "major",
+   "message": "requirement has no valid verified trace"
+  },
+  {
+   "metric": "requirement_verification_coverage",
+   "ref": "REQ-005",
+   "kind": "requirement_not_verified",
+   "severity": "major",
+   "message": "requirement has no valid verified trace"
+  },
+  {
+   "metric": "requirement_verification_coverage",
+   "ref": "REQ-006",
+   "kind": "requirement_not_verified",
+   "severity": "major",
+   "message": "requirement has no valid verified trace"
+  },
+  {
+   "metric": "requirement_verification_coverage",
+   "ref": "REQ-007",
+   "kind": "requirement_not_verified",
+   "severity": "major",
+   "message": "requirement has no valid verified trace"
+  },
+  {
+   "metric": "requirement_verification_coverage",
+   "ref": "REQ-008",
+   "kind": "requirement_not_verified",
+   "severity": "major",
+   "message": "requirement has no valid verified trace"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-011",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'drive axles' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-012",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'differential gear output shaft' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-017",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'wheel bearing' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-023",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'joint' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-027",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'BJs' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-028",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'disc-type constant velocity universal joint' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-029",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'transmission component' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-032",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'boot 8' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-033",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'metal ring 16' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-001::P-003,SS-001::P-078",
+   "kind": "duplicate_part_candidate",
+   "severity": "minor",
+   "message": "outer ring | outer ring 1"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-001::P-004,SS-001::P-079",
+   "kind": "duplicate_part_candidate",
+   "severity": "minor",
+   "message": "inner ring | inner ring 2"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-001::P-007,SS-001::P-008",
+   "kind": "duplicate_part_candidate",
+   "severity": "minor",
+   "message": "cage | cage 5"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-001::P-036,SS-001::P-086",
+   "kind": "duplicate_part_candidate",
+   "severity": "minor",
+   "message": "ball | ball 4"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-001::P-038,SS-001::P-058",
+   "kind": "duplicate_part_candidate",
+   "severity": "minor",
+   "message": "adapter flange | adapter flange 11"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-001::P-046,SS-001::P-047",
+   "kind": "duplicate_part_candidate",
+   "severity": "minor",
+   "message": "differential gear- side shaft | differential gear- side shaft 3"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-001::P-022,SS-001::P-056",
+   "kind": "duplicate_part_candidate",
+   "severity": "minor",
+   "message": "shaft | shaft 3"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-001::P-076,SS-001::P-077",
+   "kind": "duplicate_part_candidate",
+   "severity": "minor",
+   "message": "Windows 6 | windows 6"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-001::P-066,SS-001::P-067",
+   "kind": "duplicate_part_candidate",
+   "severity": "minor",
+   "message": "band | band 17"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-026::P-010,SS-026::P-060",
+   "kind": "duplicate_part_candidate",
+   "severity": "minor",
+   "message": "metal ring | metal ring 16"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-029::P-046,SS-029::P-047",
+   "kind": "duplicate_part_candidate",
+   "severity": "minor",
+   "message": "differential gear- side shaft | differential gear- side shaft 3"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-029::P-022,SS-029::P-056",
+   "kind": "duplicate_part_candidate",
+   "severity": "minor",
+   "message": "shaft | shaft 3"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-029::P-048,SS-029::P-049",
+   "kind": "duplicate_part_candidate",
+   "severity": "minor",
+   "message": "wheels- side shaft | wheels- side shaft 10"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-029::P-052,SS-029::P-053",
+   "kind": "duplicate_part_candidate",
+   "severity": "minor",
+   "message": "slinger | slinger 9"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-033::P-061,SS-033::P-062",
+   "kind": "duplicate_part_candidate",
+   "severity": "minor",
+   "message": "large diameter section | large diameter section 16 b"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-033::P-063,SS-033::P-064",
+   "kind": "duplicate_part_candidate",
+   "severity": "minor",
+   "message": "flange section | flange section 16 c"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0011",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "satisfies_requirements: 'dual type constant velocity universal joint' -> 'large steering angle' (src=['SS-001', 'SS-001::P-081'], tgt=['REQ-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0012",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "satisfies_requirements: 'dual type constant velocity universal joint' -> 'steering angle' (src=['SS-001', 'SS-001::P-081'], tgt=['REQ-002'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0015",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "satisfies_requirements: 'drive axle' -> 'large steering angle' (src=['SS-001::P-011', 'SS-010'], tgt=['REQ-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0016",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "satisfies_requirements: 'drive axle' -> 'steering angle' (src=['SS-001::P-011', 'SS-010'], tgt=['REQ-002'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0140",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'outer ring' -> 'velocity' (src=['SS-001::P-003', 'SS-003::P-003', 'SS-004', 'SS-010::P-003', 'SS-023::P-003', 'SS-026::P-003'], tgt=['VAL-002'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0141",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'shaft' -> 'velocity' (src=['SS-001::P-022', 'SS-025', 'SS-029::P-022'], tgt=['VAL-002'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0142",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'inner ring' -> 'velocity' (src=['SS-001::P-004', 'SS-003::P-004', 'SS-005', 'SS-010::P-004', 'SS-013::P-004', 'SS-023::P-004', 'SS-026::P-004', 'SS-028::P-004', 'SS-029::P-004'], tgt=['VAL-002'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0143",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'balls' -> 'velocity' (src=['SS-001::P-005', 'SS-003::P-005', 'SS-006', 'SS-010::P-005', 'SS-029::P-005'], tgt=['VAL-002'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0147",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'axle section' -> 'outer diameter' (src=['SS-001::P-019'], tgt=['REQ-004', 'VAL-005'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0150",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'drive axle' -> 'velocity' (src=['SS-001::P-011', 'SS-010'], tgt=['VAL-002'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0151",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'drive axle' -> 'axial direction length' (src=['SS-001::P-011', 'SS-010'], tgt=['VAL-004'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0152",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'drive axle' -> 'outer diameter' (src=['SS-001::P-011', 'SS-010'], tgt=['REQ-004', 'VAL-005'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0153",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'drive axle' -> 'large diameter' (src=['SS-001::P-011', 'SS-010'], tgt=['VAL-006'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0154",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'drive axle' -> 'hardness' (src=['SS-001::P-011', 'SS-010'], tgt=['VAL-007'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0155",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'wheel hub' -> 'velocity' (src=['SS-010::P-025', 'SS-018'], tgt=['VAL-002'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0156",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'wheel hub' -> 'axial direction length' (src=['SS-010::P-025', 'SS-018'], tgt=['VAL-004'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0157",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'wheel hub' -> 'outer diameter' (src=['SS-010::P-025', 'SS-018'], tgt=['REQ-004', 'VAL-005'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0158",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'wheel hub' -> 'large diameter' (src=['SS-010::P-025', 'SS-018'], tgt=['VAL-006'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0159",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'wheel hub' -> 'hardness' (src=['SS-010::P-025', 'SS-018'], tgt=['VAL-007'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0160",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'hub reduction' -> 'velocity' (src=['SS-010::P-026', 'SS-019'], tgt=['VAL-002'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0161",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'hub reduction' -> 'axial direction length' (src=['SS-010::P-026', 'SS-019'], tgt=['VAL-004'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0162",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'hub reduction' -> 'outer diameter' (src=['SS-010::P-026', 'SS-019'], tgt=['REQ-004', 'VAL-005'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0163",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'hub reduction' -> 'large diameter' (src=['SS-010::P-026', 'SS-019'], tgt=['VAL-006'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0164",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'hub reduction' -> 'hardness' (src=['SS-010::P-026', 'SS-019'], tgt=['VAL-007'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0165",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'reducer' -> 'velocity' (src=['SS-010::P-027', 'SS-020'], tgt=['VAL-002'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0166",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'reducer' -> 'axial direction length' (src=['SS-010::P-027', 'SS-020'], tgt=['VAL-004'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0167",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'reducer' -> 'outer diameter' (src=['SS-010::P-027', 'SS-020'], tgt=['REQ-004', 'VAL-005'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0168",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'reducer' -> 'large diameter' (src=['SS-010::P-027', 'SS-020'], tgt=['VAL-006'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0169",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'reducer' -> 'hardness' (src=['SS-010::P-027', 'SS-020'], tgt=['VAL-007'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0170",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'planetary gear mechanism' -> 'velocity' (src=['SS-010::P-028', 'SS-021'], tgt=['VAL-002'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0171",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'planetary gear mechanism' -> 'axial direction length' (src=['SS-010::P-028', 'SS-021'], tgt=['VAL-004'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0172",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'planetary gear mechanism' -> 'outer diameter' (src=['SS-010::P-028', 'SS-021'], tgt=['REQ-004', 'VAL-005'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0173",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'planetary gear mechanism' -> 'large diameter' (src=['SS-010::P-028', 'SS-021'], tgt=['VAL-006'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0174",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'planetary gear mechanism' -> 'hardness' (src=['SS-010::P-028', 'SS-021'], tgt=['VAL-007'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0175",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'BJ' -> 'velocity' (src=['SS-010::P-029', 'SS-013'], tgt=['VAL-002'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0176",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'BJ' -> 'axial direction length' (src=['SS-010::P-029', 'SS-013'], tgt=['VAL-004'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0177",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'BJ' -> 'outer diameter' (src=['SS-010::P-029', 'SS-013'], tgt=['REQ-004', 'VAL-005'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0178",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'BJ' -> 'large diameter' (src=['SS-010::P-029', 'SS-013'], tgt=['VAL-006'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0179",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'BJ' -> 'hardness' (src=['SS-010::P-029', 'SS-013'], tgt=['VAL-007'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0180",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'bellows boot' -> 'velocity' (src=['SS-010::P-017', 'SS-022'], tgt=['VAL-002'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0181",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'bellows boot' -> 'axial direction length' (src=['SS-010::P-017', 'SS-022'], tgt=['VAL-004'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0182",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'bellows boot' -> 'outer diameter' (src=['SS-010::P-017', 'SS-022'], tgt=['REQ-004', 'VAL-005'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0183",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'bellows boot' -> 'large diameter' (src=['SS-010::P-017', 'SS-022'], tgt=['VAL-006'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0184",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'bellows boot' -> 'hardness' (src=['SS-010::P-017', 'SS-022'], tgt=['VAL-007'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0185",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'BJ' -> 'operating angle' (src=['SS-010::P-029', 'SS-013'], tgt=['VAL-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0187",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'ball guiding groove' -> 'outer diameter' (src=['SS-023::P-030'], tgt=['REQ-004', 'VAL-005'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0188",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'inner ring' -> 'outer diameter' (src=['SS-001::P-004', 'SS-003::P-004', 'SS-005', 'SS-010::P-004', 'SS-013::P-004', 'SS-023::P-004', 'SS-026::P-004', 'SS-028::P-004', 'SS-029::P-004'], tgt=['REQ-004', 'VAL-005'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0189",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'boot' -> 'operating angle' (src=['SS-001::P-009', 'SS-026', 'SS-029::P-009'], tgt=['VAL-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0190",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'cylindrical outer ring' -> 'operating angle' (src=['SS-001::P-002', 'SS-010::P-002', 'SS-029::P-002'], tgt=['VAL-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0191",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'outer ring' -> 'operating angle' (src=['SS-001::P-003', 'SS-003::P-003', 'SS-004', 'SS-010::P-003', 'SS-023::P-003', 'SS-026::P-003'], tgt=['VAL-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0192",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'inner ring' -> 'operating angle' (src=['SS-001::P-004', 'SS-003::P-004', 'SS-005', 'SS-010::P-004', 'SS-013::P-004', 'SS-023::P-004', 'SS-026::P-004', 'SS-028::P-004', 'SS-029::P-004'], tgt=['VAL-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0193",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'balls' -> 'operating angle' (src=['SS-001::P-005', 'SS-003::P-005', 'SS-006', 'SS-010::P-005', 'SS-029::P-005'], tgt=['VAL-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0194",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'cage' -> 'operating angle' (src=['SS-001::P-007', 'SS-003::P-007', 'SS-008', 'SS-010::P-007', 'SS-029::P-007'], tgt=['VAL-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0195",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'outer rings' -> 'operating angle' (src=['SS-001::P-033', 'SS-003::P-033', 'SS-024', 'SS-026::P-033'], tgt=['VAL-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0196",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'shaft' -> 'operating angle' (src=['SS-001::P-022', 'SS-025', 'SS-029::P-022'], tgt=['VAL-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0197",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'metal ring' -> 'operating angle' (src=['SS-001::P-010', 'SS-003::P-010', 'SS-010::P-010', 'SS-026::P-010', 'SS-028::P-010'], tgt=['VAL-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0198",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'bellows boot' -> 'operating angle' (src=['SS-010::P-017', 'SS-022'], tgt=['VAL-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0199",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'bellows boot' -> 'number of revolutions' (src=['SS-010::P-017', 'SS-022'], tgt=['VAL-009'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0200",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'bellows boot' -> 'intersection angle' (src=['SS-010::P-017', 'SS-022'], tgt=['VAL-017'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0201",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'BJ' -> 'number of revolutions' (src=['SS-010::P-029', 'SS-013'], tgt=['VAL-009'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0202",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'BJ' -> 'intersection angle' (src=['SS-010::P-029', 'SS-013'], tgt=['VAL-017'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0203",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'boot' -> 'number of revolutions' (src=['SS-001::P-009', 'SS-026', 'SS-029::P-009'], tgt=['VAL-009'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0204",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'boot' -> 'intersection angle' (src=['SS-001::P-009', 'SS-026', 'SS-029::P-009'], tgt=['VAL-017'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0205",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'metal ring' -> 'number of revolutions' (src=['SS-001::P-010', 'SS-003::P-010', 'SS-010::P-010', 'SS-026::P-010', 'SS-028::P-010'], tgt=['VAL-009'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0206",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'metal ring' -> 'intersection angle' (src=['SS-001::P-010', 'SS-003::P-010', 'SS-010::P-010', 'SS-026::P-010', 'SS-028::P-010'], tgt=['VAL-017'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0207",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'BJs' -> 'operating angle' (src=['SS-001::P-034', 'SS-027'], tgt=['VAL-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0208",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'BJs' -> 'number of revolutions' (src=['SS-001::P-034', 'SS-027'], tgt=['VAL-009'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0209",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'BJs' -> 'intersection angle' (src=['SS-001::P-034', 'SS-027'], tgt=['VAL-017'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0212",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'inner ring' -> 'intersection angle' (src=['SS-001::P-004', 'SS-003::P-004', 'SS-005', 'SS-010::P-004', 'SS-013::P-004', 'SS-023::P-004', 'SS-026::P-004', 'SS-028::P-004', 'SS-029::P-004'], tgt=['VAL-017'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0213",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'disk-shaped adapter flange' -> 'operating angle' (src=['SS-001::P-037', 'SS-013::P-037'], tgt=['VAL-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0214",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'disk-shaped adapter flange' -> 'intersection angle' (src=['SS-001::P-037', 'SS-013::P-037'], tgt=['VAL-017'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0215",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'adapter flange' -> 'operating angle' (src=['SS-001::P-038', 'SS-010::P-038', 'SS-013::P-038', 'SS-030'], tgt=['VAL-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0216",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'adapter flange' -> 'intersection angle' (src=['SS-001::P-038', 'SS-010::P-038', 'SS-013::P-038', 'SS-030'], tgt=['VAL-017'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0217",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'outer rings' -> 'intersection angle' (src=['SS-001::P-033', 'SS-003::P-033', 'SS-024', 'SS-026::P-033'], tgt=['VAL-017'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0220",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'constant velocity universal joint' -> 'operating angle' (src=['SS-001::P-042', 'SS-003'], tgt=['VAL-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0221",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'constant velocity universal joint' -> 'intersection angle' (src=['SS-001::P-042', 'SS-003'], tgt=['VAL-017'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0222",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'constant velocity universal joint' -> '0°' (src=['SS-001::P-042', 'SS-003'], tgt=['VAL-013'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0223",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'guiding grooves' -> 'operating angle' (src=['SS-001::P-032', 'SS-003::P-032', 'SS-010::P-032', 'SS-023::P-032'], tgt=['VAL-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0224",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'guiding grooves' -> 'intersection angle' (src=['SS-001::P-032', 'SS-003::P-032', 'SS-010::P-032', 'SS-023::P-032'], tgt=['VAL-017'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0227",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'drive axle' -> 'operating angle' (src=['SS-001::P-011', 'SS-010'], tgt=['VAL-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0228",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'drive axle' -> 'intersection angle' (src=['SS-001::P-011', 'SS-010'], tgt=['VAL-017'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0229",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'joint' -> 'operating angle' (src=['SS-001::P-044', 'SS-023'], tgt=['VAL-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0230",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'joint' -> 'intersection angle' (src=['SS-001::P-044', 'SS-023'], tgt=['VAL-017'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0233",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'balls' -> 'surface pressure' (src=['SS-001::P-005', 'SS-003::P-005', 'SS-006', 'SS-010::P-005', 'SS-029::P-005'], tgt=['VAL-021'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0234",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'differential gear- side shaft' -> 'operating angle' (src=['SS-001::P-046', 'SS-029::P-046'], tgt=['VAL-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0235",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'differential gear- side shaft' -> 'surface pressure' (src=['SS-001::P-046', 'SS-029::P-046'], tgt=['VAL-021'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0241",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'cage 5' -> 'operating angle' (src=['SS-001::P-008', 'SS-009'], tgt=['VAL-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0242",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'annular component' -> 'operating angle' (src=['SS-008::P-075', 'SS-025::P-075'], tgt=['VAL-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0245",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'dual type constant velocity universal joint' -> 'operating angle' (src=['SS-001', 'SS-001::P-081'], tgt=['VAL-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0249",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'cage' -> 'θ' (src=['SS-001::P-007', 'SS-003::P-007', 'SS-008', 'SS-010::P-007', 'SS-029::P-007'], tgt=['VAL-022'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0250",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'adapter flange' -> 'θ' (src=['SS-001::P-038', 'SS-010::P-038', 'SS-013::P-038', 'SS-030'], tgt=['VAL-022'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0251",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'adapter flange' -> '32°' (src=['SS-001::P-038', 'SS-010::P-038', 'SS-013::P-038', 'SS-030'], tgt=['VAL-020'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0253",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'BJs' -> 'θ' (src=['SS-001::P-034', 'SS-027'], tgt=['VAL-022'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0254",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'BJs' -> '32°' (src=['SS-001::P-034', 'SS-027'], tgt=['VAL-020'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0258",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'BJ' -> 'θ' (src=['SS-010::P-029', 'SS-013'], tgt=['VAL-022'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0259",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'BJ' -> '32°' (src=['SS-010::P-029', 'SS-013'], tgt=['VAL-020'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0260",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'outer ring' -> 'θ' (src=['SS-001::P-003', 'SS-003::P-003', 'SS-004', 'SS-010::P-003', 'SS-023::P-003', 'SS-026::P-003'], tgt=['VAL-022'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0261",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'outer ring' -> '32°' (src=['SS-001::P-003', 'SS-003::P-003', 'SS-004', 'SS-010::P-003', 'SS-023::P-003', 'SS-026::P-003'], tgt=['VAL-020'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0262",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'metal ring' -> '32°' (src=['SS-001::P-010', 'SS-003::P-010', 'SS-010::P-010', 'SS-026::P-010', 'SS-028::P-010'], tgt=['VAL-020'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0263",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'boot' -> 'θ' (src=['SS-001::P-009', 'SS-026', 'SS-029::P-009'], tgt=['VAL-022'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0264",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'boot' -> '32°' (src=['SS-001::P-009', 'SS-026', 'SS-029::P-009'], tgt=['VAL-020'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0267",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'ball' -> 'operating angle' (src=['SS-001::P-036', 'SS-013::P-036'], tgt=['VAL-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0268",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'ball' -> 'surface pressure' (src=['SS-001::P-036', 'SS-013::P-036'], tgt=['VAL-021'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0271",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'drive axles' -> 'operating angle' (src=['SS-001::P-088', 'SS-011'], tgt=['VAL-001'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0272",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'outer ring' -> 'radius of curvature' (src=['SS-001::P-003', 'SS-003::P-003', 'SS-004', 'SS-010::P-003', 'SS-023::P-003', 'SS-026::P-003'], tgt=['VAL-025'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0273",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'guiding grooves' -> 'radius of curvature' (src=['SS-001::P-032', 'SS-003::P-032', 'SS-010::P-032', 'SS-023::P-032'], tgt=['VAL-025'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0274",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'inner ring' -> 'radius of curvature' (src=['SS-001::P-004', 'SS-003::P-004', 'SS-005', 'SS-010::P-004', 'SS-013::P-004', 'SS-023::P-004', 'SS-026::P-004', 'SS-028::P-004', 'SS-029::P-004'], tgt=['VAL-025'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0275",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'boot' -> 'radius of curvature' (src=['SS-001::P-009', 'SS-026', 'SS-029::P-009'], tgt=['VAL-025'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0276",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'metal ring' -> 'radius of curvature' (src=['SS-001::P-010', 'SS-003::P-010', 'SS-010::P-010', 'SS-026::P-010', 'SS-028::P-010'], tgt=['VAL-025'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0277",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'outer rings' -> 'radius of curvature' (src=['SS-001::P-033', 'SS-003::P-033', 'SS-024', 'SS-026::P-033'], tgt=['VAL-025'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0278",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'adapter flange' -> 'radius of curvature' (src=['SS-001::P-038', 'SS-010::P-038', 'SS-013::P-038', 'SS-030'], tgt=['VAL-025'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0279",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'balls' -> 'radius of curvature' (src=['SS-001::P-005', 'SS-003::P-005', 'SS-006', 'SS-010::P-005', 'SS-029::P-005'], tgt=['VAL-025'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0280",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'constant velocity universal joint' -> 'radius of curvature' (src=['SS-001::P-042', 'SS-003'], tgt=['VAL-025'])"
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-011",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-012",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-013",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-014",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-015",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-016",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-018",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-019",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-020",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-021",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-023",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-024",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-034",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-035",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-039",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-040",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-041",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-042",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-044",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-045",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-050",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-051",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-054",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-057",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-058",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-059",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-066",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-067",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-068",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-069",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-070",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-071",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-072",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-073",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-074",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-077",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-081",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-082",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-083",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-084",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-085",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-086",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-087",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-088",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-090",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "statement_form",
+   "ref": "ACT-001",
+   "kind": "statement_form",
+   "severity": "minor",
+   "message": "'greasing': fewer than two content words; generic terms only"
+  },
+  {
+   "metric": "statement_form",
+   "ref": "ACT-003",
+   "kind": "statement_form",
+   "severity": "minor",
+   "message": "'steering': fewer than two content words; generic terms only"
+  },
+  {
+   "metric": "statement_form",
+   "ref": "ACT-007",
+   "kind": "statement_form",
+   "severity": "minor",
+   "message": "'alignment': fewer than two content words"
+  },
+  {
+   "metric": "statement_form",
+   "ref": "ACT-008",
+   "kind": "statement_form",
+   "severity": "minor",
+   "message": "'actualize': fewer than two content words"
+  },
+  {
+   "metric": "statement_form",
+   "ref": "ACT-009",
+   "kind": "statement_form",
+   "severity": "minor",
+   "message": "'actualized': fewer than two content words"
+  },
+  {
+   "metric": "statement_form",
+   "ref": "ACT-012",
+   "kind": "statement_form",
+   "severity": "minor",
+   "message": "'centering': fewer than two content words; generic terms only"
+  }
+ ],
+ "metrics": [
+  {
+   "metric_id": "entity_duplication",
+   "version": "0.1.0",
+   "family": "entities",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 0.888235294117647,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.8,
+   "checked": 170,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "SS-008,SS-009",
+     "kind": "duplicate_subsystem_candidate",
+     "severity": "major",
+     "message": "cage | cage 5"
+    },
+    {
+     "ref": "SS-026,SS-032",
+     "kind": "duplicate_subsystem_candidate",
+     "severity": "major",
+     "message": "boot | boot 8"
+    },
+    {
+     "ref": "SS-030,SS-031",
+     "kind": "duplicate_subsystem_candidate",
+     "severity": "major",
+     "message": "adapter flange | adapter flange 11"
+    },
+    {
+     "ref": "SS-001::P-003,SS-001::P-078",
+     "kind": "duplicate_part_candidate",
+     "severity": "minor",
+     "message": "outer ring | outer ring 1"
+    },
+    {
+     "ref": "SS-001::P-004,SS-001::P-079",
+     "kind": "duplicate_part_candidate",
+     "severity": "minor",
+     "message": "inner ring | inner ring 2"
+    },
+    {
+     "ref": "SS-001::P-007,SS-001::P-008",
+     "kind": "duplicate_part_candidate",
+     "severity": "minor",
+     "message": "cage | cage 5"
+    },
+    {
+     "ref": "SS-001::P-036,SS-001::P-086",
+     "kind": "duplicate_part_candidate",
+     "severity": "minor",
+     "message": "ball | ball 4"
+    },
+    {
+     "ref": "SS-001::P-038,SS-001::P-058",
+     "kind": "duplicate_part_candidate",
+     "severity": "minor",
+     "message": "adapter flange | adapter flange 11"
+    },
+    {
+     "ref": "SS-001::P-046,SS-001::P-047",
+     "kind": "duplicate_part_candidate",
+     "severity": "minor",
+     "message": "differential gear- side shaft | differential gear- side shaft 3"
+    },
+    {
+     "ref": "SS-001::P-022,SS-001::P-056",
+     "kind": "duplicate_part_candidate",
+     "severity": "minor",
+     "message": "shaft | shaft 3"
+    },
+    {
+     "ref": "SS-001::P-076,SS-001::P-077",
+     "kind": "duplicate_part_candidate",
+     "severity": "minor",
+     "message": "Windows 6 | windows 6"
+    },
+    {
+     "ref": "SS-001::P-066,SS-001::P-067",
+     "kind": "duplicate_part_candidate",
+     "severity": "minor",
+     "message": "band | band 17"
+    },
+    {
+     "ref": "SS-026::P-010,SS-026::P-060",
+     "kind": "duplicate_part_candidate",
+     "severity": "minor",
+     "message": "metal ring | metal ring 16"
+    },
+    {
+     "ref": "SS-029::P-046,SS-029::P-047",
+     "kind": "duplicate_part_candidate",
+     "severity": "minor",
+     "message": "differential gear- side shaft | differential gear- side shaft 3"
+    },
+    {
+     "ref": "SS-029::P-022,SS-029::P-056",
+     "kind": "duplicate_part_candidate",
+     "severity": "minor",
+     "message": "shaft | shaft 3"
+    },
+    {
+     "ref": "SS-029::P-048,SS-029::P-049",
+     "kind": "duplicate_part_candidate",
+     "severity": "minor",
+     "message": "wheels- side shaft | wheels- side shaft 10"
+    },
+    {
+     "ref": "SS-029::P-052,SS-029::P-053",
+     "kind": "duplicate_part_candidate",
+     "severity": "minor",
+     "message": "slinger | slinger 9"
+    },
+    {
+     "ref": "SS-033::P-061,SS-033::P-062",
+     "kind": "duplicate_part_candidate",
+     "severity": "minor",
+     "message": "large diameter section | large diameter section 16 b"
+    },
+    {
+     "ref": "SS-033::P-063,SS-033::P-064",
+     "kind": "duplicate_part_candidate",
+     "severity": "minor",
+     "message": "flange section | flange section 16 c"
+    }
+   ],
+   "metadata": {
+    "subsystem_groups": [
+     [
+      "SS-008",
+      "SS-009"
+     ],
+     [
+      "SS-026",
+      "SS-032"
+     ],
+     [
+      "SS-030",
+      "SS-031"
+     ]
+    ],
+    "part_groups": 16,
+    "names_with_reference_numerals": 4
+   }
+  },
+  {
+   "metric_id": "statement_duplication",
+   "version": "0.1.0",
+   "family": "semantic_candidates",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.5,
+   "checked": 12,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "threshold": 0.72,
+    "retriever": "tfidf-word+char-v1",
+    "candidate_pairs": []
+   }
+  },
+  {
+   "metric_id": "relationship_resolution",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": 0.798932384341637,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 281,
+   "evidence": [
+    {
+     "ref": "resolution_counts",
+     "detail": "",
+     "data": {
+      "resolved": 168,
+      "ambiguous": 113
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "REL-0011",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "satisfies_requirements: 'dual type constant velocity universal joint' -> 'large steering angle' (src=['SS-001', 'SS-001::P-081'], tgt=['REQ-001'])"
+    },
+    {
+     "ref": "REL-0012",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "satisfies_requirements: 'dual type constant velocity universal joint' -> 'steering angle' (src=['SS-001', 'SS-001::P-081'], tgt=['REQ-002'])"
+    },
+    {
+     "ref": "REL-0015",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "satisfies_requirements: 'drive axle' -> 'large steering angle' (src=['SS-001::P-011', 'SS-010'], tgt=['REQ-001'])"
+    },
+    {
+     "ref": "REL-0016",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "satisfies_requirements: 'drive axle' -> 'steering angle' (src=['SS-001::P-011', 'SS-010'], tgt=['REQ-002'])"
+    },
+    {
+     "ref": "REL-0140",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'outer ring' -> 'velocity' (src=['SS-001::P-003', 'SS-003::P-003', 'SS-004', 'SS-010::P-003', 'SS-023::P-003', 'SS-026::P-003'], tgt=['VAL-002'])"
+    },
+    {
+     "ref": "REL-0141",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'shaft' -> 'velocity' (src=['SS-001::P-022', 'SS-025', 'SS-029::P-022'], tgt=['VAL-002'])"
+    },
+    {
+     "ref": "REL-0142",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'inner ring' -> 'velocity' (src=['SS-001::P-004', 'SS-003::P-004', 'SS-005', 'SS-010::P-004', 'SS-013::P-004', 'SS-023::P-004', 'SS-026::P-004', 'SS-028::P-004', 'SS-029::P-004'], tgt=['VAL-002'])"
+    },
+    {
+     "ref": "REL-0143",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'balls' -> 'velocity' (src=['SS-001::P-005', 'SS-003::P-005', 'SS-006', 'SS-010::P-005', 'SS-029::P-005'], tgt=['VAL-002'])"
+    },
+    {
+     "ref": "REL-0147",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'axle section' -> 'outer diameter' (src=['SS-001::P-019'], tgt=['REQ-004', 'VAL-005'])"
+    },
+    {
+     "ref": "REL-0150",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'drive axle' -> 'velocity' (src=['SS-001::P-011', 'SS-010'], tgt=['VAL-002'])"
+    },
+    {
+     "ref": "REL-0151",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'drive axle' -> 'axial direction length' (src=['SS-001::P-011', 'SS-010'], tgt=['VAL-004'])"
+    },
+    {
+     "ref": "REL-0152",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'drive axle' -> 'outer diameter' (src=['SS-001::P-011', 'SS-010'], tgt=['REQ-004', 'VAL-005'])"
+    },
+    {
+     "ref": "REL-0153",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'drive axle' -> 'large diameter' (src=['SS-001::P-011', 'SS-010'], tgt=['VAL-006'])"
+    },
+    {
+     "ref": "REL-0154",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'drive axle' -> 'hardness' (src=['SS-001::P-011', 'SS-010'], tgt=['VAL-007'])"
+    },
+    {
+     "ref": "REL-0155",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'wheel hub' -> 'velocity' (src=['SS-010::P-025', 'SS-018'], tgt=['VAL-002'])"
+    },
+    {
+     "ref": "REL-0156",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'wheel hub' -> 'axial direction length' (src=['SS-010::P-025', 'SS-018'], tgt=['VAL-004'])"
+    },
+    {
+     "ref": "REL-0157",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'wheel hub' -> 'outer diameter' (src=['SS-010::P-025', 'SS-018'], tgt=['REQ-004', 'VAL-005'])"
+    },
+    {
+     "ref": "REL-0158",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'wheel hub' -> 'large diameter' (src=['SS-010::P-025', 'SS-018'], tgt=['VAL-006'])"
+    },
+    {
+     "ref": "REL-0159",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'wheel hub' -> 'hardness' (src=['SS-010::P-025', 'SS-018'], tgt=['VAL-007'])"
+    },
+    {
+     "ref": "REL-0160",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'hub reduction' -> 'velocity' (src=['SS-010::P-026', 'SS-019'], tgt=['VAL-002'])"
+    },
+    {
+     "ref": "REL-0161",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'hub reduction' -> 'axial direction length' (src=['SS-010::P-026', 'SS-019'], tgt=['VAL-004'])"
+    },
+    {
+     "ref": "REL-0162",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'hub reduction' -> 'outer diameter' (src=['SS-010::P-026', 'SS-019'], tgt=['REQ-004', 'VAL-005'])"
+    },
+    {
+     "ref": "REL-0163",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'hub reduction' -> 'large diameter' (src=['SS-010::P-026', 'SS-019'], tgt=['VAL-006'])"
+    },
+    {
+     "ref": "REL-0164",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'hub reduction' -> 'hardness' (src=['SS-010::P-026', 'SS-019'], tgt=['VAL-007'])"
+    },
+    {
+     "ref": "REL-0165",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'reducer' -> 'velocity' (src=['SS-010::P-027', 'SS-020'], tgt=['VAL-002'])"
+    },
+    {
+     "ref": "REL-0166",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'reducer' -> 'axial direction length' (src=['SS-010::P-027', 'SS-020'], tgt=['VAL-004'])"
+    },
+    {
+     "ref": "REL-0167",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'reducer' -> 'outer diameter' (src=['SS-010::P-027', 'SS-020'], tgt=['REQ-004', 'VAL-005'])"
+    },
+    {
+     "ref": "REL-0168",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'reducer' -> 'large diameter' (src=['SS-010::P-027', 'SS-020'], tgt=['VAL-006'])"
+    },
+    {
+     "ref": "REL-0169",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'reducer' -> 'hardness' (src=['SS-010::P-027', 'SS-020'], tgt=['VAL-007'])"
+    },
+    {
+     "ref": "REL-0170",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'planetary gear mechanism' -> 'velocity' (src=['SS-010::P-028', 'SS-021'], tgt=['VAL-002'])"
+    },
+    {
+     "ref": "REL-0171",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'planetary gear mechanism' -> 'axial direction length' (src=['SS-010::P-028', 'SS-021'], tgt=['VAL-004'])"
+    },
+    {
+     "ref": "REL-0172",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'planetary gear mechanism' -> 'outer diameter' (src=['SS-010::P-028', 'SS-021'], tgt=['REQ-004', 'VAL-005'])"
+    },
+    {
+     "ref": "REL-0173",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'planetary gear mechanism' -> 'large diameter' (src=['SS-010::P-028', 'SS-021'], tgt=['VAL-006'])"
+    },
+    {
+     "ref": "REL-0174",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'planetary gear mechanism' -> 'hardness' (src=['SS-010::P-028', 'SS-021'], tgt=['VAL-007'])"
+    },
+    {
+     "ref": "REL-0175",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'BJ' -> 'velocity' (src=['SS-010::P-029', 'SS-013'], tgt=['VAL-002'])"
+    },
+    {
+     "ref": "REL-0176",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'BJ' -> 'axial direction length' (src=['SS-010::P-029', 'SS-013'], tgt=['VAL-004'])"
+    },
+    {
+     "ref": "REL-0177",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'BJ' -> 'outer diameter' (src=['SS-010::P-029', 'SS-013'], tgt=['REQ-004', 'VAL-005'])"
+    },
+    {
+     "ref": "REL-0178",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'BJ' -> 'large diameter' (src=['SS-010::P-029', 'SS-013'], tgt=['VAL-006'])"
+    },
+    {
+     "ref": "REL-0179",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'BJ' -> 'hardness' (src=['SS-010::P-029', 'SS-013'], tgt=['VAL-007'])"
+    },
+    {
+     "ref": "REL-0180",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'bellows boot' -> 'velocity' (src=['SS-010::P-017', 'SS-022'], tgt=['VAL-002'])"
+    },
+    {
+     "ref": "REL-0181",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'bellows boot' -> 'axial direction length' (src=['SS-010::P-017', 'SS-022'], tgt=['VAL-004'])"
+    },
+    {
+     "ref": "REL-0182",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'bellows boot' -> 'outer diameter' (src=['SS-010::P-017', 'SS-022'], tgt=['REQ-004', 'VAL-005'])"
+    },
+    {
+     "ref": "REL-0183",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'bellows boot' -> 'large diameter' (src=['SS-010::P-017', 'SS-022'], tgt=['VAL-006'])"
+    },
+    {
+     "ref": "REL-0184",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'bellows boot' -> 'hardness' (src=['SS-010::P-017', 'SS-022'], tgt=['VAL-007'])"
+    },
+    {
+     "ref": "REL-0185",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'BJ' -> 'operating angle' (src=['SS-010::P-029', 'SS-013'], tgt=['VAL-001'])"
+    },
+    {
+     "ref": "REL-0187",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'ball guiding groove' -> 'outer diameter' (src=['SS-023::P-030'], tgt=['REQ-004', 'VAL-005'])"
+    },
+    {
+     "ref": "REL-0188",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'inner ring' -> 'outer diameter' (src=['SS-001::P-004', 'SS-003::P-004', 'SS-005', 'SS-010::P-004', 'SS-013::P-004', 'SS-023::P-004', 'SS-026::P-004', 'SS-028::P-004', 'SS-029::P-004'], tgt=['REQ-004', 'VAL-005'])"
+    },
+    {
+     "ref": "REL-0189",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'boot' -> 'operating angle' (src=['SS-001::P-009', 'SS-026', 'SS-029::P-009'], tgt=['VAL-001'])"
+    },
+    {
+     "ref": "REL-0190",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'cylindrical outer ring' -> 'operating angle' (src=['SS-001::P-002', 'SS-010::P-002', 'SS-029::P-002'], tgt=['VAL-001'])"
+    },
+    {
+     "ref": "REL-0191",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'outer ring' -> 'operating angle' (src=['SS-001::P-003', 'SS-003::P-003', 'SS-004', 'SS-010::P-003', 'SS-023::P-003', 'SS-026::P-003'], tgt=['VAL-001'])"
+    },
+    {
+     "ref": "REL-0192",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'inner ring' -> 'operating angle' (src=['SS-001::P-004', 'SS-003::P-004', 'SS-005', 'SS-010::P-004', 'SS-013::P-004', 'SS-023::P-004', 'SS-026::P-004', 'SS-028::P-004', 'SS-029::P-004'], tgt=['VAL-001'])"
+    },
+    {
+     "ref": "REL-0193",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'balls' -> 'operating angle' (src=['SS-001::P-005', 'SS-003::P-005', 'SS-006', 'SS-010::P-005', 'SS-029::P-005'], tgt=['VAL-001'])"
+    },
+    {
+     "ref": "REL-0194",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'cage' -> 'operating angle' (src=['SS-001::P-007', 'SS-003::P-007', 'SS-008', 'SS-010::P-007', 'SS-029::P-007'], tgt=['VAL-001'])"
+    },
+    {
+     "ref": "REL-0195",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'outer rings' -> 'operating angle' (src=['SS-001::P-033', 'SS-003::P-033', 'SS-024', 'SS-026::P-033'], tgt=['VAL-001'])"
+    },
+    {
+     "ref": "REL-0196",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'shaft' -> 'operating angle' (src=['SS-001::P-022', 'SS-025', 'SS-029::P-022'], tgt=['VAL-001'])"
+    },
+    {
+     "ref": "REL-0197",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'metal ring' -> 'operating angle' (src=['SS-001::P-010', 'SS-003::P-010', 'SS-010::P-010', 'SS-026::P-010', 'SS-028::P-010'], tgt=['VAL-001'])"
+    },
+    {
+     "ref": "REL-0198",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'bellows boot' -> 'operating angle' (src=['SS-010::P-017', 'SS-022'], tgt=['VAL-001'])"
+    },
+    {
+     "ref": "REL-0199",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'bellows boot' -> 'number of revolutions' (src=['SS-010::P-017', 'SS-022'], tgt=['VAL-009'])"
+    },
+    {
+     "ref": "REL-0200",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'bellows boot' -> 'intersection angle' (src=['SS-010::P-017', 'SS-022'], tgt=['VAL-017'])"
+    },
+    {
+     "ref": "REL-0201",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'BJ' -> 'number of revolutions' (src=['SS-010::P-029', 'SS-013'], tgt=['VAL-009'])"
+    },
+    {
+     "ref": "REL-0202",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'BJ' -> 'intersection angle' (src=['SS-010::P-029', 'SS-013'], tgt=['VAL-017'])"
+    },
+    {
+     "ref": "REL-0203",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'boot' -> 'number of revolutions' (src=['SS-001::P-009', 'SS-026', 'SS-029::P-009'], tgt=['VAL-009'])"
+    },
+    {
+     "ref": "REL-0204",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'boot' -> 'intersection angle' (src=['SS-001::P-009', 'SS-026', 'SS-029::P-009'], tgt=['VAL-017'])"
+    },
+    {
+     "ref": "REL-0205",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'metal ring' -> 'number of revolutions' (src=['SS-001::P-010', 'SS-003::P-010', 'SS-010::P-010', 'SS-026::P-010', 'SS-028::P-010'], tgt=['VAL-009'])"
+    },
+    {
+     "ref": "REL-0206",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'metal ring' -> 'intersection angle' (src=['SS-001::P-010', 'SS-003::P-010', 'SS-010::P-010', 'SS-026::P-010', 'SS-028::P-010'], tgt=['VAL-017'])"
+    },
+    {
+     "ref": "REL-0207",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'BJs' -> 'operating angle' (src=['SS-001::P-034', 'SS-027'], tgt=['VAL-001'])"
+    },
+    {
+     "ref": "REL-0208",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'BJs' -> 'number of revolutions' (src=['SS-001::P-034', 'SS-027'], tgt=['VAL-009'])"
+    },
+    {
+     "ref": "REL-0209",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'BJs' -> 'intersection angle' (src=['SS-001::P-034', 'SS-027'], tgt=['VAL-017'])"
+    },
+    {
+     "ref": "REL-0212",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'inner ring' -> 'intersection angle' (src=['SS-001::P-004', 'SS-003::P-004', 'SS-005', 'SS-010::P-004', 'SS-013::P-004', 'SS-023::P-004', 'SS-026::P-004', 'SS-028::P-004', 'SS-029::P-004'], tgt=['VAL-017'])"
+    },
+    {
+     "ref": "REL-0213",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'disk-shaped adapter flange' -> 'operating angle' (src=['SS-001::P-037', 'SS-013::P-037'], tgt=['VAL-001'])"
+    },
+    {
+     "ref": "REL-0214",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'disk-shaped adapter flange' -> 'intersection angle' (src=['SS-001::P-037', 'SS-013::P-037'], tgt=['VAL-017'])"
+    },
+    {
+     "ref": "REL-0215",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'adapter flange' -> 'operating angle' (src=['SS-001::P-038', 'SS-010::P-038', 'SS-013::P-038', 'SS-030'], tgt=['VAL-001'])"
+    },
+    {
+     "ref": "REL-0216",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'adapter flange' -> 'intersection angle' (src=['SS-001::P-038', 'SS-010::P-038', 'SS-013::P-038', 'SS-030'], tgt=['VAL-017'])"
+    },
+    {
+     "ref": "REL-0217",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'outer rings' -> 'intersection angle' (src=['SS-001::P-033', 'SS-003::P-033', 'SS-024', 'SS-026::P-033'], tgt=['VAL-017'])"
+    },
+    {
+     "ref": "REL-0220",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'constant velocity universal joint' -> 'operating angle' (src=['SS-001::P-042', 'SS-003'], tgt=['VAL-001'])"
+    },
+    {
+     "ref": "REL-0221",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'constant velocity universal joint' -> 'intersection angle' (src=['SS-001::P-042', 'SS-003'], tgt=['VAL-017'])"
+    },
+    {
+     "ref": "REL-0222",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'constant velocity universal joint' -> '0°' (src=['SS-001::P-042', 'SS-003'], tgt=['VAL-013'])"
+    },
+    {
+     "ref": "REL-0223",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'guiding grooves' -> 'operating angle' (src=['SS-001::P-032', 'SS-003::P-032', 'SS-010::P-032', 'SS-023::P-032'], tgt=['VAL-001'])"
+    },
+    {
+     "ref": "REL-0224",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'guiding grooves' -> 'intersection angle' (src=['SS-001::P-032', 'SS-003::P-032', 'SS-010::P-032', 'SS-023::P-032'], tgt=['VAL-017'])"
+    },
+    {
+     "ref": "REL-0227",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'drive axle' -> 'operating angle' (src=['SS-001::P-011', 'SS-010'], tgt=['VAL-001'])"
+    },
+    {
+     "ref": "REL-0228",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'drive axle' -> 'intersection angle' (src=['SS-001::P-011', 'SS-010'], tgt=['VAL-017'])"
+    },
+    {
+     "ref": "REL-0229",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'joint' -> 'operating angle' (src=['SS-001::P-044', 'SS-023'], tgt=['VAL-001'])"
+    },
+    {
+     "ref": "REL-0230",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'joint' -> 'intersection angle' (src=['SS-001::P-044', 'SS-023'], tgt=['VAL-017'])"
+    },
+    {
+     "ref": "REL-0233",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'balls' -> 'surface pressure' (src=['SS-001::P-005', 'SS-003::P-005', 'SS-006', 'SS-010::P-005', 'SS-029::P-005'], tgt=['VAL-021'])"
+    },
+    {
+     "ref": "REL-0234",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'differential gear- side shaft' -> 'operating angle' (src=['SS-001::P-046', 'SS-029::P-046'], tgt=['VAL-001'])"
+    },
+    {
+     "ref": "REL-0235",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'differential gear- side shaft' -> 'surface pressure' (src=['SS-001::P-046', 'SS-029::P-046'], tgt=['VAL-021'])"
+    },
+    {
+     "ref": "REL-0241",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'cage 5' -> 'operating angle' (src=['SS-001::P-008', 'SS-009'], tgt=['VAL-001'])"
+    },
+    {
+     "ref": "REL-0242",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'annular component' -> 'operating angle' (src=['SS-008::P-075', 'SS-025::P-075'], tgt=['VAL-001'])"
+    },
+    {
+     "ref": "REL-0245",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'dual type constant velocity universal joint' -> 'operating angle' (src=['SS-001', 'SS-001::P-081'], tgt=['VAL-001'])"
+    },
+    {
+     "ref": "REL-0249",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'cage' -> 'θ' (src=['SS-001::P-007', 'SS-003::P-007', 'SS-008', 'SS-010::P-007', 'SS-029::P-007'], tgt=['VAL-022'])"
+    },
+    {
+     "ref": "REL-0250",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'adapter flange' -> 'θ' (src=['SS-001::P-038', 'SS-010::P-038', 'SS-013::P-038', 'SS-030'], tgt=['VAL-022'])"
+    },
+    {
+     "ref": "REL-0251",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'adapter flange' -> '32°' (src=['SS-001::P-038', 'SS-010::P-038', 'SS-013::P-038', 'SS-030'], tgt=['VAL-020'])"
+    },
+    {
+     "ref": "REL-0253",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'BJs' -> 'θ' (src=['SS-001::P-034', 'SS-027'], tgt=['VAL-022'])"
+    },
+    {
+     "ref": "REL-0254",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'BJs' -> '32°' (src=['SS-001::P-034', 'SS-027'], tgt=['VAL-020'])"
+    },
+    {
+     "ref": "REL-0258",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'BJ' -> 'θ' (src=['SS-010::P-029', 'SS-013'], tgt=['VAL-022'])"
+    },
+    {
+     "ref": "REL-0259",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'BJ' -> '32°' (src=['SS-010::P-029', 'SS-013'], tgt=['VAL-020'])"
+    },
+    {
+     "ref": "REL-0260",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'outer ring' -> 'θ' (src=['SS-001::P-003', 'SS-003::P-003', 'SS-004', 'SS-010::P-003', 'SS-023::P-003', 'SS-026::P-003'], tgt=['VAL-022'])"
+    },
+    {
+     "ref": "REL-0261",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'outer ring' -> '32°' (src=['SS-001::P-003', 'SS-003::P-003', 'SS-004', 'SS-010::P-003', 'SS-023::P-003', 'SS-026::P-003'], tgt=['VAL-020'])"
+    },
+    {
+     "ref": "REL-0262",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'metal ring' -> '32°' (src=['SS-001::P-010', 'SS-003::P-010', 'SS-010::P-010', 'SS-026::P-010', 'SS-028::P-010'], tgt=['VAL-020'])"
+    },
+    {
+     "ref": "REL-0263",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'boot' -> 'θ' (src=['SS-001::P-009', 'SS-026', 'SS-029::P-009'], tgt=['VAL-022'])"
+    },
+    {
+     "ref": "REL-0264",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'boot' -> '32°' (src=['SS-001::P-009', 'SS-026', 'SS-029::P-009'], tgt=['VAL-020'])"
+    },
+    {
+     "ref": "REL-0267",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'ball' -> 'operating angle' (src=['SS-001::P-036', 'SS-013::P-036'], tgt=['VAL-001'])"
+    },
+    {
+     "ref": "REL-0268",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'ball' -> 'surface pressure' (src=['SS-001::P-036', 'SS-013::P-036'], tgt=['VAL-021'])"
+    },
+    {
+     "ref": "REL-0271",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'drive axles' -> 'operating angle' (src=['SS-001::P-088', 'SS-011'], tgt=['VAL-001'])"
+    },
+    {
+     "ref": "REL-0272",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'outer ring' -> 'radius of curvature' (src=['SS-001::P-003', 'SS-003::P-003', 'SS-004', 'SS-010::P-003', 'SS-023::P-003', 'SS-026::P-003'], tgt=['VAL-025'])"
+    },
+    {
+     "ref": "REL-0273",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'guiding grooves' -> 'radius of curvature' (src=['SS-001::P-032', 'SS-003::P-032', 'SS-010::P-032', 'SS-023::P-032'], tgt=['VAL-025'])"
+    },
+    {
+     "ref": "REL-0274",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'inner ring' -> 'radius of curvature' (src=['SS-001::P-004', 'SS-003::P-004', 'SS-005', 'SS-010::P-004', 'SS-013::P-004', 'SS-023::P-004', 'SS-026::P-004', 'SS-028::P-004', 'SS-029::P-004'], tgt=['VAL-025'])"
+    },
+    {
+     "ref": "REL-0275",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'boot' -> 'radius of curvature' (src=['SS-001::P-009', 'SS-026', 'SS-029::P-009'], tgt=['VAL-025'])"
+    },
+    {
+     "ref": "REL-0276",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'metal ring' -> 'radius of curvature' (src=['SS-001::P-010', 'SS-003::P-010', 'SS-010::P-010', 'SS-026::P-010', 'SS-028::P-010'], tgt=['VAL-025'])"
+    },
+    {
+     "ref": "REL-0277",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'outer rings' -> 'radius of curvature' (src=['SS-001::P-033', 'SS-003::P-033', 'SS-024', 'SS-026::P-033'], tgt=['VAL-025'])"
+    },
+    {
+     "ref": "REL-0278",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'adapter flange' -> 'radius of curvature' (src=['SS-001::P-038', 'SS-010::P-038', 'SS-013::P-038', 'SS-030'], tgt=['VAL-025'])"
+    },
+    {
+     "ref": "REL-0279",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'balls' -> 'radius of curvature' (src=['SS-001::P-005', 'SS-003::P-005', 'SS-006', 'SS-010::P-005', 'SS-029::P-005'], tgt=['VAL-025'])"
+    },
+    {
+     "ref": "REL-0280",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'constant velocity universal joint' -> 'radius of curvature' (src=['SS-001::P-042', 'SS-003'], tgt=['VAL-025'])"
+    }
+   ],
+   "metadata": {
+    "extractor_confidence": {
+     "n": 281,
+     "min": 0.6007,
+     "mean": 0.7804384341637011,
+     "below_0.7": 64
+    }
+   }
+  },
+  {
+   "metric_id": "representation_consistency",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.8357664233576643,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 168,
+   "evidence": [
+    {
+     "ref": "parts",
+     "detail": "jaccard=0.672",
+     "data": {
+      "embedded_only": 45,
+      "relationship_only": 0
+     }
+    },
+    {
+     "ref": "allocation",
+     "detail": "jaccard=1.000",
+     "data": {
+      "embedded_only": 0,
+      "relationship_only": 0
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "SS-001->SS-001::P-011",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-012",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-013",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-014",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-015",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-016",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-018",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-019",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-020",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-021",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-023",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-024",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-034",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-035",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-039",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-040",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-041",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-042",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-044",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-045",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-050",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-051",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-054",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-057",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-058",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-059",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-066",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-067",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-068",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-069",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-070",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-071",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-072",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-073",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-074",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-077",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-081",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-082",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-083",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-084",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-085",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-086",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-087",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-088",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-090",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "statement_form",
+   "version": "0.1.0",
+   "family": "semantic_candidates",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 0.5,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.5,
+   "checked": 12,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "ACT-001",
+     "kind": "statement_form",
+     "severity": "minor",
+     "message": "'greasing': fewer than two content words; generic terms only"
+    },
+    {
+     "ref": "ACT-003",
+     "kind": "statement_form",
+     "severity": "minor",
+     "message": "'steering': fewer than two content words; generic terms only"
+    },
+    {
+     "ref": "ACT-007",
+     "kind": "statement_form",
+     "severity": "minor",
+     "message": "'alignment': fewer than two content words"
+    },
+    {
+     "ref": "ACT-008",
+     "kind": "statement_form",
+     "severity": "minor",
+     "message": "'actualize': fewer than two content words"
+    },
+    {
+     "ref": "ACT-009",
+     "kind": "statement_form",
+     "severity": "minor",
+     "message": "'actualized': fewer than two content words"
+    },
+    {
+     "ref": "ACT-012",
+     "kind": "statement_form",
+     "severity": "minor",
+     "message": "'centering': fewer than two content words; generic terms only"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "scope_candidates",
+   "version": "0.1.0",
+   "family": "entities",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 33,
+   "evidence": [
+    {
+     "ref": "SS-001",
+     "detail": "inferred role system_root: name equals system name",
+     "data": {
+      "name": "dual type constant velocity universal joint",
+      "confidence": 0.8
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "candidates": 1
+   }
+  },
+  {
+   "metric_id": "partition_strength",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "diagnostic",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "internal dependency graph too small (32 nodes, 0 edges; need >= 6/5)",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_structure",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "diagnostic",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no oriented interfaces",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "explanatory_closure",
+   "version": "0.1.0",
+   "family": "closure",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.9555555555555556,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.7,
+   "checked": 45,
+   "evidence": [
+    {
+     "ref": "action_owned_or_allocated",
+     "detail": "12/12 supported",
+     "data": {
+      "checked": 12,
+      "supported": 12,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "subsystem_participates",
+     "detail": "31/33 supported",
+     "data": {
+      "checked": 33,
+      "supported": 31,
+      "weight": 1.0
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "SS-012",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'differential gear output shaft' has no interface, relationship, function or behaviour"
+    },
+    {
+     "ref": "SS-017",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'wheel bearing' has no interface, relationship, function or behaviour"
+    }
+   ],
+   "metadata": {
+    "support_threshold": 0.12,
+    "retriever": "tfidf-word+char-v1",
+    "function_classes": {}
+   }
+  },
+  {
+   "metric_id": "reference_integrity",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 43,
+   "evidence": [
+    {
+     "ref": "subsystem.allocated_functions",
+     "detail": "43/43 resolved",
+     "data": {
+      "checked": 43,
+      "violations": 0
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "critical_violations": 0
+   }
+  },
+  {
+   "metric_id": "identifier_uniqueness",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 182,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "interface_direction",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no interfaces with two resolved, directed ports",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_type_consistency",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no comparable typed port/flow pairs",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [
+    {
+     "ref": "unknown_types",
+     "detail": "",
+     "data": {
+      "pairs": []
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_reuse",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no item flows",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "port_fan_out",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no ports",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "port_direction_naming",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "heuristic",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no port name implies a direction (input/output/inlet/outlet/received ...)",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "causal_path_coverage",
+   "version": "0.1.0",
+   "family": "topology",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model declares no interfaces",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "connectivity",
+   "version": "0.1.0",
+   "family": "topology",
+   "kind": "score",
+   "status": "established",
+   "score": 0.6666666666666666,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 33,
+   "evidence": [
+    {
+     "ref": "component_0",
+     "detail": "",
+     "data": {
+      "size": 22,
+      "members": [
+       "SS-001",
+       "SS-002",
+       "SS-003",
+       "SS-004",
+       "SS-005",
+       "SS-006",
+       "SS-007",
+       "SS-008",
+       "SS-009",
+       "SS-010",
+       "SS-013",
+       "SS-014",
+       "SS-015",
+       "SS-016",
+       "SS-018",
+       "SS-019",
+       "SS-020",
+       "SS-021",
+       "SS-022",
+       "SS-024",
+       "SS-025",
+       "SS-026"
+      ]
+     }
+    },
+    {
+     "ref": "component_1",
+     "detail": "",
+     "data": {
+      "size": 2,
+      "members": [
+       "SS-030",
+       "SS-031"
+      ]
+     }
+    },
+    {
+     "ref": "component_2",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "SS-011"
+      ]
+     }
+    },
+    {
+     "ref": "component_3",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "SS-012"
+      ]
+     }
+    },
+    {
+     "ref": "component_4",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "SS-017"
+      ]
+     }
+    },
+    {
+     "ref": "component_5",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "SS-023"
+      ]
+     }
+    },
+    {
+     "ref": "component_6",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "SS-027"
+      ]
+     }
+    },
+    {
+     "ref": "component_7",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "SS-028"
+      ]
+     }
+    },
+    {
+     "ref": "component_8",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "SS-029"
+      ]
+     }
+    },
+    {
+     "ref": "component_9",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "SS-032"
+      ]
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "SS-011",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'drive axles' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SS-012",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'differential gear output shaft' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SS-017",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'wheel bearing' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SS-023",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'joint' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SS-027",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'BJs' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SS-028",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'disc-type constant velocity universal joint' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SS-029",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'transmission component' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SS-032",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'boot 8' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SS-033",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'metal ring 16' has no interface, relationship or shared action"
+    }
+   ],
+   "metadata": {
+    "components": 11,
+    "excluded_structural": []
+   }
+  },
+  {
+   "metric_id": "vocabulary_conformance",
+   "version": "0.1.0",
+   "family": "conformance",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 281,
+   "evidence": [
+    {
+     "ref": "vocabulary",
+     "detail": "",
+     "data": {
+      "recognized": 281,
+      "declared": 281
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "relation_signature_validity",
+   "version": "0.1.0",
+   "family": "conformance",
+   "kind": "score",
+   "status": "established",
+   "score": 0.9940476190476191,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 168,
+   "evidence": [
+    {
+     "ref": "REL-0001",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0002",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0003",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0004",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0005",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0006",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0007",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0008",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0009",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0010",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0013",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0014",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0017",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0018",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0019",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0020",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0021",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0022",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0023",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0024",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0025",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0026",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0027",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0028",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0029",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0030",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0031",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0032",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0033",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0034",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0035",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0036",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0037",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0038",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0039",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0040",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0041",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0042",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0043",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0044",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0045",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0046",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0047",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0048",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0049",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0050",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0051",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0052",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0053",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0054",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0055",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0056",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0057",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0058",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0059",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0060",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0061",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0062",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0063",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0064",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0065",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0066",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0067",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0068",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0069",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0070",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0071",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0072",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0073",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0074",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0075",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0076",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0077",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0078",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0079",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0080",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0081",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0082",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0083",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0084",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0085",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0086",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0087",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0088",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0089",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0090",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0091",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0092",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0093",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0094",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0095",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0096",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0097",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0098",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0099",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0100",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0101",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0102",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0103",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0104",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0105",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0106",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0107",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0108",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0109",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0110",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0111",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0112",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0113",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0114",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0115",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0116",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0117",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0118",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0119",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0120",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0121",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0122",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0123",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0124",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0125",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0126",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0127",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0128",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0129",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0130",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0131",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0132",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0133",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0134",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0135",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0136",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0137",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0138",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0139",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0144",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0145",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0146",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0148",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0149",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0186",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0210",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0211",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0218",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0219",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0225",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0226",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0231",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0232",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0236",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0237",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0238",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0239",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0240",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0243",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0244",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0246",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0247",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0248",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0252",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0255",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0256",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0257",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0265",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0266",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0269",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0270",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0281",
+     "detail": "",
+     "data": {
+      "source_type": "Value",
+      "target_type": "Value",
+      "allowed_domains": [
+       "ItemFlow",
+       "Value"
+      ],
+      "allowed_ranges": [
+       "Subsystem"
+      ]
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "REL-0281",
+     "kind": "invalid_relation_signature",
+     "severity": "major",
+     "message": "Value --source--> Value; expected ['ItemFlow', 'Value'] -> ['Subsystem']"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "function_allocation_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 12,
+   "evidence": [
+    {
+     "ref": "allocation",
+     "detail": "12/12 allocated",
+     "data": {}
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "component_purpose_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.7272727272727273,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 33,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "SS-011",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'drive axles' has no function or action"
+    },
+    {
+     "ref": "SS-012",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'differential gear output shaft' has no function or action"
+    },
+    {
+     "ref": "SS-017",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'wheel bearing' has no function or action"
+    },
+    {
+     "ref": "SS-023",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'joint' has no function or action"
+    },
+    {
+     "ref": "SS-027",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'BJs' has no function or action"
+    },
+    {
+     "ref": "SS-028",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'disc-type constant velocity universal joint' has no function or action"
+    },
+    {
+     "ref": "SS-029",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'transmission component' has no function or action"
+    },
+    {
+     "ref": "SS-032",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'boot 8' has no function or action"
+    },
+    {
+     "ref": "SS-033",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'metal ring 16' has no function or action"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "boundary_completeness",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.6,
+   "checked": 4,
+   "evidence": [
+    {
+     "ref": "boundary_declared",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "input_identified",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "output_identified",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "boundary_exchange_typed",
+     "detail": "missing",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "boundary_declared",
+     "kind": "missing_boundary_capability",
+     "severity": "major",
+     "message": "boundary declared"
+    },
+    {
+     "ref": "input_identified",
+     "kind": "missing_boundary_capability",
+     "severity": "major",
+     "message": "input identified"
+    },
+    {
+     "ref": "output_identified",
+     "kind": "missing_boundary_capability",
+     "severity": "major",
+     "message": "output identified"
+    },
+    {
+     "ref": "boundary_exchange_typed",
+     "kind": "missing_boundary_capability",
+     "severity": "major",
+     "message": "boundary exchange typed"
+    }
+   ],
+   "metadata": {
+    "external": [],
+    "crossings": [],
+    "inputs": [],
+    "outputs": [],
+    "typed": []
+   }
+  },
+  {
+   "metric_id": "requirement_satisfaction_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": 0.25,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 8,
+   "evidence": [
+    {
+     "ref": "REQ-001",
+     "detail": "",
+     "data": {
+      "id": "REQ-001",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "SS-001",
+       "SS-010"
+      ],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "REQ-002",
+     "detail": "",
+     "data": {
+      "id": "REQ-002",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "SS-001",
+       "SS-010"
+      ],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "REQ-003",
+     "detail": "",
+     "data": {
+      "id": "REQ-003",
+      "satisfied": false,
+      "verified": false,
+      "satisfied_by": [],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "REQ-004",
+     "detail": "",
+     "data": {
+      "id": "REQ-004",
+      "satisfied": false,
+      "verified": false,
+      "satisfied_by": [],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "REQ-005",
+     "detail": "",
+     "data": {
+      "id": "REQ-005",
+      "satisfied": false,
+      "verified": false,
+      "satisfied_by": [],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "REQ-006",
+     "detail": "",
+     "data": {
+      "id": "REQ-006",
+      "satisfied": false,
+      "verified": false,
+      "satisfied_by": [],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "REQ-007",
+     "detail": "",
+     "data": {
+      "id": "REQ-007",
+      "satisfied": false,
+      "verified": false,
+      "satisfied_by": [],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "REQ-008",
+     "detail": "",
+     "data": {
+      "id": "REQ-008",
+      "satisfied": false,
+      "verified": false,
+      "satisfied_by": [],
+      "verified_by": []
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "REQ-003",
+     "kind": "requirement_not_satisfied",
+     "severity": "major",
+     "message": "requirement has no valid satisfied trace"
+    },
+    {
+     "ref": "REQ-004",
+     "kind": "requirement_not_satisfied",
+     "severity": "major",
+     "message": "requirement has no valid satisfied trace"
+    },
+    {
+     "ref": "REQ-005",
+     "kind": "requirement_not_satisfied",
+     "severity": "major",
+     "message": "requirement has no valid satisfied trace"
+    },
+    {
+     "ref": "REQ-006",
+     "kind": "requirement_not_satisfied",
+     "severity": "major",
+     "message": "requirement has no valid satisfied trace"
+    },
+    {
+     "ref": "REQ-007",
+     "kind": "requirement_not_satisfied",
+     "severity": "major",
+     "message": "requirement has no valid satisfied trace"
+    },
+    {
+     "ref": "REQ-008",
+     "kind": "requirement_not_satisfied",
+     "severity": "major",
+     "message": "requirement has no valid satisfied trace"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "requirement_verification_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": 0.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 8,
+   "evidence": [
+    {
+     "ref": "REQ-001",
+     "detail": "",
+     "data": {
+      "id": "REQ-001",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "SS-001",
+       "SS-010"
+      ],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "REQ-002",
+     "detail": "",
+     "data": {
+      "id": "REQ-002",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "SS-001",
+       "SS-010"
+      ],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "REQ-003",
+     "detail": "",
+     "data": {
+      "id": "REQ-003",
+      "satisfied": false,
+      "verified": false,
+      "satisfied_by": [],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "REQ-004",
+     "detail": "",
+     "data": {
+      "id": "REQ-004",
+      "satisfied": false,
+      "verified": false,
+      "satisfied_by": [],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "REQ-005",
+     "detail": "",
+     "data": {
+      "id": "REQ-005",
+      "satisfied": false,
+      "verified": false,
+      "satisfied_by": [],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "REQ-006",
+     "detail": "",
+     "data": {
+      "id": "REQ-006",
+      "satisfied": false,
+      "verified": false,
+      "satisfied_by": [],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "REQ-007",
+     "detail": "",
+     "data": {
+      "id": "REQ-007",
+      "satisfied": false,
+      "verified": false,
+      "satisfied_by": [],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "REQ-008",
+     "detail": "",
+     "data": {
+      "id": "REQ-008",
+      "satisfied": false,
+      "verified": false,
+      "satisfied_by": [],
+      "verified_by": []
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "REQ-001",
+     "kind": "requirement_not_verified",
+     "severity": "major",
+     "message": "requirement has no valid verified trace"
+    },
+    {
+     "ref": "REQ-002",
+     "kind": "requirement_not_verified",
+     "severity": "major",
+     "message": "requirement has no valid verified trace"
+    },
+    {
+     "ref": "REQ-003",
+     "kind": "requirement_not_verified",
+     "severity": "major",
+     "message": "requirement has no valid verified trace"
+    },
+    {
+     "ref": "REQ-004",
+     "kind": "requirement_not_verified",
+     "severity": "major",
+     "message": "requirement has no valid verified trace"
+    },
+    {
+     "ref": "REQ-005",
+     "kind": "requirement_not_verified",
+     "severity": "major",
+     "message": "requirement has no valid verified trace"
+    },
+    {
+     "ref": "REQ-006",
+     "kind": "requirement_not_verified",
+     "severity": "major",
+     "message": "requirement has no valid verified trace"
+    },
+    {
+     "ref": "REQ-007",
+     "kind": "requirement_not_verified",
+     "severity": "major",
+     "message": "requirement has no valid verified trace"
+    },
+    {
+     "ref": "REQ-008",
+     "kind": "requirement_not_verified",
+     "severity": "major",
+     "message": "requirement has no valid verified trace"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "end_to_end_traceability",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 8,
+   "evidence": [
+    {
+     "ref": "REQ-001",
+     "detail": "",
+     "data": {
+      "id": "REQ-001",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "SS-001",
+       "SS-010"
+      ],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "REQ-002",
+     "detail": "",
+     "data": {
+      "id": "REQ-002",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "SS-001",
+       "SS-010"
+      ],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "REQ-003",
+     "detail": "",
+     "data": {
+      "id": "REQ-003",
+      "satisfied": false,
+      "verified": false,
+      "satisfied_by": [],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "REQ-004",
+     "detail": "",
+     "data": {
+      "id": "REQ-004",
+      "satisfied": false,
+      "verified": false,
+      "satisfied_by": [],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "REQ-005",
+     "detail": "",
+     "data": {
+      "id": "REQ-005",
+      "satisfied": false,
+      "verified": false,
+      "satisfied_by": [],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "REQ-006",
+     "detail": "",
+     "data": {
+      "id": "REQ-006",
+      "satisfied": false,
+      "verified": false,
+      "satisfied_by": [],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "REQ-007",
+     "detail": "",
+     "data": {
+      "id": "REQ-007",
+      "satisfied": false,
+      "verified": false,
+      "satisfied_by": [],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "REQ-008",
+     "detail": "",
+     "data": {
+      "id": "REQ-008",
+      "satisfied": false,
+      "verified": false,
+      "satisfied_by": [],
+      "verified_by": []
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "REQ-001",
+     "kind": "incomplete_requirement_trace",
+     "severity": "major",
+     "message": "requirement lacks satisfaction and/or verification trace"
+    },
+    {
+     "ref": "REQ-002",
+     "kind": "incomplete_requirement_trace",
+     "severity": "major",
+     "message": "requirement lacks satisfaction and/or verification trace"
+    },
+    {
+     "ref": "REQ-003",
+     "kind": "incomplete_requirement_trace",
+     "severity": "major",
+     "message": "requirement lacks satisfaction and/or verification trace"
+    },
+    {
+     "ref": "REQ-004",
+     "kind": "incomplete_requirement_trace",
+     "severity": "major",
+     "message": "requirement lacks satisfaction and/or verification trace"
+    },
+    {
+     "ref": "REQ-005",
+     "kind": "incomplete_requirement_trace",
+     "severity": "major",
+     "message": "requirement lacks satisfaction and/or verification trace"
+    },
+    {
+     "ref": "REQ-006",
+     "kind": "incomplete_requirement_trace",
+     "severity": "major",
+     "message": "requirement lacks satisfaction and/or verification trace"
+    },
+    {
+     "ref": "REQ-007",
+     "kind": "incomplete_requirement_trace",
+     "severity": "major",
+     "message": "requirement lacks satisfaction and/or verification trace"
+    },
+    {
+     "ref": "REQ-008",
+     "kind": "incomplete_requirement_trace",
+     "severity": "major",
+     "message": "requirement lacks satisfaction and/or verification trace"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "provenance_completeness",
+   "version": "0.1.0",
+   "family": "provenance",
+   "kind": "score",
+   "status": "proposed",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 4,
+   "evidence": [
+    {
+     "ref": "source",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "generator",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "generator_version",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "schema_version",
+     "detail": "present",
+     "data": {}
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "model_profile_completeness",
+   "version": "0.1.0",
+   "family": "readiness",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.5,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 10,
+   "evidence": [
+    {
+     "ref": "system_identity",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "subsystems",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "structure",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "functions_or_actions",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "function_allocation",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "ports",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "interfaces",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "item_flows",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "input_boundary",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "output_boundary",
+     "detail": "missing",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "ports",
+     "kind": "missing_profile_capability",
+     "severity": "major",
+     "message": "functional profile requires ports"
+    },
+    {
+     "ref": "interfaces",
+     "kind": "missing_profile_capability",
+     "severity": "major",
+     "message": "functional profile requires interfaces"
+    },
+    {
+     "ref": "item_flows",
+     "kind": "missing_profile_capability",
+     "severity": "major",
+     "message": "functional profile requires item flows"
+    },
+    {
+     "ref": "input_boundary",
+     "kind": "missing_profile_capability",
+     "severity": "major",
+     "message": "functional profile requires input boundary"
+    },
+    {
+     "ref": "output_boundary",
+     "kind": "missing_profile_capability",
+     "severity": "major",
+     "message": "functional profile requires output boundary"
+    }
+   ],
+   "metadata": {
+    "profile": "functional"
+   }
+  },
+  {
+   "metric_id": "competency_question_answerability",
+   "version": "0.1.0",
+   "family": "usability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.3333333333333333,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 6,
+   "evidence": [
+    {
+     "ref": "component_inventory",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "function_allocation_map",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "resolved_interface_map",
+     "detail": "",
+     "data": {
+      "answerability": 0.0
+     }
+    },
+    {
+     "ref": "typed_flow_map",
+     "detail": "",
+     "data": {
+      "answerability": 0.0
+     }
+    },
+    {
+     "ref": "boundary_inputs_and_outputs",
+     "detail": "",
+     "data": {
+      "answerability": 0.0
+     }
+    },
+    {
+     "ref": "input_to_output_paths",
+     "detail": "",
+     "data": {
+      "answerability": 0.0
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "resolved_interface_map",
+     "kind": "competency_question_incomplete",
+     "severity": "major",
+     "message": "answerability 0.00"
+    },
+    {
+     "ref": "typed_flow_map",
+     "kind": "competency_question_incomplete",
+     "severity": "major",
+     "message": "answerability 0.00"
+    },
+    {
+     "ref": "boundary_inputs_and_outputs",
+     "kind": "competency_question_incomplete",
+     "severity": "major",
+     "message": "answerability 0.00"
+    },
+    {
+     "ref": "input_to_output_paths",
+     "kind": "competency_question_incomplete",
+     "severity": "major",
+     "message": "answerability 0.00"
+    }
+   ],
+   "metadata": {
+    "questions": {
+     "component_inventory": 1.0,
+     "function_allocation_map": 1.0,
+     "resolved_interface_map": 0.0,
+     "typed_flow_map": 0.0,
+     "boundary_inputs_and_outputs": 0.0,
+     "input_to_output_paths": 0.0
+    },
+    "profile": "functional"
+   }
+  },
+  {
+   "metric_id": "internal_function_support",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'realization' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "behavior_claim_coverage",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'unclaimed_behavior' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "internal_transformation_coherence",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'transformation' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "statement_distinction",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'overlap' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "entity_distinctness",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'entity_identity' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_semantic_fit",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'flow_semantics' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "role_assignment_coherence",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'scope' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  }
+ ],
+ "manifest": {
+  "framework_version": "0.2.1",
+  "git_sha": null,
+  "python": "3.13.5",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "packages": {
+   "pydantic": "2.13.5",
+   "networkx": "3.7",
+   "numpy": "2.5.3",
+   "scipy": "1.18.1",
+   "scikit-learn": "1.9.1",
+   "mcp": "2.2.0"
+  },
+  "input_path": "C:\\Users\\Eladio\\Downloads\\functional-quality\\inputs\\US7914382B2\\gliner\\model.sjs.json",
+  "input_sha256": "9a072ef6e38477ffeb24869de5f8fa5e7680258e1403c6daf2e3bf608d74fc46",
+  "model_key": "us7914382b2_html-9a072ef6e3",
+  "metric_versions": {
+   "entity_duplication": "0.1.0",
+   "statement_duplication": "0.1.0",
+   "relationship_resolution": "0.1.0",
+   "representation_consistency": "0.1.0",
+   "statement_form": "0.1.0",
+   "scope_candidates": "0.1.0",
+   "partition_strength": "0.1.0",
+   "flow_structure": "0.1.0",
+   "explanatory_closure": "0.1.0",
+   "reference_integrity": "0.1.0",
+   "identifier_uniqueness": "0.1.0",
+   "interface_direction": "0.1.0",
+   "flow_type_consistency": "0.1.0",
+   "flow_reuse": "0.1.0",
+   "port_fan_out": "0.1.0",
+   "port_direction_naming": "0.1.0",
+   "causal_path_coverage": "0.1.0",
+   "connectivity": "0.1.0",
+   "vocabulary_conformance": "0.1.0",
+   "relation_signature_validity": "0.1.0",
+   "function_allocation_coverage": "0.1.0",
+   "component_purpose_coverage": "0.1.0",
+   "boundary_completeness": "0.1.0",
+   "requirement_satisfaction_coverage": "0.1.0",
+   "requirement_verification_coverage": "0.1.0",
+   "end_to_end_traceability": "0.1.0",
+   "provenance_completeness": "0.1.0",
+   "model_profile_completeness": "0.1.0",
+   "competency_question_answerability": "0.1.0",
+   "internal_function_support": "0.1.0",
+   "behavior_claim_coverage": "0.1.0",
+   "internal_transformation_coherence": "0.1.0",
+   "statement_distinction": "0.1.0",
+   "entity_distinctness": "0.1.0",
+   "flow_semantic_fit": "0.1.0",
+   "role_assignment_coherence": "0.1.0"
+  },
+  "retriever": "tfidf-word+char-v1",
+  "config": {
+   "results_dir": "results",
+   "closure.support_threshold": 0.12,
+   "duplication.similarity_threshold": 0.72,
+   "architecture.min_nodes": 6,
+   "architecture.min_edges": 5,
+   "tasks.max_per_kind": 200,
+   "mbse.profile": "functional",
+   "mbse.vocabulary_path": "sjs.kg.schema.json"
+  },
+  "config_sha256": "db444ef9e4ce9b88",
+  "judge_prompt_versions": {
+   "realization": "0e5a5e8444aa",
+   "unclaimed_behavior": "03be253ac935",
+   "transformation": "ec4f9d66cea9",
+   "overlap": "a1c3966dabf7",
+   "entity_identity": "8683abb23ed7",
+   "flow_semantics": "4bed83f6bc0d",
+   "scope": "dd249779cad2"
+  },
+  "judges": [],
+  "mutation": null,
+  "timestamp": "2026-10-01T15:53:47+00:00"
+ },
+ "errors": []
+}

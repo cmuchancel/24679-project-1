@@ -1,0 +1,454 @@
+[
+ {
+  "task_id": "realization/elastic_element::reduce_vibration_transmission",
+  "kind": "realization",
+  "subject": "elastic_element::reduce_vibration_transmission",
+  "agent": "judge-realization",
+  "question": "Does the supplied behavioural or interface evidence materially support realization of the stated function, at the stated abstraction level?",
+  "allowed_verdicts": [
+   "SUPPORTED",
+   "PARTIALLY_SUPPORTED",
+   "UNSUPPORTED",
+   "CONTRADICTED",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "Judge only against the evidence listed; do not use outside knowledge of the device.",
+   "Evidence from a neighbouring subsystem counts if it plausibly realizes the function.",
+   "SUPPORTED requires at least one cited evidence ref."
+  ],
+  "prompt_version": "0e5a5e8444aa",
+  "payload_sha": "a30c4dab8f23",
+  "payload": {
+   "system": "Fluid vibration isolator",
+   "function": "reduce vibration transmission",
+   "owner": {
+    "id": "elastic_element",
+    "name": "Elastic element",
+    "description": "Disposed between mounting members; deforms elastically and forms part of the main chamber partition wall.",
+    "role": "internal"
+   },
+   "function_class": "transforming",
+   "function_class_reason": "leading verb 'reduce' is not structural",
+   "evidence": [
+    {
+     "ref": "action:reduce_vibration_transmission",
+     "kind": "action",
+     "owner": "elastic_element",
+     "scope": "self",
+     "text": "Reduce vibration transmission Elastic deformation of the element absorbs vibration and makes transmission to the vibration-reception portion connected to the other mounting member difficult.",
+     "retrieval_similarity": 0.55
+    },
+    {
+     "ref": "action:deform_volume",
+     "kind": "action",
+     "owner": "elastic_element",
+     "scope": "self",
+     "text": "Deform elastic element and change chamber volume Vibration transmitted from the vibration-generation portion connected to either mounting member elastically deforms the elastic element between the mounting members and is thereby reduced, making transmission to the vibration-reception portion connected to the other mounting member difficult. Deformation changes the internal volume of the main fluid chamber.",
+     "retrieval_similarity": 0.214
+    }
+   ],
+   "note": "Evidence was shortlisted by lexical retrieval; similarity is NOT a verdict."
+  }
+ },
+ {
+  "task_id": "realization/mounts::connect_respective_mounting_members_to_generation_and_reception_portions",
+  "kind": "realization",
+  "subject": "mounts::connect_respective_mounting_members_to_generation_and_reception_portions",
+  "agent": "judge-realization",
+  "question": "Does the supplied behavioural or interface evidence materially support realization of the stated function, at the stated abstraction level?",
+  "allowed_verdicts": [
+   "SUPPORTED",
+   "PARTIALLY_SUPPORTED",
+   "UNSUPPORTED",
+   "CONTRADICTED",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "Judge only against the evidence listed; do not use outside knowledge of the device.",
+   "Evidence from a neighbouring subsystem counts if it plausibly realizes the function.",
+   "SUPPORTED requires at least one cited evidence ref."
+  ],
+  "prompt_version": "0e5a5e8444aa",
+  "payload_sha": "7bf25af8fac3",
+  "payload": {
+   "system": "Fluid vibration isolator",
+   "function": "connect respective mounting members to generation and reception portions",
+   "owner": {
+    "id": "mounts",
+    "name": "Mounting members",
+    "description": "First and second members connect respectively to vibration generation and vibration reception portions.",
+    "role": "internal"
+   },
+   "function_class": "transforming",
+   "function_class_reason": "leading verb 'connect' is not structural",
+   "evidence": [],
+   "note": "Evidence was shortlisted by lexical retrieval; similarity is NOT a verdict."
+  }
+ },
+ {
+  "task_id": "realization/opening_member::close_orifice",
+  "kind": "realization",
+  "subject": "opening_member::close_orifice",
+  "agent": "judge-realization",
+  "question": "Does the supplied behavioural or interface evidence materially support realization of the stated function, at the stated abstraction level?",
+  "allowed_verdicts": [
+   "SUPPORTED",
+   "PARTIALLY_SUPPORTED",
+   "UNSUPPORTED",
+   "CONTRADICTED",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "Judge only against the evidence listed; do not use outside knowledge of the device.",
+   "Evidence from a neighbouring subsystem counts if it plausibly realizes the function.",
+   "SUPPORTED requires at least one cited evidence ref."
+  ],
+  "prompt_version": "0e5a5e8444aa",
+  "payload_sha": "ded5a6b11f45",
+  "payload": {
+   "system": "Fluid vibration isolator",
+   "function": "close orifice",
+   "owner": {
+    "id": "opening_member",
+    "name": "Opening and closing member",
+    "description": "Reciprocates to open and close a portion of the orifice; an opposed abutting portion contacts the elastic valve body.",
+    "role": "internal"
+   },
+   "function_class": "transforming",
+   "function_class_reason": "leading verb 'close' is not structural",
+   "evidence": [
+    {
+     "ref": "action:abutting_contact",
+     "kind": "action",
+     "owner": "opening_member",
+     "scope": "self",
+     "text": "Contact elastic valve body When brought close to the valve body, the opposed abutting portion contacts the elastic valve body.",
+     "retrieval_similarity": 0.054
+    }
+   ],
+   "note": "Evidence was shortlisted by lexical retrieval; similarity is NOT a verdict."
+  }
+ },
+ {
+  "task_id": "realization/opening_member::open_orifice",
+  "kind": "realization",
+  "subject": "opening_member::open_orifice",
+  "agent": "judge-realization",
+  "question": "Does the supplied behavioural or interface evidence materially support realization of the stated function, at the stated abstraction level?",
+  "allowed_verdicts": [
+   "SUPPORTED",
+   "PARTIALLY_SUPPORTED",
+   "UNSUPPORTED",
+   "CONTRADICTED",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "Judge only against the evidence listed; do not use outside knowledge of the device.",
+   "Evidence from a neighbouring subsystem counts if it plausibly realizes the function.",
+   "SUPPORTED requires at least one cited evidence ref."
+  ],
+  "prompt_version": "0e5a5e8444aa",
+  "payload_sha": "134f145addbe",
+  "payload": {
+   "system": "Fluid vibration isolator",
+   "function": "open orifice",
+   "owner": {
+    "id": "opening_member",
+    "name": "Opening and closing member",
+    "description": "Reciprocates to open and close a portion of the orifice; an opposed abutting portion contacts the elastic valve body.",
+    "role": "internal"
+   },
+   "function_class": "transforming",
+   "function_class_reason": "leading verb 'open' is not structural",
+   "evidence": [
+    {
+     "ref": "action:abutting_contact",
+     "kind": "action",
+     "owner": "opening_member",
+     "scope": "self",
+     "text": "Contact elastic valve body When brought close to the valve body, the opposed abutting portion contacts the elastic valve body.",
+     "retrieval_similarity": 0.005
+    }
+   ],
+   "note": "Evidence was shortlisted by lexical retrieval; similarity is NOT a verdict."
+  }
+ },
+ {
+  "task_id": "realization/opening_member::reciprocate",
+  "kind": "realization",
+  "subject": "opening_member::reciprocate",
+  "agent": "judge-realization",
+  "question": "Does the supplied behavioural or interface evidence materially support realization of the stated function, at the stated abstraction level?",
+  "allowed_verdicts": [
+   "SUPPORTED",
+   "PARTIALLY_SUPPORTED",
+   "UNSUPPORTED",
+   "CONTRADICTED",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "Judge only against the evidence listed; do not use outside knowledge of the device.",
+   "Evidence from a neighbouring subsystem counts if it plausibly realizes the function.",
+   "SUPPORTED requires at least one cited evidence ref."
+  ],
+  "prompt_version": "0e5a5e8444aa",
+  "payload_sha": "37f2ac1184f1",
+  "payload": {
+   "system": "Fluid vibration isolator",
+   "function": "reciprocate",
+   "owner": {
+    "id": "opening_member",
+    "name": "Opening and closing member",
+    "description": "Reciprocates to open and close a portion of the orifice; an opposed abutting portion contacts the elastic valve body.",
+    "role": "internal"
+   },
+   "function_class": "transforming",
+   "function_class_reason": "leading verb 'reciprocate' is not structural",
+   "evidence": [
+    {
+     "ref": "action:abutting_contact",
+     "kind": "action",
+     "owner": "opening_member",
+     "scope": "self",
+     "text": "Contact elastic valve body When brought close to the valve body, the opposed abutting portion contacts the elastic valve body.",
+     "retrieval_similarity": 0.0
+    }
+   ],
+   "note": "Evidence was shortlisted by lexical retrieval; similarity is NOT a verdict."
+  }
+ },
+ {
+  "task_id": "unclaimed_behavior/abutting_contact",
+  "kind": "unclaimed_behavior",
+  "subject": "abutting_contact",
+  "agent": "judge-realization",
+  "question": "Is this behaviour accounted for by at least one of the candidate declared functions?",
+  "allowed_verdicts": [
+   "COVERED",
+   "PARTIALLY_COVERED",
+   "UNCLAIMED",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "UNCLAIMED means the model performs something no function declares."
+  ],
+  "prompt_version": "03be253ac935",
+  "payload_sha": "ce66bfd44e28",
+  "payload": {
+   "system": "Fluid vibration isolator",
+   "behaviour": {
+    "name": "Contact elastic valve body",
+    "steps": [
+     "When brought close to the valve body, the opposed abutting portion contacts the elastic valve body."
+    ]
+   },
+   "owner": {
+    "id": "opening_member",
+    "name": "Opening and closing member",
+    "description": "Reciprocates to open and close a portion of the orifice; an opposed abutting portion contacts the elastic valve body.",
+    "role": "internal"
+   },
+   "evidence": [
+    {
+     "ref": "function:opening_member::close_orifice",
+     "owner": "opening_member",
+     "text": "close orifice"
+    },
+    {
+     "ref": "function:opening_member::open_orifice",
+     "owner": "opening_member",
+     "text": "open orifice"
+    },
+    {
+     "ref": "function:opening_member::reciprocate",
+     "owner": "opening_member",
+     "text": "reciprocate"
+    }
+   ]
+  }
+ },
+ {
+  "task_id": "unclaimed_behavior/bias_member",
+  "kind": "unclaimed_behavior",
+  "subject": "bias_member",
+  "agent": "judge-realization",
+  "question": "Is this behaviour accounted for by at least one of the candidate declared functions?",
+  "allowed_verdicts": [
+   "COVERED",
+   "PARTIALLY_COVERED",
+   "UNCLAIMED",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "UNCLAIMED means the model performs something no function declares."
+  ],
+  "prompt_version": "03be253ac935",
+  "payload_sha": "7029bc8b59ac",
+  "payload": {
+   "system": "Fluid vibration isolator",
+   "behaviour": {
+    "name": "Bias opening and closing member",
+    "steps": [
+     "Elastic member biases the opening and closing member in a direction away from the check valve."
+    ]
+   },
+   "owner": {
+    "id": "bias_element",
+    "name": "Elastic bias member",
+    "description": "Biases the opening and closing member away from the check valve.",
+    "role": "internal"
+   },
+   "evidence": []
+  }
+ },
+ {
+  "task_id": "unclaimed_behavior/check_flow",
+  "kind": "unclaimed_behavior",
+  "subject": "check_flow",
+  "agent": "judge-realization",
+  "question": "Is this behaviour accounted for by at least one of the candidate declared functions?",
+  "allowed_verdicts": [
+   "COVERED",
+   "PARTIALLY_COVERED",
+   "UNCLAIMED",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "UNCLAIMED means the model performs something no function declares."
+  ],
+  "prompt_version": "03be253ac935",
+  "payload_sha": "780522949d2e",
+  "payload": {
+   "system": "Fluid vibration isolator",
+   "behaviour": {
+    "name": "Permit one-way check-valve flow",
+    "steps": [
+     "Check valve permits flow from the opening-member side only toward the main fluid chamber."
+    ]
+   },
+   "owner": {
+    "id": "check_valve",
+    "name": "Check valve",
+    "description": "Valve body and valve seat provide one-way fluid flow from the opening-member side toward the main chamber; valve body is elastic.",
+    "role": "internal"
+   },
+   "evidence": []
+  }
+ },
+ {
+  "task_id": "unclaimed_behavior/deform_volume",
+  "kind": "unclaimed_behavior",
+  "subject": "deform_volume",
+  "agent": "judge-realization",
+  "question": "Is this behaviour accounted for by at least one of the candidate declared functions?",
+  "allowed_verdicts": [
+   "COVERED",
+   "PARTIALLY_COVERED",
+   "UNCLAIMED",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "UNCLAIMED means the model performs something no function declares."
+  ],
+  "prompt_version": "03be253ac935",
+  "payload_sha": "b0fad77819fb",
+  "payload": {
+   "system": "Fluid vibration isolator",
+   "behaviour": {
+    "name": "Deform elastic element and change chamber volume",
+    "steps": [
+     "Vibration transmitted from the vibration-generation portion connected to either mounting member elastically deforms the elastic element between the mounting members and is thereby reduced, making transmission to the vibration-reception portion connected to the other mounting member difficult.",
+     "Deformation changes the internal volume of the main fluid chamber."
+    ]
+   },
+   "owner": {
+    "id": "elastic_element",
+    "name": "Elastic element",
+    "description": "Disposed between mounting members; deforms elastically and forms part of the main chamber partition wall.",
+    "role": "internal"
+   },
+   "evidence": [
+    {
+     "ref": "function:elastic_element::reduce_vibration_transmission",
+     "owner": "elastic_element",
+     "text": "reduce vibration transmission"
+    }
+   ]
+  }
+ },
+ {
+  "task_id": "unclaimed_behavior/guide_reciprocation",
+  "kind": "unclaimed_behavior",
+  "subject": "guide_reciprocation",
+  "agent": "judge-realization",
+  "question": "Is this behaviour accounted for by at least one of the candidate declared functions?",
+  "allowed_verdicts": [
+   "COVERED",
+   "PARTIALLY_COVERED",
+   "UNCLAIMED",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "UNCLAIMED means the model performs something no function declares."
+  ],
+  "prompt_version": "03be253ac935",
+  "payload_sha": "f7a9bc24f4ce",
+  "payload": {
+   "system": "Fluid vibration isolator",
+   "behaviour": {
+    "name": "Guide reciprocation",
+    "steps": [
+     "Shaft and bearing constrain the opening and closing member's reciprocating motion."
+    ]
+   },
+   "owner": {
+    "id": "guide",
+    "name": "Reciprocation guide",
+    "description": "Central shaft and bearing guide the opening and closing member; claims describe alternative placements on the member, orifice-forming member, or partition member.",
+    "role": "internal"
+   },
+   "evidence": []
+  }
+ },
+ {
+  "task_id": "unclaimed_behavior/reduce_vibration_transmission",
+  "kind": "unclaimed_behavior",
+  "subject": "reduce_vibration_transmission",
+  "agent": "judge-realization",
+  "question": "Is this behaviour accounted for by at least one of the candidate declared functions?",
+  "allowed_verdicts": [
+   "COVERED",
+   "PARTIALLY_COVERED",
+   "UNCLAIMED",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "UNCLAIMED means the model performs something no function declares."
+  ],
+  "prompt_version": "03be253ac935",
+  "payload_sha": "4e90cd3fcbde",
+  "payload": {
+   "system": "Fluid vibration isolator",
+   "behaviour": {
+    "name": "Reduce vibration transmission",
+    "steps": [
+     "Elastic deformation of the element absorbs vibration and makes transmission to the vibration-reception portion connected to the other mounting member difficult."
+    ]
+   },
+   "owner": {
+    "id": "elastic_element",
+    "name": "Elastic element",
+    "description": "Disposed between mounting members; deforms elastically and forms part of the main chamber partition wall.",
+    "role": "internal"
+   },
+   "evidence": [
+    {
+     "ref": "function:elastic_element::reduce_vibration_transmission",
+     "owner": "elastic_element",
+     "text": "reduce vibration transmission"
+    }
+   ]
+  }
+ }
+]

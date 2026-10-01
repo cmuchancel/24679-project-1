@@ -1,0 +1,359 @@
+[
+ {
+  "task_id": "flow_semantics/GEARSET::GEARSET_TO_WHEELS",
+  "kind": "flow_semantics",
+  "subject": "GEARSET::GEARSET_TO_WHEELS",
+  "agent": "judge-interface",
+  "question": "Does the item flow's name and type fit what actually passes between these two ports?",
+  "allowed_verdicts": [
+   "FITS",
+   "QUESTIONABLE",
+   "MISFIT",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "A flow named for one stage (e.g. 'turret rotation') reused for a later stage is QUESTIONABLE unless the quantity is genuinely identical."
+  ],
+  "prompt_version": "4bed83f6bc0d",
+  "payload_sha": "7c6e790fea68",
+  "payload": {
+   "system": "Hydraulically Locking Limited Slip Differential Assembly",
+   "interface_type": "mechanical rotational drive",
+   "ends": [
+    {
+     "subsystem": {
+      "id": "GEARSET",
+      "name": "Differential gear-set",
+      "description": "Located within the carrier and drives vehicle wheels.",
+      "role": "internal"
+     },
+     "port": "Drive to wheels",
+     "direction": "out",
+     "flow_type": "mechanical_rotational"
+    },
+    {
+     "subsystem": {
+      "id": "WHEELS",
+      "name": "Motor-vehicle driven wheels",
+      "description": "External drivetrain elements driven by the differential gear-set; wheel slip is the condition prompting pump activation.",
+      "role": "external"
+     },
+     "port": "Differential drive input",
+     "direction": "in",
+     "flow_type": "mechanical_rotational"
+    }
+   ],
+   "flow": {
+    "id": "DRIVE",
+    "name": "Differential drive to wheels",
+    "flow_type": "mechanical_rotational",
+    "notes": "Gear-set drives vehicle wheels; claim 1 does not specify torque values."
+   },
+   "flow_also_used_by": []
+  }
+ },
+ {
+  "task_id": "flow_semantics/PUMP::CONTROLLER_TO_PUMP",
+  "kind": "flow_semantics",
+  "subject": "PUMP::CONTROLLER_TO_PUMP",
+  "agent": "judge-interface",
+  "question": "Does the item flow's name and type fit what actually passes between these two ports?",
+  "allowed_verdicts": [
+   "FITS",
+   "QUESTIONABLE",
+   "MISFIT",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "A flow named for one stage (e.g. 'turret rotation') reused for a later stage is QUESTIONABLE unless the quantity is genuinely identical."
+  ],
+  "prompt_version": "4bed83f6bc0d",
+  "payload_sha": "a28182d97b88",
+  "payload": {
+   "system": "Hydraulically Locking Limited Slip Differential Assembly",
+   "interface_type": "control signal",
+   "ends": [
+    {
+     "subsystem": {
+      "id": "PUMP",
+      "name": "External fluid pump",
+      "description": "Stationary relative to the housing and external to the carrier; supplies fluid through a pathway to the pressure chamber.",
+      "role": "external"
+     },
+     "port": "Pump activation",
+     "direction": "in",
+     "flow_type": "signal"
+    },
+    {
+     "subsystem": {
+      "id": "CONTROLLER",
+      "name": "Pump controller",
+      "description": "External to the carrier; selectively activates the pump in response to detected slip between wheels.",
+      "role": "external"
+     },
+     "port": "Pump activation command",
+     "direction": "out",
+     "flow_type": "signal"
+    }
+   ],
+   "flow": {
+    "id": "PUMP_COMMAND",
+    "name": "Pump activation command",
+    "flow_type": "signal",
+    "notes": "Controller selectively activates pump in response to detected slip."
+   },
+   "flow_also_used_by": []
+  }
+ },
+ {
+  "task_id": "flow_semantics/PUMP::PUMP_TO_CHAMBER",
+  "kind": "flow_semantics",
+  "subject": "PUMP::PUMP_TO_CHAMBER",
+  "agent": "judge-interface",
+  "question": "Does the item flow's name and type fit what actually passes between these two ports?",
+  "allowed_verdicts": [
+   "FITS",
+   "QUESTIONABLE",
+   "MISFIT",
+   "NOT_APPLICABLE"
+  ],
+  "guidance": [
+   "A flow named for one stage (e.g. 'turret rotation') reused for a later stage is QUESTIONABLE unless the quantity is genuinely identical."
+  ],
+  "prompt_version": "4bed83f6bc0d",
+  "payload_sha": "9966c4351c99",
+  "payload": {
+   "system": "Hydraulically Locking Limited Slip Differential Assembly",
+   "interface_type": "hydraulic",
+   "ends": [
+    {
+     "subsystem": {
+      "id": "PUMP",
+      "name": "External fluid pump",
+      "description": "Stationary relative to the housing and external to the carrier; supplies fluid through a pathway to the pressure chamber.",
+      "role": "external"
+     },
+     "port": "Fluid delivery",
+     "direction": "out",
+     "flow_type": "hydraulic_fluid"
+    },
+    {
+     "subsystem": {
+      "id": "CHAMBER",
+      "name": "Clutch pressure chamber",
+      "description": "Located within the carrier and receives fluid pressure to selectively engage the clutch.",
+      "role": "internal"
+     },
+     "port": "Fluid supply",
+     "direction": "in",
+     "flow_type": "hydraulic_fluid"
+    }
+   ],
+   "flow": {
+    "id": "HYDRAULIC_FLUID",
+    "name": "Pressurized working fluid",
+    "flow_type": "hydraulic_fluid",
+    "notes": "Pump delivery to pressure chamber via fluid pathway routed across/under a support bearing; optional plenum pocket communicates with the pathway."
+   },
+   "flow_also_used_by": []
+  }
+ },
+ {
+  "task_id": "scope/BEARINGS",
+  "kind": "scope",
+  "subject": "BEARINGS",
+  "agent": "judge-scope",
+  "question": "What is this element's correct role in a model of the stated system?",
+  "allowed_verdicts": [
+   "INTERNAL_COMPONENT",
+   "EXTERNAL_ACTOR",
+   "STRUCTURAL_SUPPORT",
+   "SYSTEM_ITSELF",
+   "PRIOR_ART_OR_BACKGROUND",
+   "NOT_A_COMPONENT"
+  ],
+  "guidance": [
+   "Score is computed by comparing your verdict with the role the model assigns."
+  ],
+  "prompt_version": "dd249779cad2",
+  "payload_sha": "f8d661fdc696",
+  "payload": {
+   "system": {
+    "name": "Hydraulically Locking Limited Slip Differential Assembly",
+    "description": "Inferred concept model of a motor-vehicle limited-slip differential assembly using an externally located pump and controller to selectively hydraulically engage an internal differential clutch."
+   },
+   "element": {
+    "name": "Carrier support bearings",
+    "description": "At least two support bearings support the differential carrier at its interface with the housing; the fluid pathway extends across and under at least one bearing.",
+    "domain": "Mechanical drivetrain"
+   },
+   "assigned_role": "structural",
+   "flag": "inferred role structural: no ports/functions/interfaces + structural keywords"
+  }
+ },
+ {
+  "task_id": "scope/CARRIER",
+  "kind": "scope",
+  "subject": "CARRIER",
+  "agent": "judge-scope",
+  "question": "What is this element's correct role in a model of the stated system?",
+  "allowed_verdicts": [
+   "INTERNAL_COMPONENT",
+   "EXTERNAL_ACTOR",
+   "STRUCTURAL_SUPPORT",
+   "SYSTEM_ITSELF",
+   "PRIOR_ART_OR_BACKGROUND",
+   "NOT_A_COMPONENT"
+  ],
+  "guidance": [
+   "Score is computed by comparing your verdict with the role the model assigns."
+  ],
+  "prompt_version": "dd249779cad2",
+  "payload_sha": "237eb82e85db",
+  "payload": {
+   "system": {
+    "name": "Hydraulically Locking Limited Slip Differential Assembly",
+    "description": "Inferred concept model of a motor-vehicle limited-slip differential assembly using an externally located pump and controller to selectively hydraulically engage an internal differential clutch."
+   },
+   "element": {
+    "name": "Differential carrier",
+    "description": "Supports differential components and rotates within the housing.",
+    "domain": "Mechanical drivetrain"
+   },
+   "assigned_role": "structural",
+   "flag": "inferred role structural: no ports/functions/interfaces + structural keywords"
+  }
+ },
+ {
+  "task_id": "scope/CONTROLLER",
+  "kind": "scope",
+  "subject": "CONTROLLER",
+  "agent": "judge-scope",
+  "question": "What is this element's correct role in a model of the stated system?",
+  "allowed_verdicts": [
+   "INTERNAL_COMPONENT",
+   "EXTERNAL_ACTOR",
+   "STRUCTURAL_SUPPORT",
+   "SYSTEM_ITSELF",
+   "PRIOR_ART_OR_BACKGROUND",
+   "NOT_A_COMPONENT"
+  ],
+  "guidance": [
+   "Score is computed by comparing your verdict with the role the model assigns."
+  ],
+  "prompt_version": "dd249779cad2",
+  "payload_sha": "0abc7e15b5a0",
+  "payload": {
+   "system": {
+    "name": "Hydraulically Locking Limited Slip Differential Assembly",
+    "description": "Inferred concept model of a motor-vehicle limited-slip differential assembly using an externally located pump and controller to selectively hydraulically engage an internal differential clutch."
+   },
+   "element": {
+    "name": "Pump controller",
+    "description": "External to the carrier; selectively activates the pump in response to detected slip between wheels.",
+    "domain": "Control"
+   },
+   "assigned_role": "external",
+   "flag": "inferred role external: external/context keywords"
+  }
+ },
+ {
+  "task_id": "scope/HOUSING",
+  "kind": "scope",
+  "subject": "HOUSING",
+  "agent": "judge-scope",
+  "question": "What is this element's correct role in a model of the stated system?",
+  "allowed_verdicts": [
+   "INTERNAL_COMPONENT",
+   "EXTERNAL_ACTOR",
+   "STRUCTURAL_SUPPORT",
+   "SYSTEM_ITSELF",
+   "PRIOR_ART_OR_BACKGROUND",
+   "NOT_A_COMPONENT"
+  ],
+  "guidance": [
+   "Score is computed by comparing your verdict with the role the model assigns."
+  ],
+  "prompt_version": "dd249779cad2",
+  "payload_sha": "d9979e1bbc31",
+  "payload": {
+   "system": {
+    "name": "Hydraulically Locking Limited Slip Differential Assembly",
+    "description": "Inferred concept model of a motor-vehicle limited-slip differential assembly using an externally located pump and controller to selectively hydraulically engage an internal differential clutch."
+   },
+   "element": {
+    "name": "Differential housing",
+    "description": "Retains the differential; the differential is arranged rotatably inside it.",
+    "domain": "Mechanical drivetrain"
+   },
+   "assigned_role": "structural",
+   "flag": "inferred role structural: no ports/functions/interfaces + structural keywords"
+  }
+ },
+ {
+  "task_id": "scope/PUMP",
+  "kind": "scope",
+  "subject": "PUMP",
+  "agent": "judge-scope",
+  "question": "What is this element's correct role in a model of the stated system?",
+  "allowed_verdicts": [
+   "INTERNAL_COMPONENT",
+   "EXTERNAL_ACTOR",
+   "STRUCTURAL_SUPPORT",
+   "SYSTEM_ITSELF",
+   "PRIOR_ART_OR_BACKGROUND",
+   "NOT_A_COMPONENT"
+  ],
+  "guidance": [
+   "Score is computed by comparing your verdict with the role the model assigns."
+  ],
+  "prompt_version": "dd249779cad2",
+  "payload_sha": "68156908e770",
+  "payload": {
+   "system": {
+    "name": "Hydraulically Locking Limited Slip Differential Assembly",
+    "description": "Inferred concept model of a motor-vehicle limited-slip differential assembly using an externally located pump and controller to selectively hydraulically engage an internal differential clutch."
+   },
+   "element": {
+    "name": "External fluid pump",
+    "description": "Stationary relative to the housing and external to the carrier; supplies fluid through a pathway to the pressure chamber.",
+    "domain": "Hydraulic actuation"
+   },
+   "assigned_role": "external",
+   "flag": "inferred role external: external/context keywords"
+  }
+ },
+ {
+  "task_id": "scope/WHEELS",
+  "kind": "scope",
+  "subject": "WHEELS",
+  "agent": "judge-scope",
+  "question": "What is this element's correct role in a model of the stated system?",
+  "allowed_verdicts": [
+   "INTERNAL_COMPONENT",
+   "EXTERNAL_ACTOR",
+   "STRUCTURAL_SUPPORT",
+   "SYSTEM_ITSELF",
+   "PRIOR_ART_OR_BACKGROUND",
+   "NOT_A_COMPONENT"
+  ],
+  "guidance": [
+   "Score is computed by comparing your verdict with the role the model assigns."
+  ],
+  "prompt_version": "dd249779cad2",
+  "payload_sha": "5dc286520449",
+  "payload": {
+   "system": {
+    "name": "Hydraulically Locking Limited Slip Differential Assembly",
+    "description": "Inferred concept model of a motor-vehicle limited-slip differential assembly using an externally located pump and controller to selectively hydraulically engage an internal differential clutch."
+   },
+   "element": {
+    "name": "Motor-vehicle driven wheels",
+    "description": "External drivetrain elements driven by the differential gear-set; wheel slip is the condition prompting pump activation.",
+    "domain": "Vehicle drivetrain"
+   },
+   "assigned_role": "external",
+   "flag": "inferred role external: external/context keywords"
+  }
+ }
+]

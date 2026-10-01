@@ -1,0 +1,4315 @@
+{
+ "status": "STRUCTURALLY_INVALID",
+ "gates": [
+  {
+   "gate": "schema_valid",
+   "passed": true
+  },
+  {
+   "gate": "critical_references_resolve",
+   "passed": false,
+   "failures": 12
+  },
+  {
+   "gate": "identifiers_unique",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "relationship_vocabulary_conforms",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "relationship_signatures_valid",
+   "passed": true,
+   "failures": 0
+  }
+ ],
+ "summary": {
+  "model_key": "us8051737b2_html-37058b66a4",
+  "system_id": "US8051737B2_HTML",
+  "system_name": "Worm gear drive",
+  "dialect": "mixed",
+  "counts": {
+   "subsystems": 28,
+   "functions": 0,
+   "ports": 0,
+   "flows": 1,
+   "interfaces": 4,
+   "actions": 14,
+   "parts": 88,
+   "relationships": 91,
+   "requirements": 1
+  },
+  "roles": {
+   "internal": 25,
+   "system_root": 1,
+   "structural": 2
+  },
+  "ingest_notes": []
+ },
+ "profile": {
+  "entities": {
+   "entity_duplication": {
+    "score": 0.9052,
+    "applicable": true,
+    "confidence": 0.8,
+    "checked": 116,
+    "violations": 9,
+    "status": "heuristic"
+   }
+  },
+  "semantic_candidates": {
+   "statement_duplication": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.5,
+    "checked": 14,
+    "violations": 0,
+    "status": "heuristic"
+   },
+   "statement_form": {
+    "score": 0.6429,
+    "applicable": true,
+    "confidence": 0.5,
+    "checked": 14,
+    "violations": 5,
+    "status": "heuristic"
+   }
+  },
+  "integrity": {
+   "relationship_resolution": {
+    "score": 0.9505,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 91,
+    "violations": 6,
+    "status": "established"
+   },
+   "representation_consistency": {
+    "score": 0.8239,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 85,
+    "violations": 31,
+    "status": "proposed"
+   },
+   "reference_integrity": {
+    "score": 0.648,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 43,
+    "violations": 16,
+    "status": "established"
+   },
+   "identifier_uniqueness": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 135,
+    "violations": 0,
+    "status": "established"
+   }
+  },
+  "closure": {
+   "explanatory_closure": {
+    "score": 0.6667,
+    "applicable": true,
+    "confidence": 0.7,
+    "checked": 43,
+    "violations": 14,
+    "status": "proposed"
+   }
+  },
+  "topology": {
+   "connectivity": {
+    "score": 0.1923,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 26,
+    "violations": 16,
+    "status": "established"
+   }
+  },
+  "conformance": {
+   "vocabulary_conformance": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 91,
+    "violations": 0,
+    "status": "established"
+   },
+   "relation_signature_validity": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 85,
+    "violations": 0,
+    "status": "established"
+   }
+  },
+  "traceability": {
+   "function_allocation_coverage": {
+    "score": 0.8571,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 14,
+    "violations": 2,
+    "status": "established"
+   },
+   "component_purpose_coverage": {
+    "score": 0.4231,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 26,
+    "violations": 15,
+    "status": "proposed"
+   },
+   "requirement_satisfaction_coverage": {
+    "score": 0.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 1,
+    "violations": 1,
+    "status": "established"
+   },
+   "requirement_verification_coverage": {
+    "score": 0.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 1,
+    "violations": 1,
+    "status": "established"
+   },
+   "end_to_end_traceability": {
+    "score": 0.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 1,
+    "violations": 1,
+    "status": "proposed"
+   }
+  },
+  "architecture": {
+   "boundary_completeness": {
+    "score": 0.0,
+    "applicable": true,
+    "confidence": 0.6,
+    "checked": 4,
+    "violations": 4,
+    "status": "proposed"
+   }
+  },
+  "provenance": {
+   "provenance_completeness": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 4,
+    "violations": 0,
+    "status": "proposed"
+   }
+  },
+  "readiness": {
+   "model_profile_completeness": {
+    "score": 0.6,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 10,
+    "violations": 4,
+    "status": "proposed"
+   }
+  },
+  "usability": {
+   "competency_question_answerability": {
+    "score": 0.3095,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 6,
+    "violations": 5,
+    "status": "proposed"
+   }
+  }
+ },
+ "diagnostics": {
+  "scope_candidates": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 28,
+   "violations": 0,
+   "family": "entities",
+   "metadata": {
+    "candidates": 3
+   }
+  },
+  "flow_reuse": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 1,
+   "violations": 1,
+   "family": "interface",
+   "metadata": {
+    "reused": {},
+    "unused": [
+     "FL-001"
+    ]
+   }
+  }
+ },
+ "not_applicable": {
+  "partition_strength": "internal dependency graph too small (25 nodes, 0 edges; need >= 6/5)",
+  "flow_structure": "no oriented interfaces",
+  "interface_direction": "no interfaces with two resolved, directed ports",
+  "flow_type_consistency": "no comparable typed port/flow pairs",
+  "port_fan_out": "no ports",
+  "port_direction_naming": "no port name implies a direction (input/output/inlet/outlet/received ...)",
+  "causal_path_coverage": "no oriented boundary inputs and outputs identified",
+  "internal_function_support": "'realization' tasks not built yet: run build_judge_tasks",
+  "behavior_claim_coverage": "'unclaimed_behavior' tasks not built yet: run build_judge_tasks",
+  "internal_transformation_coherence": "'transformation' tasks not built yet: run build_judge_tasks",
+  "statement_distinction": "'overlap' tasks not built yet: run build_judge_tasks",
+  "entity_distinctness": "'entity_identity' tasks not built yet: run build_judge_tasks",
+  "flow_semantic_fit": "'flow_semantics' tasks not built yet: run build_judge_tasks",
+  "role_assignment_coherence": "'scope' tasks not built yet: run build_judge_tasks"
+ },
+ "findings": [
+  {
+   "metric": "reference_integrity",
+   "ref": "SS-001::IF-001",
+   "kind": "unresolved:interface.mating_subsystem",
+   "severity": "critical",
+   "message": "interface.mating_subsystem -> 'unresolved' does not resolve."
+  },
+  {
+   "metric": "reference_integrity",
+   "ref": "SS-001::IF-001",
+   "kind": "unresolved:interface.port_this",
+   "severity": "critical",
+   "message": "interface.port_this -> 'None' does not resolve. looked up in subsystem 'SS-001'"
+  },
+  {
+   "metric": "reference_integrity",
+   "ref": "SS-001::IF-001",
+   "kind": "unresolved:interface.port_mate",
+   "severity": "critical",
+   "message": "interface.port_mate -> 'None' does not resolve. looked up in mating subsystem 'unresolved'"
+  },
+  {
+   "metric": "reference_integrity",
+   "ref": "SS-001::IF-003",
+   "kind": "unresolved:interface.mating_subsystem",
+   "severity": "critical",
+   "message": "interface.mating_subsystem -> 'unresolved' does not resolve."
+  },
+  {
+   "metric": "reference_integrity",
+   "ref": "SS-001::IF-003",
+   "kind": "unresolved:interface.port_this",
+   "severity": "critical",
+   "message": "interface.port_this -> 'None' does not resolve. looked up in subsystem 'SS-001'"
+  },
+  {
+   "metric": "reference_integrity",
+   "ref": "SS-001::IF-003",
+   "kind": "unresolved:interface.port_mate",
+   "severity": "critical",
+   "message": "interface.port_mate -> 'None' does not resolve. looked up in mating subsystem 'unresolved'"
+  },
+  {
+   "metric": "reference_integrity",
+   "ref": "SS-001::IF-002",
+   "kind": "unresolved:interface.mating_subsystem",
+   "severity": "critical",
+   "message": "interface.mating_subsystem -> 'unresolved' does not resolve."
+  },
+  {
+   "metric": "reference_integrity",
+   "ref": "SS-001::IF-002",
+   "kind": "unresolved:interface.port_this",
+   "severity": "critical",
+   "message": "interface.port_this -> 'None' does not resolve. looked up in subsystem 'SS-001'"
+  },
+  {
+   "metric": "reference_integrity",
+   "ref": "SS-001::IF-002",
+   "kind": "unresolved:interface.port_mate",
+   "severity": "critical",
+   "message": "interface.port_mate -> 'None' does not resolve. looked up in mating subsystem 'unresolved'"
+  },
+  {
+   "metric": "reference_integrity",
+   "ref": "SS-012::IF-003",
+   "kind": "unresolved:interface.mating_subsystem",
+   "severity": "critical",
+   "message": "interface.mating_subsystem -> 'unresolved' does not resolve."
+  },
+  {
+   "metric": "reference_integrity",
+   "ref": "SS-012::IF-003",
+   "kind": "unresolved:interface.port_this",
+   "severity": "critical",
+   "message": "interface.port_this -> 'None' does not resolve. looked up in subsystem 'SS-012'"
+  },
+  {
+   "metric": "reference_integrity",
+   "ref": "SS-012::IF-003",
+   "kind": "unresolved:interface.port_mate",
+   "severity": "critical",
+   "message": "interface.port_mate -> 'None' does not resolve. looked up in mating subsystem 'unresolved'"
+  },
+  {
+   "metric": "boundary_completeness",
+   "ref": "boundary_declared",
+   "kind": "missing_boundary_capability",
+   "severity": "major",
+   "message": "boundary declared"
+  },
+  {
+   "metric": "boundary_completeness",
+   "ref": "input_identified",
+   "kind": "missing_boundary_capability",
+   "severity": "major",
+   "message": "input identified"
+  },
+  {
+   "metric": "boundary_completeness",
+   "ref": "output_identified",
+   "kind": "missing_boundary_capability",
+   "severity": "major",
+   "message": "output identified"
+  },
+  {
+   "metric": "boundary_completeness",
+   "ref": "boundary_exchange_typed",
+   "kind": "missing_boundary_capability",
+   "severity": "major",
+   "message": "boundary exchange typed"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "resolved_interface_map",
+   "kind": "competency_question_incomplete",
+   "severity": "major",
+   "message": "answerability 0.00"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "typed_flow_map",
+   "kind": "competency_question_incomplete",
+   "severity": "major",
+   "message": "answerability 0.00"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "boundary_inputs_and_outputs",
+   "kind": "competency_question_incomplete",
+   "severity": "major",
+   "message": "answerability 0.00"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "input_to_output_paths",
+   "kind": "competency_question_incomplete",
+   "severity": "major",
+   "message": "answerability 0.00"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SS-001",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'gear train' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SS-002",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'worm' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SS-004",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'thrust bearings' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SS-005",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'worm gear drives' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SS-011",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'final assembly' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SS-013",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'shaft' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SS-014",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'output' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SS-016",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'gearbox' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SS-017",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'window lift motor' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SS-018",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'gearbox 14' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SS-022",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'drive plate' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SS-024",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'axle' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SS-025",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'axle 28' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SS-027",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'thrust bearing' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "SS-028",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'first thrust bearing' has no function or action"
+  },
+  {
+   "metric": "end_to_end_traceability",
+   "ref": "REQ-001",
+   "kind": "incomplete_requirement_trace",
+   "severity": "major",
+   "message": "requirement lacks satisfaction and/or verification trace"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-005,SS-006",
+   "kind": "duplicate_subsystem_candidate",
+   "severity": "major",
+   "message": "worm gear drives | Worm gear drives"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-016,SS-018",
+   "kind": "duplicate_subsystem_candidate",
+   "severity": "major",
+   "message": "gearbox | gearbox 14"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-024,SS-025",
+   "kind": "duplicate_subsystem_candidate",
+   "severity": "major",
+   "message": "axle | axle 28"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "ACT-011",
+   "kind": "orphan:action_owned_or_allocated",
+   "severity": "major",
+   "message": "action 'bearing support' has no owner or allocation"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "ACT-014",
+   "kind": "orphan:action_owned_or_allocated",
+   "severity": "major",
+   "message": "action 'interface' has no owner or allocation"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "FL-001",
+   "kind": "orphan:flow_used",
+   "severity": "major",
+   "message": "flow 'driving torque' is carried by no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "SS-002",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'worm' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "SS-004",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'thrust bearings' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "SS-005",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'worm gear drives' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "SS-011",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'final assembly' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "SS-013",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'shaft' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "SS-014",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'output' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "SS-017",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'window lift motor' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "SS-022",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'drive plate' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "SS-024",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'axle' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "SS-025",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'axle 28' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "SS-028",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'first thrust bearing' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "function_allocation_coverage",
+   "ref": "ACT-011",
+   "kind": "unallocated_function",
+   "severity": "major",
+   "message": "function/action has no valid owner or allocation"
+  },
+  {
+   "metric": "function_allocation_coverage",
+   "ref": "ACT-014",
+   "kind": "unallocated_function",
+   "severity": "major",
+   "message": "function/action has no valid owner or allocation"
+  },
+  {
+   "metric": "model_profile_completeness",
+   "ref": "function_allocation",
+   "kind": "missing_profile_capability",
+   "severity": "major",
+   "message": "functional profile requires function allocation"
+  },
+  {
+   "metric": "model_profile_completeness",
+   "ref": "ports",
+   "kind": "missing_profile_capability",
+   "severity": "major",
+   "message": "functional profile requires ports"
+  },
+  {
+   "metric": "model_profile_completeness",
+   "ref": "input_boundary",
+   "kind": "missing_profile_capability",
+   "severity": "major",
+   "message": "functional profile requires input boundary"
+  },
+  {
+   "metric": "model_profile_completeness",
+   "ref": "output_boundary",
+   "kind": "missing_profile_capability",
+   "severity": "major",
+   "message": "functional profile requires output boundary"
+  },
+  {
+   "metric": "reference_integrity",
+   "ref": "SS-001::IF-001",
+   "kind": "unresolved:interface.flow_ref",
+   "severity": "major",
+   "message": "interface.flow_ref -> 'None' does not resolve. interface has no flow_ref"
+  },
+  {
+   "metric": "reference_integrity",
+   "ref": "SS-001::IF-003",
+   "kind": "unresolved:interface.flow_ref",
+   "severity": "major",
+   "message": "interface.flow_ref -> 'None' does not resolve. interface has no flow_ref"
+  },
+  {
+   "metric": "reference_integrity",
+   "ref": "SS-001::IF-002",
+   "kind": "unresolved:interface.flow_ref",
+   "severity": "major",
+   "message": "interface.flow_ref -> 'None' does not resolve. interface has no flow_ref"
+  },
+  {
+   "metric": "reference_integrity",
+   "ref": "SS-012::IF-003",
+   "kind": "unresolved:interface.flow_ref",
+   "severity": "major",
+   "message": "interface.flow_ref -> 'None' does not resolve. interface has no flow_ref"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0058",
+   "kind": "relationship_unresolved",
+   "severity": "major",
+   "message": "interfaces: 'worm gear drive' -> 'shock absorbing interface' (src=['SS-012'], tgt=[])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0060",
+   "kind": "relationship_unresolved",
+   "severity": "major",
+   "message": "interfaces: 'gear train' -> 'shock absorbing interface' (src=['SS-001', 'SS-001::P-013'], tgt=[])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0091",
+   "kind": "relationship_unresolved",
+   "severity": "major",
+   "message": "preconditions: 'self locking' -> 'additional components' (src=['ACT-001'], tgt=[])"
+  },
+  {
+   "metric": "requirement_satisfaction_coverage",
+   "ref": "REQ-001",
+   "kind": "requirement_not_satisfied",
+   "severity": "major",
+   "message": "requirement has no valid satisfied trace"
+  },
+  {
+   "metric": "requirement_verification_coverage",
+   "ref": "REQ-001",
+   "kind": "requirement_not_verified",
+   "severity": "major",
+   "message": "requirement has no valid verified trace"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "function_allocation_map",
+   "kind": "competency_question_incomplete",
+   "severity": "minor",
+   "message": "answerability 0.86"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-001",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'gear train' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-002",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'worm' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-004",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'thrust bearings' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-005",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'worm gear drives' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-011",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'final assembly' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-013",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'shaft' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-014",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'output' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-016",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'gearbox' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-017",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'window lift motor' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-018",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'gearbox 14' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-019",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'end cap' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-022",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'drive plate' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-024",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'axle' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-025",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'axle 28' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-027",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'thrust bearing' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "SS-028",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'first thrust bearing' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-001::P-009,SS-001::P-033,SS-001::P-041,SS-001::P-042",
+   "kind": "duplicate_part_candidate",
+   "severity": "minor",
+   "message": "thrust bearing | thrust bearing 29 | Thrust bearing | Thrust bearing 29"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-001::P-034,SS-001::P-035",
+   "kind": "duplicate_part_candidate",
+   "severity": "minor",
+   "message": "end cap | end cap 31"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-001::P-053,SS-001::P-054",
+   "kind": "duplicate_part_candidate",
+   "severity": "minor",
+   "message": "slot | slot 30"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-007::P-010,SS-007::P-056",
+   "kind": "duplicate_part_candidate",
+   "severity": "minor",
+   "message": "shaft | shaft 32"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-020::P-010,SS-020::P-056",
+   "kind": "duplicate_part_candidate",
+   "severity": "minor",
+   "message": "shaft | shaft 32"
+  },
+  {
+   "metric": "entity_duplication",
+   "ref": "SS-021::P-016,SS-021::P-049",
+   "kind": "duplicate_part_candidate",
+   "severity": "minor",
+   "message": "thrust face | thrust face 54"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "FL-001",
+   "kind": "flow_unused",
+   "severity": "minor",
+   "message": "'driving torque' is not carried by any interface"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0057",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "interfaces: 'gear train' -> 'gear interface' (src=['SS-001', 'SS-001::P-013'], tgt=['SS-001::P-011'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0088",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'thrust face' -> 'friction' (src=['SS-020::P-016', 'SS-021::P-016'], tgt=['VAL-005'])"
+  },
+  {
+   "metric": "relationship_resolution",
+   "ref": "REL-0090",
+   "kind": "relationship_ambiguous",
+   "severity": "minor",
+   "message": "attributes: 'thrust bearing' -> 'friction' (src=['SS-001::P-009', 'SS-012::P-009', 'SS-015::P-009', 'SS-020::P-009', 'SS-027'], tgt=['VAL-005'])"
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-008",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-011",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-012",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-013",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-014",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-015",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-023",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-028",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-029",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-031",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-032",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-033",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-034",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-035",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-036",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-038",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-039",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-040",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-041",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-042",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-043",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-046",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-047",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-048",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-051",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-052",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-053",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-054",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-058",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-059",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "representation_consistency",
+   "ref": "SS-001->SS-001::P-060",
+   "kind": "parts_only_embedded",
+   "severity": "minor",
+   "message": ""
+  },
+  {
+   "metric": "statement_form",
+   "ref": "ACT-002",
+   "kind": "statement_form",
+   "severity": "minor",
+   "message": "'drive': fewer than two content words"
+  },
+  {
+   "metric": "statement_form",
+   "ref": "ACT-005",
+   "kind": "statement_form",
+   "severity": "minor",
+   "message": "'locking': fewer than two content words; generic terms only"
+  },
+  {
+   "metric": "statement_form",
+   "ref": "ACT-008",
+   "kind": "statement_form",
+   "severity": "minor",
+   "message": "'moving': fewer than two content words; generic terms only"
+  },
+  {
+   "metric": "statement_form",
+   "ref": "ACT-010",
+   "kind": "statement_form",
+   "severity": "minor",
+   "message": "'keying': fewer than two content words; generic terms only"
+  },
+  {
+   "metric": "statement_form",
+   "ref": "ACT-014",
+   "kind": "statement_form",
+   "severity": "minor",
+   "message": "'interface': fewer than two content words"
+  }
+ ],
+ "metrics": [
+  {
+   "metric_id": "entity_duplication",
+   "version": "0.1.0",
+   "family": "entities",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 0.9051724137931034,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.8,
+   "checked": 116,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "SS-005,SS-006",
+     "kind": "duplicate_subsystem_candidate",
+     "severity": "major",
+     "message": "worm gear drives | Worm gear drives"
+    },
+    {
+     "ref": "SS-016,SS-018",
+     "kind": "duplicate_subsystem_candidate",
+     "severity": "major",
+     "message": "gearbox | gearbox 14"
+    },
+    {
+     "ref": "SS-024,SS-025",
+     "kind": "duplicate_subsystem_candidate",
+     "severity": "major",
+     "message": "axle | axle 28"
+    },
+    {
+     "ref": "SS-001::P-009,SS-001::P-033,SS-001::P-041,SS-001::P-042",
+     "kind": "duplicate_part_candidate",
+     "severity": "minor",
+     "message": "thrust bearing | thrust bearing 29 | Thrust bearing | Thrust bearing 29"
+    },
+    {
+     "ref": "SS-001::P-034,SS-001::P-035",
+     "kind": "duplicate_part_candidate",
+     "severity": "minor",
+     "message": "end cap | end cap 31"
+    },
+    {
+     "ref": "SS-001::P-053,SS-001::P-054",
+     "kind": "duplicate_part_candidate",
+     "severity": "minor",
+     "message": "slot | slot 30"
+    },
+    {
+     "ref": "SS-007::P-010,SS-007::P-056",
+     "kind": "duplicate_part_candidate",
+     "severity": "minor",
+     "message": "shaft | shaft 32"
+    },
+    {
+     "ref": "SS-020::P-010,SS-020::P-056",
+     "kind": "duplicate_part_candidate",
+     "severity": "minor",
+     "message": "shaft | shaft 32"
+    },
+    {
+     "ref": "SS-021::P-016,SS-021::P-049",
+     "kind": "duplicate_part_candidate",
+     "severity": "minor",
+     "message": "thrust face | thrust face 54"
+    }
+   ],
+   "metadata": {
+    "subsystem_groups": [
+     [
+      "SS-005",
+      "SS-006"
+     ],
+     [
+      "SS-016",
+      "SS-018"
+     ],
+     [
+      "SS-024",
+      "SS-025"
+     ]
+    ],
+    "part_groups": 6,
+    "names_with_reference_numerals": 2
+   }
+  },
+  {
+   "metric_id": "statement_duplication",
+   "version": "0.1.0",
+   "family": "semantic_candidates",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.5,
+   "checked": 14,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "threshold": 0.72,
+    "retriever": "tfidf-word+char-v1",
+    "candidate_pairs": []
+   }
+  },
+  {
+   "metric_id": "relationship_resolution",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": 0.9505494505494505,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 91,
+   "evidence": [
+    {
+     "ref": "resolution_counts",
+     "detail": "",
+     "data": {
+      "resolved": 85,
+      "ambiguous": 3,
+      "unresolved": 3
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "REL-0057",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "interfaces: 'gear train' -> 'gear interface' (src=['SS-001', 'SS-001::P-013'], tgt=['SS-001::P-011'])"
+    },
+    {
+     "ref": "REL-0058",
+     "kind": "relationship_unresolved",
+     "severity": "major",
+     "message": "interfaces: 'worm gear drive' -> 'shock absorbing interface' (src=['SS-012'], tgt=[])"
+    },
+    {
+     "ref": "REL-0060",
+     "kind": "relationship_unresolved",
+     "severity": "major",
+     "message": "interfaces: 'gear train' -> 'shock absorbing interface' (src=['SS-001', 'SS-001::P-013'], tgt=[])"
+    },
+    {
+     "ref": "REL-0088",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'thrust face' -> 'friction' (src=['SS-020::P-016', 'SS-021::P-016'], tgt=['VAL-005'])"
+    },
+    {
+     "ref": "REL-0090",
+     "kind": "relationship_ambiguous",
+     "severity": "minor",
+     "message": "attributes: 'thrust bearing' -> 'friction' (src=['SS-001::P-009', 'SS-012::P-009', 'SS-015::P-009', 'SS-020::P-009', 'SS-027'], tgt=['VAL-005'])"
+    },
+    {
+     "ref": "REL-0091",
+     "kind": "relationship_unresolved",
+     "severity": "major",
+     "message": "preconditions: 'self locking' -> 'additional components' (src=['ACT-001'], tgt=[])"
+    }
+   ],
+   "metadata": {
+    "extractor_confidence": {
+     "n": 91,
+     "min": 0.6037,
+     "mean": 0.7566406593406593,
+     "below_0.7": 27
+    }
+   }
+  },
+  {
+   "metric_id": "representation_consistency",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.8238636363636364,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 85,
+   "evidence": [
+    {
+     "ref": "parts",
+     "detail": "jaccard=0.648",
+     "data": {
+      "embedded_only": 31,
+      "relationship_only": 0
+     }
+    },
+    {
+     "ref": "allocation",
+     "detail": "jaccard=1.000",
+     "data": {
+      "embedded_only": 0,
+      "relationship_only": 0
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "SS-001->SS-001::P-008",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-011",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-012",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-013",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-014",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-015",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-023",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-028",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-029",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-031",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-032",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-033",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-034",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-035",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-036",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-038",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-039",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-040",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-041",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-042",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-043",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-046",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-047",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-048",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-051",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-052",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-053",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-054",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-058",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-059",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    },
+    {
+     "ref": "SS-001->SS-001::P-060",
+     "kind": "parts_only_embedded",
+     "severity": "minor",
+     "message": ""
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "statement_form",
+   "version": "0.1.0",
+   "family": "semantic_candidates",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 0.6428571428571429,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.5,
+   "checked": 14,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "ACT-002",
+     "kind": "statement_form",
+     "severity": "minor",
+     "message": "'drive': fewer than two content words"
+    },
+    {
+     "ref": "ACT-005",
+     "kind": "statement_form",
+     "severity": "minor",
+     "message": "'locking': fewer than two content words; generic terms only"
+    },
+    {
+     "ref": "ACT-008",
+     "kind": "statement_form",
+     "severity": "minor",
+     "message": "'moving': fewer than two content words; generic terms only"
+    },
+    {
+     "ref": "ACT-010",
+     "kind": "statement_form",
+     "severity": "minor",
+     "message": "'keying': fewer than two content words; generic terms only"
+    },
+    {
+     "ref": "ACT-014",
+     "kind": "statement_form",
+     "severity": "minor",
+     "message": "'interface': fewer than two content words"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "scope_candidates",
+   "version": "0.1.0",
+   "family": "entities",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 28,
+   "evidence": [
+    {
+     "ref": "SS-012",
+     "detail": "inferred role system_root: name equals system name",
+     "data": {
+      "name": "worm gear drive",
+      "confidence": 0.8
+     }
+    },
+    {
+     "ref": "SS-020",
+     "detail": "inferred role structural: no ports/functions/interfaces + structural keywords",
+     "data": {
+      "name": "motor housing",
+      "confidence": 0.7
+     }
+    },
+    {
+     "ref": "SS-021",
+     "detail": "inferred role structural: no ports/functions/interfaces + structural keywords",
+     "data": {
+      "name": "gearbox housing",
+      "confidence": 0.7
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "candidates": 3
+   }
+  },
+  {
+   "metric_id": "partition_strength",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "diagnostic",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "internal dependency graph too small (25 nodes, 0 edges; need >= 6/5)",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_structure",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "diagnostic",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no oriented interfaces",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "explanatory_closure",
+   "version": "0.1.0",
+   "family": "closure",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.6666666666666666,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.7,
+   "checked": 43,
+   "evidence": [
+    {
+     "ref": "action_owned_or_allocated",
+     "detail": "12/14 supported",
+     "data": {
+      "checked": 14,
+      "supported": 12,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "flow_used",
+     "detail": "0/1 supported",
+     "data": {
+      "checked": 1,
+      "supported": 0,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "structural_subsystem_linked",
+     "detail": "2/2 supported",
+     "data": {
+      "checked": 2,
+      "supported": 2,
+      "weight": 0.5
+     }
+    },
+    {
+     "ref": "subsystem_participates",
+     "detail": "15/26 supported",
+     "data": {
+      "checked": 26,
+      "supported": 15,
+      "weight": 1.0
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "ACT-011",
+     "kind": "orphan:action_owned_or_allocated",
+     "severity": "major",
+     "message": "action 'bearing support' has no owner or allocation"
+    },
+    {
+     "ref": "ACT-014",
+     "kind": "orphan:action_owned_or_allocated",
+     "severity": "major",
+     "message": "action 'interface' has no owner or allocation"
+    },
+    {
+     "ref": "FL-001",
+     "kind": "orphan:flow_used",
+     "severity": "major",
+     "message": "flow 'driving torque' is carried by no interface"
+    },
+    {
+     "ref": "SS-002",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'worm' has no interface, relationship, function or behaviour"
+    },
+    {
+     "ref": "SS-004",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'thrust bearings' has no interface, relationship, function or behaviour"
+    },
+    {
+     "ref": "SS-005",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'worm gear drives' has no interface, relationship, function or behaviour"
+    },
+    {
+     "ref": "SS-011",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'final assembly' has no interface, relationship, function or behaviour"
+    },
+    {
+     "ref": "SS-013",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'shaft' has no interface, relationship, function or behaviour"
+    },
+    {
+     "ref": "SS-014",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'output' has no interface, relationship, function or behaviour"
+    },
+    {
+     "ref": "SS-017",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'window lift motor' has no interface, relationship, function or behaviour"
+    },
+    {
+     "ref": "SS-022",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'drive plate' has no interface, relationship, function or behaviour"
+    },
+    {
+     "ref": "SS-024",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'axle' has no interface, relationship, function or behaviour"
+    },
+    {
+     "ref": "SS-025",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'axle 28' has no interface, relationship, function or behaviour"
+    },
+    {
+     "ref": "SS-028",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'first thrust bearing' has no interface, relationship, function or behaviour"
+    }
+   ],
+   "metadata": {
+    "support_threshold": 0.12,
+    "retriever": "tfidf-word+char-v1",
+    "function_classes": {}
+   }
+  },
+  {
+   "metric_id": "reference_integrity",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": 0.648,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 43,
+   "evidence": [
+    {
+     "ref": "interface.flow_ref",
+     "detail": "0/4 resolved",
+     "data": {
+      "checked": 4,
+      "violations": 4
+     }
+    },
+    {
+     "ref": "interface.mating_subsystem",
+     "detail": "0/4 resolved",
+     "data": {
+      "checked": 4,
+      "violations": 4
+     }
+    },
+    {
+     "ref": "interface.port_mate",
+     "detail": "0/4 resolved",
+     "data": {
+      "checked": 4,
+      "violations": 4
+     }
+    },
+    {
+     "ref": "interface.port_this",
+     "detail": "0/4 resolved",
+     "data": {
+      "checked": 4,
+      "violations": 4
+     }
+    },
+    {
+     "ref": "subsystem.allocated_functions",
+     "detail": "27/27 resolved",
+     "data": {
+      "checked": 27,
+      "violations": 0
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "SS-001::IF-001",
+     "kind": "unresolved:interface.mating_subsystem",
+     "severity": "critical",
+     "message": "interface.mating_subsystem -> 'unresolved' does not resolve."
+    },
+    {
+     "ref": "SS-001::IF-001",
+     "kind": "unresolved:interface.port_this",
+     "severity": "critical",
+     "message": "interface.port_this -> 'None' does not resolve. looked up in subsystem 'SS-001'"
+    },
+    {
+     "ref": "SS-001::IF-001",
+     "kind": "unresolved:interface.port_mate",
+     "severity": "critical",
+     "message": "interface.port_mate -> 'None' does not resolve. looked up in mating subsystem 'unresolved'"
+    },
+    {
+     "ref": "SS-001::IF-001",
+     "kind": "unresolved:interface.flow_ref",
+     "severity": "major",
+     "message": "interface.flow_ref -> 'None' does not resolve. interface has no flow_ref"
+    },
+    {
+     "ref": "SS-001::IF-003",
+     "kind": "unresolved:interface.mating_subsystem",
+     "severity": "critical",
+     "message": "interface.mating_subsystem -> 'unresolved' does not resolve."
+    },
+    {
+     "ref": "SS-001::IF-003",
+     "kind": "unresolved:interface.port_this",
+     "severity": "critical",
+     "message": "interface.port_this -> 'None' does not resolve. looked up in subsystem 'SS-001'"
+    },
+    {
+     "ref": "SS-001::IF-003",
+     "kind": "unresolved:interface.port_mate",
+     "severity": "critical",
+     "message": "interface.port_mate -> 'None' does not resolve. looked up in mating subsystem 'unresolved'"
+    },
+    {
+     "ref": "SS-001::IF-003",
+     "kind": "unresolved:interface.flow_ref",
+     "severity": "major",
+     "message": "interface.flow_ref -> 'None' does not resolve. interface has no flow_ref"
+    },
+    {
+     "ref": "SS-001::IF-002",
+     "kind": "unresolved:interface.mating_subsystem",
+     "severity": "critical",
+     "message": "interface.mating_subsystem -> 'unresolved' does not resolve."
+    },
+    {
+     "ref": "SS-001::IF-002",
+     "kind": "unresolved:interface.port_this",
+     "severity": "critical",
+     "message": "interface.port_this -> 'None' does not resolve. looked up in subsystem 'SS-001'"
+    },
+    {
+     "ref": "SS-001::IF-002",
+     "kind": "unresolved:interface.port_mate",
+     "severity": "critical",
+     "message": "interface.port_mate -> 'None' does not resolve. looked up in mating subsystem 'unresolved'"
+    },
+    {
+     "ref": "SS-001::IF-002",
+     "kind": "unresolved:interface.flow_ref",
+     "severity": "major",
+     "message": "interface.flow_ref -> 'None' does not resolve. interface has no flow_ref"
+    },
+    {
+     "ref": "SS-012::IF-003",
+     "kind": "unresolved:interface.mating_subsystem",
+     "severity": "critical",
+     "message": "interface.mating_subsystem -> 'unresolved' does not resolve."
+    },
+    {
+     "ref": "SS-012::IF-003",
+     "kind": "unresolved:interface.port_this",
+     "severity": "critical",
+     "message": "interface.port_this -> 'None' does not resolve. looked up in subsystem 'SS-012'"
+    },
+    {
+     "ref": "SS-012::IF-003",
+     "kind": "unresolved:interface.port_mate",
+     "severity": "critical",
+     "message": "interface.port_mate -> 'None' does not resolve. looked up in mating subsystem 'unresolved'"
+    },
+    {
+     "ref": "SS-012::IF-003",
+     "kind": "unresolved:interface.flow_ref",
+     "severity": "major",
+     "message": "interface.flow_ref -> 'None' does not resolve. interface has no flow_ref"
+    }
+   ],
+   "metadata": {
+    "critical_violations": 12
+   }
+  },
+  {
+   "metric_id": "identifier_uniqueness",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 135,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "interface_direction",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no interfaces with two resolved, directed ports",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_type_consistency",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no comparable typed port/flow pairs",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [
+    {
+     "ref": "unknown_types",
+     "detail": "",
+     "data": {
+      "pairs": []
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_reuse",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 1,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "FL-001",
+     "kind": "flow_unused",
+     "severity": "minor",
+     "message": "'driving torque' is not carried by any interface"
+    }
+   ],
+   "metadata": {
+    "reused": {},
+    "unused": [
+     "FL-001"
+    ]
+   }
+  },
+  {
+   "metric_id": "port_fan_out",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no ports",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "port_direction_naming",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "heuristic",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no port name implies a direction (input/output/inlet/outlet/received ...)",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "causal_path_coverage",
+   "version": "0.1.0",
+   "family": "topology",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no oriented boundary inputs and outputs identified",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "boundary_inputs": [],
+    "boundary_outputs": [],
+    "inout_boundaries": []
+   }
+  },
+  {
+   "metric_id": "connectivity",
+   "version": "0.1.0",
+   "family": "topology",
+   "kind": "score",
+   "status": "established",
+   "score": 0.19230769230769232,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 26,
+   "evidence": [
+    {
+     "ref": "component_0",
+     "detail": "",
+     "data": {
+      "size": 5,
+      "members": [
+       "SS-003",
+       "SS-006",
+       "SS-008",
+       "SS-009",
+       "SS-010"
+      ]
+     }
+    },
+    {
+     "ref": "component_1",
+     "detail": "",
+     "data": {
+      "size": 3,
+      "members": [
+       "SS-007",
+       "SS-012",
+       "SS-015"
+      ]
+     }
+    },
+    {
+     "ref": "component_2",
+     "detail": "",
+     "data": {
+      "size": 2,
+      "members": [
+       "SS-023",
+       "SS-026"
+      ]
+     }
+    },
+    {
+     "ref": "component_3",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "SS-001"
+      ]
+     }
+    },
+    {
+     "ref": "component_4",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "SS-002"
+      ]
+     }
+    },
+    {
+     "ref": "component_5",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "SS-004"
+      ]
+     }
+    },
+    {
+     "ref": "component_6",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "SS-005"
+      ]
+     }
+    },
+    {
+     "ref": "component_7",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "SS-011"
+      ]
+     }
+    },
+    {
+     "ref": "component_8",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "SS-013"
+      ]
+     }
+    },
+    {
+     "ref": "component_9",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "SS-014"
+      ]
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "SS-001",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'gear train' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SS-002",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'worm' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SS-004",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'thrust bearings' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SS-005",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'worm gear drives' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SS-011",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'final assembly' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SS-013",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'shaft' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SS-014",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'output' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SS-016",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'gearbox' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SS-017",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'window lift motor' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SS-018",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'gearbox 14' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SS-019",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'end cap' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SS-022",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'drive plate' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SS-024",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'axle' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SS-025",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'axle 28' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SS-027",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'thrust bearing' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "SS-028",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'first thrust bearing' has no interface, relationship or shared action"
+    }
+   ],
+   "metadata": {
+    "components": 19,
+    "excluded_structural": [
+     "SS-020",
+     "SS-021"
+    ]
+   }
+  },
+  {
+   "metric_id": "vocabulary_conformance",
+   "version": "0.1.0",
+   "family": "conformance",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 91,
+   "evidence": [
+    {
+     "ref": "vocabulary",
+     "detail": "",
+     "data": {
+      "recognized": 91,
+      "declared": 91
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "relation_signature_validity",
+   "version": "0.1.0",
+   "family": "conformance",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 85,
+   "evidence": [
+    {
+     "ref": "REL-0001",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0002",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0003",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0004",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0005",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0006",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0007",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0008",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0009",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0010",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0011",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0012",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0013",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0014",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0015",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0016",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0017",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0018",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0019",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0020",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0021",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0022",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0023",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0024",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0025",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0026",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0027",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0028",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0029",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0030",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0031",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0032",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0033",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0034",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0035",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0036",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0037",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0038",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0039",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0040",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0041",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0042",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0043",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0044",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0045",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0046",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0047",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0048",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0049",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0050",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0051",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0052",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0053",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0054",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0055",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0056",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0059",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Part",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Part"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0061",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0062",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0063",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0064",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0065",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0066",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0067",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0068",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0069",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0070",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0071",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0072",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0073",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0074",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0075",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0076",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0077",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0078",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0079",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0080",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0081",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0082",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0083",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0084",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0085",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0086",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0087",
+     "detail": "",
+     "data": {
+      "source_type": "Subsystem",
+      "target_type": "Action",
+      "allowed_domains": [
+       "Subsystem"
+      ],
+      "allowed_ranges": [
+       "Action"
+      ]
+     }
+    },
+    {
+     "ref": "REL-0089",
+     "detail": "",
+     "data": {
+      "source_type": "Part",
+      "target_type": "Value",
+      "allowed_domains": [
+       "Part"
+      ],
+      "allowed_ranges": [
+       "Value"
+      ]
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "function_allocation_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": 0.8571428571428571,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 14,
+   "evidence": [
+    {
+     "ref": "allocation",
+     "detail": "12/14 allocated",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "ACT-011",
+     "kind": "unallocated_function",
+     "severity": "major",
+     "message": "function/action has no valid owner or allocation"
+    },
+    {
+     "ref": "ACT-014",
+     "kind": "unallocated_function",
+     "severity": "major",
+     "message": "function/action has no valid owner or allocation"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "component_purpose_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.4230769230769231,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 26,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "SS-001",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'gear train' has no function or action"
+    },
+    {
+     "ref": "SS-002",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'worm' has no function or action"
+    },
+    {
+     "ref": "SS-004",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'thrust bearings' has no function or action"
+    },
+    {
+     "ref": "SS-005",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'worm gear drives' has no function or action"
+    },
+    {
+     "ref": "SS-011",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'final assembly' has no function or action"
+    },
+    {
+     "ref": "SS-013",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'shaft' has no function or action"
+    },
+    {
+     "ref": "SS-014",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'output' has no function or action"
+    },
+    {
+     "ref": "SS-016",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'gearbox' has no function or action"
+    },
+    {
+     "ref": "SS-017",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'window lift motor' has no function or action"
+    },
+    {
+     "ref": "SS-018",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'gearbox 14' has no function or action"
+    },
+    {
+     "ref": "SS-022",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'drive plate' has no function or action"
+    },
+    {
+     "ref": "SS-024",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'axle' has no function or action"
+    },
+    {
+     "ref": "SS-025",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'axle 28' has no function or action"
+    },
+    {
+     "ref": "SS-027",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'thrust bearing' has no function or action"
+    },
+    {
+     "ref": "SS-028",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'first thrust bearing' has no function or action"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "boundary_completeness",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.6,
+   "checked": 4,
+   "evidence": [
+    {
+     "ref": "boundary_declared",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "input_identified",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "output_identified",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "boundary_exchange_typed",
+     "detail": "missing",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "boundary_declared",
+     "kind": "missing_boundary_capability",
+     "severity": "major",
+     "message": "boundary declared"
+    },
+    {
+     "ref": "input_identified",
+     "kind": "missing_boundary_capability",
+     "severity": "major",
+     "message": "input identified"
+    },
+    {
+     "ref": "output_identified",
+     "kind": "missing_boundary_capability",
+     "severity": "major",
+     "message": "output identified"
+    },
+    {
+     "ref": "boundary_exchange_typed",
+     "kind": "missing_boundary_capability",
+     "severity": "major",
+     "message": "boundary exchange typed"
+    }
+   ],
+   "metadata": {
+    "external": [],
+    "crossings": [],
+    "inputs": [],
+    "outputs": [],
+    "typed": []
+   }
+  },
+  {
+   "metric_id": "requirement_satisfaction_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": 0.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 1,
+   "evidence": [
+    {
+     "ref": "REQ-001",
+     "detail": "",
+     "data": {
+      "id": "REQ-001",
+      "satisfied": false,
+      "verified": false,
+      "satisfied_by": [],
+      "verified_by": []
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "REQ-001",
+     "kind": "requirement_not_satisfied",
+     "severity": "major",
+     "message": "requirement has no valid satisfied trace"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "requirement_verification_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": 0.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 1,
+   "evidence": [
+    {
+     "ref": "REQ-001",
+     "detail": "",
+     "data": {
+      "id": "REQ-001",
+      "satisfied": false,
+      "verified": false,
+      "satisfied_by": [],
+      "verified_by": []
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "REQ-001",
+     "kind": "requirement_not_verified",
+     "severity": "major",
+     "message": "requirement has no valid verified trace"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "end_to_end_traceability",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 1,
+   "evidence": [
+    {
+     "ref": "REQ-001",
+     "detail": "",
+     "data": {
+      "id": "REQ-001",
+      "satisfied": false,
+      "verified": false,
+      "satisfied_by": [],
+      "verified_by": []
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "REQ-001",
+     "kind": "incomplete_requirement_trace",
+     "severity": "major",
+     "message": "requirement lacks satisfaction and/or verification trace"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "provenance_completeness",
+   "version": "0.1.0",
+   "family": "provenance",
+   "kind": "score",
+   "status": "proposed",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 4,
+   "evidence": [
+    {
+     "ref": "source",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "generator",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "generator_version",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "schema_version",
+     "detail": "present",
+     "data": {}
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "model_profile_completeness",
+   "version": "0.1.0",
+   "family": "readiness",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.6,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 10,
+   "evidence": [
+    {
+     "ref": "system_identity",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "subsystems",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "structure",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "functions_or_actions",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "function_allocation",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "ports",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "interfaces",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "item_flows",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "input_boundary",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "output_boundary",
+     "detail": "missing",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "function_allocation",
+     "kind": "missing_profile_capability",
+     "severity": "major",
+     "message": "functional profile requires function allocation"
+    },
+    {
+     "ref": "ports",
+     "kind": "missing_profile_capability",
+     "severity": "major",
+     "message": "functional profile requires ports"
+    },
+    {
+     "ref": "input_boundary",
+     "kind": "missing_profile_capability",
+     "severity": "major",
+     "message": "functional profile requires input boundary"
+    },
+    {
+     "ref": "output_boundary",
+     "kind": "missing_profile_capability",
+     "severity": "major",
+     "message": "functional profile requires output boundary"
+    }
+   ],
+   "metadata": {
+    "profile": "functional"
+   }
+  },
+  {
+   "metric_id": "competency_question_answerability",
+   "version": "0.1.0",
+   "family": "usability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.30952380952380953,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 6,
+   "evidence": [
+    {
+     "ref": "component_inventory",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "function_allocation_map",
+     "detail": "",
+     "data": {
+      "answerability": 0.8571
+     }
+    },
+    {
+     "ref": "resolved_interface_map",
+     "detail": "",
+     "data": {
+      "answerability": 0.0
+     }
+    },
+    {
+     "ref": "typed_flow_map",
+     "detail": "",
+     "data": {
+      "answerability": 0.0
+     }
+    },
+    {
+     "ref": "boundary_inputs_and_outputs",
+     "detail": "",
+     "data": {
+      "answerability": 0.0
+     }
+    },
+    {
+     "ref": "input_to_output_paths",
+     "detail": "",
+     "data": {
+      "answerability": 0.0
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "function_allocation_map",
+     "kind": "competency_question_incomplete",
+     "severity": "minor",
+     "message": "answerability 0.86"
+    },
+    {
+     "ref": "resolved_interface_map",
+     "kind": "competency_question_incomplete",
+     "severity": "major",
+     "message": "answerability 0.00"
+    },
+    {
+     "ref": "typed_flow_map",
+     "kind": "competency_question_incomplete",
+     "severity": "major",
+     "message": "answerability 0.00"
+    },
+    {
+     "ref": "boundary_inputs_and_outputs",
+     "kind": "competency_question_incomplete",
+     "severity": "major",
+     "message": "answerability 0.00"
+    },
+    {
+     "ref": "input_to_output_paths",
+     "kind": "competency_question_incomplete",
+     "severity": "major",
+     "message": "answerability 0.00"
+    }
+   ],
+   "metadata": {
+    "questions": {
+     "component_inventory": 1.0,
+     "function_allocation_map": 0.8571428571428571,
+     "resolved_interface_map": 0.0,
+     "typed_flow_map": 0.0,
+     "boundary_inputs_and_outputs": 0.0,
+     "input_to_output_paths": 0.0
+    },
+    "profile": "functional"
+   }
+  },
+  {
+   "metric_id": "internal_function_support",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'realization' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "behavior_claim_coverage",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'unclaimed_behavior' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "internal_transformation_coherence",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'transformation' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "statement_distinction",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'overlap' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "entity_distinctness",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'entity_identity' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_semantic_fit",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'flow_semantics' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "role_assignment_coherence",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'scope' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  }
+ ],
+ "manifest": {
+  "framework_version": "0.2.1",
+  "git_sha": null,
+  "python": "3.13.5",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "packages": {
+   "pydantic": "2.13.5",
+   "networkx": "3.7",
+   "numpy": "2.5.3",
+   "scipy": "1.18.1",
+   "scikit-learn": "1.9.1",
+   "mcp": "2.2.0"
+  },
+  "input_path": "C:\\Users\\Eladio\\Downloads\\functional-quality\\inputs\\US8051737B2\\gliner\\model.sjs.json",
+  "input_sha256": "37058b66a46f40ff185f4998261247a484215747a2f3a8bcdf30f84df6a34755",
+  "model_key": "us8051737b2_html-37058b66a4",
+  "metric_versions": {
+   "entity_duplication": "0.1.0",
+   "statement_duplication": "0.1.0",
+   "relationship_resolution": "0.1.0",
+   "representation_consistency": "0.1.0",
+   "statement_form": "0.1.0",
+   "scope_candidates": "0.1.0",
+   "partition_strength": "0.1.0",
+   "flow_structure": "0.1.0",
+   "explanatory_closure": "0.1.0",
+   "reference_integrity": "0.1.0",
+   "identifier_uniqueness": "0.1.0",
+   "interface_direction": "0.1.0",
+   "flow_type_consistency": "0.1.0",
+   "flow_reuse": "0.1.0",
+   "port_fan_out": "0.1.0",
+   "port_direction_naming": "0.1.0",
+   "causal_path_coverage": "0.1.0",
+   "connectivity": "0.1.0",
+   "vocabulary_conformance": "0.1.0",
+   "relation_signature_validity": "0.1.0",
+   "function_allocation_coverage": "0.1.0",
+   "component_purpose_coverage": "0.1.0",
+   "boundary_completeness": "0.1.0",
+   "requirement_satisfaction_coverage": "0.1.0",
+   "requirement_verification_coverage": "0.1.0",
+   "end_to_end_traceability": "0.1.0",
+   "provenance_completeness": "0.1.0",
+   "model_profile_completeness": "0.1.0",
+   "competency_question_answerability": "0.1.0",
+   "internal_function_support": "0.1.0",
+   "behavior_claim_coverage": "0.1.0",
+   "internal_transformation_coherence": "0.1.0",
+   "statement_distinction": "0.1.0",
+   "entity_distinctness": "0.1.0",
+   "flow_semantic_fit": "0.1.0",
+   "role_assignment_coherence": "0.1.0"
+  },
+  "retriever": "tfidf-word+char-v1",
+  "config": {
+   "results_dir": "results",
+   "closure.support_threshold": 0.12,
+   "duplication.similarity_threshold": 0.72,
+   "architecture.min_nodes": 6,
+   "architecture.min_edges": 5,
+   "tasks.max_per_kind": 200,
+   "mbse.profile": "functional",
+   "mbse.vocabulary_path": "sjs.kg.schema.json"
+  },
+  "config_sha256": "db444ef9e4ce9b88",
+  "judge_prompt_versions": {
+   "realization": "0e5a5e8444aa",
+   "unclaimed_behavior": "03be253ac935",
+   "transformation": "ec4f9d66cea9",
+   "overlap": "a1c3966dabf7",
+   "entity_identity": "8683abb23ed7",
+   "flow_semantics": "4bed83f6bc0d",
+   "scope": "dd249779cad2"
+  },
+  "judges": [],
+  "mutation": null,
+  "timestamp": "2026-10-01T15:56:40+00:00"
+ },
+ "errors": []
+}
