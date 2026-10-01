@@ -1,0 +1,1396 @@
+{
+ "status": "EVALUATED",
+ "gates": [
+  {
+   "gate": "schema_valid",
+   "passed": true
+  },
+  {
+   "gate": "critical_references_resolve",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "identifiers_unique",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "relationship_vocabulary_conforms",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "relationship_signatures_valid",
+   "passed": true,
+   "failures": 0
+  }
+ ],
+ "summary": {
+  "model_key": "us6527671b2-55627ca4c2",
+  "system_id": "US6527671B2",
+  "system_name": "Ringless Variable-Ratio Planetary Gear Transmission",
+  "dialect": "interface_rich",
+  "counts": {
+   "subsystems": 4,
+   "functions": 2,
+   "ports": 5,
+   "flows": 2,
+   "interfaces": 3,
+   "actions": 1,
+   "parts": 4,
+   "relationships": 0,
+   "requirements": 0
+  },
+  "roles": {
+   "internal": 3,
+   "external": 1
+  },
+  "ingest_notes": []
+ },
+ "profile": {
+  "entities": {
+   "entity_duplication": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.8,
+    "checked": 8,
+    "violations": 0,
+    "status": "heuristic"
+   }
+  },
+  "semantic_candidates": {
+   "statement_duplication": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.5,
+    "checked": 3,
+    "violations": 0,
+    "status": "heuristic"
+   },
+   "statement_form": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.5,
+    "checked": 3,
+    "violations": 0,
+    "status": "heuristic"
+   }
+  },
+  "closure": {
+   "explanatory_closure": {
+    "score": 0.8667,
+    "applicable": true,
+    "confidence": 0.7,
+    "checked": 15,
+    "violations": 2,
+    "status": "proposed"
+   }
+  },
+  "integrity": {
+   "reference_integrity": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 13,
+    "violations": 0,
+    "status": "established"
+   },
+   "identifier_uniqueness": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 19,
+    "violations": 0,
+    "status": "established"
+   }
+  },
+  "interface": {
+   "interface_direction": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 3,
+    "violations": 0,
+    "status": "established"
+   },
+   "flow_type_consistency": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 9,
+    "violations": 0,
+    "status": "established"
+   }
+  },
+  "topology": {
+   "connectivity": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 4,
+    "violations": 0,
+    "status": "established"
+   }
+  },
+  "traceability": {
+   "function_allocation_coverage": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 3,
+    "violations": 0,
+    "status": "established"
+   },
+   "component_purpose_coverage": {
+    "score": 0.6667,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 3,
+    "violations": 1,
+    "status": "proposed"
+   }
+  },
+  "architecture": {
+   "boundary_completeness": {
+    "score": 0.5,
+    "applicable": true,
+    "confidence": 0.75,
+    "checked": 4,
+    "violations": 2,
+    "status": "proposed"
+   }
+  },
+  "provenance": {
+   "provenance_completeness": {
+    "score": 0.25,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 4,
+    "violations": 3,
+    "status": "proposed"
+   }
+  },
+  "readiness": {
+   "model_profile_completeness": {
+    "score": 0.8,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 10,
+    "violations": 2,
+    "status": "proposed"
+   }
+  },
+  "usability": {
+   "competency_question_answerability": {
+    "score": 0.6667,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 6,
+    "violations": 2,
+    "status": "proposed"
+   }
+  }
+ },
+ "diagnostics": {
+  "scope_candidates": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 4,
+   "violations": 0,
+   "family": "entities",
+   "metadata": {
+    "candidates": 1
+   }
+  },
+  "flow_reuse": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 2,
+   "violations": 1,
+   "family": "interface",
+   "metadata": {
+    "reused": {
+     "carrier_mechanical": [
+      "carrier::carrier_actuator_coupling",
+      "carrier::carrier_train_exchange"
+     ]
+    },
+    "unused": []
+   }
+  },
+  "port_fan_out": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 5,
+   "violations": 0,
+   "family": "interface",
+   "metadata": {}
+  }
+ },
+ "not_applicable": {
+  "relationship_resolution": "model has no relationships list",
+  "representation_consistency": "no resolved relationships to compare",
+  "partition_strength": "internal dependency graph too small (3 nodes, 2 edges; need >= 6/5)",
+  "flow_structure": "no oriented interfaces",
+  "port_direction_naming": "no port name implies a direction (input/output/inlet/outlet/received ...)",
+  "causal_path_coverage": "all boundary interfaces are direction-indeterminate (inout); no oriented boundary anchors a causal path",
+  "vocabulary_conformance": "model has no explicit relationships list",
+  "relation_signature_validity": "no resolved relationships have a vocabulary signature",
+  "requirement_satisfaction_coverage": "model declares no requirements",
+  "requirement_verification_coverage": "model declares no requirements",
+  "end_to_end_traceability": "model declares no requirements",
+  "internal_function_support": "'realization' tasks not built yet: run build_judge_tasks",
+  "behavior_claim_coverage": "'unclaimed_behavior' tasks not built yet: run build_judge_tasks",
+  "internal_transformation_coherence": "'transformation' tasks not built yet: run build_judge_tasks",
+  "statement_distinction": "'overlap' tasks not built yet: run build_judge_tasks",
+  "entity_distinctness": "'entity_identity' tasks not built yet: run build_judge_tasks",
+  "flow_semantic_fit": "'flow_semantics' tasks not built yet: run build_judge_tasks",
+  "role_assignment_coherence": "'scope' tasks not built yet: run build_judge_tasks"
+ },
+ "findings": [
+  {
+   "metric": "boundary_completeness",
+   "ref": "input_identified",
+   "kind": "missing_boundary_capability",
+   "severity": "major",
+   "message": "input identified"
+  },
+  {
+   "metric": "boundary_completeness",
+   "ref": "output_identified",
+   "kind": "missing_boundary_capability",
+   "severity": "major",
+   "message": "output identified"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "boundary_inputs_and_outputs",
+   "kind": "competency_question_incomplete",
+   "severity": "major",
+   "message": "answerability 0.00"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "input_to_output_paths",
+   "kind": "competency_question_incomplete",
+   "severity": "major",
+   "message": "answerability 0.00"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "carrier",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Common Planetary Carrier' has no function or action"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "transmission::vary_transmission_ratio",
+   "kind": "orphan:function_has_candidate_support",
+   "severity": "major",
+   "message": "'vary transmission ratio' has no behaviour/interface evidence above 0.12 (best=0.07)"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "regulate_carrier",
+   "kind": "orphan:action_claimed_by_function",
+   "severity": "major",
+   "message": "behaviour 'Regulate carrier rotation' matches no declared function nearby (best=0.00)"
+  },
+  {
+   "metric": "model_profile_completeness",
+   "ref": "input_boundary",
+   "kind": "missing_profile_capability",
+   "severity": "major",
+   "message": "functional profile requires input boundary"
+  },
+  {
+   "metric": "model_profile_completeness",
+   "ref": "output_boundary",
+   "kind": "missing_profile_capability",
+   "severity": "major",
+   "message": "functional profile requires output boundary"
+  },
+  {
+   "metric": "provenance_completeness",
+   "ref": "source",
+   "kind": "missing_provenance",
+   "severity": "minor",
+   "message": "model does not record source"
+  },
+  {
+   "metric": "provenance_completeness",
+   "ref": "generator",
+   "kind": "missing_provenance",
+   "severity": "minor",
+   "message": "model does not record generator"
+  },
+  {
+   "metric": "provenance_completeness",
+   "ref": "generator_version",
+   "kind": "missing_provenance",
+   "severity": "minor",
+   "message": "model does not record generator version"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "carrier_mechanical",
+   "kind": "flow_reused_across_pairs",
+   "severity": "info",
+   "message": "'Carrier mechanical rotation/torque' used by ['carrier::carrier_actuator_coupling', 'carrier::carrier_train_exchange']"
+  }
+ ],
+ "metrics": [
+  {
+   "metric_id": "entity_duplication",
+   "version": "0.1.0",
+   "family": "entities",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.8,
+   "checked": 8,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "subsystem_groups": [],
+    "part_groups": 0,
+    "names_with_reference_numerals": 0
+   }
+  },
+  {
+   "metric_id": "statement_duplication",
+   "version": "0.1.0",
+   "family": "semantic_candidates",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.5,
+   "checked": 3,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "threshold": 0.72,
+    "retriever": "tfidf-word+char-v1",
+    "candidate_pairs": []
+   }
+  },
+  {
+   "metric_id": "relationship_resolution",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model has no relationships list",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "representation_consistency",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no resolved relationships to compare",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "statement_form",
+   "version": "0.1.0",
+   "family": "semantic_candidates",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.5,
+   "checked": 3,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "scope_candidates",
+   "version": "0.1.0",
+   "family": "entities",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 4,
+   "evidence": [
+    {
+     "ref": "drive_source",
+     "detail": "inferred role external: external/context keywords",
+     "data": {
+      "name": "Rotary Drive Source",
+      "confidence": 0.75
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "candidates": 1
+   }
+  },
+  {
+   "metric_id": "partition_strength",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "diagnostic",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "internal dependency graph too small (3 nodes, 2 edges; need >= 6/5)",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_structure",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "diagnostic",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no oriented interfaces",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "explanatory_closure",
+   "version": "0.1.0",
+   "family": "closure",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.8666666666666667,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.7,
+   "checked": 15,
+   "evidence": [
+    {
+     "ref": "action_claimed_by_function",
+     "detail": "0/1 supported",
+     "data": {
+      "checked": 1,
+      "supported": 0,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "action_owned_or_allocated",
+     "detail": "1/1 supported",
+     "data": {
+      "checked": 1,
+      "supported": 1,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "flow_used",
+     "detail": "2/2 supported",
+     "data": {
+      "checked": 2,
+      "supported": 2,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "function_has_candidate_support",
+     "detail": "1/2 supported",
+     "data": {
+      "checked": 2,
+      "supported": 1,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "port_used",
+     "detail": "5/5 supported",
+     "data": {
+      "checked": 5,
+      "supported": 5,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "subsystem_participates",
+     "detail": "4/4 supported",
+     "data": {
+      "checked": 4,
+      "supported": 4,
+      "weight": 1.0
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "transmission::vary_transmission_ratio",
+     "kind": "orphan:function_has_candidate_support",
+     "severity": "major",
+     "message": "'vary transmission ratio' has no behaviour/interface evidence above 0.12 (best=0.07)"
+    },
+    {
+     "ref": "regulate_carrier",
+     "kind": "orphan:action_claimed_by_function",
+     "severity": "major",
+     "message": "behaviour 'Regulate carrier rotation' matches no declared function nearby (best=0.00)"
+    }
+   ],
+   "metadata": {
+    "support_threshold": 0.12,
+    "retriever": "tfidf-word+char-v1",
+    "function_classes": {
+     "transforming": 2,
+     "structural": 0
+    }
+   }
+  },
+  {
+   "metric_id": "reference_integrity",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 13,
+   "evidence": [
+    {
+     "ref": "action.owner",
+     "detail": "1/1 resolved",
+     "data": {
+      "checked": 1,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.flow_ref",
+     "detail": "3/3 resolved",
+     "data": {
+      "checked": 3,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.mating_subsystem",
+     "detail": "3/3 resolved",
+     "data": {
+      "checked": 3,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.port_mate",
+     "detail": "3/3 resolved",
+     "data": {
+      "checked": 3,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.port_this",
+     "detail": "3/3 resolved",
+     "data": {
+      "checked": 3,
+      "violations": 0
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "critical_violations": 0
+   }
+  },
+  {
+   "metric_id": "identifier_uniqueness",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 19,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "interface_direction",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 3,
+   "evidence": [
+    {
+     "ref": "orientation_counts",
+     "detail": "",
+     "data": {
+      "bidirectional": 3
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "direction_indeterminate_share": 1.0
+   }
+  },
+  {
+   "metric_id": "flow_type_consistency",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 9,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_reuse",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 2,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "carrier_mechanical",
+     "kind": "flow_reused_across_pairs",
+     "severity": "info",
+     "message": "'Carrier mechanical rotation/torque' used by ['carrier::carrier_actuator_coupling', 'carrier::carrier_train_exchange']"
+    }
+   ],
+   "metadata": {
+    "reused": {
+     "carrier_mechanical": [
+      "carrier::carrier_actuator_coupling",
+      "carrier::carrier_train_exchange"
+     ]
+    },
+    "unused": []
+   }
+  },
+  {
+   "metric_id": "port_fan_out",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 5,
+   "evidence": [
+    {
+     "ref": "carrier::carrier_rotation",
+     "detail": "2 interfaces",
+     "data": {
+      "interfaces": [
+       "carrier::carrier_actuator_coupling",
+       "carrier::carrier_train_exchange"
+      ]
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "port_direction_naming",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "heuristic",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no port name implies a direction (input/output/inlet/outlet/received ...)",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "causal_path_coverage",
+   "version": "0.1.0",
+   "family": "topology",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "all boundary interfaces are direction-indeterminate (inout); no oriented boundary anchors a causal path",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "boundary_inputs": [],
+    "boundary_outputs": [],
+    "inout_boundaries": [
+     "transmission::external_shaft_exchange"
+    ]
+   }
+  },
+  {
+   "metric_id": "connectivity",
+   "version": "0.1.0",
+   "family": "topology",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 4,
+   "evidence": [
+    {
+     "ref": "component_0",
+     "detail": "",
+     "data": {
+      "size": 4,
+      "members": [
+       "carrier",
+       "carrier_actuator",
+       "drive_source",
+       "transmission"
+      ]
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "components": 1,
+    "excluded_structural": []
+   }
+  },
+  {
+   "metric_id": "vocabulary_conformance",
+   "version": "0.1.0",
+   "family": "conformance",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model has no explicit relationships list",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "relation_signature_validity",
+   "version": "0.1.0",
+   "family": "conformance",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no resolved relationships have a vocabulary signature",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "function_allocation_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 3,
+   "evidence": [
+    {
+     "ref": "allocation",
+     "detail": "3/3 allocated",
+     "data": {}
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "component_purpose_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.6666666666666666,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 3,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "carrier",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Common Planetary Carrier' has no function or action"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "boundary_completeness",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.5,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.75,
+   "checked": 4,
+   "evidence": [
+    {
+     "ref": "boundary_declared",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "input_identified",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "output_identified",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "boundary_exchange_typed",
+     "detail": "present",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "input_identified",
+     "kind": "missing_boundary_capability",
+     "severity": "major",
+     "message": "input identified"
+    },
+    {
+     "ref": "output_identified",
+     "kind": "missing_boundary_capability",
+     "severity": "major",
+     "message": "output identified"
+    }
+   ],
+   "metadata": {
+    "external": [
+     "drive_source"
+    ],
+    "crossings": [
+     "transmission::external_shaft_exchange"
+    ],
+    "inputs": [],
+    "outputs": [],
+    "typed": [
+     "transmission::external_shaft_exchange"
+    ]
+   }
+  },
+  {
+   "metric_id": "requirement_satisfaction_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model declares no requirements",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "requirement_verification_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model declares no requirements",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "end_to_end_traceability",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model declares no requirements",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "provenance_completeness",
+   "version": "0.1.0",
+   "family": "provenance",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.25,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 4,
+   "evidence": [
+    {
+     "ref": "source",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "generator",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "generator_version",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "schema_version",
+     "detail": "present",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "source",
+     "kind": "missing_provenance",
+     "severity": "minor",
+     "message": "model does not record source"
+    },
+    {
+     "ref": "generator",
+     "kind": "missing_provenance",
+     "severity": "minor",
+     "message": "model does not record generator"
+    },
+    {
+     "ref": "generator_version",
+     "kind": "missing_provenance",
+     "severity": "minor",
+     "message": "model does not record generator version"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "model_profile_completeness",
+   "version": "0.1.0",
+   "family": "readiness",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.8,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 10,
+   "evidence": [
+    {
+     "ref": "system_identity",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "subsystems",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "structure",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "functions_or_actions",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "function_allocation",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "ports",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "interfaces",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "item_flows",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "input_boundary",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "output_boundary",
+     "detail": "missing",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "input_boundary",
+     "kind": "missing_profile_capability",
+     "severity": "major",
+     "message": "functional profile requires input boundary"
+    },
+    {
+     "ref": "output_boundary",
+     "kind": "missing_profile_capability",
+     "severity": "major",
+     "message": "functional profile requires output boundary"
+    }
+   ],
+   "metadata": {
+    "profile": "functional"
+   }
+  },
+  {
+   "metric_id": "competency_question_answerability",
+   "version": "0.1.0",
+   "family": "usability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.6666666666666666,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 6,
+   "evidence": [
+    {
+     "ref": "component_inventory",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "function_allocation_map",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "resolved_interface_map",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "typed_flow_map",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "boundary_inputs_and_outputs",
+     "detail": "",
+     "data": {
+      "answerability": 0.0
+     }
+    },
+    {
+     "ref": "input_to_output_paths",
+     "detail": "",
+     "data": {
+      "answerability": 0.0
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "boundary_inputs_and_outputs",
+     "kind": "competency_question_incomplete",
+     "severity": "major",
+     "message": "answerability 0.00"
+    },
+    {
+     "ref": "input_to_output_paths",
+     "kind": "competency_question_incomplete",
+     "severity": "major",
+     "message": "answerability 0.00"
+    }
+   ],
+   "metadata": {
+    "questions": {
+     "component_inventory": 1.0,
+     "function_allocation_map": 1.0,
+     "resolved_interface_map": 1.0,
+     "typed_flow_map": 1.0,
+     "boundary_inputs_and_outputs": 0.0,
+     "input_to_output_paths": 0.0
+    },
+    "profile": "functional"
+   }
+  },
+  {
+   "metric_id": "internal_function_support",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'realization' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "behavior_claim_coverage",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'unclaimed_behavior' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "internal_transformation_coherence",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'transformation' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "statement_distinction",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'overlap' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "entity_distinctness",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'entity_identity' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_semantic_fit",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'flow_semantics' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "role_assignment_coherence",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'scope' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  }
+ ],
+ "manifest": {
+  "framework_version": "0.2.1",
+  "git_sha": null,
+  "python": "3.13.5",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "packages": {
+   "pydantic": "2.13.5",
+   "networkx": "3.7",
+   "numpy": "2.5.3",
+   "scipy": "1.18.1",
+   "scikit-learn": "1.9.1",
+   "mcp": "2.2.0"
+  },
+  "input_path": "C:\\Users\\Eladio\\Downloads\\functional-quality\\inputs\\US6527671B2\\agents\\model.sjs.json",
+  "input_sha256": "55627ca4c2edc9a30960b41142f428fd01c3aab2d8cc357525dedab136168be0",
+  "model_key": "us6527671b2-55627ca4c2",
+  "metric_versions": {
+   "entity_duplication": "0.1.0",
+   "statement_duplication": "0.1.0",
+   "relationship_resolution": "0.1.0",
+   "representation_consistency": "0.1.0",
+   "statement_form": "0.1.0",
+   "scope_candidates": "0.1.0",
+   "partition_strength": "0.1.0",
+   "flow_structure": "0.1.0",
+   "explanatory_closure": "0.1.0",
+   "reference_integrity": "0.1.0",
+   "identifier_uniqueness": "0.1.0",
+   "interface_direction": "0.1.0",
+   "flow_type_consistency": "0.1.0",
+   "flow_reuse": "0.1.0",
+   "port_fan_out": "0.1.0",
+   "port_direction_naming": "0.1.0",
+   "causal_path_coverage": "0.1.0",
+   "connectivity": "0.1.0",
+   "vocabulary_conformance": "0.1.0",
+   "relation_signature_validity": "0.1.0",
+   "function_allocation_coverage": "0.1.0",
+   "component_purpose_coverage": "0.1.0",
+   "boundary_completeness": "0.1.0",
+   "requirement_satisfaction_coverage": "0.1.0",
+   "requirement_verification_coverage": "0.1.0",
+   "end_to_end_traceability": "0.1.0",
+   "provenance_completeness": "0.1.0",
+   "model_profile_completeness": "0.1.0",
+   "competency_question_answerability": "0.1.0",
+   "internal_function_support": "0.1.0",
+   "behavior_claim_coverage": "0.1.0",
+   "internal_transformation_coherence": "0.1.0",
+   "statement_distinction": "0.1.0",
+   "entity_distinctness": "0.1.0",
+   "flow_semantic_fit": "0.1.0",
+   "role_assignment_coherence": "0.1.0"
+  },
+  "retriever": "tfidf-word+char-v1",
+  "config": {
+   "results_dir": "results",
+   "closure.support_threshold": 0.12,
+   "duplication.similarity_threshold": 0.72,
+   "architecture.min_nodes": 6,
+   "architecture.min_edges": 5,
+   "tasks.max_per_kind": 200,
+   "mbse.profile": "functional",
+   "mbse.vocabulary_path": "sjs.kg.schema.json"
+  },
+  "config_sha256": "db444ef9e4ce9b88",
+  "judge_prompt_versions": {
+   "realization": "0e5a5e8444aa",
+   "unclaimed_behavior": "03be253ac935",
+   "transformation": "ec4f9d66cea9",
+   "overlap": "a1c3966dabf7",
+   "entity_identity": "8683abb23ed7",
+   "flow_semantics": "4bed83f6bc0d",
+   "scope": "dd249779cad2"
+  },
+  "judges": [],
+  "mutation": null,
+  "timestamp": "2026-10-01T15:27:51+00:00"
+ },
+ "errors": []
+}

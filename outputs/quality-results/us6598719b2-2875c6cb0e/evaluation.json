@@ -1,0 +1,1685 @@
+{
+ "status": "EVALUATED",
+ "gates": [
+  {
+   "gate": "schema_valid",
+   "passed": true
+  },
+  {
+   "gate": "critical_references_resolve",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "identifiers_unique",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "relationship_vocabulary_conforms",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "relationship_signatures_valid",
+   "passed": true,
+   "failures": 0
+  }
+ ],
+ "summary": {
+  "model_key": "us6598719b2-2875c6cb0e",
+  "system_id": "US6598719B2",
+  "system_name": "Belt-Type One-Way Clutch",
+  "dialect": "interface_rich",
+  "counts": {
+   "subsystems": 7,
+   "functions": 10,
+   "ports": 11,
+   "flows": 3,
+   "interfaces": 6,
+   "actions": 2,
+   "parts": 1,
+   "relationships": 0,
+   "requirements": 2
+  },
+  "roles": {
+   "internal": 7
+  },
+  "ingest_notes": []
+ },
+ "profile": {
+  "entities": {
+   "entity_duplication": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.8,
+    "checked": 8,
+    "violations": 0,
+    "status": "heuristic"
+   }
+  },
+  "semantic_candidates": {
+   "statement_duplication": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.5,
+    "checked": 12,
+    "violations": 0,
+    "status": "heuristic"
+   },
+   "statement_form": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.5,
+    "checked": 12,
+    "violations": 0,
+    "status": "heuristic"
+   }
+  },
+  "closure": {
+   "explanatory_closure": {
+    "score": 0.9429,
+    "applicable": true,
+    "confidence": 0.7,
+    "checked": 35,
+    "violations": 2,
+    "status": "proposed"
+   }
+  },
+  "integrity": {
+   "reference_integrity": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 26,
+    "violations": 0,
+    "status": "established"
+   },
+   "identifier_uniqueness": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 30,
+    "violations": 0,
+    "status": "established"
+   }
+  },
+  "interface": {
+   "interface_direction": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 6,
+    "violations": 0,
+    "status": "established"
+   },
+   "flow_type_consistency": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 18,
+    "violations": 0,
+    "status": "established"
+   }
+  },
+  "topology": {
+   "connectivity": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 7,
+    "violations": 0,
+    "status": "established"
+   }
+  },
+  "traceability": {
+   "function_allocation_coverage": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 12,
+    "violations": 0,
+    "status": "established"
+   },
+   "component_purpose_coverage": {
+    "score": 0.8571,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 7,
+    "violations": 1,
+    "status": "proposed"
+   },
+   "requirement_satisfaction_coverage": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 2,
+    "violations": 0,
+    "status": "established"
+   },
+   "requirement_verification_coverage": {
+    "score": 0.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 2,
+    "violations": 2,
+    "status": "established"
+   },
+   "end_to_end_traceability": {
+    "score": 0.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 2,
+    "violations": 2,
+    "status": "proposed"
+   }
+  },
+  "architecture": {
+   "boundary_completeness": {
+    "score": 0.0,
+    "applicable": true,
+    "confidence": 0.6,
+    "checked": 4,
+    "violations": 4,
+    "status": "proposed"
+   }
+  },
+  "provenance": {
+   "provenance_completeness": {
+    "score": 0.25,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 4,
+    "violations": 3,
+    "status": "proposed"
+   }
+  },
+  "readiness": {
+   "model_profile_completeness": {
+    "score": 0.8,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 10,
+    "violations": 2,
+    "status": "proposed"
+   }
+  },
+  "usability": {
+   "competency_question_answerability": {
+    "score": 0.6667,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 6,
+    "violations": 2,
+    "status": "proposed"
+   }
+  }
+ },
+ "diagnostics": {
+  "scope_candidates": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 7,
+   "violations": 0,
+   "family": "entities",
+   "metadata": {
+    "candidates": 0
+   }
+  },
+  "partition_strength": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 7,
+   "violations": 0,
+   "family": "architecture",
+   "metadata": {
+    "modularity": 0.3194,
+    "cross_partition_coupling": 0.1667,
+    "graph_density": 0.2857,
+    "communities": 2,
+    "interpretation": "structural partition strength; not a correctness measure"
+   }
+  },
+  "flow_structure": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 2,
+   "violations": 0,
+   "family": "architecture",
+   "metadata": {
+    "feedback_loops": [],
+    "is_dag": true
+   }
+  },
+  "flow_reuse": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 3,
+   "violations": 2,
+   "family": "interface",
+   "metadata": {
+    "reused": {
+     "belt_tension": [
+      "ROCK::belt_to_rock",
+      "ROT1::belt_to_rot1"
+     ],
+     "shaft_load": [
+      "BUSH::bush_to_case",
+      "ROCK::rock_to_shaft",
+      "SHAFT::shaft_to_bush"
+     ]
+    },
+    "unused": []
+   }
+  },
+  "port_fan_out": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 11,
+   "violations": 0,
+   "family": "interface",
+   "metadata": {}
+  }
+ },
+ "not_applicable": {
+  "relationship_resolution": "model has no relationships list",
+  "representation_consistency": "no resolved relationships to compare",
+  "port_direction_naming": "no port name implies a direction (input/output/inlet/outlet/received ...)",
+  "causal_path_coverage": "no oriented boundary inputs and outputs identified",
+  "vocabulary_conformance": "model has no explicit relationships list",
+  "relation_signature_validity": "no resolved relationships have a vocabulary signature",
+  "internal_function_support": "'realization' tasks not built yet: run build_judge_tasks",
+  "behavior_claim_coverage": "'unclaimed_behavior' tasks not built yet: run build_judge_tasks",
+  "internal_transformation_coherence": "'transformation' tasks not built yet: run build_judge_tasks",
+  "statement_distinction": "'overlap' tasks not built yet: run build_judge_tasks",
+  "entity_distinctness": "'entity_identity' tasks not built yet: run build_judge_tasks",
+  "flow_semantic_fit": "'flow_semantics' tasks not built yet: run build_judge_tasks",
+  "role_assignment_coherence": "'scope' tasks not built yet: run build_judge_tasks"
+ },
+ "findings": [
+  {
+   "metric": "boundary_completeness",
+   "ref": "boundary_declared",
+   "kind": "missing_boundary_capability",
+   "severity": "major",
+   "message": "boundary declared"
+  },
+  {
+   "metric": "boundary_completeness",
+   "ref": "input_identified",
+   "kind": "missing_boundary_capability",
+   "severity": "major",
+   "message": "input identified"
+  },
+  {
+   "metric": "boundary_completeness",
+   "ref": "output_identified",
+   "kind": "missing_boundary_capability",
+   "severity": "major",
+   "message": "output identified"
+  },
+  {
+   "metric": "boundary_completeness",
+   "ref": "boundary_exchange_typed",
+   "kind": "missing_boundary_capability",
+   "severity": "major",
+   "message": "boundary exchange typed"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "boundary_inputs_and_outputs",
+   "kind": "competency_question_incomplete",
+   "severity": "major",
+   "message": "answerability 0.00"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "input_to_output_paths",
+   "kind": "competency_question_incomplete",
+   "severity": "major",
+   "message": "answerability 0.00"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "BUSH",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Shaft-End Support Members' has no function or action"
+  },
+  {
+   "metric": "end_to_end_traceability",
+   "ref": "REQ_SUPPORT",
+   "kind": "incomplete_requirement_trace",
+   "severity": "major",
+   "message": "requirement lacks satisfaction and/or verification trace"
+  },
+  {
+   "metric": "end_to_end_traceability",
+   "ref": "REQ_ONEWAY",
+   "kind": "incomplete_requirement_trace",
+   "severity": "major",
+   "message": "requirement lacks satisfaction and/or verification trace"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "ROT2::couple_torque_interface",
+   "kind": "orphan:function_has_candidate_support",
+   "severity": "major",
+   "message": "'couple torque interface' has no behaviour/interface evidence above 0.12 (best=0.00)"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "BELT::engage_friction_surfaces",
+   "kind": "orphan:function_has_candidate_support",
+   "severity": "major",
+   "message": "'engage friction surfaces' has no behaviour/interface evidence above 0.12 (best=0.11)"
+  },
+  {
+   "metric": "model_profile_completeness",
+   "ref": "input_boundary",
+   "kind": "missing_profile_capability",
+   "severity": "major",
+   "message": "functional profile requires input boundary"
+  },
+  {
+   "metric": "model_profile_completeness",
+   "ref": "output_boundary",
+   "kind": "missing_profile_capability",
+   "severity": "major",
+   "message": "functional profile requires output boundary"
+  },
+  {
+   "metric": "requirement_verification_coverage",
+   "ref": "REQ_SUPPORT",
+   "kind": "requirement_not_verified",
+   "severity": "major",
+   "message": "requirement has no valid verified trace"
+  },
+  {
+   "metric": "requirement_verification_coverage",
+   "ref": "REQ_ONEWAY",
+   "kind": "requirement_not_verified",
+   "severity": "major",
+   "message": "requirement has no valid verified trace"
+  },
+  {
+   "metric": "provenance_completeness",
+   "ref": "source",
+   "kind": "missing_provenance",
+   "severity": "minor",
+   "message": "model does not record source"
+  },
+  {
+   "metric": "provenance_completeness",
+   "ref": "generator",
+   "kind": "missing_provenance",
+   "severity": "minor",
+   "message": "model does not record generator"
+  },
+  {
+   "metric": "provenance_completeness",
+   "ref": "generator_version",
+   "kind": "missing_provenance",
+   "severity": "minor",
+   "message": "model does not record generator version"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "belt_tension",
+   "kind": "flow_reused_across_pairs",
+   "severity": "info",
+   "message": "'Belt tension and friction load' used by ['ROCK::belt_to_rock', 'ROT1::belt_to_rot1']"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "shaft_load",
+   "kind": "flow_reused_across_pairs",
+   "severity": "info",
+   "message": "'Rocking-member shaft reaction load' used by ['BUSH::bush_to_case', 'ROCK::rock_to_shaft', 'SHAFT::shaft_to_bush']"
+  }
+ ],
+ "metrics": [
+  {
+   "metric_id": "entity_duplication",
+   "version": "0.1.0",
+   "family": "entities",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.8,
+   "checked": 8,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "subsystem_groups": [],
+    "part_groups": 0,
+    "names_with_reference_numerals": 0
+   }
+  },
+  {
+   "metric_id": "statement_duplication",
+   "version": "0.1.0",
+   "family": "semantic_candidates",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.5,
+   "checked": 12,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "threshold": 0.72,
+    "retriever": "tfidf-word+char-v1",
+    "candidate_pairs": []
+   }
+  },
+  {
+   "metric_id": "relationship_resolution",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model has no relationships list",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "representation_consistency",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no resolved relationships to compare",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "statement_form",
+   "version": "0.1.0",
+   "family": "semantic_candidates",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.5,
+   "checked": 12,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "scope_candidates",
+   "version": "0.1.0",
+   "family": "entities",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 7,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "candidates": 0
+   }
+  },
+  {
+   "metric_id": "partition_strength",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "diagnostic",
+   "status": "established",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 7,
+   "evidence": [
+    {
+     "ref": "community_0",
+     "detail": "",
+     "data": {
+      "members": [
+       "BELT",
+       "ROCK",
+       "ROT1",
+       "SPRING"
+      ],
+      "density": 0.5
+     }
+    },
+    {
+     "ref": "community_1",
+     "detail": "",
+     "data": {
+      "members": [
+       "BUSH",
+       "ROT2",
+       "SHAFT"
+      ],
+      "density": 0.6667
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "modularity": 0.3194,
+    "cross_partition_coupling": 0.1667,
+    "graph_density": 0.2857,
+    "communities": 2,
+    "interpretation": "structural partition strength; not a correctness measure"
+   }
+  },
+  {
+   "metric_id": "flow_structure",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "diagnostic",
+   "status": "established",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 2,
+   "evidence": [
+    {
+     "ref": "ROCK",
+     "detail": "",
+     "data": {
+      "fan_in": 1,
+      "fan_out": 0
+     }
+    },
+    {
+     "ref": "SPRING",
+     "detail": "",
+     "data": {
+      "fan_in": 0,
+      "fan_out": 1
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "feedback_loops": [],
+    "is_dag": true
+   }
+  },
+  {
+   "metric_id": "explanatory_closure",
+   "version": "0.1.0",
+   "family": "closure",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.9428571428571428,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.7,
+   "checked": 35,
+   "evidence": [
+    {
+     "ref": "action_claimed_by_function",
+     "detail": "2/2 supported",
+     "data": {
+      "checked": 2,
+      "supported": 2,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "action_owned_or_allocated",
+     "detail": "2/2 supported",
+     "data": {
+      "checked": 2,
+      "supported": 2,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "flow_used",
+     "detail": "3/3 supported",
+     "data": {
+      "checked": 3,
+      "supported": 3,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "function_has_candidate_support",
+     "detail": "5/7 supported",
+     "data": {
+      "checked": 7,
+      "supported": 5,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "port_used",
+     "detail": "11/11 supported",
+     "data": {
+      "checked": 11,
+      "supported": 11,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "structural_function_has_candidate_support",
+     "detail": "3/3 supported",
+     "data": {
+      "checked": 3,
+      "supported": 3,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "subsystem_participates",
+     "detail": "7/7 supported",
+     "data": {
+      "checked": 7,
+      "supported": 7,
+      "weight": 1.0
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "ROT2::couple_torque_interface",
+     "kind": "orphan:function_has_candidate_support",
+     "severity": "major",
+     "message": "'couple torque interface' has no behaviour/interface evidence above 0.12 (best=0.00)"
+    },
+    {
+     "ref": "BELT::engage_friction_surfaces",
+     "kind": "orphan:function_has_candidate_support",
+     "severity": "major",
+     "message": "'engage friction surfaces' has no behaviour/interface evidence above 0.12 (best=0.11)"
+    }
+   ],
+   "metadata": {
+    "support_threshold": 0.12,
+    "retriever": "tfidf-word+char-v1",
+    "function_classes": {
+     "transforming": 7,
+     "structural": 3
+    }
+   }
+  },
+  {
+   "metric_id": "reference_integrity",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 26,
+   "evidence": [
+    {
+     "ref": "action.owner",
+     "detail": "2/2 resolved",
+     "data": {
+      "checked": 2,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.flow_ref",
+     "detail": "6/6 resolved",
+     "data": {
+      "checked": 6,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.mating_subsystem",
+     "detail": "6/6 resolved",
+     "data": {
+      "checked": 6,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.port_mate",
+     "detail": "6/6 resolved",
+     "data": {
+      "checked": 6,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.port_this",
+     "detail": "6/6 resolved",
+     "data": {
+      "checked": 6,
+      "violations": 0
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "critical_violations": 0
+   }
+  },
+  {
+   "metric_id": "identifier_uniqueness",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 30,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "interface_direction",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 6,
+   "evidence": [
+    {
+     "ref": "orientation_counts",
+     "detail": "",
+     "data": {
+      "bidirectional": 5,
+      "forward": 1
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "direction_indeterminate_share": 0.8333
+   }
+  },
+  {
+   "metric_id": "flow_type_consistency",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 18,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_reuse",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 3,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "belt_tension",
+     "kind": "flow_reused_across_pairs",
+     "severity": "info",
+     "message": "'Belt tension and friction load' used by ['ROCK::belt_to_rock', 'ROT1::belt_to_rot1']"
+    },
+    {
+     "ref": "shaft_load",
+     "kind": "flow_reused_across_pairs",
+     "severity": "info",
+     "message": "'Rocking-member shaft reaction load' used by ['BUSH::bush_to_case', 'ROCK::rock_to_shaft', 'SHAFT::shaft_to_bush']"
+    }
+   ],
+   "metadata": {
+    "reused": {
+     "belt_tension": [
+      "ROCK::belt_to_rock",
+      "ROT1::belt_to_rot1"
+     ],
+     "shaft_load": [
+      "BUSH::bush_to_case",
+      "ROCK::rock_to_shaft",
+      "SHAFT::shaft_to_bush"
+     ]
+    },
+    "unused": []
+   }
+  },
+  {
+   "metric_id": "port_fan_out",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 11,
+   "evidence": [
+    {
+     "ref": "BELT::belt_surface",
+     "detail": "2 interfaces",
+     "data": {
+      "interfaces": [
+       "ROT1::belt_to_rot1",
+       "ROCK::belt_to_rock"
+      ]
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "port_direction_naming",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "heuristic",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no port name implies a direction (input/output/inlet/outlet/received ...)",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "causal_path_coverage",
+   "version": "0.1.0",
+   "family": "topology",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no oriented boundary inputs and outputs identified",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "boundary_inputs": [],
+    "boundary_outputs": [],
+    "inout_boundaries": []
+   }
+  },
+  {
+   "metric_id": "connectivity",
+   "version": "0.1.0",
+   "family": "topology",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 7,
+   "evidence": [
+    {
+     "ref": "component_0",
+     "detail": "",
+     "data": {
+      "size": 7,
+      "members": [
+       "BELT",
+       "BUSH",
+       "ROCK",
+       "ROT1",
+       "ROT2",
+       "SHAFT",
+       "SPRING"
+      ]
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "components": 1,
+    "excluded_structural": []
+   }
+  },
+  {
+   "metric_id": "vocabulary_conformance",
+   "version": "0.1.0",
+   "family": "conformance",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model has no explicit relationships list",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "relation_signature_validity",
+   "version": "0.1.0",
+   "family": "conformance",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no resolved relationships have a vocabulary signature",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "function_allocation_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 12,
+   "evidence": [
+    {
+     "ref": "allocation",
+     "detail": "12/12 allocated",
+     "data": {}
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "component_purpose_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.8571428571428571,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 7,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "BUSH",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Shaft-End Support Members' has no function or action"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "boundary_completeness",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.6,
+   "checked": 4,
+   "evidence": [
+    {
+     "ref": "boundary_declared",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "input_identified",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "output_identified",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "boundary_exchange_typed",
+     "detail": "missing",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "boundary_declared",
+     "kind": "missing_boundary_capability",
+     "severity": "major",
+     "message": "boundary declared"
+    },
+    {
+     "ref": "input_identified",
+     "kind": "missing_boundary_capability",
+     "severity": "major",
+     "message": "input identified"
+    },
+    {
+     "ref": "output_identified",
+     "kind": "missing_boundary_capability",
+     "severity": "major",
+     "message": "output identified"
+    },
+    {
+     "ref": "boundary_exchange_typed",
+     "kind": "missing_boundary_capability",
+     "severity": "major",
+     "message": "boundary exchange typed"
+    }
+   ],
+   "metadata": {
+    "external": [],
+    "crossings": [],
+    "inputs": [],
+    "outputs": [],
+    "typed": []
+   }
+  },
+  {
+   "metric_id": "requirement_satisfaction_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 2,
+   "evidence": [
+    {
+     "ref": "REQ_SUPPORT",
+     "detail": "",
+     "data": {
+      "id": "REQ_SUPPORT",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "ROT2",
+       "SHAFT",
+       "BUSH"
+      ],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "REQ_ONEWAY",
+     "detail": "",
+     "data": {
+      "id": "REQ_ONEWAY",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "ROT1",
+       "BELT",
+       "ROCK"
+      ],
+      "verified_by": []
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "requirement_verification_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": 0.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 2,
+   "evidence": [
+    {
+     "ref": "REQ_SUPPORT",
+     "detail": "",
+     "data": {
+      "id": "REQ_SUPPORT",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "ROT2",
+       "SHAFT",
+       "BUSH"
+      ],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "REQ_ONEWAY",
+     "detail": "",
+     "data": {
+      "id": "REQ_ONEWAY",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "ROT1",
+       "BELT",
+       "ROCK"
+      ],
+      "verified_by": []
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "REQ_SUPPORT",
+     "kind": "requirement_not_verified",
+     "severity": "major",
+     "message": "requirement has no valid verified trace"
+    },
+    {
+     "ref": "REQ_ONEWAY",
+     "kind": "requirement_not_verified",
+     "severity": "major",
+     "message": "requirement has no valid verified trace"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "end_to_end_traceability",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 2,
+   "evidence": [
+    {
+     "ref": "REQ_SUPPORT",
+     "detail": "",
+     "data": {
+      "id": "REQ_SUPPORT",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "ROT2",
+       "SHAFT",
+       "BUSH"
+      ],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "REQ_ONEWAY",
+     "detail": "",
+     "data": {
+      "id": "REQ_ONEWAY",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "ROT1",
+       "BELT",
+       "ROCK"
+      ],
+      "verified_by": []
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "REQ_SUPPORT",
+     "kind": "incomplete_requirement_trace",
+     "severity": "major",
+     "message": "requirement lacks satisfaction and/or verification trace"
+    },
+    {
+     "ref": "REQ_ONEWAY",
+     "kind": "incomplete_requirement_trace",
+     "severity": "major",
+     "message": "requirement lacks satisfaction and/or verification trace"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "provenance_completeness",
+   "version": "0.1.0",
+   "family": "provenance",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.25,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 4,
+   "evidence": [
+    {
+     "ref": "source",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "generator",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "generator_version",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "schema_version",
+     "detail": "present",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "source",
+     "kind": "missing_provenance",
+     "severity": "minor",
+     "message": "model does not record source"
+    },
+    {
+     "ref": "generator",
+     "kind": "missing_provenance",
+     "severity": "minor",
+     "message": "model does not record generator"
+    },
+    {
+     "ref": "generator_version",
+     "kind": "missing_provenance",
+     "severity": "minor",
+     "message": "model does not record generator version"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "model_profile_completeness",
+   "version": "0.1.0",
+   "family": "readiness",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.8,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 10,
+   "evidence": [
+    {
+     "ref": "system_identity",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "subsystems",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "structure",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "functions_or_actions",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "function_allocation",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "ports",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "interfaces",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "item_flows",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "input_boundary",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "output_boundary",
+     "detail": "missing",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "input_boundary",
+     "kind": "missing_profile_capability",
+     "severity": "major",
+     "message": "functional profile requires input boundary"
+    },
+    {
+     "ref": "output_boundary",
+     "kind": "missing_profile_capability",
+     "severity": "major",
+     "message": "functional profile requires output boundary"
+    }
+   ],
+   "metadata": {
+    "profile": "functional"
+   }
+  },
+  {
+   "metric_id": "competency_question_answerability",
+   "version": "0.1.0",
+   "family": "usability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.6666666666666666,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 6,
+   "evidence": [
+    {
+     "ref": "component_inventory",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "function_allocation_map",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "resolved_interface_map",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "typed_flow_map",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "boundary_inputs_and_outputs",
+     "detail": "",
+     "data": {
+      "answerability": 0.0
+     }
+    },
+    {
+     "ref": "input_to_output_paths",
+     "detail": "",
+     "data": {
+      "answerability": 0.0
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "boundary_inputs_and_outputs",
+     "kind": "competency_question_incomplete",
+     "severity": "major",
+     "message": "answerability 0.00"
+    },
+    {
+     "ref": "input_to_output_paths",
+     "kind": "competency_question_incomplete",
+     "severity": "major",
+     "message": "answerability 0.00"
+    }
+   ],
+   "metadata": {
+    "questions": {
+     "component_inventory": 1.0,
+     "function_allocation_map": 1.0,
+     "resolved_interface_map": 1.0,
+     "typed_flow_map": 1.0,
+     "boundary_inputs_and_outputs": 0.0,
+     "input_to_output_paths": 0.0
+    },
+    "profile": "functional"
+   }
+  },
+  {
+   "metric_id": "internal_function_support",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'realization' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "behavior_claim_coverage",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'unclaimed_behavior' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "internal_transformation_coherence",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'transformation' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "statement_distinction",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'overlap' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "entity_distinctness",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'entity_identity' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_semantic_fit",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'flow_semantics' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "role_assignment_coherence",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'scope' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  }
+ ],
+ "manifest": {
+  "framework_version": "0.2.1",
+  "git_sha": null,
+  "python": "3.13.5",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "packages": {
+   "pydantic": "2.13.5",
+   "networkx": "3.7",
+   "numpy": "2.5.3",
+   "scipy": "1.18.1",
+   "scikit-learn": "1.9.1",
+   "mcp": "2.2.0"
+  },
+  "input_path": "C:\\Users\\Eladio\\Downloads\\functional-quality\\inputs\\US6598719B2\\agents\\model.sjs.json",
+  "input_sha256": "2875c6cb0ea47e3a192a9138d1d2bedfec88b57954cdb184959411089a9ac6cb",
+  "model_key": "us6598719b2-2875c6cb0e",
+  "metric_versions": {
+   "entity_duplication": "0.1.0",
+   "statement_duplication": "0.1.0",
+   "relationship_resolution": "0.1.0",
+   "representation_consistency": "0.1.0",
+   "statement_form": "0.1.0",
+   "scope_candidates": "0.1.0",
+   "partition_strength": "0.1.0",
+   "flow_structure": "0.1.0",
+   "explanatory_closure": "0.1.0",
+   "reference_integrity": "0.1.0",
+   "identifier_uniqueness": "0.1.0",
+   "interface_direction": "0.1.0",
+   "flow_type_consistency": "0.1.0",
+   "flow_reuse": "0.1.0",
+   "port_fan_out": "0.1.0",
+   "port_direction_naming": "0.1.0",
+   "causal_path_coverage": "0.1.0",
+   "connectivity": "0.1.0",
+   "vocabulary_conformance": "0.1.0",
+   "relation_signature_validity": "0.1.0",
+   "function_allocation_coverage": "0.1.0",
+   "component_purpose_coverage": "0.1.0",
+   "boundary_completeness": "0.1.0",
+   "requirement_satisfaction_coverage": "0.1.0",
+   "requirement_verification_coverage": "0.1.0",
+   "end_to_end_traceability": "0.1.0",
+   "provenance_completeness": "0.1.0",
+   "model_profile_completeness": "0.1.0",
+   "competency_question_answerability": "0.1.0",
+   "internal_function_support": "0.1.0",
+   "behavior_claim_coverage": "0.1.0",
+   "internal_transformation_coherence": "0.1.0",
+   "statement_distinction": "0.1.0",
+   "entity_distinctness": "0.1.0",
+   "flow_semantic_fit": "0.1.0",
+   "role_assignment_coherence": "0.1.0"
+  },
+  "retriever": "tfidf-word+char-v1",
+  "config": {
+   "results_dir": "results",
+   "closure.support_threshold": 0.12,
+   "duplication.similarity_threshold": 0.72,
+   "architecture.min_nodes": 6,
+   "architecture.min_edges": 5,
+   "tasks.max_per_kind": 200,
+   "mbse.profile": "functional",
+   "mbse.vocabulary_path": "sjs.kg.schema.json"
+  },
+  "config_sha256": "db444ef9e4ce9b88",
+  "judge_prompt_versions": {
+   "realization": "0e5a5e8444aa",
+   "unclaimed_behavior": "03be253ac935",
+   "transformation": "ec4f9d66cea9",
+   "overlap": "a1c3966dabf7",
+   "entity_identity": "8683abb23ed7",
+   "flow_semantics": "4bed83f6bc0d",
+   "scope": "dd249779cad2"
+  },
+  "judges": [],
+  "mutation": null,
+  "timestamp": "2026-10-01T15:28:25+00:00"
+ },
+ "errors": []
+}

@@ -1,0 +1,1783 @@
+{
+ "status": "EVALUATED",
+ "gates": [
+  {
+   "gate": "schema_valid",
+   "passed": true
+  },
+  {
+   "gate": "critical_references_resolve",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "identifiers_unique",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "relationship_vocabulary_conforms",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "relationship_signatures_valid",
+   "passed": true,
+   "failures": 0
+  }
+ ],
+ "summary": {
+  "model_key": "us6647869b2-df2dc4344b",
+  "system_id": "US6647869B2",
+  "system_name": "Positive-Lock Adjustable-Stroke Press Mechanism",
+  "dialect": "interface_rich",
+  "counts": {
+   "subsystems": 9,
+   "functions": 0,
+   "ports": 15,
+   "flows": 3,
+   "interfaces": 7,
+   "actions": 1,
+   "parts": 0,
+   "relationships": 0,
+   "requirements": 2
+  },
+  "roles": {
+   "internal": 8,
+   "external": 1
+  },
+  "ingest_notes": []
+ },
+ "profile": {
+  "entities": {
+   "entity_duplication": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.8,
+    "checked": 9,
+    "violations": 0,
+    "status": "heuristic"
+   }
+  },
+  "semantic_candidates": {
+   "statement_form": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.5,
+    "checked": 1,
+    "violations": 0,
+    "status": "heuristic"
+   }
+  },
+  "closure": {
+   "explanatory_closure": {
+    "score": 0.8929,
+    "applicable": true,
+    "confidence": 0.7,
+    "checked": 28,
+    "violations": 3,
+    "status": "proposed"
+   }
+  },
+  "integrity": {
+   "reference_integrity": {
+    "score": 0.9036,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 29,
+    "violations": 4,
+    "status": "established"
+   },
+   "identifier_uniqueness": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 35,
+    "violations": 0,
+    "status": "established"
+   }
+  },
+  "interface": {
+   "interface_direction": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 7,
+    "violations": 0,
+    "status": "established"
+   },
+   "flow_type_consistency": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 13,
+    "violations": 0,
+    "status": "established"
+   },
+   "port_direction_naming": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.7,
+    "checked": 1,
+    "violations": 0,
+    "status": "heuristic"
+   }
+  },
+  "topology": {
+   "connectivity": {
+    "score": 0.7778,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 9,
+    "violations": 2,
+    "status": "established"
+   }
+  },
+  "traceability": {
+   "function_allocation_coverage": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 1,
+    "violations": 0,
+    "status": "established"
+   },
+   "component_purpose_coverage": {
+    "score": 0.125,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 8,
+    "violations": 7,
+    "status": "proposed"
+   },
+   "requirement_satisfaction_coverage": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 2,
+    "violations": 0,
+    "status": "established"
+   },
+   "requirement_verification_coverage": {
+    "score": 0.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 2,
+    "violations": 2,
+    "status": "established"
+   },
+   "end_to_end_traceability": {
+    "score": 0.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 2,
+    "violations": 2,
+    "status": "proposed"
+   }
+  },
+  "architecture": {
+   "boundary_completeness": {
+    "score": 0.75,
+    "applicable": true,
+    "confidence": 0.75,
+    "checked": 4,
+    "violations": 1,
+    "status": "proposed"
+   }
+  },
+  "provenance": {
+   "provenance_completeness": {
+    "score": 0.25,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 4,
+    "violations": 3,
+    "status": "proposed"
+   }
+  },
+  "readiness": {
+   "model_profile_completeness": {
+    "score": 0.9,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 10,
+    "violations": 1,
+    "status": "proposed"
+   }
+  },
+  "usability": {
+   "competency_question_answerability": {
+    "score": 0.5714,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 6,
+    "violations": 3,
+    "status": "proposed"
+   }
+  }
+ },
+ "diagnostics": {
+  "scope_candidates": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 9,
+   "violations": 0,
+   "family": "entities",
+   "metadata": {
+    "candidates": 1
+   }
+  },
+  "partition_strength": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 8,
+   "violations": 0,
+   "family": "architecture",
+   "metadata": {
+    "modularity": 0.2083,
+    "cross_partition_coupling": 0.1667,
+    "graph_density": 0.2143,
+    "communities": 4,
+    "interpretation": "structural partition strength; not a correctness measure"
+   }
+  },
+  "flow_structure": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 2,
+   "violations": 0,
+   "family": "architecture",
+   "metadata": {
+    "feedback_loops": [],
+    "is_dag": true
+   }
+  },
+  "flow_reuse": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 3,
+   "violations": 0,
+   "family": "interface",
+   "metadata": {
+    "reused": {},
+    "unused": []
+   }
+  },
+  "port_fan_out": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 15,
+   "violations": 0,
+   "family": "interface",
+   "metadata": {}
+  }
+ },
+ "not_applicable": {
+  "statement_duplication": "fewer than two functional statements",
+  "relationship_resolution": "model has no relationships list",
+  "representation_consistency": "no resolved relationships to compare",
+  "causal_path_coverage": "no oriented boundary inputs and outputs identified",
+  "vocabulary_conformance": "model has no explicit relationships list",
+  "relation_signature_validity": "no resolved relationships have a vocabulary signature",
+  "internal_function_support": "'realization' tasks not built yet: run build_judge_tasks",
+  "behavior_claim_coverage": "'unclaimed_behavior' tasks not built yet: run build_judge_tasks",
+  "internal_transformation_coherence": "'transformation' tasks not built yet: run build_judge_tasks",
+  "statement_distinction": "'overlap' tasks not built yet: run build_judge_tasks",
+  "entity_distinctness": "'entity_identity' tasks not built yet: run build_judge_tasks",
+  "flow_semantic_fit": "'flow_semantics' tasks not built yet: run build_judge_tasks",
+  "role_assignment_coherence": "'scope' tasks not built yet: run build_judge_tasks"
+ },
+ "findings": [
+  {
+   "metric": "boundary_completeness",
+   "ref": "input_identified",
+   "kind": "missing_boundary_capability",
+   "severity": "major",
+   "message": "input identified"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "boundary_inputs_and_outputs",
+   "kind": "competency_question_incomplete",
+   "severity": "major",
+   "message": "answerability 0.00"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "input_to_output_paths",
+   "kind": "competency_question_incomplete",
+   "severity": "major",
+   "message": "answerability 0.00"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "press_connection",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Press Connection Member' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "second_eccentric",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Second Eccentric Member' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "alignment_bar",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Alignment Bar' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "alignment_cylinder",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Double-Acting Alignment Cylinder' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "alignment_spring",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Alignment Return Spring' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "alignment_sensor",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Alignment Position Sensors' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "crankshaft",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Rotatable Crankshaft' has no function or action"
+  },
+  {
+   "metric": "end_to_end_traceability",
+   "ref": "stroke_adjustment",
+   "kind": "incomplete_requirement_trace",
+   "severity": "major",
+   "message": "requirement lacks satisfaction and/or verification trace"
+  },
+  {
+   "metric": "end_to_end_traceability",
+   "ref": "positive_alignment",
+   "kind": "incomplete_requirement_trace",
+   "severity": "major",
+   "message": "requirement lacks satisfaction and/or verification trace"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "alignment_sensor::bar_position_detection",
+   "kind": "orphan:port_used",
+   "severity": "major",
+   "message": "port 'Alignment-bar position detection' is in no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "alignment_spring",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'Alignment Return Spring' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "alignment_sensor",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'Alignment Position Sensors' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "model_profile_completeness",
+   "ref": "input_boundary",
+   "kind": "missing_profile_capability",
+   "severity": "major",
+   "message": "functional profile requires input boundary"
+  },
+  {
+   "metric": "reference_integrity",
+   "ref": "press_connection::member_bushing_connection",
+   "kind": "unresolved:interface.flow_ref",
+   "severity": "major",
+   "message": "interface.flow_ref -> 'None' does not resolve. interface has no flow_ref"
+  },
+  {
+   "metric": "reference_integrity",
+   "ref": "press_connection::member_alignment_bar_guide",
+   "kind": "unresolved:interface.flow_ref",
+   "severity": "major",
+   "message": "interface.flow_ref -> 'None' does not resolve. interface has no flow_ref"
+  },
+  {
+   "metric": "reference_integrity",
+   "ref": "eccentric_bushing::bushing_eccentric_connection",
+   "kind": "unresolved:interface.flow_ref",
+   "severity": "major",
+   "message": "interface.flow_ref -> 'None' does not resolve. interface has no flow_ref"
+  },
+  {
+   "metric": "reference_integrity",
+   "ref": "alignment_bar::bar_keyway_lock",
+   "kind": "unresolved:interface.flow_ref",
+   "severity": "major",
+   "message": "interface.flow_ref -> 'None' does not resolve. interface has no flow_ref"
+  },
+  {
+   "metric": "requirement_verification_coverage",
+   "ref": "stroke_adjustment",
+   "kind": "requirement_not_verified",
+   "severity": "major",
+   "message": "requirement has no valid verified trace"
+  },
+  {
+   "metric": "requirement_verification_coverage",
+   "ref": "positive_alignment",
+   "kind": "requirement_not_verified",
+   "severity": "major",
+   "message": "requirement has no valid verified trace"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "typed_flow_map",
+   "kind": "competency_question_incomplete",
+   "severity": "minor",
+   "message": "answerability 0.43"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "alignment_sensor",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'Alignment Position Sensors' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "alignment_spring",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'Alignment Return Spring' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "provenance_completeness",
+   "ref": "source",
+   "kind": "missing_provenance",
+   "severity": "minor",
+   "message": "model does not record source"
+  },
+  {
+   "metric": "provenance_completeness",
+   "ref": "generator",
+   "kind": "missing_provenance",
+   "severity": "minor",
+   "message": "model does not record generator"
+  },
+  {
+   "metric": "provenance_completeness",
+   "ref": "generator_version",
+   "kind": "missing_provenance",
+   "severity": "minor",
+   "message": "model does not record generator version"
+  }
+ ],
+ "metrics": [
+  {
+   "metric_id": "entity_duplication",
+   "version": "0.1.0",
+   "family": "entities",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.8,
+   "checked": 9,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "subsystem_groups": [],
+    "part_groups": 0,
+    "names_with_reference_numerals": 0
+   }
+  },
+  {
+   "metric_id": "statement_duplication",
+   "version": "0.1.0",
+   "family": "semantic_candidates",
+   "kind": "score",
+   "status": "heuristic",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "fewer than two functional statements",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "relationship_resolution",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model has no relationships list",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "representation_consistency",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no resolved relationships to compare",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "statement_form",
+   "version": "0.1.0",
+   "family": "semantic_candidates",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.5,
+   "checked": 1,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "scope_candidates",
+   "version": "0.1.0",
+   "family": "entities",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 9,
+   "evidence": [
+    {
+     "ref": "press_slide",
+     "detail": "inferred role external: external/context keywords",
+     "data": {
+      "name": "Press Slide",
+      "confidence": 0.75
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "candidates": 1
+   }
+  },
+  {
+   "metric_id": "partition_strength",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "diagnostic",
+   "status": "established",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 8,
+   "evidence": [
+    {
+     "ref": "community_0",
+     "detail": "",
+     "data": {
+      "members": [
+       "alignment_bar",
+       "alignment_cylinder",
+       "eccentric_bushing",
+       "press_connection"
+      ],
+      "density": 0.6667
+     }
+    },
+    {
+     "ref": "community_1",
+     "detail": "",
+     "data": {
+      "members": [
+       "crankshaft",
+       "second_eccentric"
+      ],
+      "density": 1.0
+     }
+    },
+    {
+     "ref": "community_2",
+     "detail": "",
+     "data": {
+      "members": [
+       "alignment_sensor"
+      ],
+      "density": null
+     }
+    },
+    {
+     "ref": "community_3",
+     "detail": "",
+     "data": {
+      "members": [
+       "alignment_spring"
+      ],
+      "density": null
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "modularity": 0.2083,
+    "cross_partition_coupling": 0.1667,
+    "graph_density": 0.2143,
+    "communities": 4,
+    "interpretation": "structural partition strength; not a correctness measure"
+   }
+  },
+  {
+   "metric_id": "flow_structure",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "diagnostic",
+   "status": "established",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 2,
+   "evidence": [
+    {
+     "ref": "press_connection",
+     "detail": "",
+     "data": {
+      "fan_in": 0,
+      "fan_out": 1
+     }
+    },
+    {
+     "ref": "press_slide",
+     "detail": "",
+     "data": {
+      "fan_in": 1,
+      "fan_out": 0
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "feedback_loops": [],
+    "is_dag": true
+   }
+  },
+  {
+   "metric_id": "explanatory_closure",
+   "version": "0.1.0",
+   "family": "closure",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.8928571428571429,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.7,
+   "checked": 28,
+   "evidence": [
+    {
+     "ref": "action_owned_or_allocated",
+     "detail": "1/1 supported",
+     "data": {
+      "checked": 1,
+      "supported": 1,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "flow_used",
+     "detail": "3/3 supported",
+     "data": {
+      "checked": 3,
+      "supported": 3,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "port_used",
+     "detail": "14/15 supported",
+     "data": {
+      "checked": 15,
+      "supported": 14,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "subsystem_participates",
+     "detail": "7/9 supported",
+     "data": {
+      "checked": 9,
+      "supported": 7,
+      "weight": 1.0
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "alignment_sensor::bar_position_detection",
+     "kind": "orphan:port_used",
+     "severity": "major",
+     "message": "port 'Alignment-bar position detection' is in no interface"
+    },
+    {
+     "ref": "alignment_spring",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'Alignment Return Spring' has no interface, relationship, function or behaviour"
+    },
+    {
+     "ref": "alignment_sensor",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'Alignment Position Sensors' has no interface, relationship, function or behaviour"
+    }
+   ],
+   "metadata": {
+    "support_threshold": 0.12,
+    "retriever": "tfidf-word+char-v1",
+    "function_classes": {}
+   }
+  },
+  {
+   "metric_id": "reference_integrity",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": 0.9036144578313253,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 29,
+   "evidence": [
+    {
+     "ref": "action.owner",
+     "detail": "1/1 resolved",
+     "data": {
+      "checked": 1,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.flow_ref",
+     "detail": "3/7 resolved",
+     "data": {
+      "checked": 7,
+      "violations": 4
+     }
+    },
+    {
+     "ref": "interface.mating_subsystem",
+     "detail": "7/7 resolved",
+     "data": {
+      "checked": 7,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.port_mate",
+     "detail": "7/7 resolved",
+     "data": {
+      "checked": 7,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.port_this",
+     "detail": "7/7 resolved",
+     "data": {
+      "checked": 7,
+      "violations": 0
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "press_connection::member_bushing_connection",
+     "kind": "unresolved:interface.flow_ref",
+     "severity": "major",
+     "message": "interface.flow_ref -> 'None' does not resolve. interface has no flow_ref"
+    },
+    {
+     "ref": "press_connection::member_alignment_bar_guide",
+     "kind": "unresolved:interface.flow_ref",
+     "severity": "major",
+     "message": "interface.flow_ref -> 'None' does not resolve. interface has no flow_ref"
+    },
+    {
+     "ref": "eccentric_bushing::bushing_eccentric_connection",
+     "kind": "unresolved:interface.flow_ref",
+     "severity": "major",
+     "message": "interface.flow_ref -> 'None' does not resolve. interface has no flow_ref"
+    },
+    {
+     "ref": "alignment_bar::bar_keyway_lock",
+     "kind": "unresolved:interface.flow_ref",
+     "severity": "major",
+     "message": "interface.flow_ref -> 'None' does not resolve. interface has no flow_ref"
+    }
+   ],
+   "metadata": {
+    "critical_violations": 0
+   }
+  },
+  {
+   "metric_id": "identifier_uniqueness",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 35,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "interface_direction",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 7,
+   "evidence": [
+    {
+     "ref": "orientation_counts",
+     "detail": "",
+     "data": {
+      "bidirectional": 6,
+      "forward": 1
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "direction_indeterminate_share": 0.8571
+   }
+  },
+  {
+   "metric_id": "flow_type_consistency",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 13,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_reuse",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 3,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "reused": {},
+    "unused": []
+   }
+  },
+  {
+   "metric_id": "port_fan_out",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 15,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "port_direction_naming",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.7,
+   "checked": 1,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "causal_path_coverage",
+   "version": "0.1.0",
+   "family": "topology",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no oriented boundary inputs and outputs identified",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "boundary_inputs": [],
+    "boundary_outputs": [
+     "press_connection::member_slide_reciprocation",
+     "unconnected-port:alignment_sensor::bar_position_detection"
+    ],
+    "inout_boundaries": []
+   }
+  },
+  {
+   "metric_id": "connectivity",
+   "version": "0.1.0",
+   "family": "topology",
+   "kind": "score",
+   "status": "established",
+   "score": 0.7777777777777778,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 9,
+   "evidence": [
+    {
+     "ref": "component_0",
+     "detail": "",
+     "data": {
+      "size": 7,
+      "members": [
+       "alignment_bar",
+       "alignment_cylinder",
+       "crankshaft",
+       "eccentric_bushing",
+       "press_connection",
+       "press_slide",
+       "second_eccentric"
+      ]
+     }
+    },
+    {
+     "ref": "component_1",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "alignment_spring"
+      ]
+     }
+    },
+    {
+     "ref": "component_2",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "alignment_sensor"
+      ]
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "alignment_sensor",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'Alignment Position Sensors' has no interface, relationship or shared action"
+    },
+    {
+     "ref": "alignment_spring",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'Alignment Return Spring' has no interface, relationship or shared action"
+    }
+   ],
+   "metadata": {
+    "components": 3,
+    "excluded_structural": []
+   }
+  },
+  {
+   "metric_id": "vocabulary_conformance",
+   "version": "0.1.0",
+   "family": "conformance",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model has no explicit relationships list",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "relation_signature_validity",
+   "version": "0.1.0",
+   "family": "conformance",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no resolved relationships have a vocabulary signature",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "function_allocation_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 1,
+   "evidence": [
+    {
+     "ref": "allocation",
+     "detail": "1/1 allocated",
+     "data": {}
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "component_purpose_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.125,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 8,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "press_connection",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Press Connection Member' has no function or action"
+    },
+    {
+     "ref": "second_eccentric",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Second Eccentric Member' has no function or action"
+    },
+    {
+     "ref": "alignment_bar",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Alignment Bar' has no function or action"
+    },
+    {
+     "ref": "alignment_cylinder",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Double-Acting Alignment Cylinder' has no function or action"
+    },
+    {
+     "ref": "alignment_spring",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Alignment Return Spring' has no function or action"
+    },
+    {
+     "ref": "alignment_sensor",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Alignment Position Sensors' has no function or action"
+    },
+    {
+     "ref": "crankshaft",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Rotatable Crankshaft' has no function or action"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "boundary_completeness",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.75,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.75,
+   "checked": 4,
+   "evidence": [
+    {
+     "ref": "boundary_declared",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "input_identified",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "output_identified",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "boundary_exchange_typed",
+     "detail": "present",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "input_identified",
+     "kind": "missing_boundary_capability",
+     "severity": "major",
+     "message": "input identified"
+    }
+   ],
+   "metadata": {
+    "external": [
+     "press_slide"
+    ],
+    "crossings": [
+     "press_connection::member_slide_reciprocation"
+    ],
+    "inputs": [],
+    "outputs": [
+     "press_connection::member_slide_reciprocation",
+     "alignment_sensor::bar_position_detection"
+    ],
+    "typed": [
+     "press_connection::member_slide_reciprocation"
+    ]
+   }
+  },
+  {
+   "metric_id": "requirement_satisfaction_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 2,
+   "evidence": [
+    {
+     "ref": "stroke_adjustment",
+     "detail": "",
+     "data": {
+      "id": "stroke_adjustment",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "second_eccentric",
+       "eccentric_bushing"
+      ],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "positive_alignment",
+     "detail": "",
+     "data": {
+      "id": "positive_alignment",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "alignment_bar",
+       "eccentric_bushing",
+       "press_connection"
+      ],
+      "verified_by": []
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "requirement_verification_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": 0.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 2,
+   "evidence": [
+    {
+     "ref": "stroke_adjustment",
+     "detail": "",
+     "data": {
+      "id": "stroke_adjustment",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "second_eccentric",
+       "eccentric_bushing"
+      ],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "positive_alignment",
+     "detail": "",
+     "data": {
+      "id": "positive_alignment",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "alignment_bar",
+       "eccentric_bushing",
+       "press_connection"
+      ],
+      "verified_by": []
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "stroke_adjustment",
+     "kind": "requirement_not_verified",
+     "severity": "major",
+     "message": "requirement has no valid verified trace"
+    },
+    {
+     "ref": "positive_alignment",
+     "kind": "requirement_not_verified",
+     "severity": "major",
+     "message": "requirement has no valid verified trace"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "end_to_end_traceability",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 2,
+   "evidence": [
+    {
+     "ref": "stroke_adjustment",
+     "detail": "",
+     "data": {
+      "id": "stroke_adjustment",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "second_eccentric",
+       "eccentric_bushing"
+      ],
+      "verified_by": []
+     }
+    },
+    {
+     "ref": "positive_alignment",
+     "detail": "",
+     "data": {
+      "id": "positive_alignment",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "alignment_bar",
+       "eccentric_bushing",
+       "press_connection"
+      ],
+      "verified_by": []
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "stroke_adjustment",
+     "kind": "incomplete_requirement_trace",
+     "severity": "major",
+     "message": "requirement lacks satisfaction and/or verification trace"
+    },
+    {
+     "ref": "positive_alignment",
+     "kind": "incomplete_requirement_trace",
+     "severity": "major",
+     "message": "requirement lacks satisfaction and/or verification trace"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "provenance_completeness",
+   "version": "0.1.0",
+   "family": "provenance",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.25,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 4,
+   "evidence": [
+    {
+     "ref": "source",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "generator",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "generator_version",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "schema_version",
+     "detail": "present",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "source",
+     "kind": "missing_provenance",
+     "severity": "minor",
+     "message": "model does not record source"
+    },
+    {
+     "ref": "generator",
+     "kind": "missing_provenance",
+     "severity": "minor",
+     "message": "model does not record generator"
+    },
+    {
+     "ref": "generator_version",
+     "kind": "missing_provenance",
+     "severity": "minor",
+     "message": "model does not record generator version"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "model_profile_completeness",
+   "version": "0.1.0",
+   "family": "readiness",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.9,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 10,
+   "evidence": [
+    {
+     "ref": "system_identity",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "subsystems",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "structure",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "functions_or_actions",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "function_allocation",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "ports",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "interfaces",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "item_flows",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "input_boundary",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "output_boundary",
+     "detail": "present",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "input_boundary",
+     "kind": "missing_profile_capability",
+     "severity": "major",
+     "message": "functional profile requires input boundary"
+    }
+   ],
+   "metadata": {
+    "profile": "functional"
+   }
+  },
+  {
+   "metric_id": "competency_question_answerability",
+   "version": "0.1.0",
+   "family": "usability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.5714285714285714,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 6,
+   "evidence": [
+    {
+     "ref": "component_inventory",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "function_allocation_map",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "resolved_interface_map",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "typed_flow_map",
+     "detail": "",
+     "data": {
+      "answerability": 0.4286
+     }
+    },
+    {
+     "ref": "boundary_inputs_and_outputs",
+     "detail": "",
+     "data": {
+      "answerability": 0.0
+     }
+    },
+    {
+     "ref": "input_to_output_paths",
+     "detail": "",
+     "data": {
+      "answerability": 0.0
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "typed_flow_map",
+     "kind": "competency_question_incomplete",
+     "severity": "minor",
+     "message": "answerability 0.43"
+    },
+    {
+     "ref": "boundary_inputs_and_outputs",
+     "kind": "competency_question_incomplete",
+     "severity": "major",
+     "message": "answerability 0.00"
+    },
+    {
+     "ref": "input_to_output_paths",
+     "kind": "competency_question_incomplete",
+     "severity": "major",
+     "message": "answerability 0.00"
+    }
+   ],
+   "metadata": {
+    "questions": {
+     "component_inventory": 1.0,
+     "function_allocation_map": 1.0,
+     "resolved_interface_map": 1.0,
+     "typed_flow_map": 0.42857142857142855,
+     "boundary_inputs_and_outputs": 0.0,
+     "input_to_output_paths": 0.0
+    },
+    "profile": "functional"
+   }
+  },
+  {
+   "metric_id": "internal_function_support",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'realization' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "behavior_claim_coverage",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'unclaimed_behavior' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "internal_transformation_coherence",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'transformation' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "statement_distinction",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'overlap' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "entity_distinctness",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'entity_identity' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_semantic_fit",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'flow_semantics' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "role_assignment_coherence",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'scope' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  }
+ ],
+ "manifest": {
+  "framework_version": "0.2.1",
+  "git_sha": null,
+  "python": "3.13.5",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "packages": {
+   "pydantic": "2.13.5",
+   "networkx": "3.7",
+   "numpy": "2.5.3",
+   "scipy": "1.18.1",
+   "scikit-learn": "1.9.1",
+   "mcp": "2.2.0"
+  },
+  "input_path": "C:\\Users\\Eladio\\Downloads\\functional-quality\\inputs\\US6647869B2\\agents\\model.sjs.json",
+  "input_sha256": "df2dc4344be8dc19ec3e35a91090bfc1ba62d310165d032ad91ba8086cf22919",
+  "model_key": "us6647869b2-df2dc4344b",
+  "metric_versions": {
+   "entity_duplication": "0.1.0",
+   "statement_duplication": "0.1.0",
+   "relationship_resolution": "0.1.0",
+   "representation_consistency": "0.1.0",
+   "statement_form": "0.1.0",
+   "scope_candidates": "0.1.0",
+   "partition_strength": "0.1.0",
+   "flow_structure": "0.1.0",
+   "explanatory_closure": "0.1.0",
+   "reference_integrity": "0.1.0",
+   "identifier_uniqueness": "0.1.0",
+   "interface_direction": "0.1.0",
+   "flow_type_consistency": "0.1.0",
+   "flow_reuse": "0.1.0",
+   "port_fan_out": "0.1.0",
+   "port_direction_naming": "0.1.0",
+   "causal_path_coverage": "0.1.0",
+   "connectivity": "0.1.0",
+   "vocabulary_conformance": "0.1.0",
+   "relation_signature_validity": "0.1.0",
+   "function_allocation_coverage": "0.1.0",
+   "component_purpose_coverage": "0.1.0",
+   "boundary_completeness": "0.1.0",
+   "requirement_satisfaction_coverage": "0.1.0",
+   "requirement_verification_coverage": "0.1.0",
+   "end_to_end_traceability": "0.1.0",
+   "provenance_completeness": "0.1.0",
+   "model_profile_completeness": "0.1.0",
+   "competency_question_answerability": "0.1.0",
+   "internal_function_support": "0.1.0",
+   "behavior_claim_coverage": "0.1.0",
+   "internal_transformation_coherence": "0.1.0",
+   "statement_distinction": "0.1.0",
+   "entity_distinctness": "0.1.0",
+   "flow_semantic_fit": "0.1.0",
+   "role_assignment_coherence": "0.1.0"
+  },
+  "retriever": "tfidf-word+char-v1",
+  "config": {
+   "results_dir": "results",
+   "closure.support_threshold": 0.12,
+   "duplication.similarity_threshold": 0.72,
+   "architecture.min_nodes": 6,
+   "architecture.min_edges": 5,
+   "tasks.max_per_kind": 200,
+   "mbse.profile": "functional",
+   "mbse.vocabulary_path": "sjs.kg.schema.json"
+  },
+  "config_sha256": "db444ef9e4ce9b88",
+  "judge_prompt_versions": {
+   "realization": "0e5a5e8444aa",
+   "unclaimed_behavior": "03be253ac935",
+   "transformation": "ec4f9d66cea9",
+   "overlap": "a1c3966dabf7",
+   "entity_identity": "8683abb23ed7",
+   "flow_semantics": "4bed83f6bc0d",
+   "scope": "dd249779cad2"
+  },
+  "judges": [],
+  "mutation": null,
+  "timestamp": "2026-10-01T15:29:34+00:00"
+ },
+ "errors": []
+}

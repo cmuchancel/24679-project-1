@@ -1,0 +1,1876 @@
+{
+ "status": "EVALUATED",
+ "gates": [
+  {
+   "gate": "schema_valid",
+   "passed": true
+  },
+  {
+   "gate": "critical_references_resolve",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "identifiers_unique",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "relationship_vocabulary_conforms",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "relationship_signatures_valid",
+   "passed": true,
+   "failures": 0
+  }
+ ],
+ "summary": {
+  "model_key": "us6655255b2-241520d7d3",
+  "system_id": "US6655255B2",
+  "system_name": "Variable Displacement Axial Piston Pump with Two-Direction Swashplate",
+  "dialect": "interface_rich",
+  "counts": {
+   "subsystems": 13,
+   "functions": 0,
+   "ports": 22,
+   "flows": 9,
+   "interfaces": 11,
+   "actions": 3,
+   "parts": 0,
+   "relationships": 0,
+   "requirements": 1
+  },
+  "roles": {
+   "internal": 13
+  },
+  "ingest_notes": []
+ },
+ "profile": {
+  "entities": {
+   "entity_duplication": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.8,
+    "checked": 13,
+    "violations": 0,
+    "status": "heuristic"
+   }
+  },
+  "semantic_candidates": {
+   "statement_duplication": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.5,
+    "checked": 3,
+    "violations": 0,
+    "status": "heuristic"
+   },
+   "statement_form": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.5,
+    "checked": 3,
+    "violations": 0,
+    "status": "heuristic"
+   }
+  },
+  "closure": {
+   "explanatory_closure": {
+    "score": 0.9574,
+    "applicable": true,
+    "confidence": 0.7,
+    "checked": 47,
+    "violations": 2,
+    "status": "proposed"
+   }
+  },
+  "integrity": {
+   "reference_integrity": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 47,
+    "violations": 0,
+    "status": "established"
+   },
+   "identifier_uniqueness": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 58,
+    "violations": 0,
+    "status": "established"
+   }
+  },
+  "interface": {
+   "interface_direction": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 11,
+    "violations": 0,
+    "status": "established"
+   },
+   "flow_type_consistency": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 33,
+    "violations": 0,
+    "status": "established"
+   },
+   "port_direction_naming": {
+    "score": 0.9375,
+    "applicable": true,
+    "confidence": 0.7,
+    "checked": 16,
+    "violations": 1,
+    "status": "heuristic"
+   }
+  },
+  "topology": {
+   "connectivity": {
+    "score": 0.4615,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 13,
+    "violations": 1,
+    "status": "established"
+   }
+  },
+  "traceability": {
+   "function_allocation_coverage": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 3,
+    "violations": 0,
+    "status": "established"
+   },
+   "component_purpose_coverage": {
+    "score": 0.2308,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 13,
+    "violations": 10,
+    "status": "proposed"
+   },
+   "requirement_satisfaction_coverage": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 1,
+    "violations": 0,
+    "status": "established"
+   },
+   "requirement_verification_coverage": {
+    "score": 0.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 1,
+    "violations": 1,
+    "status": "established"
+   },
+   "end_to_end_traceability": {
+    "score": 0.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 1,
+    "violations": 1,
+    "status": "proposed"
+   }
+  },
+  "architecture": {
+   "boundary_completeness": {
+    "score": 0.0,
+    "applicable": true,
+    "confidence": 0.6,
+    "checked": 4,
+    "violations": 4,
+    "status": "proposed"
+   }
+  },
+  "provenance": {
+   "provenance_completeness": {
+    "score": 0.25,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 4,
+    "violations": 3,
+    "status": "proposed"
+   }
+  },
+  "readiness": {
+   "model_profile_completeness": {
+    "score": 0.8,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 10,
+    "violations": 2,
+    "status": "proposed"
+   }
+  },
+  "usability": {
+   "competency_question_answerability": {
+    "score": 0.6667,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 6,
+    "violations": 2,
+    "status": "proposed"
+   }
+  }
+ },
+ "diagnostics": {
+  "scope_candidates": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 13,
+   "violations": 0,
+   "family": "entities",
+   "metadata": {
+    "candidates": 0
+   }
+  },
+  "partition_strength": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 13,
+   "violations": 0,
+   "family": "architecture",
+   "metadata": {
+    "modularity": 0.5165,
+    "cross_partition_coupling": 0.0909,
+    "graph_density": 0.1282,
+    "communities": 4,
+    "interpretation": "structural partition strength; not a correctness measure"
+   }
+  },
+  "flow_structure": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 12,
+   "violations": 0,
+   "family": "architecture",
+   "metadata": {
+    "feedback_loops": [
+     [
+      "pump_housing",
+      "rotating_group"
+     ]
+    ],
+    "is_dag": false
+   }
+  },
+  "flow_reuse": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 9,
+   "violations": 3,
+   "family": "interface",
+   "metadata": {
+    "reused": {
+     "inlet_fluid": [
+      "pump_housing::housing_rotating_group_inlet",
+      "pump_housing::tank_pump_inlet"
+     ],
+     "pressurized_outlet": [
+      "fluid_control_valve::valve_actuator_work",
+      "pump_housing::pump_valve_supply",
+      "pump_housing::rotating_group_housing_outlet"
+     ]
+    },
+    "unused": [
+     "parameter_signals"
+    ]
+   }
+  },
+  "port_fan_out": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 22,
+   "violations": 0,
+   "family": "interface",
+   "metadata": {}
+  }
+ },
+ "not_applicable": {
+  "relationship_resolution": "model has no relationships list",
+  "representation_consistency": "no resolved relationships to compare",
+  "causal_path_coverage": "no oriented boundary inputs and outputs identified",
+  "vocabulary_conformance": "model has no explicit relationships list",
+  "relation_signature_validity": "no resolved relationships have a vocabulary signature",
+  "internal_function_support": "'realization' tasks not built yet: run build_judge_tasks",
+  "behavior_claim_coverage": "'unclaimed_behavior' tasks not built yet: run build_judge_tasks",
+  "internal_transformation_coherence": "'transformation' tasks not built yet: run build_judge_tasks",
+  "statement_distinction": "'overlap' tasks not built yet: run build_judge_tasks",
+  "entity_distinctness": "'entity_identity' tasks not built yet: run build_judge_tasks",
+  "flow_semantic_fit": "'flow_semantics' tasks not built yet: run build_judge_tasks",
+  "role_assignment_coherence": "'scope' tasks not built yet: run build_judge_tasks"
+ },
+ "findings": [
+  {
+   "metric": "boundary_completeness",
+   "ref": "boundary_declared",
+   "kind": "missing_boundary_capability",
+   "severity": "major",
+   "message": "boundary declared"
+  },
+  {
+   "metric": "boundary_completeness",
+   "ref": "input_identified",
+   "kind": "missing_boundary_capability",
+   "severity": "major",
+   "message": "input identified"
+  },
+  {
+   "metric": "boundary_completeness",
+   "ref": "output_identified",
+   "kind": "missing_boundary_capability",
+   "severity": "major",
+   "message": "output identified"
+  },
+  {
+   "metric": "boundary_completeness",
+   "ref": "boundary_exchange_typed",
+   "kind": "missing_boundary_capability",
+   "severity": "major",
+   "message": "boundary exchange typed"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "boundary_inputs_and_outputs",
+   "kind": "competency_question_incomplete",
+   "severity": "major",
+   "message": "answerability 0.00"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "input_to_output_paths",
+   "kind": "competency_question_incomplete",
+   "severity": "major",
+   "message": "answerability 0.00"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "pump_housing",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Pump Housing and Port Plate' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "primary_swashplate",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Primary Swashplate Member' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "tank",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Tank' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "controller",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Controller' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "remote_actuator",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Remote Controlled Actuating Mechanism' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "fluid_control_valve",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Fluid Control Valve' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "fluid_actuator",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Fluid Actuator' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "pressure_sensor_inlet",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Inlet Pressure Sensor' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "pressure_sensor_outlet",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Outlet Pressure Sensor' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "position_sensor",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Primary Member Position Sensor' has no function or action"
+  },
+  {
+   "metric": "end_to_end_traceability",
+   "ref": "REQ_PIVOT_ORIENTATION",
+   "kind": "incomplete_requirement_trace",
+   "severity": "major",
+   "message": "requirement lacks satisfaction and/or verification trace"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "parameter_signals",
+   "kind": "orphan:flow_used",
+   "severity": "major",
+   "message": "flow 'Pressure and position sensor signals' is carried by no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "primary_swashplate",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'Primary Swashplate Member' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "model_profile_completeness",
+   "ref": "input_boundary",
+   "kind": "missing_profile_capability",
+   "severity": "major",
+   "message": "functional profile requires input boundary"
+  },
+  {
+   "metric": "model_profile_completeness",
+   "ref": "output_boundary",
+   "kind": "missing_profile_capability",
+   "severity": "major",
+   "message": "functional profile requires output boundary"
+  },
+  {
+   "metric": "port_direction_naming",
+   "ref": "pressure_sensor_inlet::inlet_pressure_signal",
+   "kind": "direction_contradicts_name",
+   "severity": "major",
+   "message": "'Inlet pressure signal' reads as 'in' but is declared out"
+  },
+  {
+   "metric": "requirement_verification_coverage",
+   "ref": "REQ_PIVOT_ORIENTATION",
+   "kind": "requirement_not_verified",
+   "severity": "major",
+   "message": "requirement has no valid verified trace"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "primary_swashplate",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'Primary Swashplate Member' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "parameter_signals",
+   "kind": "flow_unused",
+   "severity": "minor",
+   "message": "'Pressure and position sensor signals' is not carried by any interface"
+  },
+  {
+   "metric": "provenance_completeness",
+   "ref": "source",
+   "kind": "missing_provenance",
+   "severity": "minor",
+   "message": "model does not record source"
+  },
+  {
+   "metric": "provenance_completeness",
+   "ref": "generator",
+   "kind": "missing_provenance",
+   "severity": "minor",
+   "message": "model does not record generator"
+  },
+  {
+   "metric": "provenance_completeness",
+   "ref": "generator_version",
+   "kind": "missing_provenance",
+   "severity": "minor",
+   "message": "model does not record generator version"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "inlet_fluid",
+   "kind": "flow_reused_across_pairs",
+   "severity": "info",
+   "message": "'Tank fluid to pump inlet' used by ['pump_housing::housing_rotating_group_inlet', 'pump_housing::tank_pump_inlet']"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "pressurized_outlet",
+   "kind": "flow_reused_across_pairs",
+   "severity": "info",
+   "message": "'Pressurized pump delivery' used by ['fluid_control_valve::valve_actuator_work', 'pump_housing::pump_valve_supply', 'pump_housing::rotating_group_housing_outlet']"
+  }
+ ],
+ "metrics": [
+  {
+   "metric_id": "entity_duplication",
+   "version": "0.1.0",
+   "family": "entities",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.8,
+   "checked": 13,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "subsystem_groups": [],
+    "part_groups": 0,
+    "names_with_reference_numerals": 0
+   }
+  },
+  {
+   "metric_id": "statement_duplication",
+   "version": "0.1.0",
+   "family": "semantic_candidates",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.5,
+   "checked": 3,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "threshold": 0.72,
+    "retriever": "tfidf-word+char-v1",
+    "candidate_pairs": []
+   }
+  },
+  {
+   "metric_id": "relationship_resolution",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model has no relationships list",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "representation_consistency",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no resolved relationships to compare",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "statement_form",
+   "version": "0.1.0",
+   "family": "semantic_candidates",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.5,
+   "checked": 3,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "scope_candidates",
+   "version": "0.1.0",
+   "family": "entities",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 13,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "candidates": 0
+   }
+  },
+  {
+   "metric_id": "partition_strength",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "diagnostic",
+   "status": "established",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 13,
+   "evidence": [
+    {
+     "ref": "community_0",
+     "detail": "",
+     "data": {
+      "members": [
+       "actuating_mechanism",
+       "controller",
+       "position_sensor",
+       "pressure_sensor_inlet",
+       "pressure_sensor_outlet",
+       "remote_actuator"
+      ],
+      "density": 0.3333
+     }
+    },
+    {
+     "ref": "community_1",
+     "detail": "",
+     "data": {
+      "members": [
+       "pump_housing",
+       "rotating_group",
+       "secondary_swashplate",
+       "tank"
+      ],
+      "density": 0.5
+     }
+    },
+    {
+     "ref": "community_2",
+     "detail": "",
+     "data": {
+      "members": [
+       "fluid_actuator",
+       "fluid_control_valve"
+      ],
+      "density": 1.0
+     }
+    },
+    {
+     "ref": "community_3",
+     "detail": "",
+     "data": {
+      "members": [
+       "primary_swashplate"
+      ],
+      "density": null
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "modularity": 0.5165,
+    "cross_partition_coupling": 0.0909,
+    "graph_density": 0.1282,
+    "communities": 4,
+    "interpretation": "structural partition strength; not a correctness measure"
+   }
+  },
+  {
+   "metric_id": "flow_structure",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "diagnostic",
+   "status": "established",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 12,
+   "evidence": [
+    {
+     "ref": "actuating_mechanism",
+     "detail": "",
+     "data": {
+      "fan_in": 1,
+      "fan_out": 0
+     }
+    },
+    {
+     "ref": "controller",
+     "detail": "",
+     "data": {
+      "fan_in": 3,
+      "fan_out": 1
+     }
+    },
+    {
+     "ref": "fluid_actuator",
+     "detail": "",
+     "data": {
+      "fan_in": 1,
+      "fan_out": 0
+     }
+    },
+    {
+     "ref": "fluid_control_valve",
+     "detail": "",
+     "data": {
+      "fan_in": 1,
+      "fan_out": 1
+     }
+    },
+    {
+     "ref": "position_sensor",
+     "detail": "",
+     "data": {
+      "fan_in": 0,
+      "fan_out": 1
+     }
+    },
+    {
+     "ref": "pressure_sensor_inlet",
+     "detail": "",
+     "data": {
+      "fan_in": 0,
+      "fan_out": 1
+     }
+    },
+    {
+     "ref": "pressure_sensor_outlet",
+     "detail": "",
+     "data": {
+      "fan_in": 0,
+      "fan_out": 1
+     }
+    },
+    {
+     "ref": "pump_housing",
+     "detail": "",
+     "data": {
+      "fan_in": 2,
+      "fan_out": 2
+     }
+    },
+    {
+     "ref": "remote_actuator",
+     "detail": "",
+     "data": {
+      "fan_in": 1,
+      "fan_out": 1
+     }
+    },
+    {
+     "ref": "rotating_group",
+     "detail": "",
+     "data": {
+      "fan_in": 1,
+      "fan_out": 2
+     }
+    },
+    {
+     "ref": "secondary_swashplate",
+     "detail": "",
+     "data": {
+      "fan_in": 1,
+      "fan_out": 0
+     }
+    },
+    {
+     "ref": "tank",
+     "detail": "",
+     "data": {
+      "fan_in": 0,
+      "fan_out": 1
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "feedback_loops": [
+     [
+      "pump_housing",
+      "rotating_group"
+     ]
+    ],
+    "is_dag": false
+   }
+  },
+  {
+   "metric_id": "explanatory_closure",
+   "version": "0.1.0",
+   "family": "closure",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.9574468085106383,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.7,
+   "checked": 47,
+   "evidence": [
+    {
+     "ref": "action_owned_or_allocated",
+     "detail": "3/3 supported",
+     "data": {
+      "checked": 3,
+      "supported": 3,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "flow_used",
+     "detail": "8/9 supported",
+     "data": {
+      "checked": 9,
+      "supported": 8,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "port_used",
+     "detail": "22/22 supported",
+     "data": {
+      "checked": 22,
+      "supported": 22,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "subsystem_participates",
+     "detail": "12/13 supported",
+     "data": {
+      "checked": 13,
+      "supported": 12,
+      "weight": 1.0
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "parameter_signals",
+     "kind": "orphan:flow_used",
+     "severity": "major",
+     "message": "flow 'Pressure and position sensor signals' is carried by no interface"
+    },
+    {
+     "ref": "primary_swashplate",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'Primary Swashplate Member' has no interface, relationship, function or behaviour"
+    }
+   ],
+   "metadata": {
+    "support_threshold": 0.12,
+    "retriever": "tfidf-word+char-v1",
+    "function_classes": {}
+   }
+  },
+  {
+   "metric_id": "reference_integrity",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 47,
+   "evidence": [
+    {
+     "ref": "action.owner",
+     "detail": "3/3 resolved",
+     "data": {
+      "checked": 3,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.flow_ref",
+     "detail": "11/11 resolved",
+     "data": {
+      "checked": 11,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.mating_subsystem",
+     "detail": "11/11 resolved",
+     "data": {
+      "checked": 11,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.port_mate",
+     "detail": "11/11 resolved",
+     "data": {
+      "checked": 11,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.port_this",
+     "detail": "11/11 resolved",
+     "data": {
+      "checked": 11,
+      "violations": 0
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "critical_violations": 0
+   }
+  },
+  {
+   "metric_id": "identifier_uniqueness",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 58,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "interface_direction",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 11,
+   "evidence": [
+    {
+     "ref": "orientation_counts",
+     "detail": "",
+     "data": {
+      "forward": 11
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "direction_indeterminate_share": 0.0
+   }
+  },
+  {
+   "metric_id": "flow_type_consistency",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 33,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_reuse",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 9,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "inlet_fluid",
+     "kind": "flow_reused_across_pairs",
+     "severity": "info",
+     "message": "'Tank fluid to pump inlet' used by ['pump_housing::housing_rotating_group_inlet', 'pump_housing::tank_pump_inlet']"
+    },
+    {
+     "ref": "pressurized_outlet",
+     "kind": "flow_reused_across_pairs",
+     "severity": "info",
+     "message": "'Pressurized pump delivery' used by ['fluid_control_valve::valve_actuator_work', 'pump_housing::pump_valve_supply', 'pump_housing::rotating_group_housing_outlet']"
+    },
+    {
+     "ref": "parameter_signals",
+     "kind": "flow_unused",
+     "severity": "minor",
+     "message": "'Pressure and position sensor signals' is not carried by any interface"
+    }
+   ],
+   "metadata": {
+    "reused": {
+     "inlet_fluid": [
+      "pump_housing::housing_rotating_group_inlet",
+      "pump_housing::tank_pump_inlet"
+     ],
+     "pressurized_outlet": [
+      "fluid_control_valve::valve_actuator_work",
+      "pump_housing::pump_valve_supply",
+      "pump_housing::rotating_group_housing_outlet"
+     ]
+    },
+    "unused": [
+     "parameter_signals"
+    ]
+   }
+  },
+  {
+   "metric_id": "port_fan_out",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 22,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "port_direction_naming",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 0.9375,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.7,
+   "checked": 16,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "pressure_sensor_inlet::inlet_pressure_signal",
+     "kind": "direction_contradicts_name",
+     "severity": "major",
+     "message": "'Inlet pressure signal' reads as 'in' but is declared out"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "causal_path_coverage",
+   "version": "0.1.0",
+   "family": "topology",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no oriented boundary inputs and outputs identified",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "boundary_inputs": [],
+    "boundary_outputs": [],
+    "inout_boundaries": []
+   }
+  },
+  {
+   "metric_id": "connectivity",
+   "version": "0.1.0",
+   "family": "topology",
+   "kind": "score",
+   "status": "established",
+   "score": 0.46153846153846156,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 13,
+   "evidence": [
+    {
+     "ref": "component_0",
+     "detail": "",
+     "data": {
+      "size": 6,
+      "members": [
+       "fluid_actuator",
+       "fluid_control_valve",
+       "pump_housing",
+       "rotating_group",
+       "secondary_swashplate",
+       "tank"
+      ]
+     }
+    },
+    {
+     "ref": "component_1",
+     "detail": "",
+     "data": {
+      "size": 6,
+      "members": [
+       "actuating_mechanism",
+       "controller",
+       "position_sensor",
+       "pressure_sensor_inlet",
+       "pressure_sensor_outlet",
+       "remote_actuator"
+      ]
+     }
+    },
+    {
+     "ref": "component_2",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "primary_swashplate"
+      ]
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "primary_swashplate",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'Primary Swashplate Member' has no interface, relationship or shared action"
+    }
+   ],
+   "metadata": {
+    "components": 3,
+    "excluded_structural": []
+   }
+  },
+  {
+   "metric_id": "vocabulary_conformance",
+   "version": "0.1.0",
+   "family": "conformance",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model has no explicit relationships list",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "relation_signature_validity",
+   "version": "0.1.0",
+   "family": "conformance",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no resolved relationships have a vocabulary signature",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "function_allocation_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 3,
+   "evidence": [
+    {
+     "ref": "allocation",
+     "detail": "3/3 allocated",
+     "data": {}
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "component_purpose_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.23076923076923078,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 13,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "pump_housing",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Pump Housing and Port Plate' has no function or action"
+    },
+    {
+     "ref": "primary_swashplate",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Primary Swashplate Member' has no function or action"
+    },
+    {
+     "ref": "tank",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Tank' has no function or action"
+    },
+    {
+     "ref": "controller",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Controller' has no function or action"
+    },
+    {
+     "ref": "remote_actuator",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Remote Controlled Actuating Mechanism' has no function or action"
+    },
+    {
+     "ref": "fluid_control_valve",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Fluid Control Valve' has no function or action"
+    },
+    {
+     "ref": "fluid_actuator",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Fluid Actuator' has no function or action"
+    },
+    {
+     "ref": "pressure_sensor_inlet",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Inlet Pressure Sensor' has no function or action"
+    },
+    {
+     "ref": "pressure_sensor_outlet",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Outlet Pressure Sensor' has no function or action"
+    },
+    {
+     "ref": "position_sensor",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Primary Member Position Sensor' has no function or action"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "boundary_completeness",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.6,
+   "checked": 4,
+   "evidence": [
+    {
+     "ref": "boundary_declared",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "input_identified",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "output_identified",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "boundary_exchange_typed",
+     "detail": "missing",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "boundary_declared",
+     "kind": "missing_boundary_capability",
+     "severity": "major",
+     "message": "boundary declared"
+    },
+    {
+     "ref": "input_identified",
+     "kind": "missing_boundary_capability",
+     "severity": "major",
+     "message": "input identified"
+    },
+    {
+     "ref": "output_identified",
+     "kind": "missing_boundary_capability",
+     "severity": "major",
+     "message": "output identified"
+    },
+    {
+     "ref": "boundary_exchange_typed",
+     "kind": "missing_boundary_capability",
+     "severity": "major",
+     "message": "boundary exchange typed"
+    }
+   ],
+   "metadata": {
+    "external": [],
+    "crossings": [],
+    "inputs": [],
+    "outputs": [],
+    "typed": []
+   }
+  },
+  {
+   "metric_id": "requirement_satisfaction_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 1,
+   "evidence": [
+    {
+     "ref": "REQ_PIVOT_ORIENTATION",
+     "detail": "",
+     "data": {
+      "id": "REQ_PIVOT_ORIENTATION",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "primary_swashplate",
+       "secondary_swashplate"
+      ],
+      "verified_by": []
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "requirement_verification_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": 0.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 1,
+   "evidence": [
+    {
+     "ref": "REQ_PIVOT_ORIENTATION",
+     "detail": "",
+     "data": {
+      "id": "REQ_PIVOT_ORIENTATION",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "primary_swashplate",
+       "secondary_swashplate"
+      ],
+      "verified_by": []
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "REQ_PIVOT_ORIENTATION",
+     "kind": "requirement_not_verified",
+     "severity": "major",
+     "message": "requirement has no valid verified trace"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "end_to_end_traceability",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 1,
+   "evidence": [
+    {
+     "ref": "REQ_PIVOT_ORIENTATION",
+     "detail": "",
+     "data": {
+      "id": "REQ_PIVOT_ORIENTATION",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "primary_swashplate",
+       "secondary_swashplate"
+      ],
+      "verified_by": []
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "REQ_PIVOT_ORIENTATION",
+     "kind": "incomplete_requirement_trace",
+     "severity": "major",
+     "message": "requirement lacks satisfaction and/or verification trace"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "provenance_completeness",
+   "version": "0.1.0",
+   "family": "provenance",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.25,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 4,
+   "evidence": [
+    {
+     "ref": "source",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "generator",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "generator_version",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "schema_version",
+     "detail": "present",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "source",
+     "kind": "missing_provenance",
+     "severity": "minor",
+     "message": "model does not record source"
+    },
+    {
+     "ref": "generator",
+     "kind": "missing_provenance",
+     "severity": "minor",
+     "message": "model does not record generator"
+    },
+    {
+     "ref": "generator_version",
+     "kind": "missing_provenance",
+     "severity": "minor",
+     "message": "model does not record generator version"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "model_profile_completeness",
+   "version": "0.1.0",
+   "family": "readiness",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.8,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 10,
+   "evidence": [
+    {
+     "ref": "system_identity",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "subsystems",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "structure",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "functions_or_actions",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "function_allocation",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "ports",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "interfaces",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "item_flows",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "input_boundary",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "output_boundary",
+     "detail": "missing",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "input_boundary",
+     "kind": "missing_profile_capability",
+     "severity": "major",
+     "message": "functional profile requires input boundary"
+    },
+    {
+     "ref": "output_boundary",
+     "kind": "missing_profile_capability",
+     "severity": "major",
+     "message": "functional profile requires output boundary"
+    }
+   ],
+   "metadata": {
+    "profile": "functional"
+   }
+  },
+  {
+   "metric_id": "competency_question_answerability",
+   "version": "0.1.0",
+   "family": "usability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.6666666666666666,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 6,
+   "evidence": [
+    {
+     "ref": "component_inventory",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "function_allocation_map",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "resolved_interface_map",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "typed_flow_map",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "boundary_inputs_and_outputs",
+     "detail": "",
+     "data": {
+      "answerability": 0.0
+     }
+    },
+    {
+     "ref": "input_to_output_paths",
+     "detail": "",
+     "data": {
+      "answerability": 0.0
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "boundary_inputs_and_outputs",
+     "kind": "competency_question_incomplete",
+     "severity": "major",
+     "message": "answerability 0.00"
+    },
+    {
+     "ref": "input_to_output_paths",
+     "kind": "competency_question_incomplete",
+     "severity": "major",
+     "message": "answerability 0.00"
+    }
+   ],
+   "metadata": {
+    "questions": {
+     "component_inventory": 1.0,
+     "function_allocation_map": 1.0,
+     "resolved_interface_map": 1.0,
+     "typed_flow_map": 1.0,
+     "boundary_inputs_and_outputs": 0.0,
+     "input_to_output_paths": 0.0
+    },
+    "profile": "functional"
+   }
+  },
+  {
+   "metric_id": "internal_function_support",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'realization' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "behavior_claim_coverage",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'unclaimed_behavior' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "internal_transformation_coherence",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'transformation' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "statement_distinction",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'overlap' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "entity_distinctness",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'entity_identity' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_semantic_fit",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'flow_semantics' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "role_assignment_coherence",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'scope' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  }
+ ],
+ "manifest": {
+  "framework_version": "0.2.1",
+  "git_sha": null,
+  "python": "3.13.5",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "packages": {
+   "pydantic": "2.13.5",
+   "networkx": "3.7",
+   "numpy": "2.5.3",
+   "scipy": "1.18.1",
+   "scikit-learn": "1.9.1",
+   "mcp": "2.2.0"
+  },
+  "input_path": "C:\\Users\\Eladio\\Downloads\\functional-quality\\inputs\\US6655255B2\\agents\\model.sjs.json",
+  "input_sha256": "241520d7d3e86e79f44fa90326317d1372008e4a1f2226de4aa2a90e6281d023",
+  "model_key": "us6655255b2-241520d7d3",
+  "metric_versions": {
+   "entity_duplication": "0.1.0",
+   "statement_duplication": "0.1.0",
+   "relationship_resolution": "0.1.0",
+   "representation_consistency": "0.1.0",
+   "statement_form": "0.1.0",
+   "scope_candidates": "0.1.0",
+   "partition_strength": "0.1.0",
+   "flow_structure": "0.1.0",
+   "explanatory_closure": "0.1.0",
+   "reference_integrity": "0.1.0",
+   "identifier_uniqueness": "0.1.0",
+   "interface_direction": "0.1.0",
+   "flow_type_consistency": "0.1.0",
+   "flow_reuse": "0.1.0",
+   "port_fan_out": "0.1.0",
+   "port_direction_naming": "0.1.0",
+   "causal_path_coverage": "0.1.0",
+   "connectivity": "0.1.0",
+   "vocabulary_conformance": "0.1.0",
+   "relation_signature_validity": "0.1.0",
+   "function_allocation_coverage": "0.1.0",
+   "component_purpose_coverage": "0.1.0",
+   "boundary_completeness": "0.1.0",
+   "requirement_satisfaction_coverage": "0.1.0",
+   "requirement_verification_coverage": "0.1.0",
+   "end_to_end_traceability": "0.1.0",
+   "provenance_completeness": "0.1.0",
+   "model_profile_completeness": "0.1.0",
+   "competency_question_answerability": "0.1.0",
+   "internal_function_support": "0.1.0",
+   "behavior_claim_coverage": "0.1.0",
+   "internal_transformation_coherence": "0.1.0",
+   "statement_distinction": "0.1.0",
+   "entity_distinctness": "0.1.0",
+   "flow_semantic_fit": "0.1.0",
+   "role_assignment_coherence": "0.1.0"
+  },
+  "retriever": "tfidf-word+char-v1",
+  "config": {
+   "results_dir": "results",
+   "closure.support_threshold": 0.12,
+   "duplication.similarity_threshold": 0.72,
+   "architecture.min_nodes": 6,
+   "architecture.min_edges": 5,
+   "tasks.max_per_kind": 200,
+   "mbse.profile": "functional",
+   "mbse.vocabulary_path": "sjs.kg.schema.json"
+  },
+  "config_sha256": "db444ef9e4ce9b88",
+  "judge_prompt_versions": {
+   "realization": "0e5a5e8444aa",
+   "unclaimed_behavior": "03be253ac935",
+   "transformation": "ec4f9d66cea9",
+   "overlap": "a1c3966dabf7",
+   "entity_identity": "8683abb23ed7",
+   "flow_semantics": "4bed83f6bc0d",
+   "scope": "dd249779cad2"
+  },
+  "judges": [],
+  "mutation": null,
+  "timestamp": "2026-10-01T15:30:09+00:00"
+ },
+ "errors": []
+}
