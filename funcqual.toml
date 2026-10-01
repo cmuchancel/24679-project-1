@@ -1,0 +1,20 @@
+# funcqual evaluation profile. Every value is recorded in each report's manifest.
+results_dir = "results"
+
+[closure]
+support_threshold = 0.12
+
+[duplication]
+similarity_threshold = 0.72
+
+[architecture]
+min_nodes = 6
+min_edges = 5
+
+[tasks]
+max_per_kind = 200
+
+[mbse]
+# structural | functional | behavioral | traceability
+profile = "functional"
+vocabulary_path = "sjs.kg.schema.json"

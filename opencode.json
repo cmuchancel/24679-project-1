@@ -1,0 +1,25 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "funcqual": {
+      "type": "local",
+      "command": [
+        "cmd",
+        "/c",
+        "scripts\\run_mcp.cmd"
+      ],
+      "cwd": ".",
+      "enabled": true,
+      "timeout": 60000,
+      "environment": {
+        "FUNCQUAL_RESULTS_DIR": "results",
+        "FUNCQUAL_EMBEDDER": "tfidf",
+        "PYTHONUNBUFFERED": "1",
+        "PYTHONUTF8": "1"
+      }
+    }
+  },
+  "permission": {
+    "funcqual_*": "allow"
+  }
+}
