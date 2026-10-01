@@ -1,0 +1,1780 @@
+{
+ "status": "EVALUATED",
+ "gates": [
+  {
+   "gate": "schema_valid",
+   "passed": true
+  },
+  {
+   "gate": "critical_references_resolve",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "identifiers_unique",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "relationship_vocabulary_conforms",
+   "passed": true,
+   "failures": 0
+  },
+  {
+   "gate": "relationship_signatures_valid",
+   "passed": true,
+   "failures": 0
+  }
+ ],
+ "summary": {
+  "model_key": "us8425386b2-89ae9e040c",
+  "system_id": "US8425386B2",
+  "system_name": "Machine-tool Tool Changer",
+  "dialect": "interface_rich",
+  "counts": {
+   "subsystems": 10,
+   "functions": 0,
+   "ports": 15,
+   "flows": 8,
+   "interfaces": 7,
+   "actions": 3,
+   "parts": 4,
+   "relationships": 0,
+   "requirements": 1
+  },
+  "roles": {
+   "structural": 1,
+   "internal": 6,
+   "external": 3
+  },
+  "ingest_notes": []
+ },
+ "profile": {
+  "entities": {
+   "entity_duplication": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.8,
+    "checked": 14,
+    "violations": 0,
+    "status": "heuristic"
+   }
+  },
+  "semantic_candidates": {
+   "statement_duplication": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.5,
+    "checked": 3,
+    "violations": 0,
+    "status": "heuristic"
+   },
+   "statement_form": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.5,
+    "checked": 3,
+    "violations": 0,
+    "status": "heuristic"
+   }
+  },
+  "closure": {
+   "explanatory_closure": {
+    "score": 0.8732,
+    "applicable": true,
+    "confidence": 0.7,
+    "checked": 36,
+    "violations": 5,
+    "status": "proposed"
+   }
+  },
+  "integrity": {
+   "reference_integrity": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 31,
+    "violations": 0,
+    "status": "established"
+   },
+   "identifier_uniqueness": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 47,
+    "violations": 0,
+    "status": "established"
+   }
+  },
+  "interface": {
+   "interface_direction": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 7,
+    "violations": 0,
+    "status": "established"
+   },
+   "flow_type_consistency": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 21,
+    "violations": 0,
+    "status": "established"
+   },
+   "port_direction_naming": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 0.7,
+    "checked": 8,
+    "violations": 0,
+    "status": "heuristic"
+   }
+  },
+  "topology": {
+   "causal_path_coverage": {
+    "score": 0.0,
+    "applicable": true,
+    "confidence": 0.25,
+    "checked": 1,
+    "violations": 1,
+    "mode": "relaxed",
+    "status": "proposed"
+   },
+   "connectivity": {
+    "score": 0.8889,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 9,
+    "violations": 1,
+    "status": "established"
+   }
+  },
+  "traceability": {
+   "function_allocation_coverage": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 3,
+    "violations": 0,
+    "status": "established"
+   },
+   "component_purpose_coverage": {
+    "score": 0.3333,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 6,
+    "violations": 4,
+    "status": "proposed"
+   },
+   "requirement_satisfaction_coverage": {
+    "score": 1.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 1,
+    "violations": 0,
+    "status": "established"
+   },
+   "requirement_verification_coverage": {
+    "score": 0.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 1,
+    "violations": 1,
+    "status": "established"
+   },
+   "end_to_end_traceability": {
+    "score": 0.0,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 1,
+    "violations": 1,
+    "status": "proposed"
+   }
+  },
+  "architecture": {
+   "boundary_completeness": {
+    "score": 0.75,
+    "applicable": true,
+    "confidence": 0.75,
+    "checked": 4,
+    "violations": 1,
+    "status": "proposed"
+   }
+  },
+  "provenance": {
+   "provenance_completeness": {
+    "score": 0.25,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 4,
+    "violations": 3,
+    "status": "proposed"
+   }
+  },
+  "readiness": {
+   "model_profile_completeness": {
+    "score": 0.9,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 10,
+    "violations": 1,
+    "status": "proposed"
+   }
+  },
+  "usability": {
+   "competency_question_answerability": {
+    "score": 0.6667,
+    "applicable": true,
+    "confidence": 1.0,
+    "checked": 6,
+    "violations": 2,
+    "status": "proposed"
+   }
+  }
+ },
+ "diagnostics": {
+  "scope_candidates": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 10,
+   "violations": 0,
+   "family": "entities",
+   "metadata": {
+    "candidates": 4
+   }
+  },
+  "partition_strength": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 6,
+   "violations": 0,
+   "family": "architecture",
+   "metadata": {
+    "modularity": 0.26,
+    "cross_partition_coupling": 0.4,
+    "graph_density": 0.3333,
+    "communities": 3,
+    "interpretation": "structural partition strength; not a correctness measure"
+   }
+  },
+  "flow_structure": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 6,
+   "violations": 0,
+   "family": "architecture",
+   "metadata": {
+    "feedback_loops": [],
+    "is_dag": true
+   }
+  },
+  "flow_reuse": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 8,
+   "violations": 3,
+   "family": "interface",
+   "metadata": {
+    "reused": {
+     "machining_tool_exchange": [
+      "tool_gripper::gripper_magazine_tool_exchange",
+      "tool_gripper::gripper_working_unit_tool_exchange"
+     ]
+    },
+    "unused": [
+     "cam_follower_lift",
+     "column_lift_motion"
+    ]
+   }
+  },
+  "port_fan_out": {
+   "score": null,
+   "applicable": true,
+   "confidence": 1.0,
+   "checked": 15,
+   "violations": 0,
+   "family": "interface",
+   "metadata": {}
+  }
+ },
+ "not_applicable": {
+  "relationship_resolution": "model has no relationships list",
+  "representation_consistency": "no resolved relationships to compare",
+  "vocabulary_conformance": "model has no explicit relationships list",
+  "relation_signature_validity": "no resolved relationships have a vocabulary signature",
+  "internal_function_support": "'realization' tasks not built yet: run build_judge_tasks",
+  "behavior_claim_coverage": "'unclaimed_behavior' tasks not built yet: run build_judge_tasks",
+  "internal_transformation_coherence": "'transformation' tasks not built yet: run build_judge_tasks",
+  "statement_distinction": "'overlap' tasks not built yet: run build_judge_tasks",
+  "entity_distinctness": "'entity_identity' tasks not built yet: run build_judge_tasks",
+  "flow_semantic_fit": "'flow_semantics' tasks not built yet: run build_judge_tasks",
+  "role_assignment_coherence": "'scope' tasks not built yet: run build_judge_tasks"
+ },
+ "findings": [
+  {
+   "metric": "boundary_completeness",
+   "ref": "input_identified",
+   "kind": "missing_boundary_capability",
+   "severity": "major",
+   "message": "input identified"
+  },
+  {
+   "metric": "causal_path_coverage",
+   "ref": "unconnected-port:supporting_column::column_lift_out",
+   "kind": "unreachable_output",
+   "severity": "major",
+   "message": "no (relaxed) path from any boundary input to 'supporting_column'"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "boundary_inputs_and_outputs",
+   "kind": "competency_question_incomplete",
+   "severity": "major",
+   "message": "answerability 0.00"
+  },
+  {
+   "metric": "competency_question_answerability",
+   "ref": "input_to_output_paths",
+   "kind": "competency_question_incomplete",
+   "severity": "major",
+   "message": "answerability 0.00"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "maltese_wheel",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Maltese wheel' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "intermediate_gearing",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Intermediate gear arrangement' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "supporting_column",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Supporting column and guide' has no function or action"
+  },
+  {
+   "metric": "component_purpose_coverage",
+   "ref": "tool_gripper",
+   "kind": "component_without_purpose",
+   "severity": "major",
+   "message": "'Tool gripper' has no function or action"
+  },
+  {
+   "metric": "end_to_end_traceability",
+   "ref": "claim1_tool_changer_architecture",
+   "kind": "incomplete_requirement_trace",
+   "severity": "major",
+   "message": "requirement lacks satisfaction and/or verification trace"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "supporting_column::column_lift_out",
+   "kind": "orphan:port_used",
+   "severity": "major",
+   "message": "port 'Guided column lift motion' is in no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "cam_follower_lift",
+   "kind": "orphan:flow_used",
+   "severity": "major",
+   "message": "flow 'Cam-follower lift motion' is carried by no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "column_lift_motion",
+   "kind": "orphan:flow_used",
+   "severity": "major",
+   "message": "flow 'Guided column lift motion' is carried by no interface"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "foundation",
+   "kind": "orphan:subsystem_participates",
+   "severity": "major",
+   "message": "'Stationary foundation' has no interface, relationship, function or behaviour"
+  },
+  {
+   "metric": "model_profile_completeness",
+   "ref": "input_boundary",
+   "kind": "missing_profile_capability",
+   "severity": "major",
+   "message": "functional profile requires input boundary"
+  },
+  {
+   "metric": "requirement_verification_coverage",
+   "ref": "claim1_tool_changer_architecture",
+   "kind": "requirement_not_verified",
+   "severity": "major",
+   "message": "requirement has no valid verified trace"
+  },
+  {
+   "metric": "connectivity",
+   "ref": "foundation",
+   "kind": "isolated_subsystem",
+   "severity": "minor",
+   "message": "'Stationary foundation' has no interface, relationship or shared action"
+  },
+  {
+   "metric": "explanatory_closure",
+   "ref": "housing",
+   "kind": "orphan:structural_subsystem_linked",
+   "severity": "minor",
+   "message": "structural 'Tool-changer housing' has no declared support/containment relation"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "cam_follower_lift",
+   "kind": "flow_unused",
+   "severity": "minor",
+   "message": "'Cam-follower lift motion' is not carried by any interface"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "column_lift_motion",
+   "kind": "flow_unused",
+   "severity": "minor",
+   "message": "'Guided column lift motion' is not carried by any interface"
+  },
+  {
+   "metric": "provenance_completeness",
+   "ref": "source",
+   "kind": "missing_provenance",
+   "severity": "minor",
+   "message": "model does not record source"
+  },
+  {
+   "metric": "provenance_completeness",
+   "ref": "generator",
+   "kind": "missing_provenance",
+   "severity": "minor",
+   "message": "model does not record generator"
+  },
+  {
+   "metric": "provenance_completeness",
+   "ref": "generator_version",
+   "kind": "missing_provenance",
+   "severity": "minor",
+   "message": "model does not record generator version"
+  },
+  {
+   "metric": "flow_reuse",
+   "ref": "machining_tool_exchange",
+   "kind": "flow_reused_across_pairs",
+   "severity": "info",
+   "message": "'Machining tool exchange' used by ['tool_gripper::gripper_magazine_tool_exchange', 'tool_gripper::gripper_working_unit_tool_exchange']"
+  }
+ ],
+ "metrics": [
+  {
+   "metric_id": "entity_duplication",
+   "version": "0.1.0",
+   "family": "entities",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.8,
+   "checked": 14,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "subsystem_groups": [],
+    "part_groups": 0,
+    "names_with_reference_numerals": 0
+   }
+  },
+  {
+   "metric_id": "statement_duplication",
+   "version": "0.1.0",
+   "family": "semantic_candidates",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.5,
+   "checked": 3,
+   "evidence": [],
+   "violations": [],
+   "metadata": {
+    "threshold": 0.72,
+    "retriever": "tfidf-word+char-v1",
+    "candidate_pairs": []
+   }
+  },
+  {
+   "metric_id": "relationship_resolution",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model has no relationships list",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "representation_consistency",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no resolved relationships to compare",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "statement_form",
+   "version": "0.1.0",
+   "family": "semantic_candidates",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.5,
+   "checked": 3,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "scope_candidates",
+   "version": "0.1.0",
+   "family": "entities",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 10,
+   "evidence": [
+    {
+     "ref": "housing",
+     "detail": "inferred role structural: no ports/functions/interfaces + structural keywords",
+     "data": {
+      "name": "Tool-changer housing",
+      "confidence": 0.7
+     }
+    },
+    {
+     "ref": "machine_working_unit",
+     "detail": "inferred role external: external/context keywords",
+     "data": {
+      "name": "Machine working unit",
+      "confidence": 0.75
+     }
+    },
+    {
+     "ref": "tool_supply",
+     "detail": "inferred role external: external/context keywords",
+     "data": {
+      "name": "Tool magazine",
+      "confidence": 0.75
+     }
+    },
+    {
+     "ref": "foundation",
+     "detail": "inferred role external: external/context keywords",
+     "data": {
+      "name": "Stationary foundation",
+      "confidence": 0.75
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "candidates": 4
+   }
+  },
+  {
+   "metric_id": "partition_strength",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "diagnostic",
+   "status": "established",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 6,
+   "evidence": [
+    {
+     "ref": "community_0",
+     "detail": "",
+     "data": {
+      "members": [
+       "intermediate_gearing",
+       "maltese_wheel"
+      ],
+      "density": 1.0
+     }
+    },
+    {
+     "ref": "community_1",
+     "detail": "",
+     "data": {
+      "members": [
+       "cam_barrel",
+       "motor"
+      ],
+      "density": 1.0
+     }
+    },
+    {
+     "ref": "community_2",
+     "detail": "",
+     "data": {
+      "members": [
+       "supporting_column",
+       "tool_gripper"
+      ],
+      "density": 1.0
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "modularity": 0.26,
+    "cross_partition_coupling": 0.4,
+    "graph_density": 0.3333,
+    "communities": 3,
+    "interpretation": "structural partition strength; not a correctness measure"
+   }
+  },
+  {
+   "metric_id": "flow_structure",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "diagnostic",
+   "status": "established",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 6,
+   "evidence": [
+    {
+     "ref": "cam_barrel",
+     "detail": "",
+     "data": {
+      "fan_in": 1,
+      "fan_out": 1
+     }
+    },
+    {
+     "ref": "intermediate_gearing",
+     "detail": "",
+     "data": {
+      "fan_in": 1,
+      "fan_out": 1
+     }
+    },
+    {
+     "ref": "maltese_wheel",
+     "detail": "",
+     "data": {
+      "fan_in": 1,
+      "fan_out": 1
+     }
+    },
+    {
+     "ref": "motor",
+     "detail": "",
+     "data": {
+      "fan_in": 0,
+      "fan_out": 1
+     }
+    },
+    {
+     "ref": "supporting_column",
+     "detail": "",
+     "data": {
+      "fan_in": 1,
+      "fan_out": 1
+     }
+    },
+    {
+     "ref": "tool_gripper",
+     "detail": "",
+     "data": {
+      "fan_in": 1,
+      "fan_out": 0
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "feedback_loops": [],
+    "is_dag": true
+   }
+  },
+  {
+   "metric_id": "explanatory_closure",
+   "version": "0.1.0",
+   "family": "closure",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.8732394366197183,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.7,
+   "checked": 36,
+   "evidence": [
+    {
+     "ref": "action_owned_or_allocated",
+     "detail": "3/3 supported",
+     "data": {
+      "checked": 3,
+      "supported": 3,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "flow_used",
+     "detail": "6/8 supported",
+     "data": {
+      "checked": 8,
+      "supported": 6,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "port_used",
+     "detail": "14/15 supported",
+     "data": {
+      "checked": 15,
+      "supported": 14,
+      "weight": 1.0
+     }
+    },
+    {
+     "ref": "structural_subsystem_linked",
+     "detail": "0/1 supported",
+     "data": {
+      "checked": 1,
+      "supported": 0,
+      "weight": 0.5
+     }
+    },
+    {
+     "ref": "subsystem_participates",
+     "detail": "8/9 supported",
+     "data": {
+      "checked": 9,
+      "supported": 8,
+      "weight": 1.0
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "supporting_column::column_lift_out",
+     "kind": "orphan:port_used",
+     "severity": "major",
+     "message": "port 'Guided column lift motion' is in no interface"
+    },
+    {
+     "ref": "cam_follower_lift",
+     "kind": "orphan:flow_used",
+     "severity": "major",
+     "message": "flow 'Cam-follower lift motion' is carried by no interface"
+    },
+    {
+     "ref": "column_lift_motion",
+     "kind": "orphan:flow_used",
+     "severity": "major",
+     "message": "flow 'Guided column lift motion' is carried by no interface"
+    },
+    {
+     "ref": "housing",
+     "kind": "orphan:structural_subsystem_linked",
+     "severity": "minor",
+     "message": "structural 'Tool-changer housing' has no declared support/containment relation"
+    },
+    {
+     "ref": "foundation",
+     "kind": "orphan:subsystem_participates",
+     "severity": "major",
+     "message": "'Stationary foundation' has no interface, relationship, function or behaviour"
+    }
+   ],
+   "metadata": {
+    "support_threshold": 0.12,
+    "retriever": "tfidf-word+char-v1",
+    "function_classes": {}
+   }
+  },
+  {
+   "metric_id": "reference_integrity",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 31,
+   "evidence": [
+    {
+     "ref": "action.owner",
+     "detail": "3/3 resolved",
+     "data": {
+      "checked": 3,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.flow_ref",
+     "detail": "7/7 resolved",
+     "data": {
+      "checked": 7,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.mating_subsystem",
+     "detail": "7/7 resolved",
+     "data": {
+      "checked": 7,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.port_mate",
+     "detail": "7/7 resolved",
+     "data": {
+      "checked": 7,
+      "violations": 0
+     }
+    },
+    {
+     "ref": "interface.port_this",
+     "detail": "7/7 resolved",
+     "data": {
+      "checked": 7,
+      "violations": 0
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "critical_violations": 0
+   }
+  },
+  {
+   "metric_id": "identifier_uniqueness",
+   "version": "0.1.0",
+   "family": "integrity",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 47,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "interface_direction",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 7,
+   "evidence": [
+    {
+     "ref": "orientation_counts",
+     "detail": "",
+     "data": {
+      "forward": 5,
+      "bidirectional": 2
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {
+    "direction_indeterminate_share": 0.2857
+   }
+  },
+  {
+   "metric_id": "flow_type_consistency",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 21,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_reuse",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 8,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "machining_tool_exchange",
+     "kind": "flow_reused_across_pairs",
+     "severity": "info",
+     "message": "'Machining tool exchange' used by ['tool_gripper::gripper_magazine_tool_exchange', 'tool_gripper::gripper_working_unit_tool_exchange']"
+    },
+    {
+     "ref": "cam_follower_lift",
+     "kind": "flow_unused",
+     "severity": "minor",
+     "message": "'Cam-follower lift motion' is not carried by any interface"
+    },
+    {
+     "ref": "column_lift_motion",
+     "kind": "flow_unused",
+     "severity": "minor",
+     "message": "'Guided column lift motion' is not carried by any interface"
+    }
+   ],
+   "metadata": {
+    "reused": {
+     "machining_tool_exchange": [
+      "tool_gripper::gripper_magazine_tool_exchange",
+      "tool_gripper::gripper_working_unit_tool_exchange"
+     ]
+    },
+    "unused": [
+     "cam_follower_lift",
+     "column_lift_motion"
+    ]
+   }
+  },
+  {
+   "metric_id": "port_fan_out",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "diagnostic",
+   "status": "heuristic",
+   "score": null,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 15,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "port_direction_naming",
+   "version": "0.1.0",
+   "family": "interface",
+   "kind": "score",
+   "status": "heuristic",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.7,
+   "checked": 8,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "causal_path_coverage",
+   "version": "0.1.0",
+   "family": "topology",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.25,
+   "checked": 1,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "unconnected-port:supporting_column::column_lift_out",
+     "kind": "unreachable_output",
+     "severity": "major",
+     "message": "no (relaxed) path from any boundary input to 'supporting_column'"
+    }
+   ],
+   "metadata": {
+    "mode": "relaxed",
+    "granularity": "subsystem",
+    "boundary_inputs": [
+     "assumed-input:tool_gripper::gripper_magazine_tool_exchange",
+     "assumed-input:tool_gripper::gripper_working_unit_tool_exchange"
+    ],
+    "boundary_outputs": [
+     "unconnected-port:supporting_column::column_lift_out"
+    ],
+    "implicit_boundaries": 1,
+    "assumption": "inout boundary interfaces treated as the missing input/output side; inout internal edges traversable"
+   }
+  },
+  {
+   "metric_id": "connectivity",
+   "version": "0.1.0",
+   "family": "topology",
+   "kind": "score",
+   "status": "established",
+   "score": 0.8888888888888888,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 9,
+   "evidence": [
+    {
+     "ref": "component_0",
+     "detail": "",
+     "data": {
+      "size": 8,
+      "members": [
+       "cam_barrel",
+       "intermediate_gearing",
+       "machine_working_unit",
+       "maltese_wheel",
+       "motor",
+       "supporting_column",
+       "tool_gripper",
+       "tool_supply"
+      ]
+     }
+    },
+    {
+     "ref": "component_1",
+     "detail": "",
+     "data": {
+      "size": 1,
+      "members": [
+       "foundation"
+      ]
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "foundation",
+     "kind": "isolated_subsystem",
+     "severity": "minor",
+     "message": "'Stationary foundation' has no interface, relationship or shared action"
+    }
+   ],
+   "metadata": {
+    "components": 2,
+    "excluded_structural": [
+     "housing"
+    ]
+   }
+  },
+  {
+   "metric_id": "vocabulary_conformance",
+   "version": "0.1.0",
+   "family": "conformance",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "model has no explicit relationships list",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "relation_signature_validity",
+   "version": "0.1.0",
+   "family": "conformance",
+   "kind": "score",
+   "status": "established",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "no resolved relationships have a vocabulary signature",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "function_allocation_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 3,
+   "evidence": [
+    {
+     "ref": "allocation",
+     "detail": "3/3 allocated",
+     "data": {}
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "component_purpose_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.3333333333333333,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 6,
+   "evidence": [],
+   "violations": [
+    {
+     "ref": "maltese_wheel",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Maltese wheel' has no function or action"
+    },
+    {
+     "ref": "intermediate_gearing",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Intermediate gear arrangement' has no function or action"
+    },
+    {
+     "ref": "supporting_column",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Supporting column and guide' has no function or action"
+    },
+    {
+     "ref": "tool_gripper",
+     "kind": "component_without_purpose",
+     "severity": "major",
+     "message": "'Tool gripper' has no function or action"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "boundary_completeness",
+   "version": "0.1.0",
+   "family": "architecture",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.75,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 0.75,
+   "checked": 4,
+   "evidence": [
+    {
+     "ref": "boundary_declared",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "input_identified",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "output_identified",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "boundary_exchange_typed",
+     "detail": "present",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "input_identified",
+     "kind": "missing_boundary_capability",
+     "severity": "major",
+     "message": "input identified"
+    }
+   ],
+   "metadata": {
+    "external": [
+     "foundation",
+     "machine_working_unit",
+     "tool_supply"
+    ],
+    "crossings": [
+     "tool_gripper::gripper_working_unit_tool_exchange",
+     "tool_gripper::gripper_magazine_tool_exchange"
+    ],
+    "inputs": [],
+    "outputs": [
+     "supporting_column::column_lift_out"
+    ],
+    "typed": [
+     "tool_gripper::gripper_working_unit_tool_exchange",
+     "tool_gripper::gripper_magazine_tool_exchange"
+    ]
+   }
+  },
+  {
+   "metric_id": "requirement_satisfaction_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": 1.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 1,
+   "evidence": [
+    {
+     "ref": "claim1_tool_changer_architecture",
+     "detail": "",
+     "data": {
+      "id": "claim1_tool_changer_architecture",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "housing",
+       "motor",
+       "cam_barrel",
+       "maltese_wheel",
+       "intermediate_gearing",
+       "supporting_column",
+       "tool_gripper"
+      ],
+      "verified_by": []
+     }
+    }
+   ],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "requirement_verification_coverage",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "established",
+   "score": 0.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 1,
+   "evidence": [
+    {
+     "ref": "claim1_tool_changer_architecture",
+     "detail": "",
+     "data": {
+      "id": "claim1_tool_changer_architecture",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "housing",
+       "motor",
+       "cam_barrel",
+       "maltese_wheel",
+       "intermediate_gearing",
+       "supporting_column",
+       "tool_gripper"
+      ],
+      "verified_by": []
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "claim1_tool_changer_architecture",
+     "kind": "requirement_not_verified",
+     "severity": "major",
+     "message": "requirement has no valid verified trace"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "end_to_end_traceability",
+   "version": "0.1.0",
+   "family": "traceability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.0,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 1,
+   "evidence": [
+    {
+     "ref": "claim1_tool_changer_architecture",
+     "detail": "",
+     "data": {
+      "id": "claim1_tool_changer_architecture",
+      "satisfied": true,
+      "verified": false,
+      "satisfied_by": [
+       "housing",
+       "motor",
+       "cam_barrel",
+       "maltese_wheel",
+       "intermediate_gearing",
+       "supporting_column",
+       "tool_gripper"
+      ],
+      "verified_by": []
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "claim1_tool_changer_architecture",
+     "kind": "incomplete_requirement_trace",
+     "severity": "major",
+     "message": "requirement lacks satisfaction and/or verification trace"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "provenance_completeness",
+   "version": "0.1.0",
+   "family": "provenance",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.25,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 4,
+   "evidence": [
+    {
+     "ref": "source",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "generator",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "generator_version",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "schema_version",
+     "detail": "present",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "source",
+     "kind": "missing_provenance",
+     "severity": "minor",
+     "message": "model does not record source"
+    },
+    {
+     "ref": "generator",
+     "kind": "missing_provenance",
+     "severity": "minor",
+     "message": "model does not record generator"
+    },
+    {
+     "ref": "generator_version",
+     "kind": "missing_provenance",
+     "severity": "minor",
+     "message": "model does not record generator version"
+    }
+   ],
+   "metadata": {}
+  },
+  {
+   "metric_id": "model_profile_completeness",
+   "version": "0.1.0",
+   "family": "readiness",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.9,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 10,
+   "evidence": [
+    {
+     "ref": "system_identity",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "subsystems",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "structure",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "functions_or_actions",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "function_allocation",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "ports",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "interfaces",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "item_flows",
+     "detail": "present",
+     "data": {}
+    },
+    {
+     "ref": "input_boundary",
+     "detail": "missing",
+     "data": {}
+    },
+    {
+     "ref": "output_boundary",
+     "detail": "present",
+     "data": {}
+    }
+   ],
+   "violations": [
+    {
+     "ref": "input_boundary",
+     "kind": "missing_profile_capability",
+     "severity": "major",
+     "message": "functional profile requires input boundary"
+    }
+   ],
+   "metadata": {
+    "profile": "functional"
+   }
+  },
+  {
+   "metric_id": "competency_question_answerability",
+   "version": "0.1.0",
+   "family": "usability",
+   "kind": "score",
+   "status": "proposed",
+   "score": 0.6666666666666666,
+   "applicable": true,
+   "not_applicable_reason": null,
+   "confidence": 1.0,
+   "checked": 6,
+   "evidence": [
+    {
+     "ref": "component_inventory",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "function_allocation_map",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "resolved_interface_map",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "typed_flow_map",
+     "detail": "",
+     "data": {
+      "answerability": 1.0
+     }
+    },
+    {
+     "ref": "boundary_inputs_and_outputs",
+     "detail": "",
+     "data": {
+      "answerability": 0.0
+     }
+    },
+    {
+     "ref": "input_to_output_paths",
+     "detail": "",
+     "data": {
+      "answerability": 0.0
+     }
+    }
+   ],
+   "violations": [
+    {
+     "ref": "boundary_inputs_and_outputs",
+     "kind": "competency_question_incomplete",
+     "severity": "major",
+     "message": "answerability 0.00"
+    },
+    {
+     "ref": "input_to_output_paths",
+     "kind": "competency_question_incomplete",
+     "severity": "major",
+     "message": "answerability 0.00"
+    }
+   ],
+   "metadata": {
+    "questions": {
+     "component_inventory": 1.0,
+     "function_allocation_map": 1.0,
+     "resolved_interface_map": 1.0,
+     "typed_flow_map": 1.0,
+     "boundary_inputs_and_outputs": 0.0,
+     "input_to_output_paths": 0.0
+    },
+    "profile": "functional"
+   }
+  },
+  {
+   "metric_id": "internal_function_support",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'realization' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "behavior_claim_coverage",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'unclaimed_behavior' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "internal_transformation_coherence",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'transformation' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "statement_distinction",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'overlap' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "entity_distinctness",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'entity_identity' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "flow_semantic_fit",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'flow_semantics' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  },
+  {
+   "metric_id": "role_assignment_coherence",
+   "version": "0.1.0",
+   "family": "semantic",
+   "kind": "score",
+   "status": "proposed",
+   "score": null,
+   "applicable": false,
+   "not_applicable_reason": "'scope' tasks not built yet: run build_judge_tasks",
+   "confidence": 1.0,
+   "checked": 0,
+   "evidence": [],
+   "violations": [],
+   "metadata": {}
+  }
+ ],
+ "manifest": {
+  "framework_version": "0.2.1",
+  "git_sha": null,
+  "python": "3.13.5",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "packages": {
+   "pydantic": "2.13.5",
+   "networkx": "3.7",
+   "numpy": "2.5.3",
+   "scipy": "1.18.1",
+   "scikit-learn": "1.9.1",
+   "mcp": "2.2.0"
+  },
+  "input_path": "C:\\Users\\Eladio\\Downloads\\functional-quality\\inputs\\US8425386B2\\agents\\model.sjs.json",
+  "input_sha256": "89ae9e040c5c02267549f4414ad98685de2d30ab54e53566002570f0263117f4",
+  "model_key": "us8425386b2-89ae9e040c",
+  "metric_versions": {
+   "entity_duplication": "0.1.0",
+   "statement_duplication": "0.1.0",
+   "relationship_resolution": "0.1.0",
+   "representation_consistency": "0.1.0",
+   "statement_form": "0.1.0",
+   "scope_candidates": "0.1.0",
+   "partition_strength": "0.1.0",
+   "flow_structure": "0.1.0",
+   "explanatory_closure": "0.1.0",
+   "reference_integrity": "0.1.0",
+   "identifier_uniqueness": "0.1.0",
+   "interface_direction": "0.1.0",
+   "flow_type_consistency": "0.1.0",
+   "flow_reuse": "0.1.0",
+   "port_fan_out": "0.1.0",
+   "port_direction_naming": "0.1.0",
+   "causal_path_coverage": "0.1.0",
+   "connectivity": "0.1.0",
+   "vocabulary_conformance": "0.1.0",
+   "relation_signature_validity": "0.1.0",
+   "function_allocation_coverage": "0.1.0",
+   "component_purpose_coverage": "0.1.0",
+   "boundary_completeness": "0.1.0",
+   "requirement_satisfaction_coverage": "0.1.0",
+   "requirement_verification_coverage": "0.1.0",
+   "end_to_end_traceability": "0.1.0",
+   "provenance_completeness": "0.1.0",
+   "model_profile_completeness": "0.1.0",
+   "competency_question_answerability": "0.1.0",
+   "internal_function_support": "0.1.0",
+   "behavior_claim_coverage": "0.1.0",
+   "internal_transformation_coherence": "0.1.0",
+   "statement_distinction": "0.1.0",
+   "entity_distinctness": "0.1.0",
+   "flow_semantic_fit": "0.1.0",
+   "role_assignment_coherence": "0.1.0"
+  },
+  "retriever": "tfidf-word+char-v1",
+  "config": {
+   "results_dir": "results",
+   "closure.support_threshold": 0.12,
+   "duplication.similarity_threshold": 0.72,
+   "architecture.min_nodes": 6,
+   "architecture.min_edges": 5,
+   "tasks.max_per_kind": 200,
+   "mbse.profile": "functional",
+   "mbse.vocabulary_path": "sjs.kg.schema.json"
+  },
+  "config_sha256": "db444ef9e4ce9b88",
+  "judge_prompt_versions": {
+   "realization": "0e5a5e8444aa",
+   "unclaimed_behavior": "03be253ac935",
+   "transformation": "ec4f9d66cea9",
+   "overlap": "a1c3966dabf7",
+   "entity_identity": "8683abb23ed7",
+   "flow_semantics": "4bed83f6bc0d",
+   "scope": "dd249779cad2"
+  },
+  "judges": [],
+  "mutation": null,
+  "timestamp": "2026-10-01T16:10:00+00:00"
+ },
+ "errors": []
+}
