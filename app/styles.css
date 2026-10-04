@@ -164,10 +164,10 @@ body, gradio-app { background: var(--patent-bg) !important; }
     background: #f5f7fa !important;
     border: 1px solid #e1e6ed !important;
     color: #6d788b !important;
-    cursor: not-allowed;
+    cursor: pointer;
 }
 .gradio-container #method-nlp::after {
-    content: 'Coming soon';
+    content: 'Generate without signing in';
     color: #737f90;
     font-size: 12px;
     font-weight: 400;
@@ -300,3 +300,15 @@ body, gradio-app { background: var(--patent-bg) !important; }
     .gradio-container #patent-upload:has(.file-preview-holder) { min-height: 0 !important; padding: 17px 13px !important; }
     .gradio-container #patent-upload td { padding: 15px 10px !important; }
 }
+
+/* Shared artifact workflow and optional Quality action. */
+.gradio-container #method-nlp.primary { background: #f2f5ff !important; border-color: #a4b8f2 !important; color: #233b78 !important; }
+.gradio-container #method-nlp.secondary { background: #fff !important; color: #263346 !important; }
+.gradio-container #patent-upload { min-height: 298px; }
+.gradio-container #uploaded-patent, .gradio-container #process-status { min-height: 0 !important; border: 0 !important; background: transparent !important; }
+.gradio-container #knowledge-graph { overflow: hidden; }
+.gradio-container #quality-score { min-height: 46px; border-radius: 11px; }
+
+/* Load a complete example without starting a model run. */
+.gradio-container #patent-example { max-width: 270px; align-self: flex-start; min-height: 40px; color: #315de8; background: #f0f4ff; border-color: #cbd8ff; }
+.gradio-container #example-note { font-size: 12px; color: #5c6f99; margin-top: -4px; }

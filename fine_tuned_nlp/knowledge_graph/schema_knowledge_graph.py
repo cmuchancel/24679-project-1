@@ -285,7 +285,35 @@ class SchemaKnowledgeGraph:
     def run_pass(self, model, definition="AcceptActionUsage", *, properties=None, prompts=None,
                  anchor=None, threshold=0.4, relation_threshold=0.6, adjacency_threshold=0.5,
                  properties_per_batch=4, max_tokens=384, overlap_tokens=24, progress=None):
+        """Run a complete definition locally, using the resumable inference iterator."""
+        steps = self.iter_pass(model, definition, properties=properties, prompts=prompts,
+                               anchor=anchor, threshold=threshold,
+                               relation_threshold=relation_threshold,
+                               adjacency_threshold=adjacency_threshold,
+                               properties_per_batch=properties_per_batch,
+                               max_tokens=max_tokens, overlap_tokens=overlap_tokens,
+                               progress=progress)
+        predictions = None
+        while True:
+            try:
+                requests = steps.send(predictions)
+            except StopIteration as completed:
+                return completed.value
+            predictions = [model.inference(request["texts"], **{
+                key: value for key, value in request.items() if key != "texts"
+            }) for request in requests]
+
+    def iter_pass(self, model, definition="AcceptActionUsage", *, properties=None, prompts=None,
+                  anchor=None, threshold=0.4, relation_threshold=0.6, adjacency_threshold=0.5,
+                  properties_per_batch=4, max_tokens=384, overlap_tokens=24, progress=None,
+                  request_batch_size=32):
         """Classify spans by property and predict directed anchor -> property-value links.
+
+        Yield at most 32 inference request dictionaries at a time. Each request has
+        a ``texts`` list and the remaining ``model.inference`` keyword arguments.
+        Send back one prediction per request in the same order. Planning and all
+        validation/merging happen outside inference, so a caller can release its
+        GPU allocation between yields. The final result is StopIteration.value.
 
         Rerunning a definition replaces that pass atomically. Other passes survive.
         Co-occurrence alone never creates edges. An unlinked classification remains visible.
@@ -297,10 +325,13 @@ class SchemaKnowledgeGraph:
             raise ValueError("properties_per_batch must be a positive integer.")
         if not isinstance(overlap_tokens, int) or overlap_tokens < 0 or max_tokens < 64:
             raise ValueError("Use max_tokens >= 64 and a nonnegative integer overlap_tokens.")
+        if not isinstance(request_batch_size, int) or not 1 <= request_batch_size <= 32:
+            raise ValueError("request_batch_size must be an integer between 1 and 32.")
         plan = self.plan(definition, properties=properties, prompts=prompts, anchor=anchor)
         if plan["kind"] != "object":
-            return self._run_value_pass(model, plan, threshold, relation_threshold, adjacency_threshold,
-                                        properties_per_batch, max_tokens, overlap_tokens, progress)
+            return (yield from self._iter_value_pass(model, plan, threshold, relation_threshold,
+                adjacency_threshold, properties_per_batch, max_tokens, overlap_tokens,
+                progress, request_batch_size))
         tokenizer = model.data_processor.transformer_tokenizer
         limit = min(max_tokens, int(getattr(model.config, "max_len", max_tokens) or max_tokens))
         mentions, links = {}, {}
@@ -323,66 +354,25 @@ class SchemaKnowledgeGraph:
                     relation += " (" + humanize(row["property"]).lower() + ")"
                 relation_to_property[relation] = row["property"]
             chunks = list(_chunks(self.text, tokenizer, labels + list(relation_to_property), limit, overlap_tokens))
-            for number, chunk in enumerate(chunks):
-                prediction = model.inference(
-                    [chunk["text"]], labels=labels, relations=list(relation_to_property),
-                    threshold=threshold, relation_threshold=relation_threshold,
-                    adjacency_threshold=adjacency_threshold, flat_ner=False, multi_label=True,
-                    batch_size=1, return_relations=True,
-                )
-                if not isinstance(prediction, tuple) or len(prediction) != 2:
-                    raise ValueError("Load a GLiNER RelEx checkpoint with joint relation extraction.")
-                entity_batches, relation_batches = prediction
-                if len(entity_batches) != 1 or len(relation_batches) != 1:
-                    raise ValueError("Unexpected model output batch lengths.")
-                entities, relations = entity_batches[0], relation_batches[0]
-                local = {}
-                for entity in entities:
-                    a, b, label = entity["start"], entity["end"], entity["label"]
-                    score = _score(entity["score"])
-                    if label not in labels or not 0 <= a < b <= len(chunk["text"]) or chunk["text"][a:b] != entity["text"]:
-                        raise ValueError("Model entity label or character offsets do not match the input.")
-                    if score < threshold:
-                        continue
-                    role = entity_to_property.get(label)  # None denotes the definition's anchor.
-                    key = (chunk["start"] + a, chunk["start"] + b, role)
-                    value = {"text": entity["text"], "start": key[0], "end": key[1],
-                             "property": role, "score": score}
-                    local[(a, b, label)] = value
-                    if key not in mentions or score > mentions[key]["score"]:
-                        mentions[key] = value
-                for relation in relations:
-                    score = _score(relation["score"])
-                    prop = relation_to_property.get(relation["relation"])
-                    if prop is None:
-                        raise ValueError("Unexpected relation prompt in model output.")
-                    endpoints = []
-                    for side in ("head", "tail"):
-                        endpoint = relation[side]
-                        # The API provides exact spans and labels; do not infer links from text
-                        # proximity or assume entity_idx indexes a postprocessed entity list.
-                        a, b = endpoint["start"], endpoint["end"]
-                        if not 0 <= a < b <= len(chunk["text"]) or chunk["text"][a:b] != endpoint["text"]:
-                            raise ValueError("Relation endpoint does not match its source passage.")
-                        endpoints.append(local.get((a, b, endpoint["type"])))
-                    head, tail = endpoints
-                    if (score < relation_threshold or head is None or tail is None or
-                            head["property"] is not None or tail["property"] != prop):
-                        rejected += 1
-                        continue
-                    key = (head["text"], prop, tail["text"])
-                    edge = links.setdefault(key, {"source": head["text"], "property": prop,
-                        "target": tail["text"], "label": humanize(prop).lower(), "score": score,
-                        "evidence": []})
-                    edge["score"] = max(edge["score"], score)
-                    evidence = {**chunk, "source_span": [head["start"], head["end"]],
-                                "target_span": [tail["start"], tail["end"]], "score": score}
-                    if evidence not in edge["evidence"]:
-                        edge["evidence"].append(evidence)
-                chunk_count += 1
-                if progress:
-                    progress(f"{definition}: properties {first+1}-{first+len(batch)}/{len(rows)}, "
-                             f"text window {number+1}/{len(chunks)}")
+            for chunk_first in range(0, len(chunks), request_batch_size):
+                pending = chunks[chunk_first:chunk_first + request_batch_size]
+                requests = [{"texts": [chunk["text"]], "labels": labels,
+                    "relations": list(relation_to_property), "threshold": threshold,
+                    "relation_threshold": relation_threshold,
+                    "adjacency_threshold": adjacency_threshold, "flat_ner": False,
+                    "multi_label": True, "batch_size": 1, "return_relations": True}
+                    for chunk in pending]
+                predictions = yield requests
+                if not isinstance(predictions, list) or len(predictions) != len(pending):
+                    raise ValueError("Send one inference prediction per requested text window.")
+                for number, chunk, prediction in zip(
+                        range(chunk_first, chunk_first + len(pending)), pending, predictions):
+                    rejected += self._merge_object_window(prediction, chunk, labels, entity_to_property,
+                        relation_to_property, threshold, relation_threshold, mentions, links)
+                    chunk_count += 1
+                    if progress:
+                        progress(f"{definition}: properties {first+1}-{first+len(batch)}/{len(rows)}, "
+                                 f"text window {number+1}/{len(chunks)}")
         result = {"definition": definition, "plan": plan,
                   "completed_at": datetime.now(timezone.utc).isoformat(),
                   "settings": {"threshold": threshold, "relation_threshold": relation_threshold,
@@ -398,8 +388,64 @@ class SchemaKnowledgeGraph:
         self.passes[definition] = result
         return deepcopy(result)
 
-    def _run_value_pass(self, model, plan, threshold, relation_threshold, adjacency_threshold,
-                        properties_per_batch, max_tokens, overlap_tokens, progress):
+    def _merge_object_window(self, prediction, chunk, labels, entity_to_property,
+                             relation_to_property, threshold, relation_threshold, mentions, links):
+        """Merge a prediction into an unfinished pass using original-document offsets."""
+        rejected = 0
+        if not isinstance(prediction, tuple) or len(prediction) != 2:
+            raise ValueError("Load a GLiNER RelEx checkpoint with joint relation extraction.")
+        entity_batches, relation_batches = prediction
+        if len(entity_batches) != 1 or len(relation_batches) != 1:
+            raise ValueError("Unexpected model output batch lengths.")
+        entities, relations = entity_batches[0], relation_batches[0]
+        local = {}
+        for entity in entities:
+            a, b, label = entity["start"], entity["end"], entity["label"]
+            score = _score(entity["score"])
+            if label not in labels or not 0 <= a < b <= len(chunk["text"]) or chunk["text"][a:b] != entity["text"]:
+                raise ValueError("Model entity label or character offsets do not match the input.")
+            if score < threshold:
+                continue
+            role = entity_to_property.get(label)  # None denotes the definition's anchor.
+            key = (chunk["start"] + a, chunk["start"] + b, role)
+            value = {"text": entity["text"], "start": key[0], "end": key[1],
+                     "property": role, "score": score}
+            local[(a, b, label)] = value
+            if key not in mentions or score > mentions[key]["score"]:
+                mentions[key] = value
+        for relation in relations:
+            score = _score(relation["score"])
+            prop = relation_to_property.get(relation["relation"])
+            if prop is None:
+                raise ValueError("Unexpected relation prompt in model output.")
+            endpoints = []
+            for side in ("head", "tail"):
+                endpoint = relation[side]
+                # The API provides exact spans and labels; do not infer links from text
+                # proximity or assume entity_idx indexes a postprocessed entity list.
+                a, b = endpoint["start"], endpoint["end"]
+                if not 0 <= a < b <= len(chunk["text"]) or chunk["text"][a:b] != endpoint["text"]:
+                    raise ValueError("Relation endpoint does not match its source passage.")
+                endpoints.append(local.get((a, b, endpoint["type"])))
+            head, tail = endpoints
+            if (score < relation_threshold or head is None or tail is None or
+                    head["property"] is not None or tail["property"] != prop):
+                rejected += 1
+                continue
+            key = (head["text"], prop, tail["text"])
+            edge = links.setdefault(key, {"source": head["text"], "property": prop,
+                "target": tail["text"], "label": humanize(prop).lower(), "score": score,
+                "evidence": []})
+            edge["score"] = max(edge["score"], score)
+            evidence = {**chunk, "source_span": [head["start"], head["end"]],
+                        "target_span": [tail["start"], tail["end"]], "score": score}
+            if evidence not in edge["evidence"]:
+                edge["evidence"].append(evidence)
+        return rejected
+
+    def _iter_value_pass(self, model, plan, threshold, relation_threshold, adjacency_threshold,
+                         properties_per_batch, max_tokens, overlap_tokens, progress,
+                         request_batch_size):
         """Enum passes classify contextual text; the Identified pass records metadata-only coverage."""
         limit = min(max_tokens, int(getattr(getattr(model, "config", None), "max_len", max_tokens) or max_tokens))
         mentions, windows = {}, 0
@@ -407,24 +453,31 @@ class SchemaKnowledgeGraph:
             labels = {prompt: value for value, prompt in plan["enum_prompts"].items()}
             tokenizer = model.data_processor.transformer_tokenizer
             chunks = list(_chunks(self.text, tokenizer, list(labels), limit, overlap_tokens))
-            for number, chunk in enumerate(chunks, 1):
-                batches = model.inference([chunk["text"]], labels=list(labels), relations=[],
-                    threshold=threshold, flat_ner=False, multi_label=True, batch_size=1, return_relations=False)
-                if not isinstance(batches, list) or len(batches) != 1:
-                    raise ValueError("Unexpected enumeration span output.")
-                for entity in batches[0]:
-                    a, b, label, score = entity["start"], entity["end"], entity["label"], _score(entity["score"])
-                    if label not in labels or not 0 <= a < b <= len(chunk["text"]) or chunk["text"][a:b] != entity["text"]:
-                        raise ValueError("Enumeration prediction does not match its source text or declared labels.")
-                    if score < threshold:
-                        continue
-                    key = (chunk["start"] + a, chunk["start"] + b, labels[label])
-                    if key not in mentions or score > mentions[key]["score"]:
-                        mentions[key] = {"text": entity["text"], "start": key[0], "end": key[1],
-                                         "property": None, "enum_value": labels[label], "score": score}
-                windows += 1
-                if progress:
-                    progress(f"{plan['definition']}: enum text window {number}/{len(chunks)}")
+            for first in range(0, len(chunks), request_batch_size):
+                pending = chunks[first:first + request_batch_size]
+                predictions = yield [{"texts": [chunk["text"]], "labels": list(labels),
+                    "relations": [], "threshold": threshold, "flat_ner": False,
+                    "multi_label": True, "batch_size": 1, "return_relations": False}
+                    for chunk in pending]
+                if not isinstance(predictions, list) or len(predictions) != len(pending):
+                    raise ValueError("Send one inference prediction per requested text window.")
+                for number, chunk, batches in zip(
+                        range(first + 1, first + len(pending) + 1), pending, predictions):
+                    if not isinstance(batches, list) or len(batches) != 1:
+                        raise ValueError("Unexpected enumeration span output.")
+                    for entity in batches[0]:
+                        a, b, label, score = entity["start"], entity["end"], entity["label"], _score(entity["score"])
+                        if label not in labels or not 0 <= a < b <= len(chunk["text"]) or chunk["text"][a:b] != entity["text"]:
+                            raise ValueError("Enumeration prediction does not match its source text or declared labels.")
+                        if score < threshold:
+                            continue
+                        key = (chunk["start"] + a, chunk["start"] + b, labels[label])
+                        if key not in mentions or score > mentions[key]["score"]:
+                            mentions[key] = {"text": entity["text"], "start": key[0], "end": key[1],
+                                             "property": None, "enum_value": labels[label], "score": score}
+                    windows += 1
+                    if progress:
+                        progress(f"{plan['definition']}: enum text window {number}/{len(chunks)}")
         elif progress:
             progress(f"{plan['definition']}: metadata-only pass; no ID nodes created")
         result = {"definition": plan["definition"], "plan": plan,

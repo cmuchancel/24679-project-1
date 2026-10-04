@@ -1,5 +1,3 @@
 # App
 
-Gradio presentation only: `main.py`, `ui_workflow.py`, `styles.css`, and `ui_dialog.js`. Space asset/setup code lives in `space.py`.
-
-Run `python -m app.main` from the repository root. The interface calls `backend.service.process`, requires a method selection, and keeps the existing login popup and result-reveal behavior. Extraction logic belongs to the selected method, not to the UI.
+Gradio presentation and Space startup. Production entry: `space_app.py` → `app.space` → `app.main`. The UI calls `backend.service.process_results`, validates whole patent HTML, loads the bundled example and requires method selection. Results remain hidden while generating/scoring, then appear together with Complete. AI Agents shows SJS Diagram; NLP shows Knowledge Graph. Both retain SJS, SysML and optional Quality. See [setup](../docs/PROTOTYPE_SETUP.md).

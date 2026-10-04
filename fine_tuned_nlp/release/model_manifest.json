@@ -1,0 +1,22 @@
+{
+  "release": "gliner-sysml-relex-v1",
+  "artifact": "gliner-sysml-relex-v1.pkl",
+  "bytes": 1873624422,
+  "sha256": "dfe14c04e6b346faafc4c6e96a7fd269285fd9a7af4471126106d53796a636cc",
+  "serialization": "Python pickle protocol 5, complete CPU GLiNER model and tokenizer",
+  "python": "3.12",
+  "base_model": "knowledgator/gliner-relex-large-v1.0",
+  "base_revision": "4aedc9226a5ac9e2f6b5ea3e91c1ee577c88a290",
+  "model_class": "UniEncoderSpanRelexGLiNER",
+  "selected_checkpoint_step": 450,
+  "selected_checkpoint_epoch": 64.29629629629629,
+  "best_validation_loss": 6.863863945007324,
+  "selection": "lowest validation loss",
+  "release_checks": {
+    "offline_fresh_process_reload": true,
+    "entity_and_relation_inference": true,
+    "graph_part_pass": true,
+    "sjs_json_export": true,
+    "meaning": "API compatibility checks only; not an extraction accuracy evaluation"
+  }
+}

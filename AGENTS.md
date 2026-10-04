@@ -1,8 +1,7 @@
 # funcqual — project rules for every agent
 
 This repository evaluates the quality of automatically generated SysML-like (SJS) functional
-models **without a ground-truth decomposition**. Read `README.md` for the architecture and
-`docs/PLAN.md` for the research plan and its revisions.
+models **without a ground-truth decomposition**. The repository also contains the Patent to SysML prototype. Read `README.md` for the project overview, `docs/FUNCQUAL.md` for the retained evaluator guide and `docs/ARCHITECTURE.md` for the live application. The evaluator rules below apply to FuncQual; the app's separately documented patent-grounded Quality review is a distinct workflow.
 
 ## Tools
 

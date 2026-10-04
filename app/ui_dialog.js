@@ -22,6 +22,8 @@
     attribute(close, 'aria-label', 'Close ChatGPT sign-in');
     const agents = document.getElementById('method-agents');
     if (agents) attribute(agents, 'aria-pressed', String(agents.classList.contains('primary')));
+    const nlp = document.getElementById('method-nlp');
+    if (nlp) attribute(nlp, 'aria-pressed', String(nlp.classList.contains('primary')));
     const next = visible(modal);
     if (next && !open) {
       previousFocus = document.activeElement;
@@ -61,7 +63,7 @@
     const modal = document.getElementById('login-modal');
     const relevant = records.some(record => {
       if (record.type === 'attributes') {
-        return ['login-modal', 'method-agents'].includes(record.target.id);
+        return ['login-modal', 'method-agents', 'method-nlp'].includes(record.target.id);
       }
       if (record.target === modal?.parentElement || ['login-modal', 'login-card'].includes(record.target.id)) return true;
       return [...record.addedNodes, ...record.removedNodes].some(node =>

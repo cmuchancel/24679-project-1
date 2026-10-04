@@ -1,0 +1,126 @@
+{
+  "documents": 25,
+  "chunks": 62,
+  "entity_spans": 1898,
+  "labels": 14,
+  "annotation_method": "translator-rule",
+  "manual_annotation_count_established": false,
+  "split_seed": 42,
+  "document_disjoint": true,
+  "family_disjoint": false,
+  "all_source_spans_preserved": true,
+  "original_training_rows_reproduced": true,
+  "label_counts": {
+    "action": 76,
+    "attribute": 370,
+    "constraint": 6,
+    "interface definition": 11,
+    "item flow": 51,
+    "package": 27,
+    "part definition": 318,
+    "part definition reference": 379,
+    "part usage": 379,
+    "port": 108,
+    "port definition": 43,
+    "port definition reference": 108,
+    "requirement": 8,
+    "state": 14
+  },
+  "splits": {
+    "train": {
+      "documents": 21,
+      "chunks": 54,
+      "entity_spans": 1721,
+      "negative_chunks": 12,
+      "tokens": 16946,
+      "min_tokens": 11,
+      "max_tokens": 384,
+      "label_counts": {
+        "action": 55,
+        "attribute": 361,
+        "constraint": 5,
+        "interface definition": 10,
+        "item flow": 31,
+        "package": 23,
+        "part definition": 312,
+        "part definition reference": 334,
+        "part usage": 334,
+        "port": 102,
+        "port definition": 37,
+        "port definition reference": 102,
+        "requirement": 8,
+        "state": 7
+      },
+      "source_files": [
+        "Linear_Actuator2.sysml",
+        "Linear_Actuator3.sysml",
+        "Linear_Actuator_Action_Model.sysml",
+        "Linear_Actuator_Action_Semantic_Mistake.sysml",
+        "Linear_Actuator_Connection_And_Port_Model.sysml",
+        "Linear_Actuator_Connection_Model.sysml",
+        "Linear_Actuator_Interface_Definitions.sysml",
+        "Linear_Actuator_Package_Model.sysml",
+        "Linear_Actuator_Parametric_Model.sysml",
+        "Linear_Actuator_Part_Definitions.sysml",
+        "Linear_Actuator_Port_Definitions.sysml",
+        "Linear_Actuator_Port_Model.sysml",
+        "Linear_Actuator_Port_Model2.sysml",
+        "Linear_Actuator_Requirements_Model.sysml",
+        "Linear_Actuator_Sequence_Model.sysml",
+        "Linear_Actuator_State_Definitions.sysml",
+        "Linear_Actuator_Use_Case_Model.sysml",
+        "Linear_Actuator_Verification_Test.sysml",
+        "Linear_Actuator_practice.sysml",
+        "Sequence_Test.sysml",
+        "practice.sysml"
+      ]
+    },
+    "validation": {
+      "documents": 2,
+      "chunks": 5,
+      "entity_spans": 139,
+      "negative_chunks": 2,
+      "tokens": 1695,
+      "min_tokens": 164,
+      "max_tokens": 384,
+      "label_counts": {
+        "action": 6,
+        "attribute": 9,
+        "constraint": 1,
+        "interface definition": 1,
+        "item flow": 3,
+        "package": 2,
+        "part definition": 6,
+        "part definition reference": 45,
+        "part usage": 45,
+        "port": 6,
+        "port definition": 6,
+        "port definition reference": 6,
+        "state": 3
+      },
+      "source_files": [
+        "Linear_Actuator.sysml",
+        "Linear_Actuator_Constraint_Test.sysml"
+      ]
+    },
+    "test": {
+      "documents": 2,
+      "chunks": 3,
+      "entity_spans": 38,
+      "negative_chunks": 0,
+      "tokens": 645,
+      "min_tokens": 86,
+      "max_tokens": 384,
+      "label_counts": {
+        "action": 15,
+        "item flow": 17,
+        "package": 2,
+        "state": 4
+      },
+      "source_files": [
+        "Linear_Actuator_Action_Definitions.sysml",
+        "Linear_Actuator_State_Machine_Model.sysml"
+      ]
+    }
+  }
+}

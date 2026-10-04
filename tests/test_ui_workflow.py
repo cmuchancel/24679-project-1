@@ -1,6 +1,8 @@
 """Regression checks for progressive controls and login lifecycle, without model calls."""
 import sys
 import unittest
+import tempfile
+from patent_fixture import PATENT
 from pathlib import Path
 from unittest.mock import patch
 
@@ -8,14 +10,18 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from app.ui_workflow import build_app
 
 
-def example_process(file, session):
-    yield 'Working', '', None, '', '', None, None
-    yield 'Complete', '{"views": {}}', '/tmp/result.json', '<svg/>', 'package Example {}', '/tmp/result.sysml', '/tmp/research.zip'
+def example_process(file, visitor, method):
+    yield {'status': 'Working'}
+    yield {'status': 'Complete', 'sysml': 'package Example {}', 'method': method}
 
 
 class InterfaceTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
+        cls.folder = tempfile.TemporaryDirectory()
+        cls.addClassCleanup(cls.folder.cleanup)
+        cls.patent = Path(cls.folder.name) / 'patent.html'
+        cls.patent.write_text(PATENT)
         cls.app = build_app(example_process)
         cls.handlers = {f.fn.__name__: f.fn for f in cls.app.fns.values() if f.fn}
         cls.components = {c.elem_id: c for c in cls.app.blocks.values() if getattr(c, 'elem_id', None)}
@@ -29,7 +35,7 @@ class InterfaceTests(unittest.TestCase):
         self.assertEqual(self.component('method-agents').variant, 'secondary')
 
     def test_upload_requires_fresh_selection_and_clears_results(self):
-        updates = self.handlers['on_upload']('/tmp/patent.html')
+        updates = self.handlers['on_upload'](str(self.patent))
         self.assertTrue(updates[self.component('method-options')]['visible'])
         for name in ['process-button', 'login-modal', 'results-section']:
             self.assertFalse(updates[self.component(name)]['visible'])
@@ -38,14 +44,14 @@ class InterfaceTests(unittest.TestCase):
 
     @patch('app.ui_workflow.login_needed', return_value=True)
     def test_explicit_selection_opens_login_and_disables_process(self, _):
-        updates = self.handlers['choose_agents']('/tmp/patent.html', 'session')
+        updates = self.handlers['choose_agents'](str(self.patent), 'session')
         self.assertTrue(updates[self.component('login-modal')]['visible'])
         self.assertTrue(updates[self.component('process-button')]['visible'])
         self.assertFalse(updates[self.component('process-button')]['interactive'])
 
     @patch('app.ui_workflow.login_needed', return_value=False)
     def test_connected_user_can_choose_method_without_another_login(self, _):
-        updates = self.handlers['choose_agents']('/tmp/patent.html', 'session')
+        updates = self.handlers['choose_agents'](str(self.patent), 'session')
         self.assertFalse(updates[self.component('login-modal')]['visible'])
         self.assertTrue(updates[self.component('process-button')]['interactive'])
 
@@ -56,7 +62,7 @@ class InterfaceTests(unittest.TestCase):
             state['needs_login'] = False
             yield 'Connected'
         with patch('app.ui_workflow.login_needed', side_effect=lambda _: state['needs_login']), patch('app.ui_workflow.connect_chatgpt', login):
-            updates = list(self.handlers['sign_in']('session'))
+            updates = list(self.handlers['sign_in'](str(self.patent), 'session', 'agents'))
         completed = next(x for x in updates if self.component('login-modal') in x)
         self.assertFalse(completed[self.component('login-modal')]['visible'])
         self.assertFalse(completed[self.component('reconnect-chatgpt')]['visible'])
@@ -71,7 +77,7 @@ class InterfaceTests(unittest.TestCase):
             finally:
                 state['closed'] = True
         with patch('app.ui_workflow.login_needed', return_value=True), patch('app.ui_workflow.connect_chatgpt', login):
-            stream = self.handlers['sign_in']('session')
+            stream = self.handlers['sign_in'](str(self.patent), 'session', 'agents')
             next(stream)
             next(stream)
             stream.close()
@@ -82,13 +88,14 @@ class InterfaceTests(unittest.TestCase):
         def failed_login(visitor):
             yield 'Sign-in expired'
         with patch('app.ui_workflow.connect_chatgpt', failed_login):
-            updates = list(self.handlers['sign_in']('session'))
+            updates = list(self.handlers['sign_in'](str(self.patent), 'session', 'agents'))
         self.assertFalse(any(x.get(self.component('process-button'), {}).get('interactive') for x in updates))
         self.assertTrue(updates[-1][self.component('connect-chatgpt')]['interactive'])
 
     @patch('app.ui_workflow.login_needed', return_value=False)
     def test_results_are_revealed_only_after_processing_finishes(self, _):
-        updates = list(self.handlers['run_ui']('/tmp/patent.html', 'agents', 'session'))
+        with patch('app.ui_workflow.artifact_file', return_value=None):
+            updates = list(self.handlers['run_ui'](str(self.patent), 'agents', 'session'))
         result_states = [u[self.component('results-section')]['visible'] for u in updates if self.component('results-section') in u]
         self.assertEqual(result_states, [False, True])
         self.assertTrue(updates[-1][self.component('patent-upload')]['interactive'])

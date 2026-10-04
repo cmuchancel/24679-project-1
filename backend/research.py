@@ -216,7 +216,7 @@ class ResearchRun:
                    for p in (root / folder).rglob("*")
                    if p.is_file() and p.suffix in {".py", ".js", ".css", ".json", ".md"}
                    and "__pycache__" not in p.parts]
-        sources += list(root.glob("requirements*.txt")) + list((root / "docs").glob("*.md"))
+        sources += list(root.glob("requirements*.txt")) + [p for p in (root / "docs").glob("*.md") if p.name != "TYPESAFE.md"]
         for path in sources:
             target = run / "research/source" / path.relative_to(root)
             target.parent.mkdir(parents=True, exist_ok=True)

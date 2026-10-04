@@ -14,7 +14,8 @@ class PackageLayoutTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)
             patent, book = root / 'patent.html', root / 'book.epub'
-            patent.write_text('<html>Patent</html>')
+            from patent_fixture import PATENT
+            patent.write_text(PATENT)
             book.write_text('fixture')
             parser = root / 'parser'
             parser.mkdir()

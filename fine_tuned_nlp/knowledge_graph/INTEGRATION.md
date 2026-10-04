@@ -1,4 +1,6 @@
-# Integration status
+# Historical integration notes (September 2026)
+
+**Current status:** the missing patent parser and embedded graph view have been implemented and the checkpoint-450 NLP pipeline is live on ZeroGPU. The app now exports graph, SJS and SysML and reveals them after completion. See [current architecture](../../docs/ARCHITECTURE.md) and the [model card](../MODEL_CARD.md). The original notes below preserve the earlier integration audit; file-absence/deployment statements are historical, while the entity-only supervision and patent-accuracy limitations still apply.
 
 Eladio's graph/SJS code was added in commit `8b272a4ee15b08e86a99e8d49187186f0388e310` and moved here with package-relative imports. The supplied deterministic SJS graph checks run without model downloads. It is a prototype separate from the validated agent method.
 

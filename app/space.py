@@ -17,8 +17,12 @@ def unused_gpu_slot():
     pass
 
 
+from fine_tuned_nlp.cloud import infer_windows
+
 from backend.setup_parser import install
 install()
+from backend.setup_diagram_renderer import install as install_diagram_renderer
+install_diagram_renderer()
 
 os.environ["PATENT_SPACE_WRAPPER"] = "1"
 from backend.paths import ASSETS
@@ -34,4 +38,4 @@ if not shutil.which("opencode"):
         subprocess.run(["curl", "-fsSL", "https://opencode.ai/v2/install", "-o", installer], check=True)
         subprocess.run(["bash", installer, "--version", "2.0.16", "--no-modify-path"], check=True)
 runpy.run_module("app.main", run_name="__main__",
-               init_globals={"unused_gpu_slot": unused_gpu_slot})
+               init_globals={"unused_gpu_slot": unused_gpu_slot, "infer_windows": infer_windows})

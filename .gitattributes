@@ -3,3 +3,8 @@ fine_tuned_nlp/data/** -text
 fine_tuned_nlp/src/sysml_gliner/translator.py -text
 agentic/vendor/** -text
 source-html/** -text
+
+# Preserve released dataset/example bytes: their SHA-256 digests identify the actual experiment.
+fine_tuned_nlp/hub_dataset/original/** -text
+examples/patents/US8087913B2.html -text
+examples/patents/recorded-ai-agents/** -text

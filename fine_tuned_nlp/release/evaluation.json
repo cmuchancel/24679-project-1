@@ -1,0 +1,147 @@
+{
+  "selected_step": 450,
+  "best_validation_loss": 6.863863945007324,
+  "test": {
+    "examples": 3,
+    "documents": 2,
+    "gold_entities": 38,
+    "supported_labels": 4,
+    "candidate_labels": 14,
+    "sha256": "2c49631c4d8a60ee965c473a63df3b781aca059657063c22890437fb43204e5f",
+    "threshold": 0.5,
+    "base": {
+      "precision": 0.04680851063829787,
+      "recall": 0.2894736842105263,
+      "f1": 0.08058608058608058,
+      "tp": 11,
+      "fp": 224,
+      "fn": 27,
+      "per_label": {
+        "action": {
+          "precision": 0.11904761904761904,
+          "recall": 0.3333333333333333,
+          "f1": 0.1754385964912281,
+          "support": 15
+        },
+        "attribute": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "constraint": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "interface definition": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "item flow": {
+          "precision": 0.05555555555555555,
+          "recall": 0.058823529411764705,
+          "f1": 0.05714285714285714,
+          "support": 17
+        },
+        "package": {
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "f1": 0.5,
+          "support": 2
+        },
+        "part definition": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "part definition reference": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "part usage": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "port": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "port definition": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "port definition reference": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "requirement": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "state": {
+          "precision": 0.3,
+          "recall": 0.75,
+          "f1": 0.4285714285714285,
+          "support": 4
+        }
+      }
+    },
+    "fine_tuned": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 38,
+      "fp": 0,
+      "fn": 0,
+      "per_label": {
+        "action": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 15
+        },
+        "item flow": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 17
+        },
+        "package": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2
+        },
+        "state": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Only two held-out SysML documents, with related actuator variants in training.",
+    "Rule-generated annotations; test has support for four of fourteen labels.",
+    "No labeled patent entities or relations; does not validate patent knowledge graphs.",
+    "Fixed threshold 0.5 selected before looking at test results."
+  ]
+}

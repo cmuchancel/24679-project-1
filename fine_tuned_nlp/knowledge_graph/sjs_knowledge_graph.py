@@ -230,13 +230,25 @@ class SJSKnowledgeGraph(SchemaKnowledgeGraph):
                         encoding="utf-8")
         return path
 
-    def export_sysml(self, path: str | Path, translator: Callable[[dict], str],
-                     *, system_name: str | None = None) -> Path:
-        """Export through the supplied custom translator's ``sysml_from_sjs`` function."""
-        text = translator(self.to_sjs(system_name=system_name))
+    def export_sysml(self, path: str | Path, translator: Callable[[dict], str] | None = None,
+                     *, system_name: str | None = None, allow_unresolved: bool = False) -> Path:
+        """Export compiler-checked standard SysML; explicit translators retain legacy behavior.
+
+        Candidate graphs can use allow_unresolved=True to preserve unresolved
+        information and receive an explicit mapping report beside the SysML.
+        """
+        report = None
+        source = self.to_sjs(system_name=system_name)
+        if translator is None:
+            from sysml_gliner.sysml_export import convert
+            text, report = convert(source, allow_unresolved=allow_unresolved)
+        else:
+            text = translator(source)
         path = Path(path)
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(text, encoding="utf-8")
+        if report is not None:
+            path.with_suffix(".mapping.json").write_text(json.dumps(report, indent=2) + "\n")
         return path
 
 

@@ -1,45 +1,102 @@
-"""Method routing and finalized-artifact behavior across the new package boundary."""
+import json
 import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
-
 from backend.methods import Method, get_method
-from backend.service import process
+from backend.service import process, process_results, score_result
+from backend.patent import validate_patent
+from patent_fixture import PATENT
 
 
 class BackendTests(unittest.TestCase):
-    def test_existing_agents_and_unavailable_nlp_are_distinct(self):
+    def test_methods(self):
         self.assertTrue(get_method('agents').available)
-        self.assertFalse(get_method('nlp').available)
+        self.assertTrue(get_method('nlp').available)
         with self.assertRaises(ValueError):
             get_method('unknown')
 
-    def test_json_upload_cannot_reach_any_method(self):
-        with patch('backend.service.get_method') as lookup:
-            updates = list(process('saved.json'))
-        lookup.assert_not_called()
-        self.assertIn('Saved JSON is not accepted', updates[0][0])
-
-    def test_method_stream_returns_exact_finalized_files(self):
+    def test_invalid_upload_cannot_reach_any_method_including_legacy(self):
         with tempfile.TemporaryDirectory() as folder:
-            source = Path(folder) / 'patent.sjs.json'
-            source.write_text('{"exact":"saved model"}\n')
-            source.with_suffix('.svg').write_text('<svg>saved</svg>')
-            source.with_suffix('.sysml').write_text('package Saved {}')
-            def run(file, session):
-                self.assertEqual((file, session), ('patent.html', 'visitor'))
-                yield 'Working', None, None, None
-                yield 'Complete', {'exact': 'saved model'}, str(source), None
-            with patch('backend.service.get_method', return_value=Method('fixture', 'Fixture', True, False, run)):
-                updates = list(process('patent.html', 'visitor', method='fixture'))
-            self.assertEqual(updates[0], ('Working', '', None, '', '', None, None))
-            self.assertEqual(updates[1][1], source.read_text())
-            self.assertEqual(updates[1][3], '<svg>saved</svg>')
-            self.assertEqual(updates[1][4], 'package Saved {}')
+            empty = Path(folder)/'empty.html'; empty.touch()
+            boilerplate = Path(folder)/'page.html'; boilerplate.write_text('<html>hello</html>')
+            for file in [None, 'saved.json', str(empty), str(boilerplate), str(Path(folder)/'absent.html')]:
+                with patch('backend.service.get_method') as lookup:
+                    self.assertEqual(len(list(process(file))), 1)
+                    with self.assertRaises((ValueError, OSError)):
+                        list(process_results(file))
+                lookup.assert_not_called()
 
-    def test_unavailable_nlp_cannot_silently_fall_back_to_agents(self):
-        with patch('agentic.adapter.run') as agent:
-            updates = list(process('patent.html', method='nlp'))
-        agent.assert_not_called()
-        self.assertIn('not available', updates[0][0])
+    def test_agent_results_use_exact_artifacts_and_blind_review(self):
+        with tempfile.TemporaryDirectory() as folder:
+            patent = Path(folder)/'patent.html'; patent.write_text(PATENT)
+            model = {'subsystems':[{'subsystem_id':'SS-1','subsystem_name':'Motor'}]}
+            source = Path(folder)/'model.sjs.json'; source.write_text(json.dumps(model))
+            source.with_suffix('.sysml').write_text('package Saved {}')
+            source.with_suffix('.svg').write_text('<svg/>')
+            def run(file, session):
+                yield 'Working', None, None, None
+                yield 'Complete', model, str(source), None
+            with patch('backend.service.get_method',return_value=Method('agents','AI Agents',True,False,run)), patch('agentic.blind_quality.review',return_value={'overall_score':80}) as reviewer:
+                rows = list(process_results(str(patent),'visitor'))
+                reviewer.assert_not_called()
+                reviewed = score_result(str(patent), rows[-1], 'visitor')
+            self.assertEqual(rows[-1]['sjs'],model)
+            self.assertEqual(rows[-1]['sysml'],'package Saved {}')
+            self.assertEqual(rows[-1]['knowledge_graph']['provenance'],'agent-authored SJS')
+            reviewer.assert_called_once_with(validate_patent(patent)['text'],'package Saved {}','visitor')
+            self.assertEqual(set(rows[-1]),{'source','knowledge_graph','sjs','sysml','quality','status','run_id','method'})
+            self.assertEqual(len({r['run_id'] for r in rows}),1)
+            self.assertIsNone(rows[0]['sjs'])
+
+    def test_partial_nlp_artifacts_survive_later_failure(self):
+        def generate(document,result):
+            result.knowledge_graph={'nodes':[],'edges':[]}
+            yield result.snapshot()
+            raise ValueError('Compiler unavailable')
+        with tempfile.TemporaryDirectory() as folder:
+            patent=Path(folder)/'patent.html';patent.write_text(PATENT)
+            with patch('fine_tuned_nlp.adapter.generate',generate),patch('agentic.blind_quality.review') as review:
+                rows=list(process_results(str(patent),method='nlp'))
+            self.assertEqual(rows[-1]['knowledge_graph'],{'nodes':[],'edges':[]})
+            self.assertIsNone(rows[-1]['sysml'])
+            review.assert_not_called()
+
+    def test_nlp_order_and_identical_quality_input_boundary(self):
+        def generate(document,result):
+            for field,value in [('knowledge_graph',{'nodes':[],'edges':[]}),('sjs',{'candidate':True}),('sysml','package Final {}')]:
+                setattr(result,field,value)
+                yield result.snapshot()
+        with tempfile.TemporaryDirectory() as folder:
+            patent=Path(folder)/'patent.html';patent.write_text(PATENT)
+            with patch('fine_tuned_nlp.adapter.generate',generate),patch('agentic.blind_quality.review',return_value={'overall_score':80}) as review:
+                rows=list(process_results(str(patent),method='nlp'))
+                review.assert_not_called()
+                scored=score_result(str(patent),rows[-1])
+            self.assertIsNone(rows[0]['sjs']);self.assertIsNone(rows[1]['sysml'])
+            review.assert_called_once_with(validate_patent(patent)['text'],'package Final {}',None)
+            self.assertEqual(scored['quality']['overall_score'],80)
+
+    def test_quality_failure_preserves_all_model_artifacts(self):
+        def generate(document,result):
+            result.knowledge_graph={'nodes':[],'edges':[]}
+            result.sjs={'candidate':True}
+            result.sysml='package Final {}'
+            yield result.snapshot()
+        with tempfile.TemporaryDirectory() as folder:
+            patent=Path(folder)/'patent.html';patent.write_text(PATENT)
+            with patch('fine_tuned_nlp.adapter.generate',generate),patch('agentic.blind_quality.review',side_effect=ValueError('Unavailable')):
+                rows=list(process_results(str(patent),method='nlp'))
+                with self.assertRaises(ValueError):
+                    score_result(str(patent), rows[-1])
+            self.assertEqual(rows[-1]['sysml'],'package Final {}')
+            self.assertIsNone(rows[-1]['quality'])
+            self.assertIn('Choose Quality',rows[-1]['status'])
+
+    def test_quality_requires_matching_patent_and_completed_model(self):
+        with tempfile.TemporaryDirectory() as folder:
+            patent = Path(folder)/'patent.html'; patent.write_text(PATENT)
+            for row in [{}, {'sysml':'package Final {}','source':{'source_sha256':'wrong'}}]:
+                with patch('agentic.blind_quality.review') as reviewer:
+                    with self.assertRaises(ValueError): score_result(str(patent),row)
+                reviewer.assert_not_called()

@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><style>
+html,body{margin:0;height:100%;font:14px system-ui,sans-serif;color:#24354d;background:#fafbff}
+.tools{display:flex;gap:8px;align-items:center;padding:12px;border-bottom:1px solid #e1e6ef}
+button{border:1px solid #cbd4e2;border-radius:7px;background:white;color:inherit;padding:7px 12px;cursor:pointer}
+.hint{margin-left:auto;color:#65748b;font-size:12px}#viewport{height:calc(100% - 60px);overflow:hidden;cursor:grab;touch-action:none}
+#viewport:active{cursor:grabbing}svg{display:block;width:100%;height:100%}
+</style></head><body><div class="tools"><button id="fit">Fit diagram</button><button id="zoom-in" aria-label="Zoom in">+</button><button id="zoom-out" aria-label="Zoom out">−</button><span class="hint">Drag to pan · Scroll to zoom</span></div><div id="viewport"></div><script>
+const markup=__SVG_DATA__,viewport=document.getElementById('viewport');viewport.innerHTML=markup;
+const svg=viewport.querySelector('svg');svg.setAttribute('role','img');svg.setAttribute('aria-label','System model diagram');
+const original=svg.viewBox.baseVal;const bounds={x:original.x,y:original.y,width:original.width,height:original.height};let view={...bounds};
+function paint(){svg.setAttribute('viewBox',`${view.x} ${view.y} ${view.width} ${view.height}`)}
+function zoom(factor){const cx=view.x+view.width/2,cy=view.y+view.height/2;view.width*=factor;view.height*=factor;view.x=cx-view.width/2;view.y=cy-view.height/2;paint()}
+document.getElementById('fit').onclick=()=>{view={...bounds};paint()};document.getElementById('zoom-in').onclick=()=>zoom(.8);document.getElementById('zoom-out').onclick=()=>zoom(1.25);
+viewport.addEventListener('wheel',event=>{event.preventDefault();zoom(event.deltaY>0?1.12:.89)},{passive:false});
+let drag=null;viewport.addEventListener('pointerdown',event=>{drag={x:event.clientX,y:event.clientY,view:{...view}};viewport.setPointerCapture(event.pointerId)});
+viewport.addEventListener('pointermove',event=>{if(!drag)return;const scale=Math.max(view.width/viewport.clientWidth,view.height/viewport.clientHeight);view.x=drag.view.x-(event.clientX-drag.x)*scale;view.y=drag.view.y-(event.clientY-drag.y)*scale;paint()});
+viewport.addEventListener('pointerup',()=>drag=null);viewport.addEventListener('pointercancel',()=>drag=null);
+paint();
+</script></body></html>

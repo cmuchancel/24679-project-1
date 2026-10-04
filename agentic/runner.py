@@ -24,11 +24,13 @@ DECOMPOSER = "patent-functional-decomposer"
 
 
 def prepare_run(file):
+    from backend.patent import validate_patent
+    validate_patent(file)
     source, textbook = Path(file).resolve(), Path(BOOK).resolve()
     if source.suffix.lower() not in {".html", ".htm"} or not source.is_file():
         raise ValueError("Upload a patent HTML file.")
-    if not source.stat().st_size or source.stat().st_size > 10_000_000:
-        raise ValueError("Upload a nonempty patent smaller than 10 MB.")
+    if not source.stat().st_size:
+        raise ValueError("Upload a nonempty patent HTML file.")
     if not textbook.is_file() or textbook.suffix.lower() != ".epub":
         raise ValueError("The backend textbook is missing. Configure SE_EPUB_PATH on the server.")
     if not shutil.which("opencode"):

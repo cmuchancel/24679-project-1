@@ -1,7 +1,5 @@
 # Shared backend
 
-`service.process(file, session=None, method="agents")` streams status and saved result artifacts to the app. `methods.Method` defines the extension point; each method supplies its identifier, availability, login requirement and a streaming `run` function.
+`service.process_results(file, session=None, method='agents')` validates the patent and streams the shared Result fields: source, knowledge_graph, sjs, sysml, quality, status, run_id and method. The UI publishes the final successful snapshot after the stream ends. `score_result` independently reviews the final SysML against the matching full patent; source hashes must match.
 
-A method yields `(status, sjs_or_none, sjs_path_or_none, research_archive_or_none)`. A completed result must refer to its finalized SJS file and adjacent `.svg` and `.sysml` artifacts. Failed/in-progress updates carry no SJS. The service serves those exact files.
-
-Shared modules handle pinned SJS translation, SysML validation, diagrams, visitor authentication, research recording and configurable asset/output paths. NLP training is independently installable and does not load the agent runtime.
+`result.artifact_file` creates downloads from exact displayed artifacts. `diagrams` renders approved SJS; `graph_view` displays NLP extraction. Patent validation, translation/parser diagnostics, visitor sessions, research storage and configurable paths are shared. `service.process` and `methods.Method` remain legacy integration boundaries; the current UI uses `process_results`. Hosted NLP uses `fine_tuned_nlp.cloud`. See [architecture](../docs/ARCHITECTURE.md).
