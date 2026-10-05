@@ -2,6 +2,8 @@
 
 Turn a complete patent HTML into a reviewable system model. The **[live Hugging Face interface](https://huggingface.co/spaces/cmuchancel/patent2sysml)** offers **Luna AI Agents** (off-the-shelf) and **fine-tuned GLiNER RelEx** (NLP on ZeroGPU).
 
+The [submission text](docs/SUBMISSION.md) follows the assignment format. See [readiness and remaining data verification](docs/SUBMISSION_READINESS.md) and the [publication credential audit](docs/PUBLICATION_AUDIT.md).
+
 ## Try it
 
 1. Open the [live app](https://cmuchancel-patent2sysml.hf.space/) and click **Try example: Gear pump**, or upload a full patent HTML.
@@ -22,7 +24,7 @@ Whole patents are processed through bounded windows rather than silently truncat
 | **GLiNER training data** | 25 SysML documents, 62 chunks, **1,898 rule-labeled spans**, 14 labels | [Public HF dataset/card](https://huggingface.co/datasets/cmuchancel/gliner-sysml-training-data), [exact data](fine_tuned_nlp/data/) |
 | **100 mechanical patents** | Public input/reference collection, separate from fine-tuning | [Public HF dataset](https://huggingface.co/datasets/cmuchancel/mechanical-utility-patents-100) |
 
-The small SysML held-out test measures agreement with labeling rules, not patent accuracy. Dataset source rights are recorded separately from the model license. GitHub and weights currently require collaborator access; the Space, training dataset and card copies in the Space are public.
+The small SysML held-out test measures agreement with labeling rules, not patent accuracy. Dataset source rights are recorded separately from the model license. GitHub, GLiNER weights, the Space and the training dataset are public. Credentials and licensed reference assets are kept outside these repositories.
 
 ## Repository map
 

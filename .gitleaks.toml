@@ -1,0 +1,8 @@
+title = "Patent to SysML secret scan"
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "FuncQual model_key is a patent/system identifier plus a ten-character input hash, generated in sjs_loader.py; it is not a credential."
+regexTarget = "match"
+regexes = ['''model_key"\s*:\s*"us[0-9]+[a-z0-9_:./-]*-[0-9a-f]{10}"''']

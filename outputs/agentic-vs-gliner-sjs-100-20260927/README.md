@@ -44,3 +44,7 @@ Frozen source SHA-256 manifests identify the exact local runtimes. This release 
 The publication verifies identical source-input hashes, core output bytes against the local final verification records, final approved review linkage, archive integrity, empty final structural-error lists, and eleven completed GLiNER passes. Model weights and frozen runtime files were checked against their pinned digests. Native compiler reports come from the completed jobs; publishing did not regenerate predictions or change the models.
 
 This collection is stored directly in the main project repository, `cmuchancel/24679-project-1`, under `outputs/agentic-vs-gliner-sjs-100-20260927/`. Original patent source attribution is retained; no blanket rights to upstream material are asserted.
+
+## Publication sanitization
+
+The embedded upstream browser API key was removed from published source HTML before this repository became public. All other HTML bytes and all final model outputs are unchanged. Experiment input hashes remain the original recorded identities; current distribution checksums are refreshed. See [sanitization records](../../docs/patent-sanitization.json).

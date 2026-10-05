@@ -96,7 +96,8 @@ def build():
     write_json(DEST / "provenance.json", {
         "dataset_id": "cmuchancel/gliner-sysml-training-data",
         "source_repository": "https://github.com/cmuchancel/24679-project-1",
-        "source_commit": "e708b60dea0148615e7b7b3fc0583e4f5b8f394e",
+        "source_commit": "0ad817e45e86fec1884ee402077600d652e70bff",
+        "historical_source_commit": "e708b60dea0148615e7b7b3fc0583e4f5b8f394e",
         "source_contributor": "eandujar09 (Eladio)",
         "checkpoint": "cmuchancel/gliner-sysml-relex-v1; step 450",
         "raw_file_sha256": {str(p.relative_to(SOURCE)): hashlib.sha256(p.read_bytes()).hexdigest()

@@ -8,7 +8,7 @@ Anonymous/free visitors can exhaust ZeroGPU allowance. Sign in to Hugging Face o
 
 ## Checkout and environments
 
-GitHub currently requires collaborator access. Clone `https://github.com/cmuchancel/24679-project-1.git`. Production app/checkpoint use Python **3.12**. Keep training and FuncQual environments separate.
+The GitHub code and GLiNER weights are public. Clone `https://github.com/cmuchancel/24679-project-1.git`. Production app/checkpoint use Python **3.12**. Keep training and FuncQual environments separate.
 
 Lightweight regression checks, without model calls:
 

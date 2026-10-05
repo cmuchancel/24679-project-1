@@ -35,10 +35,10 @@ Quality reviews only the original full patent, final SysML and fixed rubric in a
 ## Project package
 
 - [Luna project model card](model_cards/LUNA.md)
-- [Fine-tuned GLiNER model card](model_cards/GLINER.md) · weights require authorized access
+- [Fine-tuned GLiNER model card](model_cards/GLINER.md) · [public checkpoint and inference files](https://huggingface.co/cmuchancel/gliner-sysml-relex-v1)
 - [Public GLiNER training data and dataset card](https://huggingface.co/datasets/cmuchancel/gliner-sysml-training-data): **1,898 rule-labeled entity spans**, 25 documents, 62 chunks, 14 labels
 - [100-patent input/reference dataset](https://huggingface.co/datasets/cmuchancel/mechanical-utility-patents-100)
-- [GitHub code and documentation](https://github.com/cmuchancel/24679-project-1) · currently private, collaborator access needed
+- [GitHub code and documentation](https://github.com/cmuchancel/24679-project-1) · public repository
 - [Architecture](ARCHITECTURE.md), [setup](docs/PROTOTYPE_SETUP.md), [submission links](docs/SUBMISSION.md)
 - [Optional dataset exploration notebook](notebooks/gliner_dataset_eda.ipynb). The live demo is the Gradio example button.
 

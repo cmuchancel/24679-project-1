@@ -27,19 +27,19 @@ Teaching, reproducible pilot SysML entity extraction and human-reviewed patent-t
 
 ## Download and run
 
-[Hugging Face weights](https://huggingface.co/cmuchancel/gliner-sysml-relex-v1) and [GitHub Release](https://github.com/cmuchancel/24679-project-1/releases/tag/gliner-sysml-relex-v1). Both currently require authorized access; the live demo and training dataset are public. A public copy of this card is included in the Space's `model_cards/GLINER.md`.
+[Hugging Face weights](https://huggingface.co/cmuchancel/gliner-sysml-relex-v1) and [GitHub Release](https://github.com/cmuchancel/24679-project-1/releases/tag/gliner-sysml-relex-v1). The weights, release files, code, live demo and training dataset are public; no project token is required to download them. A public copy of this card is included in the Space's `model_cards/GLINER.md`.
 
 `gliner-sysml-relex-v1.pkl` contains the complete CPU model, weights, configuration and tokenizer, serialized with Python pickle protocol 5. No Hugging Face download or training is needed to load it. It is an inference export of **checkpoint 450**, selected by the lowest validation loss, not the final training step. Install the pinned dependencies below: whole-model pickles depend on their Python library versions. Only load trusted pickle files.
 
 ## Quick start
 
-Use Python 3.12 and run these commands from the repository root. This private repository requires teammate access and a signed-in GitHub CLI (`gh auth login`).
+Use Python 3.12 and run these commands from the repository root. The public Hugging Face repository can be downloaded without signing in. Install the Hugging Face CLI in this environment or use `hf_hub_download` from Python.
 
 ```sh
 python3.12 -m venv .venv-nlp
 source .venv-nlp/bin/activate
 python -m pip install -r fine_tuned_nlp/requirements-inference.txt
-gh release download gliner-sysml-relex-v1 --repo cmuchancel/24679-project-1 --dir fine_tuned_nlp/models/gliner-sysml-relex-v1
+hf download cmuchancel/gliner-sysml-relex-v1 --local-dir fine_tuned_nlp/models/gliner-sysml-relex-v1
 ```
 
 The release includes `SHA256SUMS` to check the downloaded pickle. From that download directory, use `shasum -a 256 -c SHA256SUMS` on macOS or `sha256sum -c SHA256SUMS` on Linux.
@@ -71,7 +71,7 @@ model.eval()
 
 ## Plug into the graph code
 
-Pass the loaded model directly to the existing graph. This example accepts already-cleaned text and exports JSON without the missing patent parser or HTML viewer:
+Pass the loaded model directly to the existing graph. This example accepts already-cleaned text and exports JSON without launching the patent parser or HTML viewer:
 
 ```python
 from fine_tuned_nlp.knowledge_graph.sjs_knowledge_graph import SJSKnowledgeGraph
@@ -88,7 +88,7 @@ This runs one extraction pass. The live application uses the packaged `fine_tune
 
 - Base: [knowledgator/gliner-relex-large-v1.0](https://huggingface.co/knowledgator/gliner-relex-large-v1.0), revision `4aedc9226a5ac9e2f6b5ea3e91c1ee577c88a290`; base model license: Apache-2.0.
 - Architecture: `UniEncoderSpanRelexGLiNER`, 466,576,896 parameters, float32.
-- Data: 25 related linear-actuator SysML documents with rule-generated entity labels. Document split: 21 training / 2 validation / 2 test, giving 54 / 5 / 3 chunks of at most 384 tokens.
+- Data: 25 SysML documents, mainly related linear-actuator variants plus practice/sequence examples, with rule-generated entity labels. Document split: 21 training / 2 validation / 2 test, giving 54 / 5 / 3 chunks of at most 384 tokens.
 - Supervision: 14 entity labels. No relationship labels were supplied; relation-specific layers were frozen while the shared encoder adapted.
 - Training: M1 Pro GPU, Adafactor, learning rate `1e-5`, batch size 1, accumulation 8, seed 42, gradient checkpointing.
 - Selection: step 450, epoch 64.30; validation loss **6.8639**. Training ultimately stopped on a validation plateau at step 550; the selected checkpoint stayed the same. Validation loss is not accuracy.

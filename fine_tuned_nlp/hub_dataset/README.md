@@ -93,7 +93,7 @@ For exact reproduction, download `original/splits/{train,validation,test}.json` 
 
 ## Collection and annotation
 
-The supplied corpus entered the project in contributor **eandujar09 (Eladio)**'s [source commit](https://github.com/cmuchancel/24679-project-1/commit/e708b60dea0148615e7b7b3fc0583e4f5b8f394e). The original sibling `SysML-files` directory was not committed, but all 25 accepted source texts are preserved in canonical documents. Original upstream authorship beyond this contribution was not recorded; no manual collection or manual span-review count is established.
+The supplied corpus entered the project in contributor **eandujar09 (Eladio)**'s [source commit](https://github.com/cmuchancel/24679-project-1/commit/0ad817e45e86fec1884ee402077600d652e70bff). The original contributor commit was `e708b60dea0148615e7b7b3fc0583e4f5b8f394e`; the linked commit is its cleaned-history equivalent after removing an upstream browser key from patent HTML. SysML source texts and GLiNER split bytes are unchanged. The original sibling `SysML-files` directory was not committed, but all 25 accepted source texts are preserved in canonical documents. Original upstream authorship beyond this contribution was not recorded; no manual collection or manual span-review count is established.
 
 The preparation pipeline:
 
