@@ -59,8 +59,6 @@ def build_app(process, unused_gpu_slot=None, infer_windows=None):
         patent = gr.File(label='Patent HTML · whole patents', file_types=['.html', '.htm'],
                          type='filepath', elem_id='patent-upload')
         example = gr.Button('Try example: Gear pump', elem_id='patent-example')
-        gr.Markdown('US8087913B2 · A saved AI Agents model scored 82/100 in Quality review. New results can differ.',
-                    elem_id='example-note')
         with gr.Row(visible=False, elem_id='method-options') as methods:
             agents = gr.Button('AI Agents', elem_id='method-agents')
             nlp = gr.Button('Fine-Tuned NLP', elem_id='method-nlp')
