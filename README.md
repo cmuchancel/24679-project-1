@@ -2,7 +2,7 @@
 
 Turn a complete patent HTML into a reviewable system model. The **[live Hugging Face interface](https://huggingface.co/spaces/cmuchancel/patent2sysml)** offers **Luna AI Agents** (off-the-shelf) and **fine-tuned GLiNER RelEx** (NLP on ZeroGPU).
 
-The [submission text](docs/SUBMISSION.md) follows the assignment format. See [readiness and remaining data verification](docs/SUBMISSION_READINESS.md) and the [publication credential audit](docs/PUBLICATION_AUDIT.md).
+The [submission text](docs/SUBMISSION.md) follows the assignment format. See the [readiness map](docs/SUBMISSION_READINESS.md) and the [publication credential audit](docs/PUBLICATION_AUDIT.md).
 
 ## Try it
 

@@ -9,7 +9,7 @@
 
 # Data
 
-- **Fine-tuning Dataset:** [SysML GLiNER Training Data](https://huggingface.co/datasets/cmuchancel/gliner-sysml-training-data). Public release of **25 source documents, 62 chunks and 1,898 rule-generated entity spans across 14 labels**, with train/validation/test splits, original source files, provenance, checksums and exploratory analysis. Labels are produced by deterministic translator rules. Original upstream source rights are unspecified, so no blanket dataset license is asserted. The manual-collection count has not yet been verified; this release is not presented as 500 manually collected samples.
+- **Fine-tuning Dataset:** [SysML GLiNER Training Data](https://huggingface.co/datasets/cmuchancel/gliner-sysml-training-data). **Manual creation of data by the project team**, followed by automatic labeling using deterministic translator rules. The public release contains **25 source documents, 62 chunks and 1,898 labeled entity spans across 14 labels**, with train/validation/test splits, original source files, provenance, checksums and exploratory analysis. The 1,898 count is at the entity-annotation level. Original upstream source rights are unspecified, so no blanket dataset license is asserted.
 - **Patent Input Collection:** [100 Mechanical Utility Patents](https://huggingface.co/datasets/cmuchancel/mechanical-utility-patents-100). A separate collection of 100 granted mechanical patents from Google Patents, with full HTML, source links, selection notes, attribution and rights documentation. Used for input/reference and paired-generation experiments; not used as GLiNER training labels. No blanket license to upstream patent or page material is asserted.
 
 # Code Repositories

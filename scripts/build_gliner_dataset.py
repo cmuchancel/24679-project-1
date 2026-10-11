@@ -99,6 +99,11 @@ def build():
         "source_commit": "0ad817e45e86fec1884ee402077600d652e70bff",
         "historical_source_commit": "e708b60dea0148615e7b7b3fc0583e4f5b8f394e",
         "source_contributor": "eandujar09 (Eladio)",
+        "data_creation": {
+            "method": "Manual creation of data by the project team",
+            "reported_by": "Project owner",
+            "confirmed_on": "2026-10-11",
+            "annotation_method": "translator-rule"},
         "checkpoint": "cmuchancel/gliner-sysml-relex-v1; step 450",
         "raw_file_sha256": {str(p.relative_to(SOURCE)): hashlib.sha256(p.read_bytes()).hexdigest()
                             for p in sorted(SOURCE.rglob("*.json"))},
