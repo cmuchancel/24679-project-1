@@ -40,7 +40,7 @@ configs:
 
 This is the actual weakly supervised corpus used to fine-tune [GLiNER RelEx checkpoint 450](https://huggingface.co/spaces/cmuchancel/patent2sysml/blob/main/model_cards/GLINER.md) for the [Patent to SysML prototype](https://huggingface.co/spaces/cmuchancel/patent2sysml). The live interface offers AI Agents using Luna and Fine-Tuned NLP using this checkpoint. This dataset trained GLiNER; it did not train Luna.
 
-The project team describes its source-data preparation as **manual creation of data**. Automatic labeling is a separate step: deterministic rules produce the labels after translator validation. The labels describe SysML source code, principally related linear-actuator examples with additional practice/sequence examples. **The 1,898 count is entity-level annotations across 25 source documents and 62 chunks.**
+**The team created the labeled training data using a rule-based labeling pipeline.** Deterministic rules produce the labels after translator validation; this labeling step creates the training annotations. The labels describe SysML source code, principally related linear-actuator examples with additional practice/sequence examples. **The 1,898 count is entity-level annotations across 25 source documents and 62 chunks.**
 
 ## At a glance
 
@@ -93,7 +93,7 @@ For exact reproduction, download `original/splits/{train,validation,test}.json` 
 
 ## Collection and annotation
 
-The supplied corpus entered the project in contributor **eandujar09 (Eladio)**'s [source commit](https://github.com/cmuchancel/24679-project-1/commit/0ad817e45e86fec1884ee402077600d652e70bff). The original contributor commit was `e708b60dea0148615e7b7b3fc0583e4f5b8f394e`; the linked commit is its cleaned-history equivalent after removing an upstream browser key from patent HTML. SysML source texts and GLiNER split bytes are unchanged. The original sibling `SysML-files` directory was not committed, but all 25 accepted source texts are preserved in canonical documents. On 2026-10-11, the project owner confirmed the team's source-data preparation as **manual creation of data**. This description concerns data creation; the span labels remain automatic. Original upstream authorship beyond the contributor record was not recorded.
+The supplied corpus entered the project in contributor **eandujar09 (Eladio)**'s [source commit](https://github.com/cmuchancel/24679-project-1/commit/0ad817e45e86fec1884ee402077600d652e70bff). The original contributor commit was `e708b60dea0148615e7b7b3fc0583e4f5b8f394e`; the linked commit is its cleaned-history equivalent after removing an upstream browser key from patent HTML. SysML source texts and GLiNER split bytes are unchanged. The original sibling `SysML-files` directory was not committed, but all 25 accepted source texts are preserved in canonical documents. The rule-based labeling pipeline creates the labeled training data from those source texts. Original upstream authorship beyond the contributor record was not recorded.
 
 The preparation pipeline:
 

@@ -19,7 +19,7 @@ tags:
 
 This is the **fine-tuned model** in the [live Patent to SysML interface](https://huggingface.co/spaces/cmuchancel/patent2sysml). The Fine-Tuned NLP method uses the actual checkpoint on ZeroGPU, processes the full patent through bounded windows, then assembles its Knowledge Graph, SJS and SysML v2. The other method uses off-the-shelf Luna; this release does not contain Luna weights.
 
-Training data: [SysML GLiNER Training Data](https://huggingface.co/datasets/cmuchancel/gliner-sysml-training-data), **25 documents, 62 chunks and 1,898 labeled entity spans across 14 labels**. The project team describes its source-data preparation as **manual creation of data**. The annotations are generated automatically by deterministic translator rules.
+Training data: [SysML GLiNER Training Data](https://huggingface.co/datasets/cmuchancel/gliner-sysml-training-data), **25 documents, 62 chunks and 1,898 labeled entity spans across 14 labels**. The team created the labeled training data using a rule-based labeling pipeline: deterministic translator rules produce the entity annotations.
 
 ## Intended use
 
