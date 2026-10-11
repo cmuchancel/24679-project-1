@@ -116,7 +116,11 @@ class StatusTests(unittest.TestCase):
             self.assertNotIn(c['knowledge-graph'], update)
             self.assertEqual(update[c['process-status']]['value'], 'Working')
         self.assertTrue(updates[-1][c['results-section']]['visible'])
-        self.assertIn('iframe', updates[-1][c['knowledge-graph']])
+        self.assertTrue(updates[-1][c['knowledge-graph']]['visible'])
+        self.assertIn('iframe', updates[-1][c['knowledge-graph']]['value'])
+        graph_download = next(component for component in updates[-1]
+                              if getattr(component, 'label', None) == 'Download Knowledge Graph')
+        self.assertTrue(updates[-1][graph_download]['visible'])
         self.assertEqual(updates[-1][c['process-status']]['value'], 'Complete')
 
     def test_partial_failure_never_publishes_a_result_panel(self):

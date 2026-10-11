@@ -72,11 +72,7 @@ def build_app(process, unused_gpu_slot=None, infer_windows=None):
                 with gr.Tab('SJS Diagram', id='sjs-diagram', visible=False, interactive=False, elem_id='sjs-diagram-tab') as sjs_diagram_tab:
                     sjs_picture = gr.HTML(elem_id='sjs-diagram')
                     sjs_picture_download = gr.DownloadButton('Download SJS Diagram', interactive=False)
-                # NLP selects this initially hidden tab when its final results arrive.
-                # Preload its children so programmatic selection does not leave an
-                # empty panel until the visitor clicks away and back.
-                with gr.Tab('Knowledge Graph', id='knowledge-graph', visible=False, interactive=False,
-                            render_children=True, elem_id='knowledge-graph-tab') as kg_tab:
+                with gr.Tab('Knowledge Graph', id='knowledge-graph', visible=False, interactive=False, elem_id='knowledge-graph-tab') as kg_tab:
                     graph = gr.HTML(elem_id='knowledge-graph')
                     kg_download = gr.DownloadButton('Download Knowledge Graph')
                 with gr.Tab('SJS', id='sjs', visible=False, interactive=False) as sjs_tab:
@@ -119,12 +115,17 @@ def build_app(process, unused_gpu_slot=None, infer_windows=None):
                 [kg_download, sjs_download, sysml_download, quality_download],
                 ['knowledge_graph', 'sjs', 'sysml', 'quality'])}
             downloads[kg_download] = None if is_agent else downloads[kg_download]
+            # Gradio marks inactive-tab children hidden at startup. Explicitly
+            # reveal both children with their final values; selecting the tab
+            # alone can leave its body empty until the visitor clicks it again.
+            downloads[kg_download] = gr.update(value=downloads[kg_download], visible=kg is not None)
             return {**downloads, artifacts: row, results: gr.update(visible=any(v is not None for v in values)),
                     result_tabs: gr.update(selected='quality' if review else ('sjs-diagram' if is_agent and model is not None else 'knowledge-graph')),
                     sjs_picture: diagrams['sjs'][0],
                     sjs_diagram_tab: gr.update(visible=is_agent and model is not None, interactive=is_agent and model is not None),
                     sjs_picture_download: gr.update(value=diagrams['sjs'][1], interactive=bool(diagrams['sjs'][1])),
-                    graph: render_graph(kg), sjs: '' if model is None else json.dumps(model, indent=2),
+                    graph: gr.update(value=render_graph(kg), visible=kg is not None),
+                    sjs: '' if model is None else json.dumps(model, indent=2),
                     sysml: text or '', quality: quality_text(review),
                     score: review.get('overall_score') if review else None,
                     summary: review.get('summary', '') if review else '',
