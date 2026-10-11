@@ -38,9 +38,11 @@ configs:
 
 **1,898 labeled entity spans · 14 label types · 25 SysML documents · 62 training/evaluation chunks.**
 
+**Dataset creator: Eladio (`eandujar09`).** Eladio created the project's labeled SysML training corpus using the rule-based labeling workflow and contributed the source data and preparation code to the repository. The pipeline's automatic labeling step creates the training annotations. A concise [data documentation overview](https://github.com/cmuchancel/24679-project-1/blob/main/docs/DATA_DOCUMENTATION.md) records authorship, source, preparation, counts, metadata, EDA, use and rights.
+
 This is the actual weakly supervised corpus used to fine-tune [GLiNER RelEx checkpoint 450](https://huggingface.co/spaces/cmuchancel/patent2sysml/blob/main/model_cards/GLINER.md) for the [Patent to SysML prototype](https://huggingface.co/spaces/cmuchancel/patent2sysml). The live interface offers AI Agents using Luna and Fine-Tuned NLP using this checkpoint. This dataset trained GLiNER; it did not train Luna.
 
-**The team created the labeled training data using a rule-based labeling pipeline.** Deterministic rules produce the labels after translator validation; this labeling step creates the training annotations. The labels describe SysML source code, principally related linear-actuator examples with additional practice/sequence examples. **The 1,898 count is entity-level annotations across 25 source documents and 62 chunks.**
+**Eladio created the labeled training data using a rule-based labeling pipeline.** Deterministic rules produce the labels after translator validation; this labeling step creates the training annotations. The labels describe SysML source code, principally related linear-actuator examples with additional practice/sequence examples. **The 1,898 count is entity-level annotations across 25 source documents and 62 chunks.**
 
 ## At a glance
 
@@ -91,9 +93,11 @@ gliner_row = {
 
 For exact reproduction, download `original/splits/{train,validation,test}.json` and their metadata files. Those training JSON files are retained byte-for-byte, including entity-free negative examples and all 14 candidate labels. `original/canonical/documents.json` contains the full SysML text, character spans and translated SJS. Character offsets there are half-open: `text[start:end]`. Its `confidence: 1.0` is a fixed rule marker, not calibrated model confidence.
 
-## Collection and annotation
+## Creator, source and data creation
 
-The supplied corpus entered the project in contributor **eandujar09 (Eladio)**'s [source commit](https://github.com/cmuchancel/24679-project-1/commit/0ad817e45e86fec1884ee402077600d652e70bff). The original contributor commit was `e708b60dea0148615e7b7b3fc0583e4f5b8f394e`; the linked commit is its cleaned-history equivalent after removing an upstream browser key from patent HTML. SysML source texts and GLiNER split bytes are unchanged. The original sibling `SysML-files` directory was not committed, but all 25 accepted source texts are preserved in canonical documents. The rule-based labeling pipeline creates the labeled training data from those source texts. Original upstream authorship beyond the contributor record was not recorded.
+**Eladio (`eandujar09`) is the dataset creator**, as confirmed by the project owner and the recorded source contribution. The supplied corpus and preparation code entered the project in his [September 24, 2026 source commit](https://github.com/cmuchancel/24679-project-1/commit/0ad817e45e86fec1884ee402077600d652e70bff). The original contributor commit was `e708b60dea0148615e7b7b3fc0583e4f5b8f394e`; the linked commit is its cleaned-history equivalent. The original sibling `SysML-files` directory was not committed, but all 25 accepted source texts, relative source filenames and hashes are preserved in canonical documents. The source texts are principally linear-actuator SysML examples with additional practice/sequence examples. The rule-based labeling pipeline creates the labeled training data from those texts.
+
+The Hub release packages Eladio's existing corpus for viewing and reproduction. It preserves the original source texts, annotation counts and split bytes; the publication does not add a new training corpus. Creator attribution identifies who prepared the dataset; the separate [rights notice](RIGHTS.md) records its current licensing status.
 
 The preparation pipeline:
 
@@ -105,6 +109,8 @@ The preparation pipeline:
 6. Retains entity-free chunks and exports fixed train/validation/test JSON.
 
 The [labeling pipeline](https://github.com/cmuchancel/24679-project-1/blob/main/fine_tuned_nlp/src/sysml_gliner/pipeline.py) and [Hub packaging script](https://github.com/cmuchancel/24679-project-1/blob/main/scripts/build_gliner_dataset.py) are in GitHub. Packaging regenerates every original chunk from the canonical documents and verifies equality before uploading. No padding, new annotations, augmentation, synthetic expansion or re-splitting was performed for this publication.
+
+For example, one actual training annotation from `Linear_Actuator_practice.sysml` has text `PowerOutletPort`, label `port definition` and inclusive token offsets `20:20` in its chunk. The published record retains `document_id`, `chunk_id`, `source_path` and `annotation_method: translator-rule`, so it can be traced back to its source context.
 
 ## Label vocabulary
 
@@ -122,10 +128,10 @@ At threshold 0.5, exact token-span-and-label matching on the retained test split
 
 Suitable for teaching, reproducible pilot fine-tuning, label inspection and development of independently reviewed SysML extraction experiments. English code examples, rule-based labels, narrow domain coverage, related variants and class imbalance limit generalization. Human review and an independent manually labeled patent/relationship benchmark remain necessary for scientific quality claims.
 
-The corpus is engineering example text; original source text has been retained. No private patent upload, account credential, textbook content, model weight, or agent conversation was added to this release. A verified manual annotation count and comprehensive upstream rights audit are not available. No blanket dataset license is asserted: see [RIGHTS.md](RIGHTS.md). The base model's Apache-2.0 license does not license this source dataset.
+The corpus is engineering example text; original source text has been retained. No private patent upload, account credential, textbook content, model weight, or agent conversation was added to this release. The labels are created by the documented rules. The dataset does not currently include an explicit reuse license: see [RIGHTS.md](RIGHTS.md). The base model's Apache-2.0 license does not license this source dataset.
 
 ## Citation
 
-> cmuchancel and eandujar09. (2026). SysML GLiNER Training Data: 1,898 rule-labeled entity spans in 25 documents. Hugging Face. https://huggingface.co/datasets/cmuchancel/gliner-sysml-training-data.
+> Eladio (eandujar09) and cmuchancel. (2026). SysML GLiNER Training Data: 1,898 rule-labeled entity spans in 25 documents. Hugging Face. https://huggingface.co/datasets/cmuchancel/gliner-sysml-training-data.
 
 Dataset-card structure follows the [Hugging Face dataset-card guide](https://huggingface.co/docs/hub/en/datasets-cards). Contact the repository owner through the dataset discussion page for corrections or provenance updates.

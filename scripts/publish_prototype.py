@@ -62,6 +62,7 @@ def main():
                                ("fine_tuned_nlp/MODEL_CARD.md", "model_cards/GLINER.md"),
                                ("docs/PROTOTYPE_SETUP.md", "docs/PROTOTYPE_SETUP.md"),
                                ("docs/MODEL_SELECTION.md", "docs/MODEL_SELECTION.md"),
+                               ("docs/DATA_DOCUMENTATION.md", "docs/DATA_DOCUMENTATION.md"),
                                ("docs/EVALUATION.md", "docs/EVALUATION.md"),
                                ("docs/SUBMISSION.md", "docs/SUBMISSION.md")):
             operations.append(CommitOperationAdd(path_in_repo=target, path_or_fileobj=ROOT / source))
