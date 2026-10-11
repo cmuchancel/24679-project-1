@@ -15,7 +15,3 @@
 # Code Repositories
 
 - **Main Repo:** [24679 Project 1](https://github.com/cmuchancel/24679-project-1). Public application, training and data-preparation code, model cards, exact training data, example inputs/results, reproducibility instructions, automated checks, evaluation evidence and AI-tool-use disclosure. The separate FuncQual evaluator and its guide are retained; its reference-free profile is distinct from the app's patent-grounded Quality score. API credentials, licensed reference assets and large weights are excluded from Git; the trained weights are published separately on Hugging Face.
-
-# Colab Notebooks (optional)
-
-- **Dataset Exploration:** [Open in Colab](https://colab.research.google.com/github/cmuchancel/24679-project-1/blob/main/notebooks/gliner_dataset_eda.ipynb). Loads the public GLiNER dataset without credentials, checks source hashes and document-disjoint splits, verifies all labeled spans and plots class imbalance. It was executed successfully against the public release. The interactive user demo is the Gradio example button; no live notebook demo is required.

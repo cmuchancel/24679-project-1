@@ -51,7 +51,7 @@ Production entry: `space_app.py` → `app.space` → `app.main`. The UI uses `ba
 - [Architecture and contracts](docs/ARCHITECTURE.md)
 - [Evaluation evidence](docs/EVALUATION.md) and [training settings](fine_tuned_nlp/TRAINING_NOTES.md)
 - [AI tool usage](docs/AI_USAGE.md)
-- [Dataset exploration notebook](https://colab.research.google.com/github/cmuchancel/24679-project-1/blob/main/notebooks/gliner_dataset_eda.ipynb)
+- [Dataset exploration notebook](notebooks/gliner_dataset_eda.ipynb)
 - [Assignment submission text](docs/SUBMISSION.md) and [readiness map](docs/SUBMISSION_READINESS.md)
 
 **FuncQual** is a separate evaluator added to the repository. Its [complete guide](docs/FUNCQUAL.md) is preserved. It returns an internal-validity/usefulness profile with hard gates, applicability and uncertainty, without a composite score. The UI's patent-grounded Quality review is a different workflow.
