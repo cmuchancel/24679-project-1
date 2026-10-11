@@ -61,6 +61,8 @@ def main():
                                ("model_cards/LUNA.md", "model_cards/LUNA.md"),
                                ("fine_tuned_nlp/MODEL_CARD.md", "model_cards/GLINER.md"),
                                ("docs/PROTOTYPE_SETUP.md", "docs/PROTOTYPE_SETUP.md"),
+                               ("docs/MODEL_SELECTION.md", "docs/MODEL_SELECTION.md"),
+                               ("docs/EVALUATION.md", "docs/EVALUATION.md"),
                                ("docs/SUBMISSION.md", "docs/SUBMISSION.md")):
             operations.append(CommitOperationAdd(path_in_repo=target, path_or_fileobj=ROOT / source))
         # Cached bytecode is not source. Leave compatibility entry points untouched.

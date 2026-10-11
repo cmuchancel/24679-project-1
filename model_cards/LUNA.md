@@ -1,3 +1,14 @@
+---
+language:
+- en
+pipeline_tag: text-generation
+tags:
+- off-the-shelf
+- sysml
+- patents
+- agents
+---
+
 # Luna: off-the-shelf model used by AI Agents
 
 **Project model identifier:** `openai/gpt-6-luna` in OpenCode. **Category:** off-the-shelf; the project did not train or fine-tune Luna and does not redistribute its weights.
@@ -10,9 +21,24 @@ The agent workflow reads the full extracted patent, retrieves relevant systems-e
 
 The actual configured model is recorded in each run. `OPENCODE_MODEL` can override the default; such a run must be attributed to the recorded model rather than silently called Luna. See `agentic/runner.py`, `agentic/reviewer_credentials.py` and `agentic/blind_quality.py`.
 
-## Selection and training
+## Model selection rationale
 
-Luna is the configured hosted model for the project's agent workflow. Tool use, instruction following and availability through the connected account motivated this practical choice. A systematic comparison against other language models has not been completed. No claim is made that it is the best-performing model.
+**We selected Luna for the tool-guided reasoning and model-authoring method.** A patent describes components, functions and interactions in prose; the agent method must turn that evidence into a functional decomposition, write structured SJS, respond to validation findings and revise the candidate. We therefore needed an instruction-following model that could operate the existing retrieval, drafting and review tools through OpenCode.
+
+| Selection criterion | Why it matters for this project | Evidence supporting the choice |
+|---|---|---|
+| Tool-guided decomposition | Retrieve patent evidence and systems-engineering guidance, then author a structured model | The configured orchestrator, decomposer and reviewer use the allowed workspace/retrieval tools in `agentic/runner.py` |
+| Structured drafting and revision | Produce SJS that can be checked, repaired, translated and rendered | The [100-patent paired study](https://github.com/cmuchancel/24679-project-1/blob/main/outputs/agentic-vs-gliner-sjs-100-20260927/README.md) contains 100 completed, reviewed agent outputs with passing compiler reports |
+| Hosted access through the existing interface | Provide an agent method without distributing or hosting a language-model checkpoint in the Space | The live Space connects the visitor's ChatGPT account; Luna is the configured OpenCode model |
+| Separate review context | Review the original patent and final model without carrying over the drafting conversation | `agentic/blind_quality.py` starts a fresh, tool-free reviewer process with a fixed rubric |
+
+Luna complements GLiNER: Luna authors and revises a functional model, while GLiNER extracts labeled spans and candidate relationships for a graph. Using an off-the-shelf language model also lets the project evaluate that method without a separate language-model training corpus or training run. The existing labeled corpus supervises entity extraction, not complete patent-to-functional-model answers.
+
+**Tradeoffs:** this method requires a connected ChatGPT account, depends on provider availability, and can omit or invent engineering details. Retrieval, validation and separate-context review reduce some workflow risks but do not establish correctness. The generator and default reviewer both use Luna; separate context does not mean an independent human or different-model judge.
+
+This is a task-and-integration rationale supported by completed project runs. A controlled comparison of Luna against alternative language models, prices or latency has not been completed. The evidence supports using Luna in this prototype; it does not establish that Luna is the best or cheapest model. See the [selection and evidence summary](https://github.com/cmuchancel/24679-project-1/blob/main/docs/MODEL_SELECTION.md).
+
+## Training and data sources
 
 There is no project training dataset, optimizer or training run for Luna. The upstream provider's pretraining data, weights, parameter count and training details are not supplied in this repository. The GLiNER dataset is used only for GLiNER fine-tuning. Access and use follow the provider's account terms; this card is project documentation, not a license grant or provider-authored model card.
 
@@ -21,6 +47,8 @@ There is no project training dataset, optimizer or training run for Luna. The up
 The bundled **US8087913B2, Gear pump** example has an actual saved AI Agents run with seven subsystems and a patent-grounded blind Quality review of **82/100**. Its category scores were patent grounding 90, functional completeness 84, flow consistency 88, claim traceability 75, interfaces 83 and SysML correctness 72. Four issues were recorded, including treatment of a claim-required driven gear as optional and generic SysML names.
 
 Input and result checksums, original SJS/SysML and the complete review are in `examples/patents/`. This is one recorded model and one model-based review, not a reproducible performance guarantee or independently labeled benchmark. Fresh generations and reviews can differ. This patent-grounded review is separate from the repository's reference-free **FuncQual** evaluator, which returns a profile and has no overall score.
+
+The [matched 100-patent study](https://github.com/cmuchancel/24679-project-1/blob/main/outputs/agentic-vs-gliner-sjs-100-20260927/README.md) supplies broader workflow evidence: all 100 published Luna agent outputs completed, received final agent-review approval and have passing compiler reports; the study reports zero unresolved translator mappings for those outputs. These are completed-output and translation checks, not first-attempt success rates or extraction-accuracy measurements. Review approval can coexist with incomplete patent coverage. The historical study exports SJS 1.0; the current agent interface uses SJS 1.2.
 
 ## Intended use and limitations
 

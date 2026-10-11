@@ -50,6 +50,7 @@ Production entry: `space_app.py` → `app.space` → `app.main`. The UI uses `ba
 - [Setup, secrets, testing and deployment](docs/PROTOTYPE_SETUP.md)
 - [Architecture and contracts](docs/ARCHITECTURE.md)
 - [Evaluation evidence](docs/EVALUATION.md) and [training settings](fine_tuned_nlp/TRAINING_NOTES.md)
+- [Model selection rationale and model-card guide coverage](docs/MODEL_SELECTION.md)
 - [AI tool usage](docs/AI_USAGE.md)
 - [Dataset exploration notebook](notebooks/gliner_dataset_eda.ipynb)
 - [Assignment submission text](docs/SUBMISSION.md) and [readiness map](docs/SUBMISSION_READINESS.md)

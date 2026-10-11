@@ -3,6 +3,8 @@ language:
 - en
 license: apache-2.0
 base_model: knowledgator/gliner-relex-large-v1.0
+base_model_relation: finetune
+library_name: gliner
 datasets:
 - cmuchancel/gliner-sysml-training-data
 pipeline_tag: token-classification
@@ -24,6 +26,24 @@ Training data: [SysML GLiNER Training Data](https://huggingface.co/datasets/cmuc
 ## Intended use
 
 Teaching, reproducible pilot SysML entity extraction and human-reviewed patent-to-system-model experiments. Patent extraction is a domain transfer from code-like SysML to patent prose. Outputs are candidate models requiring review; relation extraction was not supervised in this fine-tuning run.
+
+## Model selection rationale
+
+**We selected GLiNER RelEx for a trainable extraction method that can supply a source-grounded knowledge graph.** Its span outputs provide entity text and offsets, and its inference interface accepts custom entity/relation schemas. These capabilities match the graph pipeline's definition passes and evidence tracking. The upstream [RelEx model card](https://huggingface.co/knowledgator/gliner-relex-large-v1.0/blob/4aedc9226a5ac9e2f6b5ea3e91c1ee577c88a290/README.md) documents the joint extraction API.
+
+| Selection criterion | Project decision and justification |
+|---|---|
+| Fit to the extraction task | Use labeled spans and candidate relationships as inputs to the graph, followed by deterministic SJS/SysML export |
+| Compatibility with the existing graph | Choose `knowledgator/gliner-relex-large-v1.0` because the graph prototype expects its entity/relation inference interface; this replaced the initial `gliner_small-v2.5` configuration |
+| Fit to the available training data | Fine-tune the 14 entity labels using the existing 1,898 rule-created annotations; retain pretrained relation layers because no relation targets were supplied |
+| Feasible training and deployment | The 466.6-million-parameter model passed training/reload checks on the 16 GB M1 Pro system using microbatch 1, gradient accumulation 8, gradient checkpointing and Adafactor; the released checkpoint also runs in the live ZeroGPU Space |
+| Reproducible checkpoint choice | Publish step 450, the lowest-validation-loss checkpoint, rather than choosing from the test set or automatically exporting the last step |
+
+Fine-tuning investigates adaptation to the project's SysML label vocabulary using an existing pretrained extractor. A rule-only SysML parser supplies the training labels, while applying the learned extractor to patent prose is a separate domain-transfer experiment. A scratch-trained extractor would require learning the general text representation as well as the project labels; this pilot instead adapts an existing model. This is a design rationale, not evidence that the learned extractor outperforms a rule-only patent baseline.
+
+**Checkpoint selection:** validation loss was checked every 25 optimizer steps. Step **450** had the lowest recorded validation loss, **6.8639**; training stopped at step **550** after a validation plateau. The held-out test did not determine the checkpoint or threshold. The base-versus-fine-tuned test below is a subsequent evaluation of agreement with rule labels. The initial small-model configuration and RelEx model were not ranked using a controlled common accuracy benchmark, and their validation losses must not be compared directly.
+
+**Tradeoffs:** the larger checkpoint requires more memory than the initial small-model configuration. Its training labels come from related SysML examples, while deployment uses patent prose and different schema prompts. Relation layers were frozen; better entity-label agreement does not establish better patent relationships or complete SysML semantics. See [training notes](https://github.com/cmuchancel/24679-project-1/blob/main/fine_tuned_nlp/TRAINING_NOTES.md), the [release manifest](https://github.com/cmuchancel/24679-project-1/blob/main/fine_tuned_nlp/release/model_manifest.json) and the [selection summary](https://github.com/cmuchancel/24679-project-1/blob/main/docs/MODEL_SELECTION.md).
 
 ## Download and run
 
@@ -105,6 +125,8 @@ Fixed threshold 0.5, all 14 candidate labels, exact token-span-and-label matchin
 The test has **only two related SysML documents and 38 rule-generated entities**, covering actions (15), item flows (17), packages (2), and states (4). The other ten labels have no test support. Document IDs are disjoint, but related actuator variants occur across splits. These numbers measure agreement with the tagging rules on this small test, not broad accuracy. Checkpoint and threshold selection did not use test results.
 
 Joint entity/relation inference passed a short API smoke test after loading. Authenticated live full-patent generation also produced Knowledge Graph, SJS and SysML outputs, with intermediate results hidden until completion. These are software/integration checks, not an independently labeled patent or relationship accuracy benchmark. The graph uses prose prompts that differ from the training labels and exports candidate SJS 1.0; the app's agent method uses SJS 1.2. The pinned Legacy parser's diagnostics do not certify final SysML 2.0 semantics.
+
+The [100-patent paired study](https://github.com/cmuchancel/24679-project-1/blob/main/outputs/agentic-vs-gliner-sjs-100-20260927/README.md) includes 100 completed fine-tuned GLiNER outputs with passing compiler reports. All 100 retained unresolved translator mappings, totaling 20,372 entries in that study. This supports pipeline feasibility and exposes semantic-export limitations; it is not a patent-extraction accuracy benchmark or evidence that compiler acceptance implies complete modeling.
 
 ## Bias, boundaries and provenance
 

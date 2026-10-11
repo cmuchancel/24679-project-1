@@ -1,5 +1,7 @@
 # Evaluation evidence
 
+See [model selection](MODEL_SELECTION.md) for task requirements, the choice of Luna and GLiNER RelEx, checkpoint selection and model-card coverage.
+
 ## Fine-tuned GLiNER
 
 The [release evaluation](../fine_tuned_nlp/release/evaluation.json) uses the unchanged held-out SysML test: **two related documents, three chunks, 38 rule-labeled spans**, four supported labels, threshold 0.5 and exact token-span/label matching.
@@ -18,6 +20,8 @@ Step 450 had the lowest validation loss (6.8639); training stopped at step 550 o
 The review identified optional treatment of a claim-required driven gear and weaknesses in traceability/generic names. It is one model-based review, not independent ground truth, average quality or a repeatability guarantee. Selecting this example does not measure model superiority.
 
 ## Software and scientific boundaries
+
+The [matched 100-patent study](../outputs/agentic-vs-gliner-sjs-100-20260927/README.md) contains 100 Luna agent outputs and 100 fine-tuned GLiNER outputs for the same patent inputs. All 200 published outputs completed and have passing compiler reports. The study reports no unresolved translator mappings in the agent outputs and 20,372 unresolved entries across all 100 GLiNER outputs. These checks expose pipeline/export behavior; they are not a blinded human accuracy comparison or first-attempt success rate. The historical study used SJS 1.0; the current agent interface uses SJS 1.2.
 
 The [live prototype verification](live-prototype-verification.json) records a full gear-pump NLP run completed in 38.75 seconds with 78 nodes and 123 edges; graph/SJS/SysML downloads matched displayed sources. This is software behavior, not extraction accuracy. The [live example screenshot](images/live-gradio-example.png) shows the gear-pump input loaded and Fine-Tuned NLP ready to generate.
 

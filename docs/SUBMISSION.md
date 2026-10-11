@@ -4,6 +4,8 @@
 
 # Models
 
+**Model selection:** [Rationale and supporting evidence](https://github.com/cmuchancel/24679-project-1/blob/main/docs/MODEL_SELECTION.md). Luna was selected for tool-guided decomposition, structured drafting/revision and integration with the connected account. GLiNER RelEx was selected for schema-driven span/relationship extraction compatible with the graph pipeline and feasible fine-tuning/deployment. Its checkpoint 450 was selected by the lowest validation loss, not test performance. Both cards document criteria, tradeoffs and the scope of the evaluation evidence.
+
 - **Primary Model - Luna (off-the-shelf):** [Project model card](https://huggingface.co/spaces/cmuchancel/patent2sysml/blob/main/model_cards/LUNA.md). The configured `openai/gpt-6-luna` model performs tool-guided functional decomposition and independent review through OpenCode. It was selected for tool use, instruction following and availability through the connected account. The project did not train Luna or redistribute its weights. The card documents integration, the recorded example, intended use, limitations and account requirements.
 - **Secondary Model - Fine-tuned GLiNER RelEx:** [Model card and public checkpoint](https://huggingface.co/cmuchancel/gliner-sysml-relex-v1). Checkpoint 450 was fine-tuned from `knowledgator/gliner-relex-large-v1.0` on the committed SysML entity corpus and selected by validation loss. The card provides pinned training settings, checkpoint selection, inference instructions and held-out evaluation. The 100% exact-span F1 is limited to 38 rule-labeled SysML entities from two related documents; it is not a patent-accuracy claim. Live NLP converts full-patent window predictions into graph, SJS and SysML outputs.
 
