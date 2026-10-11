@@ -72,7 +72,11 @@ def build_app(process, unused_gpu_slot=None, infer_windows=None):
                 with gr.Tab('SJS Diagram', id='sjs-diagram', visible=False, interactive=False, elem_id='sjs-diagram-tab') as sjs_diagram_tab:
                     sjs_picture = gr.HTML(elem_id='sjs-diagram')
                     sjs_picture_download = gr.DownloadButton('Download SJS Diagram', interactive=False)
-                with gr.Tab('Knowledge Graph', id='knowledge-graph', visible=False, interactive=False, elem_id='knowledge-graph-tab') as kg_tab:
+                # NLP selects this initially hidden tab when its final results arrive.
+                # Preload its children so programmatic selection does not leave an
+                # empty panel until the visitor clicks away and back.
+                with gr.Tab('Knowledge Graph', id='knowledge-graph', visible=False, interactive=False,
+                            render_children=True, elem_id='knowledge-graph-tab') as kg_tab:
                     graph = gr.HTML(elem_id='knowledge-graph')
                     kg_download = gr.DownloadButton('Download Knowledge Graph')
                 with gr.Tab('SJS', id='sjs', visible=False, interactive=False) as sjs_tab:
