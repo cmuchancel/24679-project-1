@@ -87,6 +87,7 @@ def build():
     assert sum(all_counts.values()) == sum(len(d["entities"]) for d in documents) == 1898
     assert hashlib.sha256((SOURCE / "splits/test.json").read_bytes()).hexdigest() == "2c49631c4d8a60ee965c473a63df3b781aca059657063c22890437fb43204e5f"
     shutil.copytree(SOURCE, DEST / "original", dirs_exist_ok=True)
+    shutil.copy2(SOURCE / "LICENSE", DEST / "LICENSE")
     report = {"documents": 25, "chunks": 62, "entity_spans": 1898, "labels": len(all_counts),
               "annotation_method": "translator-rule", "manual_annotation_count_established": False,
               "split_seed": 42, "document_disjoint": True, "family_disjoint": False,
@@ -107,11 +108,15 @@ def build():
         "data_creation": {
             "method": "Rule-based creation of labeled training data using deterministic translator rules",
             "annotation_method": "translator-rule"},
+        "dataset_license": {
+            "spdx_id": "MIT",
+            "license_file": "LICENSE",
+            "adopted_on": "2026-10-11"},
         "checkpoint": "cmuchancel/gliner-sysml-relex-v1; step 450",
         "raw_file_sha256": {str(p.relative_to(SOURCE)): hashlib.sha256(p.read_bytes()).hexdigest()
                             for p in sorted(SOURCE.rglob("*.json"))},
         "preparation": "Deterministic viewer conversion; original data, spans and splits retained.",
-        "rights": "No explicit source-data redistribution license was supplied; see RIGHTS.md."})
+        "rights": "The project-created SysML training corpus and annotations are released under MIT; see LICENSE and RIGHTS.md."})
     files = sorted(p for p in DEST.rglob("*") if p.is_file() and p.name != "SHA256SUMS")
     (DEST / "SHA256SUMS").write_text("".join(f"{hashlib.sha256(p.read_bytes()).hexdigest()}  {p.relative_to(DEST)}\n" for p in files), encoding="utf-8")
     print(json.dumps({k: v for k, v in report.items() if k not in ("splits", "label_counts")}, indent=2))

@@ -1,9 +1,7 @@
 ---
 language:
 - en
-license: other
-license_name: unspecified-source-data-rights
-license_link: https://huggingface.co/datasets/cmuchancel/gliner-sysml-training-data/blob/main/RIGHTS.md
+license: mit
 task_categories:
 - token-classification
 pretty_name: SysML GLiNER Training Data — 1,898 Entity Labels
@@ -128,7 +126,7 @@ At threshold 0.5, exact token-span-and-label matching on the retained test split
 
 Suitable for teaching, reproducible pilot fine-tuning, label inspection and development of independently reviewed SysML extraction experiments. English code examples, rule-based labels, narrow domain coverage, related variants and class imbalance limit generalization. Human review and an independent manually labeled patent/relationship benchmark remain necessary for scientific quality claims.
 
-The corpus is engineering example text; original source text has been retained. No private patent upload, account credential, textbook content, model weight, or agent conversation was added to this release. The labels are created by the documented rules. The dataset does not currently include an explicit reuse license: see [RIGHTS.md](RIGHTS.md). The base model's Apache-2.0 license does not license this source dataset.
+The corpus is engineering example text; original source text has been retained. No private patent upload, account credential, textbook content, model weight, or agent conversation was added to this release. The labels are created by the documented rules. **This training dataset is released under the [MIT License](LICENSE)**, allowing public reuse, modification and redistribution, including commercial use, with the copyright and license notice retained. See [RIGHTS.md](RIGHTS.md) for creator attribution and scope.
 
 ## Citation
 

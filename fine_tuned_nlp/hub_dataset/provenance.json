@@ -14,6 +14,11 @@
     "method": "Rule-based creation of labeled training data using deterministic translator rules",
     "annotation_method": "translator-rule"
   },
+  "dataset_license": {
+    "spdx_id": "MIT",
+    "license_file": "LICENSE",
+    "adopted_on": "2026-10-11"
+  },
   "checkpoint": "cmuchancel/gliner-sysml-relex-v1; step 450",
   "raw_file_sha256": {
     "canonical/documents.json": "7212cb69412d0cc5ceb60a152c28dc95b1908de1804b5bcfbb67e688908492b3",
@@ -27,5 +32,5 @@
     "splits/validation_metadata.json": "a6159e2f4c3faa601f27ce705ec262735fdb7db3ccab7f37dd986f4d273b97b4"
   },
   "preparation": "Deterministic viewer conversion; original data, spans and splits retained.",
-  "rights": "No explicit source-data redistribution license was supplied; see RIGHTS.md."
+  "rights": "The project-created SysML training corpus and annotations are released under MIT; see LICENSE and RIGHTS.md."
 }
